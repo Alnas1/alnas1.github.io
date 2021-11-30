@@ -11,7 +11,7 @@
   
   <title>
     
-      archive_a: 2021 
+      VSCode的Picgo插件配置 
       
       
       |
@@ -105,95 +105,160 @@
 
 
       <div class="flex-container">
-        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<!-- last: 按年份把文章分组，当前遍历到的年份 -->
-<!-- now: 当前遍历到的文章的发布年份 -->
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
 
-<div class="container archives">
-  <div class="post-list">
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2021</span>
-          </h2>
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">VSCode的Picgo插件配置</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="Update time"></i>
+          2021-11-30 15:18:22
+        </span>
+        
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="Tags"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/%E5%8D%9A%E5%AE%A2/" title="博客">
+                    <b>#</b> 博客
+                  </a>
+                </span>
+                
+                <span class="span--tag">
+                  <a href="/tags/VSCode/" title="VSCode">
+                    <b>#</b> VSCode
+                  </a>
+                </span>
+                
+                <span class="span--tag">
+                  <a href="/tags/Picgo/" title="Picgo">
+                    <b>#</b> Picgo
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <h3 id="0-实现效果和视频教程"><a href="#0-实现效果和视频教程" class="headerlink" title="0.实现效果和视频教程"></a>0.实现效果和视频教程</h3><p>效果：按ctrl+alt+u可以直接把剪切板图片粘贴到文章里，配合qq截图很方便。且生成的图片上传到github里了，它不是本地图片，github也不会跑路（大概），图片资源不担心没掉。<br>视频教程：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1c44y1C7os">b站up卷二兔的hexo教学（15）</a><br>视频里下了picgo这个软件，我后来发现咱们用VSCode的直接有picgo插件可以下，不需要软件，除这点以外跟着up操作就行。</p>
+<h3 id="1-GitHub建立图床库"><a href="#1-GitHub建立图床库" class="headerlink" title="1. GitHub建立图床库"></a>1. GitHub建立图床库</h3><h4 id="1-1新建GitHub仓库"><a href="#1-1新建GitHub仓库" class="headerlink" title="1.1新建GitHub仓库"></a>1.1新建GitHub仓库</h4><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130190814.png" width="50%">
+<img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191041.png" width="100%">
+
+<p>建好了如下所示<br><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191146.png" width="90%"></p>
+<h4 id="1-2获取一个Token"><a href="#1-2获取一个Token" class="headerlink" title="1.2获取一个Token"></a>1.2获取一个Token</h4><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191310.png" width="35%">
+<img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191419.png" width="70%">
+
+<p><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130194248.png" alt="20211130194248"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195349.png" alt="20211130195349"><br>然后下拉点生成token<br><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195451.png" alt="20211130195451"><br><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195525.png" alt="20211130195525"><br>这个token只出现一次，要存在别的地方以备使用<br>图床token的令牌：<br>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</p>
+<h3 id="2-VSCode的Picgo插件"><a href="#2-VSCode的Picgo插件" class="headerlink" title="2. VSCode的Picgo插件"></a>2. VSCode的Picgo插件</h3><p><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130200114.png" alt="20211130200114"><br><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130200531.png" alt="20211130200531"><br>然后应该就能用了</p>
+<h3 id="3-疑难杂症"><a href="#3-疑难杂症" class="headerlink" title="3. 疑难杂症"></a>3. 疑难杂症</h3><p>我遇到过上传不成功的问题，好像是因为我写库地址的时候在/后面的空格没删掉，删掉就能用了。<br>参考这篇文章：<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/TalesOV/article/details/104450037">PicGo踩坑记（上传失败，服务端出错，请重试）</a></p>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2021/11/30/%E3%80%90%E8%B7%91%E5%9B%A2%E3%80%91%E8%BF%BD%E4%B9%A6%E4%BA%BA/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>Prev</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="Update time"></i>
+              2021-11-30 15:18:22
+            </span>
+            
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="Tags"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/%E5%8D%9A%E5%AE%A2/" title="博客">
+                        <b>#</b> 博客
+                      </a>
+                    </span>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/VSCode/" title="VSCode">
+                        <b>#</b> VSCode
+                      </a>
+                    </span>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/Picgo/" title="Picgo">
+                        <b>#</b> Picgo
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2021/11/30/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E6%91%B8%E7%88%AC%E6%BB%9A%E6%89%93%E6%94%B9%E5%8D%9A%E5%AE%A2/" target="_self">
+                <span>Next</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
         </div>
       
-      <div class="post-item" title="摸爬滚打改博客">
-        <div class="time-m-d">11-30</div>
-        <div class="title">
-          <a href="/2021/11/30/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E6%91%B8%E7%88%AC%E6%BB%9A%E6%89%93%E6%94%B9%E5%8D%9A%E5%AE%A2/">
-            <span>摸爬滚打改博客</span>
-          </a>
-        </div>
-      </div>
+    </div>
     
-      <div class="post-item" title="VSCode的Picgo插件配置">
-        <div class="time-m-d">11-30</div>
-        <div class="title">
-          <a href="/2021/11/30/VSCode%E7%9A%84Picgo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/VSCode%E7%9A%84Picgo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/">
-            <span>VSCode的Picgo插件配置</span>
-          </a>
-        </div>
-      </div>
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">Contents</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#0-%E5%AE%9E%E7%8E%B0%E6%95%88%E6%9E%9C%E5%92%8C%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B"><span class="toc-text">0.实现效果和视频教程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-GitHub%E5%BB%BA%E7%AB%8B%E5%9B%BE%E5%BA%8A%E5%BA%93"><span class="toc-text">1. GitHub建立图床库</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1%E6%96%B0%E5%BB%BAGitHub%E4%BB%93%E5%BA%93"><span class="toc-text">1.1新建GitHub仓库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2%E8%8E%B7%E5%8F%96%E4%B8%80%E4%B8%AAToken"><span class="toc-text">1.2获取一个Token</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-VSCode%E7%9A%84Picgo%E6%8F%92%E4%BB%B6"><span class="toc-text">2. VSCode的Picgo插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87"><span class="toc-text">3. 疑难杂症</span></a></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
     
-      <div class="post-item" title="【跑团】追书人">
-        <div class="time-m-d">11-30</div>
-        <div class="title">
-          <a href="/2021/11/30/%E3%80%90%E8%B7%91%E5%9B%A2%E3%80%91%E8%BF%BD%E4%B9%A6%E4%BA%BA/">
-            <span>【跑团】追书人</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="【跑团】今夜，学研（三）">
-        <div class="time-m-d">11-30</div>
-        <div class="title">
-          <a href="/2021/11/30/%E4%BB%8A%E5%A4%9C%EF%BC%8C%E5%AD%A6%E7%A0%94/%E3%80%90%E8%B7%91%E5%9B%A2%E3%80%91%E4%BB%8A%E5%A4%9C%EF%BC%8C%E5%AD%A6%E7%A0%94%EF%BC%88%E4%B8%89%EF%BC%89/">
-            <span>【跑团】今夜，学研（三）</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="【跑团】今夜，学研（二）">
-        <div class="time-m-d">11-30</div>
-        <div class="title">
-          <a href="/2021/11/30/%E4%BB%8A%E5%A4%9C%EF%BC%8C%E5%AD%A6%E7%A0%94/%E3%80%90%E8%B7%91%E5%9B%A2%E3%80%91%E4%BB%8A%E5%A4%9C%EF%BC%8C%E5%AD%A6%E7%A0%94%EF%BC%88%E4%BA%8C%EF%BC%89/">
-            <span>【跑团】今夜，学研（二）</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="【跑团】今夜，学研（一）">
-        <div class="time-m-d">11-30</div>
-        <div class="title">
-          <a href="/2021/11/30/%E4%BB%8A%E5%A4%9C%EF%BC%8C%E5%AD%A6%E7%A0%94/%E3%80%90%E8%B7%91%E5%9B%A2%E3%80%91%E4%BB%8A%E5%A4%9C%EF%BC%8C%E5%AD%A6%E7%A0%94%EF%BC%88%E4%B8%80%EF%BC%89/">
-            <span>【跑团】今夜，学研（一）</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="▇▇▇▇大学自习室">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2021/11/28/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/%E2%96%87%E2%96%87%E2%96%87%E2%96%87%E5%A4%A7%E5%AD%A6%E8%87%AA%E4%B9%A0%E5%AE%A4/">
-            <span>▇▇▇▇大学自习室</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="▇▇▇▇大学新绿指南">
-        <div class="time-m-d">11-27</div>
-        <div class="title">
-          <a href="/2021/11/27/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/%E2%96%87%E2%96%87%E2%96%87%E2%96%87%E5%A4%A7%E5%AD%A6%E6%96%B0%E7%BB%BF%E6%8C%87%E5%8D%97/">
-            <span>▇▇▇▇大学新绿指南</span>
-          </a>
-        </div>
+      <div class="comments-container">
+        
+
+
+
+
+
       </div>
     
   </div>
-</div>
+
 
         <div class="footer">
   <div class="social">
@@ -480,6 +545,24 @@
 
 
         
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + VSCode%E7%9A%84Picgo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE + '&url=' + http%3A%2F%2Fexample.com%2F2021%2F11%2F30%2FVSCode%25E7%259A%2584Picgo%25E6%258F%2592%25E4%25BB%25B6%25E9%2585%258D%25E7%25BD%25AE%2FVSCode%25E7%259A%2584Picgo%25E6%258F%2592%25E4%25BB%25B6%25E9%2585%258D%25E7%25BD%25AE%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2021/11/30/VSCode%E7%9A%84Picgo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/VSCode%E7%9A%84Picgo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
   
   
 <script src="/js/shares.js"></script>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" color-mode="light">
+<html lang="default" color-mode="light">
 
   <head>
   <meta charset="utf-8">
@@ -76,23 +76,23 @@
     <ul>
       
         <li class="nav-item" data-path="/">
-          <a href="/">Home</a>
+          <a href="/">主页</a>
         </li>
       
         <li class="nav-item" data-path="/archives/">
-          <a href="/archives/">Archives</a>
+          <a href="/archives/">归档</a>
         </li>
       
         <li class="nav-item" data-path="/tags/">
-          <a href="/tags/">Tags</a>
+          <a href="/tags/">标签</a>
         </li>
       
         <li class="nav-item" data-path="/friends/">
-          <a href="/friends/">Friends</a>
+          <a href="/friends/">朋友</a>
         </li>
       
         <li class="nav-item" data-path="/about/">
-          <a href="/about/">About</a>
+          <a href="/about/">关于</a>
         </li>
       
     </ul>
@@ -136,12 +136,12 @@ MathJax = {
       <div class="post-title">【跑团】追书人</div>
       <div class="post-attach">
         <span class="post-pubtime">
-          <i class="iconfont icon-updatetime" title="更新时间"></i>
+          <i class="iconfont icon-updatetime" title="Update time"></i>
           2021-11-30 14:39:55
         </span>
         
               <span class="post-tags">
-                <i class="iconfont icon-tags" title="标签"></i>
+                <i class="iconfont icon-tags" title="Tags"></i>
                 
                 <span class="span--tag">
                   <a href="/tags/%E8%B7%91%E5%9B%A2%E8%AE%B0%E5%BD%95/" title="跑团记录">
@@ -260,18 +260,18 @@ MathJax = {
             
               <a href="/2021/11/30/%E4%BB%8A%E5%A4%9C%EF%BC%8C%E5%AD%A6%E7%A0%94/%E3%80%90%E8%B7%91%E5%9B%A2%E3%80%91%E4%BB%8A%E5%A4%9C%EF%BC%8C%E5%AD%A6%E7%A0%94%EF%BC%88%E4%B8%89%EF%BC%89/" target="_self">
                 <i class="iconfont icon-chevronleft"></i>
-                <span>上一页</span>
+                <span>Prev</span>
               </a>
             
           </div>
           <div class="post-attach">
             <span class="post-pubtime">
-              <i class="iconfont icon-updatetime" title="更新时间"></i>
+              <i class="iconfont icon-updatetime" title="Update time"></i>
               2021-11-30 14:39:55
             </span>
             
                   <span class="post-tags">
-                    <i class="iconfont icon-tags" title="标签"></i>
+                    <i class="iconfont icon-tags" title="Tags"></i>
                     
                     <span class="span--tag">
                       <a href="/tags/%E8%B7%91%E5%9B%A2%E8%AE%B0%E5%BD%95/" title="跑团记录">
@@ -284,6 +284,11 @@ MathJax = {
           </div>
           <div class="post-foot-prev">
             
+              <a href="/2021/11/30/VSCode%E7%9A%84Picgo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/VSCode%E7%9A%84Picgo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/" target="_self">
+                <span>Next</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -293,7 +298,7 @@ MathJax = {
     <i class="iconfont icon-catalog"></i>
   </div>
   <div class="post-catalog hidden" id="catalog">
-    <div class="title">目录</div>
+    <div class="title">Contents</div>
     <div class="catalog-content">
       <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BA%E5%9C%BA%E4%BA%BA%E7%89%A9"><span class="toc-text">出场人物</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%82%E5%89%8D%E6%8F%90%E7%A4%BA%EF%BC%9A%E8%B0%A8%E9%98%B2%E5%89%A7%E9%80%8F%EF%BC%8C%E6%B2%A1%E8%B7%91%E8%BF%87%E7%9A%84%E4%BA%BA%E5%88%AB%E7%9C%8B%E5%93%A6%EF%BC%81"><span class="toc-text">观前提示：谨防剧透，没跑过的人别看哦！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A3%E6%96%87"><span class="toc-text">正文</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B9%95%E9%97%B4%E6%88%90%E9%95%BF"><span class="toc-text">幕间成长</span></a></li></ol>
     </div>
@@ -411,7 +416,7 @@ MathJax = {
           </a>
         </span>
         
-          <input type="text" class="search-input" id="search-input" placeholder="搜索...">
+          <input type="text" class="search-input" id="search-input" placeholder="Search...">
         
         <span class="search-close-icon" id="search-close-icon">
           <a href="javascript: void(0)">
@@ -463,7 +468,7 @@ MathJax = {
       'use strict';
       var $input = document.getElementById(search_id);
       var $resultContent = document.getElementById(content_id);
-      $resultContent.innerHTML = "<ul><span class='local-search-empty'>首次搜索，正在载入索引文件，请稍后……<span></ul>";
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'>First search, index file loading, please wait...<span></ul>";
       $.ajax({
         // 0x01. load xml file
         url: path,
@@ -559,7 +564,7 @@ MathJax = {
             });
             str += "</ul>";
             if (str.indexOf('<li>') === -1) {
-              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>没有找到内容，请尝试更换检索词。<span></ul>";
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>No result<span></ul>";
             }
             $resultContent.innerHTML = str;
           });
@@ -567,9 +572,9 @@ MathJax = {
         error: function(xhr, status, error) {
           $resultContent.innerHTML = ""
           if (xhr.status === 404) {
-            $resultContent.innerHTML = "<ul><span class='local-search-empty'>未找到search.xml文件，具体请参考：<a href='https://github.com/zchengsite/hexo-theme-oranges#configuration' target='_black'>configuration</a><span></ul>";
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The search.xml file was not found, please refer to：<a href='https://github.com/zchengsite/hexo-theme-oranges#configuration' target='_black'>configuration</a><span></ul>";
           } else {
-            $resultContent.innerHTML = "<ul><span class='local-search-empty'>请求失败，尝试重新刷新页面或稍后重试。<span></ul>";
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The request failed, Try to refresh the page or try again later.<span></ul>";
           }
         }
       });
