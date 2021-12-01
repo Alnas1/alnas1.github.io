@@ -176,13 +176,16 @@ MathJax = {
 <h3 id="改主页导航栏的名字"><a href="#改主页导航栏的名字" class="headerlink" title="改主页导航栏的名字"></a>改主页导航栏的名字</h3><p>我要把英文改成中文，因为中文短一点，在手机上不会变两行。<br><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130180306.png" alt="20211130180306"><br>乱找一通以后发现在自己主题的配置文件source/orange/_config.yml里，因为有中文注释很容易就找到了……</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 主题页面导航栏</span></span><br><span class="line">navbar:</span><br><span class="line">  -</span><br><span class="line">    name: 主页 <span class="comment">#在这改</span></span><br><span class="line">    <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">    path: /</span><br><span class="line">    key: home</span><br><span class="line">  ……</span><br></pre></td></tr></table></figure>
 <p>改完：<br><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130193011.png" width="70%"></p>
+<h3 id="改底端联系方式"><a href="#改底端联系方式" class="headerlink" title="改底端联系方式"></a>改底端联系方式</h3><p><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112011434662.png"><br>我在力图把每个平台发的信息切割开，所以只需要留一个反馈邮箱，其他注释掉。<br>同样在主题的配置文件source/orange/_config.yml里进行更改。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 页脚信息</span></span><br><span class="line">footer:</span><br><span class="line">  <span class="comment"># social: 社交方式</span></span><br><span class="line">  <span class="comment"># more: 更多页脚信息</span></span><br><span class="line">  social:</span><br><span class="line">    <span class="comment"># name: 名称</span></span><br><span class="line">    <span class="comment"># icon: 图标，目前仅支持IconFont部分图标</span></span><br><span class="line">    <span class="comment"># path: 地址</span></span><br><span class="line">    <span class="comment">#-</span></span><br><span class="line">      <span class="comment">#name: github</span></span><br><span class="line">      <span class="comment">#icon: github</span></span><br><span class="line">      <span class="comment">#path: https://github.com/zchengsite/hexo-theme-oranges</span></span><br><span class="line">    -</span><br><span class="line">      name: email</span><br><span class="line">      icon: envelope</span><br><span class="line">      path: <span class="string">&quot;mailto:1249636167@qq.com&quot;</span></span><br></pre></td></tr></table></figure>
+<p>就ok了<br><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112011439111.png"></p>
 
       </div>
       
         <div class="prev-or-next">
           <div class="post-foot-next">
             
-              <a href="/2021/11/30/VSCode%E7%9A%84Picgo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/VSCode%E7%9A%84Picgo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/" target="_self">
+              <a href="/2021/11/30/%E3%80%90%E8%B7%91%E5%9B%A2%E3%80%91%E8%BF%BD%E4%B9%A6%E4%BA%BA/" target="_self">
                 <i class="iconfont icon-chevronleft"></i>
                 <span>Prev</span>
               </a>
@@ -208,6 +211,11 @@ MathJax = {
           </div>
           <div class="post-foot-prev">
             
+              <a href="/2021/11/30/VSCode%E7%9A%84Picgo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/VSCode%E7%9A%84Picgo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/" target="_self">
+                <span>Next</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -219,7 +227,7 @@ MathJax = {
   <div class="post-catalog hidden" id="catalog">
     <div class="title">Contents</div>
     <div class="catalog-content">
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B9%E5%9B%BE%E7%89%87%E5%A4%A7%E5%B0%8F"><span class="toc-text">改图片大小</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B9%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2"><span class="toc-text">改字体颜色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B9%E5%8D%9A%E5%AE%A2%E6%98%BE%E7%A4%BA%E5%9C%A8%E6%A0%87%E7%AD%BE%E6%A0%8F%E4%B8%8A%E7%9A%84%E5%90%8D%E7%A7%B0"><span class="toc-text">改博客显示在标签栏上的名称</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B9%E4%B8%BB%E9%A1%B5%E5%AF%BC%E8%88%AA%E6%A0%8F%E7%9A%84%E5%90%8D%E5%AD%97"><span class="toc-text">改主页导航栏的名字</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B9%E5%9B%BE%E7%89%87%E5%A4%A7%E5%B0%8F"><span class="toc-text">改图片大小</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B9%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2"><span class="toc-text">改字体颜色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B9%E5%8D%9A%E5%AE%A2%E6%98%BE%E7%A4%BA%E5%9C%A8%E6%A0%87%E7%AD%BE%E6%A0%8F%E4%B8%8A%E7%9A%84%E5%90%8D%E7%A7%B0"><span class="toc-text">改博客显示在标签栏上的名称</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B9%E4%B8%BB%E9%A1%B5%E5%AF%BC%E8%88%AA%E6%A0%8F%E7%9A%84%E5%90%8D%E5%AD%97"><span class="toc-text">改主页导航栏的名字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B9%E5%BA%95%E7%AB%AF%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F"><span class="toc-text">改底端联系方式</span></a></li></ol>
     </div>
   </div>
 
@@ -247,44 +255,8 @@ MathJax = {
     <ul>
       
         <li>
-          <a title="github" target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">
-            <i class="iconfont icon-github"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a title="email" href="">
+          <a title="email" href="mailto:1249636167@qq.com">
             <i class="iconfont icon-envelope"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a title="facebook" href="">
-            <i class="iconfont icon-facebooksquare"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a title="twitter" href="">
-            <i class="iconfont icon-twitter"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a title="wechat" href="">
-            <i class="iconfont icon-wechat"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a title="weibo" href="">
-            <i class="iconfont icon-weibo"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a title="rss" href="/atom.xml">
-            <i class="iconfont icon-rss"></i>
           </a>
         </li>
       
