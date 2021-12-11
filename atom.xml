@@ -6,7 +6,7 @@
   <link href="https://alnas1.github.io/atom.xml" rel="self"/>
   
   <link href="https://alnas1.github.io/"/>
-  <updated>2021-12-10T15:05:31.856Z</updated>
+  <updated>2021-12-11T16:43:34.146Z</updated>
   <id>https://alnas1.github.io/</id>
   
   <author>
@@ -17,19 +17,69 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Theme Test - Blink</title>
-    <link href="https://alnas1.github.io/2021/12/23/%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E5%8A%A0%E5%AF%86%E6%B5%8B%E8%AF%95/"/>
-    <id>https://alnas1.github.io/2021/12/23/%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E5%8A%A0%E5%AF%86%E6%B5%8B%E8%AF%95/</id>
-    <published>2021-12-23T14:21:50.000Z</published>
-    <updated>2021-12-10T15:05:31.856Z</updated>
+    <title>电脑卸载个CAD居然把一众软件搞崩溃</title>
+    <link href="https://alnas1.github.io/2021/12/12/%E6%97%A5%E5%B8%B8/%E7%94%B5%E8%84%91%E5%8D%B8%E8%BD%BD%E4%B8%AACAD%E5%B1%85%E7%84%B6%E6%8A%8A%E4%B8%80%E4%BC%97%E8%BD%AF%E4%BB%B6%E6%90%9E%E5%B4%A9%E6%BA%83/"/>
+    <id>https://alnas1.github.io/2021/12/12/%E6%97%A5%E5%B8%B8/%E7%94%B5%E8%84%91%E5%8D%B8%E8%BD%BD%E4%B8%AACAD%E5%B1%85%E7%84%B6%E6%8A%8A%E4%B8%80%E4%BC%97%E8%BD%AF%E4%BB%B6%E6%90%9E%E5%B4%A9%E6%BA%83/</id>
+    <published>2021-12-11T16:31:01.000Z</published>
+    <updated>2021-12-11T16:43:34.146Z</updated>
     
-    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="b426c21b7805e83bea00bc6798cfaba0b395001d29d969f5027031cb592c5d8e">10d79030e8222445804370796b90fca1d2aa4f99e8f5171f22f450be12c8bdd5</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-blink">      <input class="hbe hbe-input-field hbe-input-field-blink" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-blink" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-blink" data-content="This is encrypted by Theme - blink">This is encrypted by Theme - blink</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-    
-    
-    <summary type="html">这是一篇加密文章</summary>
+    <content type="html"><![CDATA[<p>为了电气控制课设临时安装CAD，而为了安装CAD我花了大半天下载软件、删掉软件给它腾空间、处理它一打开就开始cpu过载疯狂闪屏的问题。<br>现在的电脑，6100大洋、服役3年的华为matebookd 2018，各种间歇性黑屏，一打开什么软件屏幕就像年久失修的灯一般开始狂闪，看b站还总是音画不同步。不过这种日子终于到头了。<br>我新买的联想r9000p，价格7588，只要明天没啥大问题就直接用，实在受不了破电脑闪屏、C盘永远剩0字节。卸载个cad搞得浏览器崩溃、图床软件崩溃、qq崩溃。我都想不通为什么。<br>这12.12我是一分钟都待不下去了！</p>]]></content>
     
     
+    <summary type="html">我在此用这台破电脑写下它的最后一篇博客。明天新电脑就到了！哈哈！不对，已经是今天了。</summary>
     
+    
+    
+    <category term="日常" scheme="https://alnas1.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="碎碎念" scheme="https://alnas1.github.io/categories/%E6%97%A5%E5%B8%B8/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    
+    <category term="“花花世界我一人干翻”" scheme="https://alnas1.github.io/tags/%E2%80%9C%E8%8A%B1%E8%8A%B1%E4%B8%96%E7%95%8C%E6%88%91%E4%B8%80%E4%BA%BA%E5%B9%B2%E7%BF%BB%E2%80%9D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Tarot / 你舟沉了</title>
+    <link href="https://alnas1.github.io/2021/12/11/%E6%97%A5%E5%B8%B8/%E4%BD%A0%E8%88%9F%E6%B2%89%E4%BA%86/"/>
+    <id>https://alnas1.github.io/2021/12/11/%E6%97%A5%E5%B8%B8/%E4%BD%A0%E8%88%9F%E6%B2%89%E4%BA%86/</id>
+    <published>2021-12-11T14:14:03.000Z</published>
+    <updated>2021-12-11T15:43:16.310Z</updated>
+    
+    <content type="html"><![CDATA[<p>缘由：#查询抽卡运势<br>牌组：棱镜<br>牌面：星币侍从，星币女皇，倒吊人<br><img src="https://gitee.com/Alnasl/picbox/raw/master/img/20211211231557.png" width="60%"></p><p>读牌：暗示充钱，硬吃保底，不尽人意最好收手。<br>结果：56发歪了琴柳，五星四个<br>今日的胜负：塔罗牌胜</p>]]></content>
+    
+    
+    <summary type="html">“如今山池在我眼前，我必须考虑这会不会是我此生仅有的机会。”</summary>
+    
+    
+    
+    <category term="日常" scheme="https://alnas1.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="统计破除迷信" scheme="https://alnas1.github.io/categories/%E6%97%A5%E5%B8%B8/%E7%BB%9F%E8%AE%A1%E7%A0%B4%E9%99%A4%E8%BF%B7%E4%BF%A1/"/>
+    
+    
+    <category term="巴纳姆效应" scheme="https://alnas1.github.io/tags/%E5%B7%B4%E7%BA%B3%E5%A7%86%E6%95%88%E5%BA%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>摸爬滚打改博客（NexT时代）</title>
+    <link href="https://alnas1.github.io/2021/12/11/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E6%91%B8%E7%88%AC%E6%BB%9A%E6%89%93%E6%94%B9%E5%8D%9A%E5%AE%A2(next)%20/"/>
+    <id>https://alnas1.github.io/2021/12/11/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E6%91%B8%E7%88%AC%E6%BB%9A%E6%89%93%E6%94%B9%E5%8D%9A%E5%AE%A2(next)%20/</id>
+    <published>2021-12-10T17:09:52.000Z</published>
+    <updated>2021-12-11T16:30:27.860Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在HTML和hexo方面完全的小白，此前只懂一点C语言和MATLAB，也没想为了一个博客学完这些东西，遂只有按“想实现什么功能-百度-踩坑-实现功能或者没有”这个流程解决问题。以下是一些记录。</p><hr><h3 id="主页"><a href="#主页" class="headerlink" title="主页"></a>主页</h3><p><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112110113327.png"><br>我喜欢那种卡片样式的，简单凝练，信息密度大一点，这个主题为了排版美观失去了信息密集度。所以想改得紧凑。</p><h4 id="橙色部分"><a href="#橙色部分" class="headerlink" title="橙色部分"></a>橙色部分</h4><p>文件路径MyWeb\themes\next\source\css\ _common\components\post\post-header.styl</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.posts-expand .post-header &#123;</span><br><span class="line">  font-size: $font-size-large;</span><br><span class="line">  margin-bottom: 60px;</span><br><span class="line">  text-align: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="蓝色虚线框部分"><a href="#蓝色虚线框部分" class="headerlink" title="蓝色虚线框部分"></a>蓝色虚线框部分</h4><p>文件路径MyWeb\themes\next\source\css\ _variables\base.styl</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//  .post-expand .post-eof</span><br><span class="line">//  In Muse scheme, margin above and below the post separator</span><br><span class="line">$post-eof-margin-top          = 10px; //  or 160px for more white space;</span><br><span class="line">$post-eof-margin-bottom       = 10px; //  or 120px for less white space;</span><br></pre></td></tr></table></figure><h3 id="博客标题"><a href="#博客标题" class="headerlink" title="博客标题"></a>博客标题</h3><h4 id="与网页顶部的距离"><a href="#与网页顶部的距离" class="headerlink" title="与网页顶部的距离"></a>与网页顶部的距离</h4><p><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112112048693.png"><br>文件路径MyWeb\themes\next\source\css\ _schemes\ _header.styl</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.header-inner &#123;</span><br><span class="line">  padding-top: 40px;</span><br><span class="line"></span><br><span class="line">  +mobile() &#123;</span><br><span class="line">    padding-top: 50px;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">“小白很痛苦”</summary>
+    
+    
+    
+    <category term="博客建立之初的一些记录" scheme="https://alnas1.github.io/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B%E4%B9%8B%E5%88%9D%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="博客" scheme="https://alnas1.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
@@ -80,11 +130,11 @@
   </entry>
   
   <entry>
-    <title>梦/纸片人的精神分裂症状</title>
+    <title>梦 / 纸片人的精神分裂症状</title>
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E7%BA%B8%E7%89%87%E4%BA%BA%E7%9A%84%E7%B2%BE%E7%A5%9E%E5%88%86%E8%A3%82%E7%97%87%E7%8A%B6/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E7%BA%B8%E7%89%87%E4%BA%BA%E7%9A%84%E7%B2%BE%E7%A5%9E%E5%88%86%E8%A3%82%E7%97%87%E7%8A%B6/</id>
     <published>2021-12-05T15:20:15.000Z</published>
-    <updated>2021-12-08T15:06:27.994Z</updated>
+    <updated>2021-12-11T14:08:07.342Z</updated>
     
     <content type="html"><![CDATA[<p>三个片段，互相无关联。<br>1.我在玩一个2d像素游戏，做了隐藏任务赚了好多钱。<br>2舍友写小说给我看，我觉得插图很丑就改了改，然后发现这样不打招呼就改很不礼貌。<br>3.我找钟离，balabalabalabala（中间忘记了），他送了我一个挂在包上的链子，一把餐刀，表示以后我是他女朋友了！梦里的我：其实我更希望是您的副人格万叶。</p><p>醒来：？</p>]]></content>
     
@@ -101,11 +151,11 @@
   </entry>
   
   <entry>
-    <title>梦/应试教育后遗症</title>
+    <title>梦 / 应试教育后遗症</title>
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E5%BA%94%E8%AF%95%E6%95%99%E8%82%B2%E5%90%8E%E9%81%97%E7%97%87/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E5%BA%94%E8%AF%95%E6%95%99%E8%82%B2%E5%90%8E%E9%81%97%E7%97%87/</id>
     <published>2021-12-05T15:19:19.000Z</published>
-    <updated>2021-12-08T15:08:01.081Z</updated>
+    <updated>2021-12-11T14:07:59.322Z</updated>
     
     <content type="html"><![CDATA[<p>早上做梦梦见下午两点有一个生物学考试。关键是我7点被吵醒那会对自己做的梦深信不疑，睡到8点半的这段时间内梦境在自动补完“我有一个选修课一直没去上但几个小时后就要考试”的这回事。<br>甚至脑补了具体的上课情景，确定这门课叫“上帝知道答案”。讲课的是一个女老师，和我一起上课的有舍友和隔壁班同学。然后梦里我不乐意去问舍友，就问了隔壁班同学，这位同学石锤了下午两点有考试，然后就开始慌，恐慌，虽然9小时复习概率论/12小时速通PLC不是没有过，但是距离下午两点只有6小时了，我根本不记得这门课的任何内容。平时既然没去上课那肯定没有平时分。我恐惧保研功亏一篑。<br>直到刷完牙我都还没想明白到底有没有“选修课下午两点考试”这回事</p>]]></content>
     
@@ -122,11 +172,11 @@
   </entry>
   
   <entry>
-    <title>梦/正宫的不屑.jpg</title>
+    <title>梦 / 正宫的不屑.jpg</title>
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%AD%A3%E5%AE%AB%E7%9A%84%E4%B8%8D%E5%B1%91-jpg/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%AD%A3%E5%AE%AB%E7%9A%84%E4%B8%8D%E5%B1%91-jpg/</id>
     <published>2021-12-05T15:18:33.000Z</published>
-    <updated>2021-12-08T15:10:07.804Z</updated>
+    <updated>2021-12-11T14:08:03.423Z</updated>
     
     <content type="html"><![CDATA[<p>昨天晚上梦到我拿着我推纸片人1的照片（立绘？）给正宫纸片人2看，纸片人2不屑地笑了 ​​​</p>]]></content>
     
@@ -143,11 +193,11 @@
   </entry>
   
   <entry>
-    <title>梦/追查无形怪物</title>
+    <title>梦 / 追查无形怪物</title>
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E8%BF%BD%E6%9F%A5%E6%97%A0%E5%BD%A2%E6%80%AA%E7%89%A9/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E8%BF%BD%E6%9F%A5%E6%97%A0%E5%BD%A2%E6%80%AA%E7%89%A9/</id>
     <published>2021-12-05T15:17:48.000Z</published>
-    <updated>2021-12-08T15:10:08.463Z</updated>
+    <updated>2021-12-11T14:08:11.686Z</updated>
     
     <content type="html"><![CDATA[<p>梦见出现了一种奇怪的力量，其表现形式是人有时候会无缘无故被突然扯一下，但不是别人干的。<br>就像透明人恶作剧一样。<br>这个现象变得越发严重了，我曾见到一个小女孩被来自多方向的无形的力折断骨头，整个人扭曲变形。<br>我去追查这种现象的源头，到一座大厦里（特别像学校的学研中心），进门的时候刚好目睹一个深蓝色衣服的人从高空坠落，砸到地上。<br>因为事情紧急，就没有去管，但是我和助手都认为肯定和源头有关。<br>上楼，被发现，开始躲，躲到一个占卜师的家里，她帮我隐藏了起来，还让我抽了三张塔罗牌，但是没有读牌，我也不记得三张牌是什么。<br>后来我的队友赶到了，在楼外辅助，我下了楼，看到那个坠落的人，走进发现只是一件外套，外套里面摆着一个只有一半的饼干。<br>这个饼干是软的，很大，一个巴掌那么大，完整版应该是两颗心被箭串在一起，这里只有一半，两个心是粉的，中间用黄色写了几个单词，但是不完整。<br>我突然发觉这个跳楼的人就是我。<br>我要传达给我什么信息？<br>在保温杯里找到了另外一半饼干，把它们拼起来，我知道了完整的句子。<br>从占卜师那里走后，她把占卜的牌送给了我。我拿出来边走边洗牌，却发现总是有牌不是背面向上的，还得反过来，我很着急，后来在确认牌数量的时候，数不出正确的数目，就让队友又帮我买了一副牌。</p>]]></content>
     
@@ -164,11 +214,11 @@
   </entry>
   
   <entry>
-    <title>梦/我真是个起名天才</title>
+    <title>梦 / 我真是个起名天才</title>
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%88%91%E7%9C%9F%E6%98%AF%E4%B8%AA%E8%B5%B7%E5%90%8D%E5%A4%A9%E6%89%8D/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%88%91%E7%9C%9F%E6%98%AF%E4%B8%AA%E8%B5%B7%E5%90%8D%E5%A4%A9%E6%89%8D/</id>
     <published>2021-12-05T15:15:36.000Z</published>
-    <updated>2021-12-08T15:08:35.164Z</updated>
+    <updated>2021-12-11T14:07:55.404Z</updated>
     
     <content type="html"><![CDATA[<p>今天的梦又是一个大型连续剧。。<br>背景星际，但是一群人又会点火又会再生水资源的，醒来我都懵这是什么鬼畜修仙+科幻<br>现在已经有点记不清了<br>就记得主角1叫然倚暮（好像是，我记得是三个字，最后一个字很复杂），真名叫何然，不知道惹了什么事（大概是家族政变），处于逃亡状态。<br>中间应该发生了很多事，有一个半机械人（主角2）在追杀她，最后棋差一着被何然借助激光发射器干碎了半个身子，终止了他的追杀。<br>何然很冷静聪明，她根据半机械人的指示找到一个玩具熊，玩具熊背后的标签上会显示【未来一段时间内最大概率发生的事件】。<br>她看玩具熊的标签，上面写着【卫队包围了老宅】。<br>何然被抓起来了。<br>被抓回去开家庭会议。<br>她面对她妈和她奶奶，她爸死了。看过标签的何然知道要从奶奶这里突破，她妈是个不折不扣的反派。<br>然后就想不起来了……</p>]]></content>
     
@@ -185,11 +235,11 @@
   </entry>
   
   <entry>
-    <title>梦/文明间的战术欺骗</title>
+    <title>梦 / 文明间的战术欺骗</title>
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%96%87%E6%98%8E%E9%97%B4%E7%9A%84%E6%88%98%E6%9C%AF%E6%AC%BA%E9%AA%97/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%96%87%E6%98%8E%E9%97%B4%E7%9A%84%E6%88%98%E6%9C%AF%E6%AC%BA%E9%AA%97/</id>
     <published>2021-12-05T15:14:01.000Z</published>
-    <updated>2021-12-08T15:09:23.046Z</updated>
+    <updated>2021-12-11T14:07:06.889Z</updated>
     
     <content type="html"><![CDATA[<p>今天的梦是我声称发现适距中子星可以利用新武器将其引爆并取得与敌对地外文明的战争胜利。<br>该地外文明宣告投降，派出一位代表由我带领参观地球。<br>该代表的形象是抽象蓝绿鱼头人。<br>在参观过程中我告诉他：“其实并没有中子星，我骗你们的。”<br>参观在沉默中结束了。<br>蓝绿鱼头人代表回去后宣战。<br>于是我方引爆了中子星。</p>]]></content>
     
@@ -206,11 +256,11 @@
   </entry>
   
   <entry>
-    <title>梦/学校、医院和坍塌</title>
+    <title>梦 / 学校、医院和坍塌</title>
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E5%AD%A6%E6%A0%A1%E3%80%81%E5%8C%BB%E9%99%A2%E5%92%8C%E5%9D%8D%E5%A1%8C/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E5%AD%A6%E6%A0%A1%E3%80%81%E5%8C%BB%E9%99%A2%E5%92%8C%E5%9D%8D%E5%A1%8C/</id>
     <published>2021-12-05T15:12:29.000Z</published>
-    <updated>2021-12-08T15:04:36.787Z</updated>
+    <updated>2021-12-11T14:08:25.085Z</updated>
     
     <content type="html"><![CDATA[<p>一群人进入一座楼，白天。一楼有体育室和办公室，是学校一样的地方。<br>他们分组去搜查其他楼层，我就去检查体育室，一眼看到右边柜子上挂着一副世界地图。问办公室里的人能不能看，他们答应了我就靠近看。<br>突然地图掉下来，我吓了一跳。<br>地图后面的柜子，柜门是玻璃窗口，其他都是漆木。玻璃上歪歪扭扭写着三个方程还有其他鬼画符。拿手机拍下来以后回头看，发现人都不见了。<br>我退出体育室，去其他办公室搜查，没有发现什么。就决定上楼与其他人汇合。<br>楼上都是教室，我直到顶楼才看到人。<br>不过目睹的是一个长着猪脑袋和獠牙的人型怪物向一扇细窄的黑洞洞的门里伸出手，门里丢给他一个像沙包的东西。<br>他拿着这个进教室，不一会就拖了四个昏迷的人出来把他们放在一张圆桌前挨个坐好。我看见猪头人走了，蹭过去想摇醒他们。<br>没有用。<br>这时，我发现那扇细窄的黑门就在面前的墙壁上。试着伸出手说：“解药。”然后，门里浮现出一个干瘦的惨白人脸，一只手把沙包丢给我。<br>我把沙包拿给四个人闻，他们都醒了。<br>两个人结伴从另一个楼道走，我背起一个腿伤的人，问剩下的最后一个：“你不走吗？”<br>“我留下来拖延时间。”<br>我点点头：“我会回来找你。”<br>我下了楼，没有遇见意外。把腿伤的人放在大楼外后，我准备返回大楼。<br>路上遇见从另一边顺利下来的两个人。他们看见我回去很惊讶，我说里面还有一个人。他们劝道：“别去，太危险了。”<br>我摇摇头，进入大楼一层。这次不是学校了，而是超大医院的大厅。没有顶灯，所有的灯光都是屏幕发出的，米黄和草绿交错。医院里整齐地布置着座椅，座椅上坐满了候诊的人。<br>哪里会有医院把候诊大厅搞得跟火车站一样。<br>他们有电梯，我没用，跑到楼梯井里，一个包工头对着面前跪下的一个人说道：“你是榜眼？除非你们的状元也给我跪下，我才……”<br>状元走上前，我没有看到更多，上了楼，包工头的笑声很有穿透力。但我踏上二楼，发现楼梯很不稳定。<br>开始狂奔，我跑过一层，楼梯就塌一层。就在四楼，整座大楼倒塌。<br>一阵强烈的失重感后，我醒来了。</p>]]></content>
     
@@ -227,11 +277,11 @@
   </entry>
   
   <entry>
-    <title>梦/人鱼双子成功脱困了吗</title>
+    <title>梦 / 人鱼双子成功脱困了吗</title>
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E4%BA%BA%E9%B1%BC%E5%8F%8C%E5%AD%90%E6%88%90%E5%8A%9F%E8%84%B1%E5%9B%B0%E4%BA%86%E5%90%97/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E4%BA%BA%E9%B1%BC%E5%8F%8C%E5%AD%90%E6%88%90%E5%8A%9F%E8%84%B1%E5%9B%B0%E4%BA%86%E5%90%97/</id>
     <published>2021-12-05T15:07:44.000Z</published>
-    <updated>2021-12-08T15:05:29.672Z</updated>
+    <updated>2021-12-11T14:08:15.281Z</updated>
     
     <content type="html"><![CDATA[<p>有人指挥我进一家服装店，把里面的衣服拿出去以很便宜的价格叫卖，吸引到一些顾客正在议价时，突然发现哥哥的电话打不通。<br>直觉就是出事了，打119，立刻进行搜索，我和我爸去找人，找到一个很阴暗的地窖，里面都是大酒坛子。打开一个坛子，发现哥哥就在里面，虚弱无力的样子。<br>然后因为发现了秘密，我被塞进酒坛子里，我爸被杀。没有人来救，渐渐我发现在坛子里我们的腿变成了鱼尾。<br>之后，我和哥哥被丢到一个四方的水泥池里，里面水很浅，后来多了起来，还可以养鱼。有一天我们的手上都长了水泡，很痛，但是一个人告诉我们这是鱼卵，指着哥哥的手说他的已经孵化了，很快就好。确实是这样，我手上的水泡掉下来以后孵出一只黄色扁热带鱼，然后就好了。<br>一天涨潮，潮水没过小池子，我和哥哥趁机游出去。逃到一个很多人的岸边，大家都很惊讶地看着，然后有一个人把我们带走了，发现我们过了太久，不会认字说话，就让我们认字。<br>最后，发现鱼尾可以在完全干燥的情况下变成人腿，我和哥哥的头发变成红色，红色的短发蘑菇头，可以上岸走路但是不能晒太阳，就给我们定制了特别的衣服，紫色。<br>红色头发紫色衣服，两个人手牵手站在一段台阶顶端，似乎要去参加什么典礼。这是我最后梦到的画面。</p>]]></content>
     
@@ -248,11 +298,11 @@
   </entry>
   
   <entry>
-    <title>梦/真实的家庭伦理剧</title>
+    <title>梦 / 真实的家庭伦理剧</title>
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E7%9C%9F%E5%AE%9E%E7%9A%84%E5%AE%B6%E5%BA%AD%E4%BC%A6%E7%90%86%E5%89%A7/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E7%9C%9F%E5%AE%9E%E7%9A%84%E5%AE%B6%E5%BA%AD%E4%BC%A6%E7%90%86%E5%89%A7/</id>
     <published>2021-12-05T14:53:40.000Z</published>
-    <updated>2021-12-08T15:04:22.264Z</updated>
+    <updated>2021-12-11T14:08:29.116Z</updated>
     
     <content type="html"><![CDATA[<p>梦见爷爷鲨了奶奶，尸体藏在床下，我不知情地在床上睡了两天，第三天房子开始摇晃我看到床底下蔓延的血水才去叫我爸妈，爸妈拿菜刀把奶奶分尸了 ​​​</p>]]></content>
     
@@ -269,11 +319,11 @@
   </entry>
   
   <entry>
-    <title>梦/逃出犯罪集团窝点</title>
+    <title>梦 / 逃出犯罪集团窝点</title>
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E9%80%83%E5%87%BA%E7%8A%AF%E7%BD%AA%E9%9B%86%E5%9B%A2%E7%AA%9D%E7%82%B9/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E9%80%83%E5%87%BA%E7%8A%AF%E7%BD%AA%E9%9B%86%E5%9B%A2%E7%AA%9D%E7%82%B9/</id>
     <published>2021-12-05T14:52:39.000Z</published>
-    <updated>2021-12-08T15:05:06.863Z</updated>
+    <updated>2021-12-11T14:08:19.441Z</updated>
     
     <content type="html"><![CDATA[<p>啊，想不起来了，大概是我是一个十岁小孩，逃出犯罪集团窝点，同行的大哥塞给我一把有我高的枪，连人带车沉到湖里。<br>我把唯一一发子弹打空后，逃到一个农庄处，和当地人讨价还价，把枪卖了，换来两把手枪和若干子弹。对了，枪是电浆枪。 ​​​</p>]]></content>
     
@@ -392,52 +442,6 @@
     
     
     <summary type="html">“女主我可以！！！”</summary>
-    
-    
-    
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
-    
-    <category term="读后感" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
-    
-    <category term="小说" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E8%AF%BB%E5%90%8E%E6%84%9F/%E5%B0%8F%E8%AF%B4/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>《奥术神座》by爱潜水的乌贼</title>
-    <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E8%AF%BB%E5%90%8E%E6%84%9F/%E5%B0%8F%E8%AF%B4/%E3%80%8A%E5%A5%A5%E6%9C%AF%E7%A5%9E%E5%BA%A7%E3%80%8Bby%E7%88%B1%E6%BD%9C%E6%B0%B4%E7%9A%84%E4%B9%8C%E8%B4%BC/"/>
-    <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E8%AF%BB%E5%90%8E%E6%84%9F/%E5%B0%8F%E8%AF%B4/%E3%80%8A%E5%A5%A5%E6%9C%AF%E7%A5%9E%E5%BA%A7%E3%80%8Bby%E7%88%B1%E6%BD%9C%E6%B0%B4%E7%9A%84%E4%B9%8C%E8%B4%BC/</id>
-    <published>2021-12-05T13:22:18.000Z</published>
-    <updated>2021-12-08T15:20:35.264Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://book.qidian.com/info/2643379/">奥术神座</a><br>作者：爱潜水的乌贼<br>主角：路西恩/娜塔莎<br>cp：娜塔莎x路西恩（狗头<br>视角：男主BG<br>分类：正剧，乌贼的书还用多说吗<br>世界观：试图建立起魔法科学化体系的，西幻<br>状态：完结</p><hr><h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>“知识就等于力量。”<br>“所谓神，不过是强大一点的奥术师。”<br>带着一大堆知识的夏风穿越而来了。</p><hr><h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>该书是我尝试了数本拉胯言情之后不得不找来洗眼的小说。<br>数年前，我没挺过十章，错误地认为这是一本普通的、随大流的架空西方玄幻小说。<br>我太天真了！<br>可恶，要是我早点看，里面所讲的学术体系恐怕会成为我的学术启蒙……<br>就算是现在，乌贼还是写出了我不知道的东西。这可比一般的没营养西幻小说有意思多了，恕我直言，我曾经也想象过“用科学规范魔法”，限于知识水平不够，完全想不出来。<br>我看过的两本尝试把科学和魔法结合起来的小说，一本是《hp理性之道》，一本就是《奥术神座》。其他的没有留给我很深的印象（能给我留下印象的只有设定太弱智那一挂）。<br>好吧，虽然路西恩的经历很大程度上neta了科学史的各位大佬，这也不妨碍我看得开心，如果我看过那些人物传记，恐怕能体验到双厨狂喜的快乐，可惜我没有。<br>喜欢女主。乌贼能把女主塑造得比女频作者还好也真是，点名批评最近看的那三本言情。<br>我怀疑乌贼写男硬说女[doge]不过这样也没啥不好，BG党，BL党，GB党全部都能磕到粮（草（一种植物）。<br>小路感觉有点像克莱恩。看过《一世之尊》《诡秘之主》《奥术神座》《长夜余火》，其实主角的内核都是一脉相承的：温暖有底线。<br>没看完就是说。</p>]]></content>
-    
-    
-    <summary type="html">“我的学术启蒙小说（大雾）”</summary>
-    
-    
-    
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
-    
-    <category term="读后感" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
-    
-    <category term="小说" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E8%AF%BB%E5%90%8E%E6%84%9F/%E5%B0%8F%E8%AF%B4/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>《魔鬼的体温》by藤萝为枝</title>
-    <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E8%AF%BB%E5%90%8E%E6%84%9F/%E5%B0%8F%E8%AF%B4/%E3%80%8A%E9%AD%94%E9%AC%BC%E7%9A%84%E4%BD%93%E6%B8%A9%E3%80%8Bby%E8%97%A4%E8%90%9D%E4%B8%BA%E6%9E%9D/"/>
-    <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E8%AF%BB%E5%90%8E%E6%84%9F/%E5%B0%8F%E8%AF%B4/%E3%80%8A%E9%AD%94%E9%AC%BC%E7%9A%84%E4%BD%93%E6%B8%A9%E3%80%8Bby%E8%97%A4%E8%90%9D%E4%B8%BA%E6%9E%9D/</id>
-    <published>2021-12-05T13:18:50.000Z</published>
-    <updated>2021-12-08T15:16:47.320Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=3945423">魔鬼的体温</a><br>作者：藤萝为枝<br>主角：贝瑶/裴川<br>cp：裴川x贝瑶<br>视角：女主BG<br>分类：正剧，主要是写男女主谈恋爱<br>世界观：现代，重生<br>状态：完结</p><hr><h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>重生回九六年，粉团子贝瑶四岁，敲开了对面的门。<br>那扇门后，住了一个二十年后的世界灾难性魔鬼。<br>魔鬼裴川现在五岁，双腿残废，内向自卑。</p><p>后来他们十七岁。<br>贝瑶成了高中部校花。<br>裴川冷着脸，手指死死扣住轮椅，警告她：“不许再说喜欢我，否则……”<br>贝瑶抱住他脖子，甜甜对他笑。<br>裴川情不自禁扣住她的腰，压抑的情感溃不成军。</p><p>当了他两辈子的心肝，贝瑶想知道，魔鬼是怎样的体温。</p><hr><h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>开头惊艳到我，女主重生，是“想起来了，但没完全想起来”的设定，幼儿园时期只能有小学三年级的记忆并逐年后移。贝瑶最开始写下了未来自己的死因，这点真不错，不像有些作者非要藏着掖着。<br>小时候的细节描写很好，很有代入感。想吐槽的一个设定——为啥大家都要评校花啊。看了两本，两本都这样，什么奇怪的风俗，大部分人真没那么闲。<br>目前进度60%左右，已经开始腻味了。<br>贝瑶：非常圣母，非常白莲花，和我看的上一本形成了巨大的反差（对我说的就是你恶毒继姐）。看的我挺隔应的。虽然大事上不犯糊涂吧，但是成校花以后作者老特写外貌，烦。<br>还有就是，这人性格不见长进的，小时候能天真，长大了咋还那样，就摁白莲花。杏儿眼这三个字我都快看不认识了（夸张<br>裴川：身世挺惨，因为父亲警察职业，仇家报复儿子，裴川被砍断双腿终身残疾。这哥们我开始还觉得挺可怜，后来也烦他。你说天天搁着心理活动“我配不上她”“我脏，我残疾”“我不能毁了她”……一直到60%还是这个样子！一点没变！</p><p>俩主角都像长不大的孩子。</p><p>校花校草评选是坏文明，建议不要学，学了也别搞得好像影响多广有多重要似的。</p>]]></content>
-    
-    
-    <summary type="html">“守护全世界最好的瑶瑶……你也是校花啊，那没事了。”</summary>
     
     
     
