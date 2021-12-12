@@ -2102,6 +2102,7 @@ pre code {
 .posts-expand .post-meta-container .post-description {
   font-size: 0.875em;
   margin-top: 2px;
+  text-align: center;
 }
 .posts-expand .post-meta-container time {
   border-bottom: 1px dashed #999;
@@ -2755,7 +2756,7 @@ mark.search-keyword {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ff54b8;
+  background: #d1e2aa;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
