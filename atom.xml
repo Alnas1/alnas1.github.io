@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Alnasl的博客</title>
   
-  <subtitle>斜月沉沉藏海雾，碣石潇湘无限路。不知乘月几人归，落月摇情满江树。</subtitle>
+  <subtitle>幸运也会不期而至</subtitle>
   <link href="https://alnas1.github.io/atom.xml" rel="self"/>
   
   <link href="https://alnas1.github.io/"/>
-  <updated>2021-12-08T15:10:08.000Z</updated>
+  <updated>2021-12-13T15:42:38.249Z</updated>
   <id>https://alnas1.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>拯救者r9000p安全下车</title>
+    <link href="https://alnas1.github.io/2021/12/13/%E6%97%A5%E5%B8%B8/%E6%8B%AF%E6%95%91%E8%80%85r9000p%E5%AE%89%E5%85%A8%E4%B8%8B%E8%BD%A6/"/>
+    <id>https://alnas1.github.io/2021/12/13/%E6%97%A5%E5%B8%B8/%E6%8B%AF%E6%95%91%E8%80%85r9000p%E5%AE%89%E5%85%A8%E4%B8%8B%E8%BD%A6/</id>
+    <published>2021-12-13T14:00:33.000Z</published>
+    <updated>2021-12-13T15:42:38.249Z</updated>
+    
+    <content type="html"><![CDATA[<p>7588买到，我感觉是香的很。<br>果然这东西就是早买早享受，旧电脑已经被打入冷宫了。<br>现在正在逐步把旧电脑的软件移植过来。<br><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_160922.jpg" alt="IMG_20211212_160922"><br><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153253.jpg" alt="IMG_20211212_153253"><br><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153512.jpg" alt="IMG_20211212_153512"><br><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153833.jpg" alt="IMG_20211212_153833"><br><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211213234219.png" alt="20211213234219"></p>]]></content>
+    
+    
+    <summary type="html">接下来就等淘宝买贵必赔退钱了</summary>
+    
+    
+    
+    <category term="日常" scheme="https://alnas1.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="碎碎念" scheme="https://alnas1.github.io/categories/%E6%97%A5%E5%B8%B8/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    
+    <category term="“花花世界我一人干翻”" scheme="https://alnas1.github.io/tags/%E2%80%9C%E8%8A%B1%E8%8A%B1%E4%B8%96%E7%95%8C%E6%88%91%E4%B8%80%E4%BA%BA%E5%B9%B2%E7%BF%BB%E2%80%9D/"/>
+    
+  </entry>
   
   <entry>
     <title>▇▇▇▇大学自习室</title>
@@ -113,7 +136,7 @@
     <link href="https://alnas1.github.io/2021/12/11/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E6%91%B8%E7%88%AC%E6%BB%9A%E6%89%93%E6%94%B9%E5%8D%9A%E5%AE%A2(next)%20/"/>
     <id>https://alnas1.github.io/2021/12/11/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E6%91%B8%E7%88%AC%E6%BB%9A%E6%89%93%E6%94%B9%E5%8D%9A%E5%AE%A2(next)%20/</id>
     <published>2021-12-10T17:09:52.000Z</published>
-    <updated>2021-12-12T15:02:50.851Z</updated>
+    <updated>2021-12-13T06:16:24.407Z</updated>
     
     <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在HTML和hexo方面完全的小白，此前只懂一点C语言和MATLAB，也没想为了一个博客学完这些东西，遂只有按“想实现什么功能-百度-踩坑-实现功能或者没有”这个流程解决问题。以下是一些记录。</p><hr><h3 id="主页"><a href="#主页" class="headerlink" title="主页"></a>主页</h3><p><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112110113327.png"><br>我喜欢那种卡片样式的，简单凝练，信息密度大一点，这个主题为了排版美观失去了信息密集度。所以想改得紧凑。</p><h4 id="居中摘要"><a href="#居中摘要" class="headerlink" title="居中摘要"></a>居中摘要</h4><p>文件路径MyWeb\themes\next\layout\ _macro\post.njk</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;#################&#125;</span><br><span class="line">&#123;### POST BODY ###&#125;</span><br><span class="line">&#123;#################&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;post-body&#123;% if post.direction and post.direction.toLowerCase() === &#x27;rtl&#x27; %&#125; rtl&#123;% endif %&#125;&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;articleBody&quot;</span>&gt;</span></span><br><span class="line">  &#123;%- if is_index %&#125;</span><br><span class="line">    &#123;%- if post.description and theme.excerpt_description %&#125;</span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center&quot;</span>&gt;</span>&#123;&#123; post.description &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span> </span><br><span class="line">      <span class="comment">&lt;!--noindex--&gt;</span></span><br></pre></td></tr></table></figure><h4 id="橙色部分"><a href="#橙色部分" class="headerlink" title="橙色部分"></a>橙色部分</h4><p>文件路径MyWeb\themes\next\source\css\ _common\components\post\post-header.styl</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.posts-expand .post-header &#123;</span><br><span class="line">  font-size: $font-size-large;</span><br><span class="line">  margin-bottom: 60px;</span><br><span class="line">  text-align: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="蓝色虚线框部分"><a href="#蓝色虚线框部分" class="headerlink" title="蓝色虚线框部分"></a>蓝色虚线框部分</h4><p>文件路径MyWeb\themes\next\source\css\ _variables\base.styl</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//  .post-expand .post-eof</span><br><span class="line">//  In Muse scheme, margin above and below the post separator</span><br><span class="line">$post-eof-margin-top          = 10px; //  or 160px for more white space;</span><br><span class="line">$post-eof-margin-bottom       = 10px; //  or 120px for less white space;</span><br></pre></td></tr></table></figure><h3 id="博客标题"><a href="#博客标题" class="headerlink" title="博客标题"></a>博客标题</h3><h4 id="与网页顶部的距离"><a href="#与网页顶部的距离" class="headerlink" title="与网页顶部的距离"></a>与网页顶部的距离</h4><p><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112112048693.png"><br>文件路径MyWeb\themes\next\source\css\ _schemes\ _header.styl</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.header-inner &#123;</span><br><span class="line">  padding-top: 40px;</span><br><span class="line"></span><br><span class="line">  +mobile() &#123;</span><br><span class="line">    padding-top: 50px;</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -419,29 +442,6 @@
     
     
     <summary type="html">“这可是我人生中第一次点火啊！”</summary>
-    
-    
-    
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
-    
-    <category term="观后感" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/"/>
-    
-    <category term="电影" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>《困在时间里的父亲》（The Father）</title>
-    <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E5%9B%B0%E5%9C%A8%E6%97%B6%E9%97%B4%E9%87%8C%E7%9A%84%E7%88%B6%E4%BA%B2%E3%80%8B/"/>
-    <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E5%9B%B0%E5%9C%A8%E6%97%B6%E9%97%B4%E9%87%8C%E7%9A%84%E7%88%B6%E4%BA%B2%E3%80%8B/</id>
-    <published>2021-12-05T13:51:36.000Z</published>
-    <updated>2021-12-08T15:00:40.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss39063/?from=search&seid=13023073866578101878&spm_id_from=333.337.0.0">困在时间里的父亲</a>（The Father）<br>导演：弗罗莱恩 泽勒<br>主角：安东尼/安娜/詹姆斯/劳拉<br>cp：无<br>视角：父亲视角，穿插旁观者视角<br>世界观：现代<br>观影点：宿舍</p><hr><h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>这是b站付费观看的片子，拿b币券买了。<br>不同于《记忆碎片》，在那个电影里面，好歹观众看完以后会发现原来只要再把剧情倒着看一遍就能理解；这个片子的“记忆”是混杂着幻觉的。《记忆碎片》的叙事好比反序排放的书本章节，《父亲》的叙事则是一把混着人工钻的钻石碎屑，指缝滤过大量粉末，有一个人努力地用手指把掌心中剩下的真假钻石碎屑拼接在一起。<br>不同记忆、场景间的切换极为自然，它在向你展示一个患上阿兹海默的老人的世界。看完以后觉得非常疲惫，九十多分钟里在餐桌，在客厅，在卧室，在医院，听着不同的人的说辞，猜着他们的身份，前后矛盾，左右为难，上一秒女儿走出房间，下一秒另一个人自称是他的女儿。<br>我在看的时候总想着看看当时是几月几号，后来发现这个行为和父亲找表是一样的。<br>我想着为什么不让女儿解释清楚到底发生了什么？也许女儿已经解释过很多很多次了。<br>老人不想让女儿离开他身边，他说：“求你别走。”女儿不明白，她只是去隔壁房间开一下门，为什么父亲怕她离开。对于父亲来说，也许她出了门，回来的会是另外一个人。<br>整个故事的剧情可能是这样的（瞎猜）：小女儿出事以后，父亲受到了刺激，选择把出车祸这件事遗忘，同时他患上了阿兹海默症。（因为全篇都没有小女儿出现，除了医院那一幕，所以我怀疑他在小女儿出车祸以后拒绝现实才得病的。）<br>大女儿承担起照顾父亲的责任，她努力了很久，给父亲请护工，因为父亲不愿意去养老院，父亲与请来的数个护工闹翻，大女儿无奈把父亲接到自己家里看护。<br>但是大女儿的丈夫对此非常不满，某天他忍不住打了父亲，导致大女儿和其丈夫离婚。<br>于是丈夫变成前夫。大女儿又照顾了她的父亲五年，直到她爱上了另一个人。她决定把父亲送到养老院，因为她要和她爱的人住在巴黎。<br>父亲最终妥协了，住进养老院，女儿时不时会回来与他过周末。<br>其中有一个细节，我最开始一直觉得父亲说的小女儿不存在，他可能错乱了把大女儿的幼年时期和她本人割裂开，大女儿小女儿就是一个人。后来看见照片里他确实有两个女儿……<br>看完以后：正经人谁写日记啊……也许还是要的</p>]]></content>
-    
-    
-    <summary type="html">“记忆碎片，但是扭一扭，舔一舔再泡一泡。”</summary>
     
     
     
