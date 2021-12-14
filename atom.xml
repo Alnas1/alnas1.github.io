@@ -6,7 +6,7 @@
   <link href="https://alnas1.github.io/atom.xml" rel="self"/>
   
   <link href="https://alnas1.github.io/"/>
-  <updated>2021-12-13T15:42:38.249Z</updated>
+  <updated>2021-12-14T09:59:49.478Z</updated>
   <id>https://alnas1.github.io/</id>
   
   <author>
@@ -17,13 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>增加一个画册功能</title>
+    <link href="https://alnas1.github.io/2021/12/14/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E5%A2%9E%E5%8A%A0%E4%B8%80%E4%B8%AA%E7%94%BB%E5%86%8C%E5%8A%9F%E8%83%BD/"/>
+    <id>https://alnas1.github.io/2021/12/14/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E5%A2%9E%E5%8A%A0%E4%B8%80%E4%B8%AA%E7%94%BB%E5%86%8C%E5%8A%9F%E8%83%BD/</id>
+    <published>2021-12-14T06:54:31.000Z</published>
+    <updated>2021-12-14T09:59:49.478Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="0-实现效果和教程"><a href="#0-实现效果和教程" class="headerlink" title="0.实现效果和教程"></a>0.实现效果和教程</h3><h4 id="样式1"><a href="#样式1" class="headerlink" title="样式1"></a>样式1</h4><p>效果:<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214145958.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214145958.png" width=50%></a><br>教程：<a href="https://tding.top/archives/607c3b85.html">Hexo-NexT 实现相册</a>  </p><h4 id="样式2"><a href="#样式2" class="headerlink" title="样式2"></a>样式2</h4><p>效果：不知道，我失败了，会报错<br>教程：<a href="https://www.cnblogs.com/LuisYang/p/9356488.html">Hexo 相册实践</a>  </p><h4 id="样式3"><a href="#样式3" class="headerlink" title="样式3"></a>样式3</h4><p>效果：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214175854.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214175854.png" width=70%></a><br>教程：<a href="https://rebootcat.com/2020/09/19/nextphotowall/">Hexo Next 博客添加相册瀑布流</a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+    
+    
+    <summary type="html">“虽然我还没想好要放什么上去”</summary>
+    
+    
+    
+    <category term="关于博客" scheme="https://alnas1.github.io/categories/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="博客" scheme="https://alnas1.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>拯救者r9000p安全下车</title>
     <link href="https://alnas1.github.io/2021/12/13/%E6%97%A5%E5%B8%B8/%E6%8B%AF%E6%95%91%E8%80%85r9000p%E5%AE%89%E5%85%A8%E4%B8%8B%E8%BD%A6/"/>
     <id>https://alnas1.github.io/2021/12/13/%E6%97%A5%E5%B8%B8/%E6%8B%AF%E6%95%91%E8%80%85r9000p%E5%AE%89%E5%85%A8%E4%B8%8B%E8%BD%A6/</id>
     <published>2021-12-13T14:00:33.000Z</published>
-    <updated>2021-12-13T15:42:38.249Z</updated>
+    <updated>2021-12-14T08:48:43.887Z</updated>
     
-    <content type="html"><![CDATA[<p>7588买到，我感觉是香的很。<br>果然这东西就是早买早享受，旧电脑已经被打入冷宫了。<br>现在正在逐步把旧电脑的软件移植过来。<br><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_160922.jpg" alt="IMG_20211212_160922"><br><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153253.jpg" alt="IMG_20211212_153253"><br><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153512.jpg" alt="IMG_20211212_153512"><br><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153833.jpg" alt="IMG_20211212_153833"><br><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211213234219.png" alt="20211213234219"></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>7588买到，我感觉是香的很。<br>果然这东西就是早买早享受，旧电脑已经被打入冷宫了。<br>现在正在逐步把旧电脑的软件移植过来。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_160922.jpg" title="IMG_20211212_160922" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_160922.jpg" alt="IMG_20211212_160922"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153253.jpg" title="IMG_20211212_153253" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153253.jpg" alt="IMG_20211212_153253"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153512.jpg" title="IMG_20211212_153512" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153512.jpg" alt="IMG_20211212_153512"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153833.jpg" title="IMG_20211212_153833" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153833.jpg" alt="IMG_20211212_153833"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211213234219.png" title="20211213234219" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211213234219.png" alt="20211213234219"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">接下来就等淘宝买贵必赔退钱了</summary>
@@ -31,8 +52,6 @@
     
     
     <category term="日常" scheme="https://alnas1.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
-    
-    <category term="碎碎念" scheme="https://alnas1.github.io/categories/%E6%97%A5%E5%B8%B8/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
     
     <category term="“花花世界我一人干翻”" scheme="https://alnas1.github.io/tags/%E2%80%9C%E8%8A%B1%E8%8A%B1%E4%B8%96%E7%95%8C%E6%88%91%E4%B8%80%E4%BA%BA%E5%B9%B2%E7%BF%BB%E2%80%9D/"/>
@@ -44,18 +63,18 @@
     <link href="https://alnas1.github.io/2021/12/12/%E6%96%87%E5%AD%97/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/%E2%96%87%E2%96%87%E2%96%87%E2%96%87%E5%A4%A7%E5%AD%A6%E8%87%AA%E4%B9%A0%E5%AE%A4/"/>
     <id>https://alnas1.github.io/2021/12/12/%E6%96%87%E5%AD%97/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/%E2%96%87%E2%96%87%E2%96%87%E2%96%87%E5%A4%A7%E5%AD%A6%E8%87%AA%E4%B9%A0%E5%AE%A4/</id>
     <published>2021-12-12T14:50:05.883Z</published>
-    <updated>2021-12-08T15:10:08.000Z</updated>
+    <updated>2021-12-14T08:56:34.400Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="【内部环境】"><a href="#【内部环境】" class="headerlink" title="【内部环境】"></a>【内部环境】</h3><p>正对门的位置，挂着《▇▇▇▇大学自习室守则》。右手边是可移动的白板，白板上有一些凌乱的字和线条，可以在白板下沿找到六支黑色的白板笔和笔擦。<br>三角形可活动课桌被拼成正六边形置于自习室正中，桌面干净整洁，各配有一把椅子。<br>左手边是一排电脑。共六台台式机，配高脚凳。此外，该区域还有存包柜、饮水机、自动贩卖机等设施。</p><h3 id="《▇▇▇▇大学自习室守则》"><a href="#《▇▇▇▇大学自习室守则》" class="headerlink" title="《▇▇▇▇大学自习室守则》"></a>《▇▇▇▇大学自习室守则》</h3><blockquote><ol><li>自习室仅对本校新生年级开放，自习室内设有6台电脑，设专线网络，非校园网渠道，您可以在此自由地学习。</li><li>请不要做任何与学习本专业课程或谈论校内规则无关的事，否则您将失去再次进入自习室的资格。</li><li>自习室内禁止<em>任何</em>植物出现。不论是活的还是死的。</li><li>自习室内最多同时存在6个人。</li><li>自习室内是<em>绝对</em>安全的。</li><li>自习室可以是校内的任何一个教室，您只能在孤身一人的情况下找到它。门上贴有“自习室”的标语。</li><li>感谢您的光临，牢记校训是“知山知水，树木树人”。祝您学习生活愉快。</li></ol></blockquote><h3 id="【白板上可辨认的痕迹】"><a href="#【白板上可辨认的痕迹】" class="headerlink" title="【白板上可辨认的痕迹】"></a>【白板上可辨认的痕迹】</h3><p>正中央最显眼的字迹：电脑里有我们整理好的结论！！接下来就交给你们了！<br>四周部分字体：“它到底是什么？”、“不管是什么都不是好东西”、“失忆”、“遗失”、“为什么是植物？”、“它是活的吗”、“只剩我们了”</p><h3 id="【关于“它”的现有结论-docx】"><a href="#【关于“它”的现有结论-docx】" class="headerlink" title="【关于“它”的现有结论.docx】"></a>【关于“它”的现有结论.docx】</h3><p>所有电脑的桌面上都有一个文档《关于“它”的现有结论.docx》。<br>内容如下：<br>同学你好！<br>被自习室选中，证明你拥有良好的逻辑思维能力，但不幸的是，被选中同样意味着“它”知道了你。<br>你肯定已经从录取通知书和某些校规的怪异之处有所猜测了。这个学校中盘踞着一个“怪异”。我们称呼为“它”。希望“它”的存在能在你这一代新生手里终结。<br>首先，我要告诉你的是，“它”最确凿的习性：狩猎和捕食习性。<br>我推测它以信息为线索进行狩猎。简言之，凡在自习室外、学校内提及它，都会被标记，在接下来的一天内它找上你，吃掉你的脑子。<br>哈哈，这么说夸张了点。它会吃掉你的记忆，把“它”的存在本身从你的认知世界中抹除。它能干涉物质现实，如果你记下了任何关于它的文字、图画，都会被一并抹除。<br>好消息是，你进入自习室后，它的标记就不再生效。除非你出去后不小心嘴欠或者手欠，再次被它标记。你仍然可以通过进入自习室再出来这一方法抹去标记。<br>其次，经历过许多次尝试，我们实验证明了“它”只存在于校内，一旦出校就会失去对它的认知，回来则重新获得。<br>第三，我们认为“它”与校内其他怪谈是兼容的，证据在于被“它”袭击以后，受害人不会忘记校内其他楼宇的规则。或者“不抹除其它规则的记忆”这条规则也是“它”的习性之一？<br>最后，来过自习室的同学们，我们约定了一个暗号。“校训是’知山知水，树木树人’”。如果有人在自习室外对你说出了这一句话，你可以以鼓掌两次回应他。这样你们可以确认对方是同盟。如果被你问到的人莫名其妙地反驳你“校训是’替河山妆成锦绣，把国土绘成丹青’”，立刻终止对话，离开，这个人已经被替换了。<br>祝你们成功。</p><h3 id="【在推开桌子时，一张被叠得很小的纸条掉了下来】"><a href="#【在推开桌子时，一张被叠得很小的纸条掉了下来】" class="headerlink" title="【在推开桌子时，一张被叠得很小的纸条掉了下来】"></a>【在推开桌子时，一张被叠得很小的纸条掉了下来】</h3><p>（潦草的字迹）不要留下来！不要再进入自习室了！！“它”是无法被消灭的！！到外面去把一切说给“它”听吧，然后忘掉这件事情，忘掉忘掉忘掉忘掉忘掉亡</p><h3 id="【白板的反面】"><a href="#【白板的反面】" class="headerlink" title="【白板的反面】"></a>【白板的反面】</h3><p>（巨大的反复涂粗的字迹）<br><strong>你 凝 视 着 它 ， 它 也 凝 视 着 你</strong></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="【内部环境】"><a href="#【内部环境】" class="headerlink" title="【内部环境】"></a>【内部环境】</h3><p>正对门的位置，挂着《▇▇▇▇大学自习室守则》。右手边是可移动的白板，白板上有一些凌乱的字和线条，可以在白板下沿找到六支黑色的白板笔和笔擦。<br>三角形可活动课桌被拼成正六边形置于自习室正中，桌面干净整洁，各配有一把椅子。<br>左手边是一排电脑。共六台台式机，配高脚凳。此外，该区域还有存包柜、饮水机、自动贩卖机等设施。</p><h3 id="《▇▇▇▇大学自习室守则》"><a href="#《▇▇▇▇大学自习室守则》" class="headerlink" title="《▇▇▇▇大学自习室守则》"></a>《▇▇▇▇大学自习室守则》</h3><blockquote><ol><li>自习室仅对本校新生年级开放，自习室内设有6台电脑，设专线网络，非校园网渠道，您可以在此自由地学习。</li><li>请不要做任何与学习本专业课程或谈论校内规则无关的事，否则您将失去再次进入自习室的资格。</li><li>自习室内禁止<em>任何</em>植物出现。不论是活的还是死的。</li><li>自习室内最多同时存在6个人。</li><li>自习室内是<em>绝对</em>安全的。</li><li>自习室可以是校内的任何一个教室，您只能在孤身一人的情况下找到它。门上贴有“自习室”的标语。</li><li>感谢您的光临，牢记校训是“知山知水，树木树人”。祝您学习生活愉快。</li></ol></blockquote><h3 id="【白板上可辨认的痕迹】"><a href="#【白板上可辨认的痕迹】" class="headerlink" title="【白板上可辨认的痕迹】"></a>【白板上可辨认的痕迹】</h3><p>正中央最显眼的字迹：电脑里有我们整理好的结论！！接下来就交给你们了！<br>四周部分字体：“它到底是什么？”、“不管是什么都不是好东西”、“失忆”、“遗失”、“为什么是植物？”、“它是活的吗”、“只剩我们了”</p><h3 id="【关于“它”的现有结论-docx】"><a href="#【关于“它”的现有结论-docx】" class="headerlink" title="【关于“它”的现有结论.docx】"></a>【关于“它”的现有结论.docx】</h3><p>所有电脑的桌面上都有一个文档《关于“它”的现有结论.docx》。<br>内容如下：<br>同学你好！<br>被自习室选中，证明你拥有良好的逻辑思维能力，但不幸的是，被选中同样意味着“它”知道了你。<br>你肯定已经从录取通知书和某些校规的怪异之处有所猜测了。这个学校中盘踞着一个“怪异”。我们称呼为“它”。希望“它”的存在能在你这一代新生手里终结。<br>首先，我要告诉你的是，“它”最确凿的习性：狩猎和捕食习性。<br>我推测它以信息为线索进行狩猎。简言之，凡在自习室外、学校内提及它，都会被标记，在接下来的一天内它找上你，吃掉你的脑子。<br>哈哈，这么说夸张了点。它会吃掉你的记忆，把“它”的存在本身从你的认知世界中抹除。它能干涉物质现实，如果你记下了任何关于它的文字、图画，都会被一并抹除。<br>好消息是，你进入自习室后，它的标记就不再生效。除非你出去后不小心嘴欠或者手欠，再次被它标记。你仍然可以通过进入自习室再出来这一方法抹去标记。<br>其次，经历过许多次尝试，我们实验证明了“它”只存在于校内，一旦出校就会失去对它的认知，回来则重新获得。<br>第三，我们认为“它”与校内其他怪谈是兼容的，证据在于被“它”袭击以后，受害人不会忘记校内其他楼宇的规则。或者“不抹除其它规则的记忆”这条规则也是“它”的习性之一？<br>最后，来过自习室的同学们，我们约定了一个暗号。“校训是’知山知水，树木树人’”。如果有人在自习室外对你说出了这一句话，你可以以鼓掌两次回应他。这样你们可以确认对方是同盟。如果被你问到的人莫名其妙地反驳你“校训是’替河山妆成锦绣，把国土绘成丹青’”，立刻终止对话，离开，这个人已经被替换了。<br>祝你们成功。</p><h3 id="【在推开桌子时，一张被叠得很小的纸条掉了下来】"><a href="#【在推开桌子时，一张被叠得很小的纸条掉了下来】" class="headerlink" title="【在推开桌子时，一张被叠得很小的纸条掉了下来】"></a>【在推开桌子时，一张被叠得很小的纸条掉了下来】</h3><p>（潦草的字迹）不要留下来！不要再进入自习室了！！“它”是无法被消灭的！！到外面去把一切说给“它”听吧，然后忘掉这件事情，忘掉忘掉忘掉忘掉忘掉亡</p><h3 id="【白板的反面】"><a href="#【白板的反面】" class="headerlink" title="【白板的反面】"></a>【白板的反面】</h3><p>（巨大的反复涂粗的字迹）<br><strong>你 凝 视 着 它 ， 它 也 凝 视 着 你</strong></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">有一、上瘾</summary>
     
     
     
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
+    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
     
-    <category term="规则类怪谈" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/"/>
+    <category term="规则类怪谈" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/"/>
     
     
     <category term="规则类怪谈" scheme="https://alnas1.github.io/tags/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/"/>
@@ -67,18 +86,18 @@
     <link href="https://alnas1.github.io/2021/12/12/%E6%96%87%E5%AD%97/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/%E2%96%87%E2%96%87%E2%96%87%E2%96%87%E5%A4%A7%E5%AD%A6%E6%96%B0%E7%BB%BF%E6%8C%87%E5%8D%97/"/>
     <id>https://alnas1.github.io/2021/12/12/%E6%96%87%E5%AD%97/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/%E2%96%87%E2%96%87%E2%96%87%E2%96%87%E5%A4%A7%E5%AD%A6%E6%96%B0%E7%BB%BF%E6%8C%87%E5%8D%97/</id>
     <published>2021-12-12T14:50:05.881Z</published>
-    <updated>2021-12-08T15:10:06.000Z</updated>
+    <updated>2021-12-14T08:56:35.331Z</updated>
     
-    <content type="html"><![CDATA[<p>亲爱的新绿们大家好！欢迎大家来到▇▇▇▇大学，预祝你们渡过愉快的大学生涯！<br>入学新绿们请知悉以下规则，以确保在校期间人身与财产安全不受侵犯。</p><blockquote><ol><li>新绿要及时了解报到条件、时间和要求，不符合报到条件的新绿不报到。若违反上述规定，该生应及时检查录取通知书是否存在异常。</li><li>2021届录取通知书为“楸木”。主图案倒数第四折应为根系最密集折。若新绿在任何时候发现最密集折位置异常，不要告知任何人。不要扫描二维码。记下异常位置与正常位置间隔几折。立刻将通知书还原至初始状态并捡起一片叶子，任何叶子都行，随后将其夹在随身携带的书里。</li><li>本学院报到处若向你提供导航服务，不要信任，跟着你的手机导航走。</li><li>不要剥开一卡通的表层。</li><li>在校内看见标有自习室标牌的房间，不要进去，本校不设有自习室。</li><li>学研的电梯不在五层以下停留。若你不慎按亮低楼层按钮，它是无法取消的。你必须在你按亮的楼层出电梯，走楼梯至你想要前往的楼层，否则后果自负。</li><li>不要连接校园网。时刻注意手机是否连上校园网，一旦发现立即断开连接。</li><li>若必须连接校园网，请使用学研A座机房，离开时记得刷卡下机，否则后果自负。</li><li>校训是“知山知水，树木树人”，若在谈论此事时，遇到一口咬定校训是“替河山装成锦绣，把国土绘成丹青”的人，立刻终止对话，他们不是新绿。</li><li>二教五层没有挂照片，若你发现二教五层挂有学研的照片，立刻通知保卫处然后离开二教。</li><li>不得围挂床帘并被宿管发现。若宿管发现此事该生应及时检查录取通知书是否存在异常。</li><li>不得携带大功率电器进宿舍楼并被宿管发现。若宿管发现此事该生应及时检查录取通知书是否存在异常。</li><li>不得携带家具进宿舍楼并被宿管发现。若宿管发现此事该生应及时检查录取通知书是否存在异常。</li><li>不要在早晨6：00前到达图书馆。若你在这以前到达了，应前往五层占一个座，营造出有人的假象。之后立刻离开图书馆，当天晚上图书馆响铃前不得再次进入。</li><li>可以觉得累，失落，茫然，找不到人生的意义，但不要认真填写学校心理量表。</li><li>接受食堂的价格，最好做到赞不绝口。</li><li>校园内不存在电动车。</li><li>非必要，不出校。</li></ol></blockquote>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>亲爱的新绿们大家好！欢迎大家来到▇▇▇▇大学，预祝你们渡过愉快的大学生涯！<br>入学新绿们请知悉以下规则，以确保在校期间人身与财产安全不受侵犯。</p><blockquote><ol><li>新绿要及时了解报到条件、时间和要求，不符合报到条件的新绿不报到。若违反上述规定，该生应及时检查录取通知书是否存在异常。</li><li>2021届录取通知书为“楸木”。主图案倒数第四折应为根系最密集折。若新绿在任何时候发现最密集折位置异常，不要告知任何人。不要扫描二维码。记下异常位置与正常位置间隔几折。立刻将通知书还原至初始状态并捡起一片叶子，任何叶子都行，随后将其夹在随身携带的书里。</li><li>本学院报到处若向你提供导航服务，不要信任，跟着你的手机导航走。</li><li>不要剥开一卡通的表层。</li><li>在校内看见标有自习室标牌的房间，不要进去，本校不设有自习室。</li><li>学研的电梯不在五层以下停留。若你不慎按亮低楼层按钮，它是无法取消的。你必须在你按亮的楼层出电梯，走楼梯至你想要前往的楼层，否则后果自负。</li><li>不要连接校园网。时刻注意手机是否连上校园网，一旦发现立即断开连接。</li><li>若必须连接校园网，请使用学研A座机房，离开时记得刷卡下机，否则后果自负。</li><li>校训是“知山知水，树木树人”，若在谈论此事时，遇到一口咬定校训是“替河山装成锦绣，把国土绘成丹青”的人，立刻终止对话，他们不是新绿。</li><li>二教五层没有挂照片，若你发现二教五层挂有学研的照片，立刻通知保卫处然后离开二教。</li><li>不得围挂床帘并被宿管发现。若宿管发现此事该生应及时检查录取通知书是否存在异常。</li><li>不得携带大功率电器进宿舍楼并被宿管发现。若宿管发现此事该生应及时检查录取通知书是否存在异常。</li><li>不得携带家具进宿舍楼并被宿管发现。若宿管发现此事该生应及时检查录取通知书是否存在异常。</li><li>不要在早晨6：00前到达图书馆。若你在这以前到达了，应前往五层占一个座，营造出有人的假象。之后立刻离开图书馆，当天晚上图书馆响铃前不得再次进入。</li><li>可以觉得累，失落，茫然，找不到人生的意义，但不要认真填写学校心理量表。</li><li>接受食堂的价格，最好做到赞不绝口。</li><li>校园内不存在电动车。</li><li>非必要，不出校。</li></ol></blockquote></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">主要是再内涵学校</summary>
     
     
     
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
+    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
     
-    <category term="规则类怪谈" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/"/>
+    <category term="规则类怪谈" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/"/>
     
     
     <category term="规则类怪谈" scheme="https://alnas1.github.io/tags/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/"/>
@@ -90,9 +109,9 @@
     <link href="https://alnas1.github.io/2021/12/12/%E6%97%A5%E5%B8%B8/%E7%94%B5%E8%84%91%E5%8D%B8%E8%BD%BD%E4%B8%AACAD%E5%B1%85%E7%84%B6%E6%8A%8A%E4%B8%80%E4%BC%97%E8%BD%AF%E4%BB%B6%E6%90%9E%E5%B4%A9%E6%BA%83/"/>
     <id>https://alnas1.github.io/2021/12/12/%E6%97%A5%E5%B8%B8/%E7%94%B5%E8%84%91%E5%8D%B8%E8%BD%BD%E4%B8%AACAD%E5%B1%85%E7%84%B6%E6%8A%8A%E4%B8%80%E4%BC%97%E8%BD%AF%E4%BB%B6%E6%90%9E%E5%B4%A9%E6%BA%83/</id>
     <published>2021-12-11T16:31:01.000Z</published>
-    <updated>2021-12-11T16:43:36.000Z</updated>
+    <updated>2021-12-14T08:48:43.887Z</updated>
     
-    <content type="html"><![CDATA[<p>为了电气控制课设临时安装CAD，而为了安装CAD我花了大半天下载软件、删掉软件给它腾空间、处理它一打开就开始cpu过载疯狂闪屏的问题。<br>现在的电脑，6100大洋、服役3年的华为matebookd 2018，各种间歇性黑屏，一打开什么软件屏幕就像年久失修的灯一般开始狂闪，看b站还总是音画不同步。不过这种日子终于到头了。<br>我新买的联想r9000p，价格7588，只要明天没啥大问题就直接用，实在受不了破电脑闪屏、C盘永远剩0字节。卸载个cad搞得浏览器崩溃、图床软件崩溃、qq崩溃。我都想不通为什么。<br>这12.12我是一分钟都待不下去了！</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>为了电气控制课设临时安装CAD，而为了安装CAD我花了大半天下载软件、删掉软件给它腾空间、处理它一打开就开始cpu过载疯狂闪屏的问题。<br>现在的电脑，6100大洋、服役3年的华为matebookd 2018，各种间歇性黑屏，一打开什么软件屏幕就像年久失修的灯一般开始狂闪，看b站还总是音画不同步。不过这种日子终于到头了。<br>我新买的联想r9000p，价格7588，只要明天没啥大问题就直接用，实在受不了破电脑闪屏、C盘永远剩0字节。卸载个cad搞得浏览器崩溃、图床软件崩溃、qq崩溃。我都想不通为什么。<br>这12.12我是一分钟都待不下去了！</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">我在此用这台破电脑写下它的最后一篇博客。明天新电脑就到了！哈哈！不对，已经是今天了。</summary>
@@ -100,8 +119,6 @@
     
     
     <category term="日常" scheme="https://alnas1.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
-    
-    <category term="碎碎念" scheme="https://alnas1.github.io/categories/%E6%97%A5%E5%B8%B8/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
     
     <category term="“花花世界我一人干翻”" scheme="https://alnas1.github.io/tags/%E2%80%9C%E8%8A%B1%E8%8A%B1%E4%B8%96%E7%95%8C%E6%88%91%E4%B8%80%E4%BA%BA%E5%B9%B2%E7%BF%BB%E2%80%9D/"/>
@@ -113,9 +130,9 @@
     <link href="https://alnas1.github.io/2021/12/11/%E6%97%A5%E5%B8%B8/%E4%BD%A0%E8%88%9F%E6%B2%89%E4%BA%86/"/>
     <id>https://alnas1.github.io/2021/12/11/%E6%97%A5%E5%B8%B8/%E4%BD%A0%E8%88%9F%E6%B2%89%E4%BA%86/</id>
     <published>2021-12-11T14:14:03.000Z</published>
-    <updated>2021-12-11T15:43:18.000Z</updated>
+    <updated>2021-12-14T08:48:43.887Z</updated>
     
-    <content type="html"><![CDATA[<p>缘由：#查询抽卡运势<br>牌组：棱镜<br>牌面：星币侍从，星币女皇，倒吊人<br><img src="https://gitee.com/Alnasl/picbox/raw/master/img/20211211231557.png" width="60%"></p><p>读牌：暗示充钱，硬吃保底，不尽人意最好收手。<br>结果：56发歪了琴柳，五星四个<br>今日的胜负：塔罗牌胜</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>缘由：#查询抽卡运势<br>牌组：棱镜<br>牌面：星币侍从，星币女皇，倒吊人<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/20211211231557.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/20211211231557.png" width="60%"></a></p><p>读牌：暗示充钱，硬吃保底，不尽人意最好收手。<br>结果：56发歪了琴柳，五星四个<br>今日的胜负：塔罗牌胜</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">“如今山池在我眼前，我必须考虑这会不会是我此生仅有的机会。”</summary>
@@ -123,8 +140,6 @@
     
     
     <category term="日常" scheme="https://alnas1.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
-    
-    <category term="统计破除迷信" scheme="https://alnas1.github.io/categories/%E6%97%A5%E5%B8%B8/%E7%BB%9F%E8%AE%A1%E7%A0%B4%E9%99%A4%E8%BF%B7%E4%BF%A1/"/>
     
     
     <category term="巴纳姆效应" scheme="https://alnas1.github.io/tags/%E5%B7%B4%E7%BA%B3%E5%A7%86%E6%95%88%E5%BA%94/"/>
@@ -136,16 +151,16 @@
     <link href="https://alnas1.github.io/2021/12/11/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E6%91%B8%E7%88%AC%E6%BB%9A%E6%89%93%E6%94%B9%E5%8D%9A%E5%AE%A2(next)%20/"/>
     <id>https://alnas1.github.io/2021/12/11/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E6%91%B8%E7%88%AC%E6%BB%9A%E6%89%93%E6%94%B9%E5%8D%9A%E5%AE%A2(next)%20/</id>
     <published>2021-12-10T17:09:52.000Z</published>
-    <updated>2021-12-13T06:16:24.407Z</updated>
+    <updated>2021-12-14T08:56:06.107Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在HTML和hexo方面完全的小白，此前只懂一点C语言和MATLAB，也没想为了一个博客学完这些东西，遂只有按“想实现什么功能-百度-踩坑-实现功能或者没有”这个流程解决问题。以下是一些记录。</p><hr><h3 id="主页"><a href="#主页" class="headerlink" title="主页"></a>主页</h3><p><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112110113327.png"><br>我喜欢那种卡片样式的，简单凝练，信息密度大一点，这个主题为了排版美观失去了信息密集度。所以想改得紧凑。</p><h4 id="居中摘要"><a href="#居中摘要" class="headerlink" title="居中摘要"></a>居中摘要</h4><p>文件路径MyWeb\themes\next\layout\ _macro\post.njk</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;#################&#125;</span><br><span class="line">&#123;### POST BODY ###&#125;</span><br><span class="line">&#123;#################&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;post-body&#123;% if post.direction and post.direction.toLowerCase() === &#x27;rtl&#x27; %&#125; rtl&#123;% endif %&#125;&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;articleBody&quot;</span>&gt;</span></span><br><span class="line">  &#123;%- if is_index %&#125;</span><br><span class="line">    &#123;%- if post.description and theme.excerpt_description %&#125;</span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center&quot;</span>&gt;</span>&#123;&#123; post.description &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span> </span><br><span class="line">      <span class="comment">&lt;!--noindex--&gt;</span></span><br></pre></td></tr></table></figure><h4 id="橙色部分"><a href="#橙色部分" class="headerlink" title="橙色部分"></a>橙色部分</h4><p>文件路径MyWeb\themes\next\source\css\ _common\components\post\post-header.styl</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.posts-expand .post-header &#123;</span><br><span class="line">  font-size: $font-size-large;</span><br><span class="line">  margin-bottom: 60px;</span><br><span class="line">  text-align: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="蓝色虚线框部分"><a href="#蓝色虚线框部分" class="headerlink" title="蓝色虚线框部分"></a>蓝色虚线框部分</h4><p>文件路径MyWeb\themes\next\source\css\ _variables\base.styl</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//  .post-expand .post-eof</span><br><span class="line">//  In Muse scheme, margin above and below the post separator</span><br><span class="line">$post-eof-margin-top          = 10px; //  or 160px for more white space;</span><br><span class="line">$post-eof-margin-bottom       = 10px; //  or 120px for less white space;</span><br></pre></td></tr></table></figure><h3 id="博客标题"><a href="#博客标题" class="headerlink" title="博客标题"></a>博客标题</h3><h4 id="与网页顶部的距离"><a href="#与网页顶部的距离" class="headerlink" title="与网页顶部的距离"></a>与网页顶部的距离</h4><p><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112112048693.png"><br>文件路径MyWeb\themes\next\source\css\ _schemes\ _header.styl</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.header-inner &#123;</span><br><span class="line">  padding-top: 40px;</span><br><span class="line"></span><br><span class="line">  +mobile() &#123;</span><br><span class="line">    padding-top: 50px;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在HTML和hexo方面完全的小白，此前只懂一点C语言和MATLAB，也没想为了一个博客学完这些东西，遂只有按“想实现什么功能-百度-踩坑-实现功能或者没有”这个流程解决问题。以下是一些记录。</p><hr><h3 id="主页"><a href="#主页" class="headerlink" title="主页"></a>主页</h3><p><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112110113327.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112110113327.png"></a><br>我喜欢那种卡片样式的，简单凝练，信息密度大一点，这个主题为了排版美观失去了信息密集度。所以想改得紧凑。</p><h4 id="居中摘要"><a href="#居中摘要" class="headerlink" title="居中摘要"></a>居中摘要</h4><p>文件路径MyWeb\themes\next\layout\ _macro\post.njk</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;#################&#125;</span><br><span class="line">&#123;### POST BODY ###&#125;</span><br><span class="line">&#123;#################&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;post-body&#123;% if post.direction and post.direction.toLowerCase() === &#x27;rtl&#x27; %&#125; rtl&#123;% endif %&#125;&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;articleBody&quot;</span>&gt;</span></span><br><span class="line">  &#123;%- if is_index %&#125;</span><br><span class="line">    &#123;%- if post.description and theme.excerpt_description %&#125;</span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center&quot;</span>&gt;</span>&#123;&#123; post.description &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span> </span><br><span class="line">      <span class="comment">&lt;!--noindex--&gt;</span></span><br></pre></td></tr></table></figure><h4 id="橙色部分"><a href="#橙色部分" class="headerlink" title="橙色部分"></a>橙色部分</h4><p>文件路径MyWeb\themes\next\source\css\ _common\components\post\post-header.styl</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.posts-expand .post-header &#123;</span><br><span class="line">  font-size: $font-size-large;</span><br><span class="line">  margin-bottom: 60px;</span><br><span class="line">  text-align: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="蓝色虚线框部分"><a href="#蓝色虚线框部分" class="headerlink" title="蓝色虚线框部分"></a>蓝色虚线框部分</h4><p>文件路径MyWeb\themes\next\source\css\ _variables\base.styl</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//  .post-expand .post-eof</span><br><span class="line">//  In Muse scheme, margin above and below the post separator</span><br><span class="line">$post-eof-margin-top          = 10px; //  or 160px for more white space;</span><br><span class="line">$post-eof-margin-bottom       = 10px; //  or 120px for less white space;</span><br></pre></td></tr></table></figure><h3 id="博客标题"><a href="#博客标题" class="headerlink" title="博客标题"></a>博客标题</h3><h4 id="与网页顶部的距离"><a href="#与网页顶部的距离" class="headerlink" title="与网页顶部的距离"></a>与网页顶部的距离</h4><p><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112112048693.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112112048693.png"></a><br>文件路径MyWeb\themes\next\source\css\ _schemes\ _header.styl</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.header-inner &#123;</span><br><span class="line">  padding-top: 40px;</span><br><span class="line"></span><br><span class="line">  +mobile() &#123;</span><br><span class="line">    padding-top: 50px;</span><br></pre></td></tr></table></figure></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">“小白很痛苦”</summary>
     
     
     
-    <category term="博客建立之初的一些记录" scheme="https://alnas1.github.io/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B%E4%B9%8B%E5%88%9D%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/"/>
+    <category term="关于博客" scheme="https://alnas1.github.io/categories/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/"/>
     
     
     <category term="博客" scheme="https://alnas1.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
@@ -157,20 +172,20 @@
     <link href="https://alnas1.github.io/2021/12/10/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E5%B0%8F%E5%A7%90%E3%80%8B/"/>
     <id>https://alnas1.github.io/2021/12/10/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E5%B0%8F%E5%A7%90%E3%80%8B/</id>
     <published>2021-12-10T14:24:03.000Z</published>
-    <updated>2021-12-10T15:35:08.000Z</updated>
+    <updated>2021-12-14T08:48:43.887Z</updated>
     
-    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="aec0c4d7f3c4108a5c3882b48e6778c927c32533e5dfc4b5cf86cebb9ea0ab98">d3dc46725fcff41a5bfde1958f6ae591608d5373c80d95cd59b05f92c4b04f1f9128f27ec4c93b5d43fca76c2ab135c001407f774b99f7ff901bc1bbec7b9bad4ad6f6b40a3fb4ce41d0f74df24cbe8b6dbe4f0c85a16cf996128299b3c2b028f023aeedcff2161475114068512a86ce30f8fb77d32dd8d386d414f020ef98d1fa709129109f29fbadc7f58ea50a3877f4754b7bad62240aad9333f2a034dfe4e05308b2c63c209f1a07748949fddf83dc148faa93fd8af7b32cfa58250fbe8981fdbf7ab2609300b4a778bcb330b48b8232ca1e84f6a5f5a62f6b66d8797b0de158b30394b13d9820ac124f6050c4dde5769e556772383f4d4abd36bfe124d5507b846f4ef161b202a25c4fd5d30fa2fc1a4571e530593d9a86b0a387d3716c612393eba6be50cd7d792fb3fcf97b1a2e9ce97e7bc634dc360c884d4dc8a061d77047caeebb6da205e635d36585769a68eee1d48ead05e3d783b2a640d5d5e87bf64c80ed5c27fcccc01fea1e4bf07cfd6c5b934253a018a068a3872316fc2d38abf2e2f60be011e325fce7ecb7c659c076357166f0c99530e474b10b7314e13ba4d51aba227943a77c94d61639ff3bd18d82a3f888b46eefb0b16028f4b2df9ab153fd6667e3c9df849ac5644fc978b87f874e71750eacac24c33dccc9187e0443e5575cef8abc14efdb29b17f99971aeab4cdd814721e01849d77f8c7d5f60faf08f39df2c5ee80abcfdb065b3279dd4cccb204d2c599bb2160b94220910b65efca21919aa3393aaa90415890e407bc41e0378a3479fbf18cffb2f264f2254348956e78df667487834e525fe3de9b3364f044e7eb7fe84b826f83615f5f4ab3b9f7b0e5655b90dedf8932a2ff07f7d61673f33a42fd7c38ff81cd66ece0f37ed5ed0b6509a74b6b817a4fee650fc4b78669d4634bc9c199312787371845c3c4be2d894b0c140ff0e02b37feede7d7d1c1bb2e0d4211cf1721e7b96df76cff01f717ce87cb3316f761934c2c5180f66d8063ab3d57b6ff41b79c9a242f80d2bbb047923df45c78343d473777a8b900b699510b45443a68d89278fe1cca75cc51a9d4d34cee4a52b24a3b114048725b56ad47f1ca7597d186d9a76d86e2c1c3d27c42726720b48c35593a376428204e8d189f863eff5a3e743acdb402ad99ebd32f344db26dff7cd217dc4b2d69cb953b434fe5218678ad65a29b46a25375886c5c4e28a084d28e4060ee17e4c85c57b5f4c35954297137e1316e22e5b57e35b89c70f2243a969d84c838f3cbb2a923bacecfa586d21b8e8931e1a61bf6c691a7d1458ed05b86ad4d3b3c36054d18126feb45f5ace37ae908a41b153af8eab79e41776ea7746ce2231679cf9f1f4e4e1b32939c7e8ad1544b5a80dab8ac51194010a958a53dbb75f6c1c0aa33c79f4825af5b625095f70345075a6b344f1580b727b372273a462c5908d1d90c58752b0ff7e23eae2acb3ed9b4f8d6e26aaf1d144e80b1ed9eaf6d946ca3161fba0e517ea2011ba22857611f1d3334a09ec683eb9e39d2d1309cd33ce914cac2cd8503be79b71abce5b058f272b0bea855e8ab5d47784d6cdc819dd2882a82af0d35a2aad877f2f83e3693cdf78f83de39310a285a537238e7eca8aaaa7081d928835c9d4dffac8a1d5ad7fd03a077da0b808bf6d057b0de9ec97b99251d15cf0b41ac0c778568701bb82e8e0b1e34247e738e2eeb10c302953d007b8912524ade9b6073ad37ff0abcea9430f2a5727def34c3ab197b617ce36ef01664c25a90d21c0f024396d6990ae49b675e0d3759bf8b45a421839e0693f47c74105a4b24a5c279994a61e0cd536aa63621a4371e058cb8283b385e5de8777329fd01a8bdcdb0ec9168c4b52e964284d7ac62c9855372a2ea8dcd7ea330d53b0da31d6fa257d2827b304744a38bb0ace10fe90114dc2417cd58cd232c3caca484b7388eddde5e02d99a140c88d6a3c11ae0c4ac5a01a261754bda657904154c92769d312f54df17eb5b35b37fde0a925d022caaaf73efff0b0e526febdf8eb9d8998b9fc10c835c01c911063b101c27bbb9d1ffcad80e81be805f4d64275c3ed53fbbb5b5f97eb51ef5f777dfef86ebe6831c7fb7a0e9011d58cd171b40d4752fd8e224f04a407468ff134c289e7478d05a7ec1c189cf80aca5abe1774a2e722ab7bf1e6bb4bd4ef3ec71980d41b97ddb5481832604fbcdd2ccd7eac3d578130f134e45393d3df2ede1431f8d5ab7c6591c9ec1e1b092ca2a19d0c51a398938baa1edcb8e8803b3b68a906dab82118815d26f3b5181dd8538694832c0138fa5cdc1bce690c373efec092f65e319aa3c43933f163d851a911ed3bf0eca248e6d53eb3d7304ee237ac13103b8da8ee82206de7112ba6d50fdd7648005636cc2a7bf91c36b65749b4c5e79ab5a5cc3b69e0a3f472f09057e504128a2a3aef3f4b4c828d833e0261e6ab78d1b93103df408de7f4a4a969b1c76c755cc77706403581b420f2de1e595bcb308210f0c5442a74e9bf137916243866eb59b4dbcfeffc60996fa5b05b9f5d677ce30a96f4e8f18ad87834ca743af8ae92aa74f6504e4b7585ffb5eaf5aaed6b5ed2914b5b4730bf3401356c20bb8e62f84097de36a091838eda1061a761d08</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-up">      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-up">提示：大胆猜，懂的都懂</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="c0dc0e190d61de65ef2a265543ed8f051dbd7583d98407b84b6dbe4299483751">d3dc46725fcff41a5bfde1958f6ae5914b7e40f820787afa80af02db4449eeea47af9d1c7f3696639acd2395a7c49db0d179053dc1d8cb6d783a08cbea540ba3bb1c905e524c1cbb409d1865e44546d755bb970abfb78e426fc963bd77461f1f8d6fc5cbf09670c294bcf9e9ba642680e42a0893ea0fe05bab749c4b5e969d11ee5a2c0e3014181d7d211d7b1ea7a0964dfe80be20e31dcfb6a3538d4dda2e0fe0b72d2fab32039c93bae814ac29bd65aae4ad2d083a4ba4f9aafa055a43f1ad46d9387d1e638afb59127633572c9d34c0a44402d8a99d1c0642f720ff05ad0a09f5cc82ecdf7b46607805b3c9b2e2f7bea144d58e712914db4f20ba92ccd14745cc9b3c0ba05659da2b9fcfe2468890822b269f2b411c9514b47babfbd22db98400d07eaf88ab600909fbc95bc803f10c89836f267b204493f2b48535769dbeb94ead0517acda58410083f8e14534768163cbd74430cfc37b990659ba43a8d9c22bf16169d951b553e349ebc6da0b98918e7716d6be9c02f1ed1cfba9f2634dda14c54a973935ea7389dc04cc12c3311e0ab07a1b16a30fec506e96392d2442f1d83d46516ee6126fea3f978e5d78928afec45c10ecd2816133c9ab922f18083f9f890b63206c2337eb59b174938d3330fc292deae912bcac01e2e42e6655211941ef04c19e4140796ccf071f48abd5f3402ccb256bde35fd96e5e1c89435440a2d9f673d4256d49beecf046dc65d86344cb6f74fd8737e0ab04438acb4c260813b0a6f2aa90ec17fff8a96d244bbeacc5bcf5252e6364e3130c7ad159fb13b231e2dd63f71f54e1a7b29412158e007cc301d71d9ffc81a1047114eb3c91d8a81582de5566539d5a62070b02d6cb17d917c7b9ebaa74e4124dafda73899ac98f4f052009455eee49662ace5b8b57fbaf08d0a860ad8bfdda59cdf86e2954711f5e40c51940d8180de0f8729d5577efe74a2a6f9e8073f24758451ab60ed7941485369646c70546f737af00cb2c38adfa34e61a499900fa8460aeb08411db897248f5c74ef7737c2b905cbce34f1dfee953cf9e06a5ce9b94d4f652038ca464f2659e6c7b2ed032f93d442345ed0d75b00ebd648ecf379246661cd81c5f9eff4d7deed0a6824653bf354005a56b741f61e9f63777f13b7f502c19337dab567d37e601ab7c0310e64b51b5bc5a66961861b4cf89c1fd0e304cbca9fc09c9d31721b26bfc1f1cda5426a1b9664af8adfced5cf4714e8e107cb9fdb577afde7d3860f94dfdde11efab14675f37d8f623991323cc01e87b0dbc974da3f4952b2b29b9a03db3b343628ced34f947d174c600175c77cd2f9bc64609f7fab13ac76d2b128dd8b59558775153ceffaf4dce7180195714e8b6a0cbbc200c3741f86f5f12ffb6281bffa5b6ec9e75a09edf29867876db1adcf646b5675dfbcf6b08bd6edbe30a093d4512dad5789b665e16e6d2dcfea1195c2b6054ba7a4d2677aae63217c159bd62faa2bf1541aae85d45240581d5fe0423f0cc264fdf105974997367d550197451d23d59a58b763563ed692a945f42643ab1b7e8b2df2ec2f21550a5e42261c4db8f2c6776e9b22b1a8704ea0c1671d9228a6f3ebfd3cfc34ff39822cd6636a998be321772b3d506ad7729aa326edefc68bb02223752ac011bc5af47001c0f11f928dc70d279d989d830b11477777ac8991878b8797b33a0f0bf460f9227efdde2160cf7478e87da5124f5401a2fb94c0b28ff9accfff81104d10084c4cdc043844b287449cf230508c056c597ba3ebe197cfd603da2688845c916ae993c54313a60c82d276c8f5691cc11dceecc18515c040c3b07520b47141a0167e7ac25c79b2d5ba49bab70672dd8a7c08f7ae2d4cf5f821976a4328370094251e6df289a911db35adf358b2c463a39045f5e248dce2ba9d47934ab495ba70c49d6b1ee975924bfb7defdabfb14b162d0b7cb61fbc29af620483df761451617643454949caf5fd72c6b24f2a223b2dfbe0a7200930e5436dca67efa1b43d7517eda596c46bb70b1f9f0aaaf044325285eeb89fe0fa68f9986508c94d1f9d00bb797cf5d635073bc27b0b9f78dd36f31b4a8f71761c3594e4d74cdc4053b56696fc07a838579f6fa1ad0e844e090f10c8f6f04ae29b4ae9d5ff385dc039c3a567525e715ee02b207e6a548867cc1c1d7099745488f6d6285b65446612bb212b5a74792ce3fd7409402031451e21fbb4aa5577333dce3d15c9238b6ab918a302d353a6a61fb96a18a883cbb8d2bc89b81ad265fa23cba639529cb803d33ddf8a06341406885fa58db5be0e2d2c625a4dac5bf6c09f217bfe2237c73a83043c9447aa8bc483855940c683e3475f99a9ca4885b49ec8fa903ef6d92499d394bf5700570e7426b2f896613b424a771fda125d17728e4c0eac85fd2748c71e5343c4549fb6ae6b7f7c8465f864fb11b6d75f8bbad251249beed178935a083a48741ad5fe4da64ca433cc779f5cd83ab8ffc71b5c044e200eba4a595aca1f5705673943498028ce16a7a5f0a1d4036f2ee646ad2b4e28b944f485f417018a544edb65ccc2c014aff431e1fcb59b772bc3b6649b001a52b7b4c1372ccaca7b1e8927dc3e001dd86be39b9f74751b6c4d739b7f36ab803b1fc44de3c02a1139e2713daab06a9db68741eff20376ae509766517d8a907fb015c82e1de83d087f7b9dc3add208feef6273f30d397ec1a84a7365000641a8adec85e7ccd37825fdceeb42a3fb8944a85b80d2517f774f9f18a3d96415b8bfb9285e2edd38b4935fe6ff8b3135dbb27fe5b08577e304e36b754a80effcf86837d5a861c4f274202c576cbaac9179a3144d1dad71b013c14450b6581d2546db730fd3ec9fc0c2044d61cc92bbd71c803957effc690f23712594c225ebe45084fdc73d088d14df38f672576c32a0cc38f4eb936d7bdfb0a71d77c4a4d662c6ad39172a0cc8afd72a93a708d8acb1bfb238a5570e76dc00c3de87ad90002e313049e500d6366cc0677e5abb9781ce941441cb1cfdbb06aa66fa244ee7b23899a60ff6fd16289e053f7a397bca43f8a644b1460c638ad170ca76b70de135c960f3caba4d2f2ae3874a1730b0e644a5dab4b7aba37dd586a90dfd7164c571bf36a7b9fdea56b3fd4bc83d10d64cc6dd994781731eecf865c23458c5be5f57bb04653ca570d511487807f8099b4908ee352c6af734a12167a2efe829b87114576b513d53a95e1e061ed2299b2d9bfb04ded84f1f8fb5d1e88010cedf7816025e77a92e666466553de463bb15e1f3ff0e8a74520ced9a9c1a3639db7ca68bd357044c</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-up">      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-up">提示：大胆猜，懂的都懂</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
     
     
     <summary type="html">“你一定是天才！”</summary>
     
     
     
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
+    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
     
-    <category term="观后感" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/"/>
+    <category term="观后感" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/"/>
     
-    <category term="电影" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/"/>
+    <category term="电影" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/"/>
     
     
   </entry>
@@ -180,20 +195,20 @@
     <link href="https://alnas1.github.io/2021/12/08/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E5%A4%B1%E6%8E%A7%E7%8E%A9%E5%AE%B6%E3%80%8B/"/>
     <id>https://alnas1.github.io/2021/12/08/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E5%A4%B1%E6%8E%A7%E7%8E%A9%E5%AE%B6%E3%80%8B/</id>
     <published>2021-12-08T14:48:38.000Z</published>
-    <updated>2021-12-08T14:57:30.000Z</updated>
+    <updated>2021-12-14T08:48:43.887Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：失控玩家<br>导演：肖恩·利维<br>主角：盖（guy）/米莉/凯斯<br>cp：凯斯x米莉<br>视角：男主<br>世界观：未来有个游戏叫自由之城<br>观影点：学校咖啡厅</p><hr><h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>设定一般，在科幻，甚至网游文这块都是差不多被玩烂了的梗。不过在电影，以觉醒的NPC为主角的片子我还是头一回见。<br>故事线比较弱，全片最大的亮点是自由之城本身，整一个捏他GTA……或者和它同类型的游戏。特效还行吧。<br>想吐槽的一点是为啥你们后台程序员开创造模式都杀不掉那个NPC，救命。<br>而且boss完全就是反社会人士，动不动“全服停机”“删掉所有玩家账号”，最后直接去砸自家的服务器捏妈，真有你的。<br>真实世界的男主（男二？）对女主态度奇奇怪怪，前半段爱搭不理的到后来直接一转攻势变成深情天才宅男，好吧，我不是很懂。<br>当然没有楚门的世界来得好看。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：失控玩家<br>导演：肖恩·利维<br>主角：盖（guy）/米莉/凯斯<br>cp：凯斯x米莉<br>视角：男主<br>世界观：未来有个游戏叫自由之城<br>观影点：学校咖啡厅</p><hr><h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>设定一般，在科幻，甚至网游文这块都是差不多被玩烂了的梗。不过在电影，以觉醒的NPC为主角的片子我还是头一回见。<br>故事线比较弱，全片最大的亮点是自由之城本身，整一个捏他GTA……或者和它同类型的游戏。特效还行吧。<br>想吐槽的一点是为啥你们后台程序员开创造模式都杀不掉那个NPC，救命。<br>而且boss完全就是反社会人士，动不动“全服停机”“删掉所有玩家账号”，最后直接去砸自家的服务器捏妈，真有你的。<br>真实世界的男主（男二？）对女主态度奇奇怪怪，前半段爱搭不理的到后来直接一转攻势变成深情天才宅男，好吧，我不是很懂。<br>当然没有楚门的世界来得好看。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">“给我！删掉！所有玩家的账号！”</summary>
     
     
     
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
+    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
     
-    <category term="观后感" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/"/>
+    <category term="观后感" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/"/>
     
-    <category term="电影" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/"/>
+    <category term="电影" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/"/>
     
     
   </entry>
@@ -203,18 +218,18 @@
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E7%BA%B8%E7%89%87%E4%BA%BA%E7%9A%84%E7%B2%BE%E7%A5%9E%E5%88%86%E8%A3%82%E7%97%87%E7%8A%B6/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E7%BA%B8%E7%89%87%E4%BA%BA%E7%9A%84%E7%B2%BE%E7%A5%9E%E5%88%86%E8%A3%82%E7%97%87%E7%8A%B6/</id>
     <published>2021-12-05T15:20:15.000Z</published>
-    <updated>2021-12-11T14:08:08.000Z</updated>
+    <updated>2021-12-14T08:48:43.887Z</updated>
     
-    <content type="html"><![CDATA[<p>三个片段，互相无关联。<br>1.我在玩一个2d像素游戏，做了隐藏任务赚了好多钱。<br>2舍友写小说给我看，我觉得插图很丑就改了改，然后发现这样不打招呼就改很不礼貌。<br>3.我找钟离，balabalabalabala（中间忘记了），他送了我一个挂在包上的链子，一把餐刀，表示以后我是他女朋友了！梦里的我：其实我更希望是您的副人格万叶。</p><p>醒来：？</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>三个片段，互相无关联。<br>1.我在玩一个2d像素游戏，做了隐藏任务赚了好多钱。<br>2舍友写小说给我看，我觉得插图很丑就改了改，然后发现这样不打招呼就改很不礼貌。<br>3.我找钟离，balabalabalabala（中间忘记了），他送了我一个挂在包上的链子，一把餐刀，表示以后我是他女朋友了！梦里的我：其实我更希望是您的副人格万叶。</p><p>醒来：？</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">我超，做了怪梦。</summary>
     
     
     
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
+    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
     
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
+    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
     
     
   </entry>
@@ -224,18 +239,18 @@
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E5%BA%94%E8%AF%95%E6%95%99%E8%82%B2%E5%90%8E%E9%81%97%E7%97%87/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E5%BA%94%E8%AF%95%E6%95%99%E8%82%B2%E5%90%8E%E9%81%97%E7%97%87/</id>
     <published>2021-12-05T15:19:19.000Z</published>
-    <updated>2021-12-11T14:08:00.000Z</updated>
+    <updated>2021-12-14T08:48:43.887Z</updated>
     
-    <content type="html"><![CDATA[<p>早上做梦梦见下午两点有一个生物学考试。关键是我7点被吵醒那会对自己做的梦深信不疑，睡到8点半的这段时间内梦境在自动补完“我有一个选修课一直没去上但几个小时后就要考试”的这回事。<br>甚至脑补了具体的上课情景，确定这门课叫“上帝知道答案”。讲课的是一个女老师，和我一起上课的有舍友和隔壁班同学。然后梦里我不乐意去问舍友，就问了隔壁班同学，这位同学石锤了下午两点有考试，然后就开始慌，恐慌，虽然9小时复习概率论/12小时速通PLC不是没有过，但是距离下午两点只有6小时了，我根本不记得这门课的任何内容。平时既然没去上课那肯定没有平时分。我恐惧保研功亏一篑。<br>直到刷完牙我都还没想明白到底有没有“选修课下午两点考试”这回事</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>早上做梦梦见下午两点有一个生物学考试。关键是我7点被吵醒那会对自己做的梦深信不疑，睡到8点半的这段时间内梦境在自动补完“我有一个选修课一直没去上但几个小时后就要考试”的这回事。<br>甚至脑补了具体的上课情景，确定这门课叫“上帝知道答案”。讲课的是一个女老师，和我一起上课的有舍友和隔壁班同学。然后梦里我不乐意去问舍友，就问了隔壁班同学，这位同学石锤了下午两点有考试，然后就开始慌，恐慌，虽然9小时复习概率论/12小时速通PLC不是没有过，但是距离下午两点只有6小时了，我根本不记得这门课的任何内容。平时既然没去上课那肯定没有平时分。我恐惧保研功亏一篑。<br>直到刷完牙我都还没想明白到底有没有“选修课下午两点考试”这回事</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">“虽然9小时复习概率论/12小时速通PLC不是没有过”</summary>
     
     
     
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
+    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
     
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
+    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
     
     
   </entry>
@@ -245,18 +260,18 @@
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%AD%A3%E5%AE%AB%E7%9A%84%E4%B8%8D%E5%B1%91-jpg/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%AD%A3%E5%AE%AB%E7%9A%84%E4%B8%8D%E5%B1%91-jpg/</id>
     <published>2021-12-05T15:18:33.000Z</published>
-    <updated>2021-12-11T14:08:04.000Z</updated>
+    <updated>2021-12-14T08:48:43.887Z</updated>
     
-    <content type="html"><![CDATA[<p>昨天晚上梦到我拿着我推纸片人1的照片（立绘？）给正宫纸片人2看，纸片人2不屑地笑了 ​​​</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>昨天晚上梦到我拿着我推纸片人1的照片（立绘？）给正宫纸片人2看，纸片人2不屑地笑了 ​​​</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">深得罗辑真传（雾</summary>
     
     
     
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
+    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
     
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
+    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
     
     
   </entry>
@@ -266,18 +281,18 @@
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E8%BF%BD%E6%9F%A5%E6%97%A0%E5%BD%A2%E6%80%AA%E7%89%A9/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E8%BF%BD%E6%9F%A5%E6%97%A0%E5%BD%A2%E6%80%AA%E7%89%A9/</id>
     <published>2021-12-05T15:17:48.000Z</published>
-    <updated>2021-12-11T14:08:12.000Z</updated>
+    <updated>2021-12-14T08:48:43.887Z</updated>
     
-    <content type="html"><![CDATA[<p>梦见出现了一种奇怪的力量，其表现形式是人有时候会无缘无故被突然扯一下，但不是别人干的。<br>就像透明人恶作剧一样。<br>这个现象变得越发严重了，我曾见到一个小女孩被来自多方向的无形的力折断骨头，整个人扭曲变形。<br>我去追查这种现象的源头，到一座大厦里（特别像学校的学研中心），进门的时候刚好目睹一个深蓝色衣服的人从高空坠落，砸到地上。<br>因为事情紧急，就没有去管，但是我和助手都认为肯定和源头有关。<br>上楼，被发现，开始躲，躲到一个占卜师的家里，她帮我隐藏了起来，还让我抽了三张塔罗牌，但是没有读牌，我也不记得三张牌是什么。<br>后来我的队友赶到了，在楼外辅助，我下了楼，看到那个坠落的人，走进发现只是一件外套，外套里面摆着一个只有一半的饼干。<br>这个饼干是软的，很大，一个巴掌那么大，完整版应该是两颗心被箭串在一起，这里只有一半，两个心是粉的，中间用黄色写了几个单词，但是不完整。<br>我突然发觉这个跳楼的人就是我。<br>我要传达给我什么信息？<br>在保温杯里找到了另外一半饼干，把它们拼起来，我知道了完整的句子。<br>从占卜师那里走后，她把占卜的牌送给了我。我拿出来边走边洗牌，却发现总是有牌不是背面向上的，还得反过来，我很着急，后来在确认牌数量的时候，数不出正确的数目，就让队友又帮我买了一副牌。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>梦见出现了一种奇怪的力量，其表现形式是人有时候会无缘无故被突然扯一下，但不是别人干的。<br>就像透明人恶作剧一样。<br>这个现象变得越发严重了，我曾见到一个小女孩被来自多方向的无形的力折断骨头，整个人扭曲变形。<br>我去追查这种现象的源头，到一座大厦里（特别像学校的学研中心），进门的时候刚好目睹一个深蓝色衣服的人从高空坠落，砸到地上。<br>因为事情紧急，就没有去管，但是我和助手都认为肯定和源头有关。<br>上楼，被发现，开始躲，躲到一个占卜师的家里，她帮我隐藏了起来，还让我抽了三张塔罗牌，但是没有读牌，我也不记得三张牌是什么。<br>后来我的队友赶到了，在楼外辅助，我下了楼，看到那个坠落的人，走进发现只是一件外套，外套里面摆着一个只有一半的饼干。<br>这个饼干是软的，很大，一个巴掌那么大，完整版应该是两颗心被箭串在一起，这里只有一半，两个心是粉的，中间用黄色写了几个单词，但是不完整。<br>我突然发觉这个跳楼的人就是我。<br>我要传达给我什么信息？<br>在保温杯里找到了另外一半饼干，把它们拼起来，我知道了完整的句子。<br>从占卜师那里走后，她把占卜的牌送给了我。我拿出来边走边洗牌，却发现总是有牌不是背面向上的，还得反过来，我很着急，后来在确认牌数量的时候，数不出正确的数目，就让队友又帮我买了一副牌。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">这比较克苏鲁</summary>
     
     
     
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
+    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
     
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
+    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
     
     
   </entry>
@@ -287,18 +302,18 @@
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%88%91%E7%9C%9F%E6%98%AF%E4%B8%AA%E8%B5%B7%E5%90%8D%E5%A4%A9%E6%89%8D/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%88%91%E7%9C%9F%E6%98%AF%E4%B8%AA%E8%B5%B7%E5%90%8D%E5%A4%A9%E6%89%8D/</id>
     <published>2021-12-05T15:15:36.000Z</published>
-    <updated>2021-12-11T14:07:56.000Z</updated>
+    <updated>2021-12-14T08:48:43.887Z</updated>
     
-    <content type="html"><![CDATA[<p>今天的梦又是一个大型连续剧。。<br>背景星际，但是一群人又会点火又会再生水资源的，醒来我都懵这是什么鬼畜修仙+科幻<br>现在已经有点记不清了<br>就记得主角1叫然倚暮（好像是，我记得是三个字，最后一个字很复杂），真名叫何然，不知道惹了什么事（大概是家族政变），处于逃亡状态。<br>中间应该发生了很多事，有一个半机械人（主角2）在追杀她，最后棋差一着被何然借助激光发射器干碎了半个身子，终止了他的追杀。<br>何然很冷静聪明，她根据半机械人的指示找到一个玩具熊，玩具熊背后的标签上会显示【未来一段时间内最大概率发生的事件】。<br>她看玩具熊的标签，上面写着【卫队包围了老宅】。<br>何然被抓起来了。<br>被抓回去开家庭会议。<br>她面对她妈和她奶奶，她爸死了。看过标签的何然知道要从奶奶这里突破，她妈是个不折不扣的反派。<br>然后就想不起来了……</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>今天的梦又是一个大型连续剧。。<br>背景星际，但是一群人又会点火又会再生水资源的，醒来我都懵这是什么鬼畜修仙+科幻<br>现在已经有点记不清了<br>就记得主角1叫然倚暮（好像是，我记得是三个字，最后一个字很复杂），真名叫何然，不知道惹了什么事（大概是家族政变），处于逃亡状态。<br>中间应该发生了很多事，有一个半机械人（主角2）在追杀她，最后棋差一着被何然借助激光发射器干碎了半个身子，终止了他的追杀。<br>何然很冷静聪明，她根据半机械人的指示找到一个玩具熊，玩具熊背后的标签上会显示【未来一段时间内最大概率发生的事件】。<br>她看玩具熊的标签，上面写着【卫队包围了老宅】。<br>何然被抓起来了。<br>被抓回去开家庭会议。<br>她面对她妈和她奶奶，她爸死了。看过标签的何然知道要从奶奶这里突破，她妈是个不折不扣的反派。<br>然后就想不起来了……</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">量子力学是吧</summary>
     
     
     
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
+    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
     
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
+    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
     
     
   </entry>
@@ -308,18 +323,18 @@
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%96%87%E6%98%8E%E9%97%B4%E7%9A%84%E6%88%98%E6%9C%AF%E6%AC%BA%E9%AA%97/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%96%87%E6%98%8E%E9%97%B4%E7%9A%84%E6%88%98%E6%9C%AF%E6%AC%BA%E9%AA%97/</id>
     <published>2021-12-05T15:14:01.000Z</published>
-    <updated>2021-12-11T14:07:08.000Z</updated>
+    <updated>2021-12-14T08:48:43.887Z</updated>
     
-    <content type="html"><![CDATA[<p>今天的梦是我声称发现适距中子星可以利用新武器将其引爆并取得与敌对地外文明的战争胜利。<br>该地外文明宣告投降，派出一位代表由我带领参观地球。<br>该代表的形象是抽象蓝绿鱼头人。<br>在参观过程中我告诉他：“其实并没有中子星，我骗你们的。”<br>参观在沉默中结束了。<br>蓝绿鱼头人代表回去后宣战。<br>于是我方引爆了中子星。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>今天的梦是我声称发现适距中子星可以利用新武器将其引爆并取得与敌对地外文明的战争胜利。<br>该地外文明宣告投降，派出一位代表由我带领参观地球。<br>该代表的形象是抽象蓝绿鱼头人。<br>在参观过程中我告诉他：“其实并没有中子星，我骗你们的。”<br>参观在沉默中结束了。<br>蓝绿鱼头人代表回去后宣战。<br>于是我方引爆了中子星。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">高等的文明，往往采用最低端的战略手段</summary>
     
     
     
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
+    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
     
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
+    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
     
     
   </entry>
@@ -329,18 +344,18 @@
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E5%AD%A6%E6%A0%A1%E3%80%81%E5%8C%BB%E9%99%A2%E5%92%8C%E5%9D%8D%E5%A1%8C/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E5%AD%A6%E6%A0%A1%E3%80%81%E5%8C%BB%E9%99%A2%E5%92%8C%E5%9D%8D%E5%A1%8C/</id>
     <published>2021-12-05T15:12:29.000Z</published>
-    <updated>2021-12-11T14:08:26.000Z</updated>
+    <updated>2021-12-14T08:48:43.887Z</updated>
     
-    <content type="html"><![CDATA[<p>一群人进入一座楼，白天。一楼有体育室和办公室，是学校一样的地方。<br>他们分组去搜查其他楼层，我就去检查体育室，一眼看到右边柜子上挂着一副世界地图。问办公室里的人能不能看，他们答应了我就靠近看。<br>突然地图掉下来，我吓了一跳。<br>地图后面的柜子，柜门是玻璃窗口，其他都是漆木。玻璃上歪歪扭扭写着三个方程还有其他鬼画符。拿手机拍下来以后回头看，发现人都不见了。<br>我退出体育室，去其他办公室搜查，没有发现什么。就决定上楼与其他人汇合。<br>楼上都是教室，我直到顶楼才看到人。<br>不过目睹的是一个长着猪脑袋和獠牙的人型怪物向一扇细窄的黑洞洞的门里伸出手，门里丢给他一个像沙包的东西。<br>他拿着这个进教室，不一会就拖了四个昏迷的人出来把他们放在一张圆桌前挨个坐好。我看见猪头人走了，蹭过去想摇醒他们。<br>没有用。<br>这时，我发现那扇细窄的黑门就在面前的墙壁上。试着伸出手说：“解药。”然后，门里浮现出一个干瘦的惨白人脸，一只手把沙包丢给我。<br>我把沙包拿给四个人闻，他们都醒了。<br>两个人结伴从另一个楼道走，我背起一个腿伤的人，问剩下的最后一个：“你不走吗？”<br>“我留下来拖延时间。”<br>我点点头：“我会回来找你。”<br>我下了楼，没有遇见意外。把腿伤的人放在大楼外后，我准备返回大楼。<br>路上遇见从另一边顺利下来的两个人。他们看见我回去很惊讶，我说里面还有一个人。他们劝道：“别去，太危险了。”<br>我摇摇头，进入大楼一层。这次不是学校了，而是超大医院的大厅。没有顶灯，所有的灯光都是屏幕发出的，米黄和草绿交错。医院里整齐地布置着座椅，座椅上坐满了候诊的人。<br>哪里会有医院把候诊大厅搞得跟火车站一样。<br>他们有电梯，我没用，跑到楼梯井里，一个包工头对着面前跪下的一个人说道：“你是榜眼？除非你们的状元也给我跪下，我才……”<br>状元走上前，我没有看到更多，上了楼，包工头的笑声很有穿透力。但我踏上二楼，发现楼梯很不稳定。<br>开始狂奔，我跑过一层，楼梯就塌一层。就在四楼，整座大楼倒塌。<br>一阵强烈的失重感后，我醒来了。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>一群人进入一座楼，白天。一楼有体育室和办公室，是学校一样的地方。<br>他们分组去搜查其他楼层，我就去检查体育室，一眼看到右边柜子上挂着一副世界地图。问办公室里的人能不能看，他们答应了我就靠近看。<br>突然地图掉下来，我吓了一跳。<br>地图后面的柜子，柜门是玻璃窗口，其他都是漆木。玻璃上歪歪扭扭写着三个方程还有其他鬼画符。拿手机拍下来以后回头看，发现人都不见了。<br>我退出体育室，去其他办公室搜查，没有发现什么。就决定上楼与其他人汇合。<br>楼上都是教室，我直到顶楼才看到人。<br>不过目睹的是一个长着猪脑袋和獠牙的人型怪物向一扇细窄的黑洞洞的门里伸出手，门里丢给他一个像沙包的东西。<br>他拿着这个进教室，不一会就拖了四个昏迷的人出来把他们放在一张圆桌前挨个坐好。我看见猪头人走了，蹭过去想摇醒他们。<br>没有用。<br>这时，我发现那扇细窄的黑门就在面前的墙壁上。试着伸出手说：“解药。”然后，门里浮现出一个干瘦的惨白人脸，一只手把沙包丢给我。<br>我把沙包拿给四个人闻，他们都醒了。<br>两个人结伴从另一个楼道走，我背起一个腿伤的人，问剩下的最后一个：“你不走吗？”<br>“我留下来拖延时间。”<br>我点点头：“我会回来找你。”<br>我下了楼，没有遇见意外。把腿伤的人放在大楼外后，我准备返回大楼。<br>路上遇见从另一边顺利下来的两个人。他们看见我回去很惊讶，我说里面还有一个人。他们劝道：“别去，太危险了。”<br>我摇摇头，进入大楼一层。这次不是学校了，而是超大医院的大厅。没有顶灯，所有的灯光都是屏幕发出的，米黄和草绿交错。医院里整齐地布置着座椅，座椅上坐满了候诊的人。<br>哪里会有医院把候诊大厅搞得跟火车站一样。<br>他们有电梯，我没用，跑到楼梯井里，一个包工头对着面前跪下的一个人说道：“你是榜眼？除非你们的状元也给我跪下，我才……”<br>状元走上前，我没有看到更多，上了楼，包工头的笑声很有穿透力。但我踏上二楼，发现楼梯很不稳定。<br>开始狂奔，我跑过一层，楼梯就塌一层。就在四楼，整座大楼倒塌。<br>一阵强烈的失重感后，我醒来了。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">梦比电视剧精彩系列</summary>
     
     
     
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
+    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
     
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
+    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
     
     
   </entry>
@@ -350,18 +365,18 @@
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E4%BA%BA%E9%B1%BC%E5%8F%8C%E5%AD%90%E6%88%90%E5%8A%9F%E8%84%B1%E5%9B%B0%E4%BA%86%E5%90%97/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E4%BA%BA%E9%B1%BC%E5%8F%8C%E5%AD%90%E6%88%90%E5%8A%9F%E8%84%B1%E5%9B%B0%E4%BA%86%E5%90%97/</id>
     <published>2021-12-05T15:07:44.000Z</published>
-    <updated>2021-12-11T14:08:16.000Z</updated>
+    <updated>2021-12-14T08:48:43.887Z</updated>
     
-    <content type="html"><![CDATA[<p>有人指挥我进一家服装店，把里面的衣服拿出去以很便宜的价格叫卖，吸引到一些顾客正在议价时，突然发现哥哥的电话打不通。<br>直觉就是出事了，打119，立刻进行搜索，我和我爸去找人，找到一个很阴暗的地窖，里面都是大酒坛子。打开一个坛子，发现哥哥就在里面，虚弱无力的样子。<br>然后因为发现了秘密，我被塞进酒坛子里，我爸被杀。没有人来救，渐渐我发现在坛子里我们的腿变成了鱼尾。<br>之后，我和哥哥被丢到一个四方的水泥池里，里面水很浅，后来多了起来，还可以养鱼。有一天我们的手上都长了水泡，很痛，但是一个人告诉我们这是鱼卵，指着哥哥的手说他的已经孵化了，很快就好。确实是这样，我手上的水泡掉下来以后孵出一只黄色扁热带鱼，然后就好了。<br>一天涨潮，潮水没过小池子，我和哥哥趁机游出去。逃到一个很多人的岸边，大家都很惊讶地看着，然后有一个人把我们带走了，发现我们过了太久，不会认字说话，就让我们认字。<br>最后，发现鱼尾可以在完全干燥的情况下变成人腿，我和哥哥的头发变成红色，红色的短发蘑菇头，可以上岸走路但是不能晒太阳，就给我们定制了特别的衣服，紫色。<br>红色头发紫色衣服，两个人手牵手站在一段台阶顶端，似乎要去参加什么典礼。这是我最后梦到的画面。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>有人指挥我进一家服装店，把里面的衣服拿出去以很便宜的价格叫卖，吸引到一些顾客正在议价时，突然发现哥哥的电话打不通。<br>直觉就是出事了，打119，立刻进行搜索，我和我爸去找人，找到一个很阴暗的地窖，里面都是大酒坛子。打开一个坛子，发现哥哥就在里面，虚弱无力的样子。<br>然后因为发现了秘密，我被塞进酒坛子里，我爸被杀。没有人来救，渐渐我发现在坛子里我们的腿变成了鱼尾。<br>之后，我和哥哥被丢到一个四方的水泥池里，里面水很浅，后来多了起来，还可以养鱼。有一天我们的手上都长了水泡，很痛，但是一个人告诉我们这是鱼卵，指着哥哥的手说他的已经孵化了，很快就好。确实是这样，我手上的水泡掉下来以后孵出一只黄色扁热带鱼，然后就好了。<br>一天涨潮，潮水没过小池子，我和哥哥趁机游出去。逃到一个很多人的岸边，大家都很惊讶地看着，然后有一个人把我们带走了，发现我们过了太久，不会认字说话，就让我们认字。<br>最后，发现鱼尾可以在完全干燥的情况下变成人腿，我和哥哥的头发变成红色，红色的短发蘑菇头，可以上岸走路但是不能晒太阳，就给我们定制了特别的衣服，紫色。<br>红色头发紫色衣服，两个人手牵手站在一段台阶顶端，似乎要去参加什么典礼。这是我最后梦到的画面。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">总觉得最后还有阴谋但是我醒了</summary>
     
     
     
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
+    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
     
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
+    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
     
     
   </entry>
@@ -371,18 +386,18 @@
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E7%9C%9F%E5%AE%9E%E7%9A%84%E5%AE%B6%E5%BA%AD%E4%BC%A6%E7%90%86%E5%89%A7/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E7%9C%9F%E5%AE%9E%E7%9A%84%E5%AE%B6%E5%BA%AD%E4%BC%A6%E7%90%86%E5%89%A7/</id>
     <published>2021-12-05T14:53:40.000Z</published>
-    <updated>2021-12-11T14:08:30.000Z</updated>
+    <updated>2021-12-14T08:48:43.887Z</updated>
     
-    <content type="html"><![CDATA[<p>梦见爷爷鲨了奶奶，尸体藏在床下，我不知情地在床上睡了两天，第三天房子开始摇晃我看到床底下蔓延的血水才去叫我爸妈，爸妈拿菜刀把奶奶分尸了 ​​​</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>梦见爷爷鲨了奶奶，尸体藏在床下，我不知情地在床上睡了两天，第三天房子开始摇晃我看到床底下蔓延的血水才去叫我爸妈，爸妈拿菜刀把奶奶分尸了 ​​​</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">恐怖的梦</summary>
     
     
     
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
+    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
     
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
+    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
     
     
   </entry>
@@ -392,18 +407,18 @@
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E9%80%83%E5%87%BA%E7%8A%AF%E7%BD%AA%E9%9B%86%E5%9B%A2%E7%AA%9D%E7%82%B9/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E9%80%83%E5%87%BA%E7%8A%AF%E7%BD%AA%E9%9B%86%E5%9B%A2%E7%AA%9D%E7%82%B9/</id>
     <published>2021-12-05T14:52:39.000Z</published>
-    <updated>2021-12-11T14:08:20.000Z</updated>
+    <updated>2021-12-14T08:48:43.887Z</updated>
     
-    <content type="html"><![CDATA[<p>啊，想不起来了，大概是我是一个十岁小孩，逃出犯罪集团窝点，同行的大哥塞给我一把有我高的枪，连人带车沉到湖里。<br>我把唯一一发子弹打空后，逃到一个农庄处，和当地人讨价还价，把枪卖了，换来两把手枪和若干子弹。对了，枪是电浆枪。 ​​​</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>啊，想不起来了，大概是我是一个十岁小孩，逃出犯罪集团窝点，同行的大哥塞给我一把有我高的枪，连人带车沉到湖里。<br>我把唯一一发子弹打空后，逃到一个农庄处，和当地人讨价还价，把枪卖了，换来两把手枪和若干子弹。对了，枪是电浆枪。 ​​​</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">大型连续剧梦境</summary>
     
     
     
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
+    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
     
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
+    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
     
     
   </entry>
@@ -413,43 +428,20 @@
     <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E8%82%96%E7%94%B3%E5%85%8B%E7%9A%84%E6%95%91%E8%B5%8E%E3%80%8B/"/>
     <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E8%82%96%E7%94%B3%E5%85%8B%E7%9A%84%E6%95%91%E8%B5%8E%E3%80%8B/</id>
     <published>2021-12-05T13:56:26.000Z</published>
-    <updated>2021-12-08T15:02:22.000Z</updated>
+    <updated>2021-12-14T08:48:43.887Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss28274/?from=search&seid=7072310877346482327&spm_id_from=333.337.0.0">肖申克的救赎</a>（The Shawshank Redemption）<br>导演：弗兰克 德拉邦特<br>主角：安迪/瑞德/典狱长<br>cp：无<br>视角：旁白瑞德追忆，主视角安迪<br>世界观：1940s</p><hr><h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>原来这部作品的原作是斯蒂芬金写的，他真牛。看了简介以后，原来《迷雾》也是他写的？！<br>其实，因为这部电影太过有名，我一早就知道他会挖隧道逃生，所以在高潮部分没怎么惊讶，越狱以后，瑞德如约找到安迪，影片结束。<br>故事很好，但没有多大震撼，也不骗眼泪。我对主题的自由提不起兴趣。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss28274/?from=search&seid=7072310877346482327&spm_id_from=333.337.0.0">肖申克的救赎</a>（The Shawshank Redemption）<br>导演：弗兰克 德拉邦特<br>主角：安迪/瑞德/典狱长<br>cp：无<br>视角：旁白瑞德追忆，主视角安迪<br>世界观：1940s</p><hr><h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>原来这部作品的原作是斯蒂芬金写的，他真牛。看了简介以后，原来《迷雾》也是他写的？！<br>其实，因为这部电影太过有名，我一早就知道他会挖隧道逃生，所以在高潮部分没怎么惊讶，越狱以后，瑞德如约找到安迪，影片结束。<br>故事很好，但没有多大震撼，也不骗眼泪。我对主题的自由提不起兴趣。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">“高智商不反社会人士。”</summary>
     
     
     
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
+    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
     
-    <category term="观后感" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/"/>
+    <category term="观后感" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/"/>
     
-    <category term="电影" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>《普罗米亚》（Promare）</title>
-    <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E6%99%AE%E7%BD%97%E7%B1%B3%E4%BA%9A%E3%80%8B/"/>
-    <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E6%99%AE%E7%BD%97%E7%B1%B3%E4%BA%9A%E3%80%8B/</id>
-    <published>2021-12-05T13:52:54.000Z</published>
-    <updated>2021-12-08T15:01:22.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss38790/?from=search&seid=14588705022024327750&spm_id_from=333.337.0.0">普罗米亚</a>（Promare）<br>导演：今石洋之<br>主角：里奥/加罗/克雷<br>cp：无<br>视角：双男主<br>世界观：近未来架空<br>观影点：宿舍</p><hr><h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>确实燃。<br>但是本剧情党还是更爱剧情向的片子一点。<br>配色五分，作画五分，剧情两分。<br>我感觉…如果是个番会更好点，就，能有更大篇幅交代一下世界观、埋伏笔啥的，这个剧情还是太……直白了。<br>根据眯眯眼都是怪物的传统，谁是大boss这点简直没有让人猜的必要。</p><p><s>*看完以后在b站评论翻到了加罗和里奥的本子信息，就，跑去看了……捏妈，作者你是个天才……十年后扎头发的里奥……疯狂心动了！！！！我的叉p系统我自己都会感到无语<br>*关于我拿本子当头像这件事一定不会有人发现的，嗯</s></p>]]></content>
-    
-    
-    <summary type="html">“这可是我人生中第一次点火啊！”</summary>
-    
-    
-    
-    <category term="文 / 字" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/"/>
-    
-    <category term="观后感" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/"/>
-    
-    <category term="电影" scheme="https://alnas1.github.io/categories/%E6%96%87-%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/"/>
+    <category term="电影" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/"/>
     
     
   </entry>
