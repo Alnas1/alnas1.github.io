@@ -39,9 +39,10 @@
   <entry>
     <title>增加一个画册功能</title>
     <url>/2021/12/14/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E5%A2%9E%E5%8A%A0%E4%B8%80%E4%B8%AA%E7%94%BB%E5%86%8C%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="0-实现效果和教程"><a href="#0-实现效果和教程" class="headerlink" title="0.实现效果和教程"></a>0.实现效果和教程</h3><h4 id="样式1"><a href="#样式1" class="headerlink" title="样式1"></a>样式1</h4><p>效果:<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214145958.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214145958.png" width=50%></a><br>教程：<a href="https://tding.top/archives/607c3b85.html">Hexo-NexT 实现相册</a>  </p>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="0-实现效果和教程"><a href="#0-实现效果和教程" class="headerlink" title="0. 实现效果和教程"></a>0. 实现效果和教程</h3><h4 id="样式1"><a href="#样式1" class="headerlink" title="样式1"></a>样式1</h4><p>效果:<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214145958.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214145958.png" width=50%></a><br>教程：<a href="https://tding.top/archives/607c3b85.html">Hexo-NexT 实现相册</a>  </p>
 <h4 id="样式2"><a href="#样式2" class="headerlink" title="样式2"></a>样式2</h4><p>效果：不知道，我失败了，会报错<br>教程：<a href="https://www.cnblogs.com/LuisYang/p/9356488.html">Hexo 相册实践</a>  </p>
 <h4 id="样式3"><a href="#样式3" class="headerlink" title="样式3"></a>样式3</h4><p>效果：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214175854.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214175854.png" width=70%></a><br>教程：<a href="https://rebootcat.com/2020/09/19/nextphotowall/">Hexo Next 博客添加相册瀑布流</a></p>
+<h4 id="样式4"><a href="#样式4" class="headerlink" title="样式4"></a>样式4</h4><p>效果：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214204556.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214204556.png" width=70%></a><br>教程：<a href="https://blog.csdn.net/qq_32115939/article/details/106377472?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522163948579016780269872756%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fcode.%2522%257D&request_id=163948579016780269872756&biz_id=&utm_medium=distribute.pc_search_result.none-task-code-2~code~first_rank_ecpm_v1~code_v2-1-106377472-8.research_pc_code_v2&utm_term=hexo+next+%E7%9B%B8%E5%86%8C">为 Hexo NexT 主题添加相册功能</a>  </p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -58,7 +59,7 @@
   <entry>
     <title>摸爬滚打改博客（NexT时代）</title>
     <url>/2021/12/11/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E6%91%B8%E7%88%AC%E6%BB%9A%E6%89%93%E6%94%B9%E5%8D%9A%E5%AE%A2(next)%20/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在HTML和hexo方面完全的小白，此前只懂一点C语言和MATLAB，也没想为了一个博客学完这些东西，遂只有按“想实现什么功能-百度-踩坑-实现功能或者没有”这个流程解决问题。以下是一些记录。</p>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>从orange主题迁移过来。</p>
 <hr>
 <h3 id="主页"><a href="#主页" class="headerlink" title="主页"></a>主页</h3><p><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112110113327.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112110113327.png"></a><br>我喜欢那种卡片样式的，简单凝练，信息密度大一点，这个主题为了排版美观失去了信息密集度。所以想改得紧凑。</p>
 <h4 id="居中摘要"><a href="#居中摘要" class="headerlink" title="居中摘要"></a>居中摘要</h4><p>文件路径MyWeb\themes\next\layout\ _macro\post.njk</p>
@@ -117,7 +118,10 @@
 <p>（反而在选和画图标这件事上花了很长时间，鬼知道我是怎么从死神13联想到普罗米亚的）<br>一个问题，我在导航栏切换页面的时候图标会很明显地刷新= =，作者的博客就不会这样，是不是因为图太大了啊。<br>也不算很大吧，才500x500px。</p>
 <p>此外，为什么标签栏的图标没有改变……<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112021937950.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112021937950.png"></a><br>好吧，过一会就好了，大概是电脑没反应过来。<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112021941244.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112021941244.png"></a><br>但是也太小了点吧，用画图把图片改了一下。</p>
 <p><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112021947546.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112021947546.png"></a><br>变大了，但是变胖了，只好再把画幅改成正方形。<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112021952240.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112021952240.png"></a><br>有一点无语，画图改完以后背景变成白色了，电脑懒得开ps（特别卡），还是用procreate改图吧……</p>
-<h3 id="学会目录和tag怎么添加"><a href="#学会目录和tag怎么添加" class="headerlink" title="学会目录和tag怎么添加"></a>学会目录和tag怎么添加</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: 摸爬滚打改博客</span><br><span class="line">date: 2021-11-30 15:18:22</span><br><span class="line">tags: </span><br><span class="line"> - 第一个标签</span><br><span class="line"> - 第二个标签</span><br><span class="line"> - 以此类推</span><br><span class="line">categories: </span><br><span class="line"> - 第一级目录</span><br><span class="line"> - 第二级目录</span><br><span class="line"> - 以此类推</span><br><span class="line">---</span><br></pre></td></tr></table></figure></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+<h3 id="学会目录和tag怎么添加"><a href="#学会目录和tag怎么添加" class="headerlink" title="学会目录和tag怎么添加"></a>学会目录和tag怎么添加</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: 摸爬滚打改博客</span><br><span class="line">date: 2021-11-30 15:18:22</span><br><span class="line">tags: </span><br><span class="line"> - 第一个标签</span><br><span class="line"> - 第二个标签</span><br><span class="line"> - 以此类推</span><br><span class="line">categories: </span><br><span class="line"> - 第一级目录</span><br><span class="line"> - 第二级目录</span><br><span class="line"> - 以此类推</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h3 id="关于放弃这个主题的理由"><a href="#关于放弃这个主题的理由" class="headerlink" title="关于放弃这个主题的理由"></a>关于放弃这个主题的理由</h3><p>太~简洁了。<br>我想实现加密（encrypt插件）功能但是它不行。<br>哎，我很喜欢这个版式的，但是为了加密和其他花里胡哨的东西只好放弃了。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
         };
@@ -1282,6 +1286,20 @@
         <category>文字</category>
         <category>读后感</category>
         <category>小说</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>为何会把标题样式给吃了</title>
+    <url>/2021/12/14/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E4%B8%BA%E4%BD%95%E4%BC%9A%E6%8A%8A%E6%A0%87%E9%A2%98%E6%A0%B7%E5%BC%8F%E7%BB%99%E5%90%83%E4%BA%86/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>就是这个：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210511.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210511.png" width=50%></a><br>这里的<em>0.实现效果和教程</em>应该是三级标题，但是它的格式被吃了。<br>而且只有第一个标题会被吃，其他三级标题好好的。<br>暂时的解决办法是在前面加一个空标题### ，空标题被吃掉样式以后其他标题样式显示正常。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210955.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210955.png" width=50%></a><br>正常显示：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214211204.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214211204.png" width=50%></a></p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>关于博客</category>
       </categories>
   </entry>
 </search>
