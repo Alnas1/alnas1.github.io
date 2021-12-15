@@ -42,27 +42,39 @@
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="0-实现效果和教程"><a href="#0-实现效果和教程" class="headerlink" title="0. 实现效果和教程"></a>0. 实现效果和教程</h3><h4 id="样式1"><a href="#样式1" class="headerlink" title="样式1"></a>样式1</h4><p>效果:<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214145958.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214145958.png" width=50%></a><br>教程：<a href="https://tding.top/archives/607c3b85.html">Hexo-NexT 实现相册</a>  </p>
 <h4 id="样式2"><a href="#样式2" class="headerlink" title="样式2"></a>样式2</h4><p>效果：不知道，我失败了，会报错<br>教程：<a href="https://www.cnblogs.com/LuisYang/p/9356488.html">Hexo 相册实践</a>  </p>
 <h4 id="样式3"><a href="#样式3" class="headerlink" title="样式3"></a>样式3</h4><p>效果：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214175854.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214175854.png" width=70%></a><br>教程：<a href="https://rebootcat.com/2020/09/19/nextphotowall/">Hexo Next 博客添加相册瀑布流</a></p>
-<h4 id="样式4"><a href="#样式4" class="headerlink" title="样式4"></a>样式4</h4><p>效果：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214204556.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214204556.png" width=70%></a><br>教程：<a href="https://blog.csdn.net/qq_32566003/article/details/116563753">为 Hexo NexT 主题添加相册功能</a></p>
-<h3 id="1-样式4的移植记录"><a href="#1-样式4的移植记录" class="headerlink" title="1.样式4的移植记录"></a>1.样式4的移植记录</h3><ul>
+<h4 id="样式4"><a href="#样式4" class="headerlink" title="样式4"></a>样式4</h4><p>效果：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214204556.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214204556.png" width=70%></a><br>教程：<a href="https://swayye.xyz/2019/09/02/%E5%BB%BA%E7%AB%99%E5%8E%86%E7%A8%8B%EF%BC%9A%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E7%AF%87%E2%80%94%E2%80%94%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%86%8C/">为 Hexo NexT 主题添加相册功能</a></p>
+<h3 id="1-样式4的移植记录-python处理图片部分"><a href="#1-样式4的移植记录-python处理图片部分" class="headerlink" title="1.样式4的移植记录(python处理图片部分)"></a>1.样式4的移植记录(python处理图片部分)</h3><ul>
 <li>下载python：<a href="https://www.bilibili.com/video/BV1DP4y1a7Dx">2021年如何通过官网下载和安装Python和PyCharm最新版本</a><br>python版本：3.9.9 64-bit<br>我没下pycharm<br>顺便可以改安装路径：<a href="https://www.py.cn/jishu/jichu/12626.html">python安装路径可以更改吗</a></li>
 <li>不会在GitHub仓库中新建文件夹：<a href="https://blog.csdn.net/Fly_1213/article/details/89294549">GitHub仓库中如何创建文件夹</a>  </li>
 <li>不会克隆仓库：<a href="https://blog.csdn.net/qq_41940950/article/details/80794438">如何远程克隆仓库</a> </li>
 <li>没安装pillow库：<a href="https://www.bilibili.com/video/BV1rq4y1J78H?from=search&seid=7343031718128119632&spm_id_from=333.337.0.0">python安装pil图像库 </a>  </li>
-<li>全选代码，shift+enter运行（vscode）  <h4 id="报错1：source-directory-not-exist"><a href="#报错1：source-directory-not-exist" class="headerlink" title="报错1：source directory not exist!"></a>报错1：source directory not exist!</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">source</span> directory not exist!</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line 3, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line 16, <span class="keyword">in</span> compress_photo</span><br><span class="line">UnboundLocalError: <span class="built_in">local</span> variable <span class="string">&#x27;file_list_des&#x27;</span> referenced before assignment</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>解决方法：把路径改成绝对路径  </p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">错误信息：</span><br><span class="line">def cut_photo():</span><br><span class="line">    <span class="string">&quot;&quot;</span><span class="string">&quot;裁剪算法</span></span><br><span class="line"><span class="string">    </span></span><br><span class="line"><span class="string">    ----------</span></span><br><span class="line"><span class="string">    调用Graphics类中的裁剪算法，将src_dir目录下的文件进行裁剪（裁剪成正方形）</span></span><br><span class="line"><span class="string">    &quot;</span><span class="string">&quot;&quot;</span></span><br><span class="line">    src_dir = <span class="string">&quot;F:/1-blog/MyWeb/source/photos/photos/&quot;</span></span><br><span class="line">    <span class="keyword">if</span> directory_exists(src_dir):</span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line"><span class="comment">#### 报错2：not enough values to unpack (expected 2, got 1)</span></span><br><span class="line">```bash</span><br><span class="line">错误信息：</span><br><span class="line">[<span class="string">&#x27;.git&#x27;</span>, <span class="string">&#x27;2021-12-15_桌面.jpg&#x27;</span>, <span class="string">&#x27;imageDeal.py&#x27;</span>, <span class="string">&#x27;imageprocessing.py&#x27;</span>, <span class="string">&#x27;min_photos&#x27;</span>, <span class="string">&#x27;photos&#x27;</span>, <span class="string">&#x27;README.md&#x27;</span>, <span class="string">&#x27;tool.py&#x27;</span>, <span class="string">&#x27;__pycache__&#x27;</span>]</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line 1, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line 12, <span class="keyword">in</span> cut_photo</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line 9, <span class="keyword">in</span> list_img_file</span><br><span class="line">ValueError: not enough values to unpack (expected 2, got 1)</span><br><span class="line">```  </span><br><span class="line">&gt;解决方法：**上面路径的文件夹里不能有子文件夹**，因为子文件夹没有.xx的后缀，用split()函数分类（分隔符为.）会卡住。最好只放图片。</span><br><span class="line"></span><br><span class="line"><span class="comment">#### 报错3：failed to push some refs to github</span></span><br><span class="line">```bash</span><br><span class="line">错误信息：</span><br><span class="line">error: src refspec master does not match any</span><br><span class="line">error: failed to push some refs to <span class="string">&#x27;https://github.com/alnas1/photos&#x27;</span></span><br><span class="line">```  </span><br><span class="line">&gt;解决方法：</span><br><span class="line">&gt;1. [关于main和master的问题](https://blog.csdn.net/sfgsdfg2516/article/details/120579313)</span><br><span class="line">&gt;3. 克隆仓库的命令：```git <span class="built_in">clone</span> https://github.com/alnas1/photos.git```  </span><br><span class="line">如果是ssh拉取：```git <span class="built_in">clone</span> git@github.com:Alnas1/photos.git```  </span><br><span class="line">&gt;4. 把<span class="built_in">source</span>下的photos文件夹删掉，在<span class="built_in">source</span>文件夹中右键打开命令行，执行克隆仓库的命令。</span><br><span class="line">&gt;5. 进入克隆下来的仓库，随便放张图进去测试。</span><br><span class="line">&gt;6. 执行下面三条命令看能不能成功。</span><br><span class="line">&gt;```bash</span><br><span class="line">&gt;git add --all  </span><br><span class="line">&gt;git commit -m <span class="string">&quot;add photos&quot;</span>  </span><br><span class="line">&gt;git push origin main  </span><br></pre></td></tr></table></figure>
-<blockquote>
-<ol start="7">
+<li>全选代码，shift+enter运行（vscode）  </li>
+</ul>
+<h4 id="报错1：source-directory-not-exist"><a href="#报错1：source-directory-not-exist" class="headerlink" title="报错1：source directory not exist!"></a>报错1：source directory not exist!</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">source directory <span class="keyword">not</span> exist!</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">3</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">16</span>, <span class="keyword">in</span> compress_photo</span><br><span class="line">UnboundLocalError: local variable <span class="string">&#x27;file_list_des&#x27;</span> referenced before assignment </span><br></pre></td></tr></table></figure>
+
+<p>解决方法：把路径改成绝对路径   </p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cut_photo</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;裁剪算法</span></span><br><span class="line"><span class="string">    调用Graphics类中的裁剪算法，将src_dir目录下的文件进行裁剪（裁剪成正方形）</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    src_dir = <span class="string">&quot;F:/1-blog/MyWeb/source/photos/photos/&quot;</span></span><br><span class="line">    <span class="keyword">if</span> directory_exists(src_dir): </span><br></pre></td></tr></table></figure>
+
+<h4 id="报错2：not-enough-values-to-unpack-expected-2-got-1"><a href="#报错2：not-enough-values-to-unpack-expected-2-got-1" class="headerlink" title="报错2：not enough values to unpack (expected 2, got 1)"></a>报错2：not enough values to unpack (expected 2, got 1)</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">12</span>, <span class="keyword">in</span> cut_photo</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">9</span>, <span class="keyword">in</span> list_img_file</span><br><span class="line">ValueError: <span class="keyword">not</span> enough values to unpack (expected <span class="number">2</span>, got <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<p>解决方法：<strong>上面路径的文件夹里不能有子文件夹</strong>，因为子文件夹没有.xx的后缀，用split()函数分类（分隔符为.）会卡住。最好只放图片。</p>
+<h4 id="报错3：failed-to-push-some-refs-to-github"><a href="#报错3：failed-to-push-some-refs-to-github" class="headerlink" title="报错3：failed to push some refs to github"></a>报错3：failed to push some refs to github</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">error: src refspec master does <span class="keyword">not</span> match <span class="built_in">any</span></span><br><span class="line">error: failed to push some refs to <span class="string">&#x27;https://github.com/alnas1/photos&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>解决方法：</p>
+<ol>
+<li><a href="https://blog.csdn.net/sfgsdfg2516/article/details/120579313">关于main和master的问题</a></li>
+<li>克隆仓库的命令：<code>git clone https://github.com/alnas1/photos.git</code><br>如果是ssh拉取：<code>git clone git@github.com:Alnas1/photos.git</code>  </li>
+<li>把source下的photos文件夹删掉，在source文件夹中右键打开命令行，执行克隆仓库的命令。</li>
+<li>进入克隆下来的仓库，随便放张图进去测试。</li>
+<li>执行下面三条命令看能不能成功。<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">git add --<span class="built_in">all</span>  </span><br><span class="line">git commit -m <span class="string">&quot;add photos&quot;</span>  </span><br><span class="line">git push origin main  </span><br></pre></td></tr></table></figure></li>
 <li>成功了就能在GitHub仓库看到变更。</li>
 <li>把tool.py文件里的 <code>os.system(&#39;git push origin master&#39;)</code>改为 <code>os.system(&#39;git push origin main&#39;)</code></li>
-<li>重新运行tool.py。</li>
-<li>然后我发现不能把相册文件夹放在博客目录下，不然相册提交会提交一次图，博客部署又会提交一次图。</li>
+<li>再次运行文件<code>tool.py</code></li>
+<li> 然后我发现不能把相册文件夹放在博客目录下，不然相册提交会提交一次图，博客部署又会提交一次图。</li>
 </ol>
-</blockquote>
-</li>
-</ul>
+<h3 id="2-样式4的移植记录-hexo配置部分"><a href="#2-样式4的移植记录-hexo配置部分" class="headerlink" title="2.样式4的移植记录(hexo配置部分)"></a>2.样式4的移植记录(hexo配置部分)</h3><ol>
+<li>data.json保存在photos下。”F:\1-blog\MyWeb\source\photos\data.json”</li>
+<li>注意核对index.md中链接css等文件的路径。我放在”F:\1-blog\MyWeb\themes\next\source\ _data&quot;</li>
+<li>ins.js文件中链接的修改。这是正确的图片链接格式（注意main前面那个raw）：<a href="https://github.com/Alnas1/photos/raw/main/photos/2021-12-15_suibian%20(2).jpg">https://github.com/Alnas1/photos/raw/main/photos/2021-12-15_suibian%20(2).jpg</a><br>关于这点请看：<a href="https://www.cnblogs.com/ghm-777/p/11433425.html">本地图片上传到GitHub，MarkDown使用Github图片地址</a></li>
+</ol>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -75,6 +87,20 @@
       <tags>
         <tag>博客</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>为何会把标题样式给吃了</title>
+    <url>/2021/12/14/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E4%B8%BA%E4%BD%95%E4%BC%9A%E6%8A%8A%E6%A0%87%E9%A2%98%E6%A0%B7%E5%BC%8F%E7%BB%99%E5%90%83%E4%BA%86/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>就是这个：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210511.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210511.png" width=50%></a><br>这里的<em>0.实现效果和教程</em>应该是三级标题，但是它的格式被吃了。<br>而且只有第一个标题会被吃，其他三级标题好好的。<br>暂时的解决办法是在前面加一个空标题### ，空标题被吃掉样式以后其他标题样式显示正常。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210955.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210955.png" width=50%></a><br>正常显示：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214211204.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214211204.png" width=50%></a></p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>关于博客</category>
+      </categories>
   </entry>
   <entry>
     <title>摸爬滚打改博客（NexT时代）</title>
@@ -204,23 +230,6 @@
       </tags>
   </entry>
   <entry>
-    <title>电脑卸载个CAD居然把一众软件搞崩溃</title>
-    <url>/2021/12/12/%E6%97%A5%E5%B8%B8/%E7%94%B5%E8%84%91%E5%8D%B8%E8%BD%BD%E4%B8%AACAD%E5%B1%85%E7%84%B6%E6%8A%8A%E4%B8%80%E4%BC%97%E8%BD%AF%E4%BB%B6%E6%90%9E%E5%B4%A9%E6%BA%83/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>为了电气控制课设临时安装CAD，而为了安装CAD我花了大半天下载软件、删掉软件给它腾空间、处理它一打开就开始cpu过载疯狂闪屏的问题。<br>现在的电脑，6100大洋、服役3年的华为matebookd 2018，各种间歇性黑屏，一打开什么软件屏幕就像年久失修的灯一般开始狂闪，看b站还总是音画不同步。不过这种日子终于到头了。<br>我新买的联想r9000p，价格7588，只要明天没啥大问题就直接用，实在受不了破电脑闪屏、C盘永远剩0字节。卸载个cad搞得浏览器崩溃、图床软件崩溃、qq崩溃。我都想不通为什么。<br>这12.12我是一分钟都待不下去了！</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>日常</category>
-      </categories>
-      <tags>
-        <tag>“花花世界我一人干翻”</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>拯救者r9000p安全下车</title>
     <url>/2021/12/13/%E6%97%A5%E5%B8%B8/%E6%8B%AF%E6%95%91%E8%80%85r9000p%E5%AE%89%E5%85%A8%E4%B8%8B%E8%BD%A6/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>7588买到，我感觉是香的很。<br>果然这东西就是早买早享受，旧电脑已经被打入冷宫了。<br>现在正在逐步把旧电脑的软件移植过来。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_160922.jpg" title="IMG_20211212_160922" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_160922.jpg" alt="IMG_20211212_160922"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153253.jpg" title="IMG_20211212_153253" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153253.jpg" alt="IMG_20211212_153253"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153512.jpg" title="IMG_20211212_153512" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153512.jpg" alt="IMG_20211212_153512"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153833.jpg" title="IMG_20211212_153833" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153833.jpg" alt="IMG_20211212_153833"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211213234219.png" title="20211213234219" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211213234219.png" alt="20211213234219"></a></p>
@@ -238,9 +247,9 @@
       </tags>
   </entry>
   <entry>
-    <title>梦 / 人鱼双子成功脱困了吗</title>
-    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E4%BA%BA%E9%B1%BC%E5%8F%8C%E5%AD%90%E6%88%90%E5%8A%9F%E8%84%B1%E5%9B%B0%E4%BA%86%E5%90%97/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>有人指挥我进一家服装店，把里面的衣服拿出去以很便宜的价格叫卖，吸引到一些顾客正在议价时，突然发现哥哥的电话打不通。<br>直觉就是出事了，打119，立刻进行搜索，我和我爸去找人，找到一个很阴暗的地窖，里面都是大酒坛子。打开一个坛子，发现哥哥就在里面，虚弱无力的样子。<br>然后因为发现了秘密，我被塞进酒坛子里，我爸被杀。没有人来救，渐渐我发现在坛子里我们的腿变成了鱼尾。<br>之后，我和哥哥被丢到一个四方的水泥池里，里面水很浅，后来多了起来，还可以养鱼。有一天我们的手上都长了水泡，很痛，但是一个人告诉我们这是鱼卵，指着哥哥的手说他的已经孵化了，很快就好。确实是这样，我手上的水泡掉下来以后孵出一只黄色扁热带鱼，然后就好了。<br>一天涨潮，潮水没过小池子，我和哥哥趁机游出去。逃到一个很多人的岸边，大家都很惊讶地看着，然后有一个人把我们带走了，发现我们过了太久，不会认字说话，就让我们认字。<br>最后，发现鱼尾可以在完全干燥的情况下变成人腿，我和哥哥的头发变成红色，红色的短发蘑菇头，可以上岸走路但是不能晒太阳，就给我们定制了特别的衣服，紫色。<br>红色头发紫色衣服，两个人手牵手站在一段台阶顶端，似乎要去参加什么典礼。这是我最后梦到的画面。</p>
+    <title>电脑卸载个CAD居然把一众软件搞崩溃</title>
+    <url>/2021/12/12/%E6%97%A5%E5%B8%B8/%E7%94%B5%E8%84%91%E5%8D%B8%E8%BD%BD%E4%B8%AACAD%E5%B1%85%E7%84%B6%E6%8A%8A%E4%B8%80%E4%BC%97%E8%BD%AF%E4%BB%B6%E6%90%9E%E5%B4%A9%E6%BA%83/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>为了电气控制课设临时安装CAD，而为了安装CAD我花了大半天下载软件、删掉软件给它腾空间、处理它一打开就开始cpu过载疯狂闪屏的问题。<br>现在的电脑，6100大洋、服役3年的华为matebookd 2018，各种间歇性黑屏，一打开什么软件屏幕就像年久失修的灯一般开始狂闪，看b站还总是音画不同步。不过这种日子终于到头了。<br>我新买的联想r9000p，价格7588，只要明天没啥大问题就直接用，实在受不了破电脑闪屏、C盘永远剩0字节。卸载个cad搞得浏览器崩溃、图床软件崩溃、qq崩溃。我都想不通为什么。<br>这12.12我是一分钟都待不下去了！</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -248,145 +257,11 @@
         lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
         }</script>]]></content>
       <categories>
-        <category>文字</category>
-        <category>奇怪的梦</category>
+        <category>日常</category>
       </categories>
-  </entry>
-  <entry>
-    <title>梦 / 学校、医院和坍塌</title>
-    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E5%AD%A6%E6%A0%A1%E3%80%81%E5%8C%BB%E9%99%A2%E5%92%8C%E5%9D%8D%E5%A1%8C/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>一群人进入一座楼，白天。一楼有体育室和办公室，是学校一样的地方。<br>他们分组去搜查其他楼层，我就去检查体育室，一眼看到右边柜子上挂着一副世界地图。问办公室里的人能不能看，他们答应了我就靠近看。<br>突然地图掉下来，我吓了一跳。<br>地图后面的柜子，柜门是玻璃窗口，其他都是漆木。玻璃上歪歪扭扭写着三个方程还有其他鬼画符。拿手机拍下来以后回头看，发现人都不见了。<br>我退出体育室，去其他办公室搜查，没有发现什么。就决定上楼与其他人汇合。<br>楼上都是教室，我直到顶楼才看到人。<br>不过目睹的是一个长着猪脑袋和獠牙的人型怪物向一扇细窄的黑洞洞的门里伸出手，门里丢给他一个像沙包的东西。<br>他拿着这个进教室，不一会就拖了四个昏迷的人出来把他们放在一张圆桌前挨个坐好。我看见猪头人走了，蹭过去想摇醒他们。<br>没有用。<br>这时，我发现那扇细窄的黑门就在面前的墙壁上。试着伸出手说：“解药。”然后，门里浮现出一个干瘦的惨白人脸，一只手把沙包丢给我。<br>我把沙包拿给四个人闻，他们都醒了。<br>两个人结伴从另一个楼道走，我背起一个腿伤的人，问剩下的最后一个：“你不走吗？”<br>“我留下来拖延时间。”<br>我点点头：“我会回来找你。”<br>我下了楼，没有遇见意外。把腿伤的人放在大楼外后，我准备返回大楼。<br>路上遇见从另一边顺利下来的两个人。他们看见我回去很惊讶，我说里面还有一个人。他们劝道：“别去，太危险了。”<br>我摇摇头，进入大楼一层。这次不是学校了，而是超大医院的大厅。没有顶灯，所有的灯光都是屏幕发出的，米黄和草绿交错。医院里整齐地布置着座椅，座椅上坐满了候诊的人。<br>哪里会有医院把候诊大厅搞得跟火车站一样。<br>他们有电梯，我没用，跑到楼梯井里，一个包工头对着面前跪下的一个人说道：“你是榜眼？除非你们的状元也给我跪下，我才……”<br>状元走上前，我没有看到更多，上了楼，包工头的笑声很有穿透力。但我踏上二楼，发现楼梯很不稳定。<br>开始狂奔，我跑过一层，楼梯就塌一层。就在四楼，整座大楼倒塌。<br>一阵强烈的失重感后，我醒来了。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>文字</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦 / 应试教育后遗症</title>
-    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E5%BA%94%E8%AF%95%E6%95%99%E8%82%B2%E5%90%8E%E9%81%97%E7%97%87/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>早上做梦梦见下午两点有一个生物学考试。关键是我7点被吵醒那会对自己做的梦深信不疑，睡到8点半的这段时间内梦境在自动补完“我有一个选修课一直没去上但几个小时后就要考试”的这回事。<br>甚至脑补了具体的上课情景，确定这门课叫“上帝知道答案”。讲课的是一个女老师，和我一起上课的有舍友和隔壁班同学。然后梦里我不乐意去问舍友，就问了隔壁班同学，这位同学石锤了下午两点有考试，然后就开始慌，恐慌，虽然9小时复习概率论/12小时速通PLC不是没有过，但是距离下午两点只有6小时了，我根本不记得这门课的任何内容。平时既然没去上课那肯定没有平时分。我恐惧保研功亏一篑。<br>直到刷完牙我都还没想明白到底有没有“选修课下午两点考试”这回事</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>文字</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦 / 我真是个起名天才</title>
-    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%88%91%E7%9C%9F%E6%98%AF%E4%B8%AA%E8%B5%B7%E5%90%8D%E5%A4%A9%E6%89%8D/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>今天的梦又是一个大型连续剧。。<br>背景星际，但是一群人又会点火又会再生水资源的，醒来我都懵这是什么鬼畜修仙+科幻<br>现在已经有点记不清了<br>就记得主角1叫然倚暮（好像是，我记得是三个字，最后一个字很复杂），真名叫何然，不知道惹了什么事（大概是家族政变），处于逃亡状态。<br>中间应该发生了很多事，有一个半机械人（主角2）在追杀她，最后棋差一着被何然借助激光发射器干碎了半个身子，终止了他的追杀。<br>何然很冷静聪明，她根据半机械人的指示找到一个玩具熊，玩具熊背后的标签上会显示【未来一段时间内最大概率发生的事件】。<br>她看玩具熊的标签，上面写着【卫队包围了老宅】。<br>何然被抓起来了。<br>被抓回去开家庭会议。<br>她面对她妈和她奶奶，她爸死了。看过标签的何然知道要从奶奶这里突破，她妈是个不折不扣的反派。<br>然后就想不起来了……</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>文字</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦 / 文明间的战术欺骗</title>
-    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%96%87%E6%98%8E%E9%97%B4%E7%9A%84%E6%88%98%E6%9C%AF%E6%AC%BA%E9%AA%97/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>今天的梦是我声称发现适距中子星可以利用新武器将其引爆并取得与敌对地外文明的战争胜利。<br>该地外文明宣告投降，派出一位代表由我带领参观地球。<br>该代表的形象是抽象蓝绿鱼头人。<br>在参观过程中我告诉他：“其实并没有中子星，我骗你们的。”<br>参观在沉默中结束了。<br>蓝绿鱼头人代表回去后宣战。<br>于是我方引爆了中子星。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>文字</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦 / 正宫的不屑.jpg</title>
-    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%AD%A3%E5%AE%AB%E7%9A%84%E4%B8%8D%E5%B1%91-jpg/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>昨天晚上梦到我拿着我推纸片人1的照片（立绘？）给正宫纸片人2看，纸片人2不屑地笑了 ​​​</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>文字</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦 / 纸片人的精神分裂症状</title>
-    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E7%BA%B8%E7%89%87%E4%BA%BA%E7%9A%84%E7%B2%BE%E7%A5%9E%E5%88%86%E8%A3%82%E7%97%87%E7%8A%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>三个片段，互相无关联。<br>1.我在玩一个2d像素游戏，做了隐藏任务赚了好多钱。<br>2舍友写小说给我看，我觉得插图很丑就改了改，然后发现这样不打招呼就改很不礼貌。<br>3.我找钟离，balabalabalabala（中间忘记了），他送了我一个挂在包上的链子，一把餐刀，表示以后我是他女朋友了！梦里的我：其实我更希望是您的副人格万叶。</p>
-<p>醒来：？</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>文字</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦 / 追查无形怪物</title>
-    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E8%BF%BD%E6%9F%A5%E6%97%A0%E5%BD%A2%E6%80%AA%E7%89%A9/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>梦见出现了一种奇怪的力量，其表现形式是人有时候会无缘无故被突然扯一下，但不是别人干的。<br>就像透明人恶作剧一样。<br>这个现象变得越发严重了，我曾见到一个小女孩被来自多方向的无形的力折断骨头，整个人扭曲变形。<br>我去追查这种现象的源头，到一座大厦里（特别像学校的学研中心），进门的时候刚好目睹一个深蓝色衣服的人从高空坠落，砸到地上。<br>因为事情紧急，就没有去管，但是我和助手都认为肯定和源头有关。<br>上楼，被发现，开始躲，躲到一个占卜师的家里，她帮我隐藏了起来，还让我抽了三张塔罗牌，但是没有读牌，我也不记得三张牌是什么。<br>后来我的队友赶到了，在楼外辅助，我下了楼，看到那个坠落的人，走进发现只是一件外套，外套里面摆着一个只有一半的饼干。<br>这个饼干是软的，很大，一个巴掌那么大，完整版应该是两颗心被箭串在一起，这里只有一半，两个心是粉的，中间用黄色写了几个单词，但是不完整。<br>我突然发觉这个跳楼的人就是我。<br>我要传达给我什么信息？<br>在保温杯里找到了另外一半饼干，把它们拼起来，我知道了完整的句子。<br>从占卜师那里走后，她把占卜的牌送给了我。我拿出来边走边洗牌，却发现总是有牌不是背面向上的，还得反过来，我很着急，后来在确认牌数量的时候，数不出正确的数目，就让队友又帮我买了一副牌。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>文字</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦 / 真实的家庭伦理剧</title>
-    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E7%9C%9F%E5%AE%9E%E7%9A%84%E5%AE%B6%E5%BA%AD%E4%BC%A6%E7%90%86%E5%89%A7/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>梦见爷爷鲨了奶奶，尸体藏在床下，我不知情地在床上睡了两天，第三天房子开始摇晃我看到床底下蔓延的血水才去叫我爸妈，爸妈拿菜刀把奶奶分尸了 ​​​</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>文字</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦 / 逃出犯罪集团窝点</title>
-    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E9%80%83%E5%87%BA%E7%8A%AF%E7%BD%AA%E9%9B%86%E5%9B%A2%E7%AA%9D%E7%82%B9/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>啊，想不起来了，大概是我是一个十岁小孩，逃出犯罪集团窝点，同行的大哥塞给我一把有我高的枪，连人带车沉到湖里。<br>我把唯一一发子弹打空后，逃到一个农庄处，和当地人讨价还价，把枪卖了，换来两把手枪和若干子弹。对了，枪是电浆枪。 ​​​</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>文字</category>
-        <category>奇怪的梦</category>
-      </categories>
+      <tags>
+        <tag>“花花世界我一人干翻”</tag>
+      </tags>
   </entry>
   <entry>
     <title>今夜，学研（一）</title>
@@ -574,46 +449,6 @@
       </tags>
   </entry>
   <entry>
-    <title>▇▇▇▇大学新绿指南</title>
-    <url>/2021/12/12/%E6%96%87%E5%AD%97/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/%E2%96%87%E2%96%87%E2%96%87%E2%96%87%E5%A4%A7%E5%AD%A6%E6%96%B0%E7%BB%BF%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>亲爱的新绿们大家好！欢迎大家来到▇▇▇▇大学，预祝你们渡过愉快的大学生涯！<br>入学新绿们请知悉以下规则，以确保在校期间人身与财产安全不受侵犯。</p>
-<blockquote>
-<ol>
-<li>新绿要及时了解报到条件、时间和要求，不符合报到条件的新绿不报到。若违反上述规定，该生应及时检查录取通知书是否存在异常。</li>
-<li>2021届录取通知书为“楸木”。主图案倒数第四折应为根系最密集折。若新绿在任何时候发现最密集折位置异常，不要告知任何人。不要扫描二维码。记下异常位置与正常位置间隔几折。立刻将通知书还原至初始状态并捡起一片叶子，任何叶子都行，随后将其夹在随身携带的书里。</li>
-<li>本学院报到处若向你提供导航服务，不要信任，跟着你的手机导航走。</li>
-<li>不要剥开一卡通的表层。</li>
-<li>在校内看见标有自习室标牌的房间，不要进去，本校不设有自习室。</li>
-<li>学研的电梯不在五层以下停留。若你不慎按亮低楼层按钮，它是无法取消的。你必须在你按亮的楼层出电梯，走楼梯至你想要前往的楼层，否则后果自负。</li>
-<li>不要连接校园网。时刻注意手机是否连上校园网，一旦发现立即断开连接。</li>
-<li>若必须连接校园网，请使用学研A座机房，离开时记得刷卡下机，否则后果自负。</li>
-<li>校训是“知山知水，树木树人”，若在谈论此事时，遇到一口咬定校训是“替河山装成锦绣，把国土绘成丹青”的人，立刻终止对话，他们不是新绿。</li>
-<li>二教五层没有挂照片，若你发现二教五层挂有学研的照片，立刻通知保卫处然后离开二教。</li>
-<li>不得围挂床帘并被宿管发现。若宿管发现此事该生应及时检查录取通知书是否存在异常。</li>
-<li>不得携带大功率电器进宿舍楼并被宿管发现。若宿管发现此事该生应及时检查录取通知书是否存在异常。</li>
-<li>不得携带家具进宿舍楼并被宿管发现。若宿管发现此事该生应及时检查录取通知书是否存在异常。</li>
-<li>不要在早晨6：00前到达图书馆。若你在这以前到达了，应前往五层占一个座，营造出有人的假象。之后立刻离开图书馆，当天晚上图书馆响铃前不得再次进入。</li>
-<li>可以觉得累，失落，茫然，找不到人生的意义，但不要认真填写学校心理量表。</li>
-<li>接受食堂的价格，最好做到赞不绝口。</li>
-<li>校园内不存在电动车。</li>
-<li>非必要，不出校。</li>
-</ol>
-</blockquote>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>文字</category>
-        <category>规则类怪谈</category>
-      </categories>
-      <tags>
-        <tag>规则类怪谈</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>追书人</title>
     <url>/2021/11/30/%E6%96%87%E5%AD%97/COC%20TRPG/%E3%80%90%E8%B7%91%E5%9B%A2%E3%80%91%E8%BF%BD%E4%B9%A6%E4%BA%BA/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<hr>
@@ -767,7 +602,7 @@
 <blockquote>
 <p>&lt;[kp]&gt; 刘平安过图书馆使用<br>&lt;骰娘&gt; [刘平安]进行图书馆使用鉴定: D100=1/50大成功！</p>
 </blockquote>
-<p>&lt;[kp]&gt; 自动贩卖机的屏幕上是优惠促销的广告，香草拿铁8折、冰美式7折；付款码扫描口闪着红点。<br>&lt;[kp]&gt; 刘平安在繁杂的信息堆中发现了这样一张简短的通知：“本院植物学教授钱正辉于11月15日至11月19日赴美国旧金山大学作学术交流，……（调课说明等杂七杂八的内容）。联系本人请发送邮件至<a href="mailto:&#x51;&#x69;&#x61;&#x6e;&#90;&#104;&#x65;&#x6e;&#103;&#x68;&#x75;&#x69;&#95;&#x30;&#x34;&#48;&#55;&#64;&#x62;&#106;&#102;&#117;&#46;&#x65;&#x64;&#x75;&#46;&#x63;&#110;">&#x51;&#x69;&#x61;&#x6e;&#90;&#104;&#x65;&#x6e;&#103;&#x68;&#x75;&#x69;&#95;&#x30;&#x34;&#48;&#55;&#64;&#x62;&#106;&#102;&#117;&#46;&#x65;&#x64;&#x75;&#46;&#x63;&#110;</a>。”钱正辉……刘平安对这个名字有印象，自己似乎上过他的课。满满一公示栏熟悉的措辞让刘平安觉得稍微安心了些。san+1。<br>&lt;[张二狗]&gt; 看看沙发和茶几上有什么<br>&lt;[kp]&gt; 沙发上什么都没有，茶几上有一些没收走的零食包装袋。<br>&lt;[刘平安]&gt; 记下了这条通知，虽然感觉对现在的状况没什么帮助，但是感到安心。<br>&lt;[张二狗]&gt; 我要观察那盏紫色的灯<br>&lt;[刘平安]&gt; 稍微琢磨了一下，0407…或许是办公室号吗？还是日期？决定去找一找407<br>&lt;[kp]&gt; 天花板上的紫灯颜色和刘平安的led灯一模一样，但比它要明亮些，至少能照亮这一小圈地方。只是盯久了让人眼前发黑，有点头晕。<br>&lt;[温夏]&gt; “为什么停电了自动贩卖机还能工作啊。”无奈地看看黑屏的手机，长按开机键试试能不能开机。<br>&lt;[kp]&gt; 手机震动了一下，温夏听到了熟悉的开机动画的声音，但屏幕仍是一片漆黑。<br>&lt;[张二狗]&gt; 调查下整个大厅看看有没有什么特别的<br>&lt;[kp]&gt; 大厅比较空旷，最不对劲的大概就是紫色的灯和还在工作的自动贩卖机了。<br>&lt;[温夏]&gt; “……不会吧……”看来它是没什么用了，只好收起来，跟着刘平安。<br>&lt;[张二狗]&gt; 去自动贩卖机那边看看，买杯拿铁<br>&lt;[kp]&gt; 温夏跟上刘平安陪她寻找着钱正辉的办公室，不知道是因为你们一直在移动还是楼层的暖气开得太足，走廊里热得让人想把外套脱了。而且越靠近C0407，就热得越厉害。</p>
+<p>&lt;[kp]&gt; 自动贩卖机的屏幕上是优惠促销的广告，香草拿铁8折、冰美式7折；付款码扫描口闪着红点。<br>&lt;[kp]&gt; 刘平安在繁杂的信息堆中发现了这样一张简短的通知：“本院植物学教授钱正辉于11月15日至11月19日赴美国旧金山大学作学术交流，……（调课说明等杂七杂八的内容）。联系本人请发送邮件至<a href="mailto:&#81;&#105;&#x61;&#x6e;&#90;&#104;&#101;&#x6e;&#x67;&#x68;&#x75;&#105;&#95;&#x30;&#x34;&#48;&#55;&#64;&#x62;&#106;&#x66;&#117;&#x2e;&#101;&#x64;&#117;&#46;&#x63;&#x6e;">&#81;&#105;&#x61;&#x6e;&#90;&#104;&#101;&#x6e;&#x67;&#x68;&#x75;&#105;&#95;&#x30;&#x34;&#48;&#55;&#64;&#x62;&#106;&#x66;&#117;&#x2e;&#101;&#x64;&#117;&#46;&#x63;&#x6e;</a>。”钱正辉……刘平安对这个名字有印象，自己似乎上过他的课。满满一公示栏熟悉的措辞让刘平安觉得稍微安心了些。san+1。<br>&lt;[张二狗]&gt; 看看沙发和茶几上有什么<br>&lt;[kp]&gt; 沙发上什么都没有，茶几上有一些没收走的零食包装袋。<br>&lt;[刘平安]&gt; 记下了这条通知，虽然感觉对现在的状况没什么帮助，但是感到安心。<br>&lt;[张二狗]&gt; 我要观察那盏紫色的灯<br>&lt;[刘平安]&gt; 稍微琢磨了一下，0407…或许是办公室号吗？还是日期？决定去找一找407<br>&lt;[kp]&gt; 天花板上的紫灯颜色和刘平安的led灯一模一样，但比它要明亮些，至少能照亮这一小圈地方。只是盯久了让人眼前发黑，有点头晕。<br>&lt;[温夏]&gt; “为什么停电了自动贩卖机还能工作啊。”无奈地看看黑屏的手机，长按开机键试试能不能开机。<br>&lt;[kp]&gt; 手机震动了一下，温夏听到了熟悉的开机动画的声音，但屏幕仍是一片漆黑。<br>&lt;[张二狗]&gt; 调查下整个大厅看看有没有什么特别的<br>&lt;[kp]&gt; 大厅比较空旷，最不对劲的大概就是紫色的灯和还在工作的自动贩卖机了。<br>&lt;[温夏]&gt; “……不会吧……”看来它是没什么用了，只好收起来，跟着刘平安。<br>&lt;[张二狗]&gt; 去自动贩卖机那边看看，买杯拿铁<br>&lt;[kp]&gt; 温夏跟上刘平安陪她寻找着钱正辉的办公室，不知道是因为你们一直在移动还是楼层的暖气开得太足，走廊里热得让人想把外套脱了。而且越靠近C0407，就热得越厉害。</p>
 <blockquote>
 <p>&lt;[kp]&gt; 过个幸运看看有没有现金<br>&lt;骰娘&gt; [张二狗]进行幸运鉴定: D100=70/55失败</p>
 </blockquote>
@@ -816,6 +651,142 @@
       </tags>
   </entry>
   <entry>
+    <title>梦 / 人鱼双子成功脱困了吗</title>
+    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E4%BA%BA%E9%B1%BC%E5%8F%8C%E5%AD%90%E6%88%90%E5%8A%9F%E8%84%B1%E5%9B%B0%E4%BA%86%E5%90%97/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>有人指挥我进一家服装店，把里面的衣服拿出去以很便宜的价格叫卖，吸引到一些顾客正在议价时，突然发现哥哥的电话打不通。<br>直觉就是出事了，打119，立刻进行搜索，我和我爸去找人，找到一个很阴暗的地窖，里面都是大酒坛子。打开一个坛子，发现哥哥就在里面，虚弱无力的样子。<br>然后因为发现了秘密，我被塞进酒坛子里，我爸被杀。没有人来救，渐渐我发现在坛子里我们的腿变成了鱼尾。<br>之后，我和哥哥被丢到一个四方的水泥池里，里面水很浅，后来多了起来，还可以养鱼。有一天我们的手上都长了水泡，很痛，但是一个人告诉我们这是鱼卵，指着哥哥的手说他的已经孵化了，很快就好。确实是这样，我手上的水泡掉下来以后孵出一只黄色扁热带鱼，然后就好了。<br>一天涨潮，潮水没过小池子，我和哥哥趁机游出去。逃到一个很多人的岸边，大家都很惊讶地看着，然后有一个人把我们带走了，发现我们过了太久，不会认字说话，就让我们认字。<br>最后，发现鱼尾可以在完全干燥的情况下变成人腿，我和哥哥的头发变成红色，红色的短发蘑菇头，可以上岸走路但是不能晒太阳，就给我们定制了特别的衣服，紫色。<br>红色头发紫色衣服，两个人手牵手站在一段台阶顶端，似乎要去参加什么典礼。这是我最后梦到的画面。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>文字</category>
+        <category>奇怪的梦</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>梦 / 学校、医院和坍塌</title>
+    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E5%AD%A6%E6%A0%A1%E3%80%81%E5%8C%BB%E9%99%A2%E5%92%8C%E5%9D%8D%E5%A1%8C/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>一群人进入一座楼，白天。一楼有体育室和办公室，是学校一样的地方。<br>他们分组去搜查其他楼层，我就去检查体育室，一眼看到右边柜子上挂着一副世界地图。问办公室里的人能不能看，他们答应了我就靠近看。<br>突然地图掉下来，我吓了一跳。<br>地图后面的柜子，柜门是玻璃窗口，其他都是漆木。玻璃上歪歪扭扭写着三个方程还有其他鬼画符。拿手机拍下来以后回头看，发现人都不见了。<br>我退出体育室，去其他办公室搜查，没有发现什么。就决定上楼与其他人汇合。<br>楼上都是教室，我直到顶楼才看到人。<br>不过目睹的是一个长着猪脑袋和獠牙的人型怪物向一扇细窄的黑洞洞的门里伸出手，门里丢给他一个像沙包的东西。<br>他拿着这个进教室，不一会就拖了四个昏迷的人出来把他们放在一张圆桌前挨个坐好。我看见猪头人走了，蹭过去想摇醒他们。<br>没有用。<br>这时，我发现那扇细窄的黑门就在面前的墙壁上。试着伸出手说：“解药。”然后，门里浮现出一个干瘦的惨白人脸，一只手把沙包丢给我。<br>我把沙包拿给四个人闻，他们都醒了。<br>两个人结伴从另一个楼道走，我背起一个腿伤的人，问剩下的最后一个：“你不走吗？”<br>“我留下来拖延时间。”<br>我点点头：“我会回来找你。”<br>我下了楼，没有遇见意外。把腿伤的人放在大楼外后，我准备返回大楼。<br>路上遇见从另一边顺利下来的两个人。他们看见我回去很惊讶，我说里面还有一个人。他们劝道：“别去，太危险了。”<br>我摇摇头，进入大楼一层。这次不是学校了，而是超大医院的大厅。没有顶灯，所有的灯光都是屏幕发出的，米黄和草绿交错。医院里整齐地布置着座椅，座椅上坐满了候诊的人。<br>哪里会有医院把候诊大厅搞得跟火车站一样。<br>他们有电梯，我没用，跑到楼梯井里，一个包工头对着面前跪下的一个人说道：“你是榜眼？除非你们的状元也给我跪下，我才……”<br>状元走上前，我没有看到更多，上了楼，包工头的笑声很有穿透力。但我踏上二楼，发现楼梯很不稳定。<br>开始狂奔，我跑过一层，楼梯就塌一层。就在四楼，整座大楼倒塌。<br>一阵强烈的失重感后，我醒来了。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>文字</category>
+        <category>奇怪的梦</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>梦 / 应试教育后遗症</title>
+    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E5%BA%94%E8%AF%95%E6%95%99%E8%82%B2%E5%90%8E%E9%81%97%E7%97%87/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>早上做梦梦见下午两点有一个生物学考试。关键是我7点被吵醒那会对自己做的梦深信不疑，睡到8点半的这段时间内梦境在自动补完“我有一个选修课一直没去上但几个小时后就要考试”的这回事。<br>甚至脑补了具体的上课情景，确定这门课叫“上帝知道答案”。讲课的是一个女老师，和我一起上课的有舍友和隔壁班同学。然后梦里我不乐意去问舍友，就问了隔壁班同学，这位同学石锤了下午两点有考试，然后就开始慌，恐慌，虽然9小时复习概率论/12小时速通PLC不是没有过，但是距离下午两点只有6小时了，我根本不记得这门课的任何内容。平时既然没去上课那肯定没有平时分。我恐惧保研功亏一篑。<br>直到刷完牙我都还没想明白到底有没有“选修课下午两点考试”这回事</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>文字</category>
+        <category>奇怪的梦</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>梦 / 我真是个起名天才</title>
+    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%88%91%E7%9C%9F%E6%98%AF%E4%B8%AA%E8%B5%B7%E5%90%8D%E5%A4%A9%E6%89%8D/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>今天的梦又是一个大型连续剧。。<br>背景星际，但是一群人又会点火又会再生水资源的，醒来我都懵这是什么鬼畜修仙+科幻<br>现在已经有点记不清了<br>就记得主角1叫然倚暮（好像是，我记得是三个字，最后一个字很复杂），真名叫何然，不知道惹了什么事（大概是家族政变），处于逃亡状态。<br>中间应该发生了很多事，有一个半机械人（主角2）在追杀她，最后棋差一着被何然借助激光发射器干碎了半个身子，终止了他的追杀。<br>何然很冷静聪明，她根据半机械人的指示找到一个玩具熊，玩具熊背后的标签上会显示【未来一段时间内最大概率发生的事件】。<br>她看玩具熊的标签，上面写着【卫队包围了老宅】。<br>何然被抓起来了。<br>被抓回去开家庭会议。<br>她面对她妈和她奶奶，她爸死了。看过标签的何然知道要从奶奶这里突破，她妈是个不折不扣的反派。<br>然后就想不起来了……</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>文字</category>
+        <category>奇怪的梦</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>梦 / 文明间的战术欺骗</title>
+    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%96%87%E6%98%8E%E9%97%B4%E7%9A%84%E6%88%98%E6%9C%AF%E6%AC%BA%E9%AA%97/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>今天的梦是我声称发现适距中子星可以利用新武器将其引爆并取得与敌对地外文明的战争胜利。<br>该地外文明宣告投降，派出一位代表由我带领参观地球。<br>该代表的形象是抽象蓝绿鱼头人。<br>在参观过程中我告诉他：“其实并没有中子星，我骗你们的。”<br>参观在沉默中结束了。<br>蓝绿鱼头人代表回去后宣战。<br>于是我方引爆了中子星。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>文字</category>
+        <category>奇怪的梦</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>梦 / 正宫的不屑.jpg</title>
+    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%AD%A3%E5%AE%AB%E7%9A%84%E4%B8%8D%E5%B1%91-jpg/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>昨天晚上梦到我拿着我推纸片人1的照片（立绘？）给正宫纸片人2看，纸片人2不屑地笑了 ​​​</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>文字</category>
+        <category>奇怪的梦</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>梦 / 纸片人的精神分裂症状</title>
+    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E7%BA%B8%E7%89%87%E4%BA%BA%E7%9A%84%E7%B2%BE%E7%A5%9E%E5%88%86%E8%A3%82%E7%97%87%E7%8A%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>三个片段，互相无关联。<br>1.我在玩一个2d像素游戏，做了隐藏任务赚了好多钱。<br>2舍友写小说给我看，我觉得插图很丑就改了改，然后发现这样不打招呼就改很不礼貌。<br>3.我找钟离，balabalabalabala（中间忘记了），他送了我一个挂在包上的链子，一把餐刀，表示以后我是他女朋友了！梦里的我：其实我更希望是您的副人格万叶。</p>
+<p>醒来：？</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>文字</category>
+        <category>奇怪的梦</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>梦 / 真实的家庭伦理剧</title>
+    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E7%9C%9F%E5%AE%9E%E7%9A%84%E5%AE%B6%E5%BA%AD%E4%BC%A6%E7%90%86%E5%89%A7/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>梦见爷爷鲨了奶奶，尸体藏在床下，我不知情地在床上睡了两天，第三天房子开始摇晃我看到床底下蔓延的血水才去叫我爸妈，爸妈拿菜刀把奶奶分尸了 ​​​</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>文字</category>
+        <category>奇怪的梦</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>梦 / 追查无形怪物</title>
+    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E8%BF%BD%E6%9F%A5%E6%97%A0%E5%BD%A2%E6%80%AA%E7%89%A9/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>梦见出现了一种奇怪的力量，其表现形式是人有时候会无缘无故被突然扯一下，但不是别人干的。<br>就像透明人恶作剧一样。<br>这个现象变得越发严重了，我曾见到一个小女孩被来自多方向的无形的力折断骨头，整个人扭曲变形。<br>我去追查这种现象的源头，到一座大厦里（特别像学校的学研中心），进门的时候刚好目睹一个深蓝色衣服的人从高空坠落，砸到地上。<br>因为事情紧急，就没有去管，但是我和助手都认为肯定和源头有关。<br>上楼，被发现，开始躲，躲到一个占卜师的家里，她帮我隐藏了起来，还让我抽了三张塔罗牌，但是没有读牌，我也不记得三张牌是什么。<br>后来我的队友赶到了，在楼外辅助，我下了楼，看到那个坠落的人，走进发现只是一件外套，外套里面摆着一个只有一半的饼干。<br>这个饼干是软的，很大，一个巴掌那么大，完整版应该是两颗心被箭串在一起，这里只有一半，两个心是粉的，中间用黄色写了几个单词，但是不完整。<br>我突然发觉这个跳楼的人就是我。<br>我要传达给我什么信息？<br>在保温杯里找到了另外一半饼干，把它们拼起来，我知道了完整的句子。<br>从占卜师那里走后，她把占卜的牌送给了我。我拿出来边走边洗牌，却发现总是有牌不是背面向上的，还得反过来，我很着急，后来在确认牌数量的时候，数不出正确的数目，就让队友又帮我买了一副牌。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>文字</category>
+        <category>奇怪的梦</category>
+      </categories>
+  </entry>
+  <entry>
     <title>▇▇▇▇大学自习室</title>
     <url>/2021/12/12/%E6%96%87%E5%AD%97/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/%E2%96%87%E2%96%87%E2%96%87%E2%96%87%E5%A4%A7%E5%AD%A6%E8%87%AA%E4%B9%A0%E5%AE%A4/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="【内部环境】"><a href="#【内部环境】" class="headerlink" title="【内部环境】"></a>【内部环境】</h3><p>正对门的位置，挂着《▇▇▇▇大学自习室守则》。右手边是可移动的白板，白板上有一些凌乱的字和线条，可以在白板下沿找到六支黑色的白板笔和笔擦。<br>三角形可活动课桌被拼成正六边形置于自习室正中，桌面干净整洁，各配有一把椅子。<br>左手边是一排电脑。共六台台式机，配高脚凳。此外，该区域还有存包柜、饮水机、自动贩卖机等设施。</p>
@@ -847,6 +818,61 @@
       <tags>
         <tag>规则类怪谈</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>▇▇▇▇大学新绿指南</title>
+    <url>/2021/12/12/%E6%96%87%E5%AD%97/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/%E2%96%87%E2%96%87%E2%96%87%E2%96%87%E5%A4%A7%E5%AD%A6%E6%96%B0%E7%BB%BF%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>亲爱的新绿们大家好！欢迎大家来到▇▇▇▇大学，预祝你们渡过愉快的大学生涯！<br>入学新绿们请知悉以下规则，以确保在校期间人身与财产安全不受侵犯。</p>
+<blockquote>
+<ol>
+<li>新绿要及时了解报到条件、时间和要求，不符合报到条件的新绿不报到。若违反上述规定，该生应及时检查录取通知书是否存在异常。</li>
+<li>2021届录取通知书为“楸木”。主图案倒数第四折应为根系最密集折。若新绿在任何时候发现最密集折位置异常，不要告知任何人。不要扫描二维码。记下异常位置与正常位置间隔几折。立刻将通知书还原至初始状态并捡起一片叶子，任何叶子都行，随后将其夹在随身携带的书里。</li>
+<li>本学院报到处若向你提供导航服务，不要信任，跟着你的手机导航走。</li>
+<li>不要剥开一卡通的表层。</li>
+<li>在校内看见标有自习室标牌的房间，不要进去，本校不设有自习室。</li>
+<li>学研的电梯不在五层以下停留。若你不慎按亮低楼层按钮，它是无法取消的。你必须在你按亮的楼层出电梯，走楼梯至你想要前往的楼层，否则后果自负。</li>
+<li>不要连接校园网。时刻注意手机是否连上校园网，一旦发现立即断开连接。</li>
+<li>若必须连接校园网，请使用学研A座机房，离开时记得刷卡下机，否则后果自负。</li>
+<li>校训是“知山知水，树木树人”，若在谈论此事时，遇到一口咬定校训是“替河山装成锦绣，把国土绘成丹青”的人，立刻终止对话，他们不是新绿。</li>
+<li>二教五层没有挂照片，若你发现二教五层挂有学研的照片，立刻通知保卫处然后离开二教。</li>
+<li>不得围挂床帘并被宿管发现。若宿管发现此事该生应及时检查录取通知书是否存在异常。</li>
+<li>不得携带大功率电器进宿舍楼并被宿管发现。若宿管发现此事该生应及时检查录取通知书是否存在异常。</li>
+<li>不得携带家具进宿舍楼并被宿管发现。若宿管发现此事该生应及时检查录取通知书是否存在异常。</li>
+<li>不要在早晨6：00前到达图书馆。若你在这以前到达了，应前往五层占一个座，营造出有人的假象。之后立刻离开图书馆，当天晚上图书馆响铃前不得再次进入。</li>
+<li>可以觉得累，失落，茫然，找不到人生的意义，但不要认真填写学校心理量表。</li>
+<li>接受食堂的价格，最好做到赞不绝口。</li>
+<li>校园内不存在电动车。</li>
+<li>非必要，不出校。</li>
+</ol>
+</blockquote>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>文字</category>
+        <category>规则类怪谈</category>
+      </categories>
+      <tags>
+        <tag>规则类怪谈</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>梦 / 逃出犯罪集团窝点</title>
+    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E9%80%83%E5%87%BA%E7%8A%AF%E7%BD%AA%E9%9B%86%E5%9B%A2%E7%AA%9D%E7%82%B9/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>啊，想不起来了，大概是我是一个十岁小孩，逃出犯罪集团窝点，同行的大哥塞给我一把有我高的枪，连人带车沉到湖里。<br>我把唯一一发子弹打空后，逃到一个农庄处，和当地人讨价还价，把枪卖了，换来两把手枪和若干子弹。对了，枪是电浆枪。 ​​​</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>文字</category>
+        <category>奇怪的梦</category>
+      </categories>
   </entry>
   <entry>
     <title>《人类削减计划》（The Thinning）</title>
@@ -942,6 +968,25 @@
       </categories>
   </entry>
   <entry>
+    <title>《普罗米亚》（Promare）</title>
+    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E6%99%AE%E7%BD%97%E7%B1%B3%E4%BA%9A%E3%80%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss38790/?from=search&seid=14588705022024327750&spm_id_from=333.337.0.0">普罗米亚</a>（Promare）<br>导演：今石洋之<br>主角：里奥/加罗/克雷<br>cp：无<br>视角：双男主<br>世界观：近未来架空<br>观影点：宿舍</p>
+<hr>
+<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>确实燃。<br>但是本剧情党还是更爱剧情向的片子一点。<br>配色五分，作画五分，剧情两分。<br>我感觉…如果是个番会更好点，就，能有更大篇幅交代一下世界观、埋伏笔啥的，这个剧情还是太……直白了。<br>根据眯眯眼都是怪物的传统，谁是大boss这点简直没有让人猜的必要。</p>
+<p><s>*看完以后在b站评论翻到了加罗和里奥的本子信息，就，跑去看了……捏妈，作者你是个天才……十年后扎头发的里奥……疯狂心动了！！！！我的叉p系统我自己都会感到无语<br>*关于我拿本子当头像这件事一定不会有人发现的，嗯</s></p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>文字</category>
+        <category>观后感</category>
+        <category>电影</category>
+      </categories>
+  </entry>
+  <entry>
     <title>《断背山》（Brokeback Mountain）</title>
     <url>/2021/12/03/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E6%96%AD%E8%83%8C%E5%B1%B1%E3%80%8B/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：断背山（Brokeback Mountain）<br>导演：李安<br>主角：恩尼斯·德尔玛/杰克·特维斯特/艾玛/露琳<br>cp：我站恩尼斯x杰克<br>视角：双男主，但主要是恩尼斯吧<br>世界观：1963年至1981年的美国怀俄明州，断背山<br>观影点：学校咖啡厅</p>
@@ -965,25 +1010,6 @@
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss28274/?from=search&seid=7072310877346482327&spm_id_from=333.337.0.0">肖申克的救赎</a>（The Shawshank Redemption）<br>导演：弗兰克 德拉邦特<br>主角：安迪/瑞德/典狱长<br>cp：无<br>视角：旁白瑞德追忆，主视角安迪<br>世界观：1940s</p>
 <hr>
 <h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>原来这部作品的原作是斯蒂芬金写的，他真牛。看了简介以后，原来《迷雾》也是他写的？！<br>其实，因为这部电影太过有名，我一早就知道他会挖隧道逃生，所以在高潮部分没怎么惊讶，越狱以后，瑞德如约找到安迪，影片结束。<br>故事很好，但没有多大震撼，也不骗眼泪。我对主题的自由提不起兴趣。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>文字</category>
-        <category>观后感</category>
-        <category>电影</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>《普罗米亚》（Promare）</title>
-    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E6%99%AE%E7%BD%97%E7%B1%B3%E4%BA%9A%E3%80%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss38790/?from=search&seid=14588705022024327750&spm_id_from=333.337.0.0">普罗米亚</a>（Promare）<br>导演：今石洋之<br>主角：里奥/加罗/克雷<br>cp：无<br>视角：双男主<br>世界观：近未来架空<br>观影点：宿舍</p>
-<hr>
-<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>确实燃。<br>但是本剧情党还是更爱剧情向的片子一点。<br>配色五分，作画五分，剧情两分。<br>我感觉…如果是个番会更好点，就，能有更大篇幅交代一下世界观、埋伏笔啥的，这个剧情还是太……直白了。<br>根据眯眯眼都是怪物的传统，谁是大boss这点简直没有让人猜的必要。</p>
-<p><s>*看完以后在b站评论翻到了加罗和里奥的本子信息，就，跑去看了……捏妈，作者你是个天才……十年后扎头发的里奥……疯狂心动了！！！！我的叉p系统我自己都会感到无语<br>*关于我拿本子当头像这件事一定不会有人发现的，嗯</s></p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -1064,29 +1090,6 @@
       </categories>
   </entry>
   <entry>
-    <title>《偏执男主白月光我不当了》by赵史觉</title>
-    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E8%AF%BB%E5%90%8E%E6%84%9F/%E5%B0%8F%E8%AF%B4/%E3%80%8A%E5%81%8F%E6%89%A7%E7%94%B7%E4%B8%BB%E7%99%BD%E6%9C%88%E5%85%89%E6%88%91%E4%B8%8D%E5%BD%93%E4%BA%86%E3%80%8Bby%E8%B5%B5%E5%8F%B2%E8%A7%89/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=4425292">偏执男主白月光我不当了</a><br>作者：赵史觉<br>主角：楚殷/陆缜<br>cp：陆缜x楚殷<br>视角：女主BG<br>分类：轻松欢脱，但还是有主线的<br>世界观：现代，重生<br>状态：完结</p>
-<hr>
-<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>楚殷死后才知道自己是豪门文里的白月光。<br>偏执男主年少时对她一见钟情，而后执掌财阀大权。楚殷被他的疯狂占有欲折磨，凄凉早死。</p>
-<p>再睁眼，她回到了转学遇到陆缜的前一天。<br>“叮~学习系统已绑定！宿主可以通过学习改变垃圾剧本哟！”<br>【做完全科作业，可改原文一个字！】<br>【考下年级第一，可修原文一句话！】……<br>【夺得高考状元，可自拟结局！暴富！爆红！随心所欲！】</p>
-<p>当晚，楚殷通宵肝完作业获得改字权限√<br>原文里”初遇那天，陆缜走进学校，天空飘下小雨。”<br>第二天，陆缜走进学校——天上忽然掉起了小刀。</p>
-<p>少年陆缜：？有人暗鲨我。</p>
-<hr>
-<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>前期有被笑到，后面就有点无聊。<br>反派boss的人设没有立起来，打完以后：就这？<br>楚殷：为了获得改书权限拼命学习，无情学霸人设。<br>陆缜：前期经典校园高富帅，后期校园高富帅（已黑化）。<br>确实后半部分写得有点乱，感觉，逻辑有点勉强。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>文字</category>
-        <category>读后感</category>
-        <category>小说</category>
-      </categories>
-  </entry>
-  <entry>
     <title>《反派有话说》by莫晨欢</title>
     <url>/2021/12/04/%E6%96%87%E5%AD%97/%E8%AF%BB%E5%90%8E%E6%84%9F/%E5%B0%8F%E8%AF%B4/%E3%80%8A%E5%8F%8D%E6%B4%BE%E6%9C%89%E8%AF%9D%E8%AF%B4%E3%80%8Bby%E8%8E%AB%E6%99%A8%E6%AC%A2/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=2768395">反派有话说</a><br>作者：莫晨欢<br>主角：洛渐清/无音<br>cp：无音x洛渐清<br>视角：男主BL<br>分类：架空玄幻<br>世界观：就是仙侠啦，重生还捡到了剧本<br>状态：完结</p>
@@ -1151,6 +1154,26 @@
       </categories>
   </entry>
   <entry>
+    <title>《奥术神座》by爱潜水的乌贼</title>
+    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E8%AF%BB%E5%90%8E%E6%84%9F/%E5%B0%8F%E8%AF%B4/%E3%80%8A%E5%A5%A5%E6%9C%AF%E7%A5%9E%E5%BA%A7%E3%80%8Bby%E7%88%B1%E6%BD%9C%E6%B0%B4%E7%9A%84%E4%B9%8C%E8%B4%BC/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://book.qidian.com/info/2643379/">奥术神座</a><br>作者：爱潜水的乌贼<br>主角：路西恩/娜塔莎<br>cp：娜塔莎x路西恩（狗头<br>视角：男主BG<br>分类：正剧，乌贼的书还用多说吗<br>世界观：试图建立起魔法科学化体系的，西幻<br>状态：完结</p>
+<hr>
+<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>“知识就等于力量。”<br>“所谓神，不过是强大一点的奥术师。”<br>带着一大堆知识的夏风穿越而来了。</p>
+<hr>
+<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>该书是我尝试了数本拉胯言情之后不得不找来洗眼的小说。<br>数年前，我没挺过十章，错误地认为这是一本普通的、随大流的架空西方玄幻小说。<br>我太天真了！<br>可恶，要是我早点看，里面所讲的学术体系恐怕会成为我的学术启蒙……<br>就算是现在，乌贼还是写出了我不知道的东西。这可比一般的没营养西幻小说有意思多了，恕我直言，我曾经也想象过“用科学规范魔法”，限于知识水平不够，完全想不出来。<br>我看过的两本尝试把科学和魔法结合起来的小说，一本是《hp理性之道》，一本就是《奥术神座》。其他的没有留给我很深的印象（能给我留下印象的只有设定太弱智那一挂）。<br>好吧，虽然路西恩的经历很大程度上neta了科学史的各位大佬，这也不妨碍我看得开心，如果我看过那些人物传记，恐怕能体验到双厨狂喜的快乐，可惜我没有。<br>喜欢女主。乌贼能把女主塑造得比女频作者还好也真是，点名批评最近看的那三本言情。<br>我怀疑乌贼写男硬说女[doge]不过这样也没啥不好，BG党，BL党，GB党全部都能磕到粮（草（一种植物）。<br>小路感觉有点像克莱恩。看过《一世之尊》《诡秘之主》《奥术神座》《长夜余火》，其实主角的内核都是一脉相承的：温暖有底线。<br>没看完就是说。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>文字</category>
+        <category>读后感</category>
+        <category>小说</category>
+      </categories>
+  </entry>
+  <entry>
     <title>《天才基本法》by长洱</title>
     <url>/2021/12/04/%E6%96%87%E5%AD%97/%E8%AF%BB%E5%90%8E%E6%84%9F/%E5%B0%8F%E8%AF%B4/%E3%80%8A%E5%A4%A9%E6%89%8D%E5%9F%BA%E6%9C%AC%E6%B3%95%E3%80%8Bby%E9%95%BF%E6%B4%B1/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=3193259">天才基本法</a><br>作者：长洱<br>主角：林朝夕、林兆生（老林）、裴之<br>cp：裴之x林朝夕<br>视角：女主BG<br>分类：近代现代，正剧<br>世界观：近代现代中国，涉及时间穿越<br>状态：完结</p>
@@ -1200,6 +1223,29 @@
       </categories>
   </entry>
   <entry>
+    <title>《偏执男主白月光我不当了》by赵史觉</title>
+    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E8%AF%BB%E5%90%8E%E6%84%9F/%E5%B0%8F%E8%AF%B4/%E3%80%8A%E5%81%8F%E6%89%A7%E7%94%B7%E4%B8%BB%E7%99%BD%E6%9C%88%E5%85%89%E6%88%91%E4%B8%8D%E5%BD%93%E4%BA%86%E3%80%8Bby%E8%B5%B5%E5%8F%B2%E8%A7%89/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=4425292">偏执男主白月光我不当了</a><br>作者：赵史觉<br>主角：楚殷/陆缜<br>cp：陆缜x楚殷<br>视角：女主BG<br>分类：轻松欢脱，但还是有主线的<br>世界观：现代，重生<br>状态：完结</p>
+<hr>
+<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>楚殷死后才知道自己是豪门文里的白月光。<br>偏执男主年少时对她一见钟情，而后执掌财阀大权。楚殷被他的疯狂占有欲折磨，凄凉早死。</p>
+<p>再睁眼，她回到了转学遇到陆缜的前一天。<br>“叮~学习系统已绑定！宿主可以通过学习改变垃圾剧本哟！”<br>【做完全科作业，可改原文一个字！】<br>【考下年级第一，可修原文一句话！】……<br>【夺得高考状元，可自拟结局！暴富！爆红！随心所欲！】</p>
+<p>当晚，楚殷通宵肝完作业获得改字权限√<br>原文里”初遇那天，陆缜走进学校，天空飘下小雨。”<br>第二天，陆缜走进学校——天上忽然掉起了小刀。</p>
+<p>少年陆缜：？有人暗鲨我。</p>
+<hr>
+<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>前期有被笑到，后面就有点无聊。<br>反派boss的人设没有立起来，打完以后：就这？<br>楚殷：为了获得改书权限拼命学习，无情学霸人设。<br>陆缜：前期经典校园高富帅，后期校园高富帅（已黑化）。<br>确实后半部分写得有点乱，感觉，逻辑有点勉强。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>文字</category>
+        <category>读后感</category>
+        <category>小说</category>
+      </categories>
+  </entry>
+  <entry>
     <title>《我成了灰姑娘的恶毒继姐》by白日上楼</title>
     <url>/2021/12/05/%E6%96%87%E5%AD%97/%E8%AF%BB%E5%90%8E%E6%84%9F/%E5%B0%8F%E8%AF%B4/%E3%80%8A%E6%88%91%E6%88%90%E4%BA%86%E7%81%B0%E5%A7%91%E5%A8%98%E7%9A%84%E6%81%B6%E6%AF%92%E7%BB%A7%E5%A7%90%E3%80%8Bby%E7%99%BD%E6%97%A5%E4%B8%8A%E6%A5%BC/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=4222176">我成了灰姑娘的恶毒继姐</a><br>作者：白日上楼<br>主角：贝莉娅/盖亚<br>cp：盖亚x贝莉娅<br>视角：女主BG<br>分类：正剧……吧<br>世界观：西幻，神下凡微服私访了<br>状态：完结</p>
@@ -1224,13 +1270,13 @@
       </categories>
   </entry>
   <entry>
-    <title>《奥术神座》by爱潜水的乌贼</title>
-    <url>/2021/12/05/%E6%96%87%E5%AD%97/%E8%AF%BB%E5%90%8E%E6%84%9F/%E5%B0%8F%E8%AF%B4/%E3%80%8A%E5%A5%A5%E6%9C%AF%E7%A5%9E%E5%BA%A7%E3%80%8Bby%E7%88%B1%E6%BD%9C%E6%B0%B4%E7%9A%84%E4%B9%8C%E8%B4%BC/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://book.qidian.com/info/2643379/">奥术神座</a><br>作者：爱潜水的乌贼<br>主角：路西恩/娜塔莎<br>cp：娜塔莎x路西恩（狗头<br>视角：男主BG<br>分类：正剧，乌贼的书还用多说吗<br>世界观：试图建立起魔法科学化体系的，西幻<br>状态：完结</p>
+    <title>《神澜奇域无双珠》by唐家三少</title>
+    <url>/2021/12/04/%E6%96%87%E5%AD%97/%E8%AF%BB%E5%90%8E%E6%84%9F/%E5%B0%8F%E8%AF%B4/%E3%80%8A%E7%A5%9E%E6%BE%9C%E5%A5%87%E5%9F%9F%E6%97%A0%E5%8F%8C%E7%8F%A0%E3%80%8Bby%E5%94%90%E5%AE%B6%E4%B8%89%E5%B0%91/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：《神澜奇域 无双珠》<br>作者：唐家三少<br>主角：法华、蓝歌<br>cp：无<br>视角：双男主，作者说不会有女主<br>分类：架空玄幻<br>世界观：不管了，三少说什么就是什么吧……我并不喜欢这种强行塞一嘴设定的感觉所以没仔细看</p>
 <hr>
-<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>“知识就等于力量。”<br>“所谓神，不过是强大一点的奥术师。”<br>带着一大堆知识的夏风穿越而来了。</p>
+<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>找不到，不贴了，没啥好看的。</p>
 <hr>
-<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>该书是我尝试了数本拉胯言情之后不得不找来洗眼的小说。<br>数年前，我没挺过十章，错误地认为这是一本普通的、随大流的架空西方玄幻小说。<br>我太天真了！<br>可恶，要是我早点看，里面所讲的学术体系恐怕会成为我的学术启蒙……<br>就算是现在，乌贼还是写出了我不知道的东西。这可比一般的没营养西幻小说有意思多了，恕我直言，我曾经也想象过“用科学规范魔法”，限于知识水平不够，完全想不出来。<br>我看过的两本尝试把科学和魔法结合起来的小说，一本是《hp理性之道》，一本就是《奥术神座》。其他的没有留给我很深的印象（能给我留下印象的只有设定太弱智那一挂）。<br>好吧，虽然路西恩的经历很大程度上neta了科学史的各位大佬，这也不妨碍我看得开心，如果我看过那些人物传记，恐怕能体验到双厨狂喜的快乐，可惜我没有。<br>喜欢女主。乌贼能把女主塑造得比女频作者还好也真是，点名批评最近看的那三本言情。<br>我怀疑乌贼写男硬说女[doge]不过这样也没啥不好，BG党，BL党，GB党全部都能磕到粮（草（一种植物）。<br>小路感觉有点像克莱恩。看过《一世之尊》《诡秘之主》《奥术神座》《长夜余火》，其实主角的内核都是一脉相承的：温暖有底线。<br>没看完就是说。</p>
+<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>说实话看不下去。没龙王传说好，真的很白……看了一半弃了。冲着双男主来的，他俩互怼确实很好玩，不说了，法蓝蓝法我都可（再说他俩伤害平摊所以这种事情根本无所谓？……[doge]</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -1286,40 +1332,6 @@
         <category>文字</category>
         <category>读后感</category>
         <category>小说</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>《神澜奇域无双珠》by唐家三少</title>
-    <url>/2021/12/04/%E6%96%87%E5%AD%97/%E8%AF%BB%E5%90%8E%E6%84%9F/%E5%B0%8F%E8%AF%B4/%E3%80%8A%E7%A5%9E%E6%BE%9C%E5%A5%87%E5%9F%9F%E6%97%A0%E5%8F%8C%E7%8F%A0%E3%80%8Bby%E5%94%90%E5%AE%B6%E4%B8%89%E5%B0%91/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：《神澜奇域 无双珠》<br>作者：唐家三少<br>主角：法华、蓝歌<br>cp：无<br>视角：双男主，作者说不会有女主<br>分类：架空玄幻<br>世界观：不管了，三少说什么就是什么吧……我并不喜欢这种强行塞一嘴设定的感觉所以没仔细看</p>
-<hr>
-<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>找不到，不贴了，没啥好看的。</p>
-<hr>
-<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>说实话看不下去。没龙王传说好，真的很白……看了一半弃了。冲着双男主来的，他俩互怼确实很好玩，不说了，法蓝蓝法我都可（再说他俩伤害平摊所以这种事情根本无所谓？……[doge]</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>文字</category>
-        <category>读后感</category>
-        <category>小说</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>为何会把标题样式给吃了</title>
-    <url>/2021/12/14/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E4%B8%BA%E4%BD%95%E4%BC%9A%E6%8A%8A%E6%A0%87%E9%A2%98%E6%A0%B7%E5%BC%8F%E7%BB%99%E5%90%83%E4%BA%86/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>就是这个：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210511.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210511.png" width=50%></a><br>这里的<em>0.实现效果和教程</em>应该是三级标题，但是它的格式被吃了。<br>而且只有第一个标题会被吃，其他三级标题好好的。<br>暂时的解决办法是在前面加一个空标题### ，空标题被吃掉样式以后其他标题样式显示正常。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210955.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210955.png" width=50%></a><br>正常显示：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214211204.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214211204.png" width=50%></a></p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>关于博客</category>
       </categories>
   </entry>
 </search>
