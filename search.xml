@@ -1334,4 +1334,22 @@
         <category>小说</category>
       </categories>
   </entry>
+  <entry>
+    <title>测试</title>
+    <url>/2021/12/15/%E6%96%87%E5%AD%97/%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>ceshi</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>日常</category>
+        <category>碎碎念</category>
+      </categories>
+      <tags>
+        <tag>“花花世界我一人干翻”</tag>
+      </tags>
+  </entry>
 </search>
