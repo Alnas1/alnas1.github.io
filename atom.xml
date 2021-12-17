@@ -6,7 +6,7 @@
   <link href="https://alnas1.github.io/atom.xml" rel="self"/>
   
   <link href="https://alnas1.github.io/"/>
-  <updated>2021-12-16T16:29:09.171Z</updated>
+  <updated>2021-12-17T18:37:35.319Z</updated>
   <id>https://alnas1.github.io/</id>
   
   <author>
@@ -17,11 +17,55 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>教程 / 如何给文件及文件夹添加备注</title>
+    <link href="https://alnas1.github.io/2021/12/18/6-%E5%86%99%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9C%8B%E7%9A%84%E6%95%99%E7%A8%8B%E6%80%BB%E7%BB%93/%E5%A6%82%E4%BD%95%E7%BB%99%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%B3%A8/"/>
+    <id>https://alnas1.github.io/2021/12/18/6-%E5%86%99%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9C%8B%E7%9A%84%E6%95%99%E7%A8%8B%E6%80%BB%E7%BB%93/%E5%A6%82%E4%BD%95%E7%BB%99%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%B3%A8/</id>
+    <published>2021-12-17T16:11:05.000Z</published>
+    <updated>2021-12-17T18:37:35.319Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="效果与参考文献"><a href="#效果与参考文献" class="headerlink" title="效果与参考文献"></a>效果与参考文献</h3><ul><li>文件：所有后缀的文件都可以添加备注。使用软件<code>FileMeta</code>。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218002105.jpg" title="QQ截图20211218002105" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218002105.jpg" alt="QQ截图20211218002105"></a>  </li><li>文件夹：同样可以做到，有两种方法。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218002131.jpg" title="QQ截图20211218002131" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218002131.jpg" alt="QQ截图20211218002131"></a>  </li><li>参考文献：<ul><li><a href="https://www.52pojie.cn/thread-1351585-1-1.html">[1]（吾爱破解）[Windows]文件夹备注修改程序</a>  </li><li><a href="https://www.zhihu.com/question/37099652">[2]（知乎）如何给文件/文件夹添加备注？</a></li><li><a href="http://t.zoukankan.com/buwuliao-p-12306750.html">[3]（博客）windows 系统给文件添加备注（FileMetadata下载及使用教程）</a></li><li><a href="https://www.52pojie.cn/forum.php?mod=viewthread&tid=1558412">[4]（吾爱破解）[Windows] win 系统给文件和文件夹添加备注</a></li></ul></li></ul><h3 id="调出备注信息栏"><a href="#调出备注信息栏" class="headerlink" title="调出备注信息栏"></a>调出备注信息栏</h3><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218003252.jpg" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218003252.jpg" width=70%></a><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218003428.jpg" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218003428.jpg" width=40%></a>   <a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218003600.jpg" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218003600.jpg" width=70%></a>    成功调出备注信息栏。<h3 id="更改文件夹备注"><a href="#更改文件夹备注" class="headerlink" title="更改文件夹备注"></a>更改文件夹备注</h3><h4 id="方法一-使用软件remark-exe"><a href="#方法一-使用软件remark-exe" class="headerlink" title="方法一 使用软件remark.exe"></a>方法一 使用软件<code>remark.exe</code></h4><p>进入<a href="https://pan.baidu.com/s/1I9KVLSQd6DJoY33dzgRz5Q">百度云链接</a>，密码52pj，下载软件，可以三个文件都下载，另外两个是之后会用到的改文件备注的软件。该下载链接来自<a href="https://www.52pojie.cn/forum.php?mod=viewthread&tid=1558412">参考文献[4]</a>。知乎回答中也有这个方法，不过给的链接是<a href="https://github.com/piratf/windows-folder-remark">GitHub</a>。<br>这个软件是python写的，有两种启动方法，作者也写在<code>readme.md</code>里了。</p><h5 id="运行exe版本"><a href="#运行exe版本" class="headerlink" title="运行exe版本"></a>运行exe版本</h5><ul><li>进入目录<code>..\windows-folder-remark-master\release\FolderRemark</code>，找到可执行文件<code>remark.exe</code>,双击打开，出现命令行黑框框。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218011001.jpg" title="QQ截图20211218011001" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218011001.jpg" alt="QQ截图20211218011001"></a>  </li><li>按照提示把文件夹拖入，出现路径以后按回车。输入备注再按回车。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218011255.jpg" title="QQ截图20211218011255" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218011255.jpg" alt="QQ截图20211218011255"></a>  </li><li>你需要<strong>重启</strong>文件资源管理器（就是关闭所有文件夹），再打开就可以看到备注了。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218011730.jpg" title="QQ截图20211218011730" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218011730.jpg" alt="QQ截图20211218011730"></a></li></ul><h5 id="运行python版本"><a href="#运行python版本" class="headerlink" title="运行python版本"></a>运行python版本</h5><blockquote><ul><li>适配版本： python3.4 </li><li><code>python remark.py</code></li><li>操作<ul><li>remark 文件夹路径 “文件夹备注内容”</li><li>remark<br>运行后按照提示操作</li></ul></li></ul></blockquote><h5 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h5><p>该脚本会修改文件夹下隐藏的 Desktop.ini 文件，并为文件夹修饰 System 属性，请注意。</p><h4 id="方法二-使用软件文件夹备注修改程序-exe（不推荐）"><a href="#方法二-使用软件文件夹备注修改程序-exe（不推荐）" class="headerlink" title="方法二 使用软件文件夹备注修改程序.exe（不推荐）"></a>方法二 使用软件<code>文件夹备注修改程序.exe</code>（不推荐）</h4><p>进入<a href="https://dufu.lanzoux.com/i75sMkfcnqb">蓝奏云链接</a>，下载软件。该下载链接来自<a href="https://www.52pojie.cn/thread-1351585-1-1.html">参考文献[1]</a>。<br>exe可执行文件，直接打开就行。比较惊讶这是个易语言程序。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218012623.jpg" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218012623.jpg" width=60%></a><br>界面简单粗暴，就是文件路径得自己复制粘贴不能拖。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218012922.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218012922.png" width=50%></a><br>执行结束之后，还需要进入该文件夹的属性修改图标才能刷新出备注。这就比较麻烦了。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218013334.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218013334.png" width=60%></a><br>而且这软件有毛病，我切到vscode界面想换个行，结果它以为我在修改备注，一直弹提示出来……算了别用这个了。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218013631.png" title="20211218013631" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218013631.png" alt="20211218013631"></a></p><h4 id="方法三-不使用软件，直接手动添加"><a href="#方法三-不使用软件，直接手动添加" class="headerlink" title="方法三 不使用软件，直接手动添加"></a>方法三 不使用软件，直接手动添加</h4><p>在需要修改的文件夹下面创建记事本文件，名称修改为：desktop.ini<br>修改文本内容为：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[.ShellClassInfo]</span><br><span class="line">IconResource=tubiao.ico  （同目录下可以不填路径，直接文件。）（不换图标可以不要这行）</span><br><span class="line">infoTip=我是备注</span><br></pre></td></tr></table></figure><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218015131.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218015131.png" width=60%></a>    <p>然后手动更换文件夹图标或者重启资源管理器都可以。<br>也可以先创建一个，再复制去其他文件夹，再修改备注。</p><h3 id="更改文件备注-使用软件FileMeta"><a href="#更改文件备注-使用软件FileMeta" class="headerlink" title="更改文件备注 使用软件FileMeta"></a>更改文件备注 使用软件<code>FileMeta</code></h3><p>可以<a href="https://github.com/Dijji/FileMeta/releases">前往GitHub</a>进行一个最新版本的下载（下载.msi文件，别下源码zip），用之前下过的FileMeta.x64(1).msi也行，安装就是一直next，我也没找到改安装目录的地方在哪。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218015652.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218015652.png" width=60%></a>  </p><ul><li>安装以后，进入<code>&quot;C:\Program Files\File Metadata\&quot;</code>，找到<code>FileMetaAssociationManager.exe</code>。</li><li>在此之前你可以调出详细信息窗格，看看doc文件的窗格是什么样的。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218020436.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218020436.png" width=50%></a> <a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218020635.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218020635.png" width=50%></a><br>少见的可以直接在详细信息窗格改备注的类型，而这个类型是<code>office DSOfile</code>，想让一个普通的txt文本也能变成这样，就需要用到刚刚下好的软件<code>FileMeta</code>。</li><li>打开软件，操作流程英文写在左边。基本流程就是选择你要添加备注的文件格式，把它变更成<code>office DSOfile</code>，再重启文件资源管理器。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218021345.jpg" title="QQ截图20211218021345" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218021345.jpg" alt="QQ截图20211218021345"></a></li><li>回到详细信息窗格，可以看见txt文本的信息变得和doc一样能改备注了。<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218022024.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218022024.png" width=50%></a> </li><li>如果要移除变更，选中并点击remove即可。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218021500.jpg" title="QQ截图20211218021500" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218021500.jpg" alt="QQ截图20211218021500"></a></li><li>其他文件同理，只是它不能改文件夹是个遗憾。</li></ul></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+    
+    
+    <summary type="html">“我早该有这样的想法的，分类强迫症狂喜。”</summary>
+    
+    
+    
+    <category term="6-写给自己看的教程总结" scheme="https://alnas1.github.io/categories/6-%E5%86%99%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9C%8B%E7%9A%84%E6%95%99%E7%A8%8B%E6%80%BB%E7%BB%93/"/>
+    
+    
+    <category term="教程" scheme="https://alnas1.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>试图阅读相册的代码</title>
+    <link href="https://alnas1.github.io/2021/12/17/2-%E8%AF%BB%E5%90%8E%E6%84%9F/%E4%BB%A3%E7%A0%81/%E8%AF%95%E5%9B%BE%E9%98%85%E8%AF%BB%E7%9B%B8%E5%86%8C%E7%9A%84%E4%BB%A3%E7%A0%81%EF%BC%88%E6%A0%B7%E5%BC%8F1%EF%BC%89/"/>
+    <id>https://alnas1.github.io/2021/12/17/2-%E8%AF%BB%E5%90%8E%E6%84%9F/%E4%BB%A3%E7%A0%81/%E8%AF%95%E5%9B%BE%E9%98%85%E8%AF%BB%E7%9B%B8%E5%86%8C%E7%9A%84%E4%BB%A3%E7%A0%81%EF%BC%88%E6%A0%B7%E5%BC%8F1%EF%BC%89/</id>
+    <published>2021-12-17T15:04:23.000Z</published>
+    <updated>2021-12-17T18:29:51.818Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="1-相册功能增加的文件"><a href="#1-相册功能增加的文件" class="headerlink" title="1.相册功能增加的文件"></a>1.相册功能增加的文件</h3><ul><li>MyWeb\source\photos\index.md</li><li><h3 id="2-photos-index-md文件"><a href="#2-photos-index-md文件" class="headerlink" title="2.photos/index.md文件"></a>2.photos/index.md文件</h3>问题就是我看不懂html和css代码。遂疯狂百度。</li></ul></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+    
+    
+    <summary type="html">“太难为我了。”</summary>
+    
+    
+    
+    <category term="2-读后感" scheme="https://alnas1.github.io/categories/2-%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
+    
+    <category term="代码" scheme="https://alnas1.github.io/categories/2-%E8%AF%BB%E5%90%8E%E6%84%9F/%E4%BB%A3%E7%A0%81/"/>
+    
+    
+    <category term="博客" scheme="https://alnas1.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>出游 / 云佛山滑雪场</title>
-    <link href="https://alnas1.github.io/2021/12/16/%E6%97%A5%E5%B8%B8/%E4%BA%91%E4%BD%9B%E5%B1%B1%E6%BB%91%E9%9B%AA%E5%9C%BA/"/>
-    <id>https://alnas1.github.io/2021/12/16/%E6%97%A5%E5%B8%B8/%E4%BA%91%E4%BD%9B%E5%B1%B1%E6%BB%91%E9%9B%AA%E5%9C%BA/</id>
+    <link href="https://alnas1.github.io/2021/12/16/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/%E4%BA%91%E4%BD%9B%E5%B1%B1%E6%BB%91%E9%9B%AA%E5%9C%BA/"/>
+    <id>https://alnas1.github.io/2021/12/16/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/%E4%BA%91%E4%BD%9B%E5%B1%B1%E6%BB%91%E9%9B%AA%E5%9C%BA/</id>
     <published>2021-12-16T15:14:54.000Z</published>
-    <updated>2021-12-16T16:29:09.171Z</updated>
+    <updated>2021-12-17T18:29:51.818Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="账单"><a href="#账单" class="headerlink" title="账单"></a>账单</h3><ul><li>早饭：在学校吃，5.5。</li><li>往程：地铁转公交转公交，坐错车了，转回来，又走了半小时路，21（好像没扣这么多钱）。</li><li>景区：云佛山滑雪场，用的是某个联票，所以有部分费用被免去了。平均一个人48.4，包含门票和所有租赁物品。</li><li>午饭：没吃。主要怕景区宰客</li><li>返程：公交转公交转地铁，21。</li><li>晚饭：KFC。汉堡薯条奶茶，23.5。</li><li>总计：5.5+21+48.4+21+23.5=119.4</li></ul><h3 id="评价-amp-感想"><a href="#评价-amp-感想" class="headerlink" title="评价&amp;感想"></a>评价&amp;感想</h3><p>这一天不算顺利，其实早上8：22被舍友叫起床的时候我还在挣扎要不要去，因为没睡好，感觉眼睛闭上但没睡着，能听到舍友收拾东西的动静，睁眼发现都睡过头了。<br>轻装上阵，包都没背，羽绒服俩口袋揣上手机钥匙钱包矿泉水就走。这导致我手没地方放，只好缩在袖子里。<br>坐车的前两小时还好，第三个小时开始感到难受，舍友说带了袋子你可以吐……我：大可不必。中途坐错了车，最后靠脚走到了滑雪场门口。在门口验票还因为工作人员业务不熟练（她不知道这个票用哪个平台验），卡了好一会。等的过程中听到旁边好多人是从抖音预订来的。<br>租头盔和板子，选双板，现场学习了如何把雪鞋卡上雪板。那边还有租雪服的，一看价格，好家伙，划破了原价赔偿500块，我还是祸害我自己的羽绒服去吧……大概玩了两个多小时一点，滑雪场是一个坡，人从上面滑下来，再站在传送带上传上去，循环往复。<br>滑下去只需要十秒钟，传上去要好几分钟，见缝插针打明日方舟。<br>我对这项运动无感，而且十次里有五次会因为前面有人刹不住车摔倒，就还挺挫败的，尤其是摔了，摸到地上的雪，冻得慌。还有一次因为不知道怎么刹车就用手刹了（。）<br>滑雪场里有很多闲散的教练，进来时看了价格，几乎都要200往上，而且是小时计费。被路过的教练指点了刹车要领，要形容的话大约就是扎个马步，内八。俩滑雪板呈钝角。<br>教练说你想学的话可以找个教练教，我说我就是来玩的哈哈哈。<br>四点半滑雪场关门，等车的时候掏出我的airpods看cytus2x明日方舟的联动剧情，戴帽子不小心把耳机刮掉一只，我吓得大叫一声，连忙捡回来。<br>滑雪的整个过程我心丝毫不起波澜，撞到人都没有耳机掉的那一瞬间惊吓大。<br>返程回校途中越来越难受，冻得、晕的、饿的，吃了KFC以后感觉好点。最后一段徒步简直是煎熬，寒风刮得我牙齿发抖。甚至于洗完热水澡腮帮子都还是冻的……谁懂。</p><h3 id="照片"><a href="#照片" class="headerlink" title="照片"></a>照片</h3><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E5%9D%A1%E5%BA%95.jpg" title="2021-12-16_坡底" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E5%9D%A1%E5%BA%95.jpg" alt="2021-12-16_坡底"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%98%AF%E7%9C%9F%EF%BC%88%E4%BA%BA%E9%80%A0%EF%BC%9F%EF%BC%89%E9%9B%AA.jpg" title="2021-12-16_是真（人造？）雪" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%98%AF%E7%9C%9F%EF%BC%88%E4%BA%BA%E9%80%A0%EF%BC%9F%EF%BC%89%E9%9B%AA.jpg" alt="2021-12-16_是真（人造？）雪"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%89%8B%E5%88%B9%E7%9A%84%E5%90%8E%E6%9E%9C.jpg" title="2021-12-16_手刹的后果" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%89%8B%E5%88%B9%E7%9A%84%E5%90%8E%E6%9E%9C.jpg" alt="2021-12-16_手刹的后果"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E4%B8%80%E4%BA%9B%E6%B6%88%E8%B4%B9%E5%8D%95.jpg" title="2021-12-16_一些消费单" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E4%B8%80%E4%BA%9B%E6%B6%88%E8%B4%B9%E5%8D%95.jpg" alt="2021-12-16_一些消费单"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E8%A3%85%E5%A4%87.jpg" title="2021-12-16_装备" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E8%A3%85%E5%A4%87.jpg" alt="2021-12-16_装备"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
@@ -30,7 +74,9 @@
     
     
     
-    <category term="日常" scheme="https://alnas1.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
+    <category term="4-日常记录" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="生活随想" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/"/>
     
     
     <category term="“1000米以上算出去玩”" scheme="https://alnas1.github.io/tags/%E2%80%9C1000%E7%B1%B3%E4%BB%A5%E4%B8%8A%E7%AE%97%E5%87%BA%E5%8E%BB%E7%8E%A9%E2%80%9D/"/>
@@ -39,10 +85,10 @@
   
   <entry>
     <title>为何会把标题样式给吃了</title>
-    <link href="https://alnas1.github.io/2021/12/14/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E4%B8%BA%E4%BD%95%E4%BC%9A%E6%8A%8A%E6%A0%87%E9%A2%98%E6%A0%B7%E5%BC%8F%E7%BB%99%E5%90%83%E4%BA%86/"/>
-    <id>https://alnas1.github.io/2021/12/14/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E4%B8%BA%E4%BD%95%E4%BC%9A%E6%8A%8A%E6%A0%87%E9%A2%98%E6%A0%B7%E5%BC%8F%E7%BB%99%E5%90%83%E4%BA%86/</id>
+    <link href="https://alnas1.github.io/2021/12/14/1-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E4%B8%BA%E4%BD%95%E4%BC%9A%E6%8A%8A%E6%A0%87%E9%A2%98%E6%A0%B7%E5%BC%8F%E7%BB%99%E5%90%83%E4%BA%86/"/>
+    <id>https://alnas1.github.io/2021/12/14/1-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E4%B8%BA%E4%BD%95%E4%BC%9A%E6%8A%8A%E6%A0%87%E9%A2%98%E6%A0%B7%E5%BC%8F%E7%BB%99%E5%90%83%E4%BA%86/</id>
     <published>2021-12-14T13:04:40.000Z</published>
-    <updated>2021-12-14T13:13:58.285Z</updated>
+    <updated>2021-12-17T18:37:22.417Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>就是这个：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210511.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210511.png" width=50%></a><br>这里的<em>0.实现效果和教程</em>应该是三级标题，但是它的格式被吃了。<br>而且只有第一个标题会被吃，其他三级标题好好的。<br>暂时的解决办法是在前面加一个空标题### ，空标题被吃掉样式以后其他标题样式显示正常。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210955.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210955.png" width=50%></a><br>正常显示：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214211204.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214211204.png" width=50%></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
@@ -51,26 +97,28 @@
     
     
     
-    <category term="关于博客" scheme="https://alnas1.github.io/categories/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/"/>
+    <category term="1-博客搭建" scheme="https://alnas1.github.io/categories/1-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
+    
+    <category term="博客" scheme="https://alnas1.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>增加一个画册功能</title>
-    <link href="https://alnas1.github.io/2021/12/14/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E5%A2%9E%E5%8A%A0%E4%B8%80%E4%B8%AA%E7%94%BB%E5%86%8C%E5%8A%9F%E8%83%BD/"/>
-    <id>https://alnas1.github.io/2021/12/14/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E5%A2%9E%E5%8A%A0%E4%B8%80%E4%B8%AA%E7%94%BB%E5%86%8C%E5%8A%9F%E8%83%BD/</id>
+    <link href="https://alnas1.github.io/2021/12/14/1-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E5%A2%9E%E5%8A%A0%E4%B8%80%E4%B8%AA%E7%94%BB%E5%86%8C%E5%8A%9F%E8%83%BD/"/>
+    <id>https://alnas1.github.io/2021/12/14/1-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E5%A2%9E%E5%8A%A0%E4%B8%80%E4%B8%AA%E7%94%BB%E5%86%8C%E5%8A%9F%E8%83%BD/</id>
     <published>2021-12-14T06:54:31.000Z</published>
-    <updated>2021-12-15T12:51:34.586Z</updated>
+    <updated>2021-12-17T18:29:51.812Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="0-实现效果和教程"><a href="#0-实现效果和教程" class="headerlink" title="0. 实现效果和教程"></a>0. 实现效果和教程</h3><h4 id="样式1"><a href="#样式1" class="headerlink" title="样式1"></a>样式1</h4><p>效果:<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214145958.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214145958.png" width=50%></a><br>教程：<a href="https://tding.top/archives/607c3b85.html">Hexo-NexT 实现相册</a>  </p><h4 id="样式2"><a href="#样式2" class="headerlink" title="样式2"></a>样式2</h4><p>效果：不知道，我失败了，会报错<br>教程：<a href="https://www.cnblogs.com/LuisYang/p/9356488.html">Hexo 相册实践</a>  </p><h4 id="样式3"><a href="#样式3" class="headerlink" title="样式3"></a>样式3</h4><p>效果：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214175854.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214175854.png" width=70%></a><br>教程：<a href="https://rebootcat.com/2020/09/19/nextphotowall/">Hexo Next 博客添加相册瀑布流</a></p><h4 id="样式4"><a href="#样式4" class="headerlink" title="样式4"></a>样式4</h4><p>效果：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214204556.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214204556.png" width=70%></a><br>教程：<a href="https://swayye.xyz/2019/09/02/%E5%BB%BA%E7%AB%99%E5%8E%86%E7%A8%8B%EF%BC%9A%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E7%AF%87%E2%80%94%E2%80%94%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%86%8C/">为 Hexo NexT 主题添加相册功能</a></p><h3 id="1-样式4的移植记录-python处理图片部分"><a href="#1-样式4的移植记录-python处理图片部分" class="headerlink" title="1.样式4的移植记录(python处理图片部分)"></a>1.样式4的移植记录(python处理图片部分)</h3><ul><li>下载python：<a href="https://www.bilibili.com/video/BV1DP4y1a7Dx">2021年如何通过官网下载和安装Python和PyCharm最新版本</a><br>python版本：3.9.9 64-bit<br>我没下pycharm<br>顺便可以改安装路径：<a href="https://www.py.cn/jishu/jichu/12626.html">python安装路径可以更改吗</a></li><li>不会在GitHub仓库中新建文件夹：<a href="https://blog.csdn.net/Fly_1213/article/details/89294549">GitHub仓库中如何创建文件夹</a>  </li><li>不会克隆仓库：<a href="https://blog.csdn.net/qq_41940950/article/details/80794438">如何远程克隆仓库</a> </li><li>没安装pillow库：<a href="https://www.bilibili.com/video/BV1rq4y1J78H?from=search&seid=7343031718128119632&spm_id_from=333.337.0.0">python安装pil图像库 </a>  </li><li>全选代码，shift+enter运行（vscode）  </li></ul><h4 id="报错1：source-directory-not-exist"><a href="#报错1：source-directory-not-exist" class="headerlink" title="报错1：source directory not exist!"></a>报错1：source directory not exist!</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">source directory <span class="keyword">not</span> exist!</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">3</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">16</span>, <span class="keyword">in</span> compress_photo</span><br><span class="line">UnboundLocalError: local variable <span class="string">&#x27;file_list_des&#x27;</span> referenced before assignment </span><br></pre></td></tr></table></figure><p>解决方法：把路径改成绝对路径   </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cut_photo</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;裁剪算法</span></span><br><span class="line"><span class="string">    调用Graphics类中的裁剪算法，将src_dir目录下的文件进行裁剪（裁剪成正方形）</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    src_dir = <span class="string">&quot;F:/1-blog/MyWeb/source/photos/photos/&quot;</span></span><br><span class="line">    <span class="keyword">if</span> directory_exists(src_dir): </span><br></pre></td></tr></table></figure><h4 id="报错2：not-enough-values-to-unpack-expected-2-got-1"><a href="#报错2：not-enough-values-to-unpack-expected-2-got-1" class="headerlink" title="报错2：not enough values to unpack (expected 2, got 1)"></a>报错2：not enough values to unpack (expected 2, got 1)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">12</span>, <span class="keyword">in</span> cut_photo</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">9</span>, <span class="keyword">in</span> list_img_file</span><br><span class="line">ValueError: <span class="keyword">not</span> enough values to unpack (expected <span class="number">2</span>, got <span class="number">1</span>)</span><br></pre></td></tr></table></figure><p>解决方法：<strong>上面路径的文件夹里不能有子文件夹</strong>，因为子文件夹没有.xx的后缀，用split()函数分类（分隔符为.）会卡住。最好只放图片。</p><h4 id="报错3：failed-to-push-some-refs-to-github"><a href="#报错3：failed-to-push-some-refs-to-github" class="headerlink" title="报错3：failed to push some refs to github"></a>报错3：failed to push some refs to github</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">error: src refspec master does <span class="keyword">not</span> match <span class="built_in">any</span></span><br><span class="line">error: failed to push some refs to <span class="string">&#x27;https://github.com/alnas1/photos&#x27;</span></span><br></pre></td></tr></table></figure><p>解决方法：</p><ol><li><a href="https://blog.csdn.net/sfgsdfg2516/article/details/120579313">关于main和master的问题</a></li><li>克隆仓库的命令：<code>git clone https://github.com/alnas1/photos.git</code><br>如果是ssh拉取：<code>git clone git@github.com:Alnas1/photos.git</code>  </li><li>把source下的photos文件夹删掉，在source文件夹中右键打开命令行，执行克隆仓库的命令。</li><li>进入克隆下来的仓库，随便放张图进去测试。</li><li>执行下面三条命令看能不能成功。<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add --<span class="built_in">all</span>  </span><br><span class="line">git commit -m <span class="string">&quot;add photos&quot;</span>  </span><br><span class="line">git push origin main  </span><br></pre></td></tr></table></figure></li><li>成功了就能在GitHub仓库看到变更。</li><li>把tool.py文件里的 <code>os.system(&#39;git push origin master&#39;)</code>改为 <code>os.system(&#39;git push origin main&#39;)</code></li><li>再次运行文件<code>tool.py</code></li><li> 然后我发现不能把相册文件夹放在博客目录下，不然相册提交会提交一次图，博客部署又会提交一次图。</li></ol><h3 id="2-样式4的移植记录-hexo配置部分"><a href="#2-样式4的移植记录-hexo配置部分" class="headerlink" title="2.样式4的移植记录(hexo配置部分)"></a>2.样式4的移植记录(hexo配置部分)</h3><ol><li>data.json保存在photos下。”F:\1-blog\MyWeb\source\photos\data.json”</li><li>注意核对index.md中链接css等文件的路径。我放在”F:\1-blog\MyWeb\themes\next\source\ _data&quot;</li><li>ins.js文件中链接的修改。这是正确的图片链接格式（注意main前面那个raw）：<a href="https://github.com/Alnas1/photos/raw/main/photos/2021-12-15_suibian%20(2).jpg">https://github.com/Alnas1/photos/raw/main/photos/2021-12-15_suibian%20(2).jpg</a><br>关于这点请看：<a href="https://www.cnblogs.com/ghm-777/p/11433425.html">本地图片上传到GitHub，MarkDown使用Github图片地址</a></li></ol></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="0-实现效果和教程"><a href="#0-实现效果和教程" class="headerlink" title="0. 实现效果和教程"></a>0. 实现效果和教程</h3><h4 id="样式1"><a href="#样式1" class="headerlink" title="样式1"></a>样式1</h4><p>效果:<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214145958.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214145958.png" width=50%></a><br>教程：<a href="https://tding.top/archives/607c3b85.html">Hexo-NexT 实现相册</a>  </p><h4 id="样式2"><a href="#样式2" class="headerlink" title="样式2"></a>样式2</h4><p>效果：不知道，我失败了，会报错<br>教程：<a href="https://www.cnblogs.com/LuisYang/p/9356488.html">Hexo 相册实践</a>  </p><h4 id="样式3"><a href="#样式3" class="headerlink" title="样式3"></a>样式3</h4><p>效果：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214175854.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214175854.png" width=70%></a><br>教程：<a href="https://rebootcat.com/2020/09/19/nextphotowall/">Hexo Next 博客添加相册瀑布流</a></p><h4 id="样式4"><a href="#样式4" class="headerlink" title="样式4"></a>样式4</h4><p>效果：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214204556.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214204556.png" width=70%></a><br>教程：<a href="https://swayye.xyz/2019/09/02/%E5%BB%BA%E7%AB%99%E5%8E%86%E7%A8%8B%EF%BC%9A%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E7%AF%87%E2%80%94%E2%80%94%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%86%8C/">为 Hexo NexT 主题添加相册功能</a></p><h3 id="1-样式4的移植记录-python处理图片部分"><a href="#1-样式4的移植记录-python处理图片部分" class="headerlink" title="1.样式4的移植记录(python处理图片部分)"></a>1.样式4的移植记录(python处理图片部分)</h3><ul><li>下载python：<a href="https://www.bilibili.com/video/BV1DP4y1a7Dx">2021年如何通过官网下载和安装Python和PyCharm最新版本</a><br>python版本：3.9.9 64-bit<br>我没下pycharm<br>顺便可以改安装路径：<a href="https://www.py.cn/jishu/jichu/12626.html">python安装路径可以更改吗</a></li><li>不会在GitHub仓库中新建文件夹：<a href="https://blog.csdn.net/Fly_1213/article/details/89294549">GitHub仓库中如何创建文件夹</a>  </li><li>不会克隆仓库：<a href="https://blog.csdn.net/qq_41940950/article/details/80794438">如何远程克隆仓库</a> </li><li>没安装pillow库：<a href="https://www.bilibili.com/video/BV1rq4y1J78H?from=search&seid=7343031718128119632&spm_id_from=333.337.0.0">python安装pil图像库 </a>  </li><li>全选代码，shift+enter运行（vscode）  </li></ul><h4 id="报错1：source-directory-not-exist"><a href="#报错1：source-directory-not-exist" class="headerlink" title="报错1：source directory not exist!"></a>报错1：source directory not exist!</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">source directory <span class="keyword">not</span> exist!</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">3</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">16</span>, <span class="keyword">in</span> compress_photo</span><br><span class="line">UnboundLocalError: local variable <span class="string">&#x27;file_list_des&#x27;</span> referenced before assignment </span><br></pre></td></tr></table></figure><p>解决方法：把路径改成绝对路径   </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cut_photo</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;裁剪算法</span></span><br><span class="line"><span class="string">    调用Graphics类中的裁剪算法，将src_dir目录下的文件进行裁剪（裁剪成正方形）</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    src_dir = <span class="string">&quot;F:/1-blog/MyWeb/source/photos/photos/&quot;</span></span><br><span class="line">    <span class="keyword">if</span> directory_exists(src_dir): </span><br></pre></td></tr></table></figure><h4 id="报错2：not-enough-values-to-unpack-expected-2-got-1"><a href="#报错2：not-enough-values-to-unpack-expected-2-got-1" class="headerlink" title="报错2：not enough values to unpack (expected 2, got 1)"></a>报错2：not enough values to unpack (expected 2, got 1)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">12</span>, <span class="keyword">in</span> cut_photo</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">9</span>, <span class="keyword">in</span> list_img_file</span><br><span class="line">ValueError: <span class="keyword">not</span> enough values to unpack (expected <span class="number">2</span>, got <span class="number">1</span>)</span><br></pre></td></tr></table></figure><p>解决方法：<strong>上面路径的文件夹里不能有子文件夹</strong>，因为子文件夹没有.xx的后缀，用split()函数分类（分隔符为.）会卡住。最好只放图片。</p><h4 id="报错3：failed-to-push-some-refs-to-github"><a href="#报错3：failed-to-push-some-refs-to-github" class="headerlink" title="报错3：failed to push some refs to github"></a>报错3：failed to push some refs to github</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">error: src refspec master does <span class="keyword">not</span> match <span class="built_in">any</span></span><br><span class="line">error: failed to push some refs to <span class="string">&#x27;https://github.com/alnas1/photos&#x27;</span></span><br></pre></td></tr></table></figure><p>解决方法：</p><ol><li><a href="https://blog.csdn.net/sfgsdfg2516/article/details/120579313">关于main和master的问题</a></li><li>克隆仓库的命令：<code>git clone https://github.com/alnas1/photos.git</code><br>如果是ssh拉取：<code>git clone git@github.com:Alnas1/photos.git</code>  </li><li>把source下的photos文件夹删掉，在source文件夹中右键打开命令行，执行克隆仓库的命令。</li><li>进入克隆下来的仓库，随便放张图进去测试。</li><li>执行下面三条命令看能不能成功。<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add --<span class="built_in">all</span>  </span><br><span class="line">git commit -m <span class="string">&quot;add photos&quot;</span>  </span><br><span class="line">git push origin main  </span><br></pre></td></tr></table></figure></li><li>成功了就能在GitHub仓库看到变更。</li><li>把tool.py文件里的 <code>os.system(&#39;git push origin master&#39;)</code>改为 <code>os.system(&#39;git push origin main&#39;)</code></li><li>再次运行文件<code>tool.py</code></li><li> 然后我发现不能把相册文件夹放在博客目录下，不然相册提交会提交一次图，博客部署又会提交一次图。</li></ol><h3 id="2-样式4的移植记录-hexo配置部分"><a href="#2-样式4的移植记录-hexo配置部分" class="headerlink" title="2.样式4的移植记录(hexo配置部分)"></a>2.样式4的移植记录(hexo配置部分)</h3><ol><li><s>data.json保存在photos下。”F:\1-blog\MyWeb\source\photos\data.json”</s></li><li><s>注意核对index.md中链接css等文件的路径。我放在”F:\1-blog\MyWeb\themes\next\source\ _data&quot;</s></li><li><strong>完全跟着教程建立文件夹即可</strong>，不要自找麻烦。</li><li>ins.js文件中链接的修改。这是正确的图片链接格式（注意main前面那个raw）：<a href="https://github.com/Alnas1/photos/raw/main/photos/2021-12-15_suibian%20(2).jpg">https://github.com/Alnas1/photos/raw/main/photos/2021-12-15_suibian%20(2).jpg</a><br>关于这点请看：<a href="https://www.cnblogs.com/ghm-777/p/11433425.html">本地图片上传到GitHub，MarkDown使用Github图片地址</a></li></ol><h3 id="3-尝试对相册页面进行一些修改"><a href="#3-尝试对相册页面进行一些修改" class="headerlink" title="3.尝试对相册页面进行一些修改"></a>3.尝试对相册页面进行一些修改</h3><p>问题就是我看不懂html和css代码。遂疯狂百度。</p><h4 id="photos-index-md文件"><a href="#photos-index-md文件" class="headerlink" title="photos/index.md文件"></a>photos/index.md文件</h4></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
     
     <summary type="html">“虽然我还没想好要放什么上去。”</summary>
     
     
     
-    <category term="关于博客" scheme="https://alnas1.github.io/categories/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/"/>
+    <category term="1-博客搭建" scheme="https://alnas1.github.io/categories/1-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
     <category term="博客" scheme="https://alnas1.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
@@ -79,10 +127,10 @@
   
   <entry>
     <title>拯救者r9000p安全下车</title>
-    <link href="https://alnas1.github.io/2021/12/13/%E6%97%A5%E5%B8%B8/%E6%8B%AF%E6%95%91%E8%80%85r9000p%E5%AE%89%E5%85%A8%E4%B8%8B%E8%BD%A6/"/>
-    <id>https://alnas1.github.io/2021/12/13/%E6%97%A5%E5%B8%B8/%E6%8B%AF%E6%95%91%E8%80%85r9000p%E5%AE%89%E5%85%A8%E4%B8%8B%E8%BD%A6/</id>
+    <link href="https://alnas1.github.io/2021/12/13/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/%E6%8B%AF%E6%95%91%E8%80%85r9000p%E5%AE%89%E5%85%A8%E4%B8%8B%E8%BD%A6/"/>
+    <id>https://alnas1.github.io/2021/12/13/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/%E6%8B%AF%E6%95%91%E8%80%85r9000p%E5%AE%89%E5%85%A8%E4%B8%8B%E8%BD%A6/</id>
     <published>2021-12-13T14:00:33.000Z</published>
-    <updated>2021-12-14T08:48:43.887Z</updated>
+    <updated>2021-12-17T18:29:51.819Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>7588买到，我感觉是香的很。<br>果然这东西就是早买早享受，旧电脑已经被打入冷宫了。<br>现在正在逐步把旧电脑的软件移植过来。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_160922.jpg" title="IMG_20211212_160922" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_160922.jpg" alt="IMG_20211212_160922"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153253.jpg" title="IMG_20211212_153253" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153253.jpg" alt="IMG_20211212_153253"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153512.jpg" title="IMG_20211212_153512" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153512.jpg" alt="IMG_20211212_153512"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153833.jpg" title="IMG_20211212_153833" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153833.jpg" alt="IMG_20211212_153833"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211213234219.png" title="20211213234219" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211213234219.png" alt="20211213234219"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
@@ -91,7 +139,9 @@
     
     
     
-    <category term="日常" scheme="https://alnas1.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
+    <category term="4-日常记录" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="生活随想" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/"/>
     
     
     <category term="“花花世界我一人干翻”" scheme="https://alnas1.github.io/tags/%E2%80%9C%E8%8A%B1%E8%8A%B1%E4%B8%96%E7%95%8C%E6%88%91%E4%B8%80%E4%BA%BA%E5%B9%B2%E7%BF%BB%E2%80%9D/"/>
@@ -100,8 +150,8 @@
   
   <entry>
     <title>▇▇▇▇大学自习室</title>
-    <link href="https://alnas1.github.io/2021/12/12/%E6%96%87%E5%AD%97/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/%E2%96%87%E2%96%87%E2%96%87%E2%96%87%E5%A4%A7%E5%AD%A6%E8%87%AA%E4%B9%A0%E5%AE%A4/"/>
-    <id>https://alnas1.github.io/2021/12/12/%E6%96%87%E5%AD%97/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/%E2%96%87%E2%96%87%E2%96%87%E2%96%87%E5%A4%A7%E5%AD%A6%E8%87%AA%E4%B9%A0%E5%AE%A4/</id>
+    <link href="https://alnas1.github.io/2021/12/12/5-%E6%96%87%E5%AD%97%E5%88%9B%E4%BD%9C/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/%E2%96%87%E2%96%87%E2%96%87%E2%96%87%E5%A4%A7%E5%AD%A6%E8%87%AA%E4%B9%A0%E5%AE%A4/"/>
+    <id>https://alnas1.github.io/2021/12/12/5-%E6%96%87%E5%AD%97%E5%88%9B%E4%BD%9C/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/%E2%96%87%E2%96%87%E2%96%87%E2%96%87%E5%A4%A7%E5%AD%A6%E8%87%AA%E4%B9%A0%E5%AE%A4/</id>
     <published>2021-12-12T14:50:05.883Z</published>
     <updated>2021-12-14T08:56:34.400Z</updated>
     
@@ -123,8 +173,8 @@
   
   <entry>
     <title>▇▇▇▇大学新绿指南</title>
-    <link href="https://alnas1.github.io/2021/12/12/%E6%96%87%E5%AD%97/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/%E2%96%87%E2%96%87%E2%96%87%E2%96%87%E5%A4%A7%E5%AD%A6%E6%96%B0%E7%BB%BF%E6%8C%87%E5%8D%97/"/>
-    <id>https://alnas1.github.io/2021/12/12/%E6%96%87%E5%AD%97/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/%E2%96%87%E2%96%87%E2%96%87%E2%96%87%E5%A4%A7%E5%AD%A6%E6%96%B0%E7%BB%BF%E6%8C%87%E5%8D%97/</id>
+    <link href="https://alnas1.github.io/2021/12/12/5-%E6%96%87%E5%AD%97%E5%88%9B%E4%BD%9C/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/%E2%96%87%E2%96%87%E2%96%87%E2%96%87%E5%A4%A7%E5%AD%A6%E6%96%B0%E7%BB%BF%E6%8C%87%E5%8D%97/"/>
+    <id>https://alnas1.github.io/2021/12/12/5-%E6%96%87%E5%AD%97%E5%88%9B%E4%BD%9C/%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/%E2%96%87%E2%96%87%E2%96%87%E2%96%87%E5%A4%A7%E5%AD%A6%E6%96%B0%E7%BB%BF%E6%8C%87%E5%8D%97/</id>
     <published>2021-12-12T14:50:05.881Z</published>
     <updated>2021-12-14T08:56:35.331Z</updated>
     
@@ -146,10 +196,10 @@
   
   <entry>
     <title>电脑卸载个CAD居然把一众软件搞崩溃</title>
-    <link href="https://alnas1.github.io/2021/12/12/%E6%97%A5%E5%B8%B8/%E7%94%B5%E8%84%91%E5%8D%B8%E8%BD%BD%E4%B8%AACAD%E5%B1%85%E7%84%B6%E6%8A%8A%E4%B8%80%E4%BC%97%E8%BD%AF%E4%BB%B6%E6%90%9E%E5%B4%A9%E6%BA%83/"/>
-    <id>https://alnas1.github.io/2021/12/12/%E6%97%A5%E5%B8%B8/%E7%94%B5%E8%84%91%E5%8D%B8%E8%BD%BD%E4%B8%AACAD%E5%B1%85%E7%84%B6%E6%8A%8A%E4%B8%80%E4%BC%97%E8%BD%AF%E4%BB%B6%E6%90%9E%E5%B4%A9%E6%BA%83/</id>
+    <link href="https://alnas1.github.io/2021/12/12/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/%E7%94%B5%E8%84%91%E5%8D%B8%E8%BD%BD%E4%B8%AACAD%E5%B1%85%E7%84%B6%E6%8A%8A%E4%B8%80%E4%BC%97%E8%BD%AF%E4%BB%B6%E6%90%9E%E5%B4%A9%E6%BA%83/"/>
+    <id>https://alnas1.github.io/2021/12/12/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/%E7%94%B5%E8%84%91%E5%8D%B8%E8%BD%BD%E4%B8%AACAD%E5%B1%85%E7%84%B6%E6%8A%8A%E4%B8%80%E4%BC%97%E8%BD%AF%E4%BB%B6%E6%90%9E%E5%B4%A9%E6%BA%83/</id>
     <published>2021-12-11T16:31:01.000Z</published>
-    <updated>2021-12-14T08:48:43.887Z</updated>
+    <updated>2021-12-17T18:29:51.819Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>为了电气控制课设临时安装CAD，而为了安装CAD我花了大半天下载软件、删掉软件给它腾空间、处理它一打开就开始cpu过载疯狂闪屏的问题。<br>现在的电脑，6100大洋、服役3年的华为matebookd 2018，各种间歇性黑屏，一打开什么软件屏幕就像年久失修的灯一般开始狂闪，看b站还总是音画不同步。不过这种日子终于到头了。<br>我新买的联想r9000p，价格7588，只要明天没啥大问题就直接用，实在受不了破电脑闪屏、C盘永远剩0字节。卸载个cad搞得浏览器崩溃、图床软件崩溃、qq崩溃。我都想不通为什么。<br>这12.12我是一分钟都待不下去了！</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
@@ -158,7 +208,9 @@
     
     
     
-    <category term="日常" scheme="https://alnas1.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
+    <category term="4-日常记录" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="生活随想" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/"/>
     
     
     <category term="“花花世界我一人干翻”" scheme="https://alnas1.github.io/tags/%E2%80%9C%E8%8A%B1%E8%8A%B1%E4%B8%96%E7%95%8C%E6%88%91%E4%B8%80%E4%BA%BA%E5%B9%B2%E7%BF%BB%E2%80%9D/"/>
@@ -167,10 +219,10 @@
   
   <entry>
     <title>Tarot / 你舟沉了</title>
-    <link href="https://alnas1.github.io/2021/12/11/%E6%97%A5%E5%B8%B8/%E4%BD%A0%E8%88%9F%E6%B2%89%E4%BA%86/"/>
-    <id>https://alnas1.github.io/2021/12/11/%E6%97%A5%E5%B8%B8/%E4%BD%A0%E8%88%9F%E6%B2%89%E4%BA%86/</id>
+    <link href="https://alnas1.github.io/2021/12/11/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A1%94%E7%BD%97%E7%8E%84%E5%AD%A6/%E4%BD%A0%E8%88%9F%E6%B2%89%E4%BA%86/"/>
+    <id>https://alnas1.github.io/2021/12/11/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A1%94%E7%BD%97%E7%8E%84%E5%AD%A6/%E4%BD%A0%E8%88%9F%E6%B2%89%E4%BA%86/</id>
     <published>2021-12-11T14:14:03.000Z</published>
-    <updated>2021-12-14T08:48:43.887Z</updated>
+    <updated>2021-12-17T18:29:51.818Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>缘由：#查询抽卡运势<br>牌组：棱镜<br>牌面：星币侍从，星币女皇，倒吊人<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/20211211231557.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/20211211231557.png" width="60%"></a></p><p>读牌：暗示充钱，硬吃保底，不尽人意最好收手。<br>结果：56发歪了琴柳，五星四个<br>今日的胜负：塔罗牌胜</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
@@ -179,7 +231,9 @@
     
     
     
-    <category term="日常" scheme="https://alnas1.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
+    <category term="4-日常记录" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="塔罗玄学" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A1%94%E7%BD%97%E7%8E%84%E5%AD%A6/"/>
     
     
     <category term="巴纳姆效应" scheme="https://alnas1.github.io/tags/%E5%B7%B4%E7%BA%B3%E5%A7%86%E6%95%88%E5%BA%94/"/>
@@ -188,10 +242,10 @@
   
   <entry>
     <title>摸爬滚打改博客（NexT时代）</title>
-    <link href="https://alnas1.github.io/2021/12/11/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E6%91%B8%E7%88%AC%E6%BB%9A%E6%89%93%E6%94%B9%E5%8D%9A%E5%AE%A2(next)%20/"/>
-    <id>https://alnas1.github.io/2021/12/11/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/%E6%91%B8%E7%88%AC%E6%BB%9A%E6%89%93%E6%94%B9%E5%8D%9A%E5%AE%A2(next)%20/</id>
+    <link href="https://alnas1.github.io/2021/12/11/1-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E6%91%B8%E7%88%AC%E6%BB%9A%E6%89%93%E6%94%B9%E5%8D%9A%E5%AE%A2(next)%20/"/>
+    <id>https://alnas1.github.io/2021/12/11/1-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E6%91%B8%E7%88%AC%E6%BB%9A%E6%89%93%E6%94%B9%E5%8D%9A%E5%AE%A2(next)%20/</id>
     <published>2021-12-10T17:09:52.000Z</published>
-    <updated>2021-12-14T12:57:44.526Z</updated>
+    <updated>2021-12-17T18:36:44.246Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>从orange主题迁移过来。</p><hr><h3 id="主页"><a href="#主页" class="headerlink" title="主页"></a>主页</h3><p><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112110113327.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112110113327.png"></a><br>我喜欢那种卡片样式的，简单凝练，信息密度大一点，这个主题为了排版美观失去了信息密集度。所以想改得紧凑。</p><h4 id="居中摘要"><a href="#居中摘要" class="headerlink" title="居中摘要"></a>居中摘要</h4><p>文件路径MyWeb\themes\next\layout\ _macro\post.njk</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;#################&#125;</span><br><span class="line">&#123;### POST BODY ###&#125;</span><br><span class="line">&#123;#################&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;post-body&#123;% if post.direction and post.direction.toLowerCase() === &#x27;rtl&#x27; %&#125; rtl&#123;% endif %&#125;&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;articleBody&quot;</span>&gt;</span></span><br><span class="line">  &#123;%- if is_index %&#125;</span><br><span class="line">    &#123;%- if post.description and theme.excerpt_description %&#125;</span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center&quot;</span>&gt;</span>&#123;&#123; post.description &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span> </span><br><span class="line">      <span class="comment">&lt;!--noindex--&gt;</span></span><br></pre></td></tr></table></figure><h4 id="橙色部分"><a href="#橙色部分" class="headerlink" title="橙色部分"></a>橙色部分</h4><p>文件路径MyWeb\themes\next\source\css\ _common\components\post\post-header.styl</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.posts-expand .post-header &#123;</span><br><span class="line">  font-size: $font-size-large;</span><br><span class="line">  margin-bottom: 60px;</span><br><span class="line">  text-align: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="蓝色虚线框部分"><a href="#蓝色虚线框部分" class="headerlink" title="蓝色虚线框部分"></a>蓝色虚线框部分</h4><p>文件路径MyWeb\themes\next\source\css\ _variables\base.styl</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//  .post-expand .post-eof</span><br><span class="line">//  In Muse scheme, margin above and below the post separator</span><br><span class="line">$post-eof-margin-top          = 10px; //  or 160px for more white space;</span><br><span class="line">$post-eof-margin-bottom       = 10px; //  or 120px for less white space;</span><br></pre></td></tr></table></figure><h3 id="博客标题"><a href="#博客标题" class="headerlink" title="博客标题"></a>博客标题</h3><h4 id="与网页顶部的距离"><a href="#与网页顶部的距离" class="headerlink" title="与网页顶部的距离"></a>与网页顶部的距离</h4><p><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112112048693.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112112048693.png"></a><br>文件路径MyWeb\themes\next\source\css\ _schemes\ _header.styl</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.header-inner &#123;</span><br><span class="line">  padding-top: 40px;</span><br><span class="line"></span><br><span class="line">  +mobile() &#123;</span><br><span class="line">    padding-top: 50px;</span><br></pre></td></tr></table></figure></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
@@ -200,7 +254,7 @@
     
     
     
-    <category term="关于博客" scheme="https://alnas1.github.io/categories/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/"/>
+    <category term="1-博客搭建" scheme="https://alnas1.github.io/categories/1-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
     <category term="博客" scheme="https://alnas1.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
@@ -209,10 +263,10 @@
   
   <entry>
     <title>《小姐》（아가씨）</title>
-    <link href="https://alnas1.github.io/2021/12/10/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E5%B0%8F%E5%A7%90%E3%80%8B/"/>
-    <id>https://alnas1.github.io/2021/12/10/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E5%B0%8F%E5%A7%90%E3%80%8B/</id>
+    <link href="https://alnas1.github.io/2021/12/10/3-%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E5%B0%8F%E5%A7%90%E3%80%8B/"/>
+    <id>https://alnas1.github.io/2021/12/10/3-%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E5%B0%8F%E5%A7%90%E3%80%8B/</id>
     <published>2021-12-10T14:24:03.000Z</published>
-    <updated>2021-12-14T08:48:43.887Z</updated>
+    <updated>2021-12-17T18:29:51.812Z</updated>
     
     <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="c0dc0e190d61de65ef2a265543ed8f051dbd7583d98407b84b6dbe4299483751">d3dc46725fcff41a5bfde1958f6ae5914b7e40f820787afa80af02db4449eeea47af9d1c7f3696639acd2395a7c49db0d179053dc1d8cb6d783a08cbea540ba3bb1c905e524c1cbb409d1865e44546d755bb970abfb78e426fc963bd77461f1f8d6fc5cbf09670c294bcf9e9ba642680e42a0893ea0fe05bab749c4b5e969d11ee5a2c0e3014181d7d211d7b1ea7a0964dfe80be20e31dcfb6a3538d4dda2e0fe0b72d2fab32039c93bae814ac29bd65aae4ad2d083a4ba4f9aafa055a43f1ad46d9387d1e638afb59127633572c9d34c0a44402d8a99d1c0642f720ff05ad0a09f5cc82ecdf7b46607805b3c9b2e2f7bea144d58e712914db4f20ba92ccd14745cc9b3c0ba05659da2b9fcfe2468890822b269f2b411c9514b47babfbd22db98400d07eaf88ab600909fbc95bc803f10c89836f267b204493f2b48535769dbeb94ead0517acda58410083f8e14534768163cbd74430cfc37b990659ba43a8d9c22bf16169d951b553e349ebc6da0b98918e7716d6be9c02f1ed1cfba9f2634dda14c54a973935ea7389dc04cc12c3311e0ab07a1b16a30fec506e96392d2442f1d83d46516ee6126fea3f978e5d78928afec45c10ecd2816133c9ab922f18083f9f890b63206c2337eb59b174938d3330fc292deae912bcac01e2e42e6655211941ef04c19e4140796ccf071f48abd5f3402ccb256bde35fd96e5e1c89435440a2d9f673d4256d49beecf046dc65d86344cb6f74fd8737e0ab04438acb4c260813b0a6f2aa90ec17fff8a96d244bbeacc5bcf5252e6364e3130c7ad159fb13b231e2dd63f71f54e1a7b29412158e007cc301d71d9ffc81a1047114eb3c91d8a81582de5566539d5a62070b02d6cb17d917c7b9ebaa74e4124dafda73899ac98f4f052009455eee49662ace5b8b57fbaf08d0a860ad8bfdda59cdf86e2954711f5e40c51940d8180de0f8729d5577efe74a2a6f9e8073f24758451ab60ed7941485369646c70546f737af00cb2c38adfa34e61a499900fa8460aeb08411db897248f5c74ef7737c2b905cbce34f1dfee953cf9e06a5ce9b94d4f652038ca464f2659e6c7b2ed032f93d442345ed0d75b00ebd648ecf379246661cd81c5f9eff4d7deed0a6824653bf354005a56b741f61e9f63777f13b7f502c19337dab567d37e601ab7c0310e64b51b5bc5a66961861b4cf89c1fd0e304cbca9fc09c9d31721b26bfc1f1cda5426a1b9664af8adfced5cf4714e8e107cb9fdb577afde7d3860f94dfdde11efab14675f37d8f623991323cc01e87b0dbc974da3f4952b2b29b9a03db3b343628ced34f947d174c600175c77cd2f9bc64609f7fab13ac76d2b128dd8b59558775153ceffaf4dce7180195714e8b6a0cbbc200c3741f86f5f12ffb6281bffa5b6ec9e75a09edf29867876db1adcf646b5675dfbcf6b08bd6edbe30a093d4512dad5789b665e16e6d2dcfea1195c2b6054ba7a4d2677aae63217c159bd62faa2bf1541aae85d45240581d5fe0423f0cc264fdf105974997367d550197451d23d59a58b763563ed692a945f42643ab1b7e8b2df2ec2f21550a5e42261c4db8f2c6776e9b22b1a8704ea0c1671d9228a6f3ebfd3cfc34ff39822cd6636a998be321772b3d506ad7729aa326edefc68bb02223752ac011bc5af47001c0f11f928dc70d279d989d830b11477777ac8991878b8797b33a0f0bf460f9227efdde2160cf7478e87da5124f5401a2fb94c0b28ff9accfff81104d10084c4cdc043844b287449cf230508c056c597ba3ebe197cfd603da2688845c916ae993c54313a60c82d276c8f5691cc11dceecc18515c040c3b07520b47141a0167e7ac25c79b2d5ba49bab70672dd8a7c08f7ae2d4cf5f821976a4328370094251e6df289a911db35adf358b2c463a39045f5e248dce2ba9d47934ab495ba70c49d6b1ee975924bfb7defdabfb14b162d0b7cb61fbc29af620483df761451617643454949caf5fd72c6b24f2a223b2dfbe0a7200930e5436dca67efa1b43d7517eda596c46bb70b1f9f0aaaf044325285eeb89fe0fa68f9986508c94d1f9d00bb797cf5d635073bc27b0b9f78dd36f31b4a8f71761c3594e4d74cdc4053b56696fc07a838579f6fa1ad0e844e090f10c8f6f04ae29b4ae9d5ff385dc039c3a567525e715ee02b207e6a548867cc1c1d7099745488f6d6285b65446612bb212b5a74792ce3fd7409402031451e21fbb4aa5577333dce3d15c9238b6ab918a302d353a6a61fb96a18a883cbb8d2bc89b81ad265fa23cba639529cb803d33ddf8a06341406885fa58db5be0e2d2c625a4dac5bf6c09f217bfe2237c73a83043c9447aa8bc483855940c683e3475f99a9ca4885b49ec8fa903ef6d92499d394bf5700570e7426b2f896613b424a771fda125d17728e4c0eac85fd2748c71e5343c4549fb6ae6b7f7c8465f864fb11b6d75f8bbad251249beed178935a083a48741ad5fe4da64ca433cc779f5cd83ab8ffc71b5c044e200eba4a595aca1f5705673943498028ce16a7a5f0a1d4036f2ee646ad2b4e28b944f485f417018a544edb65ccc2c014aff431e1fcb59b772bc3b6649b001a52b7b4c1372ccaca7b1e8927dc3e001dd86be39b9f74751b6c4d739b7f36ab803b1fc44de3c02a1139e2713daab06a9db68741eff20376ae509766517d8a907fb015c82e1de83d087f7b9dc3add208feef6273f30d397ec1a84a7365000641a8adec85e7ccd37825fdceeb42a3fb8944a85b80d2517f774f9f18a3d96415b8bfb9285e2edd38b4935fe6ff8b3135dbb27fe5b08577e304e36b754a80effcf86837d5a861c4f274202c576cbaac9179a3144d1dad71b013c14450b6581d2546db730fd3ec9fc0c2044d61cc92bbd71c803957effc690f23712594c225ebe45084fdc73d088d14df38f672576c32a0cc38f4eb936d7bdfb0a71d77c4a4d662c6ad39172a0cc8afd72a93a708d8acb1bfb238a5570e76dc00c3de87ad90002e313049e500d6366cc0677e5abb9781ce941441cb1cfdbb06aa66fa244ee7b23899a60ff6fd16289e053f7a397bca43f8a644b1460c638ad170ca76b70de135c960f3caba4d2f2ae3874a1730b0e644a5dab4b7aba37dd586a90dfd7164c571bf36a7b9fdea56b3fd4bc83d10d64cc6dd994781731eecf865c23458c5be5f57bb04653ca570d511487807f8099b4908ee352c6af734a12167a2efe829b87114576b513d53a95e1e061ed2299b2d9bfb04ded84f1f8fb5d1e88010cedf7816025e77a92e666466553de463bb15e1f3ff0e8a74520ced9a9c1a3639db7ca68bd357044c</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-up">      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-up">提示：大胆猜，懂的都懂</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
     
@@ -221,21 +275,19 @@
     
     
     
-    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
+    <category term="3-观后感" scheme="https://alnas1.github.io/categories/3-%E8%A7%82%E5%90%8E%E6%84%9F/"/>
     
-    <category term="观后感" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/"/>
-    
-    <category term="电影" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/"/>
+    <category term="电影" scheme="https://alnas1.github.io/categories/3-%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/"/>
     
     
   </entry>
   
   <entry>
     <title>《失控玩家》（FREE GUY）</title>
-    <link href="https://alnas1.github.io/2021/12/08/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E5%A4%B1%E6%8E%A7%E7%8E%A9%E5%AE%B6%E3%80%8B/"/>
-    <id>https://alnas1.github.io/2021/12/08/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E5%A4%B1%E6%8E%A7%E7%8E%A9%E5%AE%B6%E3%80%8B/</id>
+    <link href="https://alnas1.github.io/2021/12/08/3-%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E5%A4%B1%E6%8E%A7%E7%8E%A9%E5%AE%B6%E3%80%8B/"/>
+    <id>https://alnas1.github.io/2021/12/08/3-%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/%E3%80%8A%E5%A4%B1%E6%8E%A7%E7%8E%A9%E5%AE%B6%E3%80%8B/</id>
     <published>2021-12-08T14:48:38.000Z</published>
-    <updated>2021-12-14T08:48:43.887Z</updated>
+    <updated>2021-12-17T18:29:51.817Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：失控玩家<br>导演：肖恩·利维<br>主角：盖（guy）/米莉/凯斯<br>cp：凯斯x米莉<br>视角：男主<br>世界观：未来有个游戏叫自由之城<br>观影点：学校咖啡厅</p><hr><h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>设定一般，在科幻，甚至网游文这块都是差不多被玩烂了的梗。不过在电影，以觉醒的NPC为主角的片子我还是头一回见。<br>故事线比较弱，全片最大的亮点是自由之城本身，整一个捏他GTA……或者和它同类型的游戏。特效还行吧。<br>想吐槽的一点是为啥你们后台程序员开创造模式都杀不掉那个NPC，救命。<br>而且boss完全就是反社会人士，动不动“全服停机”“删掉所有玩家账号”，最后直接去砸自家的服务器捏妈，真有你的。<br>真实世界的男主（男二？）对女主态度奇奇怪怪，前半段爱搭不理的到后来直接一转攻势变成深情天才宅男，好吧，我不是很懂。<br>当然没有楚门的世界来得好看。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
@@ -244,21 +296,19 @@
     
     
     
-    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
+    <category term="3-观后感" scheme="https://alnas1.github.io/categories/3-%E8%A7%82%E5%90%8E%E6%84%9F/"/>
     
-    <category term="观后感" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/"/>
-    
-    <category term="电影" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/"/>
+    <category term="电影" scheme="https://alnas1.github.io/categories/3-%E8%A7%82%E5%90%8E%E6%84%9F/%E7%94%B5%E5%BD%B1/"/>
     
     
   </entry>
   
   <entry>
     <title>梦 / 纸片人的精神分裂症状</title>
-    <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E7%BA%B8%E7%89%87%E4%BA%BA%E7%9A%84%E7%B2%BE%E7%A5%9E%E5%88%86%E8%A3%82%E7%97%87%E7%8A%B6/"/>
-    <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E7%BA%B8%E7%89%87%E4%BA%BA%E7%9A%84%E7%B2%BE%E7%A5%9E%E5%88%86%E8%A3%82%E7%97%87%E7%8A%B6/</id>
+    <link href="https://alnas1.github.io/2021/12/05/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E7%BA%B8%E7%89%87%E4%BA%BA%E7%9A%84%E7%B2%BE%E7%A5%9E%E5%88%86%E8%A3%82%E7%97%87%E7%8A%B6/"/>
+    <id>https://alnas1.github.io/2021/12/05/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E7%BA%B8%E7%89%87%E4%BA%BA%E7%9A%84%E7%B2%BE%E7%A5%9E%E5%88%86%E8%A3%82%E7%97%87%E7%8A%B6/</id>
     <published>2021-12-05T15:20:15.000Z</published>
-    <updated>2021-12-14T08:48:43.887Z</updated>
+    <updated>2021-12-17T18:29:51.818Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>三个片段，互相无关联。<br>1.我在玩一个2d像素游戏，做了隐藏任务赚了好多钱。<br>2舍友写小说给我看，我觉得插图很丑就改了改，然后发现这样不打招呼就改很不礼貌。<br>3.我找钟离，balabalabalabala（中间忘记了），他送了我一个挂在包上的链子，一把餐刀，表示以后我是他女朋友了！梦里的我：其实我更希望是您的副人格万叶。</p><p>醒来：？</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
@@ -267,19 +317,19 @@
     
     
     
-    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
+    <category term="4-日常记录" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
     
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
+    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
     
     
   </entry>
   
   <entry>
     <title>梦 / 应试教育后遗症</title>
-    <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E5%BA%94%E8%AF%95%E6%95%99%E8%82%B2%E5%90%8E%E9%81%97%E7%97%87/"/>
-    <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E5%BA%94%E8%AF%95%E6%95%99%E8%82%B2%E5%90%8E%E9%81%97%E7%97%87/</id>
+    <link href="https://alnas1.github.io/2021/12/05/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E5%BA%94%E8%AF%95%E6%95%99%E8%82%B2%E5%90%8E%E9%81%97%E7%97%87/"/>
+    <id>https://alnas1.github.io/2021/12/05/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E5%BA%94%E8%AF%95%E6%95%99%E8%82%B2%E5%90%8E%E9%81%97%E7%97%87/</id>
     <published>2021-12-05T15:19:19.000Z</published>
-    <updated>2021-12-14T08:48:43.887Z</updated>
+    <updated>2021-12-17T18:29:51.818Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>早上做梦梦见下午两点有一个生物学考试。关键是我7点被吵醒那会对自己做的梦深信不疑，睡到8点半的这段时间内梦境在自动补完“我有一个选修课一直没去上但几个小时后就要考试”的这回事。<br>甚至脑补了具体的上课情景，确定这门课叫“上帝知道答案”。讲课的是一个女老师，和我一起上课的有舍友和隔壁班同学。然后梦里我不乐意去问舍友，就问了隔壁班同学，这位同学石锤了下午两点有考试，然后就开始慌，恐慌，虽然9小时复习概率论/12小时速通PLC不是没有过，但是距离下午两点只有6小时了，我根本不记得这门课的任何内容。平时既然没去上课那肯定没有平时分。我恐惧保研功亏一篑。<br>直到刷完牙我都还没想明白到底有没有“选修课下午两点考试”这回事</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
@@ -288,19 +338,19 @@
     
     
     
-    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
+    <category term="4-日常记录" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
     
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
+    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
     
     
   </entry>
   
   <entry>
     <title>梦 / 正宫的不屑.jpg</title>
-    <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%AD%A3%E5%AE%AB%E7%9A%84%E4%B8%8D%E5%B1%91-jpg/"/>
-    <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%AD%A3%E5%AE%AB%E7%9A%84%E4%B8%8D%E5%B1%91-jpg/</id>
+    <link href="https://alnas1.github.io/2021/12/05/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%AD%A3%E5%AE%AB%E7%9A%84%E4%B8%8D%E5%B1%91-jpg/"/>
+    <id>https://alnas1.github.io/2021/12/05/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%AD%A3%E5%AE%AB%E7%9A%84%E4%B8%8D%E5%B1%91-jpg/</id>
     <published>2021-12-05T15:18:33.000Z</published>
-    <updated>2021-12-14T08:48:43.887Z</updated>
+    <updated>2021-12-17T18:29:51.818Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>昨天晚上梦到我拿着我推纸片人1的照片（立绘？）给正宫纸片人2看，纸片人2不屑地笑了 ​​​</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
@@ -309,19 +359,19 @@
     
     
     
-    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
+    <category term="4-日常记录" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
     
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
+    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
     
     
   </entry>
   
   <entry>
     <title>梦 / 追查无形怪物</title>
-    <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E8%BF%BD%E6%9F%A5%E6%97%A0%E5%BD%A2%E6%80%AA%E7%89%A9/"/>
-    <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E8%BF%BD%E6%9F%A5%E6%97%A0%E5%BD%A2%E6%80%AA%E7%89%A9/</id>
+    <link href="https://alnas1.github.io/2021/12/05/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E8%BF%BD%E6%9F%A5%E6%97%A0%E5%BD%A2%E6%80%AA%E7%89%A9/"/>
+    <id>https://alnas1.github.io/2021/12/05/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E8%BF%BD%E6%9F%A5%E6%97%A0%E5%BD%A2%E6%80%AA%E7%89%A9/</id>
     <published>2021-12-05T15:17:48.000Z</published>
-    <updated>2021-12-14T08:48:43.887Z</updated>
+    <updated>2021-12-17T18:29:51.818Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>梦见出现了一种奇怪的力量，其表现形式是人有时候会无缘无故被突然扯一下，但不是别人干的。<br>就像透明人恶作剧一样。<br>这个现象变得越发严重了，我曾见到一个小女孩被来自多方向的无形的力折断骨头，整个人扭曲变形。<br>我去追查这种现象的源头，到一座大厦里（特别像学校的学研中心），进门的时候刚好目睹一个深蓝色衣服的人从高空坠落，砸到地上。<br>因为事情紧急，就没有去管，但是我和助手都认为肯定和源头有关。<br>上楼，被发现，开始躲，躲到一个占卜师的家里，她帮我隐藏了起来，还让我抽了三张塔罗牌，但是没有读牌，我也不记得三张牌是什么。<br>后来我的队友赶到了，在楼外辅助，我下了楼，看到那个坠落的人，走进发现只是一件外套，外套里面摆着一个只有一半的饼干。<br>这个饼干是软的，很大，一个巴掌那么大，完整版应该是两颗心被箭串在一起，这里只有一半，两个心是粉的，中间用黄色写了几个单词，但是不完整。<br>我突然发觉这个跳楼的人就是我。<br>我要传达给我什么信息？<br>在保温杯里找到了另外一半饼干，把它们拼起来，我知道了完整的句子。<br>从占卜师那里走后，她把占卜的牌送给了我。我拿出来边走边洗牌，却发现总是有牌不是背面向上的，还得反过来，我很着急，后来在确认牌数量的时候，数不出正确的数目，就让队友又帮我买了一副牌。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
@@ -330,19 +380,19 @@
     
     
     
-    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
+    <category term="4-日常记录" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
     
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
+    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
     
     
   </entry>
   
   <entry>
     <title>梦 / 我真是个起名天才</title>
-    <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%88%91%E7%9C%9F%E6%98%AF%E4%B8%AA%E8%B5%B7%E5%90%8D%E5%A4%A9%E6%89%8D/"/>
-    <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%88%91%E7%9C%9F%E6%98%AF%E4%B8%AA%E8%B5%B7%E5%90%8D%E5%A4%A9%E6%89%8D/</id>
+    <link href="https://alnas1.github.io/2021/12/05/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%88%91%E7%9C%9F%E6%98%AF%E4%B8%AA%E8%B5%B7%E5%90%8D%E5%A4%A9%E6%89%8D/"/>
+    <id>https://alnas1.github.io/2021/12/05/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%88%91%E7%9C%9F%E6%98%AF%E4%B8%AA%E8%B5%B7%E5%90%8D%E5%A4%A9%E6%89%8D/</id>
     <published>2021-12-05T15:15:36.000Z</published>
-    <updated>2021-12-14T08:48:43.887Z</updated>
+    <updated>2021-12-17T18:29:51.818Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>今天的梦又是一个大型连续剧。。<br>背景星际，但是一群人又会点火又会再生水资源的，醒来我都懵这是什么鬼畜修仙+科幻<br>现在已经有点记不清了<br>就记得主角1叫然倚暮（好像是，我记得是三个字，最后一个字很复杂），真名叫何然，不知道惹了什么事（大概是家族政变），处于逃亡状态。<br>中间应该发生了很多事，有一个半机械人（主角2）在追杀她，最后棋差一着被何然借助激光发射器干碎了半个身子，终止了他的追杀。<br>何然很冷静聪明，她根据半机械人的指示找到一个玩具熊，玩具熊背后的标签上会显示【未来一段时间内最大概率发生的事件】。<br>她看玩具熊的标签，上面写着【卫队包围了老宅】。<br>何然被抓起来了。<br>被抓回去开家庭会议。<br>她面对她妈和她奶奶，她爸死了。看过标签的何然知道要从奶奶这里突破，她妈是个不折不扣的反派。<br>然后就想不起来了……</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
@@ -351,19 +401,19 @@
     
     
     
-    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
+    <category term="4-日常记录" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
     
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
+    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
     
     
   </entry>
   
   <entry>
     <title>梦 / 文明间的战术欺骗</title>
-    <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%96%87%E6%98%8E%E9%97%B4%E7%9A%84%E6%88%98%E6%9C%AF%E6%AC%BA%E9%AA%97/"/>
-    <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%96%87%E6%98%8E%E9%97%B4%E7%9A%84%E6%88%98%E6%9C%AF%E6%AC%BA%E9%AA%97/</id>
+    <link href="https://alnas1.github.io/2021/12/05/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%96%87%E6%98%8E%E9%97%B4%E7%9A%84%E6%88%98%E6%9C%AF%E6%AC%BA%E9%AA%97/"/>
+    <id>https://alnas1.github.io/2021/12/05/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E6%A2%A6-%E6%96%87%E6%98%8E%E9%97%B4%E7%9A%84%E6%88%98%E6%9C%AF%E6%AC%BA%E9%AA%97/</id>
     <published>2021-12-05T15:14:01.000Z</published>
-    <updated>2021-12-14T08:48:43.887Z</updated>
+    <updated>2021-12-17T18:29:51.818Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>今天的梦是我声称发现适距中子星可以利用新武器将其引爆并取得与敌对地外文明的战争胜利。<br>该地外文明宣告投降，派出一位代表由我带领参观地球。<br>该代表的形象是抽象蓝绿鱼头人。<br>在参观过程中我告诉他：“其实并没有中子星，我骗你们的。”<br>参观在沉默中结束了。<br>蓝绿鱼头人代表回去后宣战。<br>于是我方引爆了中子星。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
@@ -372,19 +422,19 @@
     
     
     
-    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
+    <category term="4-日常记录" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
     
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
+    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
     
     
   </entry>
   
   <entry>
     <title>梦 / 学校、医院和坍塌</title>
-    <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E5%AD%A6%E6%A0%A1%E3%80%81%E5%8C%BB%E9%99%A2%E5%92%8C%E5%9D%8D%E5%A1%8C/"/>
-    <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E5%AD%A6%E6%A0%A1%E3%80%81%E5%8C%BB%E9%99%A2%E5%92%8C%E5%9D%8D%E5%A1%8C/</id>
+    <link href="https://alnas1.github.io/2021/12/05/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E5%AD%A6%E6%A0%A1%E3%80%81%E5%8C%BB%E9%99%A2%E5%92%8C%E5%9D%8D%E5%A1%8C/"/>
+    <id>https://alnas1.github.io/2021/12/05/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E5%AD%A6%E6%A0%A1%E3%80%81%E5%8C%BB%E9%99%A2%E5%92%8C%E5%9D%8D%E5%A1%8C/</id>
     <published>2021-12-05T15:12:29.000Z</published>
-    <updated>2021-12-14T08:48:43.887Z</updated>
+    <updated>2021-12-17T18:29:51.818Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>一群人进入一座楼，白天。一楼有体育室和办公室，是学校一样的地方。<br>他们分组去搜查其他楼层，我就去检查体育室，一眼看到右边柜子上挂着一副世界地图。问办公室里的人能不能看，他们答应了我就靠近看。<br>突然地图掉下来，我吓了一跳。<br>地图后面的柜子，柜门是玻璃窗口，其他都是漆木。玻璃上歪歪扭扭写着三个方程还有其他鬼画符。拿手机拍下来以后回头看，发现人都不见了。<br>我退出体育室，去其他办公室搜查，没有发现什么。就决定上楼与其他人汇合。<br>楼上都是教室，我直到顶楼才看到人。<br>不过目睹的是一个长着猪脑袋和獠牙的人型怪物向一扇细窄的黑洞洞的门里伸出手，门里丢给他一个像沙包的东西。<br>他拿着这个进教室，不一会就拖了四个昏迷的人出来把他们放在一张圆桌前挨个坐好。我看见猪头人走了，蹭过去想摇醒他们。<br>没有用。<br>这时，我发现那扇细窄的黑门就在面前的墙壁上。试着伸出手说：“解药。”然后，门里浮现出一个干瘦的惨白人脸，一只手把沙包丢给我。<br>我把沙包拿给四个人闻，他们都醒了。<br>两个人结伴从另一个楼道走，我背起一个腿伤的人，问剩下的最后一个：“你不走吗？”<br>“我留下来拖延时间。”<br>我点点头：“我会回来找你。”<br>我下了楼，没有遇见意外。把腿伤的人放在大楼外后，我准备返回大楼。<br>路上遇见从另一边顺利下来的两个人。他们看见我回去很惊讶，我说里面还有一个人。他们劝道：“别去，太危险了。”<br>我摇摇头，进入大楼一层。这次不是学校了，而是超大医院的大厅。没有顶灯，所有的灯光都是屏幕发出的，米黄和草绿交错。医院里整齐地布置着座椅，座椅上坐满了候诊的人。<br>哪里会有医院把候诊大厅搞得跟火车站一样。<br>他们有电梯，我没用，跑到楼梯井里，一个包工头对着面前跪下的一个人说道：“你是榜眼？除非你们的状元也给我跪下，我才……”<br>状元走上前，我没有看到更多，上了楼，包工头的笑声很有穿透力。但我踏上二楼，发现楼梯很不稳定。<br>开始狂奔，我跑过一层，楼梯就塌一层。就在四楼，整座大楼倒塌。<br>一阵强烈的失重感后，我醒来了。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
     
@@ -393,51 +443,9 @@
     
     
     
-    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
+    <category term="4-日常记录" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
     
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>梦 / 人鱼双子成功脱困了吗</title>
-    <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E4%BA%BA%E9%B1%BC%E5%8F%8C%E5%AD%90%E6%88%90%E5%8A%9F%E8%84%B1%E5%9B%B0%E4%BA%86%E5%90%97/"/>
-    <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E4%BA%BA%E9%B1%BC%E5%8F%8C%E5%AD%90%E6%88%90%E5%8A%9F%E8%84%B1%E5%9B%B0%E4%BA%86%E5%90%97/</id>
-    <published>2021-12-05T15:07:44.000Z</published>
-    <updated>2021-12-14T08:48:43.887Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>有人指挥我进一家服装店，把里面的衣服拿出去以很便宜的价格叫卖，吸引到一些顾客正在议价时，突然发现哥哥的电话打不通。<br>直觉就是出事了，打119，立刻进行搜索，我和我爸去找人，找到一个很阴暗的地窖，里面都是大酒坛子。打开一个坛子，发现哥哥就在里面，虚弱无力的样子。<br>然后因为发现了秘密，我被塞进酒坛子里，我爸被杀。没有人来救，渐渐我发现在坛子里我们的腿变成了鱼尾。<br>之后，我和哥哥被丢到一个四方的水泥池里，里面水很浅，后来多了起来，还可以养鱼。有一天我们的手上都长了水泡，很痛，但是一个人告诉我们这是鱼卵，指着哥哥的手说他的已经孵化了，很快就好。确实是这样，我手上的水泡掉下来以后孵出一只黄色扁热带鱼，然后就好了。<br>一天涨潮，潮水没过小池子，我和哥哥趁机游出去。逃到一个很多人的岸边，大家都很惊讶地看着，然后有一个人把我们带走了，发现我们过了太久，不会认字说话，就让我们认字。<br>最后，发现鱼尾可以在完全干燥的情况下变成人腿，我和哥哥的头发变成红色，红色的短发蘑菇头，可以上岸走路但是不能晒太阳，就给我们定制了特别的衣服，紫色。<br>红色头发紫色衣服，两个人手牵手站在一段台阶顶端，似乎要去参加什么典礼。这是我最后梦到的画面。</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-    
-    
-    <summary type="html">总觉得最后还有阴谋但是我醒了</summary>
-    
-    
-    
-    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
-    
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>梦 / 真实的家庭伦理剧</title>
-    <link href="https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E7%9C%9F%E5%AE%9E%E7%9A%84%E5%AE%B6%E5%BA%AD%E4%BC%A6%E7%90%86%E5%89%A7/"/>
-    <id>https://alnas1.github.io/2021/12/05/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/%E7%9C%9F%E5%AE%9E%E7%9A%84%E5%AE%B6%E5%BA%AD%E4%BC%A6%E7%90%86%E5%89%A7/</id>
-    <published>2021-12-05T14:53:40.000Z</published>
-    <updated>2021-12-14T08:48:43.887Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>梦见爷爷鲨了奶奶，尸体藏在床下，我不知情地在床上睡了两天，第三天房子开始摇晃我看到床底下蔓延的血水才去叫我爸妈，爸妈拿菜刀把奶奶分尸了 ​​​</p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
-    
-    
-    <summary type="html">恐怖的梦</summary>
-    
-    
-    
-    <category term="文字" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/"/>
-    
-    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/%E6%96%87%E5%AD%97/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
+    <category term="奇怪的梦" scheme="https://alnas1.github.io/categories/4-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%A5%87%E6%80%AA%E7%9A%84%E6%A2%A6/"/>
     
     
   </entry>

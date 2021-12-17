@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"alnas1.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.2","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":120},"copycode":false,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeIn","post_body":"fadeIn","coll_header":"fadeIn","sidebar":"fadeIn"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<meta name="description" content="“我早该有这样的想法的，分类强迫症狂喜。”">
+<meta property="og:type" content="article">
+<meta property="og:title" content="教程 &#x2F; 如何给文件及文件夹添加备注">
+<meta property="og:url" content="https://alnas1.github.io/2021/12/18/6-%E5%86%99%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9C%8B%E7%9A%84%E6%95%99%E7%A8%8B%E6%80%BB%E7%BB%93/%E5%A6%82%E4%BD%95%E7%BB%99%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%B3%A8/index.html">
+<meta property="og:site_name" content="Alnasl的博客">
+<meta property="og:description" content="“我早该有这样的想法的，分类强迫症狂喜。”">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218002105.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218002131.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218003252.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218003428.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218003600.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218011001.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218011255.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218011730.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218012623.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218012922.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218013334.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218013631.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218015131.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218015652.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218020436.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218020635.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218021345.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218022024.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218021500.jpg">
+<meta property="article:published_time" content="2021-12-17T16:11:05.000Z">
+<meta property="article:modified_time" content="2021-12-17T18:37:35.319Z">
+<meta property="article:author" content="Alnasl">
+<meta property="article:tag" content="教程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218002105.jpg">
+
+
+<link rel="canonical" href="https://alnas1.github.io/2021/12/18/6-%E5%86%99%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9C%8B%E7%9A%84%E6%95%99%E7%A8%8B%E6%80%BB%E7%BB%93/%E5%A6%82%E4%BD%95%E7%BB%99%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%B3%A8/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://alnas1.github.io/2021/12/18/6-%E5%86%99%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9C%8B%E7%9A%84%E6%95%99%E7%A8%8B%E6%80%BB%E7%BB%93/%E5%A6%82%E4%BD%95%E7%BB%99%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%B3%A8/","path":"2021/12/18/6-写给自己看的教程总结/如何给文件及文件夹添加备注/","title":"教程 / 如何给文件及文件夹添加备注"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>教程 / 如何给文件及文件夹添加备注 | Alnasl的博客</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- 画册. -->
+	<script src="/js/src/photoswipe.min.js?v="></script>
+	<script src="/js/src/photoswipe-ui-default.min.js?v="></script>
+<!-- 画册. -->
+<link rel="alternate" href="/atom.xml" title="Alnasl的博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Alnasl的博客</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">幸运也会不期而至</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-photos"><a href="/photos/" rel="section"><i class="fa fa-book fa-fw"></i>画册</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%88%E6%9E%9C%E4%B8%8E%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="nav-number">1.</span> <span class="nav-text">效果与参考文献</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B0%83%E5%87%BA%E5%A4%87%E6%B3%A8%E4%BF%A1%E6%81%AF%E6%A0%8F"><span class="nav-number">2.</span> <span class="nav-text">调出备注信息栏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9%E6%96%87%E4%BB%B6%E5%A4%B9%E5%A4%87%E6%B3%A8"><span class="nav-number">3.</span> <span class="nav-text">更改文件夹备注</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80-%E4%BD%BF%E7%94%A8%E8%BD%AF%E4%BB%B6remark-exe"><span class="nav-number">3.1.</span> <span class="nav-text">方法一 使用软件remark.exe</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%BF%90%E8%A1%8Cexe%E7%89%88%E6%9C%AC"><span class="nav-number">3.1.1.</span> <span class="nav-text">运行exe版本</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%BF%90%E8%A1%8Cpython%E7%89%88%E6%9C%AC"><span class="nav-number">3.1.2.</span> <span class="nav-text">运行python版本</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%B3%A8%E6%84%8F"><span class="nav-number">3.1.3.</span> <span class="nav-text">注意</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C-%E4%BD%BF%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%96%87%E4%BB%B6%E5%A4%B9%E5%A4%87%E6%B3%A8%E4%BF%AE%E6%94%B9%E7%A8%8B%E5%BA%8F-exe%EF%BC%88%E4%B8%8D%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="nav-number">3.2.</span> <span class="nav-text">方法二 使用软件文件夹备注修改程序.exe（不推荐）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%B8%89-%E4%B8%8D%E4%BD%BF%E7%94%A8%E8%BD%AF%E4%BB%B6%EF%BC%8C%E7%9B%B4%E6%8E%A5%E6%89%8B%E5%8A%A8%E6%B7%BB%E5%8A%A0"><span class="nav-number">3.3.</span> <span class="nav-text">方法三 不使用软件，直接手动添加</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9%E6%96%87%E4%BB%B6%E5%A4%87%E6%B3%A8-%E4%BD%BF%E7%94%A8%E8%BD%AF%E4%BB%B6FileMeta"><span class="nav-number">4.</span> <span class="nav-text">更改文件备注 使用软件FileMeta</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Alnasl"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Alnasl</p>
+  <div class="site-description" itemprop="description">hello</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">50</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://alnas1.github.io/2021/12/18/6-%E5%86%99%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9C%8B%E7%9A%84%E6%95%99%E7%A8%8B%E6%80%BB%E7%BB%93/%E5%A6%82%E4%BD%95%E7%BB%99%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%B3%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Alnasl">
+      <meta itemprop="description" content="hello">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Alnasl的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          教程 / 如何给文件及文件夹添加备注
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-12-18 00:11:05" itemprop="dateCreated datePublished" datetime="2021-12-18T00:11:05+08:00">2021-12-18</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">“我早该有这样的想法的，分类强迫症狂喜。”</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="效果与参考文献"><a href="#效果与参考文献" class="headerlink" title="效果与参考文献"></a>效果与参考文献</h3><ul>
+<li>文件：所有后缀的文件都可以添加备注。使用软件<code>FileMeta</code>。<br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218002105.jpg" title="QQ截图20211218002105" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218002105.jpg" alt="QQ截图20211218002105"></a>  </li>
+<li>文件夹：同样可以做到，有两种方法。<br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218002131.jpg" title="QQ截图20211218002131" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218002131.jpg" alt="QQ截图20211218002131"></a>  </li>
+<li>参考文献：<ul>
+<li><a target="_blank" rel="noopener" href="https://www.52pojie.cn/thread-1351585-1-1.html">[1]（吾爱破解）[Windows]文件夹备注修改程序</a>  </li>
+<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/37099652">[2]（知乎）如何给文件/文件夹添加备注？</a></li>
+<li><a target="_blank" rel="noopener" href="http://t.zoukankan.com/buwuliao-p-12306750.html">[3]（博客）windows 系统给文件添加备注（FileMetadata下载及使用教程）</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.52pojie.cn/forum.php?mod=viewthread&tid=1558412">[4]（吾爱破解）[Windows] win 系统给文件和文件夹添加备注</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="调出备注信息栏"><a href="#调出备注信息栏" class="headerlink" title="调出备注信息栏"></a>调出备注信息栏</h3><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218003252.jpg" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218003252.jpg" width=70%></a>
+<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218003428.jpg" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218003428.jpg" width=40%></a>   
+<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218003600.jpg" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218003600.jpg" width=70%></a>    
+成功调出备注信息栏。
+
+<h3 id="更改文件夹备注"><a href="#更改文件夹备注" class="headerlink" title="更改文件夹备注"></a>更改文件夹备注</h3><h4 id="方法一-使用软件remark-exe"><a href="#方法一-使用软件remark-exe" class="headerlink" title="方法一 使用软件remark.exe"></a>方法一 使用软件<code>remark.exe</code></h4><p>进入<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1I9KVLSQd6DJoY33dzgRz5Q">百度云链接</a>，密码52pj，下载软件，可以三个文件都下载，另外两个是之后会用到的改文件备注的软件。该下载链接来自<a target="_blank" rel="noopener" href="https://www.52pojie.cn/forum.php?mod=viewthread&tid=1558412">参考文献[4]</a>。知乎回答中也有这个方法，不过给的链接是<a target="_blank" rel="noopener" href="https://github.com/piratf/windows-folder-remark">GitHub</a>。<br>这个软件是python写的，有两种启动方法，作者也写在<code>readme.md</code>里了。</p>
+<h5 id="运行exe版本"><a href="#运行exe版本" class="headerlink" title="运行exe版本"></a>运行exe版本</h5><ul>
+<li>进入目录<code>..\windows-folder-remark-master\release\FolderRemark</code>，找到可执行文件<code>remark.exe</code>,双击打开，出现命令行黑框框。<br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218011001.jpg" title="QQ截图20211218011001" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218011001.jpg" alt="QQ截图20211218011001"></a>  </li>
+<li>按照提示把文件夹拖入，出现路径以后按回车。输入备注再按回车。<br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218011255.jpg" title="QQ截图20211218011255" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218011255.jpg" alt="QQ截图20211218011255"></a>  </li>
+<li>你需要<strong>重启</strong>文件资源管理器（就是关闭所有文件夹），再打开就可以看到备注了。<br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218011730.jpg" title="QQ截图20211218011730" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218011730.jpg" alt="QQ截图20211218011730"></a></li>
+</ul>
+<h5 id="运行python版本"><a href="#运行python版本" class="headerlink" title="运行python版本"></a>运行python版本</h5><blockquote>
+<ul>
+<li>适配版本： python3.4 </li>
+<li><code>python remark.py</code></li>
+<li>操作<ul>
+<li>remark 文件夹路径 “文件夹备注内容”</li>
+<li>remark<br>运行后按照提示操作</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h5 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h5><p>该脚本会修改文件夹下隐藏的 Desktop.ini 文件，并为文件夹修饰 System 属性，请注意。</p>
+<h4 id="方法二-使用软件文件夹备注修改程序-exe（不推荐）"><a href="#方法二-使用软件文件夹备注修改程序-exe（不推荐）" class="headerlink" title="方法二 使用软件文件夹备注修改程序.exe（不推荐）"></a>方法二 使用软件<code>文件夹备注修改程序.exe</code>（不推荐）</h4><p>进入<a target="_blank" rel="noopener" href="https://dufu.lanzoux.com/i75sMkfcnqb">蓝奏云链接</a>，下载软件。该下载链接来自<a target="_blank" rel="noopener" href="https://www.52pojie.cn/thread-1351585-1-1.html">参考文献[1]</a>。<br>exe可执行文件，直接打开就行。比较惊讶这是个易语言程序。<br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218012623.jpg" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ截图20211218012623.jpg" width=60%></a><br>界面简单粗暴，就是文件路径得自己复制粘贴不能拖。<br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218012922.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218012922.png" width=50%></a><br>执行结束之后，还需要进入该文件夹的属性修改图标才能刷新出备注。这就比较麻烦了。<br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218013334.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218013334.png" width=60%></a><br>而且这软件有毛病，我切到vscode界面想换个行，结果它以为我在修改备注，一直弹提示出来……算了别用这个了。<br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218013631.png" title="20211218013631" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218013631.png" alt="20211218013631"></a></p>
+<h4 id="方法三-不使用软件，直接手动添加"><a href="#方法三-不使用软件，直接手动添加" class="headerlink" title="方法三 不使用软件，直接手动添加"></a>方法三 不使用软件，直接手动添加</h4><p>在需要修改的文件夹下面创建记事本文件，名称修改为：desktop.ini<br>修改文本内容为：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[.ShellClassInfo]</span><br><span class="line">IconResource=tubiao.ico  （同目录下可以不填路径，直接文件。）（不换图标可以不要这行）</span><br><span class="line">infoTip=我是备注</span><br></pre></td></tr></table></figure>
+<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218015131.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218015131.png" width=60%></a>    
+
+<p>然后手动更换文件夹图标或者重启资源管理器都可以。<br>也可以先创建一个，再复制去其他文件夹，再修改备注。</p>
+<h3 id="更改文件备注-使用软件FileMeta"><a href="#更改文件备注-使用软件FileMeta" class="headerlink" title="更改文件备注 使用软件FileMeta"></a>更改文件备注 使用软件<code>FileMeta</code></h3><p>可以<a target="_blank" rel="noopener" href="https://github.com/Dijji/FileMeta/releases">前往GitHub</a>进行一个最新版本的下载（下载.msi文件，别下源码zip），用之前下过的FileMeta.x64(1).msi也行，安装就是一直next，我也没找到改安装目录的地方在哪。<br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218015652.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218015652.png" width=60%></a>  </p>
+<ul>
+<li>安装以后，进入<code>&quot;C:\Program Files\File Metadata\&quot;</code>，找到<code>FileMetaAssociationManager.exe</code>。</li>
+<li>在此之前你可以调出详细信息窗格，看看doc文件的窗格是什么样的。<br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218020436.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218020436.png" width=50%></a> <a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218020635.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218020635.png" width=50%></a><br>少见的可以直接在详细信息窗格改备注的类型，而这个类型是<code>office DSOfile</code>，想让一个普通的txt文本也能变成这样，就需要用到刚刚下好的软件<code>FileMeta</code>。</li>
+<li>打开软件，操作流程英文写在左边。基本流程就是选择你要添加备注的文件格式，把它变更成<code>office DSOfile</code>，再重启文件资源管理器。<br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218021345.jpg" title="QQ截图20211218021345" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218021345.jpg" alt="QQ截图20211218021345"></a></li>
+<li>回到详细信息窗格，可以看见txt文本的信息变得和doc一样能改备注了。<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218022024.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211218022024.png" width=50%></a> </li>
+<li>如果要移除变更，选中并点击remove即可。<br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218021500.jpg" title="QQ截图20211218021500" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/QQ%E6%88%AA%E5%9B%BE20211218021500.jpg" alt="QQ截图20211218021500"></a></li>
+<li>其他文件同理，只是它不能改文件夹是个遗憾。</li>
+</ul>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div></div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E6%95%99%E7%A8%8B/" rel="tag"><i class="fa fa-tag"></i> 教程</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/12/17/2-%E8%AF%BB%E5%90%8E%E6%84%9F/%E4%BB%A3%E7%A0%81/%E8%AF%95%E5%9B%BE%E9%98%85%E8%AF%BB%E7%9B%B8%E5%86%8C%E7%9A%84%E4%BB%A3%E7%A0%81%EF%BC%88%E6%A0%B7%E5%BC%8F1%EF%BC%89/" rel="prev" title="试图阅读相册的代码">
+                  <i class="fa fa-chevron-left"></i> 试图阅读相册的代码
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-star"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alnasl</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+
+<!-- 画册. -->
+	
+<!-- 画册. -->
+</body>
+</html>
