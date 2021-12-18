@@ -1770,6 +1770,48 @@ pre code {
 .back-to-top.back-to-top-on {
   bottom: 19px;
 }
+.gallery-page {
+  margin-top: 50px;
+}
+.img-list,
+.gallery-list {
+  display: -webkit-flex; /* Safari */
+  display: flex; /* 指定为flex布局 */
+  flex-direction: row; /* 项目的排列方向，row（默认值）：主轴为水平方向，起点在左端。 */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* flex-wrap属性定义，如果一条轴线排不下，如何换行。wrap：换行。 */
+  align-items: flex-start; /* 项目在交叉轴上如何对齐，flex-start：交叉轴的起点对齐。 */
+  justify-content: space-around; /*项目在主轴上的对齐方式，space-around：每个项目两侧的间隔相等。*/
+}
+.img-column {
+  display: flex;
+  flex-direction: column-reverse; /* 主轴为垂直方向，起点在下沿。 */
+}
+.img-column a,
+.gallery-column a {
+  border-bottom: 0px; /*设置底部边框样式*/
+}
+.gallery-item {
+  margin-bottom: 50px; /*设置元素的下边距*/
+}
+.gallery-item p {
+  margin: 25px auto 10px;
+  max-width: 200px;
+  text-align: center;
+  font-size: 15px;
+}
+.posts-expand .post-body .gallery-column a img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .gallery-item p {
+    min-width: 75px;
+    font-size: 13px;
+  }
+}
 .rtl.post-body p,
 .rtl.post-body a,
 .rtl.post-body h1,
@@ -2756,7 +2798,7 @@ mark.search-keyword {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #bf6fad;
+  background: #af7ac4;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
