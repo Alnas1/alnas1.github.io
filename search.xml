@@ -705,7 +705,7 @@
       </tags>
   </entry>
   <entry>
-    <title>总结 / 试图阅读相册的代码（模板一）</title>
+    <title>总结 / 试图阅读相册的代码（模板四）</title>
     <url>/al/d3b88e7a.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="总述-相册功能增加的文件-amp-修改"><a href="#总述-相册功能增加的文件-amp-修改" class="headerlink" title="总述 相册功能增加的文件&amp;修改"></a>总述 相册功能增加的文件&amp;修改</h3><p>文件位置：<code>&quot;F:\1-blog\MyWeb\source\gallery&quot;</code></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- img (相册封面文件夹)</span><br><span class="line">  - sample.jpg （相册封面）</span><br><span class="line">- sample （一个暂定名为sample的相册）</span><br><span class="line">  - img （相册sample的原图存放点）</span><br><span class="line">    - s （相册sample的缩略图存放点，若省略则以文件名-s.jpg的格式命名缩略图）</span><br><span class="line">      - sample.jpg （缩略图）</span><br><span class="line">    - sample.jpg （原图）</span><br><span class="line">  - index.md </span><br><span class="line">- index.md （相册主界面配置文件）</span><br></pre></td></tr></table></figure>
@@ -967,8 +967,7 @@
   <entry>
     <title>Tarot / 你舟沉了</title>
     <url>/al/1a9a44c2.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>缘由：#查询抽卡运势<br>牌卡：棱镜<br>牌面：星币侍从，星币女皇，倒吊人<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/20211211231557.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/20211211231557.png" width="60%"></a></p>
-<p>读牌：暗示充钱，硬吃保底，不尽人意最好收手。<br>结果：56发歪了琴柳，五星四个<br>今日的胜负：塔罗牌胜</p>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>缘由：#查询抽卡运势<br>牌卡：棱镜<br>牌面：星币侍从，星币女皇，倒吊人<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/20211211231557.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/20211211231557.png" width="60%"></a><br>读牌：暗示充钱，硬吃保底，不尽人意最好收手。<br>结果：56发歪了琴柳，五星四个<br>今日的胜负：塔罗牌胜</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -1001,7 +1000,7 @@
   <entry>
     <title>Tarot / 雪融之诺</title>
     <url>/al/367a1e5c.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>缘由：灵知池抽卡玄学预测<br>牌卡：棱镜<br>牌面：力量，权杖六，圣杯国王<br>读牌：可能会出比较多五星，三四十抽出灵知<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211220230500.png" title="20211220230500" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211220230500.png" alt="20211220230500"></a><br>结果：未完待续<br>今日的胜负：未完待续</p>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>缘由：灵知池抽卡玄学预测<br>牌卡：棱镜<br>牌面：力量，权杖六，圣杯国王<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211220230500.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211220230500.png" width=50%></a><br>读牌：可能会出比较多五星，三四十抽出灵知<br>结果：未完待续<br>今日的胜负：未完待续</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
