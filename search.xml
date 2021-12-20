@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>VSCode的Picgo插件配置</title>
+    <url>/al/undefined.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="0-实现效果和视频教程"><a href="#0-实现效果和视频教程" class="headerlink" title="0.实现效果和视频教程"></a>0.实现效果和视频教程</h3><ul>
+<li>效果：按ctrl+alt+u可以直接把剪切板图片粘贴到文章里，配合qq截图很方便。且生成的图片上传到github里了，它不是本地图片，github也不会跑路（大概），图片资源不担心没掉。</li>
+<li>视频教程：<a href="https://www.bilibili.com/video/BV1c44y1C7os">b站up卷二兔的hexo教学（15）</a><br>视频里下了picgo这个软件，我后来发现咱们用VSCode的直接有picgo插件可以下，不需要软件，除这点以外跟着up操作就行。</li>
+<li>更新：<strong>github貌似不太稳定</strong>，所以还是下一个软件使用吧……软件可以扩展使用gitee来搭建图床。参考文章：<a href="https://segmentfault.com/a/1190000022955737?utm_source=tag-newest">使用PicGo+gitee搭建在线图床</a></li>
+<li>再次更新：使用github作图床的出现”Bad credentials”问题，再生成一个token就好了，我也不知道为什么。</li>
+<li>再再次更新：在别的地方看到的，“由于采用的是 github 仓库存储图片，但是 github 对单仓库有 50MB 的大小限制，所以单仓库可能不能够存储太多的文件；<br>解决方法就是建立很多的图片仓库（稍微有点费劲，不过是行得通的）；另外上传的单张图片大小最好不要太大。”<h3 id="1-GitHub建立图床库"><a href="#1-GitHub建立图床库" class="headerlink" title="1. GitHub建立图床库"></a>1. GitHub建立图床库</h3><h4 id="1-1新建GitHub仓库"><a href="#1-1新建GitHub仓库" class="headerlink" title="1.1新建GitHub仓库"></a>1.1新建GitHub仓库</h4><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130190814.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130190814.png" width="50%"></a>
+<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191041.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191041.png" width="100%"></a></li>
+</ul>
+<p>建好了如下所示<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191146.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191146.png" width="90%"></a></p>
+<h4 id="1-2获取一个Token"><a href="#1-2获取一个Token" class="headerlink" title="1.2获取一个Token"></a>1.2获取一个Token</h4><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191310.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191310.png" width="35%"></a>
+<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191419.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191419.png" width="70%"></a>
+
+<p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130194248.png" title="20211130194248" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130194248.png" alt="20211130194248"></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195349.png" title="20211130195349" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195349.png" alt="20211130195349"></a><br>然后下拉点生成token<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195451.png" title="20211130195451" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195451.png" alt="20211130195451"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195525.png" title="20211130195525" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195525.png" alt="20211130195525"></a><br>这个token只出现一次，要存在别的地方以备使用</p>
+<h3 id="2-VSCode的Picgo插件"><a href="#2-VSCode的Picgo插件" class="headerlink" title="2. VSCode的Picgo插件"></a>2. VSCode的Picgo插件</h3><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130200114.png" title="20211130200114" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130200114.png" alt="20211130200114"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130200531.png" title="20211130200531" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130200531.png" alt="20211130200531"></a><br>然后应该就能用了</p>
+<h3 id="3-疑难杂症"><a href="#3-疑难杂症" class="headerlink" title="3. 疑难杂症"></a>3. 疑难杂症</h3><p>我遇到过上传不成功的问题，好像是因为我写库地址的时候在/后面的空格没删掉，删掉就能用了。<br>第二次出错信息是：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">StatusCodeError: 401 - &#123;<span class="string">&quot;message&quot;</span>:<span class="string">&quot;Bad credentials&quot;</span>,<span class="string">&quot;documentation_url&quot;</span>:<span class="string">&quot;https://docs.github.com/rest&quot;</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>我进这个文档看了下，看不懂= =，只知道是讲私人令牌的，于是重新生成了一个令牌放进去就好了。<br>参考这篇文章：<br><a href="https://blog.csdn.net/TalesOV/article/details/104450037">PicGo踩坑记（上传失败，服务端出错，请重试）</a></p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>1-博客搭建</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>VSCode</tag>
+        <tag>Picgo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>为何会把标题样式给吃了</title>
     <url>/al/d58b6c82.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>就是这个：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210511.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210511.png" width=50%></a><br>这里的<em>0.实现效果和教程</em>应该是三级标题，但是它的格式被吃了。<br>而且只有第一个标题会被吃，其他三级标题好好的。<br>暂时的解决办法是在前面加一个空标题### ，空标题被吃掉样式以后其他标题样式显示正常。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210955.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210955.png" width=50%></a><br>正常显示：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214211204.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214211204.png" width=50%></a></p>
@@ -150,63 +186,6 @@
       </tags>
   </entry>
   <entry>
-    <title>《不断作死后我成了白月光》by纪婴</title>
-    <url>/al/a7117b43.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.biquge.com.cn/book/51562/">不断作死后我成了白月光</a><br>作者：纪婴<br>主角：宁宁/裴寂<br>cp：裴寂x宁宁<br>视角：女主BG<br>分类：古言修仙欢乐向<br>世界观：低魔修仙<br>状态：完结，但是我跳着看完的</p>
-<hr>
-<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>穿进男频修仙文后，宁宁本想兢兢业业走剧情，却发现这个世界不太对劲。</p>
-<p>师门之内，师兄靠左脚蹬右脚上天，师姐卖宗门长老同人本赚钱，师尊穷到令人发指，每天喝八十二年前的白开。</p>
-<p>师门之外，佛修苦练功法，念经如同唱rap，嘴皮子能冒火花；剑修爱剑如老婆，争当花魁养妻糊口，爱情故事感天动地；乐修拿寺庙梵钟做武器，最擅长抡着钟杵敲人。</p>
-<p>宁宁：……<br>没救了，毁灭吧，修真界迟早要完。</p>
-<hr>
-<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>挺好笑的。<br>新鲜感开始消褪了，作者有时候玩的梗让人感觉不适合，笑不出来。<br>男主人设……………好tm尬（个人觉得）。感情线也是。<br>所有人的智商都不咋地。所谓的体现女主智商的剧情，太强行了，就感觉是作者拿着剧本为主角特意设计了这么条思路。（读了hp理性之道以后我会鄙视一些反派的高智商）<br>怀疑这些写这种穿直男修仙文的作者是不是完全没有看过真正的直男修仙文。写一个试炼副本一点没有大场面的感觉，势力人物就那么几个，像小孩子过家家。<br>竟开始怀念斗破了（草<br>灵剑山也很会玩梗啊！配角出彩。我至今记得小师妹来救王陆的那一幕。<br>再继续看看吧，反正也没其他可看。<br>哦对了，我完全不理解给设置一个老乡角色有啥作用（到目前来说）就为了沙雕吗？挺没意思的，我看着看着也不知道这群人在忙活什么。感觉贺知州（老乡角色）的作用就是为了弥补女主不能崩掉她白月光人设去做一些无下限举动的遗憾。简而言之，为了方便作者玩梗。且女主要玩梗的时候有人回应。<br>顺便说，这个世界观很空泛，我读下来对它的地图没有什么概念，就知道几个名字。要开副本也是突然出现新地图，没伏笔和铺垫。女主宁宁对这所谓原著的了解程度也忽上忽下。我觉得逻辑最那啥的一点是：一般人都会回避自己和配角同名的书吧……还是个作天作地的反派，你不隔应吗？ 我不知道她到底读没读过“原著”，有时候说她读过，有时候是系统提醒，有时候让我觉得她啥也不知道。 合理猜测作者并没有写“原著”大纲。<br>男主一点没有“直男修仙文”的男主样，这都踩俩副本了，你得到了点啥？有生死危机境界突破吗？有天材地宝吗？一点长进都没有，修啥仙你。漂亮有用吗？合着就给女主当陪衬呗。你修仙可不是为了给女主履历上增添一笔“有个狂拽酷炫道侣”的吧？<br>反派太弱智了。 这里的所有人似乎都对自己的实力没有清晰定位。boss你明明看上去挺强的为什么要忌惮他们啊？干就完了<br>这修仙修的，像武林 完全没有战力体系，师尊级长辈无排面，遇到的敌人智商和战力和主角一条线上。喔对不起，智商不在一条线上。<br>跳着看完了，我只能给3.5/5。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>2-读书记录</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>VSCode的Picgo插件配置</title>
-    <url>/al/undefined.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="0-实现效果和视频教程"><a href="#0-实现效果和视频教程" class="headerlink" title="0.实现效果和视频教程"></a>0.实现效果和视频教程</h3><ul>
-<li>效果：按ctrl+alt+u可以直接把剪切板图片粘贴到文章里，配合qq截图很方便。且生成的图片上传到github里了，它不是本地图片，github也不会跑路（大概），图片资源不担心没掉。</li>
-<li>视频教程：<a href="https://www.bilibili.com/video/BV1c44y1C7os">b站up卷二兔的hexo教学（15）</a><br>视频里下了picgo这个软件，我后来发现咱们用VSCode的直接有picgo插件可以下，不需要软件，除这点以外跟着up操作就行。</li>
-<li>更新：<strong>github貌似不太稳定</strong>，所以还是下一个软件使用吧……软件可以扩展使用gitee来搭建图床。参考文章：<a href="https://segmentfault.com/a/1190000022955737?utm_source=tag-newest">使用PicGo+gitee搭建在线图床</a></li>
-<li>再次更新：使用github作图床的出现”Bad credentials”问题，再生成一个token就好了，我也不知道为什么。</li>
-<li>再再次更新：在别的地方看到的，“由于采用的是 github 仓库存储图片，但是 github 对单仓库有 50MB 的大小限制，所以单仓库可能不能够存储太多的文件；<br>解决方法就是建立很多的图片仓库（稍微有点费劲，不过是行得通的）；另外上传的单张图片大小最好不要太大。”<h3 id="1-GitHub建立图床库"><a href="#1-GitHub建立图床库" class="headerlink" title="1. GitHub建立图床库"></a>1. GitHub建立图床库</h3><h4 id="1-1新建GitHub仓库"><a href="#1-1新建GitHub仓库" class="headerlink" title="1.1新建GitHub仓库"></a>1.1新建GitHub仓库</h4><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130190814.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130190814.png" width="50%"></a>
-<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191041.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191041.png" width="100%"></a></li>
-</ul>
-<p>建好了如下所示<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191146.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191146.png" width="90%"></a></p>
-<h4 id="1-2获取一个Token"><a href="#1-2获取一个Token" class="headerlink" title="1.2获取一个Token"></a>1.2获取一个Token</h4><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191310.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191310.png" width="35%"></a>
-<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191419.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191419.png" width="70%"></a>
-
-<p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130194248.png" title="20211130194248" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130194248.png" alt="20211130194248"></a></p>
-<p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195349.png" title="20211130195349" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195349.png" alt="20211130195349"></a><br>然后下拉点生成token<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195451.png" title="20211130195451" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195451.png" alt="20211130195451"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195525.png" title="20211130195525" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195525.png" alt="20211130195525"></a><br>这个token只出现一次，要存在别的地方以备使用</p>
-<h3 id="2-VSCode的Picgo插件"><a href="#2-VSCode的Picgo插件" class="headerlink" title="2. VSCode的Picgo插件"></a>2. VSCode的Picgo插件</h3><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130200114.png" title="20211130200114" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130200114.png" alt="20211130200114"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130200531.png" title="20211130200531" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130200531.png" alt="20211130200531"></a><br>然后应该就能用了</p>
-<h3 id="3-疑难杂症"><a href="#3-疑难杂症" class="headerlink" title="3. 疑难杂症"></a>3. 疑难杂症</h3><p>我遇到过上传不成功的问题，好像是因为我写库地址的时候在/后面的空格没删掉，删掉就能用了。<br>第二次出错信息是：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">StatusCodeError: 401 - &#123;<span class="string">&quot;message&quot;</span>:<span class="string">&quot;Bad credentials&quot;</span>,<span class="string">&quot;documentation_url&quot;</span>:<span class="string">&quot;https://docs.github.com/rest&quot;</span>&#125;</span><br></pre></td></tr></table></figure>
-<p>我进这个文档看了下，看不懂= =，只知道是讲私人令牌的，于是重新生成了一个令牌放进去就好了。<br>参考这篇文章：<br><a href="https://blog.csdn.net/TalesOV/article/details/104450037">PicGo踩坑记（上传失败，服务端出错，请重试）</a></p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>1-博客搭建</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>VSCode</tag>
-        <tag>Picgo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《二哈和他的白猫师尊》by肉包不吃肉</title>
     <url>/al/de7bb75c.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.zhenhunxiaoshuo.com/erhahetadebaimaoshizun/">二哈和他的白猫师尊</a><br>作者：肉包不吃肉<br>主角：墨燃/楚晚宁/薛蒙/师昧/叶忘昔<br>cp：墨燃x楚晚宁<br>视角：男主BL<br>分类：架空玄幻，重生<br>世界观：有点其他设定的修仙世界<br>状态：完结</p>
@@ -218,6 +197,24 @@
 <p>刚刚想起来，师昧身份的暗示原来早就体现在“宋秋桐像师昧”这一条里了。</p>
 <p>纸烛龙客栈探法咒，伏笔二次回收。第一次回收叶忘昔真实身份，第二次回收墨燃被下钟情咒。</p>
 <p>师尊好可怜，太可怜了，墨燃配不上你，我认真的，后悔看了这本小说</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>2-读书记录</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>《从前有座灵剑山》by国王陛下</title>
+    <url>/al/93a42184.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://book.qidian.com/info/3347574/">从前有座灵剑山</a><br>作者：国王陛下<br>主角：王陆/王舞<br>cp：王陆x王舞<br>视角：男主BG<br>分类：修仙，正剧，玩梗大师<br>世界观：会是那种两拨人打着打着突然有外敌入侵要联手对敌的剧情<br>状态：完结</p>
+<hr>
+<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>灵剑派成立于九州历四二三三年，几千年来始终致力于为行业提供一流的修仙人才，如今位列万仙盟五大超品宗派之一，掌门风吟真人担任万仙盟七大常务长老，修为盖世。灵剑派坚持和平与发展的主题，门派核心价值理念是求真、求善、求种。为进一步扩充门派力量，补充新鲜血液，拟于近期召开升仙大会，诚邀各路精英前来。<br>还是原来的节操<br>还是一样的搞笑</p>
+<hr>
+<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>为什么看这本书：被看的上一本（白月光）毒到了所以来洗洗眼睛，是二刷。<br>作者胆子很大（狗头<br>主角无下限的设定一脉相承。在灵剑山火之前我就看过作者的《盗梦宗师》，同样很好笑，那时在贴吧上看的，王五和银霜的安卓和ios之争还是当时的热点事件（草。但是《崩坏世界的传奇大冒险》没看下去，不知道主角在干啥。）<br>依稀记得后半段拉胯，尤其是高达出来以后，要接受这个设定还是挺困难的。<br>我喜欢不乱挖坑的作者，灵剑山抖包袱抖得还不戳，前期的智教没有始乱终弃，黑潮带回来的狗子、云台仙子也都在后期又出现过。它副本和副本之间的衔接很短，节奏鲜明，互相间有联系。<br>个人感觉的不足之处就是王陆挨过的打太少了，一路上顺风顺水见招拆招，我从来没有产生过“担心主角打不过”的情绪，总是期待他还能想出什么无下限的骚操作干掉对面的敌人。<br>他没有“成长”，不是指修为，单指挫折过少，没有吃过真正的亏。从头到尾都是高智商反社会无下限人设。<br>中间出现的公文风乐死我了，作者是个公务员吧哈哈哈哈</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -250,24 +247,6 @@
       </categories>
   </entry>
   <entry>
-    <title>《从前有座灵剑山》by国王陛下</title>
-    <url>/al/93a42184.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://book.qidian.com/info/3347574/">从前有座灵剑山</a><br>作者：国王陛下<br>主角：王陆/王舞<br>cp：王陆x王舞<br>视角：男主BG<br>分类：修仙，正剧，玩梗大师<br>世界观：会是那种两拨人打着打着突然有外敌入侵要联手对敌的剧情<br>状态：完结</p>
-<hr>
-<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>灵剑派成立于九州历四二三三年，几千年来始终致力于为行业提供一流的修仙人才，如今位列万仙盟五大超品宗派之一，掌门风吟真人担任万仙盟七大常务长老，修为盖世。灵剑派坚持和平与发展的主题，门派核心价值理念是求真、求善、求种。为进一步扩充门派力量，补充新鲜血液，拟于近期召开升仙大会，诚邀各路精英前来。<br>还是原来的节操<br>还是一样的搞笑</p>
-<hr>
-<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>为什么看这本书：被看的上一本（白月光）毒到了所以来洗洗眼睛，是二刷。<br>作者胆子很大（狗头<br>主角无下限的设定一脉相承。在灵剑山火之前我就看过作者的《盗梦宗师》，同样很好笑，那时在贴吧上看的，王五和银霜的安卓和ios之争还是当时的热点事件（草。但是《崩坏世界的传奇大冒险》没看下去，不知道主角在干啥。）<br>依稀记得后半段拉胯，尤其是高达出来以后，要接受这个设定还是挺困难的。<br>我喜欢不乱挖坑的作者，灵剑山抖包袱抖得还不戳，前期的智教没有始乱终弃，黑潮带回来的狗子、云台仙子也都在后期又出现过。它副本和副本之间的衔接很短，节奏鲜明，互相间有联系。<br>个人感觉的不足之处就是王陆挨过的打太少了，一路上顺风顺水见招拆招，我从来没有产生过“担心主角打不过”的情绪，总是期待他还能想出什么无下限的骚操作干掉对面的敌人。<br>他没有“成长”，不是指修为，单指挫折过少，没有吃过真正的亏。从头到尾都是高智商反社会无下限人设。<br>中间出现的公文风乐死我了，作者是个公务员吧哈哈哈哈</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>2-读书记录</category>
-      </categories>
-  </entry>
-  <entry>
     <title>《反派有话说》by莫晨欢</title>
     <url>/al/49968d0b.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=2768395">反派有话说</a><br>作者：莫晨欢<br>主角：洛渐清/无音<br>cp：无音x洛渐清<br>视角：男主BL<br>分类：架空玄幻<br>世界观：就是仙侠啦，重生还捡到了剧本<br>状态：完结</p>
@@ -289,13 +268,14 @@
       </categories>
   </entry>
   <entry>
-    <title>《城里的魔法师》by降噪豆</title>
-    <url>/al/cb14f017.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://book.qidian.com/info/1011086875/">《城里的魔法师》</a><br>作者：降噪豆<br>主角：杜正一、罗奇、麻江、关歆月<br>cp：无！！！是兄弟情！！（甜死人的那种！<br>视角：男主，有点群像的感觉？<br>分类：硬要分应该是东方奇幻（大概）<br>世界观：作者设定人类分为两大群体——普通人类和魔法师。魔法师几乎只存在于亚欧大陆。<br>状态：连载中</p>
+    <title>《向师祖献上咸鱼》by扶华</title>
+    <url>/al/7a029616.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=4104036">向师祖献上咸鱼</a><br>作者：扶华<br>主角：廖停雁/司马焦<br>cp：司马焦x廖停雁<br>视角：女主BG<br>分类：古代言情，画风欢乐<br>世界观：架空仙侠<br>状态：完结</p>
 <hr>
-<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>住在人类城市里的魔法师，守护着祖先的火种，唱着古老的歌谣，却开着红色的野马，奔驰在限速120的公路上。<br>法师世界里，北方学院三年级的低能法师学徒罗奇正处于学分不够，可能留级的悲惨境地。好在天无绝人之路，他得到了给天才学长杜正一当当吉祥物，做做社会实践赚取学分的机会。<br>但这个社会实践，似乎跟罗奇想的不太一样。忽然觉醒的能力，记忆中永不愈合的伤口……世界以他的生活为奇点，迅速地塌缩。<br>天才战斗法师学长与逗比低能学弟的组合，必须想想办法，找到这一切背后的真相。</p>
+<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>廖停雁一个刚入门，辈分最低的新弟子，竟然降服了庚辰仙府那位超绝可怕的大魔头师祖，引发众人热议。<br>请问廖师妹，你是怎么做到的呢？<br>廖停雁：……依靠咸鱼的本能？</p>
 <hr>
-<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>所以说故事发生在中国，一开始我总觉得哪里不对劲，然后明白了，魔法师的称号加上中国名字啊这一股土洋结合的味道……有点不适应，看久了就习惯了<br>剧情：从第一章开始就有伏笔了，但是我没有死抠这些。作者应该是想写科技飞速发展的人类和魔法师群体之间的冲突。标题的含义是魔法师已经习惯于某些人类带来的便利，魔法师变成了城里的魔法师。<br>篇幅：长篇，目前到500多章。完！全！不！够！看！啊！qwq<br>文风：刚开始的时候感觉有点儿外国奇幻的味道，也接地气，总体来说没有硬伤，很舒服的文笔风格<br>其它：这篇文真的好冷……但它很优秀，真的，我好担心作者弃坑。罗奇太可爱了他和杜正一的互动太甜了awsl 我截了好多图，要好好研究一下作者是怎么写出这种感觉的呜呜呜<br>21/12/4 现在还在追，作者的连载时间很随机，大概，月更？</p>
+<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>初看觉得很有趣，一口气看半本，中后期就……没那么好看了。<br>遗憾的是没有很出彩的配角，配角控落泪。<br>感觉大部分配角都好睿智……男主真心话buff一出所有人只能盲目痴愚。除了女主，女主是真的咸鱼。<br>咸到所有修为都是靠男主灌出来的。<br>啊这。</p>
+<p>后来在b站上还看到作者自己画的手书，我趣，什么神仙太太</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -307,14 +287,13 @@
       </categories>
   </entry>
   <entry>
-    <title>《向师祖献上咸鱼》by扶华</title>
-    <url>/al/7a029616.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=4104036">向师祖献上咸鱼</a><br>作者：扶华<br>主角：廖停雁/司马焦<br>cp：司马焦x廖停雁<br>视角：女主BG<br>分类：古代言情，画风欢乐<br>世界观：架空仙侠<br>状态：完结</p>
+    <title>《城里的魔法师》by降噪豆</title>
+    <url>/al/cb14f017.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://book.qidian.com/info/1011086875/">《城里的魔法师》</a><br>作者：降噪豆<br>主角：杜正一、罗奇、麻江、关歆月<br>cp：无！！！是兄弟情！！（甜死人的那种！<br>视角：男主，有点群像的感觉？<br>分类：硬要分应该是东方奇幻（大概）<br>世界观：作者设定人类分为两大群体——普通人类和魔法师。魔法师几乎只存在于亚欧大陆。<br>状态：连载中</p>
 <hr>
-<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>廖停雁一个刚入门，辈分最低的新弟子，竟然降服了庚辰仙府那位超绝可怕的大魔头师祖，引发众人热议。<br>请问廖师妹，你是怎么做到的呢？<br>廖停雁：……依靠咸鱼的本能？</p>
+<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>住在人类城市里的魔法师，守护着祖先的火种，唱着古老的歌谣，却开着红色的野马，奔驰在限速120的公路上。<br>法师世界里，北方学院三年级的低能法师学徒罗奇正处于学分不够，可能留级的悲惨境地。好在天无绝人之路，他得到了给天才学长杜正一当当吉祥物，做做社会实践赚取学分的机会。<br>但这个社会实践，似乎跟罗奇想的不太一样。忽然觉醒的能力，记忆中永不愈合的伤口……世界以他的生活为奇点，迅速地塌缩。<br>天才战斗法师学长与逗比低能学弟的组合，必须想想办法，找到这一切背后的真相。</p>
 <hr>
-<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>初看觉得很有趣，一口气看半本，中后期就……没那么好看了。<br>遗憾的是没有很出彩的配角，配角控落泪。<br>感觉大部分配角都好睿智……男主真心话buff一出所有人只能盲目痴愚。除了女主，女主是真的咸鱼。<br>咸到所有修为都是靠男主灌出来的。<br>啊这。</p>
-<p>后来在b站上还看到作者自己画的手书，我趣，什么神仙太太</p>
+<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>所以说故事发生在中国，一开始我总觉得哪里不对劲，然后明白了，魔法师的称号加上中国名字啊这一股土洋结合的味道……有点不适应，看久了就习惯了<br>剧情：从第一章开始就有伏笔了，但是我没有死抠这些。作者应该是想写科技飞速发展的人类和魔法师群体之间的冲突。标题的含义是魔法师已经习惯于某些人类带来的便利，魔法师变成了城里的魔法师。<br>篇幅：长篇，目前到500多章。完！全！不！够！看！啊！qwq<br>文风：刚开始的时候感觉有点儿外国奇幻的味道，也接地气，总体来说没有硬伤，很舒服的文笔风格<br>其它：这篇文真的好冷……但它很优秀，真的，我好担心作者弃坑。罗奇太可爱了他和杜正一的互动太甜了awsl 我截了好多图，要好好研究一下作者是怎么写出这种感觉的呜呜呜<br>21/12/4 现在还在追，作者的连载时间很随机，大概，月更？</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -360,6 +339,27 @@
 <h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>“知识就等于力量。”<br>“所谓神，不过是强大一点的奥术师。”<br>带着一大堆知识的夏风穿越而来了。</p>
 <hr>
 <h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>该书是我尝试了数本拉胯言情之后不得不找来洗眼的小说。<br>数年前，我没挺过十章，错误地认为这是一本普通的、随大流的架空西方玄幻小说。<br>我太天真了！<br>可恶，要是我早点看，里面所讲的学术体系恐怕会成为我的学术启蒙……<br>就算是现在，乌贼还是写出了我不知道的东西。这可比一般的没营养西幻小说有意思多了，恕我直言，我曾经也想象过“用科学规范魔法”，限于知识水平不够，完全想不出来。<br>我看过的两本尝试把科学和魔法结合起来的小说，一本是《hp理性之道》，一本就是《奥术神座》。其他的没有留给我很深的印象（能给我留下印象的只有设定太弱智那一挂）。<br>好吧，虽然路西恩的经历很大程度上neta了科学史的各位大佬，这也不妨碍我看得开心，如果我看过那些人物传记，恐怕能体验到双厨狂喜的快乐，可惜我没有。<br>喜欢女主。乌贼能把女主塑造得比女频作者还好也真是，点名批评最近看的那三本言情。<br>我怀疑乌贼写男硬说女[doge]不过这样也没啥不好，BG党，BL党，GB党全部都能磕到粮（草（一种植物）。<br>小路感觉有点像克莱恩。看过《一世之尊》《诡秘之主》《奥术神座》《长夜余火》，其实主角的内核都是一脉相承的：温暖有底线。<br>没看完就是说。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>2-读书记录</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>《不断作死后我成了白月光》by纪婴</title>
+    <url>/al/a7117b43.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.biquge.com.cn/book/51562/">不断作死后我成了白月光</a><br>作者：纪婴<br>主角：宁宁/裴寂<br>cp：裴寂x宁宁<br>视角：女主BG<br>分类：古言修仙欢乐向<br>世界观：低魔修仙<br>状态：完结，但是我跳着看完的</p>
+<hr>
+<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>穿进男频修仙文后，宁宁本想兢兢业业走剧情，却发现这个世界不太对劲。</p>
+<p>师门之内，师兄靠左脚蹬右脚上天，师姐卖宗门长老同人本赚钱，师尊穷到令人发指，每天喝八十二年前的白开。</p>
+<p>师门之外，佛修苦练功法，念经如同唱rap，嘴皮子能冒火花；剑修爱剑如老婆，争当花魁养妻糊口，爱情故事感天动地；乐修拿寺庙梵钟做武器，最擅长抡着钟杵敲人。</p>
+<p>宁宁：……<br>没救了，毁灭吧，修真界迟早要完。</p>
+<hr>
+<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>挺好笑的。<br>新鲜感开始消褪了，作者有时候玩的梗让人感觉不适合，笑不出来。<br>男主人设……………好tm尬（个人觉得）。感情线也是。<br>所有人的智商都不咋地。所谓的体现女主智商的剧情，太强行了，就感觉是作者拿着剧本为主角特意设计了这么条思路。（读了hp理性之道以后我会鄙视一些反派的高智商）<br>怀疑这些写这种穿直男修仙文的作者是不是完全没有看过真正的直男修仙文。写一个试炼副本一点没有大场面的感觉，势力人物就那么几个，像小孩子过家家。<br>竟开始怀念斗破了（草<br>灵剑山也很会玩梗啊！配角出彩。我至今记得小师妹来救王陆的那一幕。<br>再继续看看吧，反正也没其他可看。<br>哦对了，我完全不理解给设置一个老乡角色有啥作用（到目前来说）就为了沙雕吗？挺没意思的，我看着看着也不知道这群人在忙活什么。感觉贺知州（老乡角色）的作用就是为了弥补女主不能崩掉她白月光人设去做一些无下限举动的遗憾。简而言之，为了方便作者玩梗。且女主要玩梗的时候有人回应。<br>顺便说，这个世界观很空泛，我读下来对它的地图没有什么概念，就知道几个名字。要开副本也是突然出现新地图，没伏笔和铺垫。女主宁宁对这所谓原著的了解程度也忽上忽下。我觉得逻辑最那啥的一点是：一般人都会回避自己和配角同名的书吧……还是个作天作地的反派，你不隔应吗？ 我不知道她到底读没读过“原著”，有时候说她读过，有时候是系统提醒，有时候让我觉得她啥也不知道。 合理猜测作者并没有写“原著”大纲。<br>男主一点没有“直男修仙文”的男主样，这都踩俩副本了，你得到了点啥？有生死危机境界突破吗？有天材地宝吗？一点长进都没有，修啥仙你。漂亮有用吗？合着就给女主当陪衬呗。你修仙可不是为了给女主履历上增添一笔“有个狂拽酷炫道侣”的吧？<br>反派太弱智了。 这里的所有人似乎都对自己的实力没有清晰定位。boss你明明看上去挺强的为什么要忌惮他们啊？干就完了<br>这修仙修的，像武林 完全没有战力体系，师尊级长辈无排面，遇到的敌人智商和战力和主角一条线上。喔对不起，智商不在一条线上。<br>跳着看完了，我只能给3.5/5。</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -429,6 +429,22 @@
       </categories>
   </entry>
   <entry>
+    <title>《人类削减计划》（The Thinning）</title>
+    <url>/al/88a1002a.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss34452/?from=search&seid=16368733533239289367&spm_id_from=333.337.0.0">人类削减计划</a><br>导演：迈克尔·格拉赫<br>主角：懒得写<br>cp：没有<br>视角：女主和男主双线<br>世界观：现代，德州规定考试最后5%会被处刑。<br>观影点：宿舍</p>
+<hr>
+<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>逻辑漏洞多，最主要就是经典守卫看不见人。一些悬疑桥段能被预判（对我说的就是通风管道突然塌掉和女主偷偷吊东西吊到一半一只手伸出来抓住）。<br>弱智的安保系统，能被俩高中生逛穿了。高考都比这严啊，太好笑了，还，监控录像录到小boss输密码被女主复制…………导演完全没想过如果真实行这种计划该如何设置安保吧！安保就全员工具人，导演觉得该有点人装逼的地方来点人，其他地图全开放世界，让主角随便逛。<br>而且，两个人逃命（查真相）过程里掉泳池上来了，还换了干净衣服再继续跑…………？？？你是真的不着急啊？？<br>男主孝死，他爸是州长，他故意考试全选d让自己不合格（考试全是选择题这点也挺奇怪的），于是他老爸只好暗箱操作把成绩换了。但是他爹事情败露以后为了前途牺牲儿子，太好孝了。<br>最后有个小反转，虽然我在开头就猜到了[吃瓜]考试失败的那5%不是死刑而是被社会性死亡拉到地下黑工厂996。说实话还不如僵尸肖恩来的有创意……弹幕都在刷考不好的进工厂实在是太真实了<br>总之，我怀疑这片子在内涵所有高考制度。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>3-观影记录</category>
+      </categories>
+  </entry>
+  <entry>
     <title>《重生之大佬拯救计划》by钟仅</title>
     <url>/al/9878dfb3.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=4050220">重生之大佬拯救计划</a><br>作者：钟仅<br>主角：李惟、张蔓<br>cp：李惟x张蔓<br>视角：女主BG<br>分类：现代言情<br>世界观：现代<br>状态：完结</p>
@@ -470,11 +486,11 @@
       </categories>
   </entry>
   <entry>
-    <title>《人类削减计划》（The Thinning）</title>
-    <url>/al/88a1002a.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss34452/?from=search&seid=16368733533239289367&spm_id_from=333.337.0.0">人类削减计划</a><br>导演：迈克尔·格拉赫<br>主角：懒得写<br>cp：没有<br>视角：女主和男主双线<br>世界观：现代，德州规定考试最后5%会被处刑。<br>观影点：宿舍</p>
+    <title>《困在时间里的父亲》（The Father）</title>
+    <url>/al/25791df9.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss39063/?from=search&seid=13023073866578101878&spm_id_from=333.337.0.0">困在时间里的父亲</a>（The Father）<br>导演：弗罗莱恩 泽勒<br>主角：安东尼/安娜/詹姆斯/劳拉<br>cp：无<br>视角：父亲视角，穿插旁观者视角<br>世界观：现代<br>观影点：宿舍</p>
 <hr>
-<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>逻辑漏洞多，最主要就是经典守卫看不见人。一些悬疑桥段能被预判（对我说的就是通风管道突然塌掉和女主偷偷吊东西吊到一半一只手伸出来抓住）。<br>弱智的安保系统，能被俩高中生逛穿了。高考都比这严啊，太好笑了，还，监控录像录到小boss输密码被女主复制…………导演完全没想过如果真实行这种计划该如何设置安保吧！安保就全员工具人，导演觉得该有点人装逼的地方来点人，其他地图全开放世界，让主角随便逛。<br>而且，两个人逃命（查真相）过程里掉泳池上来了，还换了干净衣服再继续跑…………？？？你是真的不着急啊？？<br>男主孝死，他爸是州长，他故意考试全选d让自己不合格（考试全是选择题这点也挺奇怪的），于是他老爸只好暗箱操作把成绩换了。但是他爹事情败露以后为了前途牺牲儿子，太好孝了。<br>最后有个小反转，虽然我在开头就猜到了[吃瓜]考试失败的那5%不是死刑而是被社会性死亡拉到地下黑工厂996。说实话还不如僵尸肖恩来的有创意……弹幕都在刷考不好的进工厂实在是太真实了<br>总之，我怀疑这片子在内涵所有高考制度。</p>
+<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>这是b站付费观看的片子，拿b币券买了。<br>不同于《记忆碎片》，在那个电影里面，好歹观众看完以后会发现原来只要再把剧情倒着看一遍就能理解；这个片子的“记忆”是混杂着幻觉的。《记忆碎片》的叙事好比反序排放的书本章节，《父亲》的叙事则是一把混着人工钻的钻石碎屑，指缝滤过大量粉末，有一个人努力地用手指把掌心中剩下的真假钻石碎屑拼接在一起。<br>不同记忆、场景间的切换极为自然，它在向你展示一个患上阿兹海默的老人的世界。看完以后觉得非常疲惫，九十多分钟里在餐桌，在客厅，在卧室，在医院，听着不同的人的说辞，猜着他们的身份，前后矛盾，左右为难，上一秒女儿走出房间，下一秒另一个人自称是他的女儿。<br>我在看的时候总想着看看当时是几月几号，后来发现这个行为和父亲找表是一样的。<br>我想着为什么不让女儿解释清楚到底发生了什么？也许女儿已经解释过很多很多次了。<br>老人不想让女儿离开他身边，他说：“求你别走。”女儿不明白，她只是去隔壁房间开一下门，为什么父亲怕她离开。对于父亲来说，也许她出了门，回来的会是另外一个人。<br>整个故事的剧情可能是这样的（瞎猜）：小女儿出事以后，父亲受到了刺激，选择把出车祸这件事遗忘，同时他患上了阿兹海默症。（因为全篇都没有小女儿出现，除了医院那一幕，所以我怀疑他在小女儿出车祸以后拒绝现实才得病的。）<br>大女儿承担起照顾父亲的责任，她努力了很久，给父亲请护工，因为父亲不愿意去养老院，父亲与请来的数个护工闹翻，大女儿无奈把父亲接到自己家里看护。<br>但是大女儿的丈夫对此非常不满，某天他忍不住打了父亲，导致大女儿和其丈夫离婚。<br>于是丈夫变成前夫。大女儿又照顾了她的父亲五年，直到她爱上了另一个人。她决定把父亲送到养老院，因为她要和她爱的人住在巴黎。<br>父亲最终妥协了，住进养老院，女儿时不时会回来与他过周末。<br>其中有一个细节，我最开始一直觉得父亲说的小女儿不存在，他可能错乱了把大女儿的幼年时期和她本人割裂开，大女儿小女儿就是一个人。后来看见照片里他确实有两个女儿……<br>看完以后：正经人谁写日记啊……也许还是要的</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -486,11 +502,11 @@
       </categories>
   </entry>
   <entry>
-    <title>《困在时间里的父亲》（The Father）</title>
-    <url>/al/25791df9.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss39063/?from=search&seid=13023073866578101878&spm_id_from=333.337.0.0">困在时间里的父亲</a>（The Father）<br>导演：弗罗莱恩 泽勒<br>主角：安东尼/安娜/詹姆斯/劳拉<br>cp：无<br>视角：父亲视角，穿插旁观者视角<br>世界观：现代<br>观影点：宿舍</p>
+    <title>《失控玩家》（FREE GUY）</title>
+    <url>/al/67e9e5bb.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：失控玩家<br>导演：肖恩·利维<br>主角：盖（guy）/米莉/凯斯<br>cp：凯斯x米莉<br>视角：男主<br>世界观：未来有个游戏叫自由之城<br>观影点：学校咖啡厅</p>
 <hr>
-<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>这是b站付费观看的片子，拿b币券买了。<br>不同于《记忆碎片》，在那个电影里面，好歹观众看完以后会发现原来只要再把剧情倒着看一遍就能理解；这个片子的“记忆”是混杂着幻觉的。《记忆碎片》的叙事好比反序排放的书本章节，《父亲》的叙事则是一把混着人工钻的钻石碎屑，指缝滤过大量粉末，有一个人努力地用手指把掌心中剩下的真假钻石碎屑拼接在一起。<br>不同记忆、场景间的切换极为自然，它在向你展示一个患上阿兹海默的老人的世界。看完以后觉得非常疲惫，九十多分钟里在餐桌，在客厅，在卧室，在医院，听着不同的人的说辞，猜着他们的身份，前后矛盾，左右为难，上一秒女儿走出房间，下一秒另一个人自称是他的女儿。<br>我在看的时候总想着看看当时是几月几号，后来发现这个行为和父亲找表是一样的。<br>我想着为什么不让女儿解释清楚到底发生了什么？也许女儿已经解释过很多很多次了。<br>老人不想让女儿离开他身边，他说：“求你别走。”女儿不明白，她只是去隔壁房间开一下门，为什么父亲怕她离开。对于父亲来说，也许她出了门，回来的会是另外一个人。<br>整个故事的剧情可能是这样的（瞎猜）：小女儿出事以后，父亲受到了刺激，选择把出车祸这件事遗忘，同时他患上了阿兹海默症。（因为全篇都没有小女儿出现，除了医院那一幕，所以我怀疑他在小女儿出车祸以后拒绝现实才得病的。）<br>大女儿承担起照顾父亲的责任，她努力了很久，给父亲请护工，因为父亲不愿意去养老院，父亲与请来的数个护工闹翻，大女儿无奈把父亲接到自己家里看护。<br>但是大女儿的丈夫对此非常不满，某天他忍不住打了父亲，导致大女儿和其丈夫离婚。<br>于是丈夫变成前夫。大女儿又照顾了她的父亲五年，直到她爱上了另一个人。她决定把父亲送到养老院，因为她要和她爱的人住在巴黎。<br>父亲最终妥协了，住进养老院，女儿时不时会回来与他过周末。<br>其中有一个细节，我最开始一直觉得父亲说的小女儿不存在，他可能错乱了把大女儿的幼年时期和她本人割裂开，大女儿小女儿就是一个人。后来看见照片里他确实有两个女儿……<br>看完以后：正经人谁写日记啊……也许还是要的</p>
+<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>设定一般，在科幻，甚至网游文这块都是差不多被玩烂了的梗。不过在电影，以觉醒的NPC为主角的片子我还是头一回见。<br>故事线比较弱，全片最大的亮点是自由之城本身，整一个捏他GTA……或者和它同类型的游戏。特效还行吧。<br>想吐槽的一点是为啥你们后台程序员开创造模式都杀不掉那个NPC，救命。<br>而且boss完全就是反社会人士，动不动“全服停机”“删掉所有玩家账号”，最后直接去砸自家的服务器捏妈，真有你的。<br>真实世界的男主（男二？）对女主态度奇奇怪怪，前半段爱搭不理的到后来直接一转攻势变成深情天才宅男，好吧，我不是很懂。<br>当然没有楚门的世界来得好看。</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -516,22 +532,6 @@
   </div>
 </div>
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>3-观影记录</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>《失控玩家》（FREE GUY）</title>
-    <url>/al/67e9e5bb.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：失控玩家<br>导演：肖恩·利维<br>主角：盖（guy）/米莉/凯斯<br>cp：凯斯x米莉<br>视角：男主<br>世界观：未来有个游戏叫自由之城<br>观影点：学校咖啡厅</p>
-<hr>
-<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>设定一般，在科幻，甚至网游文这块都是差不多被玩烂了的梗。不过在电影，以觉醒的NPC为主角的片子我还是头一回见。<br>故事线比较弱，全片最大的亮点是自由之城本身，整一个捏他GTA……或者和它同类型的游戏。特效还行吧。<br>想吐槽的一点是为啥你们后台程序员开创造模式都杀不掉那个NPC，救命。<br>而且boss完全就是反社会人士，动不动“全服停机”“删掉所有玩家账号”，最后直接去砸自家的服务器捏妈，真有你的。<br>真实世界的男主（男二？）对女主态度奇奇怪怪，前半段爱搭不理的到后来直接一转攻势变成深情天才宅男，好吧，我不是很懂。<br>当然没有楚门的世界来得好看。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
       <categories>
         <category>3-观影记录</category>
       </categories>
@@ -675,6 +675,95 @@
       </tags>
   </entry>
   <entry>
+    <title>总结 / 试图阅读相册的代码（模板一）（暂缓）</title>
+    <url>/al/d3b88e7a.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="总述-相册功能增加的文件-amp-修改"><a href="#总述-相册功能增加的文件-amp-修改" class="headerlink" title="总述 相册功能增加的文件&amp;修改"></a>总述 相册功能增加的文件&amp;修改</h3><p>文件位置：<code>&quot;F:\4-MyBlog_Images\MyBlog_Images&quot;</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">└─MyBlog_Images</span><br><span class="line">    │  ImageProcess.py	（其实可以删掉，tool.py把这部分代码包含了）</span><br><span class="line">    │  README.md   		（说明文件）</span><br><span class="line">    │  tool.py			（python文件，处理生成压缩图并推送到GitHub）</span><br><span class="line">    │  </span><br><span class="line">    ├─min_photos		（存放压缩图片的文件夹）</span><br><span class="line">    │      2021-12-15_EMT.png	（一些压缩图）</span><br><span class="line">    │      2021-12-15_夕.png</span><br><span class="line">    │      </span><br><span class="line">    └─photos			（存放原图的文件夹）</span><br><span class="line">            2021-12-15_EMT.png	（一些原图）</span><br><span class="line">            2021-12-15_夕.png</span><br></pre></td></tr></table></figure>
+<p>文件位置：<code>&quot;F:\1-blog\MyWeb\themes\next\source\lib&quot;</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">└─lib</span><br><span class="line">    └─album</span><br><span class="line">        │  data.json</span><br><span class="line">        │  ins.css</span><br><span class="line">        │  ins.js</span><br><span class="line">        │  photoswipe.css</span><br><span class="line">        │</span><br><span class="line">        ├─assets</span><br><span class="line">        │      empty.png</span><br><span class="line">        │</span><br><span class="line">        └─default-skin</span><br><span class="line">                default-skin.css</span><br><span class="line">                default-skin.png</span><br><span class="line">                default-skin.svg</span><br><span class="line">                preloader.gif</span><br></pre></td></tr></table></figure>
+<p>文件位置：<code>&quot;F:\1-blog\MyWeb\themes\next\source\js\src&quot;</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">├─src</span><br><span class="line">│      photoswipe-ui-default.min.js</span><br><span class="line">│      photoswipe.min.js</span><br></pre></td></tr></table></figure>
+<p>修改：</p>
+<ol>
+<li>ins.js</li>
+<li>_layout.swig</li>
+<li>post-details.swig</li>
+<li>_config.yml</li>
+<li>index.md</li>
+</ol>
+<h3 id="-1"><a href="#-1" class="headerlink" title=""></a></h3></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>6-教程总结</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>总结 / 试图阅读相册的代码（模板一）</title>
+    <url>/al/d3b88e7a.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="总述-相册功能增加的文件-amp-修改"><a href="#总述-相册功能增加的文件-amp-修改" class="headerlink" title="总述 相册功能增加的文件&amp;修改"></a>总述 相册功能增加的文件&amp;修改</h3><p>文件位置：<code>&quot;F:\1-blog\MyWeb\source\gallery&quot;</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- img (相册封面文件夹)</span><br><span class="line">  - sample.jpg （相册封面）</span><br><span class="line">- sample （一个暂定名为sample的相册）</span><br><span class="line">  - img （相册sample的原图存放点）</span><br><span class="line">    - s （相册sample的缩略图存放点，若省略则以文件名-s.jpg的格式命名缩略图）</span><br><span class="line">      - sample.jpg （缩略图）</span><br><span class="line">    - sample.jpg （原图）</span><br><span class="line">  - index.md </span><br><span class="line">- index.md （相册主界面配置文件）</span><br></pre></td></tr></table></figure>
+<p>修改：<br>config.yml添加了导航栏中的画廊图标。<br>建立gallery.styl文件，使其被引用。  </p>
+<h3 id="相册主界面配置文件index-md"><a href="#相册主界面配置文件index-md" class="headerlink" title="相册主界面配置文件index.md"></a>相册主界面配置文件<code>index.md</code></h3><p>文件位置：<code>&quot;F:\1-blog\MyWeb\source\gallery\index.md&quot;</code></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>！相册描述【此行可删除】<span class="tag">&lt;/<span class="name">center</span>&gt;</span> </span><br><span class="line"><span class="comment">&lt;!--center居中标签--&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>自定义分隔符【此行可删除】<span class="tag">&lt;/<span class="name">center</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-page&quot;</span>&gt;</span> </span><br><span class="line">  <span class="comment">&lt;!--div标签可定义文档中的分区或节，把文档分割为独立的、不同的部分，它的内容自动地开始一个新行。--&gt;</span> </span><br><span class="line">  <span class="comment">&lt;!--为该层div标签中的内容匹配名为&quot;gallery-page&quot;的一类格式--&gt;</span> </span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-list&quot;</span>&gt;</span> </span><br><span class="line">    <span class="comment">&lt;!--为该层div标签中的内容匹配名为&quot;gallery-list&quot;的一类格式--&gt;</span> </span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-column&quot;</span>&gt;</span> <span class="comment">&lt;!--第一列开始--&gt;</span></span><br><span class="line">      <span class="comment">&lt;!--为该层div标签中的内容匹配名为&quot;gallery-column&quot;的一类格式--&gt;</span> </span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-item&quot;</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--为该层div标签中的内容匹配名为&quot;gallery-item&quot;的一类格式--&gt;</span> </span><br><span class="line">				<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;【！相册文件夹名】&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/【！封面图文件名】.jpg&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">a</span>&gt;</span> <span class="comment">&lt;!--a标签为超链接，其href属性指示链接的目标--&gt;</span> </span><br><span class="line">        <span class="comment">&lt;!--a标签包裹一张图片，指向gallery/img文件夹下的某张图。该图作为相册封面图。--&gt;</span> </span><br><span class="line">				<span class="tag">&lt;<span class="name">p</span>&gt;</span>- ！相册1 -<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="comment">&lt;!--p标签为段落标签，它生成一个段落--&gt;</span> </span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-item&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;【！相册文件夹名】&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/【！封面图文件名】.jpg&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">p</span>&gt;</span>- ！相册2 -<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!--第一栏（column）到此结束，该栏定义了两个相册--&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-column&quot;</span>&gt;</span><span class="comment">&lt;!--第二栏开始--&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-item&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;sample&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/sample.jpg&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">p</span>&gt;</span>- 相册名 -<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!--第二栏结束，含有一个相册--&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-column&quot;</span>&gt;</span><span class="comment">&lt;!--第三栏开始--&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-item&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;sample&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/sample.jpg&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">p</span>&gt;</span>- 相册名 -<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!--第三栏结束，含有一个相册--&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!--列表结束，含有三栏--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!--页面结束--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>自定义分割线【此行可删除】<span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="相册内部界面配置文件index-md"><a href="#相册内部界面配置文件index-md" class="headerlink" title="相册内部界面配置文件index.md"></a>相册内部界面配置文件<code>index.md</code></h3><p>文件位置：<code>&quot;F:\1-blog\MyWeb\source\gallery\sample\index.md&quot;</code></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: -画廊/-</span><br><span class="line">date: 2018-10-25 04:20:09</span><br><span class="line">comments: false</span><br><span class="line">---</span><br><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>相册内容<span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>.+†+.<span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-page&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;img-list&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;img-column&quot;</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;img/sample.jpg&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_Blank&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/s/sample.jpg&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;img-column&quot;</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;img/sample.jpg&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_Blank&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/s/sample.jpg&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;img-column&quot;</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;img/sample.jpg&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_Blank&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/s/sample.jpg&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.<span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="样式文件gallery-styl"><a href="#样式文件gallery-styl" class="headerlink" title="样式文件gallery.styl"></a>样式文件<code>gallery.styl</code></h3><p>要应用样式，首先复制代码，建立gallery.styl文件，我将其放在<code>&quot;F:\1-blog\MyWeb\themes\next\source\css\_common\components\gallery.styl&quot;</code>。<br>并在<code>&quot;F:\1-blog\MyWeb\themes\next\source\css\_common\components\index.styl&quot;</code>中增加引用：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">……</span><br><span class="line">@import &#x27;back-to-top&#x27;;</span><br><span class="line">@import &#x27;reading-progress&#x27;;</span><br><span class="line">@import &#x27;gallery&#x27;;  #新增</span><br><span class="line">……</span><br></pre></td></tr></table></figure>
+<p>文件位置：<code>&quot;F:\1-blog\MyWeb\themes\next\source\css\_common\components\gallery.styl&quot;</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*gallery*/</span></span><br><span class="line"><span class="comment">/*gallery-page的样式，只规定了顶部距离*/</span></span><br><span class="line"><span class="comment">/*这是一个类选择器，类名为gallery-page，花括号中配置这一类下的元素遵循何种属性*/</span></span><br><span class="line"><span class="selector-class">.gallery-page</span> &#123;</span><br><span class="line">	<span class="attribute">margin-top</span>: <span class="number">50px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*img-list及gallery-list两个类的样式*/</span></span><br><span class="line"><span class="comment">/*用的Flex 布局*/</span></span><br><span class="line"><span class="selector-class">.img-list</span>,</span><br><span class="line"><span class="selector-class">.gallery-list</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: -webkit-flex; <span class="comment">/* Safari */</span></span><br><span class="line">	<span class="attribute">display</span>: flex; <span class="comment">/* 指定为flex布局 */</span></span><br><span class="line">	<span class="attribute">flex-direction</span>: row; <span class="comment">/* 项目的排列方向，row（默认值）：主轴为水平方向，起点在左端。 */</span></span><br><span class="line">	<span class="attribute">flex-wrap</span>: wrap; <span class="comment">/* flex-wrap属性定义，如果一条轴线排不下，如何换行。wrap：换行。 */</span></span><br><span class="line">	<span class="attribute">align-items</span>: flex-start;<span class="comment">/* 项目在交叉轴上如何对齐，flex-start：交叉轴的起点对齐。 */</span></span><br><span class="line">  <span class="attribute">justify-content</span>: space-around;<span class="comment">/*项目在主轴上的对齐方式，space-around：每个项目两侧的间隔相等。*/</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*img-column类的样式*/</span></span><br><span class="line"><span class="selector-class">.img-column</span> &#123;</span><br><span class="line">	<span class="attribute">display</span>: flex;</span><br><span class="line">	<span class="attribute">flex-direction</span>: column-reverse;<span class="comment">/* 主轴为垂直方向，起点在下沿。 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*规定所有img-column和gallery-column类下a标签的样式*/</span></span><br><span class="line"><span class="selector-class">.img-column</span> <span class="selector-tag">a</span>,</span><br><span class="line"><span class="selector-class">.gallery-column</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">	<span class="attribute">border-bottom</span>: <span class="number">0px</span>;<span class="comment">/*设置底部边框样式*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.gallery-item</span> &#123;</span><br><span class="line">	<span class="attribute">margin-bottom</span>: <span class="number">50px</span>;<span class="comment">/*设置元素的下边距*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.gallery-item</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">25px</span> auto <span class="number">10px</span>;</span><br><span class="line">	<span class="attribute">max-width</span>: <span class="number">200px</span>;</span><br><span class="line">	<span class="attribute">text-align</span>: center;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">15px</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*设置显示的图片（元素a）的大小*/</span></span><br><span class="line"><span class="selector-class">.posts-expand</span> <span class="selector-class">.post-body</span> <span class="selector-class">.gallery-column</span> <span class="selector-tag">a</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">	<span class="attribute">object-fit</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@media</span> (<span class="attribute">max-width</span>: <span class="number">767px</span>)&#123;</span><br><span class="line">	<span class="selector-class">.gallery-item</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">		<span class="attribute">min-width</span>: <span class="number">75px</span>;</span><br><span class="line">		<span class="attribute">font-size</span>: <span class="number">13px</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>这个模板太麻烦了，每添加一张图就要手动增加链接，而且最终的排版调整半天也没达到我的理想状态，更奇怪的是我没办法从相册主界面点到相册里。感觉代码没写错但是某种插件阻碍了它= =</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>6-教程总结</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>教程 / 如何输出文件树形图</title>
+    <url>/al/6333ec18.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="效果与参考文献"><a href="#效果与参考文献" class="headerlink" title="效果与参考文献"></a>效果与参考文献</h3><ul>
+<li>效果：可输出如下txt文本。<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211219224652.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211219224652.png" width=70%></a></li>
+<li>参考文献：<ul>
+<li><a href="https://blog.csdn.net/qq_23521659/article/details/85616358">[1]（csdn）使用tree指令生成文件目录树</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="具体操作"><a href="#具体操作" class="headerlink" title="具体操作"></a>具体操作</h3><p>在文件夹<code>MyBlog_Images</code>的上一级目录中右键选择‘在windows终端中打开’，输入以下代码。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">tree /f &gt; tree.txt</span><br></pre></td></tr></table></figure>
+<p>就得到了：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211219225435.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211219225435.png" width=40%></a><br>也可以使用如下命令，不创建txt文件，直接在命令行里输出：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">tree /f</span><br></pre></td></tr></table></figure>
+<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211219230149.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211219230149.png" width=70%></a>
+
+
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>6-教程总结</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>转载</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>教程 / 如何给文件及文件夹添加备注</title>
     <url>/al/6333ec18.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="效果与参考文献"><a href="#效果与参考文献" class="headerlink" title="效果与参考文献"></a>效果与参考文献</h3><ul>
@@ -740,24 +829,9 @@
       </tags>
   </entry>
   <entry>
-    <title>总结 / 试图阅读相册的代码（模板一）</title>
-    <url>/al/d3b88e7a.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="总述-相册功能增加的文件-amp-修改"><a href="#总述-相册功能增加的文件-amp-修改" class="headerlink" title="总述 相册功能增加的文件&amp;修改"></a>总述 相册功能增加的文件&amp;修改</h3><p>文件位置：<code>&quot;F:\1-blog\MyWeb\source\gallery&quot;</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- img (相册封面文件夹)</span><br><span class="line">  - sample.jpg （相册封面）</span><br><span class="line">- sample （一个暂定名为sample的相册）</span><br><span class="line">  - img （相册sample的原图存放点）</span><br><span class="line">    - s （相册sample的缩略图存放点，若省略则以文件名-s.jpg的格式命名缩略图）</span><br><span class="line">      - sample.jpg （缩略图）</span><br><span class="line">    - sample.jpg （原图）</span><br><span class="line">  - index.md </span><br><span class="line">- index.md （相册主界面配置文件）</span><br></pre></td></tr></table></figure>
-<p>修改： </p>
-<ul>
-<li>config.yml添加了导航栏中的画廊图标。</li>
-<li>建立gallery.styl文件，使其被引用。  </li>
-</ul>
-<h3 id="相册主界面配置文件index-md"><a href="#相册主界面配置文件index-md" class="headerlink" title="相册主界面配置文件index.md"></a>相册主界面配置文件<code>index.md</code></h3><p>文件位置：<code>&quot;F:\1-blog\MyWeb\source\gallery\index.md&quot;</code></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>！相册描述【此行可删除】<span class="tag">&lt;/<span class="name">center</span>&gt;</span> </span><br><span class="line"><span class="comment">&lt;!--center居中标签--&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>自定义分隔符【此行可删除】<span class="tag">&lt;/<span class="name">center</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-page&quot;</span>&gt;</span> </span><br><span class="line">  <span class="comment">&lt;!--div标签可定义文档中的分区或节，把文档分割为独立的、不同的部分，它的内容自动地开始一个新行。--&gt;</span> </span><br><span class="line">  <span class="comment">&lt;!--为该层div标签中的内容匹配名为&quot;gallery-page&quot;的一类格式--&gt;</span> </span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-list&quot;</span>&gt;</span> </span><br><span class="line">    <span class="comment">&lt;!--为该层div标签中的内容匹配名为&quot;gallery-list&quot;的一类格式--&gt;</span> </span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-column&quot;</span>&gt;</span> <span class="comment">&lt;!--第一列开始--&gt;</span></span><br><span class="line">      <span class="comment">&lt;!--为该层div标签中的内容匹配名为&quot;gallery-column&quot;的一类格式--&gt;</span> </span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-item&quot;</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--为该层div标签中的内容匹配名为&quot;gallery-item&quot;的一类格式--&gt;</span> </span><br><span class="line">				<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;【！相册文件夹名】&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/【！封面图文件名】.jpg&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">a</span>&gt;</span> <span class="comment">&lt;!--a标签为超链接，其href属性指示链接的目标--&gt;</span> </span><br><span class="line">        <span class="comment">&lt;!--a标签包裹一张图片，指向gallery/img文件夹下的某张图。该图作为相册封面图。--&gt;</span> </span><br><span class="line">				<span class="tag">&lt;<span class="name">p</span>&gt;</span>- ！相册1 -<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="comment">&lt;!--p标签为段落标签，它生成一个段落--&gt;</span> </span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-item&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;【！相册文件夹名】&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/【！封面图文件名】.jpg&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">p</span>&gt;</span>- ！相册2 -<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!--第一栏（column）到此结束，该栏定义了两个相册--&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-column&quot;</span>&gt;</span><span class="comment">&lt;!--第二栏开始--&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-item&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;sample&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/sample.jpg&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">p</span>&gt;</span>- 相册名 -<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!--第二栏结束，含有一个相册--&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-column&quot;</span>&gt;</span><span class="comment">&lt;!--第三栏开始--&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-item&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;sample&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/sample.jpg&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">p</span>&gt;</span>- 相册名 -<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!--第三栏结束，含有一个相册--&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!--列表结束，含有三栏--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!--页面结束--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>自定义分割线【此行可删除】<span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="相册内部界面配置文件index-md"><a href="#相册内部界面配置文件index-md" class="headerlink" title="相册内部界面配置文件index.md"></a>相册内部界面配置文件<code>index.md</code></h3><p>文件位置：<code>&quot;F:\1-blog\MyWeb\source\gallery\sample\index.md&quot;</code></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: -画廊/-</span><br><span class="line">date: 2018-10-25 04:20:09</span><br><span class="line">comments: false</span><br><span class="line">---</span><br><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>相册内容<span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>.+†+.<span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-page&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;img-list&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;img-column&quot;</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;img/sample.jpg&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_Blank&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/s/sample.jpg&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;img-column&quot;</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;img/sample.jpg&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_Blank&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/s/sample.jpg&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;img-column&quot;</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;img/sample.jpg&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_Blank&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/s/sample.jpg&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.<span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="样式文件gallery-styl"><a href="#样式文件gallery-styl" class="headerlink" title="样式文件gallery.styl"></a>样式文件<code>gallery.styl</code></h3><p>要应用样式，首先复制代码，建立gallery.styl文件，我将其放在<code>&quot;F:\1-blog\MyWeb\themes\next\source\css\_common\components\gallery.styl&quot;</code>。<br>并在<code>&quot;F:\1-blog\MyWeb\themes\next\source\css\_common\components\index.styl&quot;</code>中增加引用：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">……</span><br><span class="line">@import &#x27;back-to-top&#x27;;</span><br><span class="line">@import &#x27;reading-progress&#x27;;</span><br><span class="line">@import &#x27;gallery&#x27;;  #新增</span><br><span class="line">……</span><br></pre></td></tr></table></figure>
-<p>文件位置：<code>&quot;F:\1-blog\MyWeb\themes\next\source\css\_common\components\gallery.styl&quot;</code></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*gallery*/</span></span><br><span class="line"><span class="comment">/*gallery-page的样式，只规定了顶部距离*/</span></span><br><span class="line"><span class="comment">/*这是一个类选择器，类名为gallery-page，花括号中配置这一类下的元素遵循何种属性*/</span></span><br><span class="line"><span class="selector-class">.gallery-page</span> &#123;</span><br><span class="line">	<span class="attribute">margin-top</span>: <span class="number">50px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*img-list及gallery-list两个类的样式*/</span></span><br><span class="line"><span class="comment">/*用的Flex 布局*/</span></span><br><span class="line"><span class="selector-class">.img-list</span>,</span><br><span class="line"><span class="selector-class">.gallery-list</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: -webkit-flex; <span class="comment">/* Safari */</span></span><br><span class="line">	<span class="attribute">display</span>: flex; <span class="comment">/* 指定为flex布局 */</span></span><br><span class="line">	<span class="attribute">flex-direction</span>: row; <span class="comment">/* 项目的排列方向，row（默认值）：主轴为水平方向，起点在左端。 */</span></span><br><span class="line">	<span class="attribute">flex-wrap</span>: wrap; <span class="comment">/* flex-wrap属性定义，如果一条轴线排不下，如何换行。wrap：换行。 */</span></span><br><span class="line">	<span class="attribute">align-items</span>: flex-start;<span class="comment">/* 项目在交叉轴上如何对齐，flex-start：交叉轴的起点对齐。 */</span></span><br><span class="line">  <span class="attribute">justify-content</span>: space-around;<span class="comment">/*项目在主轴上的对齐方式，space-around：每个项目两侧的间隔相等。*/</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*img-column类的样式*/</span></span><br><span class="line"><span class="selector-class">.img-column</span> &#123;</span><br><span class="line">	<span class="attribute">display</span>: flex;</span><br><span class="line">	<span class="attribute">flex-direction</span>: column-reverse;<span class="comment">/* 主轴为垂直方向，起点在下沿。 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*规定所有img-column和gallery-column类下a标签的样式*/</span></span><br><span class="line"><span class="selector-class">.img-column</span> <span class="selector-tag">a</span>,</span><br><span class="line"><span class="selector-class">.gallery-column</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">	<span class="attribute">border-bottom</span>: <span class="number">0px</span>;<span class="comment">/*设置底部边框样式*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.gallery-item</span> &#123;</span><br><span class="line">	<span class="attribute">margin-bottom</span>: <span class="number">50px</span>;<span class="comment">/*设置元素的下边距*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.gallery-item</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">25px</span> auto <span class="number">10px</span>;</span><br><span class="line">	<span class="attribute">max-width</span>: <span class="number">200px</span>;</span><br><span class="line">	<span class="attribute">text-align</span>: center;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">15px</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*设置显示的图片（元素a）的大小*/</span></span><br><span class="line"><span class="selector-class">.posts-expand</span> <span class="selector-class">.post-body</span> <span class="selector-class">.gallery-column</span> <span class="selector-tag">a</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">	<span class="attribute">object-fit</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@media</span> (<span class="attribute">max-width</span>: <span class="number">767px</span>)&#123;</span><br><span class="line">	<span class="selector-class">.gallery-item</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">		<span class="attribute">min-width</span>: <span class="number">75px</span>;</span><br><span class="line">		<span class="attribute">font-size</span>: <span class="number">13px</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>这个模板太麻烦了，每添加一张图就要手动增加链接，而且最终的排版调整半天也没达到我的理想状态，更奇怪的是我没办法从相册主界面点到相册里。感觉代码没写错但是某种插件阻碍了它= =</p>
+    <title>梦 / 人鱼双子成功脱困了吗</title>
+    <url>/al/d507747a.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>有人指挥我进一家服装店，把里面的衣服拿出去以很便宜的价格叫卖，吸引到一些顾客正在议价时，突然发现哥哥的电话打不通。<br>直觉就是出事了，打119，立刻进行搜索，我和我爸去找人，找到一个很阴暗的地窖，里面都是大酒坛子。打开一个坛子，发现哥哥就在里面，虚弱无力的样子。<br>然后因为发现了秘密，我被塞进酒坛子里，我爸被杀。没有人来救，渐渐我发现在坛子里我们的腿变成了鱼尾。<br>之后，我和哥哥被丢到一个四方的水泥池里，里面水很浅，后来多了起来，还可以养鱼。有一天我们的手上都长了水泡，很痛，但是一个人告诉我们这是鱼卵，指着哥哥的手说他的已经孵化了，很快就好。确实是这样，我手上的水泡掉下来以后孵出一只黄色扁热带鱼，然后就好了。<br>一天涨潮，潮水没过小池子，我和哥哥趁机游出去。逃到一个很多人的岸边，大家都很惊讶地看着，然后有一个人把我们带走了，发现我们过了太久，不会认字说话，就让我们认字。<br>最后，发现鱼尾可以在完全干燥的情况下变成人腿，我和哥哥的头发变成红色，红色的短发蘑菇头，可以上岸走路但是不能晒太阳，就给我们定制了特别的衣服，紫色。<br>红色头发紫色衣服，两个人手牵手站在一段台阶顶端，似乎要去参加什么典礼。这是我最后梦到的画面。</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -765,26 +839,14 @@
         lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
         }</script>]]></content>
       <categories>
-        <category>6-教程总结</category>
+        <category>4-日常记录</category>
+        <category>奇怪的梦</category>
       </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
   </entry>
   <entry>
-    <title>总结 / 试图阅读相册的代码（模板一）</title>
-    <url>/al/d3b88e7a.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="总述-相册功能增加的文件-amp-修改"><a href="#总述-相册功能增加的文件-amp-修改" class="headerlink" title="总述 相册功能增加的文件&amp;修改"></a>总述 相册功能增加的文件&amp;修改</h3><p>文件位置：<code>&quot;F:\1-blog\MyWeb\source\gallery&quot;</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- img (相册封面文件夹)</span><br><span class="line">  - sample.jpg （相册封面）</span><br><span class="line">- sample （一个暂定名为sample的相册）</span><br><span class="line">  - img （相册sample的原图存放点）</span><br><span class="line">    - s （相册sample的缩略图存放点，若省略则以文件名-s.jpg的格式命名缩略图）</span><br><span class="line">      - sample.jpg （缩略图）</span><br><span class="line">    - sample.jpg （原图）</span><br><span class="line">  - index.md </span><br><span class="line">- index.md （相册主界面配置文件）</span><br></pre></td></tr></table></figure>
-<p>修改： </p>
-<ul>
-<li>config.yml添加了导航栏中的画廊图标。</li>
-<li>建立gallery.styl文件，使其被引用。<h3 id="相册主界面配置文件index-md"><a href="#相册主界面配置文件index-md" class="headerlink" title="相册主界面配置文件index.md"></a>相册主界面配置文件<code>index.md</code></h3>文件位置：<code>&quot;F:\1-blog\MyWeb\source\gallery\index.md&quot;</code><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>！相册描述【此行可删除】<span class="tag">&lt;/<span class="name">center</span>&gt;</span> </span><br><span class="line"><span class="comment">&lt;!--center居中标签--&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>自定义分隔符【此行可删除】<span class="tag">&lt;/<span class="name">center</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-page&quot;</span>&gt;</span> </span><br><span class="line">  <span class="comment">&lt;!--div标签可定义文档中的分区或节，把文档分割为独立的、不同的部分，它的内容自动地开始一个新行。--&gt;</span> </span><br><span class="line">  <span class="comment">&lt;!--为该层div标签中的内容匹配名为&quot;gallery-page&quot;的一类格式--&gt;</span> </span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-list&quot;</span>&gt;</span> </span><br><span class="line">    <span class="comment">&lt;!--为该层div标签中的内容匹配名为&quot;gallery-list&quot;的一类格式--&gt;</span> </span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-column&quot;</span>&gt;</span> <span class="comment">&lt;!--第一列开始--&gt;</span></span><br><span class="line">      <span class="comment">&lt;!--为该层div标签中的内容匹配名为&quot;gallery-column&quot;的一类格式--&gt;</span> </span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-item&quot;</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--为该层div标签中的内容匹配名为&quot;gallery-item&quot;的一类格式--&gt;</span> </span><br><span class="line">				<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;【！相册文件夹名】&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/【！封面图文件名】.jpg&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">a</span>&gt;</span> <span class="comment">&lt;!--a标签为超链接，其href属性指示链接的目标--&gt;</span> </span><br><span class="line">        <span class="comment">&lt;!--a标签包裹一张图片，指向gallery/img文件夹下的某张图。该图作为相册封面图。--&gt;</span> </span><br><span class="line">				<span class="tag">&lt;<span class="name">p</span>&gt;</span>- ！相册1 -<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="comment">&lt;!--p标签为段落标签，它生成一个段落--&gt;</span> </span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-item&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;【！相册文件夹名】&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/【！封面图文件名】.jpg&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">p</span>&gt;</span>- ！相册2 -<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!--第一栏（column）到此结束，该栏定义了两个相册--&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-column&quot;</span>&gt;</span><span class="comment">&lt;!--第二栏开始--&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-item&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;sample&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/sample.jpg&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">p</span>&gt;</span>- 相册名 -<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!--第二栏结束，含有一个相册--&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-column&quot;</span>&gt;</span><span class="comment">&lt;!--第三栏开始--&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-item&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;sample&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/sample.jpg&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">p</span>&gt;</span>- 相册名 -<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!--第三栏结束，含有一个相册--&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!--列表结束，含有三栏--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!--页面结束--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>自定义分割线【此行可删除】<span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="相册内部界面配置文件index-md"><a href="#相册内部界面配置文件index-md" class="headerlink" title="相册内部界面配置文件index.md"></a>相册内部界面配置文件<code>index.md</code></h3>文件位置：<code>&quot;F:\1-blog\MyWeb\source\gallery\sample\index.md&quot;</code><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: -画廊/-</span><br><span class="line">date: 2018-10-25 04:20:09</span><br><span class="line">comments: false</span><br><span class="line">---</span><br><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>相册内容<span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>.+†+.<span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-page&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;img-list&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;img-column&quot;</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;img/sample.jpg&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_Blank&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/s/sample.jpg&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;img-column&quot;</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;img/sample.jpg&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_Blank&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/s/sample.jpg&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;img-column&quot;</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;img/sample.jpg&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_Blank&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/s/sample.jpg&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.<span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="样式文件gallery-styl"><a href="#样式文件gallery-styl" class="headerlink" title="样式文件gallery.styl"></a>样式文件<code>gallery.styl</code></h3>要应用样式，首先复制代码，建立gallery.styl文件，我将其放在<code>&quot;F:\1-blog\MyWeb\themes\next\source\css\_common\components\gallery.styl&quot;</code>。<br>并在<code>&quot;F:\1-blog\MyWeb\themes\next\source\css\_common\components\index.styl&quot;</code>中增加引用：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">……</span><br><span class="line">@import &#x27;back-to-top&#x27;;</span><br><span class="line">@import &#x27;reading-progress&#x27;;</span><br><span class="line">@import &#x27;gallery&#x27;;  #新增</span><br><span class="line">……</span><br></pre></td></tr></table></figure>
-文件位置：<code>&quot;F:\1-blog\MyWeb\themes\next\source\css\_common\components\gallery.styl&quot;</code><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*gallery*/</span></span><br><span class="line"><span class="comment">/*gallery-page的样式，只规定了顶部距离*/</span></span><br><span class="line"><span class="comment">/*这是一个类选择器，类名为gallery-page，花括号中配置这一类下的元素遵循何种属性*/</span></span><br><span class="line"><span class="selector-class">.gallery-page</span> &#123;</span><br><span class="line">	<span class="attribute">margin-top</span>: <span class="number">50px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*img-list及gallery-list两个类的样式*/</span></span><br><span class="line"><span class="comment">/*用的Flex 布局*/</span></span><br><span class="line"><span class="selector-class">.img-list</span>,</span><br><span class="line"><span class="selector-class">.gallery-list</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: -webkit-flex; <span class="comment">/* Safari */</span></span><br><span class="line">	<span class="attribute">display</span>: flex; <span class="comment">/* 指定为flex布局 */</span></span><br><span class="line">	<span class="attribute">flex-direction</span>: row; <span class="comment">/* 项目的排列方向，row（默认值）：主轴为水平方向，起点在左端。 */</span></span><br><span class="line">	<span class="attribute">flex-wrap</span>: wrap; <span class="comment">/* flex-wrap属性定义，如果一条轴线排不下，如何换行。wrap：换行。 */</span></span><br><span class="line">	<span class="attribute">align-items</span>: flex-start;<span class="comment">/* 项目在交叉轴上如何对齐，flex-start：交叉轴的起点对齐。 */</span></span><br><span class="line">  <span class="attribute">justify-content</span>: space-around;<span class="comment">/*项目在主轴上的对齐方式，space-around：每个项目两侧的间隔相等。*/</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*img-column类的样式*/</span></span><br><span class="line"><span class="selector-class">.img-column</span> &#123;</span><br><span class="line">	<span class="attribute">display</span>: flex;</span><br><span class="line">	<span class="attribute">flex-direction</span>: column-reverse;<span class="comment">/* 主轴为垂直方向，起点在下沿。 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*规定所有img-column和gallery-column类下a标签的样式*/</span></span><br><span class="line"><span class="selector-class">.img-column</span> <span class="selector-tag">a</span>,</span><br><span class="line"><span class="selector-class">.gallery-column</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">	<span class="attribute">border-bottom</span>: <span class="number">0px</span>;<span class="comment">/*设置底部边框样式*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.gallery-item</span> &#123;</span><br><span class="line">	<span class="attribute">margin-bottom</span>: <span class="number">50px</span>;<span class="comment">/*设置元素的下边距*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.gallery-item</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">25px</span> auto <span class="number">10px</span>;</span><br><span class="line">	<span class="attribute">max-width</span>: <span class="number">200px</span>;</span><br><span class="line">	<span class="attribute">text-align</span>: center;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">15px</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*设置显示的图片（元素a）的大小*/</span></span><br><span class="line"><span class="selector-class">.posts-expand</span> <span class="selector-class">.post-body</span> <span class="selector-class">.gallery-column</span> <span class="selector-tag">a</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">	<span class="attribute">object-fit</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@media</span> (<span class="attribute">max-width</span>: <span class="number">767px</span>)&#123;</span><br><span class="line">	<span class="selector-class">.gallery-item</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">		<span class="attribute">min-width</span>: <span class="number">75px</span>;</span><br><span class="line">		<span class="attribute">font-size</span>: <span class="number">13px</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3>这个模板太麻烦了，每添加一张图就要手动增加链接，而且最终的排版调整半天也没达到我的理想状态，更奇怪的是我没办法从相册主界面点到相册里。感觉代码没写错但是某种插件阻碍了它= =</li>
-</ul>
+    <title>梦 / 学校、医院和坍塌</title>
+    <url>/al/854ea9b6.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>一群人进入一座楼，白天。一楼有体育室和办公室，是学校一样的地方。<br>他们分组去搜查其他楼层，我就去检查体育室，一眼看到右边柜子上挂着一副世界地图。问办公室里的人能不能看，他们答应了我就靠近看。<br>突然地图掉下来，我吓了一跳。<br>地图后面的柜子，柜门是玻璃窗口，其他都是漆木。玻璃上歪歪扭扭写着三个方程还有其他鬼画符。拿手机拍下来以后回头看，发现人都不见了。<br>我退出体育室，去其他办公室搜查，没有发现什么。就决定上楼与其他人汇合。<br>楼上都是教室，我直到顶楼才看到人。<br>不过目睹的是一个长着猪脑袋和獠牙的人型怪物向一扇细窄的黑洞洞的门里伸出手，门里丢给他一个像沙包的东西。<br>他拿着这个进教室，不一会就拖了四个昏迷的人出来把他们放在一张圆桌前挨个坐好。我看见猪头人走了，蹭过去想摇醒他们。<br>没有用。<br>这时，我发现那扇细窄的黑门就在面前的墙壁上。试着伸出手说：“解药。”然后，门里浮现出一个干瘦的惨白人脸，一只手把沙包丢给我。<br>我把沙包拿给四个人闻，他们都醒了。<br>两个人结伴从另一个楼道走，我背起一个腿伤的人，问剩下的最后一个：“你不走吗？”<br>“我留下来拖延时间。”<br>我点点头：“我会回来找你。”<br>我下了楼，没有遇见意外。把腿伤的人放在大楼外后，我准备返回大楼。<br>路上遇见从另一边顺利下来的两个人。他们看见我回去很惊讶，我说里面还有一个人。他们劝道：“别去，太危险了。”<br>我摇摇头，进入大楼一层。这次不是学校了，而是超大医院的大厅。没有顶灯，所有的灯光都是屏幕发出的，米黄和草绿交错。医院里整齐地布置着座椅，座椅上坐满了候诊的人。<br>哪里会有医院把候诊大厅搞得跟火车站一样。<br>他们有电梯，我没用，跑到楼梯井里，一个包工头对着面前跪下的一个人说道：“你是榜眼？除非你们的状元也给我跪下，我才……”<br>状元走上前，我没有看到更多，上了楼，包工头的笑声很有穿透力。但我踏上二楼，发现楼梯很不稳定。<br>开始狂奔，我跑过一层，楼梯就塌一层。就在四楼，整座大楼倒塌。<br>一阵强烈的失重感后，我醒来了。</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -792,17 +854,154 @@
         lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
         }</script>]]></content>
       <categories>
-        <category>6-教程总结</category>
+        <category>4-日常记录</category>
+        <category>奇怪的梦</category>
       </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
+  </entry>
+  <entry>
+    <title>梦 / 应试教育后遗症</title>
+    <url>/al/e0182a80.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>早上做梦梦见下午两点有一个生物学考试。关键是我7点被吵醒那会对自己做的梦深信不疑，睡到8点半的这段时间内梦境在自动补完“我有一个选修课一直没去上但几个小时后就要考试”的这回事。<br>甚至脑补了具体的上课情景，确定这门课叫“上帝知道答案”。讲课的是一个女老师，和我一起上课的有舍友和隔壁班同学。然后梦里我不乐意去问舍友，就问了隔壁班同学，这位同学石锤了下午两点有考试，然后就开始慌，恐慌，虽然9小时复习概率论/12小时速通PLC不是没有过，但是距离下午两点只有6小时了，我根本不记得这门课的任何内容。平时既然没去上课那肯定没有平时分。我恐惧保研功亏一篑。<br>直到刷完牙我都还没想明白到底有没有“选修课下午两点考试”这回事</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>奇怪的梦</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>梦 / 我真是个起名天才</title>
+    <url>/al/cedb3f7b.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>今天的梦又是一个大型连续剧。。<br>背景星际，但是一群人又会点火又会再生水资源的，醒来我都懵这是什么鬼畜修仙+科幻<br>现在已经有点记不清了<br>就记得主角1叫然倚暮（好像是，我记得是三个字，最后一个字很复杂），真名叫何然，不知道惹了什么事（大概是家族政变），处于逃亡状态。<br>中间应该发生了很多事，有一个半机械人（主角2）在追杀她，最后棋差一着被何然借助激光发射器干碎了半个身子，终止了他的追杀。<br>何然很冷静聪明，她根据半机械人的指示找到一个玩具熊，玩具熊背后的标签上会显示【未来一段时间内最大概率发生的事件】。<br>她看玩具熊的标签，上面写着【卫队包围了老宅】。<br>何然被抓起来了。<br>被抓回去开家庭会议。<br>她面对她妈和她奶奶，她爸死了。看过标签的何然知道要从奶奶这里突破，她妈是个不折不扣的反派。<br>然后就想不起来了……</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>奇怪的梦</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>梦 / 文明间的战术欺骗</title>
+    <url>/al/2ae3dcb7.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>今天的梦是我声称发现适距中子星可以利用新武器将其引爆并取得与敌对地外文明的战争胜利。<br>该地外文明宣告投降，派出一位代表由我带领参观地球。<br>该代表的形象是抽象蓝绿鱼头人。<br>在参观过程中我告诉他：“其实并没有中子星，我骗你们的。”<br>参观在沉默中结束了。<br>蓝绿鱼头人代表回去后宣战。<br>于是我方引爆了中子星。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>奇怪的梦</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>梦 / 正宫的不屑.jpg</title>
+    <url>/al/7f780e8f.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>昨天晚上梦到我拿着我推纸片人1的照片（立绘？）给正宫纸片人2看，纸片人2不屑地笑了 ​​​</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>奇怪的梦</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>梦 / 纸片人的精神分裂症状</title>
+    <url>/al/619adc62.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>三个片段，互相无关联。<br>1.我在玩一个2d像素游戏，做了隐藏任务赚了好多钱。<br>2舍友写小说给我看，我觉得插图很丑就改了改，然后发现这样不打招呼就改很不礼貌。<br>3.我找钟离，balabalabalabala（中间忘记了），他送了我一个挂在包上的链子，一把餐刀，表示以后我是他女朋友了！梦里的我：其实我更希望是您的副人格万叶。</p>
+<p>醒来：？</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>奇怪的梦</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>梦 / 追查无形怪物</title>
+    <url>/al/85fa5e38.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>梦见出现了一种奇怪的力量，其表现形式是人有时候会无缘无故被突然扯一下，但不是别人干的。<br>就像透明人恶作剧一样。<br>这个现象变得越发严重了，我曾见到一个小女孩被来自多方向的无形的力折断骨头，整个人扭曲变形。<br>我去追查这种现象的源头，到一座大厦里（特别像学校的学研中心），进门的时候刚好目睹一个深蓝色衣服的人从高空坠落，砸到地上。<br>因为事情紧急，就没有去管，但是我和助手都认为肯定和源头有关。<br>上楼，被发现，开始躲，躲到一个占卜师的家里，她帮我隐藏了起来，还让我抽了三张塔罗牌，但是没有读牌，我也不记得三张牌是什么。<br>后来我的队友赶到了，在楼外辅助，我下了楼，看到那个坠落的人，走进发现只是一件外套，外套里面摆着一个只有一半的饼干。<br>这个饼干是软的，很大，一个巴掌那么大，完整版应该是两颗心被箭串在一起，这里只有一半，两个心是粉的，中间用黄色写了几个单词，但是不完整。<br>我突然发觉这个跳楼的人就是我。<br>我要传达给我什么信息？<br>在保温杯里找到了另外一半饼干，把它们拼起来，我知道了完整的句子。<br>从占卜师那里走后，她把占卜的牌送给了我。我拿出来边走边洗牌，却发现总是有牌不是背面向上的，还得反过来，我很着急，后来在确认牌数量的时候，数不出正确的数目，就让队友又帮我买了一副牌。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>奇怪的梦</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>梦 / 真实的家庭伦理剧</title>
+    <url>/al/880a55ee.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>梦见爷爷鲨了奶奶，尸体藏在床下，我不知情地在床上睡了两天，第三天房子开始摇晃我看到床底下蔓延的血水才去叫我爸妈，爸妈拿菜刀把奶奶分尸了 ​​​</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>奇怪的梦</category>
+      </categories>
   </entry>
   <entry>
     <title>Tarot / 你舟沉了</title>
     <url>/al/1a9a44c2.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>缘由：#查询抽卡运势<br>牌组：棱镜<br>牌面：星币侍从，星币女皇，倒吊人<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/20211211231557.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/20211211231557.png" width="60%"></a></p>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>缘由：#查询抽卡运势<br>牌卡：棱镜<br>牌面：星币侍从，星币女皇，倒吊人<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/20211211231557.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/20211211231557.png" width="60%"></a></p>
 <p>读牌：暗示充钱，硬吃保底，不尽人意最好收手。<br>结果：56发歪了琴柳，五星四个<br>今日的胜负：塔罗牌胜</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>塔罗玄学</category>
+      </categories>
+      <tags>
+        <tag>巴纳姆效应</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>梦 / 逃出犯罪集团窝点</title>
+    <url>/al/df9de6da.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>啊，想不起来了，大概是我是一个十岁小孩，逃出犯罪集团窝点，同行的大哥塞给我一把有我高的枪，连人带车沉到湖里。<br>我把唯一一发子弹打空后，逃到一个农庄处，和当地人讨价还价，把枪卖了，换来两把手枪和若干子弹。对了，枪是电浆枪。 ​​​</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>奇怪的梦</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Tarot / 雪融之诺</title>
+    <url>/al/367a1e5c.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>缘由：灵知池抽卡玄学预测<br>牌卡：棱镜<br>牌面：力量，权杖六，圣杯国王<br>读牌：可能会出比较多五星，三四十抽出灵知<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211220230500.png" title="20211220230500" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211220230500.png" alt="20211220230500"></a><br>结果：未完待续<br>今日的胜负：未完待续</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -915,6 +1114,34 @@
       </tags>
   </entry>
   <entry>
+    <title>出游 / 云佛山滑雪场</title>
+    <url>/al/8e922466.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="账单"><a href="#账单" class="headerlink" title="账单"></a>账单</h3><ul>
+<li>早饭：在学校吃，5.5。</li>
+<li>往程：地铁转公交转公交，坐错车了，转回来，又走了半小时路，21（好像没扣这么多钱）。</li>
+<li>景区：云佛山滑雪场，用的是某个联票，所以有部分费用被免去了。平均一个人48.4，包含门票和所有租赁物品。</li>
+<li>午饭：没吃。主要怕景区宰客</li>
+<li>返程：公交转公交转地铁，21。</li>
+<li>晚饭：KFC。汉堡薯条奶茶，23.5。</li>
+<li>总计：5.5+21+48.4+21+23.5=119.4</li>
+</ul>
+<h3 id="评价-amp-感想"><a href="#评价-amp-感想" class="headerlink" title="评价&amp;感想"></a>评价&amp;感想</h3><p>这一天不算顺利，其实早上8：22被舍友叫起床的时候我还在挣扎要不要去，因为没睡好，感觉眼睛闭上但没睡着，能听到舍友收拾东西的动静，睁眼发现都睡过头了。<br>轻装上阵，包都没背，羽绒服俩口袋揣上手机钥匙钱包矿泉水就走。这导致我手没地方放，只好缩在袖子里。<br>坐车的前两小时还好，第三个小时开始感到难受，舍友说带了袋子你可以吐……我：大可不必。中途坐错了车，最后靠脚走到了滑雪场门口。在门口验票还因为工作人员业务不熟练（她不知道这个票用哪个平台验），卡了好一会。等的过程中听到旁边好多人是从抖音预订来的。<br>租头盔和板子，选双板，现场学习了如何把雪鞋卡上雪板。那边还有租雪服的，一看价格，好家伙，划破了原价赔偿500块，我还是祸害我自己的羽绒服去吧……大概玩了两个多小时一点，滑雪场是一个坡，人从上面滑下来，再站在传送带上传上去，循环往复。<br>滑下去只需要十秒钟，传上去要好几分钟，见缝插针打明日方舟。<br>我对这项运动无感，而且十次里有五次会因为前面有人刹不住车摔倒，就还挺挫败的，尤其是摔了，摸到地上的雪，冻得慌。还有一次因为不知道怎么刹车就用手刹了（。）<br>滑雪场里有很多闲散的教练，进来时看了价格，几乎都要200往上，而且是小时计费。被路过的教练指点了刹车要领，要形容的话大约就是扎个马步，内八。俩滑雪板呈钝角。<br>教练说你想学的话可以找个教练教，我说我就是来玩的哈哈哈。<br>四点半滑雪场关门，等车的时候掏出我的airpods看cytus2x明日方舟的联动剧情，戴帽子不小心把耳机刮掉一只，我吓得大叫一声，连忙捡回来。<br>滑雪的整个过程我心丝毫不起波澜，撞到人都没有耳机掉的那一瞬间惊吓大。<br>返程回校途中越来越难受，冻得、晕的、饿的，吃了KFC以后感觉好点。最后一段徒步简直是煎熬，寒风刮得我牙齿发抖。甚至于洗完热水澡腮帮子都还是冻的……谁懂。</p>
+<h3 id="照片"><a href="#照片" class="headerlink" title="照片"></a>照片</h3><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E5%9D%A1%E5%BA%95.jpg" title="2021-12-16_坡底" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E5%9D%A1%E5%BA%95.jpg" alt="2021-12-16_坡底"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%98%AF%E7%9C%9F%EF%BC%88%E4%BA%BA%E9%80%A0%EF%BC%9F%EF%BC%89%E9%9B%AA.jpg" title="2021-12-16_是真（人造？）雪" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%98%AF%E7%9C%9F%EF%BC%88%E4%BA%BA%E9%80%A0%EF%BC%9F%EF%BC%89%E9%9B%AA.jpg" alt="2021-12-16_是真（人造？）雪"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%89%8B%E5%88%B9%E7%9A%84%E5%90%8E%E6%9E%9C.jpg" title="2021-12-16_手刹的后果" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%89%8B%E5%88%B9%E7%9A%84%E5%90%8E%E6%9E%9C.jpg" alt="2021-12-16_手刹的后果"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E4%B8%80%E4%BA%9B%E6%B6%88%E8%B4%B9%E5%8D%95.jpg" title="2021-12-16_一些消费单" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E4%B8%80%E4%BA%9B%E6%B6%88%E8%B4%B9%E5%8D%95.jpg" alt="2021-12-16_一些消费单"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E8%A3%85%E5%A4%87.jpg" title="2021-12-16_装备" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E8%A3%85%E5%A4%87.jpg" alt="2021-12-16_装备"></a></p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>“1000米以上算出去玩”</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>今夜，学研（三）</title>
     <url>/al/undefined.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<hr>
@@ -988,6 +1215,143 @@
 <p>&lt;骰娘&gt; [刘平安]掷出了: 1D2=2</p>
 </blockquote>
 <p>&lt;[刘平安]&gt; 那我先往下走。<br>&lt;[温夏]&gt; “好，分头行动。”开始往上走。“每走一层喊一声？”<br>&lt;[张二狗]&gt; “行。”<br>&lt;[张二狗]&gt; 我跟刘平安下楼<br>&lt;[刘平安]&gt; 从包里拿出零食给温夏。“给你，吃点，不要怕。”<br>&lt;[张二狗]&gt; “给我也来点呗，女侠。”<br>&lt;[刘平安]&gt; “保持身体的热量就会暖和起来！”笑<br>&lt;[温夏]&gt; “谢啦。”那我嚼着零食上楼<br>&lt;[刘平安]&gt; 于是掏了一点给二狗<br>&lt;[张二狗]&gt; “三克油！”快乐地边吃零食边下楼<br>&lt;[kp]&gt; 你们决定分头行动，受刚才差点发生的坠楼事故的影响，你们捏紧了扶手，借着从天窗照射进来的月光小心地下楼，在三角形的顶点处，高大树木的冠顶随风轻轻叩着窗户。<br>&lt;[刘平安]&gt; “还是一直是四楼诶…”<br>&lt;[kp]&gt; 随着你们之间的距离越来越远，声音也越来越小。在第六声喊后，张二狗和刘平安发现自己踩在了疑似一楼的地面上。<br>&lt;[刘平安]&gt; “诶。”这里看起来是一楼地面诶，抬头看看楼梯间标识<br>&lt;[kp]&gt; 标识上是你们梦寐以求的1F！<br>&lt;[张二狗]&gt; “温夏，我们好像到一楼了！”我冲着上面喊<br>&lt;[刘平安]&gt; “现在我们间隔13层，这里看起来像一楼地面！”我喊到<br>&lt;[刘平安]&gt; 观察一下周围有没有值得注意的东西，莫名其妙地有些焦虑，可能是因为幻觉而刚跳过楼吧。<br>&lt;[温夏]&gt; “我现在在14层？”学研14楼，一跳……<br>&lt;[温夏]&gt; 我要先喊话回复一下他们，然后看看后面的标识还是4f吗<br>&lt;[张二狗]&gt; 我打开楼梯间的门看看外面是不是一楼大厅<br>&lt;[kp]&gt; 温夏眼前的标识依然是4F。<br>&lt;[张二狗]&gt; “是1F!”<br>&lt;[温夏]&gt; 好，我要传送<br>&lt;[温夏]&gt; 进4楼，再出来<br>&lt;[温夏]&gt; 然后下楼<br>&lt;[kp]&gt; 那么温夏还是跑了十几层才和底下的人站到了一起。<br>&lt;[kp]&gt; 身心都已疲惫不堪的你们终于来到了楼梯的尽头，推开楼梯间的门，眼前终于不再是梦魇般挥之不去的生物院，而是你们无比熟悉的学研中心B座的一楼大厅。<br>&lt;[kp]&gt; 你们听到南边传来了阵阵喧闹，有一个忙碌的安保人员发现了你们并向你们走来。<br>&lt;[kp]&gt; “同学，怎么这么晚还在学研？”<br>&lt;[温夏]&gt; “我们打比赛的。”<br>&lt;[kp]&gt; “？”<br>&lt;[温夏]&gt; 然后想起我的模型不见了。<br>&lt;[温夏]&gt; “结构设计大赛。”<br>&lt;[刘平安]&gt; 看见人类令我舒坦很多。“在熬夜来着…睡过了。”我随便扯了慌<br>&lt;[刘平安]&gt; 不过，遇上这种事，难道是学研有实验室危险品泄露，不会有人在学校炮制毒品吧<br>&lt;[kp]&gt; “这样啊。不过这么晚了还是回宿舍楼休息吧。”他听完你们的理由回头看了一下人来人往的方向，“不过你们没什么事就行，回去吧。”<br>&lt;[刘平安]&gt; 喔对，“这个ipad和手机我们捡到的，有人落下在学研了。”<br>&lt;[刘平安]&gt; 疲惫地我经历了太多，抱着痛包萎靡不振。<br>&lt;[刘平安]&gt; 给好友打个电话。<br>&lt;[张二狗]&gt; 自己图还没画完，准备冲向豪丽斯画图<br>&lt;[温夏]&gt; 打开手机发博客：title： 今夜，学研……<br>&lt;[kp]&gt; 他接过两个电子设备对你们点点头：“我知道了，我们会发布失物招领的。”<br>&lt;[kp]&gt; 刘平安打开手机，屏幕仿佛从未背弃过她一样正常地亮起了，上面显示了好友的未接来电，反拨回去后对面有点着急地问怎么去趟学研这么久没消息。<br>&lt;[kp]&gt; 张二狗则贯彻着自己的卷王精神赶往了豪丽斯，旁边桌有人在窃窃私语学研怎样怎样。<br>&lt;[kp]&gt; 温夏的博客顺利发出，不过暂时没有什么留言和点赞。<br>&lt;[刘平安]&gt; 天津话：“我跟你讲，我今天晚上可太刺激了。”<br>&lt;[kp]&gt; 时间已经很晚了，考虑到明天的行程，你们就此分道扬镳。第二天，林里校园里就出现了讨论昨晚学研中心火灾的帖子，有人回复说自己当时就在楼里，做了一场巨nm真实的噩梦结果一醒来就在校医院了。而几天后，保卫处的公众号就这件事发了一篇推文，称12月6日晚学研C座0407发生了火灾，并强调了充电宝充满电一定要拔下来，还提到了实验品安全储存的问题……<br>&lt;[kp]&gt; 回来后你们都感觉肺不太舒服，但比起那些直接昏过去被送医院的人，还算是幸运吧。<br>&lt;[kp]&gt; ——结团撒花——<br>&lt;[刘平安]&gt; 恭嘿啊！！！！！</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>5-文字创作</category>
+        <category>COC TRPG</category>
+      </categories>
+      <tags>
+        <tag>跑团记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>会逐渐把微博的记录搬过来</title>
+    <url>/al/ba9dbd3b.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>没有博客的时候都是用微博来发一些东西，虽然我日常活跃在qq空间。微信基本上不发朋友圈，除非需要朋友圈转评赞……一般也集不到。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>生活随想</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>拯救者r9000p安全下车</title>
+    <url>/al/42af05cf.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>7588买到，我感觉是香的很。<br>果然这东西就是早买早享受，旧电脑已经被打入冷宫了。<br>现在正在逐步把旧电脑的软件移植过来。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_160922.jpg" title="IMG_20211212_160922" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_160922.jpg" alt="IMG_20211212_160922"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153253.jpg" title="IMG_20211212_153253" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153253.jpg" alt="IMG_20211212_153253"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153512.jpg" title="IMG_20211212_153512" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153512.jpg" alt="IMG_20211212_153512"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153833.jpg" title="IMG_20211212_153833" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153833.jpg" alt="IMG_20211212_153833"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211213234219.png" title="20211213234219" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211213234219.png" alt="20211213234219"></a></p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>“花花世界我一人干翻”</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>电脑卸载个CAD居然把一众软件搞崩溃</title>
+    <url>/al/ef1efdd5.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>为了电气控制课设临时安装CAD，而为了安装CAD我花了大半天下载软件、删掉软件给它腾空间、处理它一打开就开始cpu过载疯狂闪屏的问题。<br>现在的电脑，6100大洋、服役3年的华为matebookd 2018，各种间歇性黑屏，一打开什么软件屏幕就像年久失修的灯一般开始狂闪，看b站还总是音画不同步。不过这种日子终于到头了。<br>我新买的联想r9000p，价格7588，只要明天没啥大问题就直接用，实在受不了破电脑闪屏、C盘永远剩0字节。卸载个cad搞得浏览器崩溃、图床软件崩溃、qq崩溃。我都想不通为什么。<br>这12.12我是一分钟都待不下去了！</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>“花花世界我一人干翻”</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>今夜，学研（二）</title>
+    <url>/al/undefined.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<hr>
+<h3 id="出场人物"><a href="#出场人物" class="headerlink" title="出场人物"></a>出场人物</h3><p><strong>刘平安</strong>：女，学生，能力是缜密的推理和超绝的运气<br><strong>张二狗</strong>：男，学生，能力是高质量男性和高质量男性<br><strong>温  夏</strong>：女，学生，能力是间歇性神棍和白嫖技能点</p>
+<hr>
+<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>&lt;[刘平安]&gt; “……”蛤？<br>&lt;[温夏]&gt; “有点恐怖哈……”<br>&lt;[刘平安]&gt; 推开楼梯间的门向里看去，看看是不是还在生院<br>&lt;[张二狗]&gt; “为啥？我不是下了四层了吗？”推开门看看<br>&lt;[kp]&gt; 你们推开门后眼前的景象和之前看到的生物院别无二致。<br>&lt;[刘平安]&gt; “草。”我一时间失去了语言。<br>&lt;[刘平安]&gt; “…鬼打墙了。”<br>&lt;[刘平安]&gt; 回来观察一下楼梯间里还有没有别的什么<br>&lt;[kp]&gt; 刘平安只看到楼下隐隐约约有光，多半是张二狗的手机。<br>&lt;[温夏]&gt; 此时，我要拿出我的塔罗牌进行占卜</p>
+<blockquote>
+<p>&lt;骰娘&gt; [温夏]掷出了: 1D44=12<br>&lt;[kp]&gt; 温夏抽出了一张逆位教皇。<br>&lt;骰娘&gt; 您在群(630325004)的暗骰结果为<br>&lt;骰娘&gt; 1D100=39<br>&lt;骰娘&gt; kp正在进行暗骰<br>&lt;[kp]&gt; 塔罗牌的提示：错误的讯息……这不是废话吗！都多少个四楼了！</p>
+</blockquote>
+<p>&lt;[温夏]&gt; 神棍地说道：“塔罗牌告诉我们有错误的信息混进了我们的视线……”<br>&lt;[刘平安]&gt; “同学，楼下是什么情况！”我喊到<br>&lt;[张二狗]&gt; “我还在四楼！”<br>&lt;[张二狗]&gt; 再进生物院看看<br>&lt;[刘平安]&gt; “啊啊…鬼打墙了。”学自然的我对于超自然现象感到相当困惑<br>&lt;[刘平安]&gt; “我们要不再进去看看有没有别的出路吧…”<br>&lt;[kp]&gt; 张二狗擦过两个女生的身边进入了楼层，里面依然是之前生物院的样子，其他房间除了辅导员办公室外都锁着门，一切都没有改变。而刘平安和温夏则看到他在里面乱晃。<br>&lt;[张二狗]&gt; “我先进生院再看看！”<br>&lt;[张二狗]&gt; 我转头，“哎？你俩咋在这儿？”<br>&lt;[刘平安]&gt; “……”掐了一下自己<br>&lt;[温夏]&gt; 然后撇撇嘴，把牌收好。“等下，这些楼层连接的都是生物院吗？”<br>&lt;[刘平安]&gt; “看来是的。”<br>&lt;[温夏]&gt; “这个发现不值得一篇诺贝尔奖？”<br>&lt;[温夏]&gt; “永动机找到了！”<br>&lt;[刘平安]&gt; 看看窗户外面<br>&lt;[kp]&gt; 一个活生生的北林男的在你眼前，窗外则是只有一两个人在行走的校园景象。<br>&lt;[刘平安]&gt; “哈哈嗯…”什么鬼东西这都是。<br>&lt;[张二狗]&gt; “咱不会是吸到那什么黑牡丹，出幻觉了吧？”<br>&lt;[刘平安]&gt; “黑莲花吧。”<br>&lt;[温夏]&gt; “那么，有什么破除幻觉的办法吗……”<br>&lt;[张二狗]&gt; “啊，我也记不得了。总之咱仨现在是被困在这里了是吧。”<br>&lt;[刘平安]&gt; “是啊，是来着。”我搜索一下我的植物知识，“不过咱也不能确定就是中了这个迷糊药啊。”<br>&lt;[刘平安]&gt; 于是我决定再逛逛这层楼<br>&lt;[kp]&gt; 楼层和之前相比没有什么变化，被你们弄乱的辅导员办公室也是离开时一副遭了贼的样子。<br>&lt;[张二狗]&gt; 我掐了自己一下看看疼不疼<br>&lt;[kp]&gt; 张二狗觉得痛觉十分真实。<br>&lt;[张二狗]&gt; “猜测，猜测。”<br>&lt;[刘平安]&gt; “我们换一侧楼梯试试看吧。”<br>&lt;[张二狗]&gt; “嘶，我掐我自己感觉挺疼的，我没在做梦。”我回到刚才的楼梯间看看有啥特别的地方<br>&lt;[kp]&gt; 和这一层一样，是老样子。<br>&lt;[温夏]&gt; 那我要看看这里的监控有没有在运作。<br>&lt;[kp]&gt; 监控上没有红光在闪，应该并没有在工作。<br>&lt;[温夏]&gt; 缓缓把头上别的发卡拿下来，以防扯到头发丝。<br>&lt;[温夏]&gt; “早就想这么干了。”<br>&lt;[温夏]&gt; 我随便选一个门撬锁</p>
+<blockquote>
+<p>&lt;骰娘&gt; [温夏]进行锁匠鉴定: D100=24/10失败</p>
+</blockquote>
+<p>&lt;[kp]&gt; 发卡扭了一下，门并没有打开。<br>&lt;[刘平安]&gt; 我决定去上个撤硕冷静一下。<br>&lt;[温夏]&gt; 好吧，把发卡扭回去，别到头发上<br>&lt;[刘平安]&gt; 犹豫了一下，“姐介，陪我上个撤硕。”扭捏<br>&lt;[温夏]&gt; “肘。”<br>&lt;[张二狗]&gt; “哎，你在撬锁吗？我也试试。”我拿出笔袋里面的刀片撬锁</p>
+<blockquote>
+<p>&lt;骰娘&gt; [张二狗]进行锁匠鉴定: D100=66/51失败</p>
+</blockquote>
+<p>&lt;[kp]&gt; 张二狗的刀片也没有撬开门锁。<br>&lt;[kp]&gt; 两个女生作伴前往了卫生间，里面没有一点光亮，只有你们手中的灯光经过镜子的反射照回到你们脸上，把你们的脸色照得分外苍白。<br>&lt;[刘平安]&gt; “哈哈…”尿意压过了恐惧，我打开门进去放水，为了壮胆哼一哼我团的歌。<br>&lt;[温夏]&gt; 别看镜子，默唱国际歌。<br>&lt;[温夏]&gt; 当然，还是要检查一下周围环境有没有异常的<br>&lt;[kp]&gt; 卫生间里回荡着两个女人的歌声和短暂的流水声……<br>&lt;[kp]&gt; 理智告诉温夏这里只是停了电的洗手间，但在不同往日的灯光效果下，多少还是有些瘆人的。<br>&lt;[刘平安]&gt; 尿完就出来了。<br>&lt;[刘平安]&gt; 洗一洗手<br>&lt;[kp]&gt; 是十分清澈的水流。<br>&lt;[温夏]&gt; 行叭，洗完手就离开这里。<br>&lt;[刘平安]&gt; 离开了卫生间。感觉也没有什么太好吓人的。<br>&lt;[刘平安]&gt; 只是黑漆漆而已<br>&lt;[温夏]&gt; 我前去观看大师撬锁<br>&lt;[温夏]&gt; “还有那么多门呢，继续呀。”撺掇大师撬锁<br>&lt;[张二狗]&gt; “啊这，这不太好吧。”<br>&lt;[张二狗]&gt; 在走廊里面走走，看看有走廊里有什么<br>&lt;[kp]&gt; 走廊里是一些稀松平常的装饰，书法啊、画啊，还有紧急疏散路线图。<br>&lt;[刘平安]&gt; 打开零食吃了起来。<br>&lt;[刘平安]&gt; 过去看看紧急疏散路线图。<br>&lt;[温夏]&gt; “也是。”担心地看了看监控。凑到刘平安旁边看她发现什么了。<br>&lt;[张二狗]&gt; 我也过去看看紧急疏散路线图<br>&lt;[kp]&gt; 路线图上简单地标注着诸如步梯、电梯、卫生间的位置。<br>&lt;[温夏]&gt; “怎么办，这破地方是出不去了吧，我都想跳楼了。”用沉重的语气说。<br>&lt;[温夏]&gt; 同时看看上面有没有标配电室的位置<br>&lt;[刘平安]&gt; “诶……”无奈地走来走去嘎吱嘎吱嚼零食，再去电梯那里看看，不抱希望的戳一戳按键<br>&lt;[张二狗]&gt; 我用手敲了敲各处的墙壁<br>&lt;[kp]&gt; 这里没有标注配电室，但温夏可以靠人力找到那些写着“机房重地 非公勿入”的房间。电梯的按键并没有亮起，毕竟仍是停电中。墙壁很凉，张二狗手指很痛。<br>&lt;[刘平安]&gt; 去找温夏看看。<br>&lt;[kp]&gt; 刘平安找到了站在配电室前的温夏。<br>&lt;[温夏]&gt; 握住门把手，不抱希望地看看能不能进去<br>&lt;[kp]&gt; 不出所料，是锁着的……<br>&lt;[温夏]&gt; 面无表情地拿下发卡。<br>&lt;[刘平安]&gt; “加油啊，温夏酱！”<br>&lt;[刘平安]&gt; <a href="http://gchat.qpic.cn/gchatpic_new/0/0-0-DFE5A0B9D27DAD5FB25D9B62919E13A3/0?term=2" class="gallery-item"><img src="http://gchat.qpic.cn/gchatpic_new/0/0-0-DFE5A0B9D27DAD5FB25D9B62919E13A3/0?term=2" width="7%"></a><br>&lt;[刘平安]&gt; “二狗——二狗——”我呼唤着那个男的<br>&lt;[张二狗]&gt; 我撸起袖子，准备撬锁</p>
+<blockquote>
+<p>&lt;骰娘&gt; [张二狗]进行锁匠鉴定: D100=97/51大失败！</p>
+</blockquote>
+<p>&lt;[温夏]&gt; “加油啊……啊？”<br>&lt;[刘平安]&gt; 抹了把脸。<br>&lt;[温夏]&gt; 怎会如此<br>&lt;[温夏]&gt; 心想这就是北林高质量男性吗<br>&lt;[刘平安]&gt; 心想这就是北林高质量男性吗<br>&lt;[kp]&gt; 张二狗太想把锁撬开，因而手下力道过大，刀片清脆地响了一声便绷断了，断掉的那一节没有留在锁孔上、而是朝着他的眼睛飞了出去——<br>&lt;[kp]&gt; 好在最后只是划伤了脸，但张二狗还是受到了不小的惊吓。hp-1，san-1。<br>&lt;[刘平安]&gt; 我给二狗简单处理一下。</p>
+<blockquote>
+<p>&lt;骰娘&gt; [刘平安]进行急救鉴定: D100=7/55极难成功</p>
+</blockquote>
+<p>&lt;[刘平安]&gt; “唉，肘吧，肘吧我们。”于是只好再逛逛这块地方<br>&lt;[刘平安]&gt; 接着下楼吧<br>&lt;[温夏]&gt; 一起行动<br>&lt;[温夏]&gt; 不能落单<br>&lt;[张二狗]&gt; 朋友一生一起走<br>&lt;[刘平安]&gt; 于是我们下楼<br>&lt;[kp]&gt; 没有办法，你们只能硬着头皮回到楼梯间继续向下走了。你们感觉到自己的心脏跳得无比剧烈，砰砰地撞击着胸腔，似乎迫不及待地想冲破肋骨逃离这个地方。</p>
+<blockquote>
+<p>&lt;骰娘&gt; 您在群(630325004)的暗骰结果为<br>&lt;骰娘&gt; 1D100=47<br>&lt;骰娘&gt; kp正在进行暗骰</p>
+</blockquote>
+<p>&lt;[kp]&gt; 就在你们再一次踏上了4F的平台时，你们的手机不约而同地闪了两下，黑屏了。<br>&lt;[刘平安]&gt; “啊…草。”<br>&lt;[kp]&gt; 在手中的灯光熄灭的瞬间，你看到脚边原本暗着的安全出口指示灯突然亮了起来，幽绿的光芒并不强烈却在整个楼梯间内蔓延开来，看着同行者发青的脸和僵硬的表情，你感到一根冰凉的手指划过了自己的脊椎。SC0/1。</p>
+<blockquote>
+<p>&lt;骰娘&gt; [张二狗]的理智检定结果:<br>&lt;骰娘&gt; 80/58=失败<br>&lt;骰娘&gt; 你的理智值减少1=1点,当前剩余57点<br>&lt;骰娘&gt; [刘平安]的理智检定结果:<br>&lt;骰娘&gt; 49/79=成功<br>&lt;骰娘&gt; 你的理智值减少0=0点,当前剩余79点<br>&lt;骰娘&gt; [温夏]的理智检定结果:<br>&lt;骰娘&gt; 57/43=失败<br>&lt;骰娘&gt; 你的理智值减少1=1点,当前剩余42点</p>
+</blockquote>
+<p>&lt;[刘平安]&gt; 我可怜的华子手机消失了光亮<br>&lt;[温夏]&gt; “我特么！！谁挠我！”立刻回头看自己背后<br>&lt;[刘平安]&gt; 回头一看。<br>&lt;[张二狗]&gt; “嘶，你们俩刚才谁摸我！”<br>&lt;[kp]&gt; 你们背后什么都没有，但那股无视厚重衣料的寒冷却无比真实。<br>&lt;[刘平安]&gt; 默念爷不怕爷是小雀斑神奇动物在哪里你奶奶这就看看是什么神奇动物…<br>&lt;[刘平安]&gt; “哈哈…没有人摸你喔。”<br>&lt;[刘平安]&gt; 我冷笑道。<br>&lt;[刘平安]&gt; 想起我的痛包是放了led灯的，试着打开。<br>&lt;[刘平安]&gt; 小乱，救救妈妈！<br>&lt;[温夏]&gt; 好恐怖……警惕地看看那个突然亮起来的指示灯，它指向楼下吗？<br>&lt;[kp]&gt; 刘平安摸黑翻出了led灯，十分微弱的昏暗紫色灯光在她手中。<br>&lt;[kp]&gt; 从有人喊出声起，楼梯间就恢复了黑暗。在温夏的记忆中，它正常地指向下楼的方向。<br>&lt;[kp]&gt; 用这样一盏离开一指距离就完全起不到照明作用的灯下楼，应该很危险吧。<br>&lt;[刘平安]&gt; “…下楼吧。”对超自然现象依旧抱有好奇，摸着乱*砂的包包我感觉好受很多。<br>&lt;[刘平安]&gt; “诶…好黑。”<br>&lt;[温夏]&gt; “嗯……我们扶着扶手，应该不至于摔倒。”<br>&lt;[张二狗]&gt; 我也跟着一起走<br>&lt;[刘平安]&gt; 推门进去看看楼层里有没有应急灯啥的。<br>&lt;[温夏]&gt; 一起行动，先找到灯再下<br>&lt;[温夏]&gt; 如果有的话<br>&lt;[kp]&gt; 离开楼梯间，你们凭借近乎要贴到墙上去的led灯看到了墙壁上熟悉的学院标识：生物科学与技术学院。然而一侧头，眼前的景象和先前截然不同。<br>&lt;[kp]&gt; 没有应急灯，但大厅天花板的正中央亮着一盏紫色的灯，把南北相对放置的沙发、茶几笼罩在了诡丽的光芒中；淡淡的紫光无法触及的地方，公示栏东侧的自动贩卖机似乎仍在工作。<br>&lt;[刘平安]&gt; “啊，变化了。”<br>&lt;[刘平安]&gt; 看看公示栏。<br>&lt;[温夏]&gt; “太诡异了。”忍不住说。走到自动贩卖机旁看看。</p>
+<blockquote>
+<p>&lt;[kp]&gt; 刘平安过图书馆使用<br>&lt;骰娘&gt; [刘平安]进行图书馆使用鉴定: D100=1/50大成功！</p>
+</blockquote>
+<p>&lt;[kp]&gt; 自动贩卖机的屏幕上是优惠促销的广告，香草拿铁8折、冰美式7折；付款码扫描口闪着红点。<br>&lt;[kp]&gt; 刘平安在繁杂的信息堆中发现了这样一张简短的通知：“本院植物学教授钱正辉于11月15日至11月19日赴美国旧金山大学作学术交流，……（调课说明等杂七杂八的内容）。联系本人请发送邮件至<a href="mailto:&#x51;&#105;&#x61;&#x6e;&#x5a;&#x68;&#x65;&#110;&#103;&#x68;&#x75;&#105;&#95;&#48;&#x34;&#x30;&#x37;&#64;&#x62;&#106;&#x66;&#117;&#x2e;&#x65;&#x64;&#x75;&#x2e;&#x63;&#110;">&#x51;&#105;&#x61;&#x6e;&#x5a;&#x68;&#x65;&#110;&#103;&#x68;&#x75;&#105;&#95;&#48;&#x34;&#x30;&#x37;&#64;&#x62;&#106;&#x66;&#117;&#x2e;&#x65;&#x64;&#x75;&#x2e;&#x63;&#110;</a>。”钱正辉……刘平安对这个名字有印象，自己似乎上过他的课。满满一公示栏熟悉的措辞让刘平安觉得稍微安心了些。san+1。<br>&lt;[张二狗]&gt; 看看沙发和茶几上有什么<br>&lt;[kp]&gt; 沙发上什么都没有，茶几上有一些没收走的零食包装袋。<br>&lt;[刘平安]&gt; 记下了这条通知，虽然感觉对现在的状况没什么帮助，但是感到安心。<br>&lt;[张二狗]&gt; 我要观察那盏紫色的灯<br>&lt;[刘平安]&gt; 稍微琢磨了一下，0407…或许是办公室号吗？还是日期？决定去找一找407<br>&lt;[kp]&gt; 天花板上的紫灯颜色和刘平安的led灯一模一样，但比它要明亮些，至少能照亮这一小圈地方。只是盯久了让人眼前发黑，有点头晕。<br>&lt;[温夏]&gt; “为什么停电了自动贩卖机还能工作啊。”无奈地看看黑屏的手机，长按开机键试试能不能开机。<br>&lt;[kp]&gt; 手机震动了一下，温夏听到了熟悉的开机动画的声音，但屏幕仍是一片漆黑。<br>&lt;[张二狗]&gt; 调查下整个大厅看看有没有什么特别的<br>&lt;[kp]&gt; 大厅比较空旷，最不对劲的大概就是紫色的灯和还在工作的自动贩卖机了。<br>&lt;[温夏]&gt; “……不会吧……”看来它是没什么用了，只好收起来，跟着刘平安。<br>&lt;[张二狗]&gt; 去自动贩卖机那边看看，买杯拿铁<br>&lt;[kp]&gt; 温夏跟上刘平安陪她寻找着钱正辉的办公室，不知道是因为你们一直在移动还是楼层的暖气开得太足，走廊里热得让人想把外套脱了。而且越靠近C0407，就热得越厉害。</p>
+<blockquote>
+<p>&lt;[kp]&gt; 过个幸运看看有没有现金<br>&lt;骰娘&gt; [张二狗]进行幸运鉴定: D100=70/55失败</p>
+</blockquote>
+<p>&lt;[张二狗]&gt; 去找那边的两个人<br>&lt;[刘平安]&gt; “…好热啊。”我拉开拉链取下围巾<br>&lt;[kp]&gt; 你们都来到了C0407前，办公室的门敞开着，但根本看不清里面有什么。<br>&lt;[kp]&gt; “?~”<br>&lt;[kp]&gt; 刘平安的手机突然响起了来电铃声，打断了你们的活动。<br>&lt;[刘平安]&gt; “诶？居然可以来电话的吗？”我拿出手机</p>
+<blockquote>
+<p>&lt;[kp]&gt; 过灵感<br>&lt;骰娘&gt; [刘平安]进行灵感鉴定: D100=37/70成功<br>&lt;骰娘&gt; [张二狗]进行灵感鉴定: D100=71/40失败<br>&lt;骰娘&gt; [温夏]进行灵感鉴定: D100=93/70失败</p>
+</blockquote>
+<p>&lt;[kp]&gt; 手机屏幕依然是黑的，怎样滑动都没有反应，乐曲声持续了很久才戛然而止。<br>&lt;[kp]&gt; 刘平安听着自己用了很久的铃声，明明是非常喜欢的旋律，现在落在你的耳朵里却像交通高峰期此起彼伏的鸣笛声，又像婴儿房里幼儿没完没了的尖锐哭声，令人难以忍受、心生烦躁。<br>&lt;[kp]&gt; 站在办公室门前，你们都感到一股莫名的重物压在胸口的窒息感，仿佛有一只无形的大手从背后穿透皮肉的屏障攥住了你们的肺叶。<br>&lt;[刘平安]&gt; “怎么回事…”我揉了揉太阳穴，把手机狠狠装了回去。<br>&lt;[张二狗]&gt; 进门看看，“不知道啊……”<br>&lt;[刘平安]&gt; 捂住口鼻试试。<br>&lt;[刘平安]&gt; 进门。<br>&lt;[温夏]&gt; 进门<br>&lt;[温夏]&gt; 想起我包里还带了ipad，拿出ipad打光<br>&lt;[kp]&gt; 那种令人血管直跳的不适感并没有因为捂住口鼻的举动减弱，反而随着深入办公室变得更加沉重。温夏想要拿出ipad照明，但它的状况和手机如出一辙。在迈进办公室后，你们突然感觉自己的感官变得无比迟钝……</p>
+<blockquote>
+<p>&lt;[kp]&gt; 骰1D3,行动点数<br>&lt;骰娘&gt; [张二狗]掷出了: 1D3=1<br>&lt;骰娘&gt; [温夏]掷出了: 1D3=2<br>&lt;骰娘&gt; [刘平安]掷出了: 1D3=1</p>
+</blockquote>
+<p>&lt;[张二狗]&gt; 感觉不太对，我溜了<br>&lt;[刘平安]&gt; 退出这个房间并试图大家都撤出来时带上门<br>&lt;[温夏]&gt; 那么，我试探性地往里踏一步，找找桌子之类的东西<br>&lt;[刘平安]&gt; “温夏酱，小心呀！”我忍着不适说到<br>&lt;[温夏]&gt; 摸桌子上有啥，有啥拿啥（）<br>&lt;[kp]&gt; 张二狗和刘平安小心地撤回去后觉得胸腔明显轻快了些，然而里面既看不到温夏的身影也听不到她的声音。温夏向前方踏了一步，只觉得自己更热了，丝毫听不到刘平安的呼喊。<br>&lt;[刘平安]&gt; “呜呜。”我看着里面的黑暗，用手撑着门<br>&lt;[温夏]&gt; 太热了，不适感让我没法集中精力思考，我下意识地倒退一步远离热源，退出黑暗<br>&lt;[kp]&gt; 门外的两人看到了从黑洞中回来的温夏，她的指甲泛着不自然的黑色。</p>
+<blockquote>
+<p>&lt;骰娘&gt; 您在群(630325004)的暗骰结果为<br>&lt;骰娘&gt; 1D100=60<br>&lt;骰娘&gt; kp正在进行暗骰</p>
+</blockquote>
+<p>&lt;[张二狗]&gt; “同学，你的手……”<br>&lt;[温夏]&gt; “什么？”我不想注视门里的东西，抬起手。“我的指甲？”<br>&lt;[刘平安]&gt; “你手没事吧…算了我们先离开这里。”赶紧离开这个诡异的办公室门前<br>&lt;[温夏]&gt; 快速离开，然后再看看我的指甲。<br>&lt;[kp]&gt; 温夏的指甲上是斑驳的灰黑色，轻轻抹一下就会变淡变浅。<br>&lt;[kp]&gt; 在直觉和本能的驱动下，你们只能选择放弃进入办公室，离开的途中路过了一个放映厅。<br>&lt;[kp]&gt;隔着大片的玻璃，你发现里面有白光忽明忽灭，追溯光源，在于吊在棚顶的放映机。你在后侧看不到放映的内容，但能看到成排的座椅上密密麻麻地坐满了人，这些黑色的人影一动不动。<br>&lt;[kp]&gt;随着放映结束，室内灯亮了起来。<br>&lt;[kp]&gt;他们在直勾勾地看着你。SC0/1。</p>
+<blockquote>
+<p>&lt;骰娘&gt; [温夏]的理智检定结果:<br>&lt;骰娘&gt; 21/42=成功<br>&lt;骰娘&gt; 你的理智值减少0=0点,当前剩余42点<br>&lt;骰娘&gt; [张二狗]的理智检定结果:<br>&lt;骰娘&gt; 78/57=失败<br>&lt;骰娘&gt; 你的理智值减少1=1点,当前剩余56点<br>&lt;骰娘&gt; [刘平安]的理智检定结果:<br>&lt;骰娘&gt; 4/80=大成功<br>&lt;骰娘&gt; 你的理智值减少0=0点,当前剩余80点<br>&lt;骰娘&gt; 本次理智检定大成功，调查员可考虑使用规则书第8章的自救规则，详情请听从守秘人指示</p>
+</blockquote>
+<p>&lt;[kp]&gt; 漆黑的玻璃上，映照着你们不安的样子。<br>&lt;[温夏]&gt; “你们，你们看到了吗？里面坐满了人，在看我……”<br>&lt;[张二狗]&gt; “看到了……”<br>&lt;[刘平安]&gt; “…”我现在反而更加确信这些超自然的视觉是我的幻觉，而刚刚肺部的灼烧感刚好符合了黑莲花的特征。镇定地凝视着齐刷刷看着我的黑影。<br>&lt;[刘平安]&gt; 等他们消失，我自然也没什么太多反应。“要进去看看吗？”<br>&lt;[张二狗]&gt; “借我点工具。”<br>&lt;[温夏]&gt; 把发卡给二狗子<br>&lt;[张二狗]&gt; 接过温夏的发卡，气沉丹田，开始撬锁</p>
+<blockquote>
+<p>&lt;骰娘&gt; [张二狗]进行锁匠鉴定: D100=53/51失败</p>
+</blockquote>
+<p>&lt;[温夏]&gt; “我来试试！”<br>&lt;[刘平安]&gt; “……”<br>&lt;[温夏]&gt; 拿过发卡往锁孔里塞</p>
+<blockquote>
+<p>&lt;骰娘&gt; [温夏]进行锁匠鉴定: D100=10/10成功</p>
+</blockquote>
+<p>&lt;[刘平安]&gt; “哇！”<br>&lt;[张二狗]&gt; “可以啊。”<br>&lt;[kp]&gt; 在昏暗的走廊里，门锁里的咔哒声格外清晰，你们意识门已经可以打开了。<br>&lt;[温夏]&gt; 首当其冲推门进去。<br>&lt;[张二狗]&gt; 进门<br>&lt;[刘平安]&gt; 镇定地进门<br>&lt;[kp]&gt; 放映室里黑得厉害，前面有一个宽大的讲台，后面的座位隔着一点点距离看起来影影绰绰，并没有什么人影。<br>&lt;[刘平安]&gt; “…刚才还挺热闹的，大伙儿不欢迎我们仨啊。”感觉空气都因为自己的冷笑话冷了三分<br>&lt;[温夏]&gt; “毕竟非法手段进来的？”小心往讲台走，不要撞到什么东西了<br>&lt;[刘平安]&gt; 去讲台看看，刚才还播放了什么来着。<br>&lt;[张二狗]&gt; 摸着黑看看讲台上有什么东西没有<br>&lt;[kp]&gt; 用于承接影像的幕布并没有放下，讲台上是一盒粉笔和一个放映遥控器，下面中空的地方放着一个纸箱，里面胡乱地塞着装订成册的A4纸。<br>&lt;[刘平安]&gt; 摁摁遥控器，看看能否讲下幕布放映，虽然没有电。<br>&lt;[kp]&gt; 遥控器上的小红点闪烁了一下，除此之外没有其他任何反馈。<br>&lt;[张二狗]&gt; 看看A4纸上面有没有写什么东西<br>&lt;[刘平安]&gt; “倒霉保加利亚是克电器吗。”<br>&lt;[刘平安]&gt; 过去看看a4纸箱。<br>&lt;[温夏]&gt; 我也要看A4纸，看完往后面的座位走，找找看有没有什么东西能用</p>
+<blockquote>
+<p>&lt;[kp]&gt; 过图书馆<br>&lt;骰娘&gt; [张二狗]进行图书馆使用鉴定: D100=45/20失败<br>&lt;骰娘&gt; [刘平安]进行图书馆使用鉴定: D100=29/50成功<br>&lt;骰娘&gt; [温夏]进行图书馆鉴定: D100=33/60成功</p>
+</blockquote>
+<p>&lt;[kp]&gt; 张二狗翻找了一番，发现里面基本都是会议分发材料。而两个女生同时从中抽出了一份满是单选题的资料，题目是植物科学专业课相关的，但奇怪的是上面标注的所有选项都是B。
+ </p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -1116,322 +1480,6 @@
       </categories>
       <tags>
         <tag>跑团记录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>今夜，学研（二）</title>
-    <url>/al/undefined.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<hr>
-<h3 id="出场人物"><a href="#出场人物" class="headerlink" title="出场人物"></a>出场人物</h3><p><strong>刘平安</strong>：女，学生，能力是缜密的推理和超绝的运气<br><strong>张二狗</strong>：男，学生，能力是高质量男性和高质量男性<br><strong>温  夏</strong>：女，学生，能力是间歇性神棍和白嫖技能点</p>
-<hr>
-<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>&lt;[刘平安]&gt; “……”蛤？<br>&lt;[温夏]&gt; “有点恐怖哈……”<br>&lt;[刘平安]&gt; 推开楼梯间的门向里看去，看看是不是还在生院<br>&lt;[张二狗]&gt; “为啥？我不是下了四层了吗？”推开门看看<br>&lt;[kp]&gt; 你们推开门后眼前的景象和之前看到的生物院别无二致。<br>&lt;[刘平安]&gt; “草。”我一时间失去了语言。<br>&lt;[刘平安]&gt; “…鬼打墙了。”<br>&lt;[刘平安]&gt; 回来观察一下楼梯间里还有没有别的什么<br>&lt;[kp]&gt; 刘平安只看到楼下隐隐约约有光，多半是张二狗的手机。<br>&lt;[温夏]&gt; 此时，我要拿出我的塔罗牌进行占卜</p>
-<blockquote>
-<p>&lt;骰娘&gt; [温夏]掷出了: 1D44=12<br>&lt;[kp]&gt; 温夏抽出了一张逆位教皇。<br>&lt;骰娘&gt; 您在群(630325004)的暗骰结果为<br>&lt;骰娘&gt; 1D100=39<br>&lt;骰娘&gt; kp正在进行暗骰<br>&lt;[kp]&gt; 塔罗牌的提示：错误的讯息……这不是废话吗！都多少个四楼了！</p>
-</blockquote>
-<p>&lt;[温夏]&gt; 神棍地说道：“塔罗牌告诉我们有错误的信息混进了我们的视线……”<br>&lt;[刘平安]&gt; “同学，楼下是什么情况！”我喊到<br>&lt;[张二狗]&gt; “我还在四楼！”<br>&lt;[张二狗]&gt; 再进生物院看看<br>&lt;[刘平安]&gt; “啊啊…鬼打墙了。”学自然的我对于超自然现象感到相当困惑<br>&lt;[刘平安]&gt; “我们要不再进去看看有没有别的出路吧…”<br>&lt;[kp]&gt; 张二狗擦过两个女生的身边进入了楼层，里面依然是之前生物院的样子，其他房间除了辅导员办公室外都锁着门，一切都没有改变。而刘平安和温夏则看到他在里面乱晃。<br>&lt;[张二狗]&gt; “我先进生院再看看！”<br>&lt;[张二狗]&gt; 我转头，“哎？你俩咋在这儿？”<br>&lt;[刘平安]&gt; “……”掐了一下自己<br>&lt;[温夏]&gt; 然后撇撇嘴，把牌收好。“等下，这些楼层连接的都是生物院吗？”<br>&lt;[刘平安]&gt; “看来是的。”<br>&lt;[温夏]&gt; “这个发现不值得一篇诺贝尔奖？”<br>&lt;[温夏]&gt; “永动机找到了！”<br>&lt;[刘平安]&gt; 看看窗户外面<br>&lt;[kp]&gt; 一个活生生的北林男的在你眼前，窗外则是只有一两个人在行走的校园景象。<br>&lt;[刘平安]&gt; “哈哈嗯…”什么鬼东西这都是。<br>&lt;[张二狗]&gt; “咱不会是吸到那什么黑牡丹，出幻觉了吧？”<br>&lt;[刘平安]&gt; “黑莲花吧。”<br>&lt;[温夏]&gt; “那么，有什么破除幻觉的办法吗……”<br>&lt;[张二狗]&gt; “啊，我也记不得了。总之咱仨现在是被困在这里了是吧。”<br>&lt;[刘平安]&gt; “是啊，是来着。”我搜索一下我的植物知识，“不过咱也不能确定就是中了这个迷糊药啊。”<br>&lt;[刘平安]&gt; 于是我决定再逛逛这层楼<br>&lt;[kp]&gt; 楼层和之前相比没有什么变化，被你们弄乱的辅导员办公室也是离开时一副遭了贼的样子。<br>&lt;[张二狗]&gt; 我掐了自己一下看看疼不疼<br>&lt;[kp]&gt; 张二狗觉得痛觉十分真实。<br>&lt;[张二狗]&gt; “猜测，猜测。”<br>&lt;[刘平安]&gt; “我们换一侧楼梯试试看吧。”<br>&lt;[张二狗]&gt; “嘶，我掐我自己感觉挺疼的，我没在做梦。”我回到刚才的楼梯间看看有啥特别的地方<br>&lt;[kp]&gt; 和这一层一样，是老样子。<br>&lt;[温夏]&gt; 那我要看看这里的监控有没有在运作。<br>&lt;[kp]&gt; 监控上没有红光在闪，应该并没有在工作。<br>&lt;[温夏]&gt; 缓缓把头上别的发卡拿下来，以防扯到头发丝。<br>&lt;[温夏]&gt; “早就想这么干了。”<br>&lt;[温夏]&gt; 我随便选一个门撬锁</p>
-<blockquote>
-<p>&lt;骰娘&gt; [温夏]进行锁匠鉴定: D100=24/10失败</p>
-</blockquote>
-<p>&lt;[kp]&gt; 发卡扭了一下，门并没有打开。<br>&lt;[刘平安]&gt; 我决定去上个撤硕冷静一下。<br>&lt;[温夏]&gt; 好吧，把发卡扭回去，别到头发上<br>&lt;[刘平安]&gt; 犹豫了一下，“姐介，陪我上个撤硕。”扭捏<br>&lt;[温夏]&gt; “肘。”<br>&lt;[张二狗]&gt; “哎，你在撬锁吗？我也试试。”我拿出笔袋里面的刀片撬锁</p>
-<blockquote>
-<p>&lt;骰娘&gt; [张二狗]进行锁匠鉴定: D100=66/51失败</p>
-</blockquote>
-<p>&lt;[kp]&gt; 张二狗的刀片也没有撬开门锁。<br>&lt;[kp]&gt; 两个女生作伴前往了卫生间，里面没有一点光亮，只有你们手中的灯光经过镜子的反射照回到你们脸上，把你们的脸色照得分外苍白。<br>&lt;[刘平安]&gt; “哈哈…”尿意压过了恐惧，我打开门进去放水，为了壮胆哼一哼我团的歌。<br>&lt;[温夏]&gt; 别看镜子，默唱国际歌。<br>&lt;[温夏]&gt; 当然，还是要检查一下周围环境有没有异常的<br>&lt;[kp]&gt; 卫生间里回荡着两个女人的歌声和短暂的流水声……<br>&lt;[kp]&gt; 理智告诉温夏这里只是停了电的洗手间，但在不同往日的灯光效果下，多少还是有些瘆人的。<br>&lt;[刘平安]&gt; 尿完就出来了。<br>&lt;[刘平安]&gt; 洗一洗手<br>&lt;[kp]&gt; 是十分清澈的水流。<br>&lt;[温夏]&gt; 行叭，洗完手就离开这里。<br>&lt;[刘平安]&gt; 离开了卫生间。感觉也没有什么太好吓人的。<br>&lt;[刘平安]&gt; 只是黑漆漆而已<br>&lt;[温夏]&gt; 我前去观看大师撬锁<br>&lt;[温夏]&gt; “还有那么多门呢，继续呀。”撺掇大师撬锁<br>&lt;[张二狗]&gt; “啊这，这不太好吧。”<br>&lt;[张二狗]&gt; 在走廊里面走走，看看有走廊里有什么<br>&lt;[kp]&gt; 走廊里是一些稀松平常的装饰，书法啊、画啊，还有紧急疏散路线图。<br>&lt;[刘平安]&gt; 打开零食吃了起来。<br>&lt;[刘平安]&gt; 过去看看紧急疏散路线图。<br>&lt;[温夏]&gt; “也是。”担心地看了看监控。凑到刘平安旁边看她发现什么了。<br>&lt;[张二狗]&gt; 我也过去看看紧急疏散路线图<br>&lt;[kp]&gt; 路线图上简单地标注着诸如步梯、电梯、卫生间的位置。<br>&lt;[温夏]&gt; “怎么办，这破地方是出不去了吧，我都想跳楼了。”用沉重的语气说。<br>&lt;[温夏]&gt; 同时看看上面有没有标配电室的位置<br>&lt;[刘平安]&gt; “诶……”无奈地走来走去嘎吱嘎吱嚼零食，再去电梯那里看看，不抱希望的戳一戳按键<br>&lt;[张二狗]&gt; 我用手敲了敲各处的墙壁<br>&lt;[kp]&gt; 这里没有标注配电室，但温夏可以靠人力找到那些写着“机房重地 非公勿入”的房间。电梯的按键并没有亮起，毕竟仍是停电中。墙壁很凉，张二狗手指很痛。<br>&lt;[刘平安]&gt; 去找温夏看看。<br>&lt;[kp]&gt; 刘平安找到了站在配电室前的温夏。<br>&lt;[温夏]&gt; 握住门把手，不抱希望地看看能不能进去<br>&lt;[kp]&gt; 不出所料，是锁着的……<br>&lt;[温夏]&gt; 面无表情地拿下发卡。<br>&lt;[刘平安]&gt; “加油啊，温夏酱！”<br>&lt;[刘平安]&gt; <a href="http://gchat.qpic.cn/gchatpic_new/0/0-0-DFE5A0B9D27DAD5FB25D9B62919E13A3/0?term=2" class="gallery-item"><img src="http://gchat.qpic.cn/gchatpic_new/0/0-0-DFE5A0B9D27DAD5FB25D9B62919E13A3/0?term=2" width="7%"></a><br>&lt;[刘平安]&gt; “二狗——二狗——”我呼唤着那个男的<br>&lt;[张二狗]&gt; 我撸起袖子，准备撬锁</p>
-<blockquote>
-<p>&lt;骰娘&gt; [张二狗]进行锁匠鉴定: D100=97/51大失败！</p>
-</blockquote>
-<p>&lt;[温夏]&gt; “加油啊……啊？”<br>&lt;[刘平安]&gt; 抹了把脸。<br>&lt;[温夏]&gt; 怎会如此<br>&lt;[温夏]&gt; 心想这就是北林高质量男性吗<br>&lt;[刘平安]&gt; 心想这就是北林高质量男性吗<br>&lt;[kp]&gt; 张二狗太想把锁撬开，因而手下力道过大，刀片清脆地响了一声便绷断了，断掉的那一节没有留在锁孔上、而是朝着他的眼睛飞了出去——<br>&lt;[kp]&gt; 好在最后只是划伤了脸，但张二狗还是受到了不小的惊吓。hp-1，san-1。<br>&lt;[刘平安]&gt; 我给二狗简单处理一下。</p>
-<blockquote>
-<p>&lt;骰娘&gt; [刘平安]进行急救鉴定: D100=7/55极难成功</p>
-</blockquote>
-<p>&lt;[刘平安]&gt; “唉，肘吧，肘吧我们。”于是只好再逛逛这块地方<br>&lt;[刘平安]&gt; 接着下楼吧<br>&lt;[温夏]&gt; 一起行动<br>&lt;[温夏]&gt; 不能落单<br>&lt;[张二狗]&gt; 朋友一生一起走<br>&lt;[刘平安]&gt; 于是我们下楼<br>&lt;[kp]&gt; 没有办法，你们只能硬着头皮回到楼梯间继续向下走了。你们感觉到自己的心脏跳得无比剧烈，砰砰地撞击着胸腔，似乎迫不及待地想冲破肋骨逃离这个地方。</p>
-<blockquote>
-<p>&lt;骰娘&gt; 您在群(630325004)的暗骰结果为<br>&lt;骰娘&gt; 1D100=47<br>&lt;骰娘&gt; kp正在进行暗骰</p>
-</blockquote>
-<p>&lt;[kp]&gt; 就在你们再一次踏上了4F的平台时，你们的手机不约而同地闪了两下，黑屏了。<br>&lt;[刘平安]&gt; “啊…草。”<br>&lt;[kp]&gt; 在手中的灯光熄灭的瞬间，你看到脚边原本暗着的安全出口指示灯突然亮了起来，幽绿的光芒并不强烈却在整个楼梯间内蔓延开来，看着同行者发青的脸和僵硬的表情，你感到一根冰凉的手指划过了自己的脊椎。SC0/1。</p>
-<blockquote>
-<p>&lt;骰娘&gt; [张二狗]的理智检定结果:<br>&lt;骰娘&gt; 80/58=失败<br>&lt;骰娘&gt; 你的理智值减少1=1点,当前剩余57点<br>&lt;骰娘&gt; [刘平安]的理智检定结果:<br>&lt;骰娘&gt; 49/79=成功<br>&lt;骰娘&gt; 你的理智值减少0=0点,当前剩余79点<br>&lt;骰娘&gt; [温夏]的理智检定结果:<br>&lt;骰娘&gt; 57/43=失败<br>&lt;骰娘&gt; 你的理智值减少1=1点,当前剩余42点</p>
-</blockquote>
-<p>&lt;[刘平安]&gt; 我可怜的华子手机消失了光亮<br>&lt;[温夏]&gt; “我特么！！谁挠我！”立刻回头看自己背后<br>&lt;[刘平安]&gt; 回头一看。<br>&lt;[张二狗]&gt; “嘶，你们俩刚才谁摸我！”<br>&lt;[kp]&gt; 你们背后什么都没有，但那股无视厚重衣料的寒冷却无比真实。<br>&lt;[刘平安]&gt; 默念爷不怕爷是小雀斑神奇动物在哪里你奶奶这就看看是什么神奇动物…<br>&lt;[刘平安]&gt; “哈哈…没有人摸你喔。”<br>&lt;[刘平安]&gt; 我冷笑道。<br>&lt;[刘平安]&gt; 想起我的痛包是放了led灯的，试着打开。<br>&lt;[刘平安]&gt; 小乱，救救妈妈！<br>&lt;[温夏]&gt; 好恐怖……警惕地看看那个突然亮起来的指示灯，它指向楼下吗？<br>&lt;[kp]&gt; 刘平安摸黑翻出了led灯，十分微弱的昏暗紫色灯光在她手中。<br>&lt;[kp]&gt; 从有人喊出声起，楼梯间就恢复了黑暗。在温夏的记忆中，它正常地指向下楼的方向。<br>&lt;[kp]&gt; 用这样一盏离开一指距离就完全起不到照明作用的灯下楼，应该很危险吧。<br>&lt;[刘平安]&gt; “…下楼吧。”对超自然现象依旧抱有好奇，摸着乱*砂的包包我感觉好受很多。<br>&lt;[刘平安]&gt; “诶…好黑。”<br>&lt;[温夏]&gt; “嗯……我们扶着扶手，应该不至于摔倒。”<br>&lt;[张二狗]&gt; 我也跟着一起走<br>&lt;[刘平安]&gt; 推门进去看看楼层里有没有应急灯啥的。<br>&lt;[温夏]&gt; 一起行动，先找到灯再下<br>&lt;[温夏]&gt; 如果有的话<br>&lt;[kp]&gt; 离开楼梯间，你们凭借近乎要贴到墙上去的led灯看到了墙壁上熟悉的学院标识：生物科学与技术学院。然而一侧头，眼前的景象和先前截然不同。<br>&lt;[kp]&gt; 没有应急灯，但大厅天花板的正中央亮着一盏紫色的灯，把南北相对放置的沙发、茶几笼罩在了诡丽的光芒中；淡淡的紫光无法触及的地方，公示栏东侧的自动贩卖机似乎仍在工作。<br>&lt;[刘平安]&gt; “啊，变化了。”<br>&lt;[刘平安]&gt; 看看公示栏。<br>&lt;[温夏]&gt; “太诡异了。”忍不住说。走到自动贩卖机旁看看。</p>
-<blockquote>
-<p>&lt;[kp]&gt; 刘平安过图书馆使用<br>&lt;骰娘&gt; [刘平安]进行图书馆使用鉴定: D100=1/50大成功！</p>
-</blockquote>
-<p>&lt;[kp]&gt; 自动贩卖机的屏幕上是优惠促销的广告，香草拿铁8折、冰美式7折；付款码扫描口闪着红点。<br>&lt;[kp]&gt; 刘平安在繁杂的信息堆中发现了这样一张简短的通知：“本院植物学教授钱正辉于11月15日至11月19日赴美国旧金山大学作学术交流，……（调课说明等杂七杂八的内容）。联系本人请发送邮件至<a href="mailto:&#81;&#105;&#x61;&#x6e;&#x5a;&#x68;&#x65;&#x6e;&#103;&#x68;&#117;&#x69;&#x5f;&#x30;&#x34;&#48;&#55;&#x40;&#98;&#106;&#x66;&#117;&#x2e;&#101;&#100;&#117;&#x2e;&#x63;&#x6e;">&#81;&#105;&#x61;&#x6e;&#x5a;&#x68;&#x65;&#x6e;&#103;&#x68;&#117;&#x69;&#x5f;&#x30;&#x34;&#48;&#55;&#x40;&#98;&#106;&#x66;&#117;&#x2e;&#101;&#100;&#117;&#x2e;&#x63;&#x6e;</a>。”钱正辉……刘平安对这个名字有印象，自己似乎上过他的课。满满一公示栏熟悉的措辞让刘平安觉得稍微安心了些。san+1。<br>&lt;[张二狗]&gt; 看看沙发和茶几上有什么<br>&lt;[kp]&gt; 沙发上什么都没有，茶几上有一些没收走的零食包装袋。<br>&lt;[刘平安]&gt; 记下了这条通知，虽然感觉对现在的状况没什么帮助，但是感到安心。<br>&lt;[张二狗]&gt; 我要观察那盏紫色的灯<br>&lt;[刘平安]&gt; 稍微琢磨了一下，0407…或许是办公室号吗？还是日期？决定去找一找407<br>&lt;[kp]&gt; 天花板上的紫灯颜色和刘平安的led灯一模一样，但比它要明亮些，至少能照亮这一小圈地方。只是盯久了让人眼前发黑，有点头晕。<br>&lt;[温夏]&gt; “为什么停电了自动贩卖机还能工作啊。”无奈地看看黑屏的手机，长按开机键试试能不能开机。<br>&lt;[kp]&gt; 手机震动了一下，温夏听到了熟悉的开机动画的声音，但屏幕仍是一片漆黑。<br>&lt;[张二狗]&gt; 调查下整个大厅看看有没有什么特别的<br>&lt;[kp]&gt; 大厅比较空旷，最不对劲的大概就是紫色的灯和还在工作的自动贩卖机了。<br>&lt;[温夏]&gt; “……不会吧……”看来它是没什么用了，只好收起来，跟着刘平安。<br>&lt;[张二狗]&gt; 去自动贩卖机那边看看，买杯拿铁<br>&lt;[kp]&gt; 温夏跟上刘平安陪她寻找着钱正辉的办公室，不知道是因为你们一直在移动还是楼层的暖气开得太足，走廊里热得让人想把外套脱了。而且越靠近C0407，就热得越厉害。</p>
-<blockquote>
-<p>&lt;[kp]&gt; 过个幸运看看有没有现金<br>&lt;骰娘&gt; [张二狗]进行幸运鉴定: D100=70/55失败</p>
-</blockquote>
-<p>&lt;[张二狗]&gt; 去找那边的两个人<br>&lt;[刘平安]&gt; “…好热啊。”我拉开拉链取下围巾<br>&lt;[kp]&gt; 你们都来到了C0407前，办公室的门敞开着，但根本看不清里面有什么。<br>&lt;[kp]&gt; “?~”<br>&lt;[kp]&gt; 刘平安的手机突然响起了来电铃声，打断了你们的活动。<br>&lt;[刘平安]&gt; “诶？居然可以来电话的吗？”我拿出手机</p>
-<blockquote>
-<p>&lt;[kp]&gt; 过灵感<br>&lt;骰娘&gt; [刘平安]进行灵感鉴定: D100=37/70成功<br>&lt;骰娘&gt; [张二狗]进行灵感鉴定: D100=71/40失败<br>&lt;骰娘&gt; [温夏]进行灵感鉴定: D100=93/70失败</p>
-</blockquote>
-<p>&lt;[kp]&gt; 手机屏幕依然是黑的，怎样滑动都没有反应，乐曲声持续了很久才戛然而止。<br>&lt;[kp]&gt; 刘平安听着自己用了很久的铃声，明明是非常喜欢的旋律，现在落在你的耳朵里却像交通高峰期此起彼伏的鸣笛声，又像婴儿房里幼儿没完没了的尖锐哭声，令人难以忍受、心生烦躁。<br>&lt;[kp]&gt; 站在办公室门前，你们都感到一股莫名的重物压在胸口的窒息感，仿佛有一只无形的大手从背后穿透皮肉的屏障攥住了你们的肺叶。<br>&lt;[刘平安]&gt; “怎么回事…”我揉了揉太阳穴，把手机狠狠装了回去。<br>&lt;[张二狗]&gt; 进门看看，“不知道啊……”<br>&lt;[刘平安]&gt; 捂住口鼻试试。<br>&lt;[刘平安]&gt; 进门。<br>&lt;[温夏]&gt; 进门<br>&lt;[温夏]&gt; 想起我包里还带了ipad，拿出ipad打光<br>&lt;[kp]&gt; 那种令人血管直跳的不适感并没有因为捂住口鼻的举动减弱，反而随着深入办公室变得更加沉重。温夏想要拿出ipad照明，但它的状况和手机如出一辙。在迈进办公室后，你们突然感觉自己的感官变得无比迟钝……</p>
-<blockquote>
-<p>&lt;[kp]&gt; 骰1D3,行动点数<br>&lt;骰娘&gt; [张二狗]掷出了: 1D3=1<br>&lt;骰娘&gt; [温夏]掷出了: 1D3=2<br>&lt;骰娘&gt; [刘平安]掷出了: 1D3=1</p>
-</blockquote>
-<p>&lt;[张二狗]&gt; 感觉不太对，我溜了<br>&lt;[刘平安]&gt; 退出这个房间并试图大家都撤出来时带上门<br>&lt;[温夏]&gt; 那么，我试探性地往里踏一步，找找桌子之类的东西<br>&lt;[刘平安]&gt; “温夏酱，小心呀！”我忍着不适说到<br>&lt;[温夏]&gt; 摸桌子上有啥，有啥拿啥（）<br>&lt;[kp]&gt; 张二狗和刘平安小心地撤回去后觉得胸腔明显轻快了些，然而里面既看不到温夏的身影也听不到她的声音。温夏向前方踏了一步，只觉得自己更热了，丝毫听不到刘平安的呼喊。<br>&lt;[刘平安]&gt; “呜呜。”我看着里面的黑暗，用手撑着门<br>&lt;[温夏]&gt; 太热了，不适感让我没法集中精力思考，我下意识地倒退一步远离热源，退出黑暗<br>&lt;[kp]&gt; 门外的两人看到了从黑洞中回来的温夏，她的指甲泛着不自然的黑色。</p>
-<blockquote>
-<p>&lt;骰娘&gt; 您在群(630325004)的暗骰结果为<br>&lt;骰娘&gt; 1D100=60<br>&lt;骰娘&gt; kp正在进行暗骰</p>
-</blockquote>
-<p>&lt;[张二狗]&gt; “同学，你的手……”<br>&lt;[温夏]&gt; “什么？”我不想注视门里的东西，抬起手。“我的指甲？”<br>&lt;[刘平安]&gt; “你手没事吧…算了我们先离开这里。”赶紧离开这个诡异的办公室门前<br>&lt;[温夏]&gt; 快速离开，然后再看看我的指甲。<br>&lt;[kp]&gt; 温夏的指甲上是斑驳的灰黑色，轻轻抹一下就会变淡变浅。<br>&lt;[kp]&gt; 在直觉和本能的驱动下，你们只能选择放弃进入办公室，离开的途中路过了一个放映厅。<br>&lt;[kp]&gt;隔着大片的玻璃，你发现里面有白光忽明忽灭，追溯光源，在于吊在棚顶的放映机。你在后侧看不到放映的内容，但能看到成排的座椅上密密麻麻地坐满了人，这些黑色的人影一动不动。<br>&lt;[kp]&gt;随着放映结束，室内灯亮了起来。<br>&lt;[kp]&gt;他们在直勾勾地看着你。SC0/1。</p>
-<blockquote>
-<p>&lt;骰娘&gt; [温夏]的理智检定结果:<br>&lt;骰娘&gt; 21/42=成功<br>&lt;骰娘&gt; 你的理智值减少0=0点,当前剩余42点<br>&lt;骰娘&gt; [张二狗]的理智检定结果:<br>&lt;骰娘&gt; 78/57=失败<br>&lt;骰娘&gt; 你的理智值减少1=1点,当前剩余56点<br>&lt;骰娘&gt; [刘平安]的理智检定结果:<br>&lt;骰娘&gt; 4/80=大成功<br>&lt;骰娘&gt; 你的理智值减少0=0点,当前剩余80点<br>&lt;骰娘&gt; 本次理智检定大成功，调查员可考虑使用规则书第8章的自救规则，详情请听从守秘人指示</p>
-</blockquote>
-<p>&lt;[kp]&gt; 漆黑的玻璃上，映照着你们不安的样子。<br>&lt;[温夏]&gt; “你们，你们看到了吗？里面坐满了人，在看我……”<br>&lt;[张二狗]&gt; “看到了……”<br>&lt;[刘平安]&gt; “…”我现在反而更加确信这些超自然的视觉是我的幻觉，而刚刚肺部的灼烧感刚好符合了黑莲花的特征。镇定地凝视着齐刷刷看着我的黑影。<br>&lt;[刘平安]&gt; 等他们消失，我自然也没什么太多反应。“要进去看看吗？”<br>&lt;[张二狗]&gt; “借我点工具。”<br>&lt;[温夏]&gt; 把发卡给二狗子<br>&lt;[张二狗]&gt; 接过温夏的发卡，气沉丹田，开始撬锁</p>
-<blockquote>
-<p>&lt;骰娘&gt; [张二狗]进行锁匠鉴定: D100=53/51失败</p>
-</blockquote>
-<p>&lt;[温夏]&gt; “我来试试！”<br>&lt;[刘平安]&gt; “……”<br>&lt;[温夏]&gt; 拿过发卡往锁孔里塞</p>
-<blockquote>
-<p>&lt;骰娘&gt; [温夏]进行锁匠鉴定: D100=10/10成功</p>
-</blockquote>
-<p>&lt;[刘平安]&gt; “哇！”<br>&lt;[张二狗]&gt; “可以啊。”<br>&lt;[kp]&gt; 在昏暗的走廊里，门锁里的咔哒声格外清晰，你们意识门已经可以打开了。<br>&lt;[温夏]&gt; 首当其冲推门进去。<br>&lt;[张二狗]&gt; 进门<br>&lt;[刘平安]&gt; 镇定地进门<br>&lt;[kp]&gt; 放映室里黑得厉害，前面有一个宽大的讲台，后面的座位隔着一点点距离看起来影影绰绰，并没有什么人影。<br>&lt;[刘平安]&gt; “…刚才还挺热闹的，大伙儿不欢迎我们仨啊。”感觉空气都因为自己的冷笑话冷了三分<br>&lt;[温夏]&gt; “毕竟非法手段进来的？”小心往讲台走，不要撞到什么东西了<br>&lt;[刘平安]&gt; 去讲台看看，刚才还播放了什么来着。<br>&lt;[张二狗]&gt; 摸着黑看看讲台上有什么东西没有<br>&lt;[kp]&gt; 用于承接影像的幕布并没有放下，讲台上是一盒粉笔和一个放映遥控器，下面中空的地方放着一个纸箱，里面胡乱地塞着装订成册的A4纸。<br>&lt;[刘平安]&gt; 摁摁遥控器，看看能否讲下幕布放映，虽然没有电。<br>&lt;[kp]&gt; 遥控器上的小红点闪烁了一下，除此之外没有其他任何反馈。<br>&lt;[张二狗]&gt; 看看A4纸上面有没有写什么东西<br>&lt;[刘平安]&gt; “倒霉保加利亚是克电器吗。”<br>&lt;[刘平安]&gt; 过去看看a4纸箱。<br>&lt;[温夏]&gt; 我也要看A4纸，看完往后面的座位走，找找看有没有什么东西能用</p>
-<blockquote>
-<p>&lt;[kp]&gt; 过图书馆<br>&lt;骰娘&gt; [张二狗]进行图书馆使用鉴定: D100=45/20失败<br>&lt;骰娘&gt; [刘平安]进行图书馆使用鉴定: D100=29/50成功<br>&lt;骰娘&gt; [温夏]进行图书馆鉴定: D100=33/60成功</p>
-</blockquote>
-<p>&lt;[kp]&gt; 张二狗翻找了一番，发现里面基本都是会议分发材料。而两个女生同时从中抽出了一份满是单选题的资料，题目是植物科学专业课相关的，但奇怪的是上面标注的所有选项都是B。
- </p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>5-文字创作</category>
-        <category>COC TRPG</category>
-      </categories>
-      <tags>
-        <tag>跑团记录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>梦 / 学校、医院和坍塌</title>
-    <url>/al/854ea9b6.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>一群人进入一座楼，白天。一楼有体育室和办公室，是学校一样的地方。<br>他们分组去搜查其他楼层，我就去检查体育室，一眼看到右边柜子上挂着一副世界地图。问办公室里的人能不能看，他们答应了我就靠近看。<br>突然地图掉下来，我吓了一跳。<br>地图后面的柜子，柜门是玻璃窗口，其他都是漆木。玻璃上歪歪扭扭写着三个方程还有其他鬼画符。拿手机拍下来以后回头看，发现人都不见了。<br>我退出体育室，去其他办公室搜查，没有发现什么。就决定上楼与其他人汇合。<br>楼上都是教室，我直到顶楼才看到人。<br>不过目睹的是一个长着猪脑袋和獠牙的人型怪物向一扇细窄的黑洞洞的门里伸出手，门里丢给他一个像沙包的东西。<br>他拿着这个进教室，不一会就拖了四个昏迷的人出来把他们放在一张圆桌前挨个坐好。我看见猪头人走了，蹭过去想摇醒他们。<br>没有用。<br>这时，我发现那扇细窄的黑门就在面前的墙壁上。试着伸出手说：“解药。”然后，门里浮现出一个干瘦的惨白人脸，一只手把沙包丢给我。<br>我把沙包拿给四个人闻，他们都醒了。<br>两个人结伴从另一个楼道走，我背起一个腿伤的人，问剩下的最后一个：“你不走吗？”<br>“我留下来拖延时间。”<br>我点点头：“我会回来找你。”<br>我下了楼，没有遇见意外。把腿伤的人放在大楼外后，我准备返回大楼。<br>路上遇见从另一边顺利下来的两个人。他们看见我回去很惊讶，我说里面还有一个人。他们劝道：“别去，太危险了。”<br>我摇摇头，进入大楼一层。这次不是学校了，而是超大医院的大厅。没有顶灯，所有的灯光都是屏幕发出的，米黄和草绿交错。医院里整齐地布置着座椅，座椅上坐满了候诊的人。<br>哪里会有医院把候诊大厅搞得跟火车站一样。<br>他们有电梯，我没用，跑到楼梯井里，一个包工头对着面前跪下的一个人说道：“你是榜眼？除非你们的状元也给我跪下，我才……”<br>状元走上前，我没有看到更多，上了楼，包工头的笑声很有穿透力。但我踏上二楼，发现楼梯很不稳定。<br>开始狂奔，我跑过一层，楼梯就塌一层。就在四楼，整座大楼倒塌。<br>一阵强烈的失重感后，我醒来了。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦 / 应试教育后遗症</title>
-    <url>/al/e0182a80.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>早上做梦梦见下午两点有一个生物学考试。关键是我7点被吵醒那会对自己做的梦深信不疑，睡到8点半的这段时间内梦境在自动补完“我有一个选修课一直没去上但几个小时后就要考试”的这回事。<br>甚至脑补了具体的上课情景，确定这门课叫“上帝知道答案”。讲课的是一个女老师，和我一起上课的有舍友和隔壁班同学。然后梦里我不乐意去问舍友，就问了隔壁班同学，这位同学石锤了下午两点有考试，然后就开始慌，恐慌，虽然9小时复习概率论/12小时速通PLC不是没有过，但是距离下午两点只有6小时了，我根本不记得这门课的任何内容。平时既然没去上课那肯定没有平时分。我恐惧保研功亏一篑。<br>直到刷完牙我都还没想明白到底有没有“选修课下午两点考试”这回事</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦 / 我真是个起名天才</title>
-    <url>/al/cedb3f7b.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>今天的梦又是一个大型连续剧。。<br>背景星际，但是一群人又会点火又会再生水资源的，醒来我都懵这是什么鬼畜修仙+科幻<br>现在已经有点记不清了<br>就记得主角1叫然倚暮（好像是，我记得是三个字，最后一个字很复杂），真名叫何然，不知道惹了什么事（大概是家族政变），处于逃亡状态。<br>中间应该发生了很多事，有一个半机械人（主角2）在追杀她，最后棋差一着被何然借助激光发射器干碎了半个身子，终止了他的追杀。<br>何然很冷静聪明，她根据半机械人的指示找到一个玩具熊，玩具熊背后的标签上会显示【未来一段时间内最大概率发生的事件】。<br>她看玩具熊的标签，上面写着【卫队包围了老宅】。<br>何然被抓起来了。<br>被抓回去开家庭会议。<br>她面对她妈和她奶奶，她爸死了。看过标签的何然知道要从奶奶这里突破，她妈是个不折不扣的反派。<br>然后就想不起来了……</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦 / 文明间的战术欺骗</title>
-    <url>/al/2ae3dcb7.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>今天的梦是我声称发现适距中子星可以利用新武器将其引爆并取得与敌对地外文明的战争胜利。<br>该地外文明宣告投降，派出一位代表由我带领参观地球。<br>该代表的形象是抽象蓝绿鱼头人。<br>在参观过程中我告诉他：“其实并没有中子星，我骗你们的。”<br>参观在沉默中结束了。<br>蓝绿鱼头人代表回去后宣战。<br>于是我方引爆了中子星。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦 / 正宫的不屑.jpg</title>
-    <url>/al/7f780e8f.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>昨天晚上梦到我拿着我推纸片人1的照片（立绘？）给正宫纸片人2看，纸片人2不屑地笑了 ​​​</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦 / 人鱼双子成功脱困了吗</title>
-    <url>/al/d507747a.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>有人指挥我进一家服装店，把里面的衣服拿出去以很便宜的价格叫卖，吸引到一些顾客正在议价时，突然发现哥哥的电话打不通。<br>直觉就是出事了，打119，立刻进行搜索，我和我爸去找人，找到一个很阴暗的地窖，里面都是大酒坛子。打开一个坛子，发现哥哥就在里面，虚弱无力的样子。<br>然后因为发现了秘密，我被塞进酒坛子里，我爸被杀。没有人来救，渐渐我发现在坛子里我们的腿变成了鱼尾。<br>之后，我和哥哥被丢到一个四方的水泥池里，里面水很浅，后来多了起来，还可以养鱼。有一天我们的手上都长了水泡，很痛，但是一个人告诉我们这是鱼卵，指着哥哥的手说他的已经孵化了，很快就好。确实是这样，我手上的水泡掉下来以后孵出一只黄色扁热带鱼，然后就好了。<br>一天涨潮，潮水没过小池子，我和哥哥趁机游出去。逃到一个很多人的岸边，大家都很惊讶地看着，然后有一个人把我们带走了，发现我们过了太久，不会认字说话，就让我们认字。<br>最后，发现鱼尾可以在完全干燥的情况下变成人腿，我和哥哥的头发变成红色，红色的短发蘑菇头，可以上岸走路但是不能晒太阳，就给我们定制了特别的衣服，紫色。<br>红色头发紫色衣服，两个人手牵手站在一段台阶顶端，似乎要去参加什么典礼。这是我最后梦到的画面。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦 / 纸片人的精神分裂症状</title>
-    <url>/al/619adc62.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>三个片段，互相无关联。<br>1.我在玩一个2d像素游戏，做了隐藏任务赚了好多钱。<br>2舍友写小说给我看，我觉得插图很丑就改了改，然后发现这样不打招呼就改很不礼貌。<br>3.我找钟离，balabalabalabala（中间忘记了），他送了我一个挂在包上的链子，一把餐刀，表示以后我是他女朋友了！梦里的我：其实我更希望是您的副人格万叶。</p>
-<p>醒来：？</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦 / 追查无形怪物</title>
-    <url>/al/85fa5e38.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>梦见出现了一种奇怪的力量，其表现形式是人有时候会无缘无故被突然扯一下，但不是别人干的。<br>就像透明人恶作剧一样。<br>这个现象变得越发严重了，我曾见到一个小女孩被来自多方向的无形的力折断骨头，整个人扭曲变形。<br>我去追查这种现象的源头，到一座大厦里（特别像学校的学研中心），进门的时候刚好目睹一个深蓝色衣服的人从高空坠落，砸到地上。<br>因为事情紧急，就没有去管，但是我和助手都认为肯定和源头有关。<br>上楼，被发现，开始躲，躲到一个占卜师的家里，她帮我隐藏了起来，还让我抽了三张塔罗牌，但是没有读牌，我也不记得三张牌是什么。<br>后来我的队友赶到了，在楼外辅助，我下了楼，看到那个坠落的人，走进发现只是一件外套，外套里面摆着一个只有一半的饼干。<br>这个饼干是软的，很大，一个巴掌那么大，完整版应该是两颗心被箭串在一起，这里只有一半，两个心是粉的，中间用黄色写了几个单词，但是不完整。<br>我突然发觉这个跳楼的人就是我。<br>我要传达给我什么信息？<br>在保温杯里找到了另外一半饼干，把它们拼起来，我知道了完整的句子。<br>从占卜师那里走后，她把占卜的牌送给了我。我拿出来边走边洗牌，却发现总是有牌不是背面向上的，还得反过来，我很着急，后来在确认牌数量的时候，数不出正确的数目，就让队友又帮我买了一副牌。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦 / 真实的家庭伦理剧</title>
-    <url>/al/880a55ee.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>梦见爷爷鲨了奶奶，尸体藏在床下，我不知情地在床上睡了两天，第三天房子开始摇晃我看到床底下蔓延的血水才去叫我爸妈，爸妈拿菜刀把奶奶分尸了 ​​​</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦 / 逃出犯罪集团窝点</title>
-    <url>/al/df9de6da.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>啊，想不起来了，大概是我是一个十岁小孩，逃出犯罪集团窝点，同行的大哥塞给我一把有我高的枪，连人带车沉到湖里。<br>我把唯一一发子弹打空后，逃到一个农庄处，和当地人讨价还价，把枪卖了，换来两把手枪和若干子弹。对了，枪是电浆枪。 ​​​</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>出游 / 云佛山滑雪场</title>
-    <url>/al/8e922466.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="账单"><a href="#账单" class="headerlink" title="账单"></a>账单</h3><ul>
-<li>早饭：在学校吃，5.5。</li>
-<li>往程：地铁转公交转公交，坐错车了，转回来，又走了半小时路，21（好像没扣这么多钱）。</li>
-<li>景区：云佛山滑雪场，用的是某个联票，所以有部分费用被免去了。平均一个人48.4，包含门票和所有租赁物品。</li>
-<li>午饭：没吃。主要怕景区宰客</li>
-<li>返程：公交转公交转地铁，21。</li>
-<li>晚饭：KFC。汉堡薯条奶茶，23.5。</li>
-<li>总计：5.5+21+48.4+21+23.5=119.4</li>
-</ul>
-<h3 id="评价-amp-感想"><a href="#评价-amp-感想" class="headerlink" title="评价&amp;感想"></a>评价&amp;感想</h3><p>这一天不算顺利，其实早上8：22被舍友叫起床的时候我还在挣扎要不要去，因为没睡好，感觉眼睛闭上但没睡着，能听到舍友收拾东西的动静，睁眼发现都睡过头了。<br>轻装上阵，包都没背，羽绒服俩口袋揣上手机钥匙钱包矿泉水就走。这导致我手没地方放，只好缩在袖子里。<br>坐车的前两小时还好，第三个小时开始感到难受，舍友说带了袋子你可以吐……我：大可不必。中途坐错了车，最后靠脚走到了滑雪场门口。在门口验票还因为工作人员业务不熟练（她不知道这个票用哪个平台验），卡了好一会。等的过程中听到旁边好多人是从抖音预订来的。<br>租头盔和板子，选双板，现场学习了如何把雪鞋卡上雪板。那边还有租雪服的，一看价格，好家伙，划破了原价赔偿500块，我还是祸害我自己的羽绒服去吧……大概玩了两个多小时一点，滑雪场是一个坡，人从上面滑下来，再站在传送带上传上去，循环往复。<br>滑下去只需要十秒钟，传上去要好几分钟，见缝插针打明日方舟。<br>我对这项运动无感，而且十次里有五次会因为前面有人刹不住车摔倒，就还挺挫败的，尤其是摔了，摸到地上的雪，冻得慌。还有一次因为不知道怎么刹车就用手刹了（。）<br>滑雪场里有很多闲散的教练，进来时看了价格，几乎都要200往上，而且是小时计费。被路过的教练指点了刹车要领，要形容的话大约就是扎个马步，内八。俩滑雪板呈钝角。<br>教练说你想学的话可以找个教练教，我说我就是来玩的哈哈哈。<br>四点半滑雪场关门，等车的时候掏出我的airpods看cytus2x明日方舟的联动剧情，戴帽子不小心把耳机刮掉一只，我吓得大叫一声，连忙捡回来。<br>滑雪的整个过程我心丝毫不起波澜，撞到人都没有耳机掉的那一瞬间惊吓大。<br>返程回校途中越来越难受，冻得、晕的、饿的，吃了KFC以后感觉好点。最后一段徒步简直是煎熬，寒风刮得我牙齿发抖。甚至于洗完热水澡腮帮子都还是冻的……谁懂。</p>
-<h3 id="照片"><a href="#照片" class="headerlink" title="照片"></a>照片</h3><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E5%9D%A1%E5%BA%95.jpg" title="2021-12-16_坡底" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E5%9D%A1%E5%BA%95.jpg" alt="2021-12-16_坡底"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%98%AF%E7%9C%9F%EF%BC%88%E4%BA%BA%E9%80%A0%EF%BC%9F%EF%BC%89%E9%9B%AA.jpg" title="2021-12-16_是真（人造？）雪" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%98%AF%E7%9C%9F%EF%BC%88%E4%BA%BA%E9%80%A0%EF%BC%9F%EF%BC%89%E9%9B%AA.jpg" alt="2021-12-16_是真（人造？）雪"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%89%8B%E5%88%B9%E7%9A%84%E5%90%8E%E6%9E%9C.jpg" title="2021-12-16_手刹的后果" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%89%8B%E5%88%B9%E7%9A%84%E5%90%8E%E6%9E%9C.jpg" alt="2021-12-16_手刹的后果"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E4%B8%80%E4%BA%9B%E6%B6%88%E8%B4%B9%E5%8D%95.jpg" title="2021-12-16_一些消费单" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E4%B8%80%E4%BA%9B%E6%B6%88%E8%B4%B9%E5%8D%95.jpg" alt="2021-12-16_一些消费单"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E8%A3%85%E5%A4%87.jpg" title="2021-12-16_装备" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E8%A3%85%E5%A4%87.jpg" alt="2021-12-16_装备"></a></p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>“1000米以上算出去玩”</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>会逐渐把微博的记录搬过来</title>
-    <url>/al/ba9dbd3b.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>没有博客的时候都是用微博来发一些东西，虽然我日常活跃在qq空间。微信基本上不发朋友圈，除非需要朋友圈转评赞……一般也集不到。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>生活随想</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>电脑卸载个CAD居然把一众软件搞崩溃</title>
-    <url>/al/ef1efdd5.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>为了电气控制课设临时安装CAD，而为了安装CAD我花了大半天下载软件、删掉软件给它腾空间、处理它一打开就开始cpu过载疯狂闪屏的问题。<br>现在的电脑，6100大洋、服役3年的华为matebookd 2018，各种间歇性黑屏，一打开什么软件屏幕就像年久失修的灯一般开始狂闪，看b站还总是音画不同步。不过这种日子终于到头了。<br>我新买的联想r9000p，价格7588，只要明天没啥大问题就直接用，实在受不了破电脑闪屏、C盘永远剩0字节。卸载个cad搞得浏览器崩溃、图床软件崩溃、qq崩溃。我都想不通为什么。<br>这12.12我是一分钟都待不下去了！</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>“花花世界我一人干翻”</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>拯救者r9000p安全下车</title>
-    <url>/al/42af05cf.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>7588买到，我感觉是香的很。<br>果然这东西就是早买早享受，旧电脑已经被打入冷宫了。<br>现在正在逐步把旧电脑的软件移植过来。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_160922.jpg" title="IMG_20211212_160922" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_160922.jpg" alt="IMG_20211212_160922"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153253.jpg" title="IMG_20211212_153253" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153253.jpg" alt="IMG_20211212_153253"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153512.jpg" title="IMG_20211212_153512" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153512.jpg" alt="IMG_20211212_153512"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153833.jpg" title="IMG_20211212_153833" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153833.jpg" alt="IMG_20211212_153833"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211213234219.png" title="20211213234219" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211213234219.png" alt="20211213234219"></a></p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>“花花世界我一人干翻”</tag>
       </tags>
   </entry>
 </search>
