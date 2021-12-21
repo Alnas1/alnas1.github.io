@@ -2756,7 +2756,7 @@ mark.search-keyword {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #376ffe;
+  background: #abff0a;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2775,4 +2775,38 @@ mark.search-keyword {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.myButton {
+  background-color: #0f94bd;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 11px 27px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+.myButton:hover {
+  background-color: #5cbf2a;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+.tarot h3 {
+  clear: both;
+  margin-bottom: 2px;
+}
+.tarot h4 {
+  clear: both;
+  margin-bottom: 2px;
+}
+.tarot img {
+  float: right;
+  width: 200px;
+  margin: 10px;
 }
