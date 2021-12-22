@@ -2756,7 +2756,7 @@ mark.search-keyword {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #abff0a;
+  background: #267937;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2797,15 +2797,20 @@ mark.search-keyword {
   position: relative;
   top: 1px;
 }
-.tarot h3 {
+.tuyou h3 {
   clear: both;
   margin-bottom: 2px;
 }
-.tarot h4 {
+.tuyou h4 {
   clear: both;
   margin-bottom: 2px;
 }
-.tarot img {
+.tuyou hr {
+  overflow: visible;
+  text-align: center;
+  clear: both;
+}
+.tuyou img {
   float: right;
   width: 200px;
   margin: 10px;
