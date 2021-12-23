@@ -1,6 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>VSCode的Picgo插件配置</title>
+    <url>/al/undefined.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="0-实现效果和视频教程"><a href="#0-实现效果和视频教程" class="headerlink" title="0.实现效果和视频教程"></a>0.实现效果和视频教程</h3><ul>
+<li>效果：按ctrl+alt+u可以直接把剪切板图片粘贴到文章里，配合qq截图很方便。且生成的图片上传到github里了，它不是本地图片，github也不会跑路（大概），图片资源不担心没掉。</li>
+<li>视频教程：<a href="https://www.bilibili.com/video/BV1c44y1C7os">b站up卷二兔的hexo教学（15）</a><br>视频里下了picgo这个软件，我后来发现咱们用VSCode的直接有picgo插件可以下，不需要软件，除这点以外跟着up操作就行。</li>
+<li>更新：<strong>github貌似不太稳定</strong>，所以还是下一个软件使用吧……软件可以扩展使用gitee来搭建图床。参考文章：<a href="https://segmentfault.com/a/1190000022955737?utm_source=tag-newest">使用PicGo+gitee搭建在线图床</a></li>
+<li>再次更新：使用github作图床的出现”Bad credentials”问题，再生成一个token就好了，我也不知道为什么。</li>
+<li>再再次更新：在别的地方看到的，“由于采用的是 github 仓库存储图片，但是 github 对单仓库有 50MB 的大小限制，所以单仓库可能不能够存储太多的文件；<br>解决方法就是建立很多的图片仓库（稍微有点费劲，不过是行得通的）；另外上传的单张图片大小最好不要太大。”<h3 id="1-GitHub建立图床库"><a href="#1-GitHub建立图床库" class="headerlink" title="1. GitHub建立图床库"></a>1. GitHub建立图床库</h3><h4 id="1-1新建GitHub仓库"><a href="#1-1新建GitHub仓库" class="headerlink" title="1.1新建GitHub仓库"></a>1.1新建GitHub仓库</h4><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130190814.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130190814.png" width="50%"></a>
+<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191041.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191041.png" width="100%"></a></li>
+</ul>
+<p>建好了如下所示<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191146.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191146.png" width="90%"></a></p>
+<h4 id="1-2获取一个Token"><a href="#1-2获取一个Token" class="headerlink" title="1.2获取一个Token"></a>1.2获取一个Token</h4><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191310.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191310.png" width="35%"></a>
+<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191419.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191419.png" width="70%"></a>
+
+<p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130194248.png" title="20211130194248" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130194248.png" alt="20211130194248"></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195349.png" title="20211130195349" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195349.png" alt="20211130195349"></a><br>然后下拉点生成token<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195451.png" title="20211130195451" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195451.png" alt="20211130195451"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195525.png" title="20211130195525" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195525.png" alt="20211130195525"></a><br>这个token只出现一次，要存在别的地方以备使用</p>
+<h3 id="2-VSCode的Picgo插件"><a href="#2-VSCode的Picgo插件" class="headerlink" title="2. VSCode的Picgo插件"></a>2. VSCode的Picgo插件</h3><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130200114.png" title="20211130200114" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130200114.png" alt="20211130200114"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130200531.png" title="20211130200531" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130200531.png" alt="20211130200531"></a><br>然后应该就能用了</p>
+<h3 id="3-疑难杂症"><a href="#3-疑难杂症" class="headerlink" title="3. 疑难杂症"></a>3. 疑难杂症</h3><ul>
+<li><p>我遇到过上传不成功的问题，好像是因为我写库地址的时候在/后面的空格没删掉，删掉就能用了。</p>
+</li>
+<li><p>第二次出错信息是：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">StatusCodeError: 401 - &#123;<span class="string">&quot;message&quot;</span>:<span class="string">&quot;Bad credentials&quot;</span>,<span class="string">&quot;documentation_url&quot;</span>:<span class="string">&quot;https://docs.github.com/rest&quot;</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>我进这个文档看了下，看不懂= =，只知道是讲私人令牌的，于是重新生成了一个令牌放进去就可以。<br>参考这篇文章：<br><a href="https://blog.csdn.net/TalesOV/article/details/104450037">PicGo踩坑记（上传失败，服务端出错，请重试）</a></p>
+</li>
+<li><p>第三次出错的文件名重复了，也是提示上传不成功。这个插件没有picgo软件那样可以自动重命名的功能，所以上传还是得注意点。</p>
+</li>
+</ul>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>1-博客搭建</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>VSCode</tag>
+        <tag>Picgo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为何会把标题样式给吃了</title>
+    <url>/al/d58b6c82.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>就是这个：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210511.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210511.png" width=50%></a><br>这里的<em>0.实现效果和教程</em>应该是三级标题，但是它的格式被吃了。<br>而且只有第一个标题会被吃，其他三级标题好好的。<br>暂时的解决办法是在前面加一个空标题### ，空标题被吃掉样式以后其他标题样式显示正常。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210955.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210955.png" width=50%></a><br>正常显示：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214211204.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214211204.png" width=50%></a></p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>1-博客搭建</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>增加一个画册功能</title>
+    <url>/al/57dab607.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="0-实现效果和教程"><a href="#0-实现效果和教程" class="headerlink" title="0. 实现效果和教程"></a>0. 实现效果和教程</h3><h4 id="模板1"><a href="#模板1" class="headerlink" title="模板1"></a>模板1</h4><p>效果:<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214145958.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214145958.png" width=50%></a><br>教程：<a href="https://tding.top/archives/607c3b85.html">Hexo-NexT 实现相册</a><br>我的移植记录：<a href="https://alnas1.github.io/al/d3b88e7a.html">总结 / 试图阅读相册的代码（模板一）</a></p>
+<h4 id="模板2"><a href="#模板2" class="headerlink" title="模板2"></a>模板2</h4><p>效果：不知道，我失败了，会报错<br>教程：<a href="https://www.cnblogs.com/LuisYang/p/9356488.html">Hexo 相册实践</a>  </p>
+<h4 id="模板3"><a href="#模板3" class="headerlink" title="模板3"></a>模板3</h4><p>效果：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214175854.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214175854.png" width=70%></a><br>教程：<a href="https://rebootcat.com/2020/09/19/nextphotowall/">Hexo Next 博客添加相册瀑布流</a></p>
+<h4 id="模板4"><a href="#模板4" class="headerlink" title="模板4"></a>模板4</h4><p>效果：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214204556.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214204556.png" width=70%></a><br>教程：<a href="https://swayye.xyz/2019/09/02/%E5%BB%BA%E7%AB%99%E5%8E%86%E7%A8%8B%EF%BC%9A%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E7%AF%87%E2%80%94%E2%80%94%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%86%8C/">为 Hexo NexT 主题添加相册功能</a></p>
+<h3 id="1-模板4的移植记录-python处理图片部分"><a href="#1-模板4的移植记录-python处理图片部分" class="headerlink" title="1.模板4的移植记录(python处理图片部分)"></a>1.模板4的移植记录(python处理图片部分)</h3><ul>
+<li>下载python：<a href="https://www.bilibili.com/video/BV1DP4y1a7Dx">2021年如何通过官网下载和安装Python和PyCharm最新版本</a><br>python版本：3.9.9 64-bit<br>我没下pycharm<br>顺便可以改安装路径：<a href="https://www.py.cn/jishu/jichu/12626.html">python安装路径可以更改吗</a></li>
+<li>不会在GitHub仓库中新建文件夹：<a href="https://blog.csdn.net/Fly_1213/article/details/89294549">GitHub仓库中如何创建文件夹</a>  </li>
+<li>不会克隆仓库：<a href="https://blog.csdn.net/qq_41940950/article/details/80794438">如何远程克隆仓库</a> </li>
+<li>没安装pillow库：<a href="https://www.bilibili.com/video/BV1rq4y1J78H?from=search&seid=7343031718128119632&spm_id_from=333.337.0.0">python安装pil图像库 </a>  </li>
+<li>全选代码，shift+enter运行（vscode）  </li>
+</ul>
+<h4 id="报错1：source-directory-not-exist"><a href="#报错1：source-directory-not-exist" class="headerlink" title="报错1：source directory not exist!"></a>报错1：source directory not exist!</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">source directory <span class="keyword">not</span> exist!</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">3</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">16</span>, <span class="keyword">in</span> compress_photo</span><br><span class="line">UnboundLocalError: local variable <span class="string">&#x27;file_list_des&#x27;</span> referenced before assignment </span><br></pre></td></tr></table></figure>
+
+<p>解决方法：把路径改成绝对路径   </p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cut_photo</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;裁剪算法</span></span><br><span class="line"><span class="string">    调用Graphics类中的裁剪算法，将src_dir目录下的文件进行裁剪（裁剪成正方形）</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    src_dir = <span class="string">&quot;F:/1-blog/MyWeb/source/photos/photos/&quot;</span></span><br><span class="line">    <span class="keyword">if</span> directory_exists(src_dir): </span><br></pre></td></tr></table></figure>
+
+<h4 id="报错2：not-enough-values-to-unpack-expected-2-got-1"><a href="#报错2：not-enough-values-to-unpack-expected-2-got-1" class="headerlink" title="报错2：not enough values to unpack (expected 2, got 1)"></a>报错2：not enough values to unpack (expected 2, got 1)</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">12</span>, <span class="keyword">in</span> cut_photo</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">9</span>, <span class="keyword">in</span> list_img_file</span><br><span class="line">ValueError: <span class="keyword">not</span> enough values to unpack (expected <span class="number">2</span>, got <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<p>解决方法：<strong>上面路径的文件夹里不能有子文件夹</strong>，因为子文件夹没有.xx的后缀，用split()函数分类（分隔符为.）会卡住。最好只放图片。</p>
+<h4 id="报错3：failed-to-push-some-refs-to-github"><a href="#报错3：failed-to-push-some-refs-to-github" class="headerlink" title="报错3：failed to push some refs to github"></a>报错3：failed to push some refs to github</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">error: src refspec master does <span class="keyword">not</span> match <span class="built_in">any</span></span><br><span class="line">error: failed to push some refs to <span class="string">&#x27;https://github.com/alnas1/photos&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>解决方法：</p>
+<ol>
+<li><a href="https://blog.csdn.net/sfgsdfg2516/article/details/120579313">关于main和master的问题</a></li>
+<li>克隆仓库的命令：<code>git clone https://github.com/alnas1/photos.git</code><br>如果是ssh拉取：<code>git clone git@github.com:Alnas1/photos.git</code>  </li>
+<li>把source下的photos文件夹删掉，在source文件夹中右键打开命令行，执行克隆仓库的命令。</li>
+<li>进入克隆下来的仓库，随便放张图进去测试。</li>
+<li>执行下面三条命令看能不能成功。<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">git add --<span class="built_in">all</span>  </span><br><span class="line">git commit -m <span class="string">&quot;add photos&quot;</span>  </span><br><span class="line">git push origin main  </span><br></pre></td></tr></table></figure></li>
+<li>成功了就能在GitHub仓库看到变更。</li>
+<li>把tool.py文件里的 <code>os.system(&#39;git push origin master&#39;)</code>改为 <code>os.system(&#39;git push origin main&#39;)</code></li>
+<li>再次运行文件<code>tool.py</code></li>
+<li> 然后我发现不能把相册文件夹放在博客目录下，不然相册提交会提交一次图，博客部署又会提交一次图。</li>
+</ol>
+<h3 id="2-样式4的移植记录-hexo配置部分"><a href="#2-样式4的移植记录-hexo配置部分" class="headerlink" title="2.样式4的移植记录(hexo配置部分)"></a>2.样式4的移植记录(hexo配置部分)</h3><ol>
+<li><s>data.json保存在photos下。”F:\1-blog\MyWeb\source\photos\data.json”</s></li>
+<li><s>注意核对index.md中链接css等文件的路径。我放在”F:\1-blog\MyWeb\themes\next\source\ _data&quot;</s></li>
+<li><strong>完全跟着教程建立文件夹即可</strong>，不要自找麻烦。</li>
+<li>ins.js文件中链接的修改。这是正确的图片链接格式（注意main前面那个raw）：<a href="https://github.com/Alnas1/photos/raw/main/photos/2021-12-15_suibian%20(2).jpg">https://github.com/Alnas1/photos/raw/main/photos/2021-12-15_suibian%20(2).jpg</a><br>关于这点请看：<a href="https://www.cnblogs.com/ghm-777/p/11433425.html">本地图片上传到GitHub，MarkDown使用Github图片地址</a></li>
+</ol>
+<h3 id="3-尝试对相册页面进行一些修改"><a href="#3-尝试对相册页面进行一些修改" class="headerlink" title="3.尝试对相册页面进行一些修改"></a>3.尝试对相册页面进行一些修改</h3><p>问题就是我看不懂html和css代码。遂疯狂百度。</p>
+<h4 id="photos-index-md文件"><a href="#photos-index-md文件" class="headerlink" title="photos/index.md文件"></a>photos/index.md文件</h4></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>1-博客搭建</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>摸爬滚打改博客（NexT时代）</title>
+    <url>/al/undefined.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>从orange主题迁移过来。</p>
+<hr>
+<h3 id="主页"><a href="#主页" class="headerlink" title="主页"></a>主页</h3><p><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112110113327.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112110113327.png"></a><br>我喜欢那种卡片样式的，简单凝练，信息密度大一点，这个主题为了排版美观失去了信息密集度。所以想改得紧凑。</p>
+<h4 id="居中摘要"><a href="#居中摘要" class="headerlink" title="居中摘要"></a>居中摘要</h4><p>文件路径MyWeb\themes\next\layout\ _macro\post.njk</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&#123;#################&#125;</span><br><span class="line">&#123;### POST BODY ###&#125;</span><br><span class="line">&#123;#################&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;post-body&#123;% if post.direction and post.direction.toLowerCase() === &#x27;rtl&#x27; %&#125; rtl&#123;% endif %&#125;&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;articleBody&quot;</span>&gt;</span></span><br><span class="line">  &#123;%- if is_index %&#125;</span><br><span class="line">    &#123;%- if post.description and theme.excerpt_description %&#125;</span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center&quot;</span>&gt;</span>&#123;&#123; post.description &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span> </span><br><span class="line">      <span class="comment">&lt;!--noindex--&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="橙色部分"><a href="#橙色部分" class="headerlink" title="橙色部分"></a>橙色部分</h4><p>文件路径MyWeb\themes\next\source\css\ _common\components\post\post-header.styl</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">.posts-expand .post-header &#123;</span><br><span class="line">  font-size: $font-size-large;</span><br><span class="line">  margin-bottom: 60px;</span><br><span class="line">  text-align: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="蓝色虚线框部分"><a href="#蓝色虚线框部分" class="headerlink" title="蓝色虚线框部分"></a>蓝色虚线框部分</h4><p>文件路径MyWeb\themes\next\source\css\ _variables\base.styl</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">//  .post-expand .post-eof</span><br><span class="line">//  In Muse scheme, margin above and below the post separator</span><br><span class="line">$post-eof-margin-top          = 10px; //  or 160px for more white space;</span><br><span class="line">$post-eof-margin-bottom       = 10px; //  or 120px for less white space;</span><br></pre></td></tr></table></figure>
+<h3 id="博客标题"><a href="#博客标题" class="headerlink" title="博客标题"></a>博客标题</h3><h4 id="与网页顶部的距离"><a href="#与网页顶部的距离" class="headerlink" title="与网页顶部的距离"></a>与网页顶部的距离</h4><p><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112112048693.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112112048693.png"></a><br>文件路径MyWeb\themes\next\source\css\ _schemes\ _header.styl</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">.header-inner &#123;</span><br><span class="line">  padding-top: 40px;</span><br><span class="line"></span><br><span class="line">  +mobile() &#123;</span><br><span class="line">    padding-top: 50px;</span><br></pre></td></tr></table></figure>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>1-博客搭建</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>摸爬滚打改博客（orange时代）</title>
+    <url>/al/undefined.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在HTML和hexo方面完全的小白，此前只懂一点C语言和MATLAB，也没想为了一个博客学完这些东西，遂只有按“想实现什么功能-百度-踩坑-实现功能或者没有”这个流程解决问题。以下是一些记录。</p>
+<hr>
+<h3 id="改图片大小"><a href="#改图片大小" class="headerlink" title="改图片大小"></a>改图片大小</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;图片链接&quot;</span> <span class="attr">width</span>=<span class="string">&quot;30%&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130192516.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130192516.png" width="50%"></a>
+<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130192516.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130192516.png" width="30%"></a>
+
+<h3 id="改字体颜色"><a href="#改字体颜色" class="headerlink" title="改字体颜色"></a>改字体颜色</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;red&quot;</span>&gt;</span>我是红色字体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>就变成红色了→<font color="red">我是红色字体</font></p>
+<p>还可以改颜色，这里选了几个颜色：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;brown&quot;</span>&gt;</span>我是棕色字体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;DodgerBlue &quot;</span>&gt;</span>我是道奇蓝色字体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;Indigo&quot;</span>&gt;</span>我是靛蓝色字体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;LightCoral&quot;</span>&gt;</span>我是浅珊瑚色字体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;LightSlateGray &quot;</span>&gt;</span>我是浅石板灰色字体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;orange&quot;</span>&gt;</span>我是橙色字体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;teal&quot;</span>&gt;</span>我是蓝绿色字体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><font color="brown">我是棕色字体</font><br><font color="DodgerBlue ">我是道奇蓝色字体</font><br><font color="Indigo">我是靛蓝色字体</font><br><font color="LightCoral">我是浅珊瑚色字体</font><br><font color="LightSlateGray ">我是浅石板灰色字体</font><br><font color="orange">我是橙色字体</font><br><font color="teal">我是蓝绿色字体</font></p>
+<p>但是吧，html代码放在正文里特别丑，受不了，偶尔高亮还行，非要在md里搞这个就是违背了它出现的初衷。所以还是不要用比较好。<br>参考资料：<a href="https://www.w3school.com.cn/tags/html_ref_colornames.asp">HTML颜色名</a>、<a href="https://www.w3school.com.cn/tags/tag_font.asp">HTML &lt;字体&gt; 标签</a></p>
+<hr>
+<h3 id="改博客显示在标签栏上的名称"><a href="#改博客显示在标签栏上的名称" class="headerlink" title="改博客显示在标签栏上的名称"></a>改博客显示在标签栏上的名称</h3><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130180407.png" title="20211130180407" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130180407.png" alt="20211130180407"></a><br>我想把这个‘hexo’改成‘Alnasl的博客’<br>前去询问群友，得知在_config.yml文件里改，特别简单。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line">title: hexo <span class="comment">#把这里改成Alnasl的博客</span></span><br><span class="line">description: <span class="string">&#x27;&#x27;</span></span><br><span class="line">keywords:</span><br></pre></td></tr></table></figure>
+<p>就完成了：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130180346.png" title="20211130180346" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130180346.png" alt="20211130180346"></a><br>另外，“归档”、“标签”、“朋友”、“关于”这些页面显示在标签栏上的名称是在它们自己的文件夹下那个index.md里面改。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#index.md文件里</span></span><br><span class="line">title: 朋友 <span class="comment">#这个就是</span></span><br><span class="line">date: 2021-11-29 13:36:24</span><br><span class="line"><span class="built_in">type</span>: friends</span><br><span class="line">categories:</span><br><span class="line">tags:</span><br></pre></td></tr></table></figure>
+<p>改完以后：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130180328.png" title="20211130180328" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130180328.png" alt="20211130180328"></a><br>可恶，仿佛回到初中玩饥荒搞mod那时候了，也是像这样啥都不懂乱试。</p>
+<hr>
+<h3 id="改主页导航栏的名字"><a href="#改主页导航栏的名字" class="headerlink" title="改主页导航栏的名字"></a>改主页导航栏的名字</h3><p>我要把英文改成中文，因为中文短一点，在手机上不会变两行。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130180306.png" title="20211130180306" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130180306.png" alt="20211130180306"></a><br>乱找一通以后发现在自己主题的配置文件source/orange/_config.yml里，因为有中文注释很容易就找到了……</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 主题页面导航栏</span></span><br><span class="line">navbar:</span><br><span class="line">  -</span><br><span class="line">    name: 主页 <span class="comment">#在这改</span></span><br><span class="line">    <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">    path: /</span><br><span class="line">    key: home</span><br><span class="line">  ……</span><br></pre></td></tr></table></figure>
+<p>改完：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130193011.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130193011.png" width="70%"></a></p>
+<h3 id="改底端联系方式"><a href="#改底端联系方式" class="headerlink" title="改底端联系方式"></a>改底端联系方式</h3><p><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112011434662.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112011434662.png"></a><br>我在力图把每个平台发的信息切割开，所以只需要留一个反馈邮箱（并没有人会用），其他注释掉。<br>同样在主题的配置文件source/orange/_config.yml里进行更改。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 页脚信息</span></span><br><span class="line">footer:</span><br><span class="line">  <span class="comment"># social: 社交方式</span></span><br><span class="line">  <span class="comment"># more: 更多页脚信息</span></span><br><span class="line">  social:</span><br><span class="line">    <span class="comment"># name: 名称</span></span><br><span class="line">    <span class="comment"># icon: 图标，目前仅支持IconFont部分图标</span></span><br><span class="line">    <span class="comment"># path: 地址</span></span><br><span class="line">    <span class="comment">#-</span></span><br><span class="line">      <span class="comment">#name: github</span></span><br><span class="line">      <span class="comment">#icon: github</span></span><br><span class="line">      <span class="comment">#path: https://github.com/zchengsite/hexo-theme-oranges</span></span><br><span class="line">    -</span><br><span class="line">      name: email</span><br><span class="line">      icon: envelope</span><br><span class="line">      path: <span class="string">&quot;mailto:1249636167@qq.com&quot;</span></span><br></pre></td></tr></table></figure>
+<p>就ok了<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112011439111.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112011439111.png"></a></p>
+<h3 id="改主页的图标（用户头像和昵称）"><a href="#改主页的图标（用户头像和昵称）" class="headerlink" title="改主页的图标（用户头像和昵称）"></a>改主页的图标（用户头像和昵称）</h3><p>按照config文件，把images文件夹下的图片替换就行（改配置的名字也行）。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 网站图标</span></span><br><span class="line">favicon:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  icon: /images/favicon.png</span><br><span class="line">  touch_icon: /images/favicon.png</span><br><span class="line"></span><br><span class="line"><span class="comment"># 用户头像与昵称、标签栏图片</span></span><br><span class="line">avatar:</span><br><span class="line">  author_photo: /images/avatar.png</span><br><span class="line">  author_nickname: Alnasl</span><br><span class="line">  path: /</span><br></pre></td></tr></table></figure>
+<p>改好了：<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112021936210.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112021936210.png"></a></p>
+<p>（反而在选和画图标这件事上花了很长时间，鬼知道我是怎么从死神13联想到普罗米亚的）<br>一个问题，我在导航栏切换页面的时候图标会很明显地刷新= =，作者的博客就不会这样，是不是因为图太大了啊。<br>也不算很大吧，才500x500px。</p>
+<p>此外，为什么标签栏的图标没有改变……<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112021937950.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112021937950.png"></a><br>好吧，过一会就好了，大概是电脑没反应过来。<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112021941244.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112021941244.png"></a><br>但是也太小了点吧，用画图把图片改了一下。</p>
+<p><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112021947546.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112021947546.png"></a><br>变大了，但是变胖了，只好再把画幅改成正方形。<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112021952240.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112021952240.png"></a><br>有一点无语，画图改完以后背景变成白色了，电脑懒得开ps（特别卡），还是用procreate改图吧……</p>
+<h3 id="学会目录和tag怎么添加"><a href="#学会目录和tag怎么添加" class="headerlink" title="学会目录和tag怎么添加"></a>学会目录和tag怎么添加</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: 摸爬滚打改博客</span><br><span class="line">date: 2021-11-30 15:18:22</span><br><span class="line">tags: </span><br><span class="line"> - 第一个标签</span><br><span class="line"> - 第二个标签</span><br><span class="line"> - 以此类推</span><br><span class="line">categories: </span><br><span class="line"> - 第一级目录</span><br><span class="line"> - 第二级目录</span><br><span class="line"> - 以此类推</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h3 id="关于放弃这个主题的理由"><a href="#关于放弃这个主题的理由" class="headerlink" title="关于放弃这个主题的理由"></a>关于放弃这个主题的理由</h3><p>太~简洁了。<br>我想实现加密（encrypt插件）功能但是它不行。<br>哎，我很喜欢这个版式的，但是为了加密和其他花里胡哨的东西只好放弃了。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>1-博客搭建</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《不断作死后我成了白月光》by纪婴</title>
     <url>/al/a7117b43.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.biquge.com.cn/book/51562/">不断作死后我成了白月光</a><br>作者：纪婴<br>主角：宁宁/裴寂<br>cp：裴寂x宁宁<br>视角：女主BG<br>分类：古言修仙欢乐向<br>世界观：低魔修仙<br>状态：完结，但是我跳着看完的</p>
@@ -62,16 +254,16 @@
       </categories>
   </entry>
   <entry>
-    <title>《反派有话说》by莫晨欢</title>
-    <url>/al/49968d0b.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=2768395">反派有话说</a><br>作者：莫晨欢<br>主角：洛渐清/无音<br>cp：无音x洛渐清<br>视角：男主BL<br>分类：架空玄幻<br>世界观：就是仙侠啦，重生还捡到了剧本<br>状态：完结</p>
+    <title>《偏执男主白月光我不当了》by赵史觉</title>
+    <url>/al/95dd9910.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=4425292">偏执男主白月光我不当了</a><br>作者：赵史觉<br>主角：楚殷/陆缜<br>cp：陆缜x楚殷<br>视角：女主BG<br>分类：轻松欢脱，但还是有主线的<br>世界观：现代，重生<br>状态：完结</p>
 <hr>
-<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>作为天下第一宗门的首徒，洛渐清名声斐然，是师弟师妹最敬仰的大师兄；作为修真界第一人的关门弟子，洛渐清尊师重道，不♂越♂雷♂池♂半♂步。<br>然后……他就被主角一剑捅死了，用的是他师父的剑。</p>
-<p>——嘀！恭喜你捡到小说《求仙》一本，请妥善使用哦！<br>——珍爱生命，远离BOSS。括弧其实你就是BOSS哦，羞羞哒~<br>洛渐清：“……”</p>
-<p>天道要我死，我偏就不死！看是天道凶，还是我剑道横！</p>
-<p>无音：渐清，我有话和你说。<br>洛渐清：师父，我也有话和您说。<br>无音：……你先说？<br>洛渐清：您先说。<br>无音：我喜欢你。/洛渐清：我想上您。<br>无音：“……”</p>
+<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>楚殷死后才知道自己是豪门文里的白月光。<br>偏执男主年少时对她一见钟情，而后执掌财阀大权。楚殷被他的疯狂占有欲折磨，凄凉早死。</p>
+<p>再睁眼，她回到了转学遇到陆缜的前一天。<br>“叮~学习系统已绑定！宿主可以通过学习改变垃圾剧本哟！”<br>【做完全科作业，可改原文一个字！】<br>【考下年级第一，可修原文一句话！】……<br>【夺得高考状元，可自拟结局！暴富！爆红！随心所欲！】</p>
+<p>当晚，楚殷通宵肝完作业获得改字权限√<br>原文里”初遇那天，陆缜走进学校，天空飘下小雨。”<br>第二天，陆缜走进学校——天上忽然掉起了小刀。</p>
+<p>少年陆缜：？有人暗鲨我。</p>
 <hr>
-<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>看完这本去看了二哈导致现在有点想不起来剧情……<br>看的时候觉得还蛮好看的，喔，就是感觉主角有点弱，虽然他已经是本派大师兄了，但是他一个师尊是人界第一，一个朋友是魔界第一，每次遇上点啥事都要人来救。<br>就很，憋屈。<br>魔尊朋友戏份还挺多，搞得我怀疑自己有没有站错cp<br>后来出来一条龙，和魔尊朋友凑一对了，我不喜欢番外，自己脑补的更香（bushi</p>
+<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>前期有被笑到，后面就有点无聊。<br>反派boss的人设没有立起来，打完以后：就这？<br>楚殷：为了获得改书权限拼命学习，无情学霸人设。<br>陆缜：前期经典校园高富帅，后期校园高富帅（已黑化）。<br>确实后半部分写得有点乱，感觉，逻辑有点勉强。</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -83,16 +275,16 @@
       </categories>
   </entry>
   <entry>
-    <title>《偏执男主白月光我不当了》by赵史觉</title>
-    <url>/al/95dd9910.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=4425292">偏执男主白月光我不当了</a><br>作者：赵史觉<br>主角：楚殷/陆缜<br>cp：陆缜x楚殷<br>视角：女主BG<br>分类：轻松欢脱，但还是有主线的<br>世界观：现代，重生<br>状态：完结</p>
+    <title>《反派有话说》by莫晨欢</title>
+    <url>/al/49968d0b.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=2768395">反派有话说</a><br>作者：莫晨欢<br>主角：洛渐清/无音<br>cp：无音x洛渐清<br>视角：男主BL<br>分类：架空玄幻<br>世界观：就是仙侠啦，重生还捡到了剧本<br>状态：完结</p>
 <hr>
-<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>楚殷死后才知道自己是豪门文里的白月光。<br>偏执男主年少时对她一见钟情，而后执掌财阀大权。楚殷被他的疯狂占有欲折磨，凄凉早死。</p>
-<p>再睁眼，她回到了转学遇到陆缜的前一天。<br>“叮~学习系统已绑定！宿主可以通过学习改变垃圾剧本哟！”<br>【做完全科作业，可改原文一个字！】<br>【考下年级第一，可修原文一句话！】……<br>【夺得高考状元，可自拟结局！暴富！爆红！随心所欲！】</p>
-<p>当晚，楚殷通宵肝完作业获得改字权限√<br>原文里”初遇那天，陆缜走进学校，天空飘下小雨。”<br>第二天，陆缜走进学校——天上忽然掉起了小刀。</p>
-<p>少年陆缜：？有人暗鲨我。</p>
+<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>作为天下第一宗门的首徒，洛渐清名声斐然，是师弟师妹最敬仰的大师兄；作为修真界第一人的关门弟子，洛渐清尊师重道，不♂越♂雷♂池♂半♂步。<br>然后……他就被主角一剑捅死了，用的是他师父的剑。</p>
+<p>——嘀！恭喜你捡到小说《求仙》一本，请妥善使用哦！<br>——珍爱生命，远离BOSS。括弧其实你就是BOSS哦，羞羞哒~<br>洛渐清：“……”</p>
+<p>天道要我死，我偏就不死！看是天道凶，还是我剑道横！</p>
+<p>无音：渐清，我有话和你说。<br>洛渐清：师父，我也有话和您说。<br>无音：……你先说？<br>洛渐清：您先说。<br>无音：我喜欢你。/洛渐清：我想上您。<br>无音：“……”</p>
 <hr>
-<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>前期有被笑到，后面就有点无聊。<br>反派boss的人设没有立起来，打完以后：就这？<br>楚殷：为了获得改书权限拼命学习，无情学霸人设。<br>陆缜：前期经典校园高富帅，后期校园高富帅（已黑化）。<br>确实后半部分写得有点乱，感觉，逻辑有点勉强。</p>
+<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>看完这本去看了二哈导致现在有点想不起来剧情……<br>看的时候觉得还蛮好看的，喔，就是感觉主角有点弱，虽然他已经是本派大师兄了，但是他一个师尊是人界第一，一个朋友是魔界第一，每次遇上点啥事都要人来救。<br>就很，憋屈。<br>魔尊朋友戏份还挺多，搞得我怀疑自己有没有站错cp<br>后来出来一条龙，和魔尊朋友凑一对了，我不喜欢番外，自己脑补的更香（bushi</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -285,198 +477,6 @@
       </categories>
   </entry>
   <entry>
-    <title>为何会把标题样式给吃了</title>
-    <url>/al/d58b6c82.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>就是这个：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210511.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210511.png" width=50%></a><br>这里的<em>0.实现效果和教程</em>应该是三级标题，但是它的格式被吃了。<br>而且只有第一个标题会被吃，其他三级标题好好的。<br>暂时的解决办法是在前面加一个空标题### ，空标题被吃掉样式以后其他标题样式显示正常。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210955.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214210955.png" width=50%></a><br>正常显示：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214211204.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214211204.png" width=50%></a></p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>1-博客搭建</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VSCode的Picgo插件配置</title>
-    <url>/al/undefined.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="0-实现效果和视频教程"><a href="#0-实现效果和视频教程" class="headerlink" title="0.实现效果和视频教程"></a>0.实现效果和视频教程</h3><ul>
-<li>效果：按ctrl+alt+u可以直接把剪切板图片粘贴到文章里，配合qq截图很方便。且生成的图片上传到github里了，它不是本地图片，github也不会跑路（大概），图片资源不担心没掉。</li>
-<li>视频教程：<a href="https://www.bilibili.com/video/BV1c44y1C7os">b站up卷二兔的hexo教学（15）</a><br>视频里下了picgo这个软件，我后来发现咱们用VSCode的直接有picgo插件可以下，不需要软件，除这点以外跟着up操作就行。</li>
-<li>更新：<strong>github貌似不太稳定</strong>，所以还是下一个软件使用吧……软件可以扩展使用gitee来搭建图床。参考文章：<a href="https://segmentfault.com/a/1190000022955737?utm_source=tag-newest">使用PicGo+gitee搭建在线图床</a></li>
-<li>再次更新：使用github作图床的出现”Bad credentials”问题，再生成一个token就好了，我也不知道为什么。</li>
-<li>再再次更新：在别的地方看到的，“由于采用的是 github 仓库存储图片，但是 github 对单仓库有 50MB 的大小限制，所以单仓库可能不能够存储太多的文件；<br>解决方法就是建立很多的图片仓库（稍微有点费劲，不过是行得通的）；另外上传的单张图片大小最好不要太大。”<h3 id="1-GitHub建立图床库"><a href="#1-GitHub建立图床库" class="headerlink" title="1. GitHub建立图床库"></a>1. GitHub建立图床库</h3><h4 id="1-1新建GitHub仓库"><a href="#1-1新建GitHub仓库" class="headerlink" title="1.1新建GitHub仓库"></a>1.1新建GitHub仓库</h4><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130190814.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130190814.png" width="50%"></a>
-<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191041.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191041.png" width="100%"></a></li>
-</ul>
-<p>建好了如下所示<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191146.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191146.png" width="90%"></a></p>
-<h4 id="1-2获取一个Token"><a href="#1-2获取一个Token" class="headerlink" title="1.2获取一个Token"></a>1.2获取一个Token</h4><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191310.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191310.png" width="35%"></a>
-<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191419.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130191419.png" width="70%"></a>
-
-<p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130194248.png" title="20211130194248" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130194248.png" alt="20211130194248"></a></p>
-<p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195349.png" title="20211130195349" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195349.png" alt="20211130195349"></a><br>然后下拉点生成token<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195451.png" title="20211130195451" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195451.png" alt="20211130195451"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195525.png" title="20211130195525" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130195525.png" alt="20211130195525"></a><br>这个token只出现一次，要存在别的地方以备使用</p>
-<h3 id="2-VSCode的Picgo插件"><a href="#2-VSCode的Picgo插件" class="headerlink" title="2. VSCode的Picgo插件"></a>2. VSCode的Picgo插件</h3><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130200114.png" title="20211130200114" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130200114.png" alt="20211130200114"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130200531.png" title="20211130200531" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130200531.png" alt="20211130200531"></a><br>然后应该就能用了</p>
-<h3 id="3-疑难杂症"><a href="#3-疑难杂症" class="headerlink" title="3. 疑难杂症"></a>3. 疑难杂症</h3><ul>
-<li><p>我遇到过上传不成功的问题，好像是因为我写库地址的时候在/后面的空格没删掉，删掉就能用了。</p>
-</li>
-<li><p>第二次出错信息是：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">StatusCodeError: 401 - &#123;<span class="string">&quot;message&quot;</span>:<span class="string">&quot;Bad credentials&quot;</span>,<span class="string">&quot;documentation_url&quot;</span>:<span class="string">&quot;https://docs.github.com/rest&quot;</span>&#125;</span><br></pre></td></tr></table></figure>
-<p>我进这个文档看了下，看不懂= =，只知道是讲私人令牌的，于是重新生成了一个令牌放进去就可以。<br>参考这篇文章：<br><a href="https://blog.csdn.net/TalesOV/article/details/104450037">PicGo踩坑记（上传失败，服务端出错，请重试）</a></p>
-</li>
-<li><p>第三次出错的文件名重复了，也是提示上传不成功。这个插件没有picgo软件那样可以自动重命名的功能，所以上传还是得注意点。</p>
-</li>
-</ul>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>1-博客搭建</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>VSCode</tag>
-        <tag>Picgo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>增加一个画册功能</title>
-    <url>/al/57dab607.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="0-实现效果和教程"><a href="#0-实现效果和教程" class="headerlink" title="0. 实现效果和教程"></a>0. 实现效果和教程</h3><h4 id="模板1"><a href="#模板1" class="headerlink" title="模板1"></a>模板1</h4><p>效果:<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214145958.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214145958.png" width=50%></a><br>教程：<a href="https://tding.top/archives/607c3b85.html">Hexo-NexT 实现相册</a><br>我的移植记录：<a href="https://alnas1.github.io/al/d3b88e7a.html">总结 / 试图阅读相册的代码（模板一）</a></p>
-<h4 id="模板2"><a href="#模板2" class="headerlink" title="模板2"></a>模板2</h4><p>效果：不知道，我失败了，会报错<br>教程：<a href="https://www.cnblogs.com/LuisYang/p/9356488.html">Hexo 相册实践</a>  </p>
-<h4 id="模板3"><a href="#模板3" class="headerlink" title="模板3"></a>模板3</h4><p>效果：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214175854.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214175854.png" width=70%></a><br>教程：<a href="https://rebootcat.com/2020/09/19/nextphotowall/">Hexo Next 博客添加相册瀑布流</a></p>
-<h4 id="模板4"><a href="#模板4" class="headerlink" title="模板4"></a>模板4</h4><p>效果：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214204556.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211214204556.png" width=70%></a><br>教程：<a href="https://swayye.xyz/2019/09/02/%E5%BB%BA%E7%AB%99%E5%8E%86%E7%A8%8B%EF%BC%9A%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E7%AF%87%E2%80%94%E2%80%94%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%86%8C/">为 Hexo NexT 主题添加相册功能</a></p>
-<h3 id="1-模板4的移植记录-python处理图片部分"><a href="#1-模板4的移植记录-python处理图片部分" class="headerlink" title="1.模板4的移植记录(python处理图片部分)"></a>1.模板4的移植记录(python处理图片部分)</h3><ul>
-<li>下载python：<a href="https://www.bilibili.com/video/BV1DP4y1a7Dx">2021年如何通过官网下载和安装Python和PyCharm最新版本</a><br>python版本：3.9.9 64-bit<br>我没下pycharm<br>顺便可以改安装路径：<a href="https://www.py.cn/jishu/jichu/12626.html">python安装路径可以更改吗</a></li>
-<li>不会在GitHub仓库中新建文件夹：<a href="https://blog.csdn.net/Fly_1213/article/details/89294549">GitHub仓库中如何创建文件夹</a>  </li>
-<li>不会克隆仓库：<a href="https://blog.csdn.net/qq_41940950/article/details/80794438">如何远程克隆仓库</a> </li>
-<li>没安装pillow库：<a href="https://www.bilibili.com/video/BV1rq4y1J78H?from=search&seid=7343031718128119632&spm_id_from=333.337.0.0">python安装pil图像库 </a>  </li>
-<li>全选代码，shift+enter运行（vscode）  </li>
-</ul>
-<h4 id="报错1：source-directory-not-exist"><a href="#报错1：source-directory-not-exist" class="headerlink" title="报错1：source directory not exist!"></a>报错1：source directory not exist!</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">source directory <span class="keyword">not</span> exist!</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">3</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">16</span>, <span class="keyword">in</span> compress_photo</span><br><span class="line">UnboundLocalError: local variable <span class="string">&#x27;file_list_des&#x27;</span> referenced before assignment </span><br></pre></td></tr></table></figure>
-
-<p>解决方法：把路径改成绝对路径   </p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cut_photo</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;裁剪算法</span></span><br><span class="line"><span class="string">    调用Graphics类中的裁剪算法，将src_dir目录下的文件进行裁剪（裁剪成正方形）</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    src_dir = <span class="string">&quot;F:/1-blog/MyWeb/source/photos/photos/&quot;</span></span><br><span class="line">    <span class="keyword">if</span> directory_exists(src_dir): </span><br></pre></td></tr></table></figure>
-
-<h4 id="报错2：not-enough-values-to-unpack-expected-2-got-1"><a href="#报错2：not-enough-values-to-unpack-expected-2-got-1" class="headerlink" title="报错2：not enough values to unpack (expected 2, got 1)"></a>报错2：not enough values to unpack (expected 2, got 1)</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">12</span>, <span class="keyword">in</span> cut_photo</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">9</span>, <span class="keyword">in</span> list_img_file</span><br><span class="line">ValueError: <span class="keyword">not</span> enough values to unpack (expected <span class="number">2</span>, got <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-<p>解决方法：<strong>上面路径的文件夹里不能有子文件夹</strong>，因为子文件夹没有.xx的后缀，用split()函数分类（分隔符为.）会卡住。最好只放图片。</p>
-<h4 id="报错3：failed-to-push-some-refs-to-github"><a href="#报错3：failed-to-push-some-refs-to-github" class="headerlink" title="报错3：failed to push some refs to github"></a>报错3：failed to push some refs to github</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">error: src refspec master does <span class="keyword">not</span> match <span class="built_in">any</span></span><br><span class="line">error: failed to push some refs to <span class="string">&#x27;https://github.com/alnas1/photos&#x27;</span></span><br></pre></td></tr></table></figure>
-<p>解决方法：</p>
-<ol>
-<li><a href="https://blog.csdn.net/sfgsdfg2516/article/details/120579313">关于main和master的问题</a></li>
-<li>克隆仓库的命令：<code>git clone https://github.com/alnas1/photos.git</code><br>如果是ssh拉取：<code>git clone git@github.com:Alnas1/photos.git</code>  </li>
-<li>把source下的photos文件夹删掉，在source文件夹中右键打开命令行，执行克隆仓库的命令。</li>
-<li>进入克隆下来的仓库，随便放张图进去测试。</li>
-<li>执行下面三条命令看能不能成功。<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">git add --<span class="built_in">all</span>  </span><br><span class="line">git commit -m <span class="string">&quot;add photos&quot;</span>  </span><br><span class="line">git push origin main  </span><br></pre></td></tr></table></figure></li>
-<li>成功了就能在GitHub仓库看到变更。</li>
-<li>把tool.py文件里的 <code>os.system(&#39;git push origin master&#39;)</code>改为 <code>os.system(&#39;git push origin main&#39;)</code></li>
-<li>再次运行文件<code>tool.py</code></li>
-<li> 然后我发现不能把相册文件夹放在博客目录下，不然相册提交会提交一次图，博客部署又会提交一次图。</li>
-</ol>
-<h3 id="2-样式4的移植记录-hexo配置部分"><a href="#2-样式4的移植记录-hexo配置部分" class="headerlink" title="2.样式4的移植记录(hexo配置部分)"></a>2.样式4的移植记录(hexo配置部分)</h3><ol>
-<li><s>data.json保存在photos下。”F:\1-blog\MyWeb\source\photos\data.json”</s></li>
-<li><s>注意核对index.md中链接css等文件的路径。我放在”F:\1-blog\MyWeb\themes\next\source\ _data&quot;</s></li>
-<li><strong>完全跟着教程建立文件夹即可</strong>，不要自找麻烦。</li>
-<li>ins.js文件中链接的修改。这是正确的图片链接格式（注意main前面那个raw）：<a href="https://github.com/Alnas1/photos/raw/main/photos/2021-12-15_suibian%20(2).jpg">https://github.com/Alnas1/photos/raw/main/photos/2021-12-15_suibian%20(2).jpg</a><br>关于这点请看：<a href="https://www.cnblogs.com/ghm-777/p/11433425.html">本地图片上传到GitHub，MarkDown使用Github图片地址</a></li>
-</ol>
-<h3 id="3-尝试对相册页面进行一些修改"><a href="#3-尝试对相册页面进行一些修改" class="headerlink" title="3.尝试对相册页面进行一些修改"></a>3.尝试对相册页面进行一些修改</h3><p>问题就是我看不懂html和css代码。遂疯狂百度。</p>
-<h4 id="photos-index-md文件"><a href="#photos-index-md文件" class="headerlink" title="photos/index.md文件"></a>photos/index.md文件</h4></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>1-博客搭建</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>摸爬滚打改博客（orange时代）</title>
-    <url>/al/undefined.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在HTML和hexo方面完全的小白，此前只懂一点C语言和MATLAB，也没想为了一个博客学完这些东西，遂只有按“想实现什么功能-百度-踩坑-实现功能或者没有”这个流程解决问题。以下是一些记录。</p>
-<hr>
-<h3 id="改图片大小"><a href="#改图片大小" class="headerlink" title="改图片大小"></a>改图片大小</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;图片链接&quot;</span> <span class="attr">width</span>=<span class="string">&quot;30%&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130192516.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130192516.png" width="50%"></a>
-<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130192516.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130192516.png" width="30%"></a>
-
-<h3 id="改字体颜色"><a href="#改字体颜色" class="headerlink" title="改字体颜色"></a>改字体颜色</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;red&quot;</span>&gt;</span>我是红色字体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>就变成红色了→<font color="red">我是红色字体</font></p>
-<p>还可以改颜色，这里选了几个颜色：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;brown&quot;</span>&gt;</span>我是棕色字体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;DodgerBlue &quot;</span>&gt;</span>我是道奇蓝色字体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;Indigo&quot;</span>&gt;</span>我是靛蓝色字体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;LightCoral&quot;</span>&gt;</span>我是浅珊瑚色字体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;LightSlateGray &quot;</span>&gt;</span>我是浅石板灰色字体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;orange&quot;</span>&gt;</span>我是橙色字体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;teal&quot;</span>&gt;</span>我是蓝绿色字体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><font color="brown">我是棕色字体</font><br><font color="DodgerBlue ">我是道奇蓝色字体</font><br><font color="Indigo">我是靛蓝色字体</font><br><font color="LightCoral">我是浅珊瑚色字体</font><br><font color="LightSlateGray ">我是浅石板灰色字体</font><br><font color="orange">我是橙色字体</font><br><font color="teal">我是蓝绿色字体</font></p>
-<p>但是吧，html代码放在正文里特别丑，受不了，偶尔高亮还行，非要在md里搞这个就是违背了它出现的初衷。所以还是不要用比较好。<br>参考资料：<a href="https://www.w3school.com.cn/tags/html_ref_colornames.asp">HTML颜色名</a>、<a href="https://www.w3school.com.cn/tags/tag_font.asp">HTML &lt;字体&gt; 标签</a></p>
-<hr>
-<h3 id="改博客显示在标签栏上的名称"><a href="#改博客显示在标签栏上的名称" class="headerlink" title="改博客显示在标签栏上的名称"></a>改博客显示在标签栏上的名称</h3><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130180407.png" title="20211130180407" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130180407.png" alt="20211130180407"></a><br>我想把这个‘hexo’改成‘Alnasl的博客’<br>前去询问群友，得知在_config.yml文件里改，特别简单。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line">title: hexo <span class="comment">#把这里改成Alnasl的博客</span></span><br><span class="line">description: <span class="string">&#x27;&#x27;</span></span><br><span class="line">keywords:</span><br></pre></td></tr></table></figure>
-<p>就完成了：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130180346.png" title="20211130180346" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130180346.png" alt="20211130180346"></a><br>另外，“归档”、“标签”、“朋友”、“关于”这些页面显示在标签栏上的名称是在它们自己的文件夹下那个index.md里面改。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#index.md文件里</span></span><br><span class="line">title: 朋友 <span class="comment">#这个就是</span></span><br><span class="line">date: 2021-11-29 13:36:24</span><br><span class="line"><span class="built_in">type</span>: friends</span><br><span class="line">categories:</span><br><span class="line">tags:</span><br></pre></td></tr></table></figure>
-<p>改完以后：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130180328.png" title="20211130180328" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130180328.png" alt="20211130180328"></a><br>可恶，仿佛回到初中玩饥荒搞mod那时候了，也是像这样啥都不懂乱试。</p>
-<hr>
-<h3 id="改主页导航栏的名字"><a href="#改主页导航栏的名字" class="headerlink" title="改主页导航栏的名字"></a>改主页导航栏的名字</h3><p>我要把英文改成中文，因为中文短一点，在手机上不会变两行。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130180306.png" title="20211130180306" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130180306.png" alt="20211130180306"></a><br>乱找一通以后发现在自己主题的配置文件source/orange/_config.yml里，因为有中文注释很容易就找到了……</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 主题页面导航栏</span></span><br><span class="line">navbar:</span><br><span class="line">  -</span><br><span class="line">    name: 主页 <span class="comment">#在这改</span></span><br><span class="line">    <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">    path: /</span><br><span class="line">    key: home</span><br><span class="line">  ……</span><br></pre></td></tr></table></figure>
-<p>改完：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130193011.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211130193011.png" width="70%"></a></p>
-<h3 id="改底端联系方式"><a href="#改底端联系方式" class="headerlink" title="改底端联系方式"></a>改底端联系方式</h3><p><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112011434662.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112011434662.png"></a><br>我在力图把每个平台发的信息切割开，所以只需要留一个反馈邮箱（并没有人会用），其他注释掉。<br>同样在主题的配置文件source/orange/_config.yml里进行更改。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 页脚信息</span></span><br><span class="line">footer:</span><br><span class="line">  <span class="comment"># social: 社交方式</span></span><br><span class="line">  <span class="comment"># more: 更多页脚信息</span></span><br><span class="line">  social:</span><br><span class="line">    <span class="comment"># name: 名称</span></span><br><span class="line">    <span class="comment"># icon: 图标，目前仅支持IconFont部分图标</span></span><br><span class="line">    <span class="comment"># path: 地址</span></span><br><span class="line">    <span class="comment">#-</span></span><br><span class="line">      <span class="comment">#name: github</span></span><br><span class="line">      <span class="comment">#icon: github</span></span><br><span class="line">      <span class="comment">#path: https://github.com/zchengsite/hexo-theme-oranges</span></span><br><span class="line">    -</span><br><span class="line">      name: email</span><br><span class="line">      icon: envelope</span><br><span class="line">      path: <span class="string">&quot;mailto:1249636167@qq.com&quot;</span></span><br></pre></td></tr></table></figure>
-<p>就ok了<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112011439111.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112011439111.png"></a></p>
-<h3 id="改主页的图标（用户头像和昵称）"><a href="#改主页的图标（用户头像和昵称）" class="headerlink" title="改主页的图标（用户头像和昵称）"></a>改主页的图标（用户头像和昵称）</h3><p>按照config文件，把images文件夹下的图片替换就行（改配置的名字也行）。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 网站图标</span></span><br><span class="line">favicon:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  icon: /images/favicon.png</span><br><span class="line">  touch_icon: /images/favicon.png</span><br><span class="line"></span><br><span class="line"><span class="comment"># 用户头像与昵称、标签栏图片</span></span><br><span class="line">avatar:</span><br><span class="line">  author_photo: /images/avatar.png</span><br><span class="line">  author_nickname: Alnasl</span><br><span class="line">  path: /</span><br></pre></td></tr></table></figure>
-<p>改好了：<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112021936210.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112021936210.png"></a></p>
-<p>（反而在选和画图标这件事上花了很长时间，鬼知道我是怎么从死神13联想到普罗米亚的）<br>一个问题，我在导航栏切换页面的时候图标会很明显地刷新= =，作者的博客就不会这样，是不是因为图太大了啊。<br>也不算很大吧，才500x500px。</p>
-<p>此外，为什么标签栏的图标没有改变……<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112021937950.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112021937950.png"></a><br>好吧，过一会就好了，大概是电脑没反应过来。<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112021941244.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112021941244.png"></a><br>但是也太小了点吧，用画图把图片改了一下。</p>
-<p><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112021947546.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112021947546.png"></a><br>变大了，但是变胖了，只好再把画幅改成正方形。<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112021952240.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112021952240.png"></a><br>有一点无语，画图改完以后背景变成白色了，电脑懒得开ps（特别卡），还是用procreate改图吧……</p>
-<h3 id="学会目录和tag怎么添加"><a href="#学会目录和tag怎么添加" class="headerlink" title="学会目录和tag怎么添加"></a>学会目录和tag怎么添加</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: 摸爬滚打改博客</span><br><span class="line">date: 2021-11-30 15:18:22</span><br><span class="line">tags: </span><br><span class="line"> - 第一个标签</span><br><span class="line"> - 第二个标签</span><br><span class="line"> - 以此类推</span><br><span class="line">categories: </span><br><span class="line"> - 第一级目录</span><br><span class="line"> - 第二级目录</span><br><span class="line"> - 以此类推</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h3 id="关于放弃这个主题的理由"><a href="#关于放弃这个主题的理由" class="headerlink" title="关于放弃这个主题的理由"></a>关于放弃这个主题的理由</h3><p>太~简洁了。<br>我想实现加密（encrypt插件）功能但是它不行。<br>哎，我很喜欢这个版式的，但是为了加密和其他花里胡哨的东西只好放弃了。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>1-博客搭建</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>摸爬滚打改博客（NexT时代）</title>
-    <url>/al/undefined.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>从orange主题迁移过来。</p>
-<hr>
-<h3 id="主页"><a href="#主页" class="headerlink" title="主页"></a>主页</h3><p><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112110113327.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112110113327.png"></a><br>我喜欢那种卡片样式的，简单凝练，信息密度大一点，这个主题为了排版美观失去了信息密集度。所以想改得紧凑。</p>
-<h4 id="居中摘要"><a href="#居中摘要" class="headerlink" title="居中摘要"></a>居中摘要</h4><p>文件路径MyWeb\themes\next\layout\ _macro\post.njk</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&#123;#################&#125;</span><br><span class="line">&#123;### POST BODY ###&#125;</span><br><span class="line">&#123;#################&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;post-body&#123;% if post.direction and post.direction.toLowerCase() === &#x27;rtl&#x27; %&#125; rtl&#123;% endif %&#125;&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;articleBody&quot;</span>&gt;</span></span><br><span class="line">  &#123;%- if is_index %&#125;</span><br><span class="line">    &#123;%- if post.description and theme.excerpt_description %&#125;</span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center&quot;</span>&gt;</span>&#123;&#123; post.description &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span> </span><br><span class="line">      <span class="comment">&lt;!--noindex--&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="橙色部分"><a href="#橙色部分" class="headerlink" title="橙色部分"></a>橙色部分</h4><p>文件路径MyWeb\themes\next\source\css\ _common\components\post\post-header.styl</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">.posts-expand .post-header &#123;</span><br><span class="line">  font-size: $font-size-large;</span><br><span class="line">  margin-bottom: 60px;</span><br><span class="line">  text-align: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="蓝色虚线框部分"><a href="#蓝色虚线框部分" class="headerlink" title="蓝色虚线框部分"></a>蓝色虚线框部分</h4><p>文件路径MyWeb\themes\next\source\css\ _variables\base.styl</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">//  .post-expand .post-eof</span><br><span class="line">//  In Muse scheme, margin above and below the post separator</span><br><span class="line">$post-eof-margin-top          = 10px; //  or 160px for more white space;</span><br><span class="line">$post-eof-margin-bottom       = 10px; //  or 120px for less white space;</span><br></pre></td></tr></table></figure>
-<h3 id="博客标题"><a href="#博客标题" class="headerlink" title="博客标题"></a>博客标题</h3><h4 id="与网页顶部的距离"><a href="#与网页顶部的距离" class="headerlink" title="与网页顶部的距离"></a>与网页顶部的距离</h4><p><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112112048693.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112112048693.png"></a><br>文件路径MyWeb\themes\next\source\css\ _schemes\ _header.styl</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">.header-inner &#123;</span><br><span class="line">  padding-top: 40px;</span><br><span class="line"></span><br><span class="line">  +mobile() &#123;</span><br><span class="line">    padding-top: 50px;</span><br></pre></td></tr></table></figure>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>1-博客搭建</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《人类削减计划》（The Thinning）</title>
     <url>/al/88a1002a.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss34452/?from=search&seid=16368733533239289367&spm_id_from=333.337.0.0">人类削减计划</a><br>导演：迈克尔·格拉赫<br>主角：懒得写<br>cp：没有<br>视角：女主和男主双线<br>世界观：现代，德州规定考试最后5%会被处刑。<br>观影点：宿舍</p>
@@ -560,55 +560,6 @@
       </categories>
   </entry>
   <entry>
-    <title>《普罗米亚》（Promare）</title>
-    <url>/al/47cba238.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss38790/?from=search&seid=14588705022024327750&spm_id_from=333.337.0.0">普罗米亚</a>（Promare）<br>导演：今石洋之<br>主角：里奥/加罗/克雷<br>cp：无<br>视角：双男主<br>世界观：近未来架空<br>观影点：宿舍</p>
-<hr>
-<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>确实燃。<br>但是本剧情党还是更爱剧情向的片子一点。<br>配色五分，作画五分，剧情两分。<br>我感觉…如果是个番会更好点，就，能有更大篇幅交代一下世界观、埋伏笔啥的，这个剧情还是太……直白了。<br>根据眯眯眼都是怪物的传统，谁是大boss这点简直没有让人猜的必要。</p>
-<p><s>*看完以后在b站评论翻到了加罗和里奥的本子信息，就，跑去看了……捏妈，作者你是个天才……十年后扎头发的里奥……疯狂心动了！！！！我的叉p系统我自己都会感到无语<br>*关于我拿本子当头像这件事一定不会有人发现的，嗯</s></p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>3-观影记录</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>《断背山》（Brokeback Mountain）</title>
-    <url>/al/b14f16c3.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：断背山（Brokeback Mountain）<br>导演：李安<br>主角：恩尼斯·德尔玛/杰克·特维斯特/艾玛/露琳<br>cp：我站恩尼斯x杰克<br>视角：双男主，但主要是恩尼斯吧<br>世界观：1963年至1981年的美国怀俄明州，断背山<br>观影点：学校咖啡厅</p>
-<hr>
-<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>又是summer，永远的summer。（指GGAD）<br>在开头恩尼斯提到自己有未婚妻的时候我就感到大事不妙，这个过程和结局也确实……很意料之外情理之中。<br>哎，选了恩尼斯当主视角，他的情感表达太内敛，和杰克比起来天差地别，我有时候也搞不懂主角怎么想的。杰克就好懂多了，他甫一出场，靠着汽车摆了个pose……啊，你为什么要在周围没人（只有个男人）的情况下摆pose，还调后视镜去看人家。你不对劲。<br>杰克跳脱活跃，恩尼斯理性规矩。杰克说可以杀一只他们放牧的羊来吃，被恩尼斯反对了。这种差异也一直持续到最后。杰克向恩尼斯提议两个人离开这里，远走高飞，恩尼斯同样拒绝了他。是出于责任吧，也出于对世俗的恐惧。<br>抛开性别的话，这妥妥的就是一出婚外情家庭伦理剧。甚至我想替恩尼斯的妻子艾玛喊一句“明明是我先来的”……<br>德克萨斯州到怀俄明州，开车14小时的路程，杰克的妻子问为什么他的朋友从来没来德州找过他。恩尼斯从不把感情诉之于口。杰克在维持他们的关系上付出了很大的努力。恩尼斯能正常地面对杰克有老婆孩子，甚至杰克出轨别的女人这些事，却对杰克去找墨西哥男妓这点大发雷霆。<br>本片剧情很平稳，直到最后，才以杰克的死讯单方面终结了这个无解难题。名场面之一：“想把一半骨灰洒在断背山上”；名场面之二：恩尼斯在杰克家中看到，两人初识时各自穿着的衬衫挂在同一个衣架上，还带着他们当时打架留下的血迹；名场面之三：影片最后的定格。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>3-观影记录</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>《肖申克的救赎》（The Shawshank Redemption）</title>
-    <url>/al/56944bb.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss28274/?from=search&seid=7072310877346482327&spm_id_from=333.337.0.0">肖申克的救赎</a>（The Shawshank Redemption）<br>导演：弗兰克 德拉邦特<br>主角：安迪/瑞德/典狱长<br>cp：无<br>视角：旁白瑞德追忆，主视角安迪<br>世界观：1940s</p>
-<hr>
-<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>原来这部作品的原作是斯蒂芬金写的，他真牛。看了简介以后，原来《迷雾》也是他写的？！<br>其实，因为这部电影太过有名，我一早就知道他会挖隧道逃生，所以在高潮部分没怎么惊讶，越狱以后，瑞德如约找到安迪，影片结束。<br>故事很好，但没有多大震撼，也不骗眼泪。我对主题的自由提不起兴趣。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>3-观影记录</category>
-      </categories>
-  </entry>
-  <entry>
     <title>▇▇▇▇大学新绿指南</title>
     <url>/al/undefined.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>亲爱的新绿们大家好！欢迎大家来到▇▇▇▇大学，预祝你们渡过愉快的大学生涯！<br>入学新绿们请知悉以下规则，以确保在校期间人身与财产安全不受侵犯。</p>
@@ -647,6 +598,55 @@
       <tags>
         <tag>规则类怪谈</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>《普罗米亚》（Promare）</title>
+    <url>/al/47cba238.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss38790/?from=search&seid=14588705022024327750&spm_id_from=333.337.0.0">普罗米亚</a>（Promare）<br>导演：今石洋之<br>主角：里奥/加罗/克雷<br>cp：无<br>视角：双男主<br>世界观：近未来架空<br>观影点：宿舍</p>
+<hr>
+<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>确实燃。<br>但是本剧情党还是更爱剧情向的片子一点。<br>配色五分，作画五分，剧情两分。<br>我感觉…如果是个番会更好点，就，能有更大篇幅交代一下世界观、埋伏笔啥的，这个剧情还是太……直白了。<br>根据眯眯眼都是怪物的传统，谁是大boss这点简直没有让人猜的必要。</p>
+<p><s>*看完以后在b站评论翻到了加罗和里奥的本子信息，就，跑去看了……捏妈，作者你是个天才……十年后扎头发的里奥……疯狂心动了！！！！我的叉p系统我自己都会感到无语<br>*关于我拿本子当头像这件事一定不会有人发现的，嗯</s></p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>3-观影记录</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>《肖申克的救赎》（The Shawshank Redemption）</title>
+    <url>/al/56944bb.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss28274/?from=search&seid=7072310877346482327&spm_id_from=333.337.0.0">肖申克的救赎</a>（The Shawshank Redemption）<br>导演：弗兰克 德拉邦特<br>主角：安迪/瑞德/典狱长<br>cp：无<br>视角：旁白瑞德追忆，主视角安迪<br>世界观：1940s</p>
+<hr>
+<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>原来这部作品的原作是斯蒂芬金写的，他真牛。看了简介以后，原来《迷雾》也是他写的？！<br>其实，因为这部电影太过有名，我一早就知道他会挖隧道逃生，所以在高潮部分没怎么惊讶，越狱以后，瑞德如约找到安迪，影片结束。<br>故事很好，但没有多大震撼，也不骗眼泪。我对主题的自由提不起兴趣。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>3-观影记录</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>《断背山》（Brokeback Mountain）</title>
+    <url>/al/b14f16c3.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：断背山（Brokeback Mountain）<br>导演：李安<br>主角：恩尼斯·德尔玛/杰克·特维斯特/艾玛/露琳<br>cp：我站恩尼斯x杰克<br>视角：双男主，但主要是恩尼斯吧<br>世界观：1963年至1981年的美国怀俄明州，断背山<br>观影点：学校咖啡厅</p>
+<hr>
+<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>又是summer，永远的summer。（指GGAD）<br>在开头恩尼斯提到自己有未婚妻的时候我就感到大事不妙，这个过程和结局也确实……很意料之外情理之中。<br>哎，选了恩尼斯当主视角，他的情感表达太内敛，和杰克比起来天差地别，我有时候也搞不懂主角怎么想的。杰克就好懂多了，他甫一出场，靠着汽车摆了个pose……啊，你为什么要在周围没人（只有个男人）的情况下摆pose，还调后视镜去看人家。你不对劲。<br>杰克跳脱活跃，恩尼斯理性规矩。杰克说可以杀一只他们放牧的羊来吃，被恩尼斯反对了。这种差异也一直持续到最后。杰克向恩尼斯提议两个人离开这里，远走高飞，恩尼斯同样拒绝了他。是出于责任吧，也出于对世俗的恐惧。<br>抛开性别的话，这妥妥的就是一出婚外情家庭伦理剧。甚至我想替恩尼斯的妻子艾玛喊一句“明明是我先来的”……<br>德克萨斯州到怀俄明州，开车14小时的路程，杰克的妻子问为什么他的朋友从来没来德州找过他。恩尼斯从不把感情诉之于口。杰克在维持他们的关系上付出了很大的努力。恩尼斯能正常地面对杰克有老婆孩子，甚至杰克出轨别的女人这些事，却对杰克去找墨西哥男妓这点大发雷霆。<br>本片剧情很平稳，直到最后，才以杰克的死讯单方面终结了这个无解难题。名场面之一：“想把一半骨灰洒在断背山上”；名场面之二：恩尼斯在杰克家中看到，两人初识时各自穿着的衬衫挂在同一个衣架上，还带着他们当时打架留下的血迹；名场面之三：影片最后的定格。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>3-观影记录</category>
+      </categories>
   </entry>
   <entry>
     <title>▇▇▇▇大学自习室</title>
@@ -784,6 +784,37 @@
       </tags>
   </entry>
   <entry>
+    <title>教程 / 如何输出文件树形图</title>
+    <url>/al/6333ec18.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="效果与参考文献"><a href="#效果与参考文献" class="headerlink" title="效果与参考文献"></a>效果与参考文献</h3><ul>
+<li>效果：可输出如下txt文本。<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211219224652.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211219224652.png" width=70%></a></li>
+<li>参考文献：<ul>
+<li><a href="https://blog.csdn.net/qq_23521659/article/details/85616358">[1]（csdn）使用tree指令生成文件目录树</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="具体操作"><a href="#具体操作" class="headerlink" title="具体操作"></a>具体操作</h3><p>在文件夹<code>MyBlog_Images</code>的上一级目录中右键选择‘在windows终端中打开’，输入以下代码。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">tree /f &gt; tree.txt</span><br></pre></td></tr></table></figure>
+<p>就得到了：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211219225435.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211219225435.png" width=40%></a><br>也可以使用如下命令，不创建txt文件，直接在命令行里输出：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">tree /f</span><br></pre></td></tr></table></figure>
+<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211219230149.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211219230149.png" width=70%></a>
+
+
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>6-教程总结</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>转载</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>教程 / 如何给文件及文件夹添加备注</title>
     <url>/al/6333ec18.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="效果与参考文献"><a href="#效果与参考文献" class="headerlink" title="效果与参考文献"></a>效果与参考文献</h3><ul>
@@ -849,37 +880,6 @@
       </tags>
   </entry>
   <entry>
-    <title>教程 / 如何输出文件树形图</title>
-    <url>/al/6333ec18.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="效果与参考文献"><a href="#效果与参考文献" class="headerlink" title="效果与参考文献"></a>效果与参考文献</h3><ul>
-<li>效果：可输出如下txt文本。<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211219224652.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211219224652.png" width=70%></a></li>
-<li>参考文献：<ul>
-<li><a href="https://blog.csdn.net/qq_23521659/article/details/85616358">[1]（csdn）使用tree指令生成文件目录树</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="具体操作"><a href="#具体操作" class="headerlink" title="具体操作"></a>具体操作</h3><p>在文件夹<code>MyBlog_Images</code>的上一级目录中右键选择‘在windows终端中打开’，输入以下代码。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">tree /f &gt; tree.txt</span><br></pre></td></tr></table></figure>
-<p>就得到了：<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211219225435.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211219225435.png" width=40%></a><br>也可以使用如下命令，不创建txt文件，直接在命令行里输出：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">tree /f</span><br></pre></td></tr></table></figure>
-<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211219230149.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211219230149.png" width=70%></a>
-
-
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>6-教程总结</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-        <tag>转载</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>总结 / next更改特定文章的背景图</title>
     <url>/al/2034651e.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h4 id="把背景图片放在images文件夹下"><a href="#把背景图片放在images文件夹下" class="headerlink" title="把背景图片放在images文件夹下"></a>把背景图片放在images文件夹下</h4><p>文件路径：<code>&quot;F:\1-blog\MyWeb\themes\next\source\images\ia_100000000.webp&quot;</code></p>
@@ -896,31 +896,6 @@
       </categories>
       <tags>
         <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Tarot / 你舟沉了</title>
-    <url>/al/1a9a44c2.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<ul>
-<li>缘由：#查询抽卡运势</li>
-<li>牌卡：棱镜</li>
-<li>牌面：星币侍从，星币女皇，倒吊人<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/ia_600003012.jpg" title="ia_600003012" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/ia_600003012.jpg" alt="ia_600003012"></a><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/ia_600003065.jpg" title="ia_600003065" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/ia_600003065.jpg" alt="ia_600003065"></a><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/12.jpg" title="12" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/12.jpg" alt="12"></a></li>
-<li>读牌：暗示充钱，硬吃保底，不尽人意最好收手。</li>
-<li>结果：56发歪了琴柳，五星四个</li>
-<li>今日的胜负：塔罗牌的胜利</li>
-</ul>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>塔罗玄学</category>
-      </categories>
-      <tags>
-        <tag>巴纳姆效应</tag>
       </tags>
   </entry>
   <entry>
@@ -960,6 +935,31 @@
       </categories>
       <tags>
         <tag>烘焙</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tarot / 你舟沉了</title>
+    <url>/al/1a9a44c2.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<ul>
+<li>缘由：#查询抽卡运势</li>
+<li>牌卡：棱镜</li>
+<li>牌面：星币侍从，星币女皇，倒吊人<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/ia_600003012.jpg" title="ia_600003012" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/ia_600003012.jpg" alt="ia_600003012"></a><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/ia_600003065.jpg" title="ia_600003065" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/ia_600003065.jpg" alt="ia_600003065"></a><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/12.jpg" title="12" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/12.jpg" alt="12"></a></li>
+<li>读牌：暗示充钱，硬吃保底，不尽人意最好收手。</li>
+<li>结果：56发歪了琴柳，五星四个</li>
+<li>今日的胜负：塔罗牌的胜利</li>
+</ul>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>塔罗玄学</category>
+      </categories>
+      <tags>
+        <tag>巴纳姆效应</tag>
       </tags>
   </entry>
   <entry>
@@ -1055,19 +1055,20 @@ body
 <h4 id="17-星星（the-star）"><a href="#17-星星（the-star）" class="headerlink" title="17.星星（the star）"></a>17.星星（the star）</h4><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/17.jpg" title="17" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/17.jpg" alt="17"></a><br>在塔的毁灭性坍塌之后，一个女人被抛到空中。当她被抛到最高处时，她看到了她周围的整个世界，星星在高空中唱着高昂清澈的咏叹调。雪铃美妙的合唱让她充满了希望，给处在灾难迷雾中的她带来了内心的平静。百合藤蔓缠绕着她，连接着她与光明。<br>星是希望的灯塔。尽管黑夜漫长而艰巨，夜空中这些信使隐晦的传达着太阳的光辉将永远照耀，即使现在还没有出现在我们的视野中。相信太阳终将升起，这不是一个空泛的想象，而是自然永恒的规律。现在，让微弱的星光照耀你的前路，铺展开的银河系会一起指引你回家。<br>_  </p>
 <p>个人牌义：暂无  </p>
 <hr>
-<h4 id="15-月亮（the-moon）"><a href="#15-月亮（the-moon）" class="headerlink" title="15.月亮（the moon）"></a>15.月亮（the moon）</h4><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/18.jpg" title="18" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/18.jpg" alt="18"></a><br>一轮圆月自河面升起，耀眼镀银一般的光辉映照着浅水。因为从太阳那里映射到黯淡的微光，所以月光给这里笼罩着幽幻的色彩。在河的另一边，狼们发出激烈的嚎叫声，致敬它们幻象本性的女神。一艘空荡荡的小舟在柔软的水波中停靠，是这梦幻般景象的唯一见证人。<br>当月亮升起，你熟悉的环境仿佛变成可怕的阴影世界。压抑在你日常生活中的恐惧和悲伤完全显现，你被强迫去面对你经常忽略的潜意识。这个世界，尽管充满了疯狂的想象，但是在某种程度上比现实还要真实，你的旅途中还有很多需要学习的地方。你的内心时有略微的沉静，但你就是不能否认它的存在。<br>_  </p>
+<h4 id="18-月亮（the-moon）"><a href="#18-月亮（the-moon）" class="headerlink" title="18.月亮（the moon）"></a>18.月亮（the moon）</h4><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/18.jpg" title="18" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/18.jpg" alt="18"></a><br>一轮圆月自河面升起，耀眼镀银一般的光辉映照着浅水。因为从太阳那里映射到黯淡的微光，所以月光给这里笼罩着幽幻的色彩。在河的另一边，狼们发出激烈的嚎叫声，致敬它们幻象本性的女神。一艘空荡荡的小舟在柔软的水波中停靠，是这梦幻般景象的唯一见证人。<br>当月亮升起，你熟悉的环境仿佛变成可怕的阴影世界。压抑在你日常生活中的恐惧和悲伤完全显现，你被强迫去面对你经常忽略的潜意识。这个世界，尽管充满了疯狂的想象，但是在某种程度上比现实还要真实，你的旅途中还有很多需要学习的地方。你的内心时有略微的沉静，但你就是不能否认它的存在。<br>_  </p>
 <p>个人牌义：暂无  </p>
 <hr>
-<h4 id="15-太阳（the-sun）"><a href="#15-太阳（the-sun）" class="headerlink" title="15.太阳（the sun）"></a>15.太阳（the sun）</h4><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/19.jpg" title="19" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/19.jpg" alt="19"></a><br>太阳缓缓流淌出生命之光。用它流动的光影妆点着世界，涟漪涌入宇宙，赋予它所接触到的一切以生机和活力。太阳，伟大的造物主，是万物向上生长和生命纯粹幸福的源头。敞开你的心，吸收它茁壮的力量吧。<br>如果解读时出现了太阳牌，可以将其看作是对生命的美妙与珍贵的提示。它的光辉将照亮你生命中最黑暗的一面，你不会再对自己的未来感到恐惧或者疑惑。它的温暖抚慰着你的自我并使之鲜活。如果你不能很好地感受到它，请静下心来进一步探索，它会在适当的时候展露自己。如果你有幸沐浴在太阳的荣光之中，与你所爱的人分享，当他们穿过阴霾，太阳会带给他们喜悦和安慰。<br>_  </p>
+<h4 id="19-太阳（the-sun）"><a href="#19-太阳（the-sun）" class="headerlink" title="19.太阳（the sun）"></a>19.太阳（the sun）</h4><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/19.jpg" title="19" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/19.jpg" alt="19"></a><br>太阳缓缓流淌出生命之光。用它流动的光影妆点着世界，涟漪涌入宇宙，赋予它所接触到的一切以生机和活力。太阳，伟大的造物主，是万物向上生长和生命纯粹幸福的源头。敞开你的心，吸收它茁壮的力量吧。<br>如果解读时出现了太阳牌，可以将其看作是对生命的美妙与珍贵的提示。它的光辉将照亮你生命中最黑暗的一面，你不会再对自己的未来感到恐惧或者疑惑。它的温暖抚慰着你的自我并使之鲜活。如果你不能很好地感受到它，请静下心来进一步探索，它会在适当的时候展露自己。如果你有幸沐浴在太阳的荣光之中，与你所爱的人分享，当他们穿过阴霾，太阳会带给他们喜悦和安慰。<br>_  </p>
 <p>个人牌义：暂无  </p>
 <hr>
-<h4 id="15-审判（judgement）"><a href="#15-审判（judgement）" class="headerlink" title="15.审判（judgement）"></a>15.审判（judgement）</h4><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20.jpg" title="20" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20.jpg" alt="20"></a><br>一扇摇摆的门敞开着，五彩的漩涡从门外盘旋流入。你现在身处的环境是那样平静、深蓝般的宁静，但又无声虚幻地像午夜的迷雾。伴随着一个令人舒心的变幻的节奏，大量的彩虹漩涡从彼岸世界流入。旋流雾在召唤着你。当然，跨越门槛进入未知将是无比艰巨的。旅途的终点总是忧郁的。但现在是时候做出面对现实的决定了，决定现在所在的地方是否值得停下来直面辉煌的复兴。<br>_  </p>
+<h4 id="20-审判（judgement）"><a href="#20-审判（judgement）" class="headerlink" title="20.审判（judgement）"></a>20.审判（judgement）</h4><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20.jpg" title="20" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20.jpg" alt="20"></a><br>一扇摇摆的门敞开着，五彩的漩涡从门外盘旋流入。你现在身处的环境是那样平静、深蓝般的宁静，但又无声虚幻地像午夜的迷雾。伴随着一个令人舒心的变幻的节奏，大量的彩虹漩涡从彼岸世界流入。旋流雾在召唤着你。当然，跨越门槛进入未知将是无比艰巨的。旅途的终点总是忧郁的。但现在是时候做出面对现实的决定了，决定现在所在的地方是否值得停下来直面辉煌的复兴。<br>_  </p>
 <p>个人牌义：暂无  </p>
 <hr>
 <h4 id="21-世界（the-world）"><a href="#21-世界（the-world）" class="headerlink" title="21.世界（the world）"></a>21.世界（the world）</h4><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/21.jpg" title="21" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/21.jpg" alt="21"></a><br>大阿卡纳牌的终点，世界牌描述了月亮、太阳、倒吊人、教皇、皇帝、正义、力量以及战车围绕着一只平静又专注的眼睛旋转。作为一个整体呈现，这些对立的气场形成了它们真正的模式，最终统一成一个完整的棱镜系统。<br>经过漫长又痛苦的学习过程，你最终将生活中的各个对立面统合为一体。掌握了你的命运，你开始从远处观察你的生活，看它是如何自我融合的。缓解冲突、打破猜疑，然后用这当之无愧的宁静一刻来服务于他人。你站在能力与智慧的顶峰。最终，当你闭上双眼，你将清晰地看到这个世界——由你所知道的一切和你称之为家的地方组成的所在。<br>_  </p>
 <p>个人牌义：暂无  </p>
 <hr>
-<h3 id="小阿卡纳"><a href="#小阿卡纳" class="headerlink" title="小阿卡纳"></a>小阿卡纳</h3><h4 id="权杖牌组"><a href="#权杖牌组" class="headerlink" title="权杖牌组"></a>权杖牌组</h4><h5 id="权杖一"><a href="#权杖一" class="headerlink" title="权杖一"></a>权杖一</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/qz1.jpg" title="qz1" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/qz1.jpg" alt="qz1"></a><br>熔化的能量从地底迸发，冲向天空。未经打磨，它没有确切的形状——它也可极具可塑性，取决于是什么能量通道吸引着它。花朵在根部丛生，渴望攀登它闪亮的躯干。有一个想法如闪着磷光的藤蔓般跳跃而出朝向人类，寻找切实的目标。<br>当你拿到这张牌的时候，你会被强大的能量所击中。如果你选择去使用这些能量，那么你将会卷入某些大冒险中，且充满了激情与绝望。<br>你将需要有很多品质：创造力，同情心和良好的自制力；但是如果你确实信仰着自己的梦想，就决战到底吧。好好利用这高昂的兴奋吧。不要恐惧，不要犹豫，去追寻那些看起来可有作为的想法吧。尤其，相信自己和你的潜能。</p>
+<h3 id="小阿卡纳"><a href="#小阿卡纳" class="headerlink" title="小阿卡纳"></a>小阿卡纳</h3><h4 id="权杖牌组"><a href="#权杖牌组" class="headerlink" title="权杖牌组"></a>权杖牌组</h4><p>想象—创造—热情—奉献<br>积极发挥想象力，火焰便于地球上升起<br>元素：火<br>季节：春<br>星座：白羊座、狮子座、射手座<br>权杖组代表着创造。它们描述了一个想法的产生到实现。如果你想保卫这个想法，使它有维持自我的生命力，那么你必须有野心、决心以及与其他事物协调的能力。但首先，要对自己有信心。用你燃烧的热情注入到某样精彩的事物中去。不管你做了什么，都会印刻出你自己的痕迹，并将由此产生的影响传播至宇宙中。这是使你的世界变得更好的机会。</p>
+<h5 id="权杖一"><a href="#权杖一" class="headerlink" title="权杖一"></a>权杖一</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/qz1.jpg" title="qz1" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/qz1.jpg" alt="qz1"></a><br>熔化的能量从地底迸发，冲向天空。未经打磨，它没有确切的形状——它也可极具可塑性，取决于是什么能量通道吸引着它。花朵在根部丛生，渴望攀登它闪亮的躯干。有一个想法如闪着磷光的藤蔓般跳跃而出朝向人类，寻找切实的目标。<br>当你拿到这张牌的时候，你会被强大的能量所击中。如果你选择去使用这些能量，那么你将会卷入某些大冒险中，且充满了激情与绝望。<br>你将需要有很多品质：创造力，同情心和良好的自制力；但是如果你确实信仰着自己的梦想，就决战到底吧。好好利用这高昂的兴奋吧。不要恐惧，不要犹豫，去追寻那些看起来可有作为的想法吧。尤其，相信自己和你的潜能。</p>
 <h5 id="权杖二"><a href="#权杖二" class="headerlink" title="权杖二"></a>权杖二</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/qz2.jpg" title="qz2" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/qz2.jpg" alt="qz2"></a><br>一个人站在由权杖一中流淌而来的河流对面，他从权杖一中汲取生命力，把它导至权杖中。一个权杖在他的手中，另一个在背包里，权杖象征一扇打开的大门，吸引强大的能量向内流入人的内心。（权杖顶部）伸展的藤蔓寻找到鲜活的能量供给，提供给他自身灼热的能量。他就是权杖一超凡能量在世俗层面的显现。<br>没有切实实现的非凡灵感是一个美丽的梦。谨慎的计划是任何新事物坚实、永恒的基石。成为明智以及实际的人：培养自律和好的品质。但是不要忘记你第一次被灵感击中的那种命定的感觉。你独特的创造力和热情是为了高远的目标。做你自己——敢于面对最真实的自己，将会吸引到你希望遇到的人。</p>
 <h5 id="权杖三"><a href="#权杖三" class="headerlink" title="权杖三"></a>权杖三</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/qz3.jpg" title="qz3" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/qz3.jpg" alt="qz3"></a><br>有一个人跪在河岸边生火。他把野花放进阴燃的余火中，野花散发的芬芳漂浮在空气里，与静谧的、期待已久的暮色融合在一起。满足的微笑在他脸上绽开。他通过简单的仪式，使得世俗的美丽转变回了自然的空气里。<br>烈度最开始快速消逝之后，需要仔细的维护来使火焰继续燃烧下去。小心的放置引燃物，这可以维持火焰长久的燃烧。所以最初跳进脑海的念头一定要去养护和维护它。你的想法正在开始冒出来。不要因为怀疑或沮丧而大发怒火或熄灭自己的信心，这是不必要的。小小的胜利以及谨慎的前行都预示着你的成功。</p>
 <h5 id="权杖四"><a href="#权杖四" class="headerlink" title="权杖四"></a>权杖四</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/qz4.jpg" title="qz4" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/qz4.jpg" alt="qz4"></a><br>四根权杖一起矗立在河边，由一串野花相连结。它们互相平等的支撑着，陶醉于生之喜悦。（吸收）初始能量的藤蔓在这种稳定牢固的结构里面翩翩起舞，在这种平衡和稳定中找到了幸福家园。<br>这张牌是权杖之旅中第一张里程碑式的牌。美好的事物正一起到来，且事情都在朝着顺利的方向进展，趁这段时间好好享受前期工作带来的成功吧。这是一段充满平静和满足的时期。它可能表示为了家庭或者是你生命中的重大事件而举行庆祝仪式。它的核心意义是欢乐的——是你人生中极少数的时期之一，并且你会意识到这点而去感激它。</p>
@@ -1081,7 +1082,23 @@ body
 <h5 id="权杖骑士"><a href="#权杖骑士" class="headerlink" title="权杖骑士"></a>权杖骑士</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/qz12.jpg" title="qz12" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/qz12.jpg" alt="qz12"></a><br>权杖骑士描绘着一个男人与自身进行抗争。他被紧抓在两股高涨的情绪出口之间，每一个都吸引着他的潜能，每一个都渴望着他的能量。充满力量的他想不计后果的抛弃一切，热切地追寻他的目标。但匆忙之间，他未能保持平衡，未能计划好方法，仅凭一腔热血去渡过难关。<br>这是鼠目寸光的。他会被他精神里的充满决心的热情撕成四分五裂。权杖骑士可能预示着信心和能量变得突飞猛进，从侍从那里抓取的火花变成火焰。但不要仅凭最初的热情膨胀就想渡过难关抵达终点；最终，比起短命的热情爆发，有纪律的策略将偿还你更多回报。集中于手头的愿景，询问自己，到底是充满激情，还是仅仅在自以为是。</p>
 <h5 id="权杖王后"><a href="#权杖王后" class="headerlink" title="权杖王后"></a>权杖王后</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/qz13.jpg" title="qz13" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/qz13.jpg" alt="qz13"></a><br>不像她轻率的子女（侍从和骑士）那样无助地被火焰的喷泉抓住，王后引导它的能量，如此她就能优雅地在其上起舞。她在全身心的喜悦中绽放出一朵闪烁微光的花，火焰迷人地包裹着她，享受着王后所带来的狂喜。<br>权杖王后是一颗满盈之心的活力展现。阳光普照、热情洋溢，她携带着火焰所有的积极能量，并以之温暖世界，发散出自信和魅力。她喜悦的表现具有感染力，激发出他人的积极性。结果，她成为一个受尊敬的、富有成效的领导者。当你看到她出现在解读中，考虑一下你如何吸收她鼓舞人心的能量到你的生活中。</p>
 <h5 id="权杖国王"><a href="#权杖国王" class="headerlink" title="权杖国王"></a>权杖国王</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/qz14.jpg" title="qz14" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/qz14.jpg" alt="qz14"></a><br>权杖国王塑造出华丽的身姿，被他的牌组那不知疲倦的、发光的能量环绕。火舌舔舐他的身体，同时华丽的夕阳在他身后翻滚。一根权杖充当了节杖，他统治着心智的国土。作为追逐激情者的守护神，你只需要具现化国王那大无畏的精神，就能给予你方向和目标。富有创造力、大胆、外向，他仅凭自己容光焕发地在场就能博得注意，他是一个鲜活的男人。当你在解读中看到他，考虑一下你如何通过激励他人而获得掌控力。生命不息，热情不止。</p>
-</div></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+<h4 id="星币牌组"><a href="#星币牌组" class="headerlink" title="星币牌组"></a>星币牌组</h4><p>财富——占有——物质——成功<br>“拥有一半好过一无所有”<br>元素：土<br>季节：夏天<br>星座：金牛座、处女座、摩羯座</p>
+<h5 id="星币-ACE"><a href="#星币-ACE" class="headerlink" title="星币 ACE"></a>星币 ACE</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb1.jpg" title="xb1" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb1.jpg" alt="xb1"></a><br>坚实的砖墙之中，一扇带有星币记号的木门缓缓开启。门后有着许多未知的秘密，不过几株弯曲生长的树暗示了那儿是个果园，满载果实，弥漫着泥土的气息。光和泡泡涌了进来，招呼读者们进去。勇敢地跨入那道门，让自己沉浸在惊奇中。当你遇到一个诱人的机会，接受它。这张牌预示着正在进行当中的项目将会带来丰厚的物质收益，尤其当这些项目是新颖而未知的时候更是如此。尽管你也许无法看到墙后的世界，无法意识到你究竟选择了什么，请敢于踏上这少有人走过的路。从长远来看，你终究会发现这是值得的。迎接挑战，开始你崭新的冒险。</p>
+<h5 id="星币二"><a href="#星币二" class="headerlink" title="星币二"></a>星币二</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb2.jpg" title="xb2" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb2.jpg" alt="xb2"></a><br>坐在砖墙之上的年轻人，轻松而熟练地抛掷着两枚星币。他使对立的两极维持平衡，挑起一边的眉毛，仿佛有人落入他的股掌之间。他的帽子得意地歪向一边，顽皮的笑浮上唇边。他流露出毫不费力的自信，显示出对于万物的掌控。<br>生活的不平衡是它最大的力量。对于掌握了涨落起伏的人来说，这永恒的运动推动他进入平稳富饶的韵律中。通过不对某一点过多注意，就可以让一切保持平衡。明白任何事物都有其合适的时机和应处的位置，而它什么时候前进则取决于你。</p>
+<h5 id="星币三"><a href="#星币三" class="headerlink" title="星币三"></a>星币三</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb31.jpg" title="xb31" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb31.jpg" alt="xb31"></a><br>一位石匠熟练地垒着砖块，双眼紧盯着手里的工作，奏出单调的韵律。他已经建起了墙的相当一部分，但在完成之前还有许多工程要进行。不过他并没有停下手中重复的劳动，而是相信他的技巧能够让自己一直看到砖墙的完成。满足而不气馁，他快乐地继续着他的任务。<br>经过一个项目的早期阶段之后，你会因意识到自己已达成了某种确实的阶段性成果而感到一阵愉悦。为你的工作感到自豪吧：一丝不苟且持之以恒，信任你所选择的努力是崇高的。同样的，就像每块砖都支撑着它的兄弟，是时候以另外的视角来审视你的计划。让他人的投入影响到你。这是个建立稳定和信任的好时机。</p>
+<h5 id="星币四"><a href="#星币四" class="headerlink" title="星币四"></a>星币四</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb4.jpg" title="xb4" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb4.jpg" alt="xb4"></a><br>男人蜷身于矮墙上，在胸口紧抓着一枚星币。另一枚在他的头上，还有另外两枚牢牢地置于他的脚下。他小心翼翼地警惕着四周，担心有人会来抢走他宝贵的财产。尽管变得易激惹与吝啬对他来说没有任何意义，但他却没有意识到这个问题。他早已抛弃了那些只图物质利益的伙伴。<br>这是这套牌当中为数不多缺乏正面意涵的星币牌。他以囤积财富而非分享或者投资的形式对待金钱，使得他的财富出现了停滞和自我贬值的状态。无视于精神上的贫穷，他相信他已经在自己的事业上取得了成功。吸取这位不幸之人的教训吧。依赖于现状只能让你在被不可避免的改变所撼动时猝不及防。松开你紧握的手，让自己前进吧。</p>
+<h5 id="星币五"><a href="#星币五" class="headerlink" title="星币五"></a>星币五</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb5.jpg" title="xb5" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb5.jpg" alt="xb5"></a><br>一个沮丧的人瘫倒在泥土里，看起来死气沉沉的，或只是累得站不起来。他已经失去了一切：他的财富、家和朋友们。虽然斑驳的光透过脏兮兮的玻璃落到他的手里，但是这面半废的墙壁仍旧无法使其免于元素的威胁。他紧紧裹着最后的财产——那件斗篷，默然无声地等待着终结。<br>这一张忧虑的牌，星币五预示着完全的落败。这也许是因为你对局势的错误决策，又或是命运的陡然间不定的变数使然。无论如何，你都已经触及谷底，只不过你必须接受这彻头彻尾的失败。当你学会了谦逊这苦涩的一课，你真正的需求就会变得异常明晰。这是给予你的一个机会。任何曾经凌驾于你之上的力量都已经化作尘土。集你所需，再次启程。</p>
+<h5 id="星币六"><a href="#星币六" class="headerlink" title="星币六"></a>星币六</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb6.jpg" title="xb6" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb6.jpg" alt="xb6"></a><br>在墙的尽头，男孩心甘情愿地从他闪闪发光的五枚星币中拿出一枚，将它递给一无所有的女孩，这突然的转变让女孩容光焕发。他恭敬地低下头，使得女孩免于接受救济的尴尬。他小小的奉献使得她的经济状况获得新生，她看到在她面前的，是许多新的机遇和对生活更充盈的喜悦。她喜出望外。<br>在许多挣扎和痛苦的学习经历后，生活赠与你满溢的奢华。当这发生时，不要贪心，保管好你的财富。不吝惜于给予，永远别忘记将你引领至今日的那些曾经艰难的日子。但另一方面，如果你需要慈善时，也不要因此而自负。通常生活会在你最缺乏准备的时候不经你同意便恢复到原有平衡。因此，如果你发现有人愿意帮助你扳回一城时，不要犹豫。你会在更富有的时候一分不差地偿还账单。</p>
+<h5 id="星币七"><a href="#星币七" class="headerlink" title="星币七"></a>星币七</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb7.jpg" title="xb7" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb7.jpg" alt="xb7"></a><br>女人不辞辛劳地把她的星币们埋进土里，一个对物质投资的清晰比喻。作为一个脚踏实地的梦想家，她想象着眼前平实的土地会变成花满开的庭院。刚栽下的星币钻出泥土，闪耀着与他们相称的光芒。一只单独的金桔高高挂着，用对生命饶有兴趣的热忱照亮她的路。<br>平淡而不招摇，在每粒种子里都藏着一个沉睡的王国。它能否从沉睡中苏醒取决于许多因素，尤其重要的则是那一个小小的机会。尽管如此，任何你正在酝酿的都拥有成熟的机会，因此，悉心照料你正在酝酿的是目前最为首要的。千万不要被其外表的微不足道所欺瞒。它们是强大而富饶的，只需要一个奇迹便可以孕育一个帝国。</p>
+<h5 id="星币八"><a href="#星币八" class="headerlink" title="星币八"></a>星币八</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb8.jpg" title="xb8" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb8.jpg" alt="xb8"></a><br>星币七中那不起眼的种子如今已绽放出充满生机的花朵，那个快乐的女孩正为它们浇灌着。她正亲眼见证着自己的付出开花结果，它们是如此的美好。现如今，她只需要以富有生产性的方式进行修剪，从而引导枝叶的生长。在与日俱增的任务面前，她不曾气馁，依旧保持着乐观好好工作。<br>经过最初几周的艰辛之后，当一切蓄势待发时，亲眼目睹成功就在下一秒接踵而至时一种真正意义上的喜悦。为你达到的成就感到高兴吧。仔细经营你所得到的一切，以保证其能以合理有效的方式进一步发展。多关注细节。运气在此时无足轻重；与之相反，你的付出和策略将会为你的成功保驾护航。</p>
+<h5 id="星币九"><a href="#星币九" class="headerlink" title="星币九"></a>星币九</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb9.jpg" title="xb9" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb9.jpg" alt="xb9"></a><br>乍看之下，那赤裸的女人出现的是如此突兀。没有庇护又远离家乡，她站在叶丛之间，仅与一只红尾鵟为伴。但这只捕食者代表着敏锐的智力和勇猛的精神。他们在闪耀的绿叶中亲密无间，他们是自己王国的主人。<br>星币九是它自身的报偿。当你为一个目标付出所有，一切都将得到报偿。现在无论你想要开始着手做什么，都能够做的很好，而你也准备好接受来自成功人生的丰盛。享受它吧。在将来的某个时机你会被考验和试炼。记住你的规范和纪律，那么当那个时刻降临，你便会胸有成竹。</p>
+<h5 id="星币十"><a href="#星币十" class="headerlink" title="星币十"></a>星币十</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb10.jpg" title="xb10" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb10.jpg" alt="xb10"></a><br>在璀璨的生物群环绕的中央，一对男女将他们的孩子摆荡向空中。花儿盛开，闪着光芒的葡萄沉甸甸地悬在藤上，自然中的一切都为它们各自的目标欢欣雀跃。在和生命一样不变的永恒循环中，世界万物进行着出生、成长、死亡的循环。这幅画中蕴藏着大量的爱，它描述着一个帝国的创建与发展。<br>你的辛勤劳作和无私付出已经显化出它们完全的潜力——你已经看到你的努力全然绽放。现在，只需要去收获你的劳动之果；它们在未来的许多年里都会是丰饶多产的。尽情去享受生活，因为它值得这么做。现在还没有到开始掘土筑基的时候。与之相对，致力于维护你所达成的。既然已经把自己全身心的投入辛勤耕耘之中，那便让她以同样的方式回报你。</p>
+<h5 id="星币侍从"><a href="#星币侍从" class="headerlink" title="星币侍从"></a>星币侍从</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb11.jpg" title="xb11" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb11.jpg" alt="xb11"></a><br>侍从举起他闪耀的星币，正在打量它。它向周围发出律动的光波。作为对这活跃能量的回应，植物们尽情地繁荣生长。大量的草莓在他的脚边生长，一股珊瑚红色的葡萄藤缠绕上他的身体，奋力接近那枚星币。侍从满意地笑着，为他的好运感到欣喜。这是一个大计划的开始。<br>当你抽到这张牌，意味着你已经收到来自宇宙的大礼。这可以是任何事物：一份新工作，一份贷款或者遗产，甚至一段正在萌芽的关系。它可能刚意识到的尚未被开发出来的天赋。无论它是什么，都能够拓展你在物质世界的边界。用上侍从轻快得意的信心，为你新的企划开辟道路。更大的财富、安全和影响力是确定的。这是个展现生命力的好时机——因此，享受它吧。</p>
+<h5 id="星币骑士"><a href="#星币骑士" class="headerlink" title="星币骑士"></a>星币骑士</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb12.jpg" title="xb12" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb12.jpg" alt="xb12"></a><br>全身血红的骑士全副武装，手持着发光的星币作为盾牌倚在身上。他从头盔中凝视外面的世界，眯起了眼，提防着危险。但相对于其警觉性，他似乎彻底忽视了自己的坐骑是一只传奇的独角兽，它正在沮丧地用鼻子轻触脚边的草莓。骑士的裸足也掩饰了他对于细节的漫不经心。当真正的灾难降临，他会以可悲的无防备状态迎接它。<br>骑士是一个矛盾的造物。获得了不小的成就的他，逐渐变得依赖于那些带他走了那么远的征象。他不再看得到它们内在相连的美丽，而只关注它们的功用。他异常专注于进一步扩展他的动机。如果你在塔罗解读中抽到这张骑士，要明白你也许需要往后退一小步。采取更宽广的视角。感激那些使你的生活方式成为可能的魔法。否则，你会面对的会是一个缺乏意义和满足的得不偿失的胜利。</p>
+<h5 id="星币王后"><a href="#星币王后" class="headerlink" title="星币王后"></a>星币王后</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb13.jpg" title="xb13" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb13.jpg" alt="xb13"></a><br>王后，自然之母，将她的星币捧在胸口。宇宙能量在她周围传递于草莓之间，开启她非现世的光芒。在她的脚边，两只斑点兔在叶丛间大步跳跃着。热血而智慧，他们成为与这位地球之母相称的伙伴。她滋养生命和繁殖力；她一现身，万象更新。掌管富饶的大地，她是丰盛和繁荣的希望女神。<br>星币王后是一个奇妙的象征；她是自然女神的化身。她是皇后牌在连接土地的答案；强健而温暖，准备着提供一个安全的休憩之所。如果你看到她出现在一次解读里，便预示你有着强大的创造力。你扎根于现实，流露出细微精巧的力量，能够被引导向任何企划。做好准备，让你触及的任何事物都在你手里绽放。</p>
+<h5 id="星币国王"><a href="#星币国王" class="headerlink" title="星币国王"></a>星币国王</h5><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb14.jpg" title="xb14" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/xb14.jpg" alt="xb14"></a><br>星币国王在一只公牛的角上摆荡。他流露出一种沉静的信心，对他的完美技巧了然于心。他的黄褐色的公牛，其肌肉和血液是皇帝牌的显现，不动声色地凝视着，专属于强大国王最具威力的想法和热望。公牛认可他的力量，毫不犹豫地为他效劳。草莓们在他们周围尽情生长。<br>如果你急切地祈求对环境的掌控，没有比星币国王更好的牌了。他是经验、勤奋和直言不讳的智慧的极致，民众们都因其能力放心地依靠他。通过显化他的力量和能力来完成任务。你不需要等待灵感。你能够激发内在的火焰。集结所有的力量，撞开任何挡在前路上的阻碍。</p>
+<h4 id="圣杯牌组"><a href="#圣杯牌组" class="headerlink" title="圣杯牌组"></a>圣杯牌组</h4><p>爱—情感—直觉—泛滥<br>一封烙印在心中的情书远好过遗留在纸上的文字。<br>元素：水<br>季节：秋天<br>星座：双鱼座，巨蟹座，天蝎座</p>
+<h4 id="宝剑牌组"><a href="#宝剑牌组" class="headerlink" title="宝剑牌组"></a>宝剑牌组</h4></div></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
         };
@@ -1227,9 +1244,9 @@ body
       </categories>
   </entry>
   <entry>
-    <title>梦 / 追查无形怪物</title>
-    <url>/al/85fa5e38.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>梦见出现了一种奇怪的力量，其表现形式是人有时候会无缘无故被突然扯一下，但不是别人干的。<br>就像透明人恶作剧一样。<br>这个现象变得越发严重了，我曾见到一个小女孩被来自多方向的无形的力折断骨头，整个人扭曲变形。<br>我去追查这种现象的源头，到一座大厦里（特别像学校的学研中心），进门的时候刚好目睹一个深蓝色衣服的人从高空坠落，砸到地上。<br>因为事情紧急，就没有去管，但是我和助手都认为肯定和源头有关。<br>上楼，被发现，开始躲，躲到一个占卜师的家里，她帮我隐藏了起来，还让我抽了三张塔罗牌，但是没有读牌，我也不记得三张牌是什么。<br>后来我的队友赶到了，在楼外辅助，我下了楼，看到那个坠落的人，走进发现只是一件外套，外套里面摆着一个只有一半的饼干。<br>这个饼干是软的，很大，一个巴掌那么大，完整版应该是两颗心被箭串在一起，这里只有一半，两个心是粉的，中间用黄色写了几个单词，但是不完整。<br>我突然发觉这个跳楼的人就是我。<br>我要传达给我什么信息？<br>在保温杯里找到了另外一半饼干，把它们拼起来，我知道了完整的句子。<br>从占卜师那里走后，她把占卜的牌送给了我。我拿出来边走边洗牌，却发现总是有牌不是背面向上的，还得反过来，我很着急，后来在确认牌数量的时候，数不出正确的数目，就让队友又帮我买了一副牌。</p>
+    <title>梦 / 真实的家庭伦理剧</title>
+    <url>/al/880a55ee.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>梦见爷爷鲨了奶奶，尸体藏在床下，我不知情地在床上睡了两天，第三天房子开始摇晃我看到床底下蔓延的血水才去叫我爸妈，爸妈拿菜刀把奶奶分尸了 ​​​</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -1242,9 +1259,9 @@ body
       </categories>
   </entry>
   <entry>
-    <title>梦 / 真实的家庭伦理剧</title>
-    <url>/al/880a55ee.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>梦见爷爷鲨了奶奶，尸体藏在床下，我不知情地在床上睡了两天，第三天房子开始摇晃我看到床底下蔓延的血水才去叫我爸妈，爸妈拿菜刀把奶奶分尸了 ​​​</p>
+    <title>梦 / 追查无形怪物</title>
+    <url>/al/85fa5e38.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>梦见出现了一种奇怪的力量，其表现形式是人有时候会无缘无故被突然扯一下，但不是别人干的。<br>就像透明人恶作剧一样。<br>这个现象变得越发严重了，我曾见到一个小女孩被来自多方向的无形的力折断骨头，整个人扭曲变形。<br>我去追查这种现象的源头，到一座大厦里（特别像学校的学研中心），进门的时候刚好目睹一个深蓝色衣服的人从高空坠落，砸到地上。<br>因为事情紧急，就没有去管，但是我和助手都认为肯定和源头有关。<br>上楼，被发现，开始躲，躲到一个占卜师的家里，她帮我隐藏了起来，还让我抽了三张塔罗牌，但是没有读牌，我也不记得三张牌是什么。<br>后来我的队友赶到了，在楼外辅助，我下了楼，看到那个坠落的人，走进发现只是一件外套，外套里面摆着一个只有一半的饼干。<br>这个饼干是软的，很大，一个巴掌那么大，完整版应该是两颗心被箭串在一起，这里只有一半，两个心是粉的，中间用黄色写了几个单词，但是不完整。<br>我突然发觉这个跳楼的人就是我。<br>我要传达给我什么信息？<br>在保温杯里找到了另外一半饼干，把它们拼起来，我知道了完整的句子。<br>从占卜师那里走后，她把占卜的牌送给了我。我拿出来边走边洗牌，却发现总是有牌不是背面向上的，还得反过来，我很着急，后来在确认牌数量的时候，数不出正确的数目，就让队友又帮我买了一副牌。</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -1270,6 +1287,82 @@ body
         <category>4-日常记录</category>
         <category>奇怪的梦</category>
       </categories>
+  </entry>
+  <entry>
+    <title>梦 / 逃出犯罪集团窝点</title>
+    <url>/al/df9de6da.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>啊，想不起来了，大概是我是一个十岁小孩，逃出犯罪集团窝点，同行的大哥塞给我一把有我高的枪，连人带车沉到湖里。<br>我把唯一一发子弹打空后，逃到一个农庄处，和当地人讨价还价，把枪卖了，换来两把手枪和若干子弹。对了，枪是电浆枪。 ​​​</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>奇怪的梦</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>出游 / 云佛山滑雪场</title>
+    <url>/al/8e922466.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="账单"><a href="#账单" class="headerlink" title="账单"></a>账单</h3><ul>
+<li>早饭：在学校吃，5.5。</li>
+<li>往程：地铁转公交转公交，坐错车了，转回来，又走了半小时路，21（好像没扣这么多钱）。</li>
+<li>景区：云佛山滑雪场，用的是某个联票，所以有部分费用被免去了。平均一个人48.4，包含门票和所有租赁物品。</li>
+<li>午饭：没吃。主要怕景区宰客</li>
+<li>返程：公交转公交转地铁，21。</li>
+<li>晚饭：KFC。汉堡薯条奶茶，23.5。</li>
+<li>总计：5.5+21+48.4+21+23.5=119.4</li>
+</ul>
+<h3 id="评价-amp-感想"><a href="#评价-amp-感想" class="headerlink" title="评价&amp;感想"></a>评价&amp;感想</h3><p>这一天不算顺利，其实早上8：22被舍友叫起床的时候我还在挣扎要不要去，因为没睡好，感觉眼睛闭上但没睡着，能听到舍友收拾东西的动静，睁眼发现都睡过头了。<br>轻装上阵，包都没背，羽绒服俩口袋揣上手机钥匙钱包矿泉水就走。这导致我手没地方放，只好缩在袖子里。<br>坐车的前两小时还好，第三个小时开始感到难受，舍友说带了袋子你可以吐……我：大可不必。中途坐错了车，最后靠脚走到了滑雪场门口。在门口验票还因为工作人员业务不熟练（她不知道这个票用哪个平台验），卡了好一会。等的过程中听到旁边好多人是从抖音预订来的。<br>租头盔和板子，选双板，现场学习了如何把雪鞋卡上雪板。那边还有租雪服的，一看价格，好家伙，划破了原价赔偿500块，我还是祸害我自己的羽绒服去吧……大概玩了两个多小时一点，滑雪场是一个坡，人从上面滑下来，再站在传送带上传上去，循环往复。<br>滑下去只需要十秒钟，传上去要好几分钟，见缝插针打明日方舟。<br>我对这项运动无感，而且十次里有五次会因为前面有人刹不住车摔倒，就还挺挫败的，尤其是摔了，摸到地上的雪，冻得慌。还有一次因为不知道怎么刹车就用手刹了（。）<br>滑雪场里有很多闲散的教练，进来时看了价格，几乎都要200往上，而且是小时计费。被路过的教练指点了刹车要领，要形容的话大约就是扎个马步，内八。俩滑雪板呈钝角。<br>教练说你想学的话可以找个教练教，我说我就是来玩的哈哈哈。<br>四点半滑雪场关门，等车的时候掏出我的airpods看cytus2x明日方舟的联动剧情，戴帽子不小心把耳机刮掉一只，我吓得大叫一声，连忙捡回来。<br>滑雪的整个过程我心丝毫不起波澜，撞到人都没有耳机掉的那一瞬间惊吓大。<br>返程回校途中越来越难受，冻得、晕的、饿的，吃了KFC以后感觉好点。最后一段徒步简直是煎熬，寒风刮得我牙齿发抖。甚至于洗完热水澡腮帮子都还是冻的……谁懂。</p>
+<h3 id="照片"><a href="#照片" class="headerlink" title="照片"></a>照片</h3><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E5%9D%A1%E5%BA%95.jpg" title="2021-12-16_坡底" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E5%9D%A1%E5%BA%95.jpg" alt="2021-12-16_坡底"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%98%AF%E7%9C%9F%EF%BC%88%E4%BA%BA%E9%80%A0%EF%BC%9F%EF%BC%89%E9%9B%AA.jpg" title="2021-12-16_是真（人造？）雪" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%98%AF%E7%9C%9F%EF%BC%88%E4%BA%BA%E9%80%A0%EF%BC%9F%EF%BC%89%E9%9B%AA.jpg" alt="2021-12-16_是真（人造？）雪"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%89%8B%E5%88%B9%E7%9A%84%E5%90%8E%E6%9E%9C.jpg" title="2021-12-16_手刹的后果" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%89%8B%E5%88%B9%E7%9A%84%E5%90%8E%E6%9E%9C.jpg" alt="2021-12-16_手刹的后果"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E4%B8%80%E4%BA%9B%E6%B6%88%E8%B4%B9%E5%8D%95.jpg" title="2021-12-16_一些消费单" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E4%B8%80%E4%BA%9B%E6%B6%88%E8%B4%B9%E5%8D%95.jpg" alt="2021-12-16_一些消费单"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E8%A3%85%E5%A4%87.jpg" title="2021-12-16_装备" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E8%A3%85%E5%A4%87.jpg" alt="2021-12-16_装备"></a></p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>“1000米以上算出去玩”</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>会逐渐把微博的记录搬过来</title>
+    <url>/al/ba9dbd3b.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>没有博客的时候都是用微博来发一些东西，虽然我日常活跃在qq空间。微信基本上不发朋友圈，除非需要朋友圈转评赞……一般也集不到。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>生活随想</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>拯救者r9000p安全下车</title>
+    <url>/al/42af05cf.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>7588买到，我感觉是香的很。<br>果然这东西就是早买早享受，旧电脑已经被打入冷宫了。<br>现在正在逐步把旧电脑的软件移植过来。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_160922.jpg" title="IMG_20211212_160922" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_160922.jpg" alt="IMG_20211212_160922"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153253.jpg" title="IMG_20211212_153253" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153253.jpg" alt="IMG_20211212_153253"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153512.jpg" title="IMG_20211212_153512" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153512.jpg" alt="IMG_20211212_153512"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153833.jpg" title="IMG_20211212_153833" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153833.jpg" alt="IMG_20211212_153833"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211213234219.png" title="20211213234219" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211213234219.png" alt="20211213234219"></a></p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>“花花世界我一人干翻”</tag>
+      </tags>
   </entry>
   <entry>
     <title>今夜，学研（一）</title>
@@ -1369,9 +1462,9 @@ body
       </tags>
   </entry>
   <entry>
-    <title>梦 / 逃出犯罪集团窝点</title>
-    <url>/al/df9de6da.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>啊，想不起来了，大概是我是一个十岁小孩，逃出犯罪集团窝点，同行的大哥塞给我一把有我高的枪，连人带车沉到湖里。<br>我把唯一一发子弹打空后，逃到一个农庄处，和当地人讨价还价，把枪卖了，换来两把手枪和若干子弹。对了，枪是电浆枪。 ​​​</p>
+    <title>电脑卸载个CAD居然把一众软件搞崩溃</title>
+    <url>/al/ef1efdd5.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>为了电气控制课设临时安装CAD，而为了安装CAD我花了大半天下载软件、删掉软件给它腾空间、处理它一打开就开始cpu过载疯狂闪屏的问题。<br>现在的电脑，6100大洋、服役3年的华为matebookd 2018，各种间歇性黑屏，一打开什么软件屏幕就像年久失修的灯一般开始狂闪，看b站还总是音画不同步。不过这种日子终于到头了。<br>我新买的联想r9000p，价格7588，只要明天没啥大问题就直接用，实在受不了破电脑闪屏、C盘永远剩0字节。卸载个cad搞得浏览器崩溃、图床软件崩溃、qq崩溃。我都想不通为什么。<br>这12.12我是一分钟都待不下去了！</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -1380,8 +1473,11 @@ body
         }</script>]]></content>
       <categories>
         <category>4-日常记录</category>
-        <category>奇怪的梦</category>
+        <category>生活随想</category>
       </categories>
+      <tags>
+        <tag>“花花世界我一人干翻”</tag>
+      </tags>
   </entry>
   <entry>
     <title>今夜，学研（三）</title>
@@ -1625,7 +1721,7 @@ body
 <blockquote>
 <p>&lt;[kp]&gt; 刘平安过图书馆使用<br>&lt;骰娘&gt; [刘平安]进行图书馆使用鉴定: D100=1/50大成功！</p>
 </blockquote>
-<p>&lt;[kp]&gt; 自动贩卖机的屏幕上是优惠促销的广告，香草拿铁8折、冰美式7折；付款码扫描口闪着红点。<br>&lt;[kp]&gt; 刘平安在繁杂的信息堆中发现了这样一张简短的通知：“本院植物学教授钱正辉于11月15日至11月19日赴美国旧金山大学作学术交流，……（调课说明等杂七杂八的内容）。联系本人请发送邮件至<a href="mailto:&#81;&#105;&#97;&#110;&#x5a;&#x68;&#x65;&#110;&#103;&#104;&#117;&#x69;&#95;&#48;&#x34;&#48;&#55;&#x40;&#98;&#x6a;&#102;&#117;&#46;&#x65;&#100;&#117;&#x2e;&#x63;&#x6e;">&#81;&#105;&#97;&#110;&#x5a;&#x68;&#x65;&#110;&#103;&#104;&#117;&#x69;&#95;&#48;&#x34;&#48;&#55;&#x40;&#98;&#x6a;&#102;&#117;&#46;&#x65;&#100;&#117;&#x2e;&#x63;&#x6e;</a>。”钱正辉……刘平安对这个名字有印象，自己似乎上过他的课。满满一公示栏熟悉的措辞让刘平安觉得稍微安心了些。san+1。<br>&lt;[张二狗]&gt; 看看沙发和茶几上有什么<br>&lt;[kp]&gt; 沙发上什么都没有，茶几上有一些没收走的零食包装袋。<br>&lt;[刘平安]&gt; 记下了这条通知，虽然感觉对现在的状况没什么帮助，但是感到安心。<br>&lt;[张二狗]&gt; 我要观察那盏紫色的灯<br>&lt;[刘平安]&gt; 稍微琢磨了一下，0407…或许是办公室号吗？还是日期？决定去找一找407<br>&lt;[kp]&gt; 天花板上的紫灯颜色和刘平安的led灯一模一样，但比它要明亮些，至少能照亮这一小圈地方。只是盯久了让人眼前发黑，有点头晕。<br>&lt;[温夏]&gt; “为什么停电了自动贩卖机还能工作啊。”无奈地看看黑屏的手机，长按开机键试试能不能开机。<br>&lt;[kp]&gt; 手机震动了一下，温夏听到了熟悉的开机动画的声音，但屏幕仍是一片漆黑。<br>&lt;[张二狗]&gt; 调查下整个大厅看看有没有什么特别的<br>&lt;[kp]&gt; 大厅比较空旷，最不对劲的大概就是紫色的灯和还在工作的自动贩卖机了。<br>&lt;[温夏]&gt; “……不会吧……”看来它是没什么用了，只好收起来，跟着刘平安。<br>&lt;[张二狗]&gt; 去自动贩卖机那边看看，买杯拿铁<br>&lt;[kp]&gt; 温夏跟上刘平安陪她寻找着钱正辉的办公室，不知道是因为你们一直在移动还是楼层的暖气开得太足，走廊里热得让人想把外套脱了。而且越靠近C0407，就热得越厉害。</p>
+<p>&lt;[kp]&gt; 自动贩卖机的屏幕上是优惠促销的广告，香草拿铁8折、冰美式7折；付款码扫描口闪着红点。<br>&lt;[kp]&gt; 刘平安在繁杂的信息堆中发现了这样一张简短的通知：“本院植物学教授钱正辉于11月15日至11月19日赴美国旧金山大学作学术交流，……（调课说明等杂七杂八的内容）。联系本人请发送邮件至<a href="mailto:&#81;&#x69;&#x61;&#110;&#90;&#x68;&#x65;&#110;&#x67;&#x68;&#x75;&#x69;&#95;&#x30;&#x34;&#x30;&#55;&#x40;&#x62;&#x6a;&#x66;&#117;&#46;&#101;&#x64;&#117;&#46;&#99;&#x6e;">&#81;&#x69;&#x61;&#110;&#90;&#x68;&#x65;&#110;&#x67;&#x68;&#x75;&#x69;&#95;&#x30;&#x34;&#x30;&#55;&#x40;&#x62;&#x6a;&#x66;&#117;&#46;&#101;&#x64;&#117;&#46;&#99;&#x6e;</a>。”钱正辉……刘平安对这个名字有印象，自己似乎上过他的课。满满一公示栏熟悉的措辞让刘平安觉得稍微安心了些。san+1。<br>&lt;[张二狗]&gt; 看看沙发和茶几上有什么<br>&lt;[kp]&gt; 沙发上什么都没有，茶几上有一些没收走的零食包装袋。<br>&lt;[刘平安]&gt; 记下了这条通知，虽然感觉对现在的状况没什么帮助，但是感到安心。<br>&lt;[张二狗]&gt; 我要观察那盏紫色的灯<br>&lt;[刘平安]&gt; 稍微琢磨了一下，0407…或许是办公室号吗？还是日期？决定去找一找407<br>&lt;[kp]&gt; 天花板上的紫灯颜色和刘平安的led灯一模一样，但比它要明亮些，至少能照亮这一小圈地方。只是盯久了让人眼前发黑，有点头晕。<br>&lt;[温夏]&gt; “为什么停电了自动贩卖机还能工作啊。”无奈地看看黑屏的手机，长按开机键试试能不能开机。<br>&lt;[kp]&gt; 手机震动了一下，温夏听到了熟悉的开机动画的声音，但屏幕仍是一片漆黑。<br>&lt;[张二狗]&gt; 调查下整个大厅看看有没有什么特别的<br>&lt;[kp]&gt; 大厅比较空旷，最不对劲的大概就是紫色的灯和还在工作的自动贩卖机了。<br>&lt;[温夏]&gt; “……不会吧……”看来它是没什么用了，只好收起来，跟着刘平安。<br>&lt;[张二狗]&gt; 去自动贩卖机那边看看，买杯拿铁<br>&lt;[kp]&gt; 温夏跟上刘平安陪她寻找着钱正辉的办公室，不知道是因为你们一直在移动还是楼层的暖气开得太足，走廊里热得让人想把外套脱了。而且越靠近C0407，就热得越厉害。</p>
 <blockquote>
 <p>&lt;[kp]&gt; 过个幸运看看有没有现金<br>&lt;骰娘&gt; [张二狗]进行幸运鉴定: D100=70/55失败</p>
 </blockquote>
@@ -1671,85 +1767,6 @@ body
       </categories>
       <tags>
         <tag>跑团记录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>出游 / 云佛山滑雪场</title>
-    <url>/al/8e922466.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="账单"><a href="#账单" class="headerlink" title="账单"></a>账单</h3><ul>
-<li>早饭：在学校吃，5.5。</li>
-<li>往程：地铁转公交转公交，坐错车了，转回来，又走了半小时路，21（好像没扣这么多钱）。</li>
-<li>景区：云佛山滑雪场，用的是某个联票，所以有部分费用被免去了。平均一个人48.4，包含门票和所有租赁物品。</li>
-<li>午饭：没吃。主要怕景区宰客</li>
-<li>返程：公交转公交转地铁，21。</li>
-<li>晚饭：KFC。汉堡薯条奶茶，23.5。</li>
-<li>总计：5.5+21+48.4+21+23.5=119.4</li>
-</ul>
-<h3 id="评价-amp-感想"><a href="#评价-amp-感想" class="headerlink" title="评价&amp;感想"></a>评价&amp;感想</h3><p>这一天不算顺利，其实早上8：22被舍友叫起床的时候我还在挣扎要不要去，因为没睡好，感觉眼睛闭上但没睡着，能听到舍友收拾东西的动静，睁眼发现都睡过头了。<br>轻装上阵，包都没背，羽绒服俩口袋揣上手机钥匙钱包矿泉水就走。这导致我手没地方放，只好缩在袖子里。<br>坐车的前两小时还好，第三个小时开始感到难受，舍友说带了袋子你可以吐……我：大可不必。中途坐错了车，最后靠脚走到了滑雪场门口。在门口验票还因为工作人员业务不熟练（她不知道这个票用哪个平台验），卡了好一会。等的过程中听到旁边好多人是从抖音预订来的。<br>租头盔和板子，选双板，现场学习了如何把雪鞋卡上雪板。那边还有租雪服的，一看价格，好家伙，划破了原价赔偿500块，我还是祸害我自己的羽绒服去吧……大概玩了两个多小时一点，滑雪场是一个坡，人从上面滑下来，再站在传送带上传上去，循环往复。<br>滑下去只需要十秒钟，传上去要好几分钟，见缝插针打明日方舟。<br>我对这项运动无感，而且十次里有五次会因为前面有人刹不住车摔倒，就还挺挫败的，尤其是摔了，摸到地上的雪，冻得慌。还有一次因为不知道怎么刹车就用手刹了（。）<br>滑雪场里有很多闲散的教练，进来时看了价格，几乎都要200往上，而且是小时计费。被路过的教练指点了刹车要领，要形容的话大约就是扎个马步，内八。俩滑雪板呈钝角。<br>教练说你想学的话可以找个教练教，我说我就是来玩的哈哈哈。<br>四点半滑雪场关门，等车的时候掏出我的airpods看cytus2x明日方舟的联动剧情，戴帽子不小心把耳机刮掉一只，我吓得大叫一声，连忙捡回来。<br>滑雪的整个过程我心丝毫不起波澜，撞到人都没有耳机掉的那一瞬间惊吓大。<br>返程回校途中越来越难受，冻得、晕的、饿的，吃了KFC以后感觉好点。最后一段徒步简直是煎熬，寒风刮得我牙齿发抖。甚至于洗完热水澡腮帮子都还是冻的……谁懂。</p>
-<h3 id="照片"><a href="#照片" class="headerlink" title="照片"></a>照片</h3><p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E5%9D%A1%E5%BA%95.jpg" title="2021-12-16_坡底" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E5%9D%A1%E5%BA%95.jpg" alt="2021-12-16_坡底"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%98%AF%E7%9C%9F%EF%BC%88%E4%BA%BA%E9%80%A0%EF%BC%9F%EF%BC%89%E9%9B%AA.jpg" title="2021-12-16_是真（人造？）雪" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%98%AF%E7%9C%9F%EF%BC%88%E4%BA%BA%E9%80%A0%EF%BC%9F%EF%BC%89%E9%9B%AA.jpg" alt="2021-12-16_是真（人造？）雪"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%89%8B%E5%88%B9%E7%9A%84%E5%90%8E%E6%9E%9C.jpg" title="2021-12-16_手刹的后果" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E6%89%8B%E5%88%B9%E7%9A%84%E5%90%8E%E6%9E%9C.jpg" alt="2021-12-16_手刹的后果"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E4%B8%80%E4%BA%9B%E6%B6%88%E8%B4%B9%E5%8D%95.jpg" title="2021-12-16_一些消费单" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E4%B8%80%E4%BA%9B%E6%B6%88%E8%B4%B9%E5%8D%95.jpg" alt="2021-12-16_一些消费单"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E8%A3%85%E5%A4%87.jpg" title="2021-12-16_装备" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/2021-12-16_%E8%A3%85%E5%A4%87.jpg" alt="2021-12-16_装备"></a></p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>“1000米以上算出去玩”</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>会逐渐把微博的记录搬过来</title>
-    <url>/al/ba9dbd3b.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>没有博客的时候都是用微博来发一些东西，虽然我日常活跃在qq空间。微信基本上不发朋友圈，除非需要朋友圈转评赞……一般也集不到。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>生活随想</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>拯救者r9000p安全下车</title>
-    <url>/al/42af05cf.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>7588买到，我感觉是香的很。<br>果然这东西就是早买早享受，旧电脑已经被打入冷宫了。<br>现在正在逐步把旧电脑的软件移植过来。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_160922.jpg" title="IMG_20211212_160922" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_160922.jpg" alt="IMG_20211212_160922"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153253.jpg" title="IMG_20211212_153253" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153253.jpg" alt="IMG_20211212_153253"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153512.jpg" title="IMG_20211212_153512" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153512.jpg" alt="IMG_20211212_153512"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153833.jpg" title="IMG_20211212_153833" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153833.jpg" alt="IMG_20211212_153833"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211213234219.png" title="20211213234219" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211213234219.png" alt="20211213234219"></a></p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>“花花世界我一人干翻”</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>电脑卸载个CAD居然把一众软件搞崩溃</title>
-    <url>/al/ef1efdd5.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>为了电气控制课设临时安装CAD，而为了安装CAD我花了大半天下载软件、删掉软件给它腾空间、处理它一打开就开始cpu过载疯狂闪屏的问题。<br>现在的电脑，6100大洋、服役3年的华为matebookd 2018，各种间歇性黑屏，一打开什么软件屏幕就像年久失修的灯一般开始狂闪，看b站还总是音画不同步。不过这种日子终于到头了。<br>我新买的联想r9000p，价格7588，只要明天没啥大问题就直接用，实在受不了破电脑闪屏、C盘永远剩0字节。卸载个cad搞得浏览器崩溃、图床软件崩溃、qq崩溃。我都想不通为什么。<br>这12.12我是一分钟都待不下去了！</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>“花花世界我一人干翻”</tag>
       </tags>
   </entry>
 </search>

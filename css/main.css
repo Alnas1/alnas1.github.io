@@ -2756,7 +2756,7 @@ mark.search-keyword {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #52ec87;
+  background: #90ff55;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2817,5 +2817,5 @@ mark.search-keyword {
 .tuyou img {
   float: right;
   width: 200px;
-  margin: 10px;
+  margin: 25px;
 }
