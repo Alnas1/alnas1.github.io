@@ -4,6 +4,8 @@
 figure {
     margin: 0;
 }
+
+
 #post-instagram .article-entry{
 	padding-right: 0;
 }
@@ -12,7 +14,7 @@ figure {
 	min-height: 500px;
 }
 .instagram img {
-    width: 100%;
+	width: 100%;
     
 }
 .posts-expand .post-body img {
@@ -41,6 +43,7 @@ figure {
 	text-align: center;
 	background: #ededed;
 	outline: 1px solid #ddd;
+
 }
 .instagram .thumb a {
 	position: relative;
@@ -75,9 +78,6 @@ figure {
 	position: absolute;
 	width: 90%;
 	height: 90%;
-	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 1px rgba(255,255,255,0.1);
-	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 1px rgba(255,255,255,0.1);
-	box-shadow: 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 1px rgba(255,255,255,0.1);
 }
 .instagram .album div.img-box img{
 	width: 100%;
