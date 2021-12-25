@@ -125,11 +125,10 @@
 <li><s>data.json保存在photos下。”F:\1-blog\MyWeb\source\photos\data.json”</s></li>
 <li><s>注意核对index.md中链接css等文件的路径。我放在”F:\1-blog\MyWeb\themes\next\source\ _data&quot;</s></li>
 <li><strong>完全跟着教程建立文件夹即可</strong>，不要自找麻烦。</li>
-<li>ins.js文件中链接的修改。这是正确的图片链接格式（注意main前面那个raw）：<a href="https://github.com/Alnas1/photos/raw/main/photos/2021-12-15_suibian%20(2).jpg">https://github.com/Alnas1/photos/raw/main/photos/2021-12-15_suibian%20(2).jpg</a><br>关于这点请看：<a href="https://www.cnblogs.com/ghm-777/p/11433425.html">本地图片上传到GitHub，MarkDown使用Github图片地址</a></li>
+<li><s>ins.js文件中链接的修改。这是正确的图片链接格式（注意main前面那个raw）：<a href="https://github.com/Alnas1/photos/raw/main/photos/2021-12-15_suibian%20(2).jpg">https://github.com/Alnas1/photos/raw/main/photos/2021-12-15_suibian%20(2).jpg</a><br>关于这点请看：<a href="https://www.cnblogs.com/ghm-777/p/11433425.html">本地图片上传到GitHub，MarkDown使用Github图片地址</a></s></li>
+<li>图片链接格式可以参照图床链接，即<code>https://cdn.jsdelivr.net/gh/Alnas1/MyBlog_Images/min_photos/</code>，这样亲测比上面那个快。<h3 id="3-尝试对相册页面进行一些修改"><a href="#3-尝试对相册页面进行一些修改" class="headerlink" title="3.尝试对相册页面进行一些修改"></a>3.尝试对相册页面进行一些修改</h3><h4 id="照片排版有问题，调整排版"><a href="#照片排版有问题，调整排版" class="headerlink" title="照片排版有问题，调整排版"></a>照片排版有问题，调整排版</h4>新建文件<code>my.css</code>，置于<code>&quot;F:\1-blog\MyWeb\themes\next\source\lib\album\my.css&quot;</code><br>内容：<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span><span class="selector-class">.reward-img</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">display</span>: -webkit-flex; <span class="comment">/* Safari */</span></span><br><span class="line">    -webkit-<span class="attribute">flex-flow</span>: row-reverse wrap; <span class="comment">/* Safari 6.1+ */</span></span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">flex-flow</span>: row-reverse wrap;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">ul</span><span class="selector-class">.img-box-ul</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: -webkit-flex; <span class="comment">/* Safari */</span></span><br><span class="line">    -webkit-<span class="attribute">flex-flow</span>: row-reverse wrap; <span class="comment">/* Safari 6.1+ */</span></span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">flex-flow</span>: row-reverse wrap;</span><br><span class="line">    <span class="attribute">justify-content</span>: center;</span><br><span class="line">    <span class="attribute">align-items</span>: center;</span><br><span class="line">    <span class="attribute">flex-direction</span>: row;</span><br><span class="line">    <span class="attribute">align-content</span>: center;</span><br><span class="line">    <span class="attribute">flex-wrap</span>: wrap;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+并在photos/index.md文件中添加引用：<br><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;../lib/album/my.css&quot;&gt; </code></li>
 </ol>
-<h3 id="3-尝试对相册页面进行一些修改"><a href="#3-尝试对相册页面进行一些修改" class="headerlink" title="3.尝试对相册页面进行一些修改"></a>3.尝试对相册页面进行一些修改</h3><h4 id="照片排版有问题，调整排版"><a href="#照片排版有问题，调整排版" class="headerlink" title="照片排版有问题，调整排版"></a>照片排版有问题，调整排版</h4><p>新建文件<code>my.css</code>，置于<code>&quot;F:\1-blog\MyWeb\themes\next\source\lib\album\my.css&quot;</code><br>内容：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span><span class="selector-class">.reward-img</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">display</span>: -webkit-flex; <span class="comment">/* Safari */</span></span><br><span class="line">    -webkit-<span class="attribute">flex-flow</span>: row-reverse wrap; <span class="comment">/* Safari 6.1+ */</span></span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">flex-flow</span>: row-reverse wrap;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">ul</span><span class="selector-class">.img-box-ul</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: -webkit-flex; <span class="comment">/* Safari */</span></span><br><span class="line">    -webkit-<span class="attribute">flex-flow</span>: row-reverse wrap; <span class="comment">/* Safari 6.1+ */</span></span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">flex-flow</span>: row-reverse wrap;</span><br><span class="line">    <span class="attribute">justify-content</span>: center;</span><br><span class="line">    <span class="attribute">align-items</span>: center;</span><br><span class="line">    <span class="attribute">flex-direction</span>: row;</span><br><span class="line">    <span class="attribute">align-content</span>: center;</span><br><span class="line">    <span class="attribute">flex-wrap</span>: wrap;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>并在photos/index.md文件中添加引用：<br><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;../lib/album/my.css&quot;&gt; </code></p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -195,138 +194,6 @@
       </tags>
   </entry>
   <entry>
-    <title>《人类削减计划》（The Thinning）</title>
-    <url>/al/88a1002a.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss34452/?from=search&seid=16368733533239289367&spm_id_from=333.337.0.0">人类削减计划</a><br>导演：迈克尔·格拉赫<br>主角：懒得写<br>cp：没有<br>视角：女主和男主双线<br>世界观：现代，德州规定考试最后5%会被处刑。<br>观影点：宿舍</p>
-<hr>
-<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>逻辑漏洞多，最主要就是经典守卫看不见人。一些悬疑桥段能被预判（对我说的就是通风管道突然塌掉和女主偷偷吊东西吊到一半一只手伸出来抓住）。<br>弱智的安保系统，能被俩高中生逛穿了。高考都比这严啊，太好笑了，还，监控录像录到小boss输密码被女主复制…………导演完全没想过如果真实行这种计划该如何设置安保吧！安保就全员工具人，导演觉得该有点人装逼的地方来点人，其他地图全开放世界，让主角随便逛。<br>而且，两个人逃命（查真相）过程里掉泳池上来了，还换了干净衣服再继续跑…………？？？你是真的不着急啊？？<br>男主孝死，他爸是州长，他故意考试全选d让自己不合格（考试全是选择题这点也挺奇怪的），于是他老爸只好暗箱操作把成绩换了。但是他爹事情败露以后为了前途牺牲儿子，太好孝了。<br>最后有个小反转，虽然我在开头就猜到了[吃瓜]考试失败的那5%不是死刑而是被社会性死亡拉到地下黑工厂996。说实话还不如僵尸肖恩来的有创意……弹幕都在刷考不好的进工厂实在是太真实了<br>总之，我怀疑这片子在内涵所有高考制度。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>3-观影记录</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>《困在时间里的父亲》（The Father）</title>
-    <url>/al/25791df9.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss39063/?from=search&seid=13023073866578101878&spm_id_from=333.337.0.0">困在时间里的父亲</a>（The Father）<br>导演：弗罗莱恩 泽勒<br>主角：安东尼/安娜/詹姆斯/劳拉<br>cp：无<br>视角：父亲视角，穿插旁观者视角<br>世界观：现代<br>观影点：宿舍</p>
-<hr>
-<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>这是b站付费观看的片子，拿b币券买了。<br>不同于《记忆碎片》，在那个电影里面，好歹观众看完以后会发现原来只要再把剧情倒着看一遍就能理解；这个片子的“记忆”是混杂着幻觉的。《记忆碎片》的叙事好比反序排放的书本章节，《父亲》的叙事则是一把混着人工钻的钻石碎屑，指缝滤过大量粉末，有一个人努力地用手指把掌心中剩下的真假钻石碎屑拼接在一起。<br>不同记忆、场景间的切换极为自然，它在向你展示一个患上阿兹海默的老人的世界。看完以后觉得非常疲惫，九十多分钟里在餐桌，在客厅，在卧室，在医院，听着不同的人的说辞，猜着他们的身份，前后矛盾，左右为难，上一秒女儿走出房间，下一秒另一个人自称是他的女儿。<br>我在看的时候总想着看看当时是几月几号，后来发现这个行为和父亲找表是一样的。<br>我想着为什么不让女儿解释清楚到底发生了什么？也许女儿已经解释过很多很多次了。<br>老人不想让女儿离开他身边，他说：“求你别走。”女儿不明白，她只是去隔壁房间开一下门，为什么父亲怕她离开。对于父亲来说，也许她出了门，回来的会是另外一个人。<br>整个故事的剧情可能是这样的（瞎猜）：小女儿出事以后，父亲受到了刺激，选择把出车祸这件事遗忘，同时他患上了阿兹海默症。（因为全篇都没有小女儿出现，除了医院那一幕，所以我怀疑他在小女儿出车祸以后拒绝现实才得病的。）<br>大女儿承担起照顾父亲的责任，她努力了很久，给父亲请护工，因为父亲不愿意去养老院，父亲与请来的数个护工闹翻，大女儿无奈把父亲接到自己家里看护。<br>但是大女儿的丈夫对此非常不满，某天他忍不住打了父亲，导致大女儿和其丈夫离婚。<br>于是丈夫变成前夫。大女儿又照顾了她的父亲五年，直到她爱上了另一个人。她决定把父亲送到养老院，因为她要和她爱的人住在巴黎。<br>父亲最终妥协了，住进养老院，女儿时不时会回来与他过周末。<br>其中有一个细节，我最开始一直觉得父亲说的小女儿不存在，他可能错乱了把大女儿的幼年时期和她本人割裂开，大女儿小女儿就是一个人。后来看见照片里他确实有两个女儿……<br>看完以后：正经人谁写日记啊……也许还是要的</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>3-观影记录</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>《失控玩家》（FREE GUY）</title>
-    <url>/al/67e9e5bb.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：失控玩家<br>导演：肖恩·利维<br>主角：盖（guy）/米莉/凯斯<br>cp：凯斯x米莉<br>视角：男主<br>世界观：未来有个游戏叫自由之城<br>观影点：学校咖啡厅</p>
-<hr>
-<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>设定一般，在科幻，甚至网游文这块都是差不多被玩烂了的梗。不过在电影，以觉醒的NPC为主角的片子我还是头一回见。<br>故事线比较弱，全片最大的亮点是自由之城本身，整一个捏他GTA……或者和它同类型的游戏。特效还行吧。<br>想吐槽的一点是为啥你们后台程序员开创造模式都杀不掉那个NPC，救命。<br>而且boss完全就是反社会人士，动不动“全服停机”“删掉所有玩家账号”，最后直接去砸自家的服务器捏妈，真有你的。<br>真实世界的男主（男二？）对女主态度奇奇怪怪，前半段爱搭不理的到后来直接一转攻势变成深情天才宅男，好吧，我不是很懂。<br>当然没有楚门的世界来得好看。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>3-观影记录</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>《敦刻尔克》（Dunkirk）</title>
-    <url>/al/2bb62205.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss39311/?from=search&seid=3577660643582982089&spm_id_from=333.337.0.0">敦刻尔克</a><br>导演：克里斯托弗 诺兰<br>主角：空军组/小船组/陆地组<br>cp：无<br>视角：三线混剪<br>世界观：历史，敦刻尔克大撤退<br>观影点：宿舍</p>
-<hr>
-<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>不懂历史的人看这个真的心肌梗塞，以前我看电影不开弹幕怕被剧透，看这个我必须全程开着不然看不懂。<br>中元节的时候看的，本来想点个鬼片看，但是b站封推了这个就看这个了，看了一半才发现是诺兰的电影。<br>很厉害，他能把战争片拍出“肃杀的文艺”的感觉。看完以后，我再回想，不会想起飞机轰炸和子弹鱼雷，只会想起铅灰天空下的海滩，海滩上是排队等船回家的士兵。<br>但是这个叙事实在有点……我不明白，看得人很不轻松。<br>最后涂一个定格。<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112052144640.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112052144640.png" width="60%"></a></p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>3-观影记录</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>《小姐》（아가씨）</title>
-    <url>/al/be6fbdc1.html</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="c0dc0e190d61de65ef2a265543ed8f051dbd7583d98407b84b6dbe4299483751">d3dc46725fcff41a5bfde1958f6ae5914b7e40f820787afa80af02db4449eeea47af9d1c7f3696639acd2395a7c49db0d179053dc1d8cb6d783a08cbea540ba3bb1c905e524c1cbb409d1865e44546d755bb970abfb78e426fc963bd77461f1f8d6fc5cbf09670c294bcf9e9ba642680e42a0893ea0fe05bab749c4b5e969d11ee5a2c0e3014181d7d211d7b1ea7a0964dfe80be20e31dcfb6a3538d4dda2e0fe0b72d2fab32039c93bae814ac29bd65aae4ad2d083a4ba4f9aafa055a43f1ad46d9387d1e638afb59127633572c9d34c0a44402d8a99d1c0642f720ff05ad0a09f5cc82ecdf7b46607805b3c9b2e2f7bea144d58e712914db4f20ba92ccd14745cc9b3c0ba05659da2b9fcfe2468890822b269f2b411c9514b47babfbd22db98400d07eaf88ab600909fbc95bc803f10c89836f267b204493f2b48535769dbeb94ead0517acda58410083f8e14534768163cbd74430cfc37b990659ba43a8d9c22bf16169d951b553e349ebc6da0b98918e7716d6be9c02f1ed1cfba9f2634dda14c54a973935ea7389dc04cc12c3311e0ab07a1b16a30fec506e96392d2442f1d83d46516ee6126fea3f978e5d78928afec45c10ecd2816133c9ab922f18083f9f890b63206c2337eb59b174938d3330fc292deae912bcac01e2e42e6655211941ef04c19e4140796ccf071f48abd5f3402ccb256bde35fd96e5e1c89435440a2d9f673d4256d49beecf046dc65d86344cb6f74fd8737e0ab04438acb4c260813b0a6f2aa90ec17fff8a96d244bbeacc5bcf5252e6364e3130c7ad159fb13b231e2dd63f71f54e1a7b29412158e007cc301d71d9ffc81a1047114eb3c91d8a81582de5566539d5a62070b02d6cb17d917c7b9ebaa74e4124dafda73899ac98f4f052009455eee49662ace5b8b57fbaf08d0a860ad8bfdda59cdf86e2954711f5e40c51940d8180de0f8729d5577efe74a2a6f9e8073f24758451ab60ed7941485369646c70546f737af00cb2c38adfa34e61a499900fa8460aeb08411db897248f5c74ef7737c2b905cbce34f1dfee953cf9e06a5ce9b94d4f652038ca464f2659e6c7b2ed032f93d442345ed0d75b00ebd648ecf379246661cd81c5f9eff4d7deed0a6824653bf354005a56b741f61e9f63777f13b7f502c19337dab567d37e601ab7c0310e64b51b5bc5a66961861b4cf89c1fd0e304cbca9fc09c9d31721b26bfc1f1cda5426a1b9664af8adfced5cf4714e8e107cb9fdb577afde7d3860f94dfdde11efab14675f37d8f623991323cc01e87b0dbc974da3f4952b2b29b9a03db3b343628ced34f947d174c600175c77cd2f9bc64609f7fab13ac76d2b128dd8b59558775153ceffaf4dce7180195714e8b6a0cbbc200c3741f86f5f12ffb6281bffa5b6ec9e75a09edf29867876db1adcf646b5675dfbcf6b08bd6edbe30a093d4512dad5789b665e16e6d2dcfea1195c2b6054ba7a4d2677aae63217c159bd62faa2bf1541aae85d45240581d5fe0423f0cc264fdf105974997367d550197451d23d59a58b763563ed692a945f42643ab1b7e8b2df2ec2f21550a5e42261c4db8f2c6776e9b22b1a8704ea0c1671d9228a6f3ebfd3cfc34ff39822cd6636a998be321772b3d506ad7729aa326edefc68bb02223752ac011bc5af47001c0f11f928dc70d279d989d830b11477777ac8991878b8797b33a0f0bf460f9227efdde2160cf7478e87da5124f5401a2fb94c0b28ff9accfff81104d10084c4cdc043844b287449cf230508c056c597ba3ebe197cfd603da2688845c916ae993c54313a60c82d276c8f5691cc11dceecc18515c040c3b07520b47141a0167e7ac25c79b2d5ba49bab70672dd8a7c08f7ae2d4cf5f821976a4328370094251e6df289a911db35adf358b2c463a39045f5e248dce2ba9d47934ab495ba70c49d6b1ee975924bfb7defdabfb14b162d0b7cb61fbc29af620483df761451617643454949caf5fd72c6b24f2a223b2dfbe0a7200930e5436dca67efa1b43d7517eda596c46bb70b1f9f0aaaf044325285eeb89fe0fa68f9986508c94d1f9d00bb797cf5d635073bc27b0b9f78dd36f31b4a8f71761c3594e4d74cdc4053b56696fc07a838579f6fa1ad0e844e090f10c8f6f04ae29b4ae9d5ff385dc039c3a567525e715ee02b207e6a548867cc1c1d7099745488f6d6285b65446612bb212b5a74792ce3fd7409402031451e21fbb4aa5577333dce3d15c9238b6ab918a302d353a6a61fb96a18a883cbb8d2bc89b81ad265fa23cba639529cb803d33ddf8a06341406885fa58db5be0e2d2c625a4dac5bf6c09f217bfe2237c73a83043c9447aa8bc483855940c683e3475f99a9ca4885b49ec8fa903ef6d92499d394bf5700570e7426b2f896613b424a771fda125d17728e4c0eac85fd2748c71e5343c4549fb6ae6b7f7c8465f864fb11b6d75f8bbad251249beed178935a083a48741ad5fe4da64ca433cc779f5cd83ab8ffc71b5c044e200eba4a595aca1f5705673943498028ce16a7a5f0a1d4036f2ee646ad2b4e28b944f485f417018a544edb65ccc2c014aff431e1fcb59b772bc3b6649b001a52b7b4c1372ccaca7b1e8927dc3e001dd86be39b9f74751b6c4d739b7f36ab803b1fc44de3c02a1139e2713daab06a9db68741eff20376ae509766517d8a907fb015c82e1de83d087f7b9dc3add208feef6273f30d397ec1a84a7365000641a8adec85e7ccd37825fdceeb42a3fb8944a85b80d2517f774f9f18a3d96415b8bfb9285e2edd38b4935fe6ff8b3135dbb27fe5b08577e304e36b754a80effcf86837d5a861c4f274202c576cbaac9179a3144d1dad71b013c14450b6581d2546db730fd3ec9fc0c2044d61cc92bbd71c803957effc690f23712594c225ebe45084fdc73d088d14df38f672576c32a0cc38f4eb936d7bdfb0a71d77c4a4d662c6ad39172a0cc8afd72a93a708d8acb1bfb238a5570e76dc00c3de87ad90002e313049e500d6366cc0677e5abb9781ce941441cb1cfdbb06aa66fa244ee7b23899a60ff6fd16289e053f7a397bca43f8a644b1460c638ad170ca76b70de135c960f3caba4d2f2ae3874a1730b0e644a5dab4b7aba37dd586a90dfd7164c571bf36a7b9fdea56b3fd4bc83d10d64cc6dd994781731eecf865c23458c5be5f57bb04653ca570d511487807f8099b4908ee352c6af734a12167a2efe829b87114576b513d53a95e1e061ed2299b2d9bfb04ded84f1f8fb5d1e88010cedf7816025e77a92e666466553de463bb15e1f3ff0e8a74520ced9a9c1a3639db7ca68bd357044c</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-up">
-      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-up">提示：大胆猜，懂的都懂</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>3-观影记录</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>《断背山》（Brokeback Mountain）</title>
-    <url>/al/b14f16c3.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：断背山（Brokeback Mountain）<br>导演：李安<br>主角：恩尼斯·德尔玛/杰克·特维斯特/艾玛/露琳<br>cp：我站恩尼斯x杰克<br>视角：双男主，但主要是恩尼斯吧<br>世界观：1963年至1981年的美国怀俄明州，断背山<br>观影点：学校咖啡厅</p>
-<hr>
-<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>又是summer，永远的summer。（指GGAD）<br>在开头恩尼斯提到自己有未婚妻的时候我就感到大事不妙，这个过程和结局也确实……很意料之外情理之中。<br>哎，选了恩尼斯当主视角，他的情感表达太内敛，和杰克比起来天差地别，我有时候也搞不懂主角怎么想的。杰克就好懂多了，他甫一出场，靠着汽车摆了个pose……啊，你为什么要在周围没人（只有个男人）的情况下摆pose，还调后视镜去看人家。你不对劲。<br>杰克跳脱活跃，恩尼斯理性规矩。杰克说可以杀一只他们放牧的羊来吃，被恩尼斯反对了。这种差异也一直持续到最后。杰克向恩尼斯提议两个人离开这里，远走高飞，恩尼斯同样拒绝了他。是出于责任吧，也出于对世俗的恐惧。<br>抛开性别的话，这妥妥的就是一出婚外情家庭伦理剧。甚至我想替恩尼斯的妻子艾玛喊一句“明明是我先来的”……<br>德克萨斯州到怀俄明州，开车14小时的路程，杰克的妻子问为什么他的朋友从来没来德州找过他。恩尼斯从不把感情诉之于口。杰克在维持他们的关系上付出了很大的努力。恩尼斯能正常地面对杰克有老婆孩子，甚至杰克出轨别的女人这些事，却对杰克去找墨西哥男妓这点大发雷霆。<br>本片剧情很平稳，直到最后，才以杰克的死讯单方面终结了这个无解难题。名场面之一：“想把一半骨灰洒在断背山上”；名场面之二：恩尼斯在杰克家中看到，两人初识时各自穿着的衬衫挂在同一个衣架上，还带着他们当时打架留下的血迹；名场面之三：影片最后的定格。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>3-观影记录</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>《普罗米亚》（Promare）</title>
-    <url>/al/47cba238.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss38790/?from=search&seid=14588705022024327750&spm_id_from=333.337.0.0">普罗米亚</a>（Promare）<br>导演：今石洋之<br>主角：里奥/加罗/克雷<br>cp：无<br>视角：双男主<br>世界观：近未来架空<br>观影点：宿舍</p>
-<hr>
-<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>确实燃。<br>但是本剧情党还是更爱剧情向的片子一点。<br>配色五分，作画五分，剧情两分。<br>我感觉…如果是个番会更好点，就，能有更大篇幅交代一下世界观、埋伏笔啥的，这个剧情还是太……直白了。<br>根据眯眯眼都是怪物的传统，谁是大boss这点简直没有让人猜的必要。</p>
-<p><s>*看完以后在b站评论翻到了加罗和里奥的本子信息，就，跑去看了……捏妈，作者你是个天才……十年后扎头发的里奥……疯狂心动了！！！！我的叉p系统我自己都会感到无语<br>*关于我拿本子当头像这件事一定不会有人发现的，嗯</s></p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>3-观影记录</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>《肖申克的救赎》（The Shawshank Redemption）</title>
-    <url>/al/56944bb.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss28274/?from=search&seid=7072310877346482327&spm_id_from=333.337.0.0">肖申克的救赎</a>（The Shawshank Redemption）<br>导演：弗兰克 德拉邦特<br>主角：安迪/瑞德/典狱长<br>cp：无<br>视角：旁白瑞德追忆，主视角安迪<br>世界观：1940s</p>
-<hr>
-<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>原来这部作品的原作是斯蒂芬金写的，他真牛。看了简介以后，原来《迷雾》也是他写的？！<br>其实，因为这部电影太过有名，我一早就知道他会挖隧道逃生，所以在高潮部分没怎么惊讶，越狱以后，瑞德如约找到安迪，影片结束。<br>故事很好，但没有多大震撼，也不骗眼泪。我对主题的自由提不起兴趣。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>3-观影记录</category>
-      </categories>
-  </entry>
-  <entry>
     <title>《不断作死后我成了白月光》by纪婴</title>
     <url>/al/a7117b43.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.biquge.com.cn/book/51562/">不断作死后我成了白月光</a><br>作者：纪婴<br>主角：宁宁/裴寂<br>cp：裴寂x宁宁<br>视角：女主BG<br>分类：古言修仙欢乐向<br>世界观：低魔修仙<br>状态：完结，但是我跳着看完的</p>
@@ -337,24 +204,6 @@
 <p>宁宁：……<br>没救了，毁灭吧，修真界迟早要完。</p>
 <hr>
 <h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>挺好笑的。<br>新鲜感开始消褪了，作者有时候玩的梗让人感觉不适合，笑不出来。<br>男主人设……………好tm尬（个人觉得）。感情线也是。<br>所有人的智商都不咋地。所谓的体现女主智商的剧情，太强行了，就感觉是作者拿着剧本为主角特意设计了这么条思路。（读了hp理性之道以后我会鄙视一些反派的高智商）<br>怀疑这些写这种穿直男修仙文的作者是不是完全没有看过真正的直男修仙文。写一个试炼副本一点没有大场面的感觉，势力人物就那么几个，像小孩子过家家。<br>竟开始怀念斗破了（草<br>灵剑山也很会玩梗啊！配角出彩。我至今记得小师妹来救王陆的那一幕。<br>再继续看看吧，反正也没其他可看。<br>哦对了，我完全不理解给设置一个老乡角色有啥作用（到目前来说）就为了沙雕吗？挺没意思的，我看着看着也不知道这群人在忙活什么。感觉贺知州（老乡角色）的作用就是为了弥补女主不能崩掉她白月光人设去做一些无下限举动的遗憾。简而言之，为了方便作者玩梗。且女主要玩梗的时候有人回应。<br>顺便说，这个世界观很空泛，我读下来对它的地图没有什么概念，就知道几个名字。要开副本也是突然出现新地图，没伏笔和铺垫。女主宁宁对这所谓原著的了解程度也忽上忽下。我觉得逻辑最那啥的一点是：一般人都会回避自己和配角同名的书吧……还是个作天作地的反派，你不隔应吗？ 我不知道她到底读没读过“原著”，有时候说她读过，有时候是系统提醒，有时候让我觉得她啥也不知道。 合理猜测作者并没有写“原著”大纲。<br>男主一点没有“直男修仙文”的男主样，这都踩俩副本了，你得到了点啥？有生死危机境界突破吗？有天材地宝吗？一点长进都没有，修啥仙你。漂亮有用吗？合着就给女主当陪衬呗。你修仙可不是为了给女主履历上增添一笔“有个狂拽酷炫道侣”的吧？<br>反派太弱智了。 这里的所有人似乎都对自己的实力没有清晰定位。boss你明明看上去挺强的为什么要忌惮他们啊？干就完了<br>这修仙修的，像武林 完全没有战力体系，师尊级长辈无排面，遇到的敌人智商和战力和主角一条线上。喔对不起，智商不在一条线上。<br>跳着看完了，我只能给3.5/5。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>2-读书记录</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>《从前有座灵剑山》by国王陛下</title>
-    <url>/al/93a42184.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://book.qidian.com/info/3347574/">从前有座灵剑山</a><br>作者：国王陛下<br>主角：王陆/王舞<br>cp：王陆x王舞<br>视角：男主BG<br>分类：修仙，正剧，玩梗大师<br>世界观：会是那种两拨人打着打着突然有外敌入侵要联手对敌的剧情<br>状态：完结</p>
-<hr>
-<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>灵剑派成立于九州历四二三三年，几千年来始终致力于为行业提供一流的修仙人才，如今位列万仙盟五大超品宗派之一，掌门风吟真人担任万仙盟七大常务长老，修为盖世。灵剑派坚持和平与发展的主题，门派核心价值理念是求真、求善、求种。为进一步扩充门派力量，补充新鲜血液，拟于近期召开升仙大会，诚邀各路精英前来。<br>还是原来的节操<br>还是一样的搞笑</p>
-<hr>
-<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>为什么看这本书：被看的上一本（白月光）毒到了所以来洗洗眼睛，是二刷。<br>作者胆子很大（狗头<br>主角无下限的设定一脉相承。在灵剑山火之前我就看过作者的《盗梦宗师》，同样很好笑，那时在贴吧上看的，王五和银霜的安卓和ios之争还是当时的热点事件（草。但是《崩坏世界的传奇大冒险》没看下去，不知道主角在干啥。）<br>依稀记得后半段拉胯，尤其是高达出来以后，要接受这个设定还是挺困难的。<br>我喜欢不乱挖坑的作者，灵剑山抖包袱抖得还不戳，前期的智教没有始乱终弃，黑潮带回来的狗子、云台仙子也都在后期又出现过。它副本和副本之间的衔接很短，节奏鲜明，互相间有联系。<br>个人感觉的不足之处就是王陆挨过的打太少了，一路上顺风顺水见招拆招，我从来没有产生过“担心主角打不过”的情绪，总是期待他还能想出什么无下限的骚操作干掉对面的敌人。<br>他没有“成长”，不是指修为，单指挫折过少，没有吃过真正的亏。从头到尾都是高智商反社会无下限人设。<br>中间出现的公文风乐死我了，作者是个公务员吧哈哈哈哈</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -409,6 +258,24 @@
       </categories>
   </entry>
   <entry>
+    <title>《从前有座灵剑山》by国王陛下</title>
+    <url>/al/93a42184.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://book.qidian.com/info/3347574/">从前有座灵剑山</a><br>作者：国王陛下<br>主角：王陆/王舞<br>cp：王陆x王舞<br>视角：男主BG<br>分类：修仙，正剧，玩梗大师<br>世界观：会是那种两拨人打着打着突然有外敌入侵要联手对敌的剧情<br>状态：完结</p>
+<hr>
+<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>灵剑派成立于九州历四二三三年，几千年来始终致力于为行业提供一流的修仙人才，如今位列万仙盟五大超品宗派之一，掌门风吟真人担任万仙盟七大常务长老，修为盖世。灵剑派坚持和平与发展的主题，门派核心价值理念是求真、求善、求种。为进一步扩充门派力量，补充新鲜血液，拟于近期召开升仙大会，诚邀各路精英前来。<br>还是原来的节操<br>还是一样的搞笑</p>
+<hr>
+<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>为什么看这本书：被看的上一本（白月光）毒到了所以来洗洗眼睛，是二刷。<br>作者胆子很大（狗头<br>主角无下限的设定一脉相承。在灵剑山火之前我就看过作者的《盗梦宗师》，同样很好笑，那时在贴吧上看的，王五和银霜的安卓和ios之争还是当时的热点事件（草。但是《崩坏世界的传奇大冒险》没看下去，不知道主角在干啥。）<br>依稀记得后半段拉胯，尤其是高达出来以后，要接受这个设定还是挺困难的。<br>我喜欢不乱挖坑的作者，灵剑山抖包袱抖得还不戳，前期的智教没有始乱终弃，黑潮带回来的狗子、云台仙子也都在后期又出现过。它副本和副本之间的衔接很短，节奏鲜明，互相间有联系。<br>个人感觉的不足之处就是王陆挨过的打太少了，一路上顺风顺水见招拆招，我从来没有产生过“担心主角打不过”的情绪，总是期待他还能想出什么无下限的骚操作干掉对面的敌人。<br>他没有“成长”，不是指修为，单指挫折过少，没有吃过真正的亏。从头到尾都是高智商反社会无下限人设。<br>中间出现的公文风乐死我了，作者是个公务员吧哈哈哈哈</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>2-读书记录</category>
+      </categories>
+  </entry>
+  <entry>
     <title>《反派有话说》by莫晨欢</title>
     <url>/al/49968d0b.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=2768395">反派有话说</a><br>作者：莫晨欢<br>主角：洛渐清/无音<br>cp：无音x洛渐清<br>视角：男主BL<br>分类：架空玄幻<br>世界观：就是仙侠啦，重生还捡到了剧本<br>状态：完结</p>
@@ -430,13 +297,14 @@
       </categories>
   </entry>
   <entry>
-    <title>《城里的魔法师》by降噪豆</title>
-    <url>/al/cb14f017.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://book.qidian.com/info/1011086875/">《城里的魔法师》</a><br>作者：降噪豆<br>主角：杜正一、罗奇、麻江、关歆月<br>cp：无！！！是兄弟情！！（甜死人的那种！<br>视角：男主，有点群像的感觉？<br>分类：硬要分应该是东方奇幻（大概）<br>世界观：作者设定人类分为两大群体——普通人类和魔法师。魔法师几乎只存在于亚欧大陆。<br>状态：连载中</p>
+    <title>《向师祖献上咸鱼》by扶华</title>
+    <url>/al/7a029616.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=4104036">向师祖献上咸鱼</a><br>作者：扶华<br>主角：廖停雁/司马焦<br>cp：司马焦x廖停雁<br>视角：女主BG<br>分类：古代言情，画风欢乐<br>世界观：架空仙侠<br>状态：完结</p>
 <hr>
-<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>住在人类城市里的魔法师，守护着祖先的火种，唱着古老的歌谣，却开着红色的野马，奔驰在限速120的公路上。<br>法师世界里，北方学院三年级的低能法师学徒罗奇正处于学分不够，可能留级的悲惨境地。好在天无绝人之路，他得到了给天才学长杜正一当当吉祥物，做做社会实践赚取学分的机会。<br>但这个社会实践，似乎跟罗奇想的不太一样。忽然觉醒的能力，记忆中永不愈合的伤口……世界以他的生活为奇点，迅速地塌缩。<br>天才战斗法师学长与逗比低能学弟的组合，必须想想办法，找到这一切背后的真相。</p>
+<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>廖停雁一个刚入门，辈分最低的新弟子，竟然降服了庚辰仙府那位超绝可怕的大魔头师祖，引发众人热议。<br>请问廖师妹，你是怎么做到的呢？<br>廖停雁：……依靠咸鱼的本能？</p>
 <hr>
-<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>所以说故事发生在中国，一开始我总觉得哪里不对劲，然后明白了，魔法师的称号加上中国名字啊这一股土洋结合的味道……有点不适应，看久了就习惯了<br>剧情：从第一章开始就有伏笔了，但是我没有死抠这些。作者应该是想写科技飞速发展的人类和魔法师群体之间的冲突。标题的含义是魔法师已经习惯于某些人类带来的便利，魔法师变成了城里的魔法师。<br>篇幅：长篇，目前到500多章。完！全！不！够！看！啊！qwq<br>文风：刚开始的时候感觉有点儿外国奇幻的味道，也接地气，总体来说没有硬伤，很舒服的文笔风格<br>其它：这篇文真的好冷……但它很优秀，真的，我好担心作者弃坑。罗奇太可爱了他和杜正一的互动太甜了awsl 我截了好多图，要好好研究一下作者是怎么写出这种感觉的呜呜呜<br>21/12/4 现在还在追，作者的连载时间很随机，大概，月更？</p>
+<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>初看觉得很有趣，一口气看半本，中后期就……没那么好看了。<br>遗憾的是没有很出彩的配角，配角控落泪。<br>感觉大部分配角都好睿智……男主真心话buff一出所有人只能盲目痴愚。除了女主，女主是真的咸鱼。<br>咸到所有修为都是靠男主灌出来的。<br>啊这。</p>
+<p>后来在b站上还看到作者自己画的手书，我趣，什么神仙太太</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -448,14 +316,13 @@
       </categories>
   </entry>
   <entry>
-    <title>《向师祖献上咸鱼》by扶华</title>
-    <url>/al/7a029616.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=4104036">向师祖献上咸鱼</a><br>作者：扶华<br>主角：廖停雁/司马焦<br>cp：司马焦x廖停雁<br>视角：女主BG<br>分类：古代言情，画风欢乐<br>世界观：架空仙侠<br>状态：完结</p>
+    <title>《城里的魔法师》by降噪豆</title>
+    <url>/al/cb14f017.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://book.qidian.com/info/1011086875/">《城里的魔法师》</a><br>作者：降噪豆<br>主角：杜正一、罗奇、麻江、关歆月<br>cp：无！！！是兄弟情！！（甜死人的那种！<br>视角：男主，有点群像的感觉？<br>分类：硬要分应该是东方奇幻（大概）<br>世界观：作者设定人类分为两大群体——普通人类和魔法师。魔法师几乎只存在于亚欧大陆。<br>状态：连载中</p>
 <hr>
-<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>廖停雁一个刚入门，辈分最低的新弟子，竟然降服了庚辰仙府那位超绝可怕的大魔头师祖，引发众人热议。<br>请问廖师妹，你是怎么做到的呢？<br>廖停雁：……依靠咸鱼的本能？</p>
+<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>住在人类城市里的魔法师，守护着祖先的火种，唱着古老的歌谣，却开着红色的野马，奔驰在限速120的公路上。<br>法师世界里，北方学院三年级的低能法师学徒罗奇正处于学分不够，可能留级的悲惨境地。好在天无绝人之路，他得到了给天才学长杜正一当当吉祥物，做做社会实践赚取学分的机会。<br>但这个社会实践，似乎跟罗奇想的不太一样。忽然觉醒的能力，记忆中永不愈合的伤口……世界以他的生活为奇点，迅速地塌缩。<br>天才战斗法师学长与逗比低能学弟的组合，必须想想办法，找到这一切背后的真相。</p>
 <hr>
-<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>初看觉得很有趣，一口气看半本，中后期就……没那么好看了。<br>遗憾的是没有很出彩的配角，配角控落泪。<br>感觉大部分配角都好睿智……男主真心话buff一出所有人只能盲目痴愚。除了女主，女主是真的咸鱼。<br>咸到所有修为都是靠男主灌出来的。<br>啊这。</p>
-<p>后来在b站上还看到作者自己画的手书，我趣，什么神仙太太</p>
+<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>所以说故事发生在中国，一开始我总觉得哪里不对劲，然后明白了，魔法师的称号加上中国名字啊这一股土洋结合的味道……有点不适应，看久了就习惯了<br>剧情：从第一章开始就有伏笔了，但是我没有死抠这些。作者应该是想写科技飞速发展的人类和魔法师群体之间的冲突。标题的含义是魔法师已经习惯于某些人类带来的便利，魔法师变成了城里的魔法师。<br>篇幅：长篇，目前到500多章。完！全！不！够！看！啊！qwq<br>文风：刚开始的时候感觉有点儿外国奇幻的味道，也接地气，总体来说没有硬伤，很舒服的文笔风格<br>其它：这篇文真的好冷……但它很优秀，真的，我好担心作者弃坑。罗奇太可爱了他和杜正一的互动太甜了awsl 我截了好多图，要好好研究一下作者是怎么写出这种感觉的呜呜呜<br>21/12/4 现在还在追，作者的连载时间很随机，大概，月更？</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -530,6 +397,25 @@
       </categories>
   </entry>
   <entry>
+    <title>《重生之大佬拯救计划》by钟仅</title>
+    <url>/al/9878dfb3.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=4050220">重生之大佬拯救计划</a><br>作者：钟仅<br>主角：李惟、张蔓<br>cp：李惟x张蔓<br>视角：女主BG<br>分类：现代言情<br>世界观：现代<br>状态：完结</p>
+<hr>
+<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>1、比李惟年纪轻轻拿了世界理论物理最高奖项更令人震惊的事，就是颁奖典礼前一天他被发现在家中逝世，享年35岁。<br>他在给学生Jackie的信里写着：这些年我一直在疯狂地做一件事情，物理就是我的全部。而在它结束的那一天，黑暗会完全将我吞没。<br>2、毕业多年之后，张蔓在整理东西的时候看到了夹在物理书里的一封情书，署名李惟。<br>他去世后，她食不知味，夜不能寐，直到有天睡醒后发现自己回到了十六岁。<br>——后来，再次成为物理界泰斗的李惟在接受国外媒体参访时说：“我的生命中有两件最重要的事，物理和她。物理给了我在黑暗中思考的能力，而她，给了我光明。”</p>
+<p>暗黑自闭天才少年 X 暖心治愈小可爱！</p>
+<hr>
+<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>在知乎热搜#有哪些不侮辱智商的言情小说 看到的推荐，它在第一个，文案提到李惟拿到世界理论物理最高奖项，患精神分裂症，自杀，张蔓随后穿越回高中去救赎男主。<br>说实话，我就是冲着世界理论物理最高奖项去看的……（<br>好久不看言情，个人认为并没有那么好看，有点雷到的点有：<br>1.男主人设问题。拿了世界理论物理最高奖项的人，并没有给我“他很聪明”的印象，其日常就是在女主写作业的时候看论文，或者迸几条高端词汇，我能想到的展示他聪明的正面描写只有这些了。另外，在表白之后人设略崩塌，可能是因为话多了起来。<br>2.女主人设问题。有时为了推剧情会在对话过程中强行智商掉线，然后吧我也没get到她聪明的点（毕竟后期精神学家），可能是被男主打压得太厉害了……就，有种男主已经是全书智商天花板了你不能比他聪明的感觉。中间有一段女主疯狂找男主，我感觉她不是很想找男主，只是想表示她很想找男主，这一段剧情女主暴风哭泣，我：……。<br>另外就是，女主明明是三十多岁重生回来的，还是个高中物理老师，这一职业特质没表现清楚，反正只有当作者提到了她曾经是高中物理老师的时候我才想起来还有这个设定。<br>还有：“呐”这个字眼很出戏。<br>还有：女主完全为男主而活，这就是救赎吗？<br>3.内心独白。感叹很多有点尬。女主也就算了男主你……<br>基本情况就是这样。当然它也有好的方面，比如情节安排，戏剧冲突，整体流畅无弃点。问题大概出在我口味越来越叼。<br>最后狗头保命[doge]</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>2-读书记录</category>
+      </categories>
+  </entry>
+  <entry>
     <title>《神澜奇域无双珠》by唐家三少</title>
     <url>/al/f8c9179e.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：《神澜奇域 无双珠》<br>作者：唐家三少<br>主角：法华、蓝歌<br>cp：无<br>视角：双男主，作者说不会有女主<br>分类：架空玄幻<br>世界观：不管了，三少说什么就是什么吧……我并不喜欢这种强行塞一嘴设定的感觉所以没仔细看</p>
@@ -570,25 +456,6 @@
       </categories>
   </entry>
   <entry>
-    <title>《重生之大佬拯救计划》by钟仅</title>
-    <url>/al/9878dfb3.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=4050220">重生之大佬拯救计划</a><br>作者：钟仅<br>主角：李惟、张蔓<br>cp：李惟x张蔓<br>视角：女主BG<br>分类：现代言情<br>世界观：现代<br>状态：完结</p>
-<hr>
-<h3 id="官方文案"><a href="#官方文案" class="headerlink" title="官方文案"></a>官方文案</h3><p>1、比李惟年纪轻轻拿了世界理论物理最高奖项更令人震惊的事，就是颁奖典礼前一天他被发现在家中逝世，享年35岁。<br>他在给学生Jackie的信里写着：这些年我一直在疯狂地做一件事情，物理就是我的全部。而在它结束的那一天，黑暗会完全将我吞没。<br>2、毕业多年之后，张蔓在整理东西的时候看到了夹在物理书里的一封情书，署名李惟。<br>他去世后，她食不知味，夜不能寐，直到有天睡醒后发现自己回到了十六岁。<br>——后来，再次成为物理界泰斗的李惟在接受国外媒体参访时说：“我的生命中有两件最重要的事，物理和她。物理给了我在黑暗中思考的能力，而她，给了我光明。”</p>
-<p>暗黑自闭天才少年 X 暖心治愈小可爱！</p>
-<hr>
-<h3 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h3><p>在知乎热搜#有哪些不侮辱智商的言情小说 看到的推荐，它在第一个，文案提到李惟拿到世界理论物理最高奖项，患精神分裂症，自杀，张蔓随后穿越回高中去救赎男主。<br>说实话，我就是冲着世界理论物理最高奖项去看的……（<br>好久不看言情，个人认为并没有那么好看，有点雷到的点有：<br>1.男主人设问题。拿了世界理论物理最高奖项的人，并没有给我“他很聪明”的印象，其日常就是在女主写作业的时候看论文，或者迸几条高端词汇，我能想到的展示他聪明的正面描写只有这些了。另外，在表白之后人设略崩塌，可能是因为话多了起来。<br>2.女主人设问题。有时为了推剧情会在对话过程中强行智商掉线，然后吧我也没get到她聪明的点（毕竟后期精神学家），可能是被男主打压得太厉害了……就，有种男主已经是全书智商天花板了你不能比他聪明的感觉。中间有一段女主疯狂找男主，我感觉她不是很想找男主，只是想表示她很想找男主，这一段剧情女主暴风哭泣，我：……。<br>另外就是，女主明明是三十多岁重生回来的，还是个高中物理老师，这一职业特质没表现清楚，反正只有当作者提到了她曾经是高中物理老师的时候我才想起来还有这个设定。<br>还有：“呐”这个字眼很出戏。<br>还有：女主完全为男主而活，这就是救赎吗？<br>3.内心独白。感叹很多有点尬。女主也就算了男主你……<br>基本情况就是这样。当然它也有好的方面，比如情节安排，戏剧冲突，整体流畅无弃点。问题大概出在我口味越来越叼。<br>最后狗头保命[doge]</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>2-读书记录</category>
-      </categories>
-  </entry>
-  <entry>
     <title>《魔鬼的体温》by藤萝为枝</title>
     <url>/al/f8b9eff1.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>书名：<a href="https://www.jjwxc.net/onebook.php?novelid=3945423">魔鬼的体温</a><br>作者：藤萝为枝<br>主角：贝瑶/裴川<br>cp：裴川x贝瑶<br>视角：女主BG<br>分类：正剧，主要是写男女主谈恋爱<br>世界观：现代，重生<br>状态：完结</p>
@@ -608,6 +475,138 @@
         }</script>]]></content>
       <categories>
         <category>2-读书记录</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>《困在时间里的父亲》（The Father）</title>
+    <url>/al/25791df9.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss39063/?from=search&seid=13023073866578101878&spm_id_from=333.337.0.0">困在时间里的父亲</a>（The Father）<br>导演：弗罗莱恩 泽勒<br>主角：安东尼/安娜/詹姆斯/劳拉<br>cp：无<br>视角：父亲视角，穿插旁观者视角<br>世界观：现代<br>观影点：宿舍</p>
+<hr>
+<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>这是b站付费观看的片子，拿b币券买了。<br>不同于《记忆碎片》，在那个电影里面，好歹观众看完以后会发现原来只要再把剧情倒着看一遍就能理解；这个片子的“记忆”是混杂着幻觉的。《记忆碎片》的叙事好比反序排放的书本章节，《父亲》的叙事则是一把混着人工钻的钻石碎屑，指缝滤过大量粉末，有一个人努力地用手指把掌心中剩下的真假钻石碎屑拼接在一起。<br>不同记忆、场景间的切换极为自然，它在向你展示一个患上阿兹海默的老人的世界。看完以后觉得非常疲惫，九十多分钟里在餐桌，在客厅，在卧室，在医院，听着不同的人的说辞，猜着他们的身份，前后矛盾，左右为难，上一秒女儿走出房间，下一秒另一个人自称是他的女儿。<br>我在看的时候总想着看看当时是几月几号，后来发现这个行为和父亲找表是一样的。<br>我想着为什么不让女儿解释清楚到底发生了什么？也许女儿已经解释过很多很多次了。<br>老人不想让女儿离开他身边，他说：“求你别走。”女儿不明白，她只是去隔壁房间开一下门，为什么父亲怕她离开。对于父亲来说，也许她出了门，回来的会是另外一个人。<br>整个故事的剧情可能是这样的（瞎猜）：小女儿出事以后，父亲受到了刺激，选择把出车祸这件事遗忘，同时他患上了阿兹海默症。（因为全篇都没有小女儿出现，除了医院那一幕，所以我怀疑他在小女儿出车祸以后拒绝现实才得病的。）<br>大女儿承担起照顾父亲的责任，她努力了很久，给父亲请护工，因为父亲不愿意去养老院，父亲与请来的数个护工闹翻，大女儿无奈把父亲接到自己家里看护。<br>但是大女儿的丈夫对此非常不满，某天他忍不住打了父亲，导致大女儿和其丈夫离婚。<br>于是丈夫变成前夫。大女儿又照顾了她的父亲五年，直到她爱上了另一个人。她决定把父亲送到养老院，因为她要和她爱的人住在巴黎。<br>父亲最终妥协了，住进养老院，女儿时不时会回来与他过周末。<br>其中有一个细节，我最开始一直觉得父亲说的小女儿不存在，他可能错乱了把大女儿的幼年时期和她本人割裂开，大女儿小女儿就是一个人。后来看见照片里他确实有两个女儿……<br>看完以后：正经人谁写日记啊……也许还是要的</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>3-观影记录</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>《人类削减计划》（The Thinning）</title>
+    <url>/al/88a1002a.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss34452/?from=search&seid=16368733533239289367&spm_id_from=333.337.0.0">人类削减计划</a><br>导演：迈克尔·格拉赫<br>主角：懒得写<br>cp：没有<br>视角：女主和男主双线<br>世界观：现代，德州规定考试最后5%会被处刑。<br>观影点：宿舍</p>
+<hr>
+<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>逻辑漏洞多，最主要就是经典守卫看不见人。一些悬疑桥段能被预判（对我说的就是通风管道突然塌掉和女主偷偷吊东西吊到一半一只手伸出来抓住）。<br>弱智的安保系统，能被俩高中生逛穿了。高考都比这严啊，太好笑了，还，监控录像录到小boss输密码被女主复制…………导演完全没想过如果真实行这种计划该如何设置安保吧！安保就全员工具人，导演觉得该有点人装逼的地方来点人，其他地图全开放世界，让主角随便逛。<br>而且，两个人逃命（查真相）过程里掉泳池上来了，还换了干净衣服再继续跑…………？？？你是真的不着急啊？？<br>男主孝死，他爸是州长，他故意考试全选d让自己不合格（考试全是选择题这点也挺奇怪的），于是他老爸只好暗箱操作把成绩换了。但是他爹事情败露以后为了前途牺牲儿子，太好孝了。<br>最后有个小反转，虽然我在开头就猜到了[吃瓜]考试失败的那5%不是死刑而是被社会性死亡拉到地下黑工厂996。说实话还不如僵尸肖恩来的有创意……弹幕都在刷考不好的进工厂实在是太真实了<br>总之，我怀疑这片子在内涵所有高考制度。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>3-观影记录</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>《失控玩家》（FREE GUY）</title>
+    <url>/al/67e9e5bb.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：失控玩家<br>导演：肖恩·利维<br>主角：盖（guy）/米莉/凯斯<br>cp：凯斯x米莉<br>视角：男主<br>世界观：未来有个游戏叫自由之城<br>观影点：学校咖啡厅</p>
+<hr>
+<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>设定一般，在科幻，甚至网游文这块都是差不多被玩烂了的梗。不过在电影，以觉醒的NPC为主角的片子我还是头一回见。<br>故事线比较弱，全片最大的亮点是自由之城本身，整一个捏他GTA……或者和它同类型的游戏。特效还行吧。<br>想吐槽的一点是为啥你们后台程序员开创造模式都杀不掉那个NPC，救命。<br>而且boss完全就是反社会人士，动不动“全服停机”“删掉所有玩家账号”，最后直接去砸自家的服务器捏妈，真有你的。<br>真实世界的男主（男二？）对女主态度奇奇怪怪，前半段爱搭不理的到后来直接一转攻势变成深情天才宅男，好吧，我不是很懂。<br>当然没有楚门的世界来得好看。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>3-观影记录</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>《小姐》（아가씨）</title>
+    <url>/al/be6fbdc1.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="c0dc0e190d61de65ef2a265543ed8f051dbd7583d98407b84b6dbe4299483751">d3dc46725fcff41a5bfde1958f6ae5914b7e40f820787afa80af02db4449eeea47af9d1c7f3696639acd2395a7c49db0d179053dc1d8cb6d783a08cbea540ba3bb1c905e524c1cbb409d1865e44546d755bb970abfb78e426fc963bd77461f1f8d6fc5cbf09670c294bcf9e9ba642680e42a0893ea0fe05bab749c4b5e969d11ee5a2c0e3014181d7d211d7b1ea7a0964dfe80be20e31dcfb6a3538d4dda2e0fe0b72d2fab32039c93bae814ac29bd65aae4ad2d083a4ba4f9aafa055a43f1ad46d9387d1e638afb59127633572c9d34c0a44402d8a99d1c0642f720ff05ad0a09f5cc82ecdf7b46607805b3c9b2e2f7bea144d58e712914db4f20ba92ccd14745cc9b3c0ba05659da2b9fcfe2468890822b269f2b411c9514b47babfbd22db98400d07eaf88ab600909fbc95bc803f10c89836f267b204493f2b48535769dbeb94ead0517acda58410083f8e14534768163cbd74430cfc37b990659ba43a8d9c22bf16169d951b553e349ebc6da0b98918e7716d6be9c02f1ed1cfba9f2634dda14c54a973935ea7389dc04cc12c3311e0ab07a1b16a30fec506e96392d2442f1d83d46516ee6126fea3f978e5d78928afec45c10ecd2816133c9ab922f18083f9f890b63206c2337eb59b174938d3330fc292deae912bcac01e2e42e6655211941ef04c19e4140796ccf071f48abd5f3402ccb256bde35fd96e5e1c89435440a2d9f673d4256d49beecf046dc65d86344cb6f74fd8737e0ab04438acb4c260813b0a6f2aa90ec17fff8a96d244bbeacc5bcf5252e6364e3130c7ad159fb13b231e2dd63f71f54e1a7b29412158e007cc301d71d9ffc81a1047114eb3c91d8a81582de5566539d5a62070b02d6cb17d917c7b9ebaa74e4124dafda73899ac98f4f052009455eee49662ace5b8b57fbaf08d0a860ad8bfdda59cdf86e2954711f5e40c51940d8180de0f8729d5577efe74a2a6f9e8073f24758451ab60ed7941485369646c70546f737af00cb2c38adfa34e61a499900fa8460aeb08411db897248f5c74ef7737c2b905cbce34f1dfee953cf9e06a5ce9b94d4f652038ca464f2659e6c7b2ed032f93d442345ed0d75b00ebd648ecf379246661cd81c5f9eff4d7deed0a6824653bf354005a56b741f61e9f63777f13b7f502c19337dab567d37e601ab7c0310e64b51b5bc5a66961861b4cf89c1fd0e304cbca9fc09c9d31721b26bfc1f1cda5426a1b9664af8adfced5cf4714e8e107cb9fdb577afde7d3860f94dfdde11efab14675f37d8f623991323cc01e87b0dbc974da3f4952b2b29b9a03db3b343628ced34f947d174c600175c77cd2f9bc64609f7fab13ac76d2b128dd8b59558775153ceffaf4dce7180195714e8b6a0cbbc200c3741f86f5f12ffb6281bffa5b6ec9e75a09edf29867876db1adcf646b5675dfbcf6b08bd6edbe30a093d4512dad5789b665e16e6d2dcfea1195c2b6054ba7a4d2677aae63217c159bd62faa2bf1541aae85d45240581d5fe0423f0cc264fdf105974997367d550197451d23d59a58b763563ed692a945f42643ab1b7e8b2df2ec2f21550a5e42261c4db8f2c6776e9b22b1a8704ea0c1671d9228a6f3ebfd3cfc34ff39822cd6636a998be321772b3d506ad7729aa326edefc68bb02223752ac011bc5af47001c0f11f928dc70d279d989d830b11477777ac8991878b8797b33a0f0bf460f9227efdde2160cf7478e87da5124f5401a2fb94c0b28ff9accfff81104d10084c4cdc043844b287449cf230508c056c597ba3ebe197cfd603da2688845c916ae993c54313a60c82d276c8f5691cc11dceecc18515c040c3b07520b47141a0167e7ac25c79b2d5ba49bab70672dd8a7c08f7ae2d4cf5f821976a4328370094251e6df289a911db35adf358b2c463a39045f5e248dce2ba9d47934ab495ba70c49d6b1ee975924bfb7defdabfb14b162d0b7cb61fbc29af620483df761451617643454949caf5fd72c6b24f2a223b2dfbe0a7200930e5436dca67efa1b43d7517eda596c46bb70b1f9f0aaaf044325285eeb89fe0fa68f9986508c94d1f9d00bb797cf5d635073bc27b0b9f78dd36f31b4a8f71761c3594e4d74cdc4053b56696fc07a838579f6fa1ad0e844e090f10c8f6f04ae29b4ae9d5ff385dc039c3a567525e715ee02b207e6a548867cc1c1d7099745488f6d6285b65446612bb212b5a74792ce3fd7409402031451e21fbb4aa5577333dce3d15c9238b6ab918a302d353a6a61fb96a18a883cbb8d2bc89b81ad265fa23cba639529cb803d33ddf8a06341406885fa58db5be0e2d2c625a4dac5bf6c09f217bfe2237c73a83043c9447aa8bc483855940c683e3475f99a9ca4885b49ec8fa903ef6d92499d394bf5700570e7426b2f896613b424a771fda125d17728e4c0eac85fd2748c71e5343c4549fb6ae6b7f7c8465f864fb11b6d75f8bbad251249beed178935a083a48741ad5fe4da64ca433cc779f5cd83ab8ffc71b5c044e200eba4a595aca1f5705673943498028ce16a7a5f0a1d4036f2ee646ad2b4e28b944f485f417018a544edb65ccc2c014aff431e1fcb59b772bc3b6649b001a52b7b4c1372ccaca7b1e8927dc3e001dd86be39b9f74751b6c4d739b7f36ab803b1fc44de3c02a1139e2713daab06a9db68741eff20376ae509766517d8a907fb015c82e1de83d087f7b9dc3add208feef6273f30d397ec1a84a7365000641a8adec85e7ccd37825fdceeb42a3fb8944a85b80d2517f774f9f18a3d96415b8bfb9285e2edd38b4935fe6ff8b3135dbb27fe5b08577e304e36b754a80effcf86837d5a861c4f274202c576cbaac9179a3144d1dad71b013c14450b6581d2546db730fd3ec9fc0c2044d61cc92bbd71c803957effc690f23712594c225ebe45084fdc73d088d14df38f672576c32a0cc38f4eb936d7bdfb0a71d77c4a4d662c6ad39172a0cc8afd72a93a708d8acb1bfb238a5570e76dc00c3de87ad90002e313049e500d6366cc0677e5abb9781ce941441cb1cfdbb06aa66fa244ee7b23899a60ff6fd16289e053f7a397bca43f8a644b1460c638ad170ca76b70de135c960f3caba4d2f2ae3874a1730b0e644a5dab4b7aba37dd586a90dfd7164c571bf36a7b9fdea56b3fd4bc83d10d64cc6dd994781731eecf865c23458c5be5f57bb04653ca570d511487807f8099b4908ee352c6af734a12167a2efe829b87114576b513d53a95e1e061ed2299b2d9bfb04ded84f1f8fb5d1e88010cedf7816025e77a92e666466553de463bb15e1f3ff0e8a74520ced9a9c1a3639db7ca68bd357044c</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-up">
+      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-up">提示：大胆猜，懂的都懂</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>3-观影记录</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>《敦刻尔克》（Dunkirk）</title>
+    <url>/al/2bb62205.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss39311/?from=search&seid=3577660643582982089&spm_id_from=333.337.0.0">敦刻尔克</a><br>导演：克里斯托弗 诺兰<br>主角：空军组/小船组/陆地组<br>cp：无<br>视角：三线混剪<br>世界观：历史，敦刻尔克大撤退<br>观影点：宿舍</p>
+<hr>
+<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>不懂历史的人看这个真的心肌梗塞，以前我看电影不开弹幕怕被剧透，看这个我必须全程开着不然看不懂。<br>中元节的时候看的，本来想点个鬼片看，但是b站封推了这个就看这个了，看了一半才发现是诺兰的电影。<br>很厉害，他能把战争片拍出“肃杀的文艺”的感觉。看完以后，我再回想，不会想起飞机轰炸和子弹鱼雷，只会想起铅灰天空下的海滩，海滩上是排队等船回家的士兵。<br>但是这个叙事实在有点……我不明白，看得人很不轻松。<br>最后涂一个定格。<br><a href="https://gitee.com/Alnasl/picbox/raw/master/img/202112052144640.png" class="gallery-item"><img src="https://gitee.com/Alnasl/picbox/raw/master/img/202112052144640.png" width="60%"></a></p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>3-观影记录</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>《普罗米亚》（Promare）</title>
+    <url>/al/47cba238.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss38790/?from=search&seid=14588705022024327750&spm_id_from=333.337.0.0">普罗米亚</a>（Promare）<br>导演：今石洋之<br>主角：里奥/加罗/克雷<br>cp：无<br>视角：双男主<br>世界观：近未来架空<br>观影点：宿舍</p>
+<hr>
+<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>确实燃。<br>但是本剧情党还是更爱剧情向的片子一点。<br>配色五分，作画五分，剧情两分。<br>我感觉…如果是个番会更好点，就，能有更大篇幅交代一下世界观、埋伏笔啥的，这个剧情还是太……直白了。<br>根据眯眯眼都是怪物的传统，谁是大boss这点简直没有让人猜的必要。</p>
+<p><s>*看完以后在b站评论翻到了加罗和里奥的本子信息，就，跑去看了……捏妈，作者你是个天才……十年后扎头发的里奥……疯狂心动了！！！！我的叉p系统我自己都会感到无语<br>*关于我拿本子当头像这件事一定不会有人发现的，嗯</s></p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>3-观影记录</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>《断背山》（Brokeback Mountain）</title>
+    <url>/al/b14f16c3.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：断背山（Brokeback Mountain）<br>导演：李安<br>主角：恩尼斯·德尔玛/杰克·特维斯特/艾玛/露琳<br>cp：我站恩尼斯x杰克<br>视角：双男主，但主要是恩尼斯吧<br>世界观：1963年至1981年的美国怀俄明州，断背山<br>观影点：学校咖啡厅</p>
+<hr>
+<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>又是summer，永远的summer。（指GGAD）<br>在开头恩尼斯提到自己有未婚妻的时候我就感到大事不妙，这个过程和结局也确实……很意料之外情理之中。<br>哎，选了恩尼斯当主视角，他的情感表达太内敛，和杰克比起来天差地别，我有时候也搞不懂主角怎么想的。杰克就好懂多了，他甫一出场，靠着汽车摆了个pose……啊，你为什么要在周围没人（只有个男人）的情况下摆pose，还调后视镜去看人家。你不对劲。<br>杰克跳脱活跃，恩尼斯理性规矩。杰克说可以杀一只他们放牧的羊来吃，被恩尼斯反对了。这种差异也一直持续到最后。杰克向恩尼斯提议两个人离开这里，远走高飞，恩尼斯同样拒绝了他。是出于责任吧，也出于对世俗的恐惧。<br>抛开性别的话，这妥妥的就是一出婚外情家庭伦理剧。甚至我想替恩尼斯的妻子艾玛喊一句“明明是我先来的”……<br>德克萨斯州到怀俄明州，开车14小时的路程，杰克的妻子问为什么他的朋友从来没来德州找过他。恩尼斯从不把感情诉之于口。杰克在维持他们的关系上付出了很大的努力。恩尼斯能正常地面对杰克有老婆孩子，甚至杰克出轨别的女人这些事，却对杰克去找墨西哥男妓这点大发雷霆。<br>本片剧情很平稳，直到最后，才以杰克的死讯单方面终结了这个无解难题。名场面之一：“想把一半骨灰洒在断背山上”；名场面之二：恩尼斯在杰克家中看到，两人初识时各自穿着的衬衫挂在同一个衣架上，还带着他们当时打架留下的血迹；名场面之三：影片最后的定格。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>3-观影记录</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>《肖申克的救赎》（The Shawshank Redemption）</title>
+    <url>/al/56944bb.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p>片名：<a href="https://www.bilibili.com/bangumi/play/ss28274/?from=search&seid=7072310877346482327&spm_id_from=333.337.0.0">肖申克的救赎</a>（The Shawshank Redemption）<br>导演：弗兰克 德拉邦特<br>主角：安迪/瑞德/典狱长<br>cp：无<br>视角：旁白瑞德追忆，主视角安迪<br>世界观：1940s</p>
+<hr>
+<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>原来这部作品的原作是斯蒂芬金写的，他真牛。看了简介以后，原来《迷雾》也是他写的？！<br>其实，因为这部电影太过有名，我一早就知道他会挖隧道逃生，所以在高潮部分没怎么惊讶，越狱以后，瑞德如约找到安迪，影片结束。<br>故事很好，但没有多大震撼，也不骗眼泪。我对主题的自由提不起兴趣。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>3-观影记录</category>
       </categories>
   </entry>
   <entry>
@@ -880,25 +879,6 @@
       </tags>
   </entry>
   <entry>
-    <title>总结 / next更改特定文章的背景图</title>
-    <url>/al/2034651e.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h4 id="把背景图片放在images文件夹下"><a href="#把背景图片放在images文件夹下" class="headerlink" title="把背景图片放在images文件夹下"></a>把背景图片放在images文件夹下</h4><p>文件路径：<code>&quot;F:\1-blog\MyWeb\themes\next\source\images\ia_100000000.webp&quot;</code></p>
-<h4 id="在文章前加入代码"><a href="#在文章前加入代码" class="headerlink" title="在文章前加入代码"></a>在文章前加入代码</h4><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line"><span class="selector-tag">body</span> </span><br><span class="line">&#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">url</span>(<span class="string">/images/ia_100000000.webp</span>) no-repeat center;</span><br><span class="line">    <span class="attribute">background-size</span>: cover;</span><br><span class="line">    <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">    <span class="attribute">background-size</span>: <span class="number">100%</span>; </span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0.9</span>; </span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="如果文章没有白色背景填充"><a href="#如果文章没有白色背景填充" class="headerlink" title="如果文章没有白色背景填充"></a>如果文章没有白色背景填充</h4><p>在style标签里继续加入如下代码：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.header-inner</span> &#123;</span><br><span class="line">  <span class="attribute">padding-top</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#ffffff</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">20px</span> <span class="number">20px</span> <span class="number">0px</span> <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.site-brand-container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-shrink</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span> <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#ffffff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.menu</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">1em</span> <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#ffffff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#ffffff</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="number">20px</span> <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">40px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>6-教程总结</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>总结 / 宿舍自制热巧克力</title>
     <url>/al/29d8ac35.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="配料"><a href="#配料" class="headerlink" title="配料"></a>配料</h3><ul>
@@ -938,76 +918,22 @@
       </tags>
   </entry>
   <entry>
-    <title>Tarot / 一些无聊的每日运势</title>
-    <url>/al/6a201d62.html</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="d18b5f22cb989cca3c1dc3940b60ccaef718a4215cbd63d5a35ade4b94340982">235c99f6df367f11e53e45ba3818f69a7e00a40b31bcbb4889b8f550583e3252205e59a135e8f7a7ff90560a80e1a9378aafb667f0dbc89664cb2bea26398cf4183d698886f5eb0ae358a3c9560450bbad736e5d6a4e713bafcfa4976b09ad13c9fdc045f161c0edfb57403014726ee3e81db38bd3d3ad1ddd1dfab9dc0c8c51c0026ca79201a6d91dbe75ecf1b68465da617394e8a457bacf3ba6cf3c8e977f9cd4e96bc660f0c7306b2aa4651c34092d6e020c7bbc151f5848a1d0850f1774f077d2f632a98cff19c3583b719bc8d11e49a89044f3f685748f914cb32b15c4d653d8bf8d370f6a14d531f66fa16d58e5780276e78fdbe62989b0ce0c9e2885aca726fc3c07db5b61125f22524d45488b78bb60c6a3a2bb6aedd30c383731f738cef656dd60e93aa0eacd6e6d277f5fb2141493b223db18af9a9a4cdc1034ece27c6855215aeed3dea753ab79be3f0fe64c4c8b9e5b1ce63a33967db27f8f5bd7a900599f9992ccd51a3031c602a000557b0f2aa76d5647c7c1b0b05bbe83c9bccd28f2ef2edd81565fa19d883e03b80adff87fc30877b52c4f005a6cf7d8ae30954683785546803d1938c518dda9400377be47ea0db7bbe6f56ab033fd41839b5d44ca822d752fe1985cd0c3418529ca9e5562fcaf3a73344a4db864a7862a1c22fc2c2ef3f913b6c1b0499dd840727ba8798bb3908ccd06a5abb4c2ae7da592e68144fc1fabb94c0b65d44240cb033ee99479f81706fcd5cdf0408db3a11ac124dfe7e778bafe2aaf083727d5533d8512e811b87408c8fc0d1e93ca63983e4e9488fde4cc9644d096cb058a97060485edf889bc8dbf236af6337ffa1b538dfa28c70863dc574914f9bb9748e28531a70afc63b5b152be297e9762034c9b536c65721415d3ca65b07d8bf19cb1c576699d18f334500676a0f2c1affd546cbf9221d88faf00aaded08cde4f45bd0a04d5a2099dae0dd887189514a5a0326990de4fde39ab2cc7b2426810da442f8f8c109980f39799a687edaface5f9803a32a2eb8a2a97b61bfde2a3b228e2e7c03c7b2b4ed73b566e59618f7ce29ecdc71d2970a990614dd5de67e8c7b1a6656cc9207529e8e69fe68277c6c07713064efb927f6c59ccbf71061f194f256a9908c6f383f756627087669bbf6d8b077191226f6984a557caa4490f4e97962f5a7a2db1294aca063452ac373e161a6a9c9cfd938ccead83d3b3091f76e02ede0139d653583e201197375a48c4a274fdd9b6f60cda3e3687bebc87d0d11a805acf5a3774f96d108096c9b577d9588f92aecbba2c9f80e604cf0c2994e7d061481478eefcf53e2377b75b55f30a8b0d18b916f1008db3ed6749889a338454d973a72a106194ff08a2a7b79fb0983e1e122e25008084f53b1bbfa4cc38667bf97a6875f31fdff6539edb682b75861fd45bf6283ebffb39d4c07d9c07c3a97e8856309c63ea709fecc1db84907f2447cbb399bf8d7009576e2fcf5edf1a99ab9fe3f831968b9ff27419cd7ac0a2a4eca1324728facf069bfc4c42daa4b76e0f3015f3879ca6d2be4fc73f7772c3dbbc211987330d55eedc887053b782c09d88d57385fd27956e27845df658ab59480a76cef4a282fc213e8f33bbf1d5b54e81f8b031908e9fc94addc57ed59803833dfd99cfdf35ef51a9da4a0094c2e431f8757929a29ec0882e47007a0fbffbb0aa05c9222c8c4ef1c56638ebf1e74d9acf950c7cdbeae8e1e4c041648865226e91e9ce23f6ea719d26ec1bbdc42bdb8e3d85355a7382940cd3b4c5999aa2c4c54e44f6098ca55ef764cf118ea866b7c30d4f5734755a13c8287417cac00b15bb5045da11a9ed4ebe6d6216b486c7ca55ca7991d202241f8e55958ecb0cbbff82da9b5adf6fa4b44356f2402609bb5b008e4df13453d8362a8319c962c066c94c0b708194742d09ff1c7c51302618839e2c70ab9e48f7b473b004ce2ca0b12310b35ebff8dbf79ec327f0cf6303b4fc19c4bb19c260a00ed5b1103aa46d3cb677af2e3a01ef9c29fcb3513a2d021800778040fca7f65ca07624bfdf340d9e091bf759ba996786a1b430f122ee69dcf428d6115dee8c55776dc600b17be53316557b4a006c9a0c1663a88a235edeaa1edbd8303b000db664d2869008df131a8fd22cb6d68b0323ca0a1caf4778b8db855fc4f1bd45c9e6db3cfb1d2847c956773de1d0a3e1a2222d98b09a4f81ee3783bc175f5c931b5fbf69234b3a9f5a877f62107bced96c4783183534dc389afa418c5f648b2d0a6455d833a550ca658ca6ad2111db3d0fdebebcc83086cfe6045c8dfdd5cda17b39dcb1b6fb31769dbb5b8eca20a76d4be0b77ae379992235947dfc7749990395a28772d1ff22bf859495df050d0c4d6f6c</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-up">
-      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-up">提示：你不知道</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>塔罗玄学</category>
-      </categories>
-      <tags>
-        <tag>巴纳姆效应</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Tarot / 你舟沉了</title>
-    <url>/al/1a9a44c2.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<ul>
-<li>缘由：#查询抽卡运势</li>
-<li>牌卡：棱镜</li>
-<li>牌面：星币侍从，星币女皇，倒吊人<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/ia_600003012.jpg" title="ia_600003012" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/ia_600003012.jpg" alt="ia_600003012"></a><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/ia_600003065.jpg" title="ia_600003065" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/ia_600003065.jpg" alt="ia_600003065"></a><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/12.jpg" title="12" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/12.jpg" alt="12"></a></li>
-<li>读牌：暗示充钱，硬吃保底，不尽人意最好收手。</li>
-<li>结果：56发歪了琴柳，五星四个</li>
-<li>今日的胜负：塔罗牌的胜利</li>
-</ul>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+    <title>总结 / next更改特定文章的背景图</title>
+    <url>/al/2034651e.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<h4 id="把背景图片放在images文件夹下"><a href="#把背景图片放在images文件夹下" class="headerlink" title="把背景图片放在images文件夹下"></a>把背景图片放在images文件夹下</h4><p>文件路径：<code>&quot;F:\1-blog\MyWeb\themes\next\source\images\ia_100000000.webp&quot;</code></p>
+<h4 id="在文章前加入代码"><a href="#在文章前加入代码" class="headerlink" title="在文章前加入代码"></a>在文章前加入代码</h4><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line"><span class="selector-tag">body</span> </span><br><span class="line">&#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">url</span>(<span class="string">/images/ia_100000000.webp</span>) no-repeat center;</span><br><span class="line">    <span class="attribute">background-size</span>: cover;</span><br><span class="line">    <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">    <span class="attribute">background-size</span>: <span class="number">100%</span>; </span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0.9</span>; </span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="如果文章没有白色背景填充"><a href="#如果文章没有白色背景填充" class="headerlink" title="如果文章没有白色背景填充"></a>如果文章没有白色背景填充</h4><p>在style标签里继续加入如下代码：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.header-inner</span> &#123;</span><br><span class="line">  <span class="attribute">padding-top</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#ffffff</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">20px</span> <span class="number">20px</span> <span class="number">0px</span> <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.site-brand-container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-shrink</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span> <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#ffffff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.menu</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">1em</span> <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#ffffff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#ffffff</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="number">20px</span> <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">40px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
         };
         lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
         }</script>]]></content>
       <categories>
-        <category>4-日常记录</category>
-        <category>塔罗玄学</category>
+        <category>6-教程总结</category>
       </categories>
       <tags>
-        <tag>巴纳姆效应</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Tarot / 雪融之诺</title>
-    <url>/al/367a1e5c.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<ul>
-<li>缘由：灵知池抽卡玄学预测</li>
-<li>牌卡：棱镜</li>
-<li>牌面：力量，权杖六，圣杯国王<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211220230500.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211220230500.png" width=50%></a></li>
-<li>读牌：可能会出比较多五星，三四十抽出灵知</li>
-<li>结果：两发十连出了灵知，非要算是第15发出的，五星出了3个，好像也不算多……不过比上次56发1六星3五星多。<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211222172152.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211222172152.png" width=50%></a></li>
-<li>今日的胜负：博士的胜利</li>
-</ul>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>塔罗玄学</category>
-      </categories>
-      <tags>
-        <tag>巴纳姆效应</tag>
+        <tag>博客</tag>
       </tags>
   </entry>
   <entry>
@@ -1105,6 +1031,344 @@
       </categories>
       <tags>
         <tag>跑团记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>今夜，学研（三）</title>
+    <url>/al/cdd4ad46.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<hr>
+<h3 id="出场人物"><a href="#出场人物" class="headerlink" title="出场人物"></a>出场人物</h3><p><strong>刘平安</strong>：女，学生，能力是缜密的推理和超绝的运气<br><strong>张二狗</strong>：男，学生，能力是高质量男性和高质量男性<br><strong>温  夏</strong>：女，学生，能力是间歇性神棍和白嫖技能点</p>
+<hr>
+<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><blockquote>
+<p>&lt;[kp]&gt; 温夏看座位过侦查<br>&lt;骰娘&gt; [温夏]进行侦查鉴定: D100=68/60失败</p>
+</blockquote>
+<p>&lt;[张二狗]&gt; 见纸箱子里面没啥东西，我去看看座位上有什么东西<br>&lt;[刘平安]&gt; “诶…这做的也忒不专业了，谁写的啊都选b，不会就选b是吧。”指指点点<br>&lt;[张二狗]&gt; “不是遇事不决就选C吗？这蒙得不专业啊。”</p>
+<blockquote>
+<p>&lt;骰娘&gt; [张二狗]进行侦查鉴定: D100=4/85大成功！</p>
+</blockquote>
+<p>&lt;[kp]&gt; 由于光线条件太差、桌椅又比较密，温夏没发现什么特别的。张二狗放下看不出名堂的材料也走向座位，低头查看地上有没有遗漏物品的时候捡到了一个手机。<br>&lt;[张二狗]&gt; “哎，这儿有个手机。”捡起来看看能不能打开<br>&lt;[温夏]&gt; 凑过去看<br>&lt;[刘平安]&gt; 过去看看<br>&lt;[kp]&gt; 手机在张二狗手上亮了起来，拉满的亮度差点晃瞎你们的眼睛，锁屏没有设置密码、一划就开了，里面没有下载多少应用尤其是娱乐软件。<br>&lt;[温夏]&gt; “至少有光源了……这手机有网吗？”<br>&lt;[刘平安]&gt; 看看有没有备忘录或者文档一类的东西<br>&lt;[张二狗]&gt; “这是个新机子吗？”等刘平安划拉完我看看通讯录跟微信<br>&lt;[kp]&gt; 顶栏并没有浮现wifi图标，但可以看出信号满格。备忘录里空空如也，文档倒是存了不少，都是从微信上下载下来的，而且看内容物主似乎是个后勤人员。通讯录里大概有五十多个号码，备注名大都是很朴实无华的姓+职业，还有些儿子啊女儿啊之类的亲人备注。微信的状态也差不多是这样，基本能证实物主的职业是学校的后勤，看起来是典型中老年人的账号。<br>&lt;[温夏]&gt; “待会我们下楼送到保安那里吧。”<br>&lt;[张二狗]&gt; “这是学校老师的手机吧？嗯，也只能这样了。”<br>&lt;[刘平安]&gt; 于是看看有没有娱乐软件，毕竟是唯一打得开的手机（。<br>&lt;[kp]&gt; 没什么娱乐软件，但桌面上有一些网页快捷方式，连连看消消乐以及广场舞视频什么的。<br>&lt;[刘平安]&gt; “我感觉是工作人员的手机。”<br>&lt;[温夏]&gt; 没什么其他的发现，就先出去了<br>&lt;[温夏]&gt; “现在有光源了，我觉得我们可以试试下楼。”<br>&lt;[kp]&gt; 手机屏幕还是比较明亮的，不过它似乎摔过，背面的镜头连同手电光源都开裂了。<br>&lt;[张二狗]&gt; “不过我们刚才看到的那些都是放映机搞的还是幻觉？”<br>&lt;[温夏]&gt; “幻觉吧，放映机没电来着。”<br>&lt;[刘平安]&gt; “我想去自动贩卖机看看。”露出了微笑<br>&lt;[刘平安]&gt; 我翻翻身上有没有零钱先</p>
+<blockquote>
+<p>&lt;骰娘&gt; [刘平安]进行幸运鉴定: D100=2/50大成功！</p>
+</blockquote>
+<p>&lt;[kp]&gt; 刘平安从身上掏出了一大堆零钱，够把自动贩卖机买空了。<br>&lt;[张二狗]&gt; “这位同学，给我也来一杯，嘿嘿。”<br>&lt;[刘平安]&gt; 于是给大家一人买杯热饮，我买了热可可，感觉心情好了不少。<br>&lt;[张二狗]&gt; 我来了杯卡布奇诺<br>&lt;[温夏]&gt; “谢谢。”遂要了杯草莓奶昔。<br>&lt;[kp]&gt; 在刘平安的一番操作后，机器内传来纸杯掉落的轻响和潺潺的水声，玻璃挡板降下后，令人心旷神怡的醇香热气飘了出来。<br>&lt;[kp]&gt; 你们捧着温暖的饮料各自喝了起来，但是……味道好奇怪，为什么这东西像烧焦的太妃糖？SC0/1。</p>
+<blockquote>
+<p>&lt;骰娘&gt; [张二狗]的理智检定结果:<br>&lt;骰娘&gt; 67/56=失败<br>&lt;骰娘&gt; 你的理智值减少1=1点,当前剩余55点<br>&lt;骰娘&gt; [温夏]的理智检定结果:<br>&lt;骰娘&gt; 65/42=失败<br>&lt;骰娘&gt; 你的理智值减少1=1点,当前剩余41点<br>&lt;骰娘&gt; [刘平安]的理智检定结果:<br>&lt;骰娘&gt; 67/80=成功<br>&lt;骰娘&gt; 你的理智值减少0=0点,当前剩余80点</p>
+</blockquote>
+<p>&lt;[刘平安]&gt; “果然呢，这个垃圾保加利亚幻觉场所。”甚至验证了一些我的想法，冷笑三声<br>&lt;[刘平安]&gt; “没事吧…”对二位略有歉意<br>&lt;[温夏]&gt; 我闻着显然不是草莓奶昔的味道几欲作呕。把杯子放到机器上。“……没事，感觉又是幻觉……？”<br>&lt;[张二狗]&gt; “我咋感觉这卡布奇诺有一股子电梯里面那个女生的味道？”卧槽，吓死我了<br>&lt;[刘平安]&gt; “罢辽。”把饮料扔到垃圾桶，心疼了一下我的钱，于是去踹了一脚饮料机<br>&lt;[kp]&gt; 饮料机震了一下，依然展示着点单界面。<br>&lt;[张二狗]&gt; “我们要不再下楼试试？”<br>&lt;[温夏]&gt; “嗯，走吧。”<br>&lt;[刘平安]&gt; 下楼<br>&lt;[kp]&gt; 你们再一次迈进了楼梯间，与上次不同的是，你们手上有效的照明工具只有捡来的手机的屏幕，但总归是能用的。你们盯着光照亮的地面下楼，然而没走几步，就听到下面传来了“啪嗒”“啪嗒”沉闷拖沓的脚步声。<br>&lt;[kp]&gt; 两道刺目且锋利的紫红色激光钉在你们正对面的墙壁上，对方停下了脚步。<br>&lt;[张二狗]&gt; “来者何人？报上名来。”<br>&lt;[刘平安]&gt; 卧槽。我暗骂一声，感觉这东西不好惹，决定往楼上跑。“…走吧走吧。”我拉了拉温夏<br>&lt;[温夏]&gt; “……”把书包放下来拎在手上，和刘平安上楼。“先撤吧。”<br>&lt;[张二狗]&gt; 我后退了几步，看看能不能看清对方的脸<br>&lt;[kp]&gt; 刘平安拉着温夏开始往楼上跑，失去照明的张二狗趴在栏杆边完全看不到线的另一端是什么。在他喊出话后，楼下就传来了低沉而洪亮的絮语，它重复着极相近的陌生词汇，每一个音节都如同振翅的飞虫在并不宽敞的楼梯间内横冲直撞，灌进你们的耳道里用力刮擦着脆弱的耳膜，想要在上面钻出通向大脑的洞窟。<br>&lt;[kp]&gt; “啪嗒”。“啪嗒”。<br>&lt;[刘平安]&gt; 复读机吗。我一边跑一边想<br>&lt;[温夏]&gt; “二狗子还不快走！”妈的跑路了。<br>&lt;[张二狗]&gt; 跑了跑了</p>
+<blockquote>
+<p>&lt;[kp]&gt; 那张二狗过个幸运吧<br>&lt;骰娘&gt; [张二狗]进行幸运鉴定: D100=38/55成功</p>
+</blockquote>
+<p>&lt;[kp]&gt; 在一片黑暗中，张二狗迟钝的求生欲发挥了莫大的作用，他一步跨了好几个台阶地追上了前面的人。待到脚步声停止时，你们看到了上面台子上隐隐泛着灰蓝色光芒的楼梯间出入口。<br>&lt;[刘平安]&gt; “进去躲躲？”<br>&lt;[张二狗]&gt; 离开楼梯间<br>&lt;[温夏]&gt; “刚刚是这个光吗……”不管了，先进去再说<br>&lt;[kp]&gt; 电梯间的墙壁上，“生物科学与技术学院”九个字静默无言。大厅里只有月光投下的栏杆的长影，把外面飞鸟的剪影都关在了地板下。两边的走廊延伸到浓重的夜色中，几乎看不到尽头。<br>&lt;[张二狗]&gt; “嘶，我们今天出不去了吗……”看看走廊有没有什么变化<br>&lt;[温夏]&gt; 担心地观察后面有没有人追来<br>&lt;[刘平安]&gt; “说啥呢。”拍他后背，因为担心后面的东西追上，先迅速看一眼这s*电梯是不是还不能用，如果不能用就赶紧找个房间躲一下<br>&lt;[张二狗]&gt; “哎？这大厅里，之前是不是有东西来着？”<br>&lt;[kp]&gt; 电梯楼层指示屏依然是黑的，不过你们小心地关注了一下楼梯间，里面似乎没什么动静。<br>&lt;[张二狗]&gt; “我们往里面走走吧。”一边往里走，一边观察走廊<br>&lt;[刘平安]&gt; 感觉没啥动静之后稍微镇定了一点。看看这层空荡荡的走廊<br>&lt;[温夏]&gt; “其实我怀疑我们应该上楼，之前好像在电梯看到的楼层是B2。”拿出我的塔罗牌：“你说我猜的对不对？”</p>
+<blockquote>
+<p>&lt;骰娘&gt; [温夏]掷出了: 1D44=29<br>&lt;[刘平安]&gt; 好奇的看着大师算命。<br>&lt;[kp]&gt; 温夏在月光中抽出了一张正位节制。<br>&lt;骰娘&gt; 您在群(630325004)的暗骰结果为<br>&lt;骰娘&gt; 1D100=49<br>&lt;骰娘&gt; kp正在进行暗骰<br>&lt;[kp]&gt;塔罗牌的提示：单纯、调整、平顺、互惠互利……认真的吗？你总觉得把牌倒过来的释义才符合你们现在的状况。</p>
+</blockquote>
+<p>&lt;[kp]&gt; 你们沿着淡淡的月光走进了西侧的走廊，越深入，越昏暗。两旁的房门紧闭，只有把手徒劳地在你们手下拧动。途中，你们发现墙壁上展示的学生作品有些不对劲：不论是平面的还是立体的，虽然标签上的作品名和作者名彼此不同，但作品本身却像从生产线上批发来的一样，全部都是俯视三角楼梯的内容。</p>
+<blockquote>
+<p>&lt;[kp]&gt; 过侦查<br>&lt;骰娘&gt; [温夏]进行侦查鉴定: D100=11/60极难成功<br>&lt;骰娘&gt; [张二狗]进行侦查鉴定: D100=80/85成功<br>&lt;骰娘&gt; [刘平安]进行侦查鉴定: D100=74/80成功</p>
+</blockquote>
+<p>&lt;[kp]&gt; 你们在被阴影完全覆盖的地方发现了一幅有些不同的作品，在螺旋向下的三角形正中央，是一个躺在地上的人。作品名为《失足》，配文：“快看！有人掉下去了！”<br>&lt;[刘平安]&gt; “我也老这么往下看来着，不觉得往下看的时候会有一跃而下的冲动吗？”摸着下巴<br>&lt;[温夏]&gt; “这就是为什么现在有防护网了罢。”<br>&lt;[刘平安]&gt; 仔细看看作品的信息和图片有没有什么值得发现的地方。<br>&lt;[kp]&gt; 除了比其他作品多了个人出来没什么特别的，不如说这才是正牌。<br>&lt;[张二狗]&gt; “我们学校里面是不是去年出过事？就是从这里跳的。”<br>&lt;[温夏]&gt; “是的。”<br>&lt;[刘平安]&gt; “嘛，我只是喜欢刺激而已，对跳楼一点兴趣都没有。”<br>&lt;[温夏]&gt; 往里走走看会发生什么<br>&lt;[张二狗]&gt; 继续往里面走，看看两侧有没有什么变化<br>&lt;[刘平安]&gt; 试试再拧拧<br>&lt;[张二狗]&gt; 拧拧两侧的门<br>&lt;[温夏]&gt; 我也试试<br>&lt;[kp]&gt; 在无数个三角楼梯的注视下，你们终于找到了一个压下把手后门可以向前推开的教室。这是一间颇为宽敞的教室，百叶窗高高地收在顶端，月光如白布般盖在桌椅上，你们能看到有些位置上放着细木条做的模型作品。<br>&lt;[刘平安]&gt; 好奇的打量模型。<br>&lt;[温夏]&gt; 我也看模型<br>&lt;[张二狗]&gt; 我仔细端详这个模型，想起我自己的模型还没做完</p>
+<blockquote>
+<p>&lt;[kp]&gt; 看模型过侦查<br>&lt;骰娘&gt; [温夏]进行侦查鉴定: D100=80/60失败<br>&lt;骰娘&gt; [张二狗]进行侦查鉴定: D100=41/85困难成功<br>&lt;骰娘&gt; [刘平安]进行侦查鉴定: D100=4/80大成功！</p>
+</blockquote>
+<p>&lt;[kp]&gt; 你们各自拿起了一个模型查看。<br>&lt;[kp]&gt; 在端详途中，你忽然听到刘平安说了一句“小心。”<br>&lt;[温夏]&gt; 顿了一下，抬头查看周围。<br>&lt;[张二狗]&gt; “？怎么了吗，同学？”看看刘平安<br>&lt;[kp]&gt; 温夏看了一下周围，刘平安端着一个人形的模型眼神空洞，张二狗似乎在关心她的状态。<br>&lt;[张二狗]&gt; “人形的？我记得我们老师从来没有让我做过这种东西啊？”<br>&lt;[温夏]&gt; 过去把她手里的模型拍掉，尽量不要接触到它。<br>&lt;[刘平安]&gt; “…在这破地方是得小心。我出现了一些幻觉。”为了保证那两位的身心健康，并没有描述人形的具体样子，晃了晃脑袋，“三流恐怖片效果，或许我们该看看别的。”<br>&lt;[张二狗]&gt; 打量一下这个教室</p>
+<blockquote>
+<p>&lt;[刘平安]&gt; 那么我躲了一下<br>&lt;骰娘&gt; [刘平安]进行敏捷鉴定: D100=31/60成功</p>
+</blockquote>
+<p>&lt;[刘平安]&gt; 把纸人轻轻放下。“这玩意弄坏了还不知道会发生什么，罢了罢了。”<br>&lt;[温夏]&gt; “没事就好。”那我再看看其他地方。<br>&lt;[刘平安]&gt; 为感谢她的关心我过去轻轻握了握她的手腕。<br>&lt;[kp]&gt; 你们继续观察着教室，觉得它在有遗留物的教室中属于干净的那一种了，至少只有桌面上的模型作品而没有食物包装袋或废纸团子。<br>&lt;[刘平安]&gt; 感觉没啥东西了…除了看起来不怎么吉利的模型，或许是哪个艺设人的怨力倾注产物。“走吧。”<br>&lt;[温夏]&gt; 朝刘平安笑笑，然后说：“我不懂艺术，走吧走吧。”<br>&lt;[张二狗]&gt; “走喽。”我也离开了这个教室<br>&lt;[kp]&gt; 你们离开教室继续小心地在走廊里行走，穿过了一个又一个防火卷帘，在北侧发现了一扇在磨砂膜上贴着“知山知水 树木树人”标语的玻璃门。<br>&lt;[温夏]&gt; 玻璃门？能看见门后有什么吗？<br>&lt;[张二狗]&gt; 推推看门能不能打开<br>&lt;[kp]&gt; 张二狗走上前推了一下门，有点重，但能推开。门后分明是通往A座的B座通道。本应张贴着党政宣传海报的展示栏空空荡荡，几间教室都锁着门，电梯间旁的卫生间里传来了突兀的冲水声却久久无人出来。<br>&lt;[温夏]&gt; 看电梯能不能运作<br>&lt;[刘平安]&gt; 不是预备党员只是混子团员的我完全没在意海报消失。“撤硕响了诶。”<br>&lt;[kp]&gt; 电梯还是故障的样子。<br>&lt;[刘平安]&gt; “男厕还是女厕来着…”<br>&lt;[张二狗]&gt; 去b座的通道看看有没有什么东西<br>&lt;[温夏]&gt; “妈的，我们到底在几层，这种通道只有7层以上才有吧。”<br>&lt;[kp]&gt; 借着月光通道里还是比较亮堂的，除了熄灭的楼道灯光和空掉的宣传栏和平时没什么差别。<br>&lt;[刘平安]&gt; “哈哈雀食…”<br>&lt;[刘平安]&gt; 于是在对着卫生间探头探脑。<br>&lt;[温夏]&gt; 也去卫生间查看异常<br>&lt;[张二狗]&gt; “这里空间已经扭曲了吧？我猜的。”去卫生间看看是谁在浪费水<br>&lt;[刘平安]&gt; 小声嘀咕说某些东西还挺有礼貌的。<br>&lt;[温夏]&gt; 草，确实……<br>&lt;[温夏]&gt; 比某些人好点哈<br>&lt;[kp]&gt; 卫生间里就要昏暗很多了，通过尽头的窗户能看到城市的夜景。因为手机屏幕的照明范围有限，镜子上映不出你们三人的表情。<br>&lt;[刘平安]&gt; 看看夜景。<br>&lt;[张二狗]&gt; 寻找冲水声的来源<br>&lt;[刘平安]&gt; 判断一下离地面的高度。</p>
+<blockquote>
+<p>&lt;[kp]&gt; 男厕1女厕2<br>&lt;骰娘&gt; [贝亚德·埃斯波西托]掷出了: 1D2=1</p>
+</blockquote>
+<p>&lt;[kp]&gt; 刘平安路过安在墙上的小便池去看窗外，正前方的小区基本都熄了灯，街道上的车流也少了很多。<br>&lt;[刘平安]&gt; “诶不早了感觉…”打了个哈欠，向下看能不能数出自己在第几层<br>&lt;[温夏]&gt; 走到离门口近一点的地方，想出去<br>&lt;[kp]&gt; 刘平安尝试着数了一下，但不知道是不是视角不佳，每次数出来的结果都不太一样，基本在4~6间浮动。<br>&lt;[刘平安]&gt; 数不出来于是就回头决定离开，还是第一次进男撤硕，怪好玩的。<br>&lt;[张二狗]&gt; “哎哎哎，这里不是男厕吗？你俩咋进来了？”<br>&lt;[温夏]&gt; “……”不理他，走出去找楼梯<br>&lt;[张二狗]&gt; 出厕所，去a座看看<br>&lt;[刘平安]&gt; “去看看别的楼梯能不能用吧。”对刚才楼下的激光怪心有余悸…<br>&lt;[kp]&gt; 温夏走进电梯间，找到了一旁通往三角楼梯的门。而张二狗走向A座的方向，却发现门后和自己来时的C座一模一样，只是整体结构对称式地颠倒了一下。<br>&lt;[温夏]&gt; “我决定上楼试试，你们呢？”<br>&lt;[张二狗]&gt; 去b座的三角楼梯看看<br>&lt;[张二狗]&gt; “我下楼试试。”<br>&lt;[刘平安]&gt; “啊上楼吗，这是什么玄学。”我摸着下巴，“不过反正已经都是幻觉，我觉得无所谓啦。”<br>&lt;[kp]&gt; 三角楼梯间内，月光透过有限的天窗照了进来，然而眼前的场景和你们要从故障的电梯厢中脱困的时候重合了：除去两大步宽幅的狭窄平台，整个楼梯离你们踩着的地面高出了约一米。</p>
+<blockquote>
+<p>&lt;[kp]&gt; 过灵感<br>&lt;骰娘&gt; [刘平安]进行灵感鉴定: D100=5/70大成功！<br>&lt;骰娘&gt; [温夏]进行灵感鉴定: D100=25/70困难成功<br>&lt;骰娘&gt; [张二狗]进行灵感鉴定: D100=16/40困难成功</p>
+</blockquote>
+<p>&lt;[kp]&gt; 你们走过去摸了摸高高抬起的地面，觉得手感有些奇怪。这份凉意不像石料，倒是有镀了漆的木材的感觉。<br>&lt;[温夏]&gt; “捏妈。”缩回手。“……像棺材。”思索一会敲两下看看。<br>&lt;[kp]&gt; 台子的表面很凉很硬，声音不是很实。<br>&lt;[刘平安]&gt; 嗯？选修过木材学的我思考了一下。“这个质感应该是楼梯扶手没错。”<br>&lt;[刘平安]&gt; “不要说这么不吉利的话啊！”<br>&lt;[张二狗]&gt; “我们得爬上去吧。”开始试着往上爬</p>
+<blockquote>
+<p>&lt;[kp]&gt; 张二狗过攀爬？<br>&lt;骰娘&gt; [张二狗]掷出了: 1D100=77</p>
+</blockquote>
+<p>&lt;[kp]&gt; 张二狗原地扑腾了两下，没爬上去。<br>&lt;[刘平安]&gt; 难道这里会有那种爱丽丝漫游的幻觉？我摸着木制高台，楼梯扶手会横贯楼梯间吗？<br>&lt;[刘平安]&gt; 我也爬一下</p>
+<blockquote>
+<p>&lt;骰娘&gt; [刘平安]掷出了: 1D100=13</p>
+</blockquote>
+<p>&lt;[温夏]&gt; 踹一脚感受一下能不能踹破了（。）<br>&lt;[kp]&gt; 刘平安奋力爬了上去，却在温夏突然的一脚下失去了平衡，赶忙向前迈了一步想要站稳，然而本该承托她体重的地面背叛了她，刘平安感到脚下一空，眼前的场景一阵天旋地转，才意识到自己刚刚做了什么——她踩在了楼梯的扶手上，向着中空的位置踏了下去。而温夏也在踢过去的时候反应过来自己一脚踹在了扶手的竖栏杆上，张二狗则是看着刘平安往中间坠落穿过地面时意识到前面根本没有什么高出去的台子——</p>
+<blockquote>
+<p>&lt;[kp]&gt; 紧张刺激的救援检定<br>&lt;[kp]&gt; 首先，刘平安过敏捷<br>&lt;骰娘&gt; [刘平安]进行敏捷鉴定: D100=12/60极难成功</p>
+</blockquote>
+<p>&lt;[kp]&gt; 刘平安一个空中转身就抓住了栏杆，胳膊狠狠一抻。<br>&lt;[温夏]&gt; 赶快过去拉人</p>
+<blockquote>
+<p>&lt;骰娘&gt; [温夏]进行力量鉴定: D100=87/55失败</p>
+</blockquote>
+<p>&lt;[张二狗]&gt; 我连忙试图拉住刘平安</p>
+<blockquote>
+<p>&lt;骰娘&gt; [张二狗]进行力量鉴定: D100=11/75极难成功</p>
+</blockquote>
+<p>&lt;[刘平安]&gt; 可能是在开始就意识到这是楼梯扶手，紧急反应了一下后开始痛斥自己是不是看着二狗胡闹我也傻x了。<br>&lt;[张二狗]&gt; “卧槽，你没事儿吧。吓死我了。”<br>&lt;[kp]&gt; 温夏抓着刘平安避免她手脱力掉下去，张二狗则探出身子一把把人拉了回来。<br>&lt;[刘平安]&gt; “呼，呼…”心有余悸的摸了摸心口，“谢谢哈…今天终于实现我往下跳的冲动了，以后不跳了。”为表感谢狠狠地拥抱了两位<br>&lt;[温夏]&gt; “抱歉，我不该踢的……你没事吧……”<br>&lt;[张二狗]&gt; “怪我，我不该试着爬那玩意儿的……”<br>&lt;[张二狗]&gt; 我现在定睛看了看这个楼梯到底是什么样子<br>&lt;[刘平安]&gt; “没事没事…我敢上去也挺弱智的。”我想活着就好活着就好，摸了摸我贵重的谷子包，万*神保佑<br>&lt;[kp]&gt; 此时在你们眼前的，就是正常到不能再正常的三角楼梯。<br>&lt;[张二狗]&gt; “所以我们是往上走还是往下走？”<br>&lt;[温夏]&gt; 捏捏眉心。“我还是决定往上走走看。”<br>&lt;[张二狗]&gt; “那我往下走走，看看哪边能出去。”<br>&lt;[刘平安]&gt; 原地坐下，吃了两口辅导员的零食又喝了两口辅导员的饮料，心中默念好辅导员我出去给你买双份。<br>&lt;[刘平安]&gt; 我丢个硬币决定一下往上还是往下。</p>
+<blockquote>
+<p>&lt;骰娘&gt; [刘平安]掷出了: 1D2=2</p>
+</blockquote>
+<p>&lt;[刘平安]&gt; 那我先往下走。<br>&lt;[温夏]&gt; “好，分头行动。”开始往上走。“每走一层喊一声？”<br>&lt;[张二狗]&gt; “行。”<br>&lt;[张二狗]&gt; 我跟刘平安下楼<br>&lt;[刘平安]&gt; 从包里拿出零食给温夏。“给你，吃点，不要怕。”<br>&lt;[张二狗]&gt; “给我也来点呗，女侠。”<br>&lt;[刘平安]&gt; “保持身体的热量就会暖和起来！”笑<br>&lt;[温夏]&gt; “谢啦。”那我嚼着零食上楼<br>&lt;[刘平安]&gt; 于是掏了一点给二狗<br>&lt;[张二狗]&gt; “三克油！”快乐地边吃零食边下楼<br>&lt;[kp]&gt; 你们决定分头行动，受刚才差点发生的坠楼事故的影响，你们捏紧了扶手，借着从天窗照射进来的月光小心地下楼，在三角形的顶点处，高大树木的冠顶随风轻轻叩着窗户。<br>&lt;[刘平安]&gt; “还是一直是四楼诶…”<br>&lt;[kp]&gt; 随着你们之间的距离越来越远，声音也越来越小。在第六声喊后，张二狗和刘平安发现自己踩在了疑似一楼的地面上。<br>&lt;[刘平安]&gt; “诶。”这里看起来是一楼地面诶，抬头看看楼梯间标识<br>&lt;[kp]&gt; 标识上是你们梦寐以求的1F！<br>&lt;[张二狗]&gt; “温夏，我们好像到一楼了！”我冲着上面喊<br>&lt;[刘平安]&gt; “现在我们间隔13层，这里看起来像一楼地面！”我喊到<br>&lt;[刘平安]&gt; 观察一下周围有没有值得注意的东西，莫名其妙地有些焦虑，可能是因为幻觉而刚跳过楼吧。<br>&lt;[温夏]&gt; “我现在在14层？”学研14楼，一跳……<br>&lt;[温夏]&gt; 我要先喊话回复一下他们，然后看看后面的标识还是4f吗<br>&lt;[张二狗]&gt; 我打开楼梯间的门看看外面是不是一楼大厅<br>&lt;[kp]&gt; 温夏眼前的标识依然是4F。<br>&lt;[张二狗]&gt; “是1F!”<br>&lt;[温夏]&gt; 好，我要传送<br>&lt;[温夏]&gt; 进4楼，再出来<br>&lt;[温夏]&gt; 然后下楼<br>&lt;[kp]&gt; 那么温夏还是跑了十几层才和底下的人站到了一起。<br>&lt;[kp]&gt; 身心都已疲惫不堪的你们终于来到了楼梯的尽头，推开楼梯间的门，眼前终于不再是梦魇般挥之不去的生物院，而是你们无比熟悉的学研中心B座的一楼大厅。<br>&lt;[kp]&gt; 你们听到南边传来了阵阵喧闹，有一个忙碌的安保人员发现了你们并向你们走来。<br>&lt;[kp]&gt; “同学，怎么这么晚还在学研？”<br>&lt;[温夏]&gt; “我们打比赛的。”<br>&lt;[kp]&gt; “？”<br>&lt;[温夏]&gt; 然后想起我的模型不见了。<br>&lt;[温夏]&gt; “结构设计大赛。”<br>&lt;[刘平安]&gt; 看见人类令我舒坦很多。“在熬夜来着…睡过了。”我随便扯了慌<br>&lt;[刘平安]&gt; 不过，遇上这种事，难道是学研有实验室危险品泄露，不会有人在学校炮制毒品吧<br>&lt;[kp]&gt; “这样啊。不过这么晚了还是回宿舍楼休息吧。”他听完你们的理由回头看了一下人来人往的方向，“不过你们没什么事就行，回去吧。”<br>&lt;[刘平安]&gt; 喔对，“这个ipad和手机我们捡到的，有人落下在学研了。”<br>&lt;[刘平安]&gt; 疲惫地我经历了太多，抱着痛包萎靡不振。<br>&lt;[刘平安]&gt; 给好友打个电话。<br>&lt;[张二狗]&gt; 自己图还没画完，准备冲向豪丽斯画图<br>&lt;[温夏]&gt; 打开手机发博客：title： 今夜，学研……<br>&lt;[kp]&gt; 他接过两个电子设备对你们点点头：“我知道了，我们会发布失物招领的。”<br>&lt;[kp]&gt; 刘平安打开手机，屏幕仿佛从未背弃过她一样正常地亮起了，上面显示了好友的未接来电，反拨回去后对面有点着急地问怎么去趟学研这么久没消息。<br>&lt;[kp]&gt; 张二狗则贯彻着自己的卷王精神赶往了豪丽斯，旁边桌有人在窃窃私语学研怎样怎样。<br>&lt;[kp]&gt; 温夏的博客顺利发出，不过暂时没有什么留言和点赞。<br>&lt;[刘平安]&gt; 天津话：“我跟你讲，我今天晚上可太刺激了。”<br>&lt;[kp]&gt; 时间已经很晚了，考虑到明天的行程，你们就此分道扬镳。第二天，林里校园里就出现了讨论昨晚学研中心火灾的帖子，有人回复说自己当时就在楼里，做了一场巨nm真实的噩梦结果一醒来就在校医院了。而几天后，保卫处的公众号就这件事发了一篇推文，称12月6日晚学研C座0407发生了火灾，并强调了充电宝充满电一定要拔下来，还提到了实验品安全储存的问题……<br>&lt;[kp]&gt; 回来后你们都感觉肺不太舒服，但比起那些直接昏过去被送医院的人，还算是幸运吧。<br>&lt;[kp]&gt; ——结团撒花——<br>&lt;[刘平安]&gt; 恭嘿啊！！！！！</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>5-文字创作</category>
+        <category>COC TRPG</category>
+      </categories>
+      <tags>
+        <tag>跑团记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>今夜，学研（二）</title>
+    <url>/al/80ca0e14.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<hr>
+<h3 id="出场人物"><a href="#出场人物" class="headerlink" title="出场人物"></a>出场人物</h3><p><strong>刘平安</strong>：女，学生，能力是缜密的推理和超绝的运气<br><strong>张二狗</strong>：男，学生，能力是高质量男性和高质量男性<br><strong>温  夏</strong>：女，学生，能力是间歇性神棍和白嫖技能点</p>
+<hr>
+<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>&lt;[刘平安]&gt; “……”蛤？<br>&lt;[温夏]&gt; “有点恐怖哈……”<br>&lt;[刘平安]&gt; 推开楼梯间的门向里看去，看看是不是还在生院<br>&lt;[张二狗]&gt; “为啥？我不是下了四层了吗？”推开门看看<br>&lt;[kp]&gt; 你们推开门后眼前的景象和之前看到的生物院别无二致。<br>&lt;[刘平安]&gt; “草。”我一时间失去了语言。<br>&lt;[刘平安]&gt; “…鬼打墙了。”<br>&lt;[刘平安]&gt; 回来观察一下楼梯间里还有没有别的什么<br>&lt;[kp]&gt; 刘平安只看到楼下隐隐约约有光，多半是张二狗的手机。<br>&lt;[温夏]&gt; 此时，我要拿出我的塔罗牌进行占卜</p>
+<blockquote>
+<p>&lt;骰娘&gt; [温夏]掷出了: 1D44=12<br>&lt;[kp]&gt; 温夏抽出了一张逆位教皇。<br>&lt;骰娘&gt; 您在群(630325004)的暗骰结果为<br>&lt;骰娘&gt; 1D100=39<br>&lt;骰娘&gt; kp正在进行暗骰<br>&lt;[kp]&gt; 塔罗牌的提示：错误的讯息……这不是废话吗！都多少个四楼了！</p>
+</blockquote>
+<p>&lt;[温夏]&gt; 神棍地说道：“塔罗牌告诉我们有错误的信息混进了我们的视线……”<br>&lt;[刘平安]&gt; “同学，楼下是什么情况！”我喊到<br>&lt;[张二狗]&gt; “我还在四楼！”<br>&lt;[张二狗]&gt; 再进生物院看看<br>&lt;[刘平安]&gt; “啊啊…鬼打墙了。”学自然的我对于超自然现象感到相当困惑<br>&lt;[刘平安]&gt; “我们要不再进去看看有没有别的出路吧…”<br>&lt;[kp]&gt; 张二狗擦过两个女生的身边进入了楼层，里面依然是之前生物院的样子，其他房间除了辅导员办公室外都锁着门，一切都没有改变。而刘平安和温夏则看到他在里面乱晃。<br>&lt;[张二狗]&gt; “我先进生院再看看！”<br>&lt;[张二狗]&gt; 我转头，“哎？你俩咋在这儿？”<br>&lt;[刘平安]&gt; “……”掐了一下自己<br>&lt;[温夏]&gt; 然后撇撇嘴，把牌收好。“等下，这些楼层连接的都是生物院吗？”<br>&lt;[刘平安]&gt; “看来是的。”<br>&lt;[温夏]&gt; “这个发现不值得一篇诺贝尔奖？”<br>&lt;[温夏]&gt; “永动机找到了！”<br>&lt;[刘平安]&gt; 看看窗户外面<br>&lt;[kp]&gt; 一个活生生的北林男的在你眼前，窗外则是只有一两个人在行走的校园景象。<br>&lt;[刘平安]&gt; “哈哈嗯…”什么鬼东西这都是。<br>&lt;[张二狗]&gt; “咱不会是吸到那什么黑牡丹，出幻觉了吧？”<br>&lt;[刘平安]&gt; “黑莲花吧。”<br>&lt;[温夏]&gt; “那么，有什么破除幻觉的办法吗……”<br>&lt;[张二狗]&gt; “啊，我也记不得了。总之咱仨现在是被困在这里了是吧。”<br>&lt;[刘平安]&gt; “是啊，是来着。”我搜索一下我的植物知识，“不过咱也不能确定就是中了这个迷糊药啊。”<br>&lt;[刘平安]&gt; 于是我决定再逛逛这层楼<br>&lt;[kp]&gt; 楼层和之前相比没有什么变化，被你们弄乱的辅导员办公室也是离开时一副遭了贼的样子。<br>&lt;[张二狗]&gt; 我掐了自己一下看看疼不疼<br>&lt;[kp]&gt; 张二狗觉得痛觉十分真实。<br>&lt;[张二狗]&gt; “猜测，猜测。”<br>&lt;[刘平安]&gt; “我们换一侧楼梯试试看吧。”<br>&lt;[张二狗]&gt; “嘶，我掐我自己感觉挺疼的，我没在做梦。”我回到刚才的楼梯间看看有啥特别的地方<br>&lt;[kp]&gt; 和这一层一样，是老样子。<br>&lt;[温夏]&gt; 那我要看看这里的监控有没有在运作。<br>&lt;[kp]&gt; 监控上没有红光在闪，应该并没有在工作。<br>&lt;[温夏]&gt; 缓缓把头上别的发卡拿下来，以防扯到头发丝。<br>&lt;[温夏]&gt; “早就想这么干了。”<br>&lt;[温夏]&gt; 我随便选一个门撬锁</p>
+<blockquote>
+<p>&lt;骰娘&gt; [温夏]进行锁匠鉴定: D100=24/10失败</p>
+</blockquote>
+<p>&lt;[kp]&gt; 发卡扭了一下，门并没有打开。<br>&lt;[刘平安]&gt; 我决定去上个撤硕冷静一下。<br>&lt;[温夏]&gt; 好吧，把发卡扭回去，别到头发上<br>&lt;[刘平安]&gt; 犹豫了一下，“姐介，陪我上个撤硕。”扭捏<br>&lt;[温夏]&gt; “肘。”<br>&lt;[张二狗]&gt; “哎，你在撬锁吗？我也试试。”我拿出笔袋里面的刀片撬锁</p>
+<blockquote>
+<p>&lt;骰娘&gt; [张二狗]进行锁匠鉴定: D100=66/51失败</p>
+</blockquote>
+<p>&lt;[kp]&gt; 张二狗的刀片也没有撬开门锁。<br>&lt;[kp]&gt; 两个女生作伴前往了卫生间，里面没有一点光亮，只有你们手中的灯光经过镜子的反射照回到你们脸上，把你们的脸色照得分外苍白。<br>&lt;[刘平安]&gt; “哈哈…”尿意压过了恐惧，我打开门进去放水，为了壮胆哼一哼我团的歌。<br>&lt;[温夏]&gt; 别看镜子，默唱国际歌。<br>&lt;[温夏]&gt; 当然，还是要检查一下周围环境有没有异常的<br>&lt;[kp]&gt; 卫生间里回荡着两个女人的歌声和短暂的流水声……<br>&lt;[kp]&gt; 理智告诉温夏这里只是停了电的洗手间，但在不同往日的灯光效果下，多少还是有些瘆人的。<br>&lt;[刘平安]&gt; 尿完就出来了。<br>&lt;[刘平安]&gt; 洗一洗手<br>&lt;[kp]&gt; 是十分清澈的水流。<br>&lt;[温夏]&gt; 行叭，洗完手就离开这里。<br>&lt;[刘平安]&gt; 离开了卫生间。感觉也没有什么太好吓人的。<br>&lt;[刘平安]&gt; 只是黑漆漆而已<br>&lt;[温夏]&gt; 我前去观看大师撬锁<br>&lt;[温夏]&gt; “还有那么多门呢，继续呀。”撺掇大师撬锁<br>&lt;[张二狗]&gt; “啊这，这不太好吧。”<br>&lt;[张二狗]&gt; 在走廊里面走走，看看有走廊里有什么<br>&lt;[kp]&gt; 走廊里是一些稀松平常的装饰，书法啊、画啊，还有紧急疏散路线图。<br>&lt;[刘平安]&gt; 打开零食吃了起来。<br>&lt;[刘平安]&gt; 过去看看紧急疏散路线图。<br>&lt;[温夏]&gt; “也是。”担心地看了看监控。凑到刘平安旁边看她发现什么了。<br>&lt;[张二狗]&gt; 我也过去看看紧急疏散路线图<br>&lt;[kp]&gt; 路线图上简单地标注着诸如步梯、电梯、卫生间的位置。<br>&lt;[温夏]&gt; “怎么办，这破地方是出不去了吧，我都想跳楼了。”用沉重的语气说。<br>&lt;[温夏]&gt; 同时看看上面有没有标配电室的位置<br>&lt;[刘平安]&gt; “诶……”无奈地走来走去嘎吱嘎吱嚼零食，再去电梯那里看看，不抱希望的戳一戳按键<br>&lt;[张二狗]&gt; 我用手敲了敲各处的墙壁<br>&lt;[kp]&gt; 这里没有标注配电室，但温夏可以靠人力找到那些写着“机房重地 非公勿入”的房间。电梯的按键并没有亮起，毕竟仍是停电中。墙壁很凉，张二狗手指很痛。<br>&lt;[刘平安]&gt; 去找温夏看看。<br>&lt;[kp]&gt; 刘平安找到了站在配电室前的温夏。<br>&lt;[温夏]&gt; 握住门把手，不抱希望地看看能不能进去<br>&lt;[kp]&gt; 不出所料，是锁着的……<br>&lt;[温夏]&gt; 面无表情地拿下发卡。<br>&lt;[刘平安]&gt; “加油啊，温夏酱！”<br>&lt;[刘平安]&gt; <a href="http://gchat.qpic.cn/gchatpic_new/0/0-0-DFE5A0B9D27DAD5FB25D9B62919E13A3/0?term=2" class="gallery-item"><img src="http://gchat.qpic.cn/gchatpic_new/0/0-0-DFE5A0B9D27DAD5FB25D9B62919E13A3/0?term=2" width="7%"></a><br>&lt;[刘平安]&gt; “二狗——二狗——”我呼唤着那个男的<br>&lt;[张二狗]&gt; 我撸起袖子，准备撬锁</p>
+<blockquote>
+<p>&lt;骰娘&gt; [张二狗]进行锁匠鉴定: D100=97/51大失败！</p>
+</blockquote>
+<p>&lt;[温夏]&gt; “加油啊……啊？”<br>&lt;[刘平安]&gt; 抹了把脸。<br>&lt;[温夏]&gt; 怎会如此<br>&lt;[温夏]&gt; 心想这就是北林高质量男性吗<br>&lt;[刘平安]&gt; 心想这就是北林高质量男性吗<br>&lt;[kp]&gt; 张二狗太想把锁撬开，因而手下力道过大，刀片清脆地响了一声便绷断了，断掉的那一节没有留在锁孔上、而是朝着他的眼睛飞了出去——<br>&lt;[kp]&gt; 好在最后只是划伤了脸，但张二狗还是受到了不小的惊吓。hp-1，san-1。<br>&lt;[刘平安]&gt; 我给二狗简单处理一下。</p>
+<blockquote>
+<p>&lt;骰娘&gt; [刘平安]进行急救鉴定: D100=7/55极难成功</p>
+</blockquote>
+<p>&lt;[刘平安]&gt; “唉，肘吧，肘吧我们。”于是只好再逛逛这块地方<br>&lt;[刘平安]&gt; 接着下楼吧<br>&lt;[温夏]&gt; 一起行动<br>&lt;[温夏]&gt; 不能落单<br>&lt;[张二狗]&gt; 朋友一生一起走<br>&lt;[刘平安]&gt; 于是我们下楼<br>&lt;[kp]&gt; 没有办法，你们只能硬着头皮回到楼梯间继续向下走了。你们感觉到自己的心脏跳得无比剧烈，砰砰地撞击着胸腔，似乎迫不及待地想冲破肋骨逃离这个地方。</p>
+<blockquote>
+<p>&lt;骰娘&gt; 您在群(630325004)的暗骰结果为<br>&lt;骰娘&gt; 1D100=47<br>&lt;骰娘&gt; kp正在进行暗骰</p>
+</blockquote>
+<p>&lt;[kp]&gt; 就在你们再一次踏上了4F的平台时，你们的手机不约而同地闪了两下，黑屏了。<br>&lt;[刘平安]&gt; “啊…草。”<br>&lt;[kp]&gt; 在手中的灯光熄灭的瞬间，你看到脚边原本暗着的安全出口指示灯突然亮了起来，幽绿的光芒并不强烈却在整个楼梯间内蔓延开来，看着同行者发青的脸和僵硬的表情，你感到一根冰凉的手指划过了自己的脊椎。SC0/1。</p>
+<blockquote>
+<p>&lt;骰娘&gt; [张二狗]的理智检定结果:<br>&lt;骰娘&gt; 80/58=失败<br>&lt;骰娘&gt; 你的理智值减少1=1点,当前剩余57点<br>&lt;骰娘&gt; [刘平安]的理智检定结果:<br>&lt;骰娘&gt; 49/79=成功<br>&lt;骰娘&gt; 你的理智值减少0=0点,当前剩余79点<br>&lt;骰娘&gt; [温夏]的理智检定结果:<br>&lt;骰娘&gt; 57/43=失败<br>&lt;骰娘&gt; 你的理智值减少1=1点,当前剩余42点</p>
+</blockquote>
+<p>&lt;[刘平安]&gt; 我可怜的华子手机消失了光亮<br>&lt;[温夏]&gt; “我特么！！谁挠我！”立刻回头看自己背后<br>&lt;[刘平安]&gt; 回头一看。<br>&lt;[张二狗]&gt; “嘶，你们俩刚才谁摸我！”<br>&lt;[kp]&gt; 你们背后什么都没有，但那股无视厚重衣料的寒冷却无比真实。<br>&lt;[刘平安]&gt; 默念爷不怕爷是小雀斑神奇动物在哪里你奶奶这就看看是什么神奇动物…<br>&lt;[刘平安]&gt; “哈哈…没有人摸你喔。”<br>&lt;[刘平安]&gt; 我冷笑道。<br>&lt;[刘平安]&gt; 想起我的痛包是放了led灯的，试着打开。<br>&lt;[刘平安]&gt; 小乱，救救妈妈！<br>&lt;[温夏]&gt; 好恐怖……警惕地看看那个突然亮起来的指示灯，它指向楼下吗？<br>&lt;[kp]&gt; 刘平安摸黑翻出了led灯，十分微弱的昏暗紫色灯光在她手中。<br>&lt;[kp]&gt; 从有人喊出声起，楼梯间就恢复了黑暗。在温夏的记忆中，它正常地指向下楼的方向。<br>&lt;[kp]&gt; 用这样一盏离开一指距离就完全起不到照明作用的灯下楼，应该很危险吧。<br>&lt;[刘平安]&gt; “…下楼吧。”对超自然现象依旧抱有好奇，摸着乱*砂的包包我感觉好受很多。<br>&lt;[刘平安]&gt; “诶…好黑。”<br>&lt;[温夏]&gt; “嗯……我们扶着扶手，应该不至于摔倒。”<br>&lt;[张二狗]&gt; 我也跟着一起走<br>&lt;[刘平安]&gt; 推门进去看看楼层里有没有应急灯啥的。<br>&lt;[温夏]&gt; 一起行动，先找到灯再下<br>&lt;[温夏]&gt; 如果有的话<br>&lt;[kp]&gt; 离开楼梯间，你们凭借近乎要贴到墙上去的led灯看到了墙壁上熟悉的学院标识：生物科学与技术学院。然而一侧头，眼前的景象和先前截然不同。<br>&lt;[kp]&gt; 没有应急灯，但大厅天花板的正中央亮着一盏紫色的灯，把南北相对放置的沙发、茶几笼罩在了诡丽的光芒中；淡淡的紫光无法触及的地方，公示栏东侧的自动贩卖机似乎仍在工作。<br>&lt;[刘平安]&gt; “啊，变化了。”<br>&lt;[刘平安]&gt; 看看公示栏。<br>&lt;[温夏]&gt; “太诡异了。”忍不住说。走到自动贩卖机旁看看。</p>
+<blockquote>
+<p>&lt;[kp]&gt; 刘平安过图书馆使用<br>&lt;骰娘&gt; [刘平安]进行图书馆使用鉴定: D100=1/50大成功！</p>
+</blockquote>
+<p>&lt;[kp]&gt; 自动贩卖机的屏幕上是优惠促销的广告，香草拿铁8折、冰美式7折；付款码扫描口闪着红点。<br>&lt;[kp]&gt; 刘平安在繁杂的信息堆中发现了这样一张简短的通知：“本院植物学教授钱正辉于11月15日至11月19日赴美国旧金山大学作学术交流，……（调课说明等杂七杂八的内容）。联系本人请发送邮件至<a href="mailto:&#81;&#x69;&#x61;&#110;&#90;&#x68;&#x65;&#110;&#x67;&#x68;&#117;&#105;&#95;&#x30;&#52;&#x30;&#x37;&#x40;&#98;&#106;&#x66;&#117;&#46;&#x65;&#100;&#117;&#46;&#99;&#x6e;">&#81;&#x69;&#x61;&#110;&#90;&#x68;&#x65;&#110;&#x67;&#x68;&#117;&#105;&#95;&#x30;&#52;&#x30;&#x37;&#x40;&#98;&#106;&#x66;&#117;&#46;&#x65;&#100;&#117;&#46;&#99;&#x6e;</a>。”钱正辉……刘平安对这个名字有印象，自己似乎上过他的课。满满一公示栏熟悉的措辞让刘平安觉得稍微安心了些。san+1。<br>&lt;[张二狗]&gt; 看看沙发和茶几上有什么<br>&lt;[kp]&gt; 沙发上什么都没有，茶几上有一些没收走的零食包装袋。<br>&lt;[刘平安]&gt; 记下了这条通知，虽然感觉对现在的状况没什么帮助，但是感到安心。<br>&lt;[张二狗]&gt; 我要观察那盏紫色的灯<br>&lt;[刘平安]&gt; 稍微琢磨了一下，0407…或许是办公室号吗？还是日期？决定去找一找407<br>&lt;[kp]&gt; 天花板上的紫灯颜色和刘平安的led灯一模一样，但比它要明亮些，至少能照亮这一小圈地方。只是盯久了让人眼前发黑，有点头晕。<br>&lt;[温夏]&gt; “为什么停电了自动贩卖机还能工作啊。”无奈地看看黑屏的手机，长按开机键试试能不能开机。<br>&lt;[kp]&gt; 手机震动了一下，温夏听到了熟悉的开机动画的声音，但屏幕仍是一片漆黑。<br>&lt;[张二狗]&gt; 调查下整个大厅看看有没有什么特别的<br>&lt;[kp]&gt; 大厅比较空旷，最不对劲的大概就是紫色的灯和还在工作的自动贩卖机了。<br>&lt;[温夏]&gt; “……不会吧……”看来它是没什么用了，只好收起来，跟着刘平安。<br>&lt;[张二狗]&gt; 去自动贩卖机那边看看，买杯拿铁<br>&lt;[kp]&gt; 温夏跟上刘平安陪她寻找着钱正辉的办公室，不知道是因为你们一直在移动还是楼层的暖气开得太足，走廊里热得让人想把外套脱了。而且越靠近C0407，就热得越厉害。</p>
+<blockquote>
+<p>&lt;[kp]&gt; 过个幸运看看有没有现金<br>&lt;骰娘&gt; [张二狗]进行幸运鉴定: D100=70/55失败</p>
+</blockquote>
+<p>&lt;[张二狗]&gt; 去找那边的两个人<br>&lt;[刘平安]&gt; “…好热啊。”我拉开拉链取下围巾<br>&lt;[kp]&gt; 你们都来到了C0407前，办公室的门敞开着，但根本看不清里面有什么。<br>&lt;[kp]&gt; “?~”<br>&lt;[kp]&gt; 刘平安的手机突然响起了来电铃声，打断了你们的活动。<br>&lt;[刘平安]&gt; “诶？居然可以来电话的吗？”我拿出手机</p>
+<blockquote>
+<p>&lt;[kp]&gt; 过灵感<br>&lt;骰娘&gt; [刘平安]进行灵感鉴定: D100=37/70成功<br>&lt;骰娘&gt; [张二狗]进行灵感鉴定: D100=71/40失败<br>&lt;骰娘&gt; [温夏]进行灵感鉴定: D100=93/70失败</p>
+</blockquote>
+<p>&lt;[kp]&gt; 手机屏幕依然是黑的，怎样滑动都没有反应，乐曲声持续了很久才戛然而止。<br>&lt;[kp]&gt; 刘平安听着自己用了很久的铃声，明明是非常喜欢的旋律，现在落在你的耳朵里却像交通高峰期此起彼伏的鸣笛声，又像婴儿房里幼儿没完没了的尖锐哭声，令人难以忍受、心生烦躁。<br>&lt;[kp]&gt; 站在办公室门前，你们都感到一股莫名的重物压在胸口的窒息感，仿佛有一只无形的大手从背后穿透皮肉的屏障攥住了你们的肺叶。<br>&lt;[刘平安]&gt; “怎么回事…”我揉了揉太阳穴，把手机狠狠装了回去。<br>&lt;[张二狗]&gt; 进门看看，“不知道啊……”<br>&lt;[刘平安]&gt; 捂住口鼻试试。<br>&lt;[刘平安]&gt; 进门。<br>&lt;[温夏]&gt; 进门<br>&lt;[温夏]&gt; 想起我包里还带了ipad，拿出ipad打光<br>&lt;[kp]&gt; 那种令人血管直跳的不适感并没有因为捂住口鼻的举动减弱，反而随着深入办公室变得更加沉重。温夏想要拿出ipad照明，但它的状况和手机如出一辙。在迈进办公室后，你们突然感觉自己的感官变得无比迟钝……</p>
+<blockquote>
+<p>&lt;[kp]&gt; 骰1D3,行动点数<br>&lt;骰娘&gt; [张二狗]掷出了: 1D3=1<br>&lt;骰娘&gt; [温夏]掷出了: 1D3=2<br>&lt;骰娘&gt; [刘平安]掷出了: 1D3=1</p>
+</blockquote>
+<p>&lt;[张二狗]&gt; 感觉不太对，我溜了<br>&lt;[刘平安]&gt; 退出这个房间并试图大家都撤出来时带上门<br>&lt;[温夏]&gt; 那么，我试探性地往里踏一步，找找桌子之类的东西<br>&lt;[刘平安]&gt; “温夏酱，小心呀！”我忍着不适说到<br>&lt;[温夏]&gt; 摸桌子上有啥，有啥拿啥（）<br>&lt;[kp]&gt; 张二狗和刘平安小心地撤回去后觉得胸腔明显轻快了些，然而里面既看不到温夏的身影也听不到她的声音。温夏向前方踏了一步，只觉得自己更热了，丝毫听不到刘平安的呼喊。<br>&lt;[刘平安]&gt; “呜呜。”我看着里面的黑暗，用手撑着门<br>&lt;[温夏]&gt; 太热了，不适感让我没法集中精力思考，我下意识地倒退一步远离热源，退出黑暗<br>&lt;[kp]&gt; 门外的两人看到了从黑洞中回来的温夏，她的指甲泛着不自然的黑色。</p>
+<blockquote>
+<p>&lt;骰娘&gt; 您在群(630325004)的暗骰结果为<br>&lt;骰娘&gt; 1D100=60<br>&lt;骰娘&gt; kp正在进行暗骰</p>
+</blockquote>
+<p>&lt;[张二狗]&gt; “同学，你的手……”<br>&lt;[温夏]&gt; “什么？”我不想注视门里的东西，抬起手。“我的指甲？”<br>&lt;[刘平安]&gt; “你手没事吧…算了我们先离开这里。”赶紧离开这个诡异的办公室门前<br>&lt;[温夏]&gt; 快速离开，然后再看看我的指甲。<br>&lt;[kp]&gt; 温夏的指甲上是斑驳的灰黑色，轻轻抹一下就会变淡变浅。<br>&lt;[kp]&gt; 在直觉和本能的驱动下，你们只能选择放弃进入办公室，离开的途中路过了一个放映厅。<br>&lt;[kp]&gt;隔着大片的玻璃，你发现里面有白光忽明忽灭，追溯光源，在于吊在棚顶的放映机。你在后侧看不到放映的内容，但能看到成排的座椅上密密麻麻地坐满了人，这些黑色的人影一动不动。<br>&lt;[kp]&gt;随着放映结束，室内灯亮了起来。<br>&lt;[kp]&gt;他们在直勾勾地看着你。SC0/1。</p>
+<blockquote>
+<p>&lt;骰娘&gt; [温夏]的理智检定结果:<br>&lt;骰娘&gt; 21/42=成功<br>&lt;骰娘&gt; 你的理智值减少0=0点,当前剩余42点<br>&lt;骰娘&gt; [张二狗]的理智检定结果:<br>&lt;骰娘&gt; 78/57=失败<br>&lt;骰娘&gt; 你的理智值减少1=1点,当前剩余56点<br>&lt;骰娘&gt; [刘平安]的理智检定结果:<br>&lt;骰娘&gt; 4/80=大成功<br>&lt;骰娘&gt; 你的理智值减少0=0点,当前剩余80点<br>&lt;骰娘&gt; 本次理智检定大成功，调查员可考虑使用规则书第8章的自救规则，详情请听从守秘人指示</p>
+</blockquote>
+<p>&lt;[kp]&gt; 漆黑的玻璃上，映照着你们不安的样子。<br>&lt;[温夏]&gt; “你们，你们看到了吗？里面坐满了人，在看我……”<br>&lt;[张二狗]&gt; “看到了……”<br>&lt;[刘平安]&gt; “…”我现在反而更加确信这些超自然的视觉是我的幻觉，而刚刚肺部的灼烧感刚好符合了黑莲花的特征。镇定地凝视着齐刷刷看着我的黑影。<br>&lt;[刘平安]&gt; 等他们消失，我自然也没什么太多反应。“要进去看看吗？”<br>&lt;[张二狗]&gt; “借我点工具。”<br>&lt;[温夏]&gt; 把发卡给二狗子<br>&lt;[张二狗]&gt; 接过温夏的发卡，气沉丹田，开始撬锁</p>
+<blockquote>
+<p>&lt;骰娘&gt; [张二狗]进行锁匠鉴定: D100=53/51失败</p>
+</blockquote>
+<p>&lt;[温夏]&gt; “我来试试！”<br>&lt;[刘平安]&gt; “……”<br>&lt;[温夏]&gt; 拿过发卡往锁孔里塞</p>
+<blockquote>
+<p>&lt;骰娘&gt; [温夏]进行锁匠鉴定: D100=10/10成功</p>
+</blockquote>
+<p>&lt;[刘平安]&gt; “哇！”<br>&lt;[张二狗]&gt; “可以啊。”<br>&lt;[kp]&gt; 在昏暗的走廊里，门锁里的咔哒声格外清晰，你们意识门已经可以打开了。<br>&lt;[温夏]&gt; 首当其冲推门进去。<br>&lt;[张二狗]&gt; 进门<br>&lt;[刘平安]&gt; 镇定地进门<br>&lt;[kp]&gt; 放映室里黑得厉害，前面有一个宽大的讲台，后面的座位隔着一点点距离看起来影影绰绰，并没有什么人影。<br>&lt;[刘平安]&gt; “…刚才还挺热闹的，大伙儿不欢迎我们仨啊。”感觉空气都因为自己的冷笑话冷了三分<br>&lt;[温夏]&gt; “毕竟非法手段进来的？”小心往讲台走，不要撞到什么东西了<br>&lt;[刘平安]&gt; 去讲台看看，刚才还播放了什么来着。<br>&lt;[张二狗]&gt; 摸着黑看看讲台上有什么东西没有<br>&lt;[kp]&gt; 用于承接影像的幕布并没有放下，讲台上是一盒粉笔和一个放映遥控器，下面中空的地方放着一个纸箱，里面胡乱地塞着装订成册的A4纸。<br>&lt;[刘平安]&gt; 摁摁遥控器，看看能否讲下幕布放映，虽然没有电。<br>&lt;[kp]&gt; 遥控器上的小红点闪烁了一下，除此之外没有其他任何反馈。<br>&lt;[张二狗]&gt; 看看A4纸上面有没有写什么东西<br>&lt;[刘平安]&gt; “倒霉保加利亚是克电器吗。”<br>&lt;[刘平安]&gt; 过去看看a4纸箱。<br>&lt;[温夏]&gt; 我也要看A4纸，看完往后面的座位走，找找看有没有什么东西能用</p>
+<blockquote>
+<p>&lt;[kp]&gt; 过图书馆<br>&lt;骰娘&gt; [张二狗]进行图书馆使用鉴定: D100=45/20失败<br>&lt;骰娘&gt; [刘平安]进行图书馆使用鉴定: D100=29/50成功<br>&lt;骰娘&gt; [温夏]进行图书馆鉴定: D100=33/60成功</p>
+</blockquote>
+<p>&lt;[kp]&gt; 张二狗翻找了一番，发现里面基本都是会议分发材料。而两个女生同时从中抽出了一份满是单选题的资料，题目是植物科学专业课相关的，但奇怪的是上面标注的所有选项都是B。
+ </p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>5-文字创作</category>
+        <category>COC TRPG</category>
+      </categories>
+      <tags>
+        <tag>跑团记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>追书人</title>
+    <url>/al/undefined.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<hr>
+<h3 id="出场人物"><a href="#出场人物" class="headerlink" title="出场人物"></a>出场人物</h3><p><strong>Kp</strong>：晚秋<br><strong>Pl</strong>：小莫<br><strong>骰娘</strong>：普瑞赛斯(溯洄)<br><strong>道格拉斯·金博尔</strong>：遗失的书籍的主人，托马斯的叔叔<br><strong>托马斯·金博尔</strong>：曾帮助过埃德加·莫里斯，希望找回遗失的书籍<br><strong>埃德加·莫里斯</strong>（pc）：一战逃兵，现为密歇根州一家当铺的员工</p>
+<hr>
+<h3 id="观前提示：谨防剧透，没跑过的人别看哦！"><a href="#观前提示：谨防剧透，没跑过的人别看哦！" class="headerlink" title="观前提示：谨防剧透，没跑过的人别看哦！"></a>观前提示：谨防剧透，没跑过的人别看哦！</h3><hr>
+<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p><kp> 1923年6月16日。昨天，托马斯来到了你工作的当铺询问了你一个有些奇怪的问题：有没有人来这里典当五本书？<br><kp> 你和这个年轻人曾有些渊源，在逃亡途中你曾接受过他的帮助；而近期他搬家搬来了当铺所在的密歇根州，于是你们戏剧性的重逢了。<br><kp> 在你的追问下托马斯坦白他的房屋遭遇了盗窃事件，经过清点发现丢失的是收藏于书房的五本书籍。书籍本身并不昂贵，但那是他逝世的叔叔——或许说逝世并不准确，他的叔叔道格拉斯·金博尔于一年前失踪了，这个月被认定为死亡——的遗物。<br><kp> 于是你自告奋勇地表示希望帮他找到盗贼并尽可能追回那些书籍。托马斯同意了，在这个人生地不熟的地方，你大概是值得依靠的。他又告诉你他的叔叔是一位十分爱书的人，他也一直相信着叔叔没有死。所以，他还希望可能的话请你再调查一下他的叔叔是否尚在人世。<br><kp> 正值入夏，道路两边的绿化植被生机勃勃，空气中开始弥漫建筑材料被炙热的阳光灼烤过的奇特味道。你按照托马斯说的的地址前往了艾尔斯伯里大街，和途径的其他区域相比这里相当安静，建筑与行人都甚是寥寥。现在，你正站在218号、也就是金博尔宅的门前。向西看去有一栋二层小屋，白色栅栏围起的花园内，一位身着碎花裙子的女士正在打理她的花丛；再远只有一片称得上茂密的云杉树林。向东、也就是你来的方向，则是通往繁华地段的马路。</p>
+<p>&lt;埃德加·莫里斯&gt; #向花园走去，脱下帽子询问女士。“您好，请问您是218号的邻居吗？”等她回答了再接下句话。<br><kp> 听到你的询问，女士从花丛中抬起了头，你看到这是位妆容精致的中年女性。<br><kp> 她回以亲切的微笑：“是的，您是来找218号的住户的吗？”<br>&lt;埃德加·莫里斯&gt; #我知道托马斯叔叔的名字吗？<br>&lt;埃德加·莫里斯&gt; #哦，道格拉斯<br>&lt;埃德加·莫里斯&gt; #点头，随后道：“我是来找一位朋友的。道格拉斯·金博尔，在敲门之前，我想先向您打听打听他的近况——以免唐突。”<br><kp> 女士有些为难地抬手抵上了自己的下巴：“这……我很遗憾，先生，但我只能告诉你，道格拉斯·金博尔先生已经失踪一年了……现在金博尔宅里住的是他的侄子托马斯。”<br>&lt;埃德加·莫里斯&gt; #作出一副震惊的样子。“……道格拉斯失踪了？警察有介入调查吗？女士，如果您知道更多信息，请拜托告知我……”</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行心理学检定：D100=39/10 失败</p>
+</blockquote>
+<p><kp> “警察当然是有调查的，但是毫无线索，月初的时候就定为死亡了……”她遗憾地摇了摇头，“可惜我和金博尔先生没什么交流，多半帮不上您的忙……您知道的吧？他有些离群索居，我住在这里的这几年，除了偶尔会有出版社的人来和他谈生意，几乎没人来找过他。”<br><kp> 你倾听着她的回答，能够感觉到她的苦恼。<br><kp> “说起来，我以前好像看到过他往公墓那边去，还带着书？”女士从回忆中抽身说道，“不过他去哪儿都带着他的那些书，也没什么特别的。”<br>&lt;埃德加·莫里斯&gt; “出版社？我不知道道格拉斯还写书？他都没告诉我……唉，但是现在他也……”#我假装沉痛地说。<br><kp> 女士见你情绪低落，不由得安慰道：“到底只是警方认定的死亡而已，说不定他只是心血来潮出门远行呢。您是从很远的地方来的吗？我可以带您去看看他侄子在不在。”<br>&lt;埃德加·莫里斯&gt; “感谢您的好心。女士，我能否有幸知道您的名字？至于拜访，就让我自己去好了。”#我向她微笑。<br><kp> “您太客气了，我叫莱拉·奥黛尔。您又如何称呼？”<br>&lt;埃德加·莫里斯&gt; “埃德加·莫里斯。”#向她点点头，戴上礼帽，回到218号门前。<br>&lt;埃德加·莫里斯&gt; #要是托马斯在我就露馅了，快跑。<br><kp> 奥黛尔只是目送了你一小会儿，就重新投入到了她的园艺作业中。<br>&lt;埃德加·莫里斯&gt; #观察一下这栋住宅，它有几层？<br><kp> 这是一栋一层的住宅，比隔壁家要小一些，院子里只有草，看起来还没有打理。<br>&lt;埃德加·莫里斯&gt; #那么，我敲门吧。或者，托马斯有给我钥匙吗？<br><kp> 托马斯并没有给你钥匙，于是你抬手叩了叩门。很快门后便传来了浅重不一的脚步声，一个身形高大、白衬衫搭配着浅褐色马甲的黑发青年出现在门后：“埃德加，你来了？快进来吧。”<br>&lt;埃德加·莫里斯&gt; #进门，同时观察一下托马斯，他的脚步声为什么浅重不一？</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行侦查检定：D100=5/70 大成功！</p>
+</blockquote>
+<p><kp> 托马斯请你坐到沙发上小等，便去准备待客的茶水。<br><kp> 你跟在他身后进了房子，因为有些在意刚才的脚步声而留心观察了一下，意外发现他的右脚似乎有些不便。此外你还打量了一番客厅，由于托马斯刚搬进来没多久，这里家具较少，客观上并不宽敞的客厅由此显得颇为空旷，你的目光自然地被墙上众多的照片吸引。<br>&lt;埃德加·莫里斯&gt; #等待时查看墙上的照片。回忆一下我上次见到他时，他有这样的症状吗？<br><kp> 这些照片被仔细地保存在了相框里，每一张都是人像，从正中央显然有些年头的家庭合照推断，它们大多数是托马斯和家人的合影。其中有一个戴眼镜的瘦高男性颇引人注目，他总是站在合照人群的边缘或后排，表情平平淡淡，看着和旁边喜气洋洋的人格格不入；而他的怀中，总是抱着或轻薄或厚重的书本。<br><kp> 至于托马斯的脚，你先前并没有太注意，但似乎重逢之后他的走路速度比你们一开始遇见的时候要慢了不少。<br>&lt;埃德加·莫里斯&gt; #等他回来时询问托马斯：“照片上这位就是你的叔叔道格拉斯·金博尔吗？”<br><kp> 托马斯端着茶具走到照片前看向你话中所指：“嗯，就是他。”随后示意你回去坐。<br>&lt;埃德加·莫里斯&gt; #回去坐着，然后诚恳地说：“上一次在当铺，我确实没有查到那五本书的信息，之后我也会请老板帮我注意。同时，希望你能告知我关于它们及其主人的所有信息，越详尽越有帮助。”<br><kp> “那五本书……说实话我记不太清都有什么了，只记得一本《一个青年艺术家的画像》，有两本是深绿色外壳的。”他不好意思地说道，“叔叔……唉，我和他最后一次见面还是我读小学的时候，只知道他特别喜欢阅读。”<br>&lt;埃德加·莫里斯&gt; “那么，能带我去看看那些书失踪前放在哪里吗？”<br><kp> “好。”托马斯起身拉平了上衣的褶皱，带着你走向位于房子西北角的一个房间：“这里就是叔叔的书房了，藏书很多，地上也叠着一些，小心别撞到了。”<br>&lt;埃德加·莫里斯&gt; #谨慎一些走进去，观察一下落灰状况。问托马斯：“你刚搬过来，有打扫过这间屋子吗？”<br><kp> 你走进书房，眼前的场景确实如托马斯所说：各种藏书塞满了整里。托马斯上前拉开窗帘，阳光扭捏地通过北面的窗户落在这些大小不一、形制各异的书籍外壳上。并不明亮的光线下，你依然能看出它们的主人花了很多心思来保养它们，这也是这些书籍的唯一共同特征；即使是位于窗口西侧的书桌上，也整齐地摆放了两列书本。<br><kp> 你听到他回答你：“我虽然没有动过这些书，但清扫是每天都有做的。”<br><kp> 你也知道他不是胡说，这里确实干干净净没有灰尘，你能嗅到的是经过时间沉淀的木香与墨水味。<br><kp> “不对，也不能说完全没动过……刚来的时候我发现有一些是叔叔从图书馆借的书，就还回去了。”<br>&lt;埃德加·莫里斯&gt; #今天是16日。”你是具体什么时间发现哪些书不见的？”。同时，长久以来在当铺工作的习惯让我开始观察这些书，估计它们的价值。<br><kp> “前天吧。”他说。<br><kp> 只要扫一眼就知道，这些并不是什么名贵的精装典藏版。<br>&lt;埃德加·莫里斯&gt; “可以翻翻看吗？”#询问托马斯。<br><kp> “嗯？这些书吗？”他打量了一眼书架，点点头，“看完放回原位就行。”</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; 命运不会分别我们，从来不会<br>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯，屏幕上的数字不会决断我们，对吗？<br>&lt;普瑞赛斯&gt; #[D100=52]</p>
+</blockquote>
+<p><kp> 你尝试在浩如烟海的藏书中寻找什么线索，但即使道格拉斯没有直接在书本上做批注的习惯，这依然是一项庞大的工程。不过十分幸运地，没多久你就你在一本诗集的空白封底上发现了一段模糊的字迹。<br><kp> “五年前的我绝不会想到自己能结识这样一群……如今我决定要加入我在地下的朋友们，……实在是不可思议的友谊。”</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行母语检定：D100=82/66 失败</p>
+</blockquote>
+<p><kp> 你尝试着在脑海中勾勒模糊部分的轮廓，但最终无功而返。<br>&lt;埃德加·莫里斯&gt; #看不出什么来，把这段文字给托马斯，请他帮忙看看。<br><kp> 托马斯接过诗集，很是疑惑：“这是什么……叔叔写的小说吗？”<br>&lt;埃德加·莫里斯&gt; #地下的朋友们……联想到刚刚与奥黛尔女士的谈话，有种不好的猜想。<br><kp> 你看着他的眉头越皱越深，眼睛几乎要贴到纸上——但他最后还是无能为力地摇了摇头。<br>&lt;埃德加·莫里斯&gt; “你的叔叔有在写小说？出版了吗？”<br><kp> “我以前看他写过一篇童话？最后投给了我家那里的报社。至于有没有出版过小说……至少我没在书店见过。”<br>&lt;埃德加·莫里斯&gt; #把诗集拿在手上，前去观察失踪藏书的位置。</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行侦查检定：D100=68/70 成功</p>
+</blockquote>
+<p><kp> 你走到书桌前，并没有发现什么异样，倒是它和窗户的相当近的距离引起了你的注意。<br>&lt;埃德加·莫里斯&gt; #观察一下二者之间的缝隙。<br><kp> 你比量着二者间的距离来到窗前，觉得上面的锁看着颇新，和稍显老旧的房屋不甚搭调。<br>&lt;埃德加·莫里斯&gt; “最近换过锁？”#指着锁询问托马斯。<br><kp> “嗯，毕竟已经失窃过了，就趁这次机会把房子的门窗都检修了一下，换了一批锁。”<br>&lt;埃德加·莫里斯&gt; “失窃的时候，锁被破坏掉了吗？”<br><kp> “没什么印象……哪些要换是请来的锁匠建议的，如果被破坏了他会告诉我的吧。”<br>&lt;埃德加·莫里斯&gt; “对了，你刚刚提到过有些书是从图书馆借的……那你去图书馆的时候，工作人员有提醒你，你叔叔还有其他书没还吗？也许失窃的书里有图书馆的书，那样就可以确定是哪几本书丢失了。”<br><kp> “嗯，不过我当天就把那些书找出来还回去了，好几天前的事了。”<br>&lt;埃德加·莫里斯&gt; #还是白天吧。我要白天去墓地。告诉托马斯邻居女士说的话，邀请他一起去。<br><kp> 托马斯看了一眼自己的腕表：“这样啊……好，我和你一起去。不过我可能呆不了太久，临时有个工作。”<br>&lt;埃德加·莫里斯&gt; #直接去墓地<br><kp> 你们在地图上确认了一下公墓的位置，发现它就在西北方，距离也不远。<br><kp> 广袤翠绿的草坪上整齐地坐落着高矮不一的立式墓碑，看似空置的地方走近查看则能发现是采用了嵌地的石板。视线穿过三三两两前来悼念的人可以看到紧邻墓地的一栋简陋的小木屋，大约是墓地看守之类的人的居所。<br>&lt;埃德加·莫里斯&gt; #前往守墓人小屋查看守墓人是否在<br><kp> 你能通过窗户看到里面有人在走动。<br>&lt;埃德加·莫里斯&gt; #那我敲门<br><kp> 来开门的是一个驼背的老人，他穿着一件起球变形的蓝色针织衫，一边抽动着鼻子一边用浑浊的眼睛上下打量你们：“你们找谁？”</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; Dr kp，过来一下，我想告诉你结果</p>
+</blockquote>
+<p>&lt;埃德加·莫里斯&gt; “你好，我们想向守墓人打听一些事，请问您是这里的守墓人吗？”<br><kp> “我是。你问吧。”<br>&lt;埃德加·莫里斯&gt; “冒昧地询问一下，守墓人只有你一人吗？”<br>&lt;埃德加·莫里斯&gt; #观察他的表情</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行心理学检定：D100=92/10 失败</p>
+</blockquote>
+<p><kp> 他不耐烦地回了一句：“就我一个。有什么事快问。”<br><kp> 你判断不出其他的情绪了。<br>&lt;埃德加·莫里斯&gt; “那您还记得一年前，道格拉斯金博尔先生来墓地探望哪位故人吗？”<br><kp> “嗯？噢，那个怪胎啊。”守墓人看向人来人往的墓地，“他能有什么故人，莫名其妙跑这来看书罢了。”<br>&lt;埃德加·莫里斯&gt; “那他平时都在哪看书呢？”<br><kp> 闻言，老人像是想起什么不好的回忆一样皱起了脸：“呵，他坐人家墓碑上看——你们是他什么人？”<br>&lt;埃德加·莫里斯&gt; “这位是金博尔先生的侄子，我是金博尔先生的朋友，听闻道格拉斯金博尔的死讯，想来探访一下他曾经来过的地方，缅怀罢了。”<br>&lt;埃德加·莫里斯&gt; #观察守墓人身上是否有其他值得注意的东西。<br><kp> “都失踪多久了，听到死讯才来。”他嘀咕了两句。</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行侦查检定：D100=36/70 成功</p>
+</blockquote>
+<p><kp> 你一边和看守说话一边观察这里，老人本身普普通通，倒是身后有些脏乱的房间里有什么吸引了你的主意。门边挂着几件外套，靠墙角的那件、口袋里似乎露出了一截玻璃瓶口。<br><kp> 他没有注意到你的打量，还在抱怨着道格拉斯过去的行径：“……老天，还好那个墓碑的主人是个独身的外乡人，不然我都不知道怎么和来看他的人交代。”<br><kp> 而托马斯悄悄跟你说他得回去一趟了，和编辑谈完马上回来。<br>&lt;埃德加·莫里斯&gt; #不动声色地收回视线。向托马斯点头让他离开。<br><kp> 守墓人随意地看了一眼离开的托马斯，问你还有别的事吗。<br>&lt;埃德加·莫里斯&gt; “守墓人先生，能否请你带我去看看那位外乡人的墓碑？下次来时好替他扫扫墓，聊表歉意。”<br><kp> 他摆摆手，告诉你靠南第二排的墓碑中刻着三个天使图案的那个就是。<br>&lt;埃德加·莫里斯&gt; #那好吧，向他告辞，然后去指定的墓碑前。<br><kp> 你照他所说找到了那个外乡人的墓碑，上面只简单地刻着姓名和生卒年，碑前冷冷清清，只有从隔壁被风吹来的小白花。<br>&lt;埃德加·莫里斯&gt; #看看这个墓碑和其他墓碑有什么不同之处吗？为什么金博尔先生挑选了它<br>&lt;埃德加·莫里斯&gt; #（难道真就欺负外乡人</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行侦查检定：D100=85/70 失败</p>
+</blockquote>
+<p><kp> 你看了看它和附近的其他碑有什么差异，结果不如说它右边的右边那个嵌地石板比它独特得多，至少人家是一排灰白碑里唯一的黑石板。<br>&lt;埃德加·莫里斯&gt; #被这个黑石板吸引，走了几步，蹲下来摸摸敲敲<br><kp> 你手上沾了一层灰。<br>&lt;埃德加·莫里斯&gt; #拍掉手上的灰，看看有没有人注意这里，没人的话我也要坐上墓碑看看（</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行幸运检定：D100=10/55 极难成功</p>
+</blockquote>
+<p><kp> 那么趁着没人关注这边，你也坐到了墓碑上。<br><kp> 一秒，两秒，三秒……<br><kp> 无事发生，你只好在其他人过来之前又跳下来。<br><kp> 非要说的话，从这里一抬头精致还是很不错的。<br>&lt;埃德加·莫里斯&gt; #在墓地中逛逛等托马斯回来吧，看看周围墓碑上的名字什么的<br><kp> 你在墓地里随意闲逛这打发时间，发现了不少冷门的名字和或有趣或令人痛心的墓志铭。等了很久，你隐隐有些饿了托马斯才匆匆赶来，因为着急他的跛脚更加明显了：“抱歉，多花了些时间……”<br>&lt;埃德加·莫里斯&gt; “没事，话说回来，你的腿是怎么回事？”#一边问一边把他带向外乡人的墓碑<br><kp> 托马斯沉默了一下，倒也没有隐瞒：“前几年为了拍摄冒了点险，又没恢复好，就这样了……就是这个吗？”<br>&lt;埃德加·莫里斯&gt; #点头。希望他能和他叔叔有什么叔侄感应能看出些什么<br><kp> 他上前看了看墓碑，思考着什么。<br><kp> 随后又转头看了看旁边其他的墓碑，对比着什么。<br>&lt;埃德加·莫里斯&gt; #期待地看着他<br><kp> “倒是有个在意的点……听之前守墓人说的，这个人似乎没什么来看望他的人吧。你看那个石板，积灰都能画出图案了，这个为什么这么干净……？”<br><kp> “但是……那位守墓人年纪也大了，因为腰背不好所以不愿意清扫嵌地式的也有可能。”<br>&lt;埃德加·莫里斯&gt; “总之，可以说明一件事，还总有人来这里。”#向托马斯笑笑。心想这是我刚刚坐上去蹭掉的……“至于是不是守墓人打扫的，再去问问看就知道了。”<br><kp> 托马斯点点头，转向墓碑很抱歉地致了个礼。<br>&lt;埃德加·莫里斯&gt; #跟着也致敬一个，真诚一点（乐<br>&lt;埃德加·莫里斯&gt; #询问托马斯是否有留意到守墓人衣服口袋里的玻璃瓶口<br><kp> 他摇摇头表示自己没注意。</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行灵感检定：D100=35/70 困难成功</p>
+</blockquote>
+<p><kp> 那么你觉得之前在守墓人屋里看到的玻璃瓶口形状有些熟悉，像是酒瓶。<br>&lt;埃德加·莫里斯&gt; #河里，禁酒令的年代<br>&lt;埃德加·莫里斯&gt; #走之前再看一眼墓碑，看不出问题就撤了，吃午饭<br><kp> 你又看了一眼墓碑，没看出什么名堂，就和托马斯回家吃饭了。他准备了一桌还算丰盛的午餐，厨艺好像比以前进步了不少。<br>&lt;埃德加·莫里斯&gt; #吃完午饭，去问问奥黛尔女士前天是否有注意到异常情况。<br><kp> 你上门拜访，奥黛尔则表示没注意到什么，并询问你发生了什么。<br>&lt;埃德加·莫里斯&gt; “金博尔家有些书籍失窃了，虽然不贵重，但还是希望能找到，毕竟是道格拉斯的遗物。”<br>&lt;埃德加·莫里斯&gt; #顺便询问有无书籍的线索，告诉她其中一本是《一个青年艺术家的画像》<br><kp> “噢……这太令人遗憾了，怎么会有人跑到这里来窃书呢。”她很是惊讶，不能理解贼人的想法，“看来我也得注意一些了……《一个青年艺术家的画像》？道格拉斯先生还会收藏画册吗？”<br>&lt;埃德加·莫里斯&gt; “那其实是一本小说，不过这不重要，女士，谢谢您的时间。”<br><kp> 奥黛尔对自己帮不上忙表示了遗憾，又询问能不能麻烦托马斯这几天留意一下附近的安全状况，她马上要去朋友家住几天，得知出了这种事她有些不放心自己无人看管的房子。<br>&lt;埃德加·莫里斯&gt; “我会帮您转告他的。”<br><kp> “谢谢您。”临走她送给你一束用牛皮报纸包扎好的葵百合，祝你们追查顺利。<br>&lt;埃德加·莫里斯&gt; #觉得没有线索了，打算先回到金博尔宅，转告奥黛尔女士的话后，花一点时间仔细看看诗集空白处的字。</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行母语检定：D100=56/66 成功</p>
+</blockquote>
+<p><kp> 还原读不出的部分花费了你相当的精力，夜幕降临，你终于从书本中抬起头。功夫不负有心人，即使十分隐晦，你还是知晓了一条奇异的信息：在公墓地下存在一个隧道网络，其中居住着神秘的生物……<br>&lt;埃德加·莫里斯&gt; #得到诗集中的线索，印证了白天在墓地的猜测，我想了想，觉得白天众目睽睽之下难以调查，决定再次前往调查。向托马斯告知去向后我离开金博尔宅，借夜色遮掩悄悄前往墓地。<br><kp> 时针一步一步扫向表盘的最上端，人间的星光逐渐沉入了名为睡眠的黑雾中，只剩明亮的月光铺在屋顶与玻璃上。失去了来往行人，静谧的公墓显示出它独属于逝者的缄默。</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行幸运检定：D100=15/55 困难成功</p>
+</blockquote>
+<p><kp> 你注视着明亮月光下仿佛陷入了静止的公墓，尤其留意那个外乡人的墓碑所在的地方。蓦然，一个人影从它旁边的空地下钻出，佝偻着身子穿过公墓走向了云杉林。<br>&lt;埃德加·莫里斯&gt; #地下突然钻出了个人？似乎是守墓人？我警惕观察四周，没有人就靠近他钻出来的空地，同时记住守墓人前往的方向。<br><kp> 你目送着人影消失在了云杉林中，便走近了刚刚他现身的地方，发现那里是你白天摸过的嵌地石板。<br>&lt;埃德加·莫里斯&gt; #淦，我就该直接上脚踩<br>&lt;埃德加·莫里斯&gt; #不过，白天没有发现端倪，他是怎么打开石板的？<br>&lt;埃德加·莫里斯&gt; #观察一下能不能从外面打开，是不是需要什么工具才能撬动石板。<br><kp> 你带着疑问摆弄了一下石板，发现刚才的人影匆匆离开没有将石板严丝合缝地关闭起来，你的手指可以探进白天没有的缝隙里，要打开它似乎没有那么困难。<br>&lt;埃德加·莫里斯&gt; #hold on，打开之前先从我的手提箱里拿出枪以防万一。<br>&lt;埃德加·莫里斯&gt; #毕竟夜晚的墓地还是挺瘆人的。</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行力量检定：D100=94/70 失败</p>
+</blockquote>
+<p><kp> 大概是因为你还要拿着枪，在挪动石板时便不太好发力，它并没有被移开。<br>&lt;埃德加·莫里斯&gt; #从包里拿出水壶，我打算再试一次，如果能搬开一点就献祭了水壶，用脚把它卡在石板与地面之间，再把石板掀开。把枪塞进兜里，看准石板的缝隙之后，我把手指卡进去，咬牙发力。</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行力量检定：D100=81/70 失败</p>
+</blockquote>
+<p><kp> 这一次你使尽了全身的力气想要抬起石板，它也不负期望地露出了一定的缝隙，然而在你还没能把它移到安全的地方松手时，一股令人作呕的腐臭味从石板下升腾起来，它一下子就扼住了你的呼吸，你感到眼前发黑、意识模糊，在昏过去前只能祈祷石板松手掉下去别砸到自己……<br><kp> 不知道过了多久，你悠悠转醒，发现自己倒在石板边上，四周仍是夜色。你感到自己的额头上传来了清晰的痛觉，没有流血、但肿得厉害。而在一边外乡人的墓碑上，有什么端坐在那里低头专心翻阅着什么，脚边还堆放着几本书。</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; 我对已记录埃德加·莫里斯的属性变化:<br>&lt;普瑞赛斯&gt; 体力：13-1=12</p>
+</blockquote>
+<p>&lt;埃德加·莫里斯&gt; #找我的枪和包，同时观察那个人，是托马斯的叔叔吗？<br><kp> 你的东西就散落在你周围，你很快就找回了它们。你屏住呼吸安静地靠近人影，不，不对……那真的可以称之为人吗？<br><kp> 本该是帮助你视物的月光此时反而让一种不适爬上了你的脊背。你看到他的皮肤反射的诡异的光泽，面庞长而似犬，虽然缠着布条、但仍能看出令人汗毛倒竖的尖利爪子，脚则仿佛偶蹄目的蹄子。<br><kp> 他？还是它？</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; 埃德加·莫里斯的San Check：<br>&lt;普瑞赛斯&gt; 1D100=70/55 失败<br>&lt;普瑞赛斯&gt; 埃德加·莫里斯的San值减少1D6=2点,当前剩余53点</p>
+</blockquote>
+<p>&lt;埃德加·莫里斯&gt; #忍着头痛向它举起枪，但是先别开枪，看看它周围的书。</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行灵感检定：D100=50/70 成功</p>
+</blockquote>
+<p><kp> 那么你认出了这些书——今天？还是昨天，你才在金博尔家的书房里见过。<br><kp> 那个东西注意到了你的动作，轻轻合上了书本看向你，并没有说什么。<br>&lt;埃德加·莫里斯&gt; #我要尝试交流。“你好？”<br>&lt;埃德加·莫里斯&gt; #这大概就是偷书贼了吧？不过这种生物到底是什么……<br><kp> 它向你点了点头，开口是诡异的声线：“放下枪吧，我知道您。”<br>&lt;埃德加·莫里斯&gt; #好吧，我放下枪，对这个生物能说话感到惊悚。<br>&lt;埃德加·莫里斯&gt; “您是……托马斯的叔叔，道格拉斯 金博尔吗？”#虽然觉得情况诡异，但还是开口询问。<br><kp> “嗯……是我。没想到如今还有人能够辨认出我是谁，倒令我有些惊讶了。”<br>&lt;埃德加·莫里斯&gt; “不……虽然您的身形……不似人类，但气质在，虽然没见过本人，但我见过您的照片，也从您侄子那里听说过。”<br>&lt;埃德加·莫里斯&gt; “所以，这就是谜底了吗？”我看着他，“刚刚您说知道我，又是怎么回事？”<br><kp> “您之前来墓地找过我，不是么？”它扶了扶眼镜，“如果您是说书本的事，那么真相确实如您所见。请回去吧，此后我不会再去打扰小托马斯了。”<br>&lt;埃德加·莫里斯&gt; “其实，托马斯一直相信他的叔叔没有死，只是失踪了。您……现在不再打算见他了吗？”<br><kp> “我已经厌倦了种种俗事，只想随时随地阅读书籍而不受他人打扰。啊，我的自我介绍似乎还有所欠缺……如您所见，我正在成为和我的朋友们一样的食尸鬼，这副模样，我是不可能再去见小托马斯了。而且我很满意现在的生活，再不需要金钱、再不需要为晚餐穿着打扮，除却用餐时间外都不需要与人相见……现在的我可以随自己心意选择读书时间，不论是白天或是黑夜。只是我当初携带进地下的书籍已经无法满足我了，我才会冒险回去。”<br><kp> “也请您不要向他透露今夜的事，就让他继续认为我失踪了吧，时间会为他开解烦恼的。”<br>&lt;埃德加·莫里斯&gt; “好的。”#我点点头。“既然明白了真相，我的任务也到此结束了。但是，不知道您能不能满足一下我的好奇心？有几个问题想请教您。”<br><kp> “请讲？只是我不剩多少时间了，可能无法太过详尽地为您解答。”<br>&lt;埃德加·莫里斯&gt; #紧张地点点头。<br>&lt;埃德加·莫里斯&gt; “守墓人知道您吗？或者说，您和您的朋友们。”<br><kp> “您是说杰弗逊老先生么？好像有一次他半夜出门时我就坐在这里看书，但我不知道他有没有注意到我……不过他多半会当作自己眼花了吧。”<br>&lt;埃德加·莫里斯&gt; “另外，多有冒犯，我听说的怪奇传闻中，食尸鬼多半是没有神智的，您……是如何保护自己的心智不使其丧失？”<br><kp> “没有神智么……呵呵，我曾经也这样认为，但那都只是世人的臆想罢了。因为它们的动机和思虑都超越了一般人类能够理解的范畴就将它们的举动归为‘没有神智’，是傲慢又危险的。”<br><kp> “我仍是我，并非因为意志坚定没被它们‘向下’同化，而是因为我还没办法真正理解它们的世界，那个更加广阔的世界。”<br>&lt;埃德加·莫里斯&gt; #既然如此。我向他脱帽致意。“感谢您的解答。不知您能否将书籍给我，让我归还给托马斯，好让他安心？”<br><kp> “抱歉，唯有这点我无法作出让步……”它从墓碑上跳下来，“但不知这样是否可行呢？我将我带走的书本的标题和封面叙述给你，麻烦你去一趟书店……都不是什么昂贵少见的书，应该不会花费您太多精力。”<br><kp> 它说着，解开了一部分手上的布条，摘下了一枚款式简单的戒指：“请将它当掉换作酬劳吧。”<br>&lt;埃德加·莫里斯&gt; #接过戒指，职业病估价。<br><kp> 虽然款式设计没什么审美价值，但胜在材质，还是能卖个不错的价钱的。<br>&lt;埃德加·莫里斯&gt; “恐怕这枚戒指的价值远超出那些书。不妨这样，如果您有特别想读又找不到的书，我可以代为购买，就用这枚戒指余下的钱。”#从公文包里找到发票和笔。“您可以把书名，还有想阅读的书目写在这里。”<br><kp> “小托马斯结交了一位不错的朋友啊。”道格拉斯笑了笑，你竟然从可怖的面容上看出了一丝温和，“可惜今夜这处出入口就会封闭起来了，我将要和我的朋友们远走，恐怕没有机会得到您购来的书籍了。对一个爱读书的人来说，这是多么残酷而遗憾啊。”<br>&lt;埃德加·莫里斯&gt; “这样啊……真是遗憾。那么，请告诉我那些书的名称吧。”<br><kp> 在沉静的天穹下，道格拉斯详尽地描述了那些书本的特征，说完，它把周边的书籍都收集起来包好，提着它们走近了那个石板：“……就是这样了。劳烦您。”<br>&lt;埃德加·莫里斯&gt; “再见。祝您旅途愉快。”#目送他离去。<br><kp> 它十分轻松地单手挪开石板，回过头向你点头致意，便慢慢爬进了那个弥漫着恐怖气味的洞穴之中，石板也在之后缓缓闭合。<br><kp> 第一缕阳光自地平线那一头挥洒下来，宣告着属于人间的白昼的苏醒。</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; 埃德加·莫里斯的San Check：<br>&lt;普瑞赛斯&gt; 1D100=89/53 失败<br>&lt;普瑞赛斯&gt; 埃德加·莫里斯的San值减少1D4=2点,当前剩余51点</p>
+</blockquote>
+<p>&lt;埃德加·莫里斯&gt; #看着天边的明亮，有种围绕着周身的泡泡破灭的奇妙感觉。呆立一会后想起要趁守墓人回来之前溜走，不然显得怪怪的。<br>&lt;埃德加·莫里斯&gt; #再次探访金博尔宅，告诉托马斯结果之前，先回到当铺的阁楼一趟，处理一下伤口。吃点东西再前往书店买书。</p>
+<blockquote>
+<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行急救检定：D100=8/70 极难成功<br>&lt;普瑞赛斯&gt; 我对已记录埃德加·莫里斯的属性变化:<br>&lt;普瑞赛斯&gt; 体力：12+1=13</p>
+</blockquote>
+<p>&lt;埃德加·莫里斯&gt; #书籍的购买并不困难，只是希望托马斯不要怀疑过于崭新的书。我提着五本书敲响了金博尔的家门。<br>&lt;埃德加·莫里斯&gt; #左手五本右手五本，嗯。<br><kp> 托马斯没有睡懒觉的习惯，此时已经换好了方便外出的衣服，他开门看到一夜未归的你提着一大堆书，一时有些没反应过来。<br>&lt;埃德加·莫里斯&gt; “昨天去墓地，虽然没有找到通道，但是回来的路上看到一个行迹鬼祟的人，我就想什么人会在这个时候上街呢——当然除了我以外。总之，我偷偷跟着他到了森林里，找到了藏书的地方。很遗憾，让那个贼人逃走了。”<br>&lt;埃德加·莫里斯&gt; #把书放到书房，在他提出质疑前，从兜里掏出戒指。<br>&lt;埃德加·莫里斯&gt; “我还找到了这个。”<br><kp> 托马斯迷迷糊糊地跟着你来到书房，反应过来昨夜书法又被人“造访”了：“天，我昨天居然一点都没注意到又有人来了……不过既然被抓了现行，他应该不会再来了吧。”<br><kp> 他接过戒指查看了一番，惊讶道：“这……好像是叔叔的戒指？难道那家伙在我搬来之前就进来行窃了吗？”<br>&lt;埃德加·莫里斯&gt; “谁知道呢。”#心虚地说。<br><kp> “谢谢你，真的辛苦你了。要是没有你，真不知道这事会变成什么样……”他小心地收好戒指，“你吃过早饭了吗？我请你去外面吃一顿吧？还是说先睡一觉休息休息？”<br>&lt;埃德加·莫里斯&gt; “已经吃过了。”我说：“另外，你拜托我调查的另外一件事，你叔叔的下落，我恐怕有个不好的猜想。”<br>&lt;埃德加·莫里斯&gt; #开始胡编乱造。指指那枚戒指说：“也许……那戒指是金博尔先生遭遇不测的当天遗失的。我也不敢妄下定论，但还是做好最坏的打算，毕竟连警察也没能找到他……”<br><kp> 托马斯听着你的猜想，眉眼的末尾沉了下去，悲伤溢于言表：“我……可是……唉，我还是不愿意想那个糟糕的可能。”<br>&lt;埃德加·莫里斯&gt; #拍拍他的肩。就像道格拉斯说的那样，或许时间会是治愈一切的良药。<br><kp> 你把该交待的事情全都解释妥当后在金博尔宅好好地休整了一番，便和托马斯道别准备回当铺了。托马斯送你出门，下午，阳光已经变得灼热，落在青翠的草叶上烧出夏天的味道。你途径奥黛尔家的花园，风将淡淡的香气捧到了街道上。熟悉的景色时快时慢地与你擦身而过，如同播放中的胶卷。<br><kp> 你和托马斯的来往密切起来，他在本地的报社安顿下来，道格拉斯真的没有再回来过，于是他也度过了相当平和的生活……<br><kp> 时光缓慢地踱着祂的步子游走人间，而属于你的故事又将行往何方呢？</p>
+<hr>
+<h3 id="幕间成长"><a href="#幕间成长" class="headerlink" title="幕间成长"></a>幕间成长</h3><blockquote>
+<p>.en 急救<br>普瑞赛斯[Priestess]<br>Dr.埃德加·莫里斯的急救增强或成长检定：<br>1D100=81/70 成功<br>埃德加·莫里斯的急救增加1D10=4点，当前为74点</p>
+</blockquote>
+<blockquote>
+<p>.en 图书馆<br>普瑞赛斯[Priestess] 2021/11/17 22:29:20<br>Dr.埃德加·莫里斯的图书馆使用增强或成长检定：<br>1D100=36/52 失败<br>埃德加·莫里斯的图书馆使用值没有变化</p>
+</blockquote>
+<blockquote>
+<p>.en 侦查<br>普瑞赛斯[Priestess] 2021/11/17 22:29:39<br>Dr.埃德加·莫里斯的侦查增强或成长检定：<br>1D100=71/70 成功<br>埃德加·莫里斯的侦查增加1D10=5点，当前为75点</p>
+</blockquote>
+<blockquote>
+<p>.en母语<br>普瑞赛斯[Priestess] 2021/11/17 22:29:57<br>Dr.埃德加·莫里斯的母语增强或成长检定：<br>1D100=37/66 失败<br>埃德加·莫里斯的母语值没有变化</p>
+</blockquote>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>5-文字创作</category>
+        <category>COC TRPG</category>
+      </categories>
+      <tags>
+        <tag>跑团记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tarot / 你舟沉了</title>
+    <url>/al/1a9a44c2.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<ul>
+<li>缘由：#查询抽卡运势</li>
+<li>牌卡：棱镜</li>
+<li>牌面：星币侍从，星币女皇，倒吊人<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/ia_600003012.jpg" title="ia_600003012" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/ia_600003012.jpg" alt="ia_600003012"></a><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/ia_600003065.jpg" title="ia_600003065" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/ia_600003065.jpg" alt="ia_600003065"></a><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/12.jpg" title="12" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/12.jpg" alt="12"></a></li>
+<li>读牌：暗示充钱，硬吃保底，不尽人意最好收手。</li>
+<li>结果：56发歪了琴柳，五星四个</li>
+<li>今日的胜负：塔罗牌的胜利</li>
+</ul>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>塔罗玄学</category>
+      </categories>
+      <tags>
+        <tag>巴纳姆效应</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tarot / 一些无聊的每日运势</title>
+    <url>/al/6a201d62.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="d18b5f22cb989cca3c1dc3940b60ccaef718a4215cbd63d5a35ade4b94340982">235c99f6df367f11e53e45ba3818f69a7e00a40b31bcbb4889b8f550583e3252205e59a135e8f7a7ff90560a80e1a9378aafb667f0dbc89664cb2bea26398cf4183d698886f5eb0ae358a3c9560450bbad736e5d6a4e713bafcfa4976b09ad13c9fdc045f161c0edfb57403014726ee3e81db38bd3d3ad1ddd1dfab9dc0c8c51c0026ca79201a6d91dbe75ecf1b68465da617394e8a457bacf3ba6cf3c8e977f9cd4e96bc660f0c7306b2aa4651c34092d6e020c7bbc151f5848a1d0850f1774f077d2f632a98cff19c3583b719bc8d11e49a89044f3f685748f914cb32b15c4d653d8bf8d370f6a14d531f66fa16d58e5780276e78fdbe62989b0ce0c9e2885aca726fc3c07db5b61125f22524d45488b78bb60c6a3a2bb6aedd30c383731f738cef656dd60e93aa0eacd6e6d277f5fb2141493b223db18af9a9a4cdc1034ece27c6855215aeed3dea753ab79be3f0fe64c4c8b9e5b1ce63a33967db27f8f5bd7a900599f9992ccd51a3031c602a000557b0f2aa76d5647c7c1b0b05bbe83c9bccd28f2ef2edd81565fa19d883e03b80adff87fc30877b52c4f005a6cf7d8ae30954683785546803d1938c518dda9400377be47ea0db7bbe6f56ab033fd41839b5d44ca822d752fe1985cd0c3418529ca9e5562fcaf3a73344a4db864a7862a1c22fc2c2ef3f913b6c1b0499dd840727ba8798bb3908ccd06a5abb4c2ae7da592e68144fc1fabb94c0b65d44240cb033ee99479f81706fcd5cdf0408db3a11ac124dfe7e778bafe2aaf083727d5533d8512e811b87408c8fc0d1e93ca63983e4e9488fde4cc9644d096cb058a97060485edf889bc8dbf236af6337ffa1b538dfa28c70863dc574914f9bb9748e28531a70afc63b5b152be297e9762034c9b536c65721415d3ca65b07d8bf19cb1c576699d18f334500676a0f2c1affd546cbf9221d88faf00aaded08cde4f45bd0a04d5a2099dae0dd887189514a5a0326990de4fde39ab2cc7b2426810da442f8f8c109980f39799a687edaface5f9803a32a2eb8a2a97b61bfde2a3b228e2e7c03c7b2b4ed73b566e59618f7ce29ecdc71d2970a990614dd5de67e8c7b1a6656cc9207529e8e69fe68277c6c07713064efb927f6c59ccbf71061f194f256a9908c6f383f756627087669bbf6d8b077191226f6984a557caa4490f4e97962f5a7a2db1294aca063452ac373e161a6a9c9cfd938ccead83d3b3091f76e02ede0139d653583e201197375a48c4a274fdd9b6f60cda3e3687bebc87d0d11a805acf5a3774f96d108096c9b577d9588f92aecbba2c9f80e604cf0c2994e7d061481478eefcf53e2377b75b55f30a8b0d18b916f1008db3ed6749889a338454d973a72a106194ff08a2a7b79fb0983e1e122e25008084f53b1bbfa4cc38667bf97a6875f31fdff6539edb682b75861fd45bf6283ebffb39d4c07d9c07c3a97e8856309c63ea709fecc1db84907f2447cbb399bf8d7009576e2fcf5edf1a99ab9fe3f831968b9ff27419cd7ac0a2a4eca1324728facf069bfc4c42daa4b76e0f3015f3879ca6d2be4fc73f7772c3dbbc211987330d55eedc887053b782c09d88d57385fd27956e27845df658ab59480a76cef4a282fc213e8f33bbf1d5b54e81f8b031908e9fc94addc57ed59803833dfd99cfdf35ef51a9da4a0094c2e431f8757929a29ec0882e47007a0fbffbb0aa05c9222c8c4ef1c56638ebf1e74d9acf950c7cdbeae8e1e4c041648865226e91e9ce23f6ea719d26ec1bbdc42bdb8e3d85355a7382940cd3b4c5999aa2c4c54e44f6098ca55ef764cf118ea866b7c30d4f5734755a13c8287417cac00b15bb5045da11a9ed4ebe6d6216b486c7ca55ca7991d202241f8e55958ecb0cbbff82da9b5adf6fa4b44356f2402609bb5b008e4df13453d8362a8319c962c066c94c0b708194742d09ff1c7c51302618839e2c70ab9e48f7b473b004ce2ca0b12310b35ebff8dbf79ec327f0cf6303b4fc19c4bb19c260a00ed5b1103aa46d3cb677af2e3a01ef9c29fcb3513a2d021800778040fca7f65ca07624bfdf340d9e091bf759ba996786a1b430f122ee69dcf428d6115dee8c55776dc600b17be53316557b4a006c9a0c1663a88a235edeaa1edbd8303b000db664d2869008df131a8fd22cb6d68b0323ca0a1caf4778b8db855fc4f1bd45c9e6db3cfb1d2847c956773de1d0a3e1a2222d98b09a4f81ee3783bc175f5c931b5fbf69234b3a9f5a877f62107bced96c4783183534dc389afa418c5f648b2d0a6455d833a550ca658ca6ad2111db3d0fdebebcc83086cfe6045c8dfdd5cda17b39dcb1b6fb31769dbb5b8eca20a76d4be0b77ae379992235947dfc7749990395a28772d1ff22bf859495df050d0c4d6f6c</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-up">
+      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-up">提示：你不知道</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>塔罗玄学</category>
+      </categories>
+      <tags>
+        <tag>巴纳姆效应</tag>
       </tags>
   </entry>
   <entry>
@@ -1286,94 +1550,6 @@ body
       </tags>
   </entry>
   <entry>
-    <title>今夜，学研（三）</title>
-    <url>/al/cdd4ad46.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<hr>
-<h3 id="出场人物"><a href="#出场人物" class="headerlink" title="出场人物"></a>出场人物</h3><p><strong>刘平安</strong>：女，学生，能力是缜密的推理和超绝的运气<br><strong>张二狗</strong>：男，学生，能力是高质量男性和高质量男性<br><strong>温  夏</strong>：女，学生，能力是间歇性神棍和白嫖技能点</p>
-<hr>
-<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><blockquote>
-<p>&lt;[kp]&gt; 温夏看座位过侦查<br>&lt;骰娘&gt; [温夏]进行侦查鉴定: D100=68/60失败</p>
-</blockquote>
-<p>&lt;[张二狗]&gt; 见纸箱子里面没啥东西，我去看看座位上有什么东西<br>&lt;[刘平安]&gt; “诶…这做的也忒不专业了，谁写的啊都选b，不会就选b是吧。”指指点点<br>&lt;[张二狗]&gt; “不是遇事不决就选C吗？这蒙得不专业啊。”</p>
-<blockquote>
-<p>&lt;骰娘&gt; [张二狗]进行侦查鉴定: D100=4/85大成功！</p>
-</blockquote>
-<p>&lt;[kp]&gt; 由于光线条件太差、桌椅又比较密，温夏没发现什么特别的。张二狗放下看不出名堂的材料也走向座位，低头查看地上有没有遗漏物品的时候捡到了一个手机。<br>&lt;[张二狗]&gt; “哎，这儿有个手机。”捡起来看看能不能打开<br>&lt;[温夏]&gt; 凑过去看<br>&lt;[刘平安]&gt; 过去看看<br>&lt;[kp]&gt; 手机在张二狗手上亮了起来，拉满的亮度差点晃瞎你们的眼睛，锁屏没有设置密码、一划就开了，里面没有下载多少应用尤其是娱乐软件。<br>&lt;[温夏]&gt; “至少有光源了……这手机有网吗？”<br>&lt;[刘平安]&gt; 看看有没有备忘录或者文档一类的东西<br>&lt;[张二狗]&gt; “这是个新机子吗？”等刘平安划拉完我看看通讯录跟微信<br>&lt;[kp]&gt; 顶栏并没有浮现wifi图标，但可以看出信号满格。备忘录里空空如也，文档倒是存了不少，都是从微信上下载下来的，而且看内容物主似乎是个后勤人员。通讯录里大概有五十多个号码，备注名大都是很朴实无华的姓+职业，还有些儿子啊女儿啊之类的亲人备注。微信的状态也差不多是这样，基本能证实物主的职业是学校的后勤，看起来是典型中老年人的账号。<br>&lt;[温夏]&gt; “待会我们下楼送到保安那里吧。”<br>&lt;[张二狗]&gt; “这是学校老师的手机吧？嗯，也只能这样了。”<br>&lt;[刘平安]&gt; 于是看看有没有娱乐软件，毕竟是唯一打得开的手机（。<br>&lt;[kp]&gt; 没什么娱乐软件，但桌面上有一些网页快捷方式，连连看消消乐以及广场舞视频什么的。<br>&lt;[刘平安]&gt; “我感觉是工作人员的手机。”<br>&lt;[温夏]&gt; 没什么其他的发现，就先出去了<br>&lt;[温夏]&gt; “现在有光源了，我觉得我们可以试试下楼。”<br>&lt;[kp]&gt; 手机屏幕还是比较明亮的，不过它似乎摔过，背面的镜头连同手电光源都开裂了。<br>&lt;[张二狗]&gt; “不过我们刚才看到的那些都是放映机搞的还是幻觉？”<br>&lt;[温夏]&gt; “幻觉吧，放映机没电来着。”<br>&lt;[刘平安]&gt; “我想去自动贩卖机看看。”露出了微笑<br>&lt;[刘平安]&gt; 我翻翻身上有没有零钱先</p>
-<blockquote>
-<p>&lt;骰娘&gt; [刘平安]进行幸运鉴定: D100=2/50大成功！</p>
-</blockquote>
-<p>&lt;[kp]&gt; 刘平安从身上掏出了一大堆零钱，够把自动贩卖机买空了。<br>&lt;[张二狗]&gt; “这位同学，给我也来一杯，嘿嘿。”<br>&lt;[刘平安]&gt; 于是给大家一人买杯热饮，我买了热可可，感觉心情好了不少。<br>&lt;[张二狗]&gt; 我来了杯卡布奇诺<br>&lt;[温夏]&gt; “谢谢。”遂要了杯草莓奶昔。<br>&lt;[kp]&gt; 在刘平安的一番操作后，机器内传来纸杯掉落的轻响和潺潺的水声，玻璃挡板降下后，令人心旷神怡的醇香热气飘了出来。<br>&lt;[kp]&gt; 你们捧着温暖的饮料各自喝了起来，但是……味道好奇怪，为什么这东西像烧焦的太妃糖？SC0/1。</p>
-<blockquote>
-<p>&lt;骰娘&gt; [张二狗]的理智检定结果:<br>&lt;骰娘&gt; 67/56=失败<br>&lt;骰娘&gt; 你的理智值减少1=1点,当前剩余55点<br>&lt;骰娘&gt; [温夏]的理智检定结果:<br>&lt;骰娘&gt; 65/42=失败<br>&lt;骰娘&gt; 你的理智值减少1=1点,当前剩余41点<br>&lt;骰娘&gt; [刘平安]的理智检定结果:<br>&lt;骰娘&gt; 67/80=成功<br>&lt;骰娘&gt; 你的理智值减少0=0点,当前剩余80点</p>
-</blockquote>
-<p>&lt;[刘平安]&gt; “果然呢，这个垃圾保加利亚幻觉场所。”甚至验证了一些我的想法，冷笑三声<br>&lt;[刘平安]&gt; “没事吧…”对二位略有歉意<br>&lt;[温夏]&gt; 我闻着显然不是草莓奶昔的味道几欲作呕。把杯子放到机器上。“……没事，感觉又是幻觉……？”<br>&lt;[张二狗]&gt; “我咋感觉这卡布奇诺有一股子电梯里面那个女生的味道？”卧槽，吓死我了<br>&lt;[刘平安]&gt; “罢辽。”把饮料扔到垃圾桶，心疼了一下我的钱，于是去踹了一脚饮料机<br>&lt;[kp]&gt; 饮料机震了一下，依然展示着点单界面。<br>&lt;[张二狗]&gt; “我们要不再下楼试试？”<br>&lt;[温夏]&gt; “嗯，走吧。”<br>&lt;[刘平安]&gt; 下楼<br>&lt;[kp]&gt; 你们再一次迈进了楼梯间，与上次不同的是，你们手上有效的照明工具只有捡来的手机的屏幕，但总归是能用的。你们盯着光照亮的地面下楼，然而没走几步，就听到下面传来了“啪嗒”“啪嗒”沉闷拖沓的脚步声。<br>&lt;[kp]&gt; 两道刺目且锋利的紫红色激光钉在你们正对面的墙壁上，对方停下了脚步。<br>&lt;[张二狗]&gt; “来者何人？报上名来。”<br>&lt;[刘平安]&gt; 卧槽。我暗骂一声，感觉这东西不好惹，决定往楼上跑。“…走吧走吧。”我拉了拉温夏<br>&lt;[温夏]&gt; “……”把书包放下来拎在手上，和刘平安上楼。“先撤吧。”<br>&lt;[张二狗]&gt; 我后退了几步，看看能不能看清对方的脸<br>&lt;[kp]&gt; 刘平安拉着温夏开始往楼上跑，失去照明的张二狗趴在栏杆边完全看不到线的另一端是什么。在他喊出话后，楼下就传来了低沉而洪亮的絮语，它重复着极相近的陌生词汇，每一个音节都如同振翅的飞虫在并不宽敞的楼梯间内横冲直撞，灌进你们的耳道里用力刮擦着脆弱的耳膜，想要在上面钻出通向大脑的洞窟。<br>&lt;[kp]&gt; “啪嗒”。“啪嗒”。<br>&lt;[刘平安]&gt; 复读机吗。我一边跑一边想<br>&lt;[温夏]&gt; “二狗子还不快走！”妈的跑路了。<br>&lt;[张二狗]&gt; 跑了跑了</p>
-<blockquote>
-<p>&lt;[kp]&gt; 那张二狗过个幸运吧<br>&lt;骰娘&gt; [张二狗]进行幸运鉴定: D100=38/55成功</p>
-</blockquote>
-<p>&lt;[kp]&gt; 在一片黑暗中，张二狗迟钝的求生欲发挥了莫大的作用，他一步跨了好几个台阶地追上了前面的人。待到脚步声停止时，你们看到了上面台子上隐隐泛着灰蓝色光芒的楼梯间出入口。<br>&lt;[刘平安]&gt; “进去躲躲？”<br>&lt;[张二狗]&gt; 离开楼梯间<br>&lt;[温夏]&gt; “刚刚是这个光吗……”不管了，先进去再说<br>&lt;[kp]&gt; 电梯间的墙壁上，“生物科学与技术学院”九个字静默无言。大厅里只有月光投下的栏杆的长影，把外面飞鸟的剪影都关在了地板下。两边的走廊延伸到浓重的夜色中，几乎看不到尽头。<br>&lt;[张二狗]&gt; “嘶，我们今天出不去了吗……”看看走廊有没有什么变化<br>&lt;[温夏]&gt; 担心地观察后面有没有人追来<br>&lt;[刘平安]&gt; “说啥呢。”拍他后背，因为担心后面的东西追上，先迅速看一眼这s*电梯是不是还不能用，如果不能用就赶紧找个房间躲一下<br>&lt;[张二狗]&gt; “哎？这大厅里，之前是不是有东西来着？”<br>&lt;[kp]&gt; 电梯楼层指示屏依然是黑的，不过你们小心地关注了一下楼梯间，里面似乎没什么动静。<br>&lt;[张二狗]&gt; “我们往里面走走吧。”一边往里走，一边观察走廊<br>&lt;[刘平安]&gt; 感觉没啥动静之后稍微镇定了一点。看看这层空荡荡的走廊<br>&lt;[温夏]&gt; “其实我怀疑我们应该上楼，之前好像在电梯看到的楼层是B2。”拿出我的塔罗牌：“你说我猜的对不对？”</p>
-<blockquote>
-<p>&lt;骰娘&gt; [温夏]掷出了: 1D44=29<br>&lt;[刘平安]&gt; 好奇的看着大师算命。<br>&lt;[kp]&gt; 温夏在月光中抽出了一张正位节制。<br>&lt;骰娘&gt; 您在群(630325004)的暗骰结果为<br>&lt;骰娘&gt; 1D100=49<br>&lt;骰娘&gt; kp正在进行暗骰<br>&lt;[kp]&gt;塔罗牌的提示：单纯、调整、平顺、互惠互利……认真的吗？你总觉得把牌倒过来的释义才符合你们现在的状况。</p>
-</blockquote>
-<p>&lt;[kp]&gt; 你们沿着淡淡的月光走进了西侧的走廊，越深入，越昏暗。两旁的房门紧闭，只有把手徒劳地在你们手下拧动。途中，你们发现墙壁上展示的学生作品有些不对劲：不论是平面的还是立体的，虽然标签上的作品名和作者名彼此不同，但作品本身却像从生产线上批发来的一样，全部都是俯视三角楼梯的内容。</p>
-<blockquote>
-<p>&lt;[kp]&gt; 过侦查<br>&lt;骰娘&gt; [温夏]进行侦查鉴定: D100=11/60极难成功<br>&lt;骰娘&gt; [张二狗]进行侦查鉴定: D100=80/85成功<br>&lt;骰娘&gt; [刘平安]进行侦查鉴定: D100=74/80成功</p>
-</blockquote>
-<p>&lt;[kp]&gt; 你们在被阴影完全覆盖的地方发现了一幅有些不同的作品，在螺旋向下的三角形正中央，是一个躺在地上的人。作品名为《失足》，配文：“快看！有人掉下去了！”<br>&lt;[刘平安]&gt; “我也老这么往下看来着，不觉得往下看的时候会有一跃而下的冲动吗？”摸着下巴<br>&lt;[温夏]&gt; “这就是为什么现在有防护网了罢。”<br>&lt;[刘平安]&gt; 仔细看看作品的信息和图片有没有什么值得发现的地方。<br>&lt;[kp]&gt; 除了比其他作品多了个人出来没什么特别的，不如说这才是正牌。<br>&lt;[张二狗]&gt; “我们学校里面是不是去年出过事？就是从这里跳的。”<br>&lt;[温夏]&gt; “是的。”<br>&lt;[刘平安]&gt; “嘛，我只是喜欢刺激而已，对跳楼一点兴趣都没有。”<br>&lt;[温夏]&gt; 往里走走看会发生什么<br>&lt;[张二狗]&gt; 继续往里面走，看看两侧有没有什么变化<br>&lt;[刘平安]&gt; 试试再拧拧<br>&lt;[张二狗]&gt; 拧拧两侧的门<br>&lt;[温夏]&gt; 我也试试<br>&lt;[kp]&gt; 在无数个三角楼梯的注视下，你们终于找到了一个压下把手后门可以向前推开的教室。这是一间颇为宽敞的教室，百叶窗高高地收在顶端，月光如白布般盖在桌椅上，你们能看到有些位置上放着细木条做的模型作品。<br>&lt;[刘平安]&gt; 好奇的打量模型。<br>&lt;[温夏]&gt; 我也看模型<br>&lt;[张二狗]&gt; 我仔细端详这个模型，想起我自己的模型还没做完</p>
-<blockquote>
-<p>&lt;[kp]&gt; 看模型过侦查<br>&lt;骰娘&gt; [温夏]进行侦查鉴定: D100=80/60失败<br>&lt;骰娘&gt; [张二狗]进行侦查鉴定: D100=41/85困难成功<br>&lt;骰娘&gt; [刘平安]进行侦查鉴定: D100=4/80大成功！</p>
-</blockquote>
-<p>&lt;[kp]&gt; 你们各自拿起了一个模型查看。<br>&lt;[kp]&gt; 在端详途中，你忽然听到刘平安说了一句“小心。”<br>&lt;[温夏]&gt; 顿了一下，抬头查看周围。<br>&lt;[张二狗]&gt; “？怎么了吗，同学？”看看刘平安<br>&lt;[kp]&gt; 温夏看了一下周围，刘平安端着一个人形的模型眼神空洞，张二狗似乎在关心她的状态。<br>&lt;[张二狗]&gt; “人形的？我记得我们老师从来没有让我做过这种东西啊？”<br>&lt;[温夏]&gt; 过去把她手里的模型拍掉，尽量不要接触到它。<br>&lt;[刘平安]&gt; “…在这破地方是得小心。我出现了一些幻觉。”为了保证那两位的身心健康，并没有描述人形的具体样子，晃了晃脑袋，“三流恐怖片效果，或许我们该看看别的。”<br>&lt;[张二狗]&gt; 打量一下这个教室</p>
-<blockquote>
-<p>&lt;[刘平安]&gt; 那么我躲了一下<br>&lt;骰娘&gt; [刘平安]进行敏捷鉴定: D100=31/60成功</p>
-</blockquote>
-<p>&lt;[刘平安]&gt; 把纸人轻轻放下。“这玩意弄坏了还不知道会发生什么，罢了罢了。”<br>&lt;[温夏]&gt; “没事就好。”那我再看看其他地方。<br>&lt;[刘平安]&gt; 为感谢她的关心我过去轻轻握了握她的手腕。<br>&lt;[kp]&gt; 你们继续观察着教室，觉得它在有遗留物的教室中属于干净的那一种了，至少只有桌面上的模型作品而没有食物包装袋或废纸团子。<br>&lt;[刘平安]&gt; 感觉没啥东西了…除了看起来不怎么吉利的模型，或许是哪个艺设人的怨力倾注产物。“走吧。”<br>&lt;[温夏]&gt; 朝刘平安笑笑，然后说：“我不懂艺术，走吧走吧。”<br>&lt;[张二狗]&gt; “走喽。”我也离开了这个教室<br>&lt;[kp]&gt; 你们离开教室继续小心地在走廊里行走，穿过了一个又一个防火卷帘，在北侧发现了一扇在磨砂膜上贴着“知山知水 树木树人”标语的玻璃门。<br>&lt;[温夏]&gt; 玻璃门？能看见门后有什么吗？<br>&lt;[张二狗]&gt; 推推看门能不能打开<br>&lt;[kp]&gt; 张二狗走上前推了一下门，有点重，但能推开。门后分明是通往A座的B座通道。本应张贴着党政宣传海报的展示栏空空荡荡，几间教室都锁着门，电梯间旁的卫生间里传来了突兀的冲水声却久久无人出来。<br>&lt;[温夏]&gt; 看电梯能不能运作<br>&lt;[刘平安]&gt; 不是预备党员只是混子团员的我完全没在意海报消失。“撤硕响了诶。”<br>&lt;[kp]&gt; 电梯还是故障的样子。<br>&lt;[刘平安]&gt; “男厕还是女厕来着…”<br>&lt;[张二狗]&gt; 去b座的通道看看有没有什么东西<br>&lt;[温夏]&gt; “妈的，我们到底在几层，这种通道只有7层以上才有吧。”<br>&lt;[kp]&gt; 借着月光通道里还是比较亮堂的，除了熄灭的楼道灯光和空掉的宣传栏和平时没什么差别。<br>&lt;[刘平安]&gt; “哈哈雀食…”<br>&lt;[刘平安]&gt; 于是在对着卫生间探头探脑。<br>&lt;[温夏]&gt; 也去卫生间查看异常<br>&lt;[张二狗]&gt; “这里空间已经扭曲了吧？我猜的。”去卫生间看看是谁在浪费水<br>&lt;[刘平安]&gt; 小声嘀咕说某些东西还挺有礼貌的。<br>&lt;[温夏]&gt; 草，确实……<br>&lt;[温夏]&gt; 比某些人好点哈<br>&lt;[kp]&gt; 卫生间里就要昏暗很多了，通过尽头的窗户能看到城市的夜景。因为手机屏幕的照明范围有限，镜子上映不出你们三人的表情。<br>&lt;[刘平安]&gt; 看看夜景。<br>&lt;[张二狗]&gt; 寻找冲水声的来源<br>&lt;[刘平安]&gt; 判断一下离地面的高度。</p>
-<blockquote>
-<p>&lt;[kp]&gt; 男厕1女厕2<br>&lt;骰娘&gt; [贝亚德·埃斯波西托]掷出了: 1D2=1</p>
-</blockquote>
-<p>&lt;[kp]&gt; 刘平安路过安在墙上的小便池去看窗外，正前方的小区基本都熄了灯，街道上的车流也少了很多。<br>&lt;[刘平安]&gt; “诶不早了感觉…”打了个哈欠，向下看能不能数出自己在第几层<br>&lt;[温夏]&gt; 走到离门口近一点的地方，想出去<br>&lt;[kp]&gt; 刘平安尝试着数了一下，但不知道是不是视角不佳，每次数出来的结果都不太一样，基本在4~6间浮动。<br>&lt;[刘平安]&gt; 数不出来于是就回头决定离开，还是第一次进男撤硕，怪好玩的。<br>&lt;[张二狗]&gt; “哎哎哎，这里不是男厕吗？你俩咋进来了？”<br>&lt;[温夏]&gt; “……”不理他，走出去找楼梯<br>&lt;[张二狗]&gt; 出厕所，去a座看看<br>&lt;[刘平安]&gt; “去看看别的楼梯能不能用吧。”对刚才楼下的激光怪心有余悸…<br>&lt;[kp]&gt; 温夏走进电梯间，找到了一旁通往三角楼梯的门。而张二狗走向A座的方向，却发现门后和自己来时的C座一模一样，只是整体结构对称式地颠倒了一下。<br>&lt;[温夏]&gt; “我决定上楼试试，你们呢？”<br>&lt;[张二狗]&gt; 去b座的三角楼梯看看<br>&lt;[张二狗]&gt; “我下楼试试。”<br>&lt;[刘平安]&gt; “啊上楼吗，这是什么玄学。”我摸着下巴，“不过反正已经都是幻觉，我觉得无所谓啦。”<br>&lt;[kp]&gt; 三角楼梯间内，月光透过有限的天窗照了进来，然而眼前的场景和你们要从故障的电梯厢中脱困的时候重合了：除去两大步宽幅的狭窄平台，整个楼梯离你们踩着的地面高出了约一米。</p>
-<blockquote>
-<p>&lt;[kp]&gt; 过灵感<br>&lt;骰娘&gt; [刘平安]进行灵感鉴定: D100=5/70大成功！<br>&lt;骰娘&gt; [温夏]进行灵感鉴定: D100=25/70困难成功<br>&lt;骰娘&gt; [张二狗]进行灵感鉴定: D100=16/40困难成功</p>
-</blockquote>
-<p>&lt;[kp]&gt; 你们走过去摸了摸高高抬起的地面，觉得手感有些奇怪。这份凉意不像石料，倒是有镀了漆的木材的感觉。<br>&lt;[温夏]&gt; “捏妈。”缩回手。“……像棺材。”思索一会敲两下看看。<br>&lt;[kp]&gt; 台子的表面很凉很硬，声音不是很实。<br>&lt;[刘平安]&gt; 嗯？选修过木材学的我思考了一下。“这个质感应该是楼梯扶手没错。”<br>&lt;[刘平安]&gt; “不要说这么不吉利的话啊！”<br>&lt;[张二狗]&gt; “我们得爬上去吧。”开始试着往上爬</p>
-<blockquote>
-<p>&lt;[kp]&gt; 张二狗过攀爬？<br>&lt;骰娘&gt; [张二狗]掷出了: 1D100=77</p>
-</blockquote>
-<p>&lt;[kp]&gt; 张二狗原地扑腾了两下，没爬上去。<br>&lt;[刘平安]&gt; 难道这里会有那种爱丽丝漫游的幻觉？我摸着木制高台，楼梯扶手会横贯楼梯间吗？<br>&lt;[刘平安]&gt; 我也爬一下</p>
-<blockquote>
-<p>&lt;骰娘&gt; [刘平安]掷出了: 1D100=13</p>
-</blockquote>
-<p>&lt;[温夏]&gt; 踹一脚感受一下能不能踹破了（。）<br>&lt;[kp]&gt; 刘平安奋力爬了上去，却在温夏突然的一脚下失去了平衡，赶忙向前迈了一步想要站稳，然而本该承托她体重的地面背叛了她，刘平安感到脚下一空，眼前的场景一阵天旋地转，才意识到自己刚刚做了什么——她踩在了楼梯的扶手上，向着中空的位置踏了下去。而温夏也在踢过去的时候反应过来自己一脚踹在了扶手的竖栏杆上，张二狗则是看着刘平安往中间坠落穿过地面时意识到前面根本没有什么高出去的台子——</p>
-<blockquote>
-<p>&lt;[kp]&gt; 紧张刺激的救援检定<br>&lt;[kp]&gt; 首先，刘平安过敏捷<br>&lt;骰娘&gt; [刘平安]进行敏捷鉴定: D100=12/60极难成功</p>
-</blockquote>
-<p>&lt;[kp]&gt; 刘平安一个空中转身就抓住了栏杆，胳膊狠狠一抻。<br>&lt;[温夏]&gt; 赶快过去拉人</p>
-<blockquote>
-<p>&lt;骰娘&gt; [温夏]进行力量鉴定: D100=87/55失败</p>
-</blockquote>
-<p>&lt;[张二狗]&gt; 我连忙试图拉住刘平安</p>
-<blockquote>
-<p>&lt;骰娘&gt; [张二狗]进行力量鉴定: D100=11/75极难成功</p>
-</blockquote>
-<p>&lt;[刘平安]&gt; 可能是在开始就意识到这是楼梯扶手，紧急反应了一下后开始痛斥自己是不是看着二狗胡闹我也傻x了。<br>&lt;[张二狗]&gt; “卧槽，你没事儿吧。吓死我了。”<br>&lt;[kp]&gt; 温夏抓着刘平安避免她手脱力掉下去，张二狗则探出身子一把把人拉了回来。<br>&lt;[刘平安]&gt; “呼，呼…”心有余悸的摸了摸心口，“谢谢哈…今天终于实现我往下跳的冲动了，以后不跳了。”为表感谢狠狠地拥抱了两位<br>&lt;[温夏]&gt; “抱歉，我不该踢的……你没事吧……”<br>&lt;[张二狗]&gt; “怪我，我不该试着爬那玩意儿的……”<br>&lt;[张二狗]&gt; 我现在定睛看了看这个楼梯到底是什么样子<br>&lt;[刘平安]&gt; “没事没事…我敢上去也挺弱智的。”我想活着就好活着就好，摸了摸我贵重的谷子包，万*神保佑<br>&lt;[kp]&gt; 此时在你们眼前的，就是正常到不能再正常的三角楼梯。<br>&lt;[张二狗]&gt; “所以我们是往上走还是往下走？”<br>&lt;[温夏]&gt; 捏捏眉心。“我还是决定往上走走看。”<br>&lt;[张二狗]&gt; “那我往下走走，看看哪边能出去。”<br>&lt;[刘平安]&gt; 原地坐下，吃了两口辅导员的零食又喝了两口辅导员的饮料，心中默念好辅导员我出去给你买双份。<br>&lt;[刘平安]&gt; 我丢个硬币决定一下往上还是往下。</p>
-<blockquote>
-<p>&lt;骰娘&gt; [刘平安]掷出了: 1D2=2</p>
-</blockquote>
-<p>&lt;[刘平安]&gt; 那我先往下走。<br>&lt;[温夏]&gt; “好，分头行动。”开始往上走。“每走一层喊一声？”<br>&lt;[张二狗]&gt; “行。”<br>&lt;[张二狗]&gt; 我跟刘平安下楼<br>&lt;[刘平安]&gt; 从包里拿出零食给温夏。“给你，吃点，不要怕。”<br>&lt;[张二狗]&gt; “给我也来点呗，女侠。”<br>&lt;[刘平安]&gt; “保持身体的热量就会暖和起来！”笑<br>&lt;[温夏]&gt; “谢啦。”那我嚼着零食上楼<br>&lt;[刘平安]&gt; 于是掏了一点给二狗<br>&lt;[张二狗]&gt; “三克油！”快乐地边吃零食边下楼<br>&lt;[kp]&gt; 你们决定分头行动，受刚才差点发生的坠楼事故的影响，你们捏紧了扶手，借着从天窗照射进来的月光小心地下楼，在三角形的顶点处，高大树木的冠顶随风轻轻叩着窗户。<br>&lt;[刘平安]&gt; “还是一直是四楼诶…”<br>&lt;[kp]&gt; 随着你们之间的距离越来越远，声音也越来越小。在第六声喊后，张二狗和刘平安发现自己踩在了疑似一楼的地面上。<br>&lt;[刘平安]&gt; “诶。”这里看起来是一楼地面诶，抬头看看楼梯间标识<br>&lt;[kp]&gt; 标识上是你们梦寐以求的1F！<br>&lt;[张二狗]&gt; “温夏，我们好像到一楼了！”我冲着上面喊<br>&lt;[刘平安]&gt; “现在我们间隔13层，这里看起来像一楼地面！”我喊到<br>&lt;[刘平安]&gt; 观察一下周围有没有值得注意的东西，莫名其妙地有些焦虑，可能是因为幻觉而刚跳过楼吧。<br>&lt;[温夏]&gt; “我现在在14层？”学研14楼，一跳……<br>&lt;[温夏]&gt; 我要先喊话回复一下他们，然后看看后面的标识还是4f吗<br>&lt;[张二狗]&gt; 我打开楼梯间的门看看外面是不是一楼大厅<br>&lt;[kp]&gt; 温夏眼前的标识依然是4F。<br>&lt;[张二狗]&gt; “是1F!”<br>&lt;[温夏]&gt; 好，我要传送<br>&lt;[温夏]&gt; 进4楼，再出来<br>&lt;[温夏]&gt; 然后下楼<br>&lt;[kp]&gt; 那么温夏还是跑了十几层才和底下的人站到了一起。<br>&lt;[kp]&gt; 身心都已疲惫不堪的你们终于来到了楼梯的尽头，推开楼梯间的门，眼前终于不再是梦魇般挥之不去的生物院，而是你们无比熟悉的学研中心B座的一楼大厅。<br>&lt;[kp]&gt; 你们听到南边传来了阵阵喧闹，有一个忙碌的安保人员发现了你们并向你们走来。<br>&lt;[kp]&gt; “同学，怎么这么晚还在学研？”<br>&lt;[温夏]&gt; “我们打比赛的。”<br>&lt;[kp]&gt; “？”<br>&lt;[温夏]&gt; 然后想起我的模型不见了。<br>&lt;[温夏]&gt; “结构设计大赛。”<br>&lt;[刘平安]&gt; 看见人类令我舒坦很多。“在熬夜来着…睡过了。”我随便扯了慌<br>&lt;[刘平安]&gt; 不过，遇上这种事，难道是学研有实验室危险品泄露，不会有人在学校炮制毒品吧<br>&lt;[kp]&gt; “这样啊。不过这么晚了还是回宿舍楼休息吧。”他听完你们的理由回头看了一下人来人往的方向，“不过你们没什么事就行，回去吧。”<br>&lt;[刘平安]&gt; 喔对，“这个ipad和手机我们捡到的，有人落下在学研了。”<br>&lt;[刘平安]&gt; 疲惫地我经历了太多，抱着痛包萎靡不振。<br>&lt;[刘平安]&gt; 给好友打个电话。<br>&lt;[张二狗]&gt; 自己图还没画完，准备冲向豪丽斯画图<br>&lt;[温夏]&gt; 打开手机发博客：title： 今夜，学研……<br>&lt;[kp]&gt; 他接过两个电子设备对你们点点头：“我知道了，我们会发布失物招领的。”<br>&lt;[kp]&gt; 刘平安打开手机，屏幕仿佛从未背弃过她一样正常地亮起了，上面显示了好友的未接来电，反拨回去后对面有点着急地问怎么去趟学研这么久没消息。<br>&lt;[kp]&gt; 张二狗则贯彻着自己的卷王精神赶往了豪丽斯，旁边桌有人在窃窃私语学研怎样怎样。<br>&lt;[kp]&gt; 温夏的博客顺利发出，不过暂时没有什么留言和点赞。<br>&lt;[刘平安]&gt; 天津话：“我跟你讲，我今天晚上可太刺激了。”<br>&lt;[kp]&gt; 时间已经很晚了，考虑到明天的行程，你们就此分道扬镳。第二天，林里校园里就出现了讨论昨晚学研中心火灾的帖子，有人回复说自己当时就在楼里，做了一场巨nm真实的噩梦结果一醒来就在校医院了。而几天后，保卫处的公众号就这件事发了一篇推文，称12月6日晚学研C座0407发生了火灾，并强调了充电宝充满电一定要拔下来，还提到了实验品安全储存的问题……<br>&lt;[kp]&gt; 回来后你们都感觉肺不太舒服，但比起那些直接昏过去被送医院的人，还算是幸运吧。<br>&lt;[kp]&gt; ——结团撒花——<br>&lt;[刘平安]&gt; 恭嘿啊！！！！！</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>5-文字创作</category>
-        <category>COC TRPG</category>
-      </categories>
-      <tags>
-        <tag>跑团记录</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>梦 / 人鱼双子成功脱困了吗</title>
     <url>/al/d507747a.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>有人指挥我进一家服装店，把里面的衣服拿出去以很便宜的价格叫卖，吸引到一些顾客正在议价时，突然发现哥哥的电话打不通。<br>直觉就是出事了，打119，立刻进行搜索，我和我爸去找人，找到一个很阴暗的地窖，里面都是大酒坛子。打开一个坛子，发现哥哥就在里面，虚弱无力的样子。<br>然后因为发现了秘密，我被塞进酒坛子里，我爸被杀。没有人来救，渐渐我发现在坛子里我们的腿变成了鱼尾。<br>之后，我和哥哥被丢到一个四方的水泥池里，里面水很浅，后来多了起来，还可以养鱼。有一天我们的手上都长了水泡，很痛，但是一个人告诉我们这是鱼卵，指着哥哥的手说他的已经孵化了，很快就好。确实是这样，我手上的水泡掉下来以后孵出一只黄色扁热带鱼，然后就好了。<br>一天涨潮，潮水没过小池子，我和哥哥趁机游出去。逃到一个很多人的岸边，大家都很惊讶地看着，然后有一个人把我们带走了，发现我们过了太久，不会认字说话，就让我们认字。<br>最后，发现鱼尾可以在完全干燥的情况下变成人腿，我和哥哥的头发变成红色，红色的短发蘑菇头，可以上岸走路但是不能晒太阳，就给我们定制了特别的衣服，紫色。<br>红色头发紫色衣服，两个人手牵手站在一段台阶顶端，似乎要去参加什么典礼。这是我最后梦到的画面。</p>
@@ -1389,107 +1565,16 @@ body
       </categories>
   </entry>
   <entry>
-    <title>追书人</title>
-    <url>/al/undefined.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<hr>
-<h3 id="出场人物"><a href="#出场人物" class="headerlink" title="出场人物"></a>出场人物</h3><p><strong>Kp</strong>：晚秋<br><strong>Pl</strong>：小莫<br><strong>骰娘</strong>：普瑞赛斯(溯洄)<br><strong>道格拉斯·金博尔</strong>：遗失的书籍的主人，托马斯的叔叔<br><strong>托马斯·金博尔</strong>：曾帮助过埃德加·莫里斯，希望找回遗失的书籍<br><strong>埃德加·莫里斯</strong>（pc）：一战逃兵，现为密歇根州一家当铺的员工</p>
-<hr>
-<h3 id="观前提示：谨防剧透，没跑过的人别看哦！"><a href="#观前提示：谨防剧透，没跑过的人别看哦！" class="headerlink" title="观前提示：谨防剧透，没跑过的人别看哦！"></a>观前提示：谨防剧透，没跑过的人别看哦！</h3><hr>
-<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p><kp> 1923年6月16日。昨天，托马斯来到了你工作的当铺询问了你一个有些奇怪的问题：有没有人来这里典当五本书？<br><kp> 你和这个年轻人曾有些渊源，在逃亡途中你曾接受过他的帮助；而近期他搬家搬来了当铺所在的密歇根州，于是你们戏剧性的重逢了。<br><kp> 在你的追问下托马斯坦白他的房屋遭遇了盗窃事件，经过清点发现丢失的是收藏于书房的五本书籍。书籍本身并不昂贵，但那是他逝世的叔叔——或许说逝世并不准确，他的叔叔道格拉斯·金博尔于一年前失踪了，这个月被认定为死亡——的遗物。<br><kp> 于是你自告奋勇地表示希望帮他找到盗贼并尽可能追回那些书籍。托马斯同意了，在这个人生地不熟的地方，你大概是值得依靠的。他又告诉你他的叔叔是一位十分爱书的人，他也一直相信着叔叔没有死。所以，他还希望可能的话请你再调查一下他的叔叔是否尚在人世。<br><kp> 正值入夏，道路两边的绿化植被生机勃勃，空气中开始弥漫建筑材料被炙热的阳光灼烤过的奇特味道。你按照托马斯说的的地址前往了艾尔斯伯里大街，和途径的其他区域相比这里相当安静，建筑与行人都甚是寥寥。现在，你正站在218号、也就是金博尔宅的门前。向西看去有一栋二层小屋，白色栅栏围起的花园内，一位身着碎花裙子的女士正在打理她的花丛；再远只有一片称得上茂密的云杉树林。向东、也就是你来的方向，则是通往繁华地段的马路。</p>
-<p>&lt;埃德加·莫里斯&gt; #向花园走去，脱下帽子询问女士。“您好，请问您是218号的邻居吗？”等她回答了再接下句话。<br><kp> 听到你的询问，女士从花丛中抬起了头，你看到这是位妆容精致的中年女性。<br><kp> 她回以亲切的微笑：“是的，您是来找218号的住户的吗？”<br>&lt;埃德加·莫里斯&gt; #我知道托马斯叔叔的名字吗？<br>&lt;埃德加·莫里斯&gt; #哦，道格拉斯<br>&lt;埃德加·莫里斯&gt; #点头，随后道：“我是来找一位朋友的。道格拉斯·金博尔，在敲门之前，我想先向您打听打听他的近况——以免唐突。”<br><kp> 女士有些为难地抬手抵上了自己的下巴：“这……我很遗憾，先生，但我只能告诉你，道格拉斯·金博尔先生已经失踪一年了……现在金博尔宅里住的是他的侄子托马斯。”<br>&lt;埃德加·莫里斯&gt; #作出一副震惊的样子。“……道格拉斯失踪了？警察有介入调查吗？女士，如果您知道更多信息，请拜托告知我……”</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行心理学检定：D100=39/10 失败</p>
-</blockquote>
-<p><kp> “警察当然是有调查的，但是毫无线索，月初的时候就定为死亡了……”她遗憾地摇了摇头，“可惜我和金博尔先生没什么交流，多半帮不上您的忙……您知道的吧？他有些离群索居，我住在这里的这几年，除了偶尔会有出版社的人来和他谈生意，几乎没人来找过他。”<br><kp> 你倾听着她的回答，能够感觉到她的苦恼。<br><kp> “说起来，我以前好像看到过他往公墓那边去，还带着书？”女士从回忆中抽身说道，“不过他去哪儿都带着他的那些书，也没什么特别的。”<br>&lt;埃德加·莫里斯&gt; “出版社？我不知道道格拉斯还写书？他都没告诉我……唉，但是现在他也……”#我假装沉痛地说。<br><kp> 女士见你情绪低落，不由得安慰道：“到底只是警方认定的死亡而已，说不定他只是心血来潮出门远行呢。您是从很远的地方来的吗？我可以带您去看看他侄子在不在。”<br>&lt;埃德加·莫里斯&gt; “感谢您的好心。女士，我能否有幸知道您的名字？至于拜访，就让我自己去好了。”#我向她微笑。<br><kp> “您太客气了，我叫莱拉·奥黛尔。您又如何称呼？”<br>&lt;埃德加·莫里斯&gt; “埃德加·莫里斯。”#向她点点头，戴上礼帽，回到218号门前。<br>&lt;埃德加·莫里斯&gt; #要是托马斯在我就露馅了，快跑。<br><kp> 奥黛尔只是目送了你一小会儿，就重新投入到了她的园艺作业中。<br>&lt;埃德加·莫里斯&gt; #观察一下这栋住宅，它有几层？<br><kp> 这是一栋一层的住宅，比隔壁家要小一些，院子里只有草，看起来还没有打理。<br>&lt;埃德加·莫里斯&gt; #那么，我敲门吧。或者，托马斯有给我钥匙吗？<br><kp> 托马斯并没有给你钥匙，于是你抬手叩了叩门。很快门后便传来了浅重不一的脚步声，一个身形高大、白衬衫搭配着浅褐色马甲的黑发青年出现在门后：“埃德加，你来了？快进来吧。”<br>&lt;埃德加·莫里斯&gt; #进门，同时观察一下托马斯，他的脚步声为什么浅重不一？</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行侦查检定：D100=5/70 大成功！</p>
-</blockquote>
-<p><kp> 托马斯请你坐到沙发上小等，便去准备待客的茶水。<br><kp> 你跟在他身后进了房子，因为有些在意刚才的脚步声而留心观察了一下，意外发现他的右脚似乎有些不便。此外你还打量了一番客厅，由于托马斯刚搬进来没多久，这里家具较少，客观上并不宽敞的客厅由此显得颇为空旷，你的目光自然地被墙上众多的照片吸引。<br>&lt;埃德加·莫里斯&gt; #等待时查看墙上的照片。回忆一下我上次见到他时，他有这样的症状吗？<br><kp> 这些照片被仔细地保存在了相框里，每一张都是人像，从正中央显然有些年头的家庭合照推断，它们大多数是托马斯和家人的合影。其中有一个戴眼镜的瘦高男性颇引人注目，他总是站在合照人群的边缘或后排，表情平平淡淡，看着和旁边喜气洋洋的人格格不入；而他的怀中，总是抱着或轻薄或厚重的书本。<br><kp> 至于托马斯的脚，你先前并没有太注意，但似乎重逢之后他的走路速度比你们一开始遇见的时候要慢了不少。<br>&lt;埃德加·莫里斯&gt; #等他回来时询问托马斯：“照片上这位就是你的叔叔道格拉斯·金博尔吗？”<br><kp> 托马斯端着茶具走到照片前看向你话中所指：“嗯，就是他。”随后示意你回去坐。<br>&lt;埃德加·莫里斯&gt; #回去坐着，然后诚恳地说：“上一次在当铺，我确实没有查到那五本书的信息，之后我也会请老板帮我注意。同时，希望你能告知我关于它们及其主人的所有信息，越详尽越有帮助。”<br><kp> “那五本书……说实话我记不太清都有什么了，只记得一本《一个青年艺术家的画像》，有两本是深绿色外壳的。”他不好意思地说道，“叔叔……唉，我和他最后一次见面还是我读小学的时候，只知道他特别喜欢阅读。”<br>&lt;埃德加·莫里斯&gt; “那么，能带我去看看那些书失踪前放在哪里吗？”<br><kp> “好。”托马斯起身拉平了上衣的褶皱，带着你走向位于房子西北角的一个房间：“这里就是叔叔的书房了，藏书很多，地上也叠着一些，小心别撞到了。”<br>&lt;埃德加·莫里斯&gt; #谨慎一些走进去，观察一下落灰状况。问托马斯：“你刚搬过来，有打扫过这间屋子吗？”<br><kp> 你走进书房，眼前的场景确实如托马斯所说：各种藏书塞满了整里。托马斯上前拉开窗帘，阳光扭捏地通过北面的窗户落在这些大小不一、形制各异的书籍外壳上。并不明亮的光线下，你依然能看出它们的主人花了很多心思来保养它们，这也是这些书籍的唯一共同特征；即使是位于窗口西侧的书桌上，也整齐地摆放了两列书本。<br><kp> 你听到他回答你：“我虽然没有动过这些书，但清扫是每天都有做的。”<br><kp> 你也知道他不是胡说，这里确实干干净净没有灰尘，你能嗅到的是经过时间沉淀的木香与墨水味。<br><kp> “不对，也不能说完全没动过……刚来的时候我发现有一些是叔叔从图书馆借的书，就还回去了。”<br>&lt;埃德加·莫里斯&gt; #今天是16日。”你是具体什么时间发现哪些书不见的？”。同时，长久以来在当铺工作的习惯让我开始观察这些书，估计它们的价值。<br><kp> “前天吧。”他说。<br><kp> 只要扫一眼就知道，这些并不是什么名贵的精装典藏版。<br>&lt;埃德加·莫里斯&gt; “可以翻翻看吗？”#询问托马斯。<br><kp> “嗯？这些书吗？”他打量了一眼书架，点点头，“看完放回原位就行。”</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; 命运不会分别我们，从来不会<br>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯，屏幕上的数字不会决断我们，对吗？<br>&lt;普瑞赛斯&gt; #[D100=52]</p>
-</blockquote>
-<p><kp> 你尝试在浩如烟海的藏书中寻找什么线索，但即使道格拉斯没有直接在书本上做批注的习惯，这依然是一项庞大的工程。不过十分幸运地，没多久你就你在一本诗集的空白封底上发现了一段模糊的字迹。<br><kp> “五年前的我绝不会想到自己能结识这样一群……如今我决定要加入我在地下的朋友们，……实在是不可思议的友谊。”</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行母语检定：D100=82/66 失败</p>
-</blockquote>
-<p><kp> 你尝试着在脑海中勾勒模糊部分的轮廓，但最终无功而返。<br>&lt;埃德加·莫里斯&gt; #看不出什么来，把这段文字给托马斯，请他帮忙看看。<br><kp> 托马斯接过诗集，很是疑惑：“这是什么……叔叔写的小说吗？”<br>&lt;埃德加·莫里斯&gt; #地下的朋友们……联想到刚刚与奥黛尔女士的谈话，有种不好的猜想。<br><kp> 你看着他的眉头越皱越深，眼睛几乎要贴到纸上——但他最后还是无能为力地摇了摇头。<br>&lt;埃德加·莫里斯&gt; “你的叔叔有在写小说？出版了吗？”<br><kp> “我以前看他写过一篇童话？最后投给了我家那里的报社。至于有没有出版过小说……至少我没在书店见过。”<br>&lt;埃德加·莫里斯&gt; #把诗集拿在手上，前去观察失踪藏书的位置。</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行侦查检定：D100=68/70 成功</p>
-</blockquote>
-<p><kp> 你走到书桌前，并没有发现什么异样，倒是它和窗户的相当近的距离引起了你的注意。<br>&lt;埃德加·莫里斯&gt; #观察一下二者之间的缝隙。<br><kp> 你比量着二者间的距离来到窗前，觉得上面的锁看着颇新，和稍显老旧的房屋不甚搭调。<br>&lt;埃德加·莫里斯&gt; “最近换过锁？”#指着锁询问托马斯。<br><kp> “嗯，毕竟已经失窃过了，就趁这次机会把房子的门窗都检修了一下，换了一批锁。”<br>&lt;埃德加·莫里斯&gt; “失窃的时候，锁被破坏掉了吗？”<br><kp> “没什么印象……哪些要换是请来的锁匠建议的，如果被破坏了他会告诉我的吧。”<br>&lt;埃德加·莫里斯&gt; “对了，你刚刚提到过有些书是从图书馆借的……那你去图书馆的时候，工作人员有提醒你，你叔叔还有其他书没还吗？也许失窃的书里有图书馆的书，那样就可以确定是哪几本书丢失了。”<br><kp> “嗯，不过我当天就把那些书找出来还回去了，好几天前的事了。”<br>&lt;埃德加·莫里斯&gt; #还是白天吧。我要白天去墓地。告诉托马斯邻居女士说的话，邀请他一起去。<br><kp> 托马斯看了一眼自己的腕表：“这样啊……好，我和你一起去。不过我可能呆不了太久，临时有个工作。”<br>&lt;埃德加·莫里斯&gt; #直接去墓地<br><kp> 你们在地图上确认了一下公墓的位置，发现它就在西北方，距离也不远。<br><kp> 广袤翠绿的草坪上整齐地坐落着高矮不一的立式墓碑，看似空置的地方走近查看则能发现是采用了嵌地的石板。视线穿过三三两两前来悼念的人可以看到紧邻墓地的一栋简陋的小木屋，大约是墓地看守之类的人的居所。<br>&lt;埃德加·莫里斯&gt; #前往守墓人小屋查看守墓人是否在<br><kp> 你能通过窗户看到里面有人在走动。<br>&lt;埃德加·莫里斯&gt; #那我敲门<br><kp> 来开门的是一个驼背的老人，他穿着一件起球变形的蓝色针织衫，一边抽动着鼻子一边用浑浊的眼睛上下打量你们：“你们找谁？”</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; Dr kp，过来一下，我想告诉你结果</p>
-</blockquote>
-<p>&lt;埃德加·莫里斯&gt; “你好，我们想向守墓人打听一些事，请问您是这里的守墓人吗？”<br><kp> “我是。你问吧。”<br>&lt;埃德加·莫里斯&gt; “冒昧地询问一下，守墓人只有你一人吗？”<br>&lt;埃德加·莫里斯&gt; #观察他的表情</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行心理学检定：D100=92/10 失败</p>
-</blockquote>
-<p><kp> 他不耐烦地回了一句：“就我一个。有什么事快问。”<br><kp> 你判断不出其他的情绪了。<br>&lt;埃德加·莫里斯&gt; “那您还记得一年前，道格拉斯金博尔先生来墓地探望哪位故人吗？”<br><kp> “嗯？噢，那个怪胎啊。”守墓人看向人来人往的墓地，“他能有什么故人，莫名其妙跑这来看书罢了。”<br>&lt;埃德加·莫里斯&gt; “那他平时都在哪看书呢？”<br><kp> 闻言，老人像是想起什么不好的回忆一样皱起了脸：“呵，他坐人家墓碑上看——你们是他什么人？”<br>&lt;埃德加·莫里斯&gt; “这位是金博尔先生的侄子，我是金博尔先生的朋友，听闻道格拉斯金博尔的死讯，想来探访一下他曾经来过的地方，缅怀罢了。”<br>&lt;埃德加·莫里斯&gt; #观察守墓人身上是否有其他值得注意的东西。<br><kp> “都失踪多久了，听到死讯才来。”他嘀咕了两句。</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行侦查检定：D100=36/70 成功</p>
-</blockquote>
-<p><kp> 你一边和看守说话一边观察这里，老人本身普普通通，倒是身后有些脏乱的房间里有什么吸引了你的主意。门边挂着几件外套，靠墙角的那件、口袋里似乎露出了一截玻璃瓶口。<br><kp> 他没有注意到你的打量，还在抱怨着道格拉斯过去的行径：“……老天，还好那个墓碑的主人是个独身的外乡人，不然我都不知道怎么和来看他的人交代。”<br><kp> 而托马斯悄悄跟你说他得回去一趟了，和编辑谈完马上回来。<br>&lt;埃德加·莫里斯&gt; #不动声色地收回视线。向托马斯点头让他离开。<br><kp> 守墓人随意地看了一眼离开的托马斯，问你还有别的事吗。<br>&lt;埃德加·莫里斯&gt; “守墓人先生，能否请你带我去看看那位外乡人的墓碑？下次来时好替他扫扫墓，聊表歉意。”<br><kp> 他摆摆手，告诉你靠南第二排的墓碑中刻着三个天使图案的那个就是。<br>&lt;埃德加·莫里斯&gt; #那好吧，向他告辞，然后去指定的墓碑前。<br><kp> 你照他所说找到了那个外乡人的墓碑，上面只简单地刻着姓名和生卒年，碑前冷冷清清，只有从隔壁被风吹来的小白花。<br>&lt;埃德加·莫里斯&gt; #看看这个墓碑和其他墓碑有什么不同之处吗？为什么金博尔先生挑选了它<br>&lt;埃德加·莫里斯&gt; #（难道真就欺负外乡人</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行侦查检定：D100=85/70 失败</p>
-</blockquote>
-<p><kp> 你看了看它和附近的其他碑有什么差异，结果不如说它右边的右边那个嵌地石板比它独特得多，至少人家是一排灰白碑里唯一的黑石板。<br>&lt;埃德加·莫里斯&gt; #被这个黑石板吸引，走了几步，蹲下来摸摸敲敲<br><kp> 你手上沾了一层灰。<br>&lt;埃德加·莫里斯&gt; #拍掉手上的灰，看看有没有人注意这里，没人的话我也要坐上墓碑看看（</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行幸运检定：D100=10/55 极难成功</p>
-</blockquote>
-<p><kp> 那么趁着没人关注这边，你也坐到了墓碑上。<br><kp> 一秒，两秒，三秒……<br><kp> 无事发生，你只好在其他人过来之前又跳下来。<br><kp> 非要说的话，从这里一抬头精致还是很不错的。<br>&lt;埃德加·莫里斯&gt; #在墓地中逛逛等托马斯回来吧，看看周围墓碑上的名字什么的<br><kp> 你在墓地里随意闲逛这打发时间，发现了不少冷门的名字和或有趣或令人痛心的墓志铭。等了很久，你隐隐有些饿了托马斯才匆匆赶来，因为着急他的跛脚更加明显了：“抱歉，多花了些时间……”<br>&lt;埃德加·莫里斯&gt; “没事，话说回来，你的腿是怎么回事？”#一边问一边把他带向外乡人的墓碑<br><kp> 托马斯沉默了一下，倒也没有隐瞒：“前几年为了拍摄冒了点险，又没恢复好，就这样了……就是这个吗？”<br>&lt;埃德加·莫里斯&gt; #点头。希望他能和他叔叔有什么叔侄感应能看出些什么<br><kp> 他上前看了看墓碑，思考着什么。<br><kp> 随后又转头看了看旁边其他的墓碑，对比着什么。<br>&lt;埃德加·莫里斯&gt; #期待地看着他<br><kp> “倒是有个在意的点……听之前守墓人说的，这个人似乎没什么来看望他的人吧。你看那个石板，积灰都能画出图案了，这个为什么这么干净……？”<br><kp> “但是……那位守墓人年纪也大了，因为腰背不好所以不愿意清扫嵌地式的也有可能。”<br>&lt;埃德加·莫里斯&gt; “总之，可以说明一件事，还总有人来这里。”#向托马斯笑笑。心想这是我刚刚坐上去蹭掉的……“至于是不是守墓人打扫的，再去问问看就知道了。”<br><kp> 托马斯点点头，转向墓碑很抱歉地致了个礼。<br>&lt;埃德加·莫里斯&gt; #跟着也致敬一个，真诚一点（乐<br>&lt;埃德加·莫里斯&gt; #询问托马斯是否有留意到守墓人衣服口袋里的玻璃瓶口<br><kp> 他摇摇头表示自己没注意。</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行灵感检定：D100=35/70 困难成功</p>
-</blockquote>
-<p><kp> 那么你觉得之前在守墓人屋里看到的玻璃瓶口形状有些熟悉，像是酒瓶。<br>&lt;埃德加·莫里斯&gt; #河里，禁酒令的年代<br>&lt;埃德加·莫里斯&gt; #走之前再看一眼墓碑，看不出问题就撤了，吃午饭<br><kp> 你又看了一眼墓碑，没看出什么名堂，就和托马斯回家吃饭了。他准备了一桌还算丰盛的午餐，厨艺好像比以前进步了不少。<br>&lt;埃德加·莫里斯&gt; #吃完午饭，去问问奥黛尔女士前天是否有注意到异常情况。<br><kp> 你上门拜访，奥黛尔则表示没注意到什么，并询问你发生了什么。<br>&lt;埃德加·莫里斯&gt; “金博尔家有些书籍失窃了，虽然不贵重，但还是希望能找到，毕竟是道格拉斯的遗物。”<br>&lt;埃德加·莫里斯&gt; #顺便询问有无书籍的线索，告诉她其中一本是《一个青年艺术家的画像》<br><kp> “噢……这太令人遗憾了，怎么会有人跑到这里来窃书呢。”她很是惊讶，不能理解贼人的想法，“看来我也得注意一些了……《一个青年艺术家的画像》？道格拉斯先生还会收藏画册吗？”<br>&lt;埃德加·莫里斯&gt; “那其实是一本小说，不过这不重要，女士，谢谢您的时间。”<br><kp> 奥黛尔对自己帮不上忙表示了遗憾，又询问能不能麻烦托马斯这几天留意一下附近的安全状况，她马上要去朋友家住几天，得知出了这种事她有些不放心自己无人看管的房子。<br>&lt;埃德加·莫里斯&gt; “我会帮您转告他的。”<br><kp> “谢谢您。”临走她送给你一束用牛皮报纸包扎好的葵百合，祝你们追查顺利。<br>&lt;埃德加·莫里斯&gt; #觉得没有线索了，打算先回到金博尔宅，转告奥黛尔女士的话后，花一点时间仔细看看诗集空白处的字。</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行母语检定：D100=56/66 成功</p>
-</blockquote>
-<p><kp> 还原读不出的部分花费了你相当的精力，夜幕降临，你终于从书本中抬起头。功夫不负有心人，即使十分隐晦，你还是知晓了一条奇异的信息：在公墓地下存在一个隧道网络，其中居住着神秘的生物……<br>&lt;埃德加·莫里斯&gt; #得到诗集中的线索，印证了白天在墓地的猜测，我想了想，觉得白天众目睽睽之下难以调查，决定再次前往调查。向托马斯告知去向后我离开金博尔宅，借夜色遮掩悄悄前往墓地。<br><kp> 时针一步一步扫向表盘的最上端，人间的星光逐渐沉入了名为睡眠的黑雾中，只剩明亮的月光铺在屋顶与玻璃上。失去了来往行人，静谧的公墓显示出它独属于逝者的缄默。</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行幸运检定：D100=15/55 困难成功</p>
-</blockquote>
-<p><kp> 你注视着明亮月光下仿佛陷入了静止的公墓，尤其留意那个外乡人的墓碑所在的地方。蓦然，一个人影从它旁边的空地下钻出，佝偻着身子穿过公墓走向了云杉林。<br>&lt;埃德加·莫里斯&gt; #地下突然钻出了个人？似乎是守墓人？我警惕观察四周，没有人就靠近他钻出来的空地，同时记住守墓人前往的方向。<br><kp> 你目送着人影消失在了云杉林中，便走近了刚刚他现身的地方，发现那里是你白天摸过的嵌地石板。<br>&lt;埃德加·莫里斯&gt; #淦，我就该直接上脚踩<br>&lt;埃德加·莫里斯&gt; #不过，白天没有发现端倪，他是怎么打开石板的？<br>&lt;埃德加·莫里斯&gt; #观察一下能不能从外面打开，是不是需要什么工具才能撬动石板。<br><kp> 你带着疑问摆弄了一下石板，发现刚才的人影匆匆离开没有将石板严丝合缝地关闭起来，你的手指可以探进白天没有的缝隙里，要打开它似乎没有那么困难。<br>&lt;埃德加·莫里斯&gt; #hold on，打开之前先从我的手提箱里拿出枪以防万一。<br>&lt;埃德加·莫里斯&gt; #毕竟夜晚的墓地还是挺瘆人的。</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行力量检定：D100=94/70 失败</p>
-</blockquote>
-<p><kp> 大概是因为你还要拿着枪，在挪动石板时便不太好发力，它并没有被移开。<br>&lt;埃德加·莫里斯&gt; #从包里拿出水壶，我打算再试一次，如果能搬开一点就献祭了水壶，用脚把它卡在石板与地面之间，再把石板掀开。把枪塞进兜里，看准石板的缝隙之后，我把手指卡进去，咬牙发力。</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行力量检定：D100=81/70 失败</p>
-</blockquote>
-<p><kp> 这一次你使尽了全身的力气想要抬起石板，它也不负期望地露出了一定的缝隙，然而在你还没能把它移到安全的地方松手时，一股令人作呕的腐臭味从石板下升腾起来，它一下子就扼住了你的呼吸，你感到眼前发黑、意识模糊，在昏过去前只能祈祷石板松手掉下去别砸到自己……<br><kp> 不知道过了多久，你悠悠转醒，发现自己倒在石板边上，四周仍是夜色。你感到自己的额头上传来了清晰的痛觉，没有流血、但肿得厉害。而在一边外乡人的墓碑上，有什么端坐在那里低头专心翻阅着什么，脚边还堆放着几本书。</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; 我对已记录埃德加·莫里斯的属性变化:<br>&lt;普瑞赛斯&gt; 体力：13-1=12</p>
-</blockquote>
-<p>&lt;埃德加·莫里斯&gt; #找我的枪和包，同时观察那个人，是托马斯的叔叔吗？<br><kp> 你的东西就散落在你周围，你很快就找回了它们。你屏住呼吸安静地靠近人影，不，不对……那真的可以称之为人吗？<br><kp> 本该是帮助你视物的月光此时反而让一种不适爬上了你的脊背。你看到他的皮肤反射的诡异的光泽，面庞长而似犬，虽然缠着布条、但仍能看出令人汗毛倒竖的尖利爪子，脚则仿佛偶蹄目的蹄子。<br><kp> 他？还是它？</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; 埃德加·莫里斯的San Check：<br>&lt;普瑞赛斯&gt; 1D100=70/55 失败<br>&lt;普瑞赛斯&gt; 埃德加·莫里斯的San值减少1D6=2点,当前剩余53点</p>
-</blockquote>
-<p>&lt;埃德加·莫里斯&gt; #忍着头痛向它举起枪，但是先别开枪，看看它周围的书。</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行灵感检定：D100=50/70 成功</p>
-</blockquote>
-<p><kp> 那么你认出了这些书——今天？还是昨天，你才在金博尔家的书房里见过。<br><kp> 那个东西注意到了你的动作，轻轻合上了书本看向你，并没有说什么。<br>&lt;埃德加·莫里斯&gt; #我要尝试交流。“你好？”<br>&lt;埃德加·莫里斯&gt; #这大概就是偷书贼了吧？不过这种生物到底是什么……<br><kp> 它向你点了点头，开口是诡异的声线：“放下枪吧，我知道您。”<br>&lt;埃德加·莫里斯&gt; #好吧，我放下枪，对这个生物能说话感到惊悚。<br>&lt;埃德加·莫里斯&gt; “您是……托马斯的叔叔，道格拉斯 金博尔吗？”#虽然觉得情况诡异，但还是开口询问。<br><kp> “嗯……是我。没想到如今还有人能够辨认出我是谁，倒令我有些惊讶了。”<br>&lt;埃德加·莫里斯&gt; “不……虽然您的身形……不似人类，但气质在，虽然没见过本人，但我见过您的照片，也从您侄子那里听说过。”<br>&lt;埃德加·莫里斯&gt; “所以，这就是谜底了吗？”我看着他，“刚刚您说知道我，又是怎么回事？”<br><kp> “您之前来墓地找过我，不是么？”它扶了扶眼镜，“如果您是说书本的事，那么真相确实如您所见。请回去吧，此后我不会再去打扰小托马斯了。”<br>&lt;埃德加·莫里斯&gt; “其实，托马斯一直相信他的叔叔没有死，只是失踪了。您……现在不再打算见他了吗？”<br><kp> “我已经厌倦了种种俗事，只想随时随地阅读书籍而不受他人打扰。啊，我的自我介绍似乎还有所欠缺……如您所见，我正在成为和我的朋友们一样的食尸鬼，这副模样，我是不可能再去见小托马斯了。而且我很满意现在的生活，再不需要金钱、再不需要为晚餐穿着打扮，除却用餐时间外都不需要与人相见……现在的我可以随自己心意选择读书时间，不论是白天或是黑夜。只是我当初携带进地下的书籍已经无法满足我了，我才会冒险回去。”<br><kp> “也请您不要向他透露今夜的事，就让他继续认为我失踪了吧，时间会为他开解烦恼的。”<br>&lt;埃德加·莫里斯&gt; “好的。”#我点点头。“既然明白了真相，我的任务也到此结束了。但是，不知道您能不能满足一下我的好奇心？有几个问题想请教您。”<br><kp> “请讲？只是我不剩多少时间了，可能无法太过详尽地为您解答。”<br>&lt;埃德加·莫里斯&gt; #紧张地点点头。<br>&lt;埃德加·莫里斯&gt; “守墓人知道您吗？或者说，您和您的朋友们。”<br><kp> “您是说杰弗逊老先生么？好像有一次他半夜出门时我就坐在这里看书，但我不知道他有没有注意到我……不过他多半会当作自己眼花了吧。”<br>&lt;埃德加·莫里斯&gt; “另外，多有冒犯，我听说的怪奇传闻中，食尸鬼多半是没有神智的，您……是如何保护自己的心智不使其丧失？”<br><kp> “没有神智么……呵呵，我曾经也这样认为，但那都只是世人的臆想罢了。因为它们的动机和思虑都超越了一般人类能够理解的范畴就将它们的举动归为‘没有神智’，是傲慢又危险的。”<br><kp> “我仍是我，并非因为意志坚定没被它们‘向下’同化，而是因为我还没办法真正理解它们的世界，那个更加广阔的世界。”<br>&lt;埃德加·莫里斯&gt; #既然如此。我向他脱帽致意。“感谢您的解答。不知您能否将书籍给我，让我归还给托马斯，好让他安心？”<br><kp> “抱歉，唯有这点我无法作出让步……”它从墓碑上跳下来，“但不知这样是否可行呢？我将我带走的书本的标题和封面叙述给你，麻烦你去一趟书店……都不是什么昂贵少见的书，应该不会花费您太多精力。”<br><kp> 它说着，解开了一部分手上的布条，摘下了一枚款式简单的戒指：“请将它当掉换作酬劳吧。”<br>&lt;埃德加·莫里斯&gt; #接过戒指，职业病估价。<br><kp> 虽然款式设计没什么审美价值，但胜在材质，还是能卖个不错的价钱的。<br>&lt;埃德加·莫里斯&gt; “恐怕这枚戒指的价值远超出那些书。不妨这样，如果您有特别想读又找不到的书，我可以代为购买，就用这枚戒指余下的钱。”#从公文包里找到发票和笔。“您可以把书名，还有想阅读的书目写在这里。”<br><kp> “小托马斯结交了一位不错的朋友啊。”道格拉斯笑了笑，你竟然从可怖的面容上看出了一丝温和，“可惜今夜这处出入口就会封闭起来了，我将要和我的朋友们远走，恐怕没有机会得到您购来的书籍了。对一个爱读书的人来说，这是多么残酷而遗憾啊。”<br>&lt;埃德加·莫里斯&gt; “这样啊……真是遗憾。那么，请告诉我那些书的名称吧。”<br><kp> 在沉静的天穹下，道格拉斯详尽地描述了那些书本的特征，说完，它把周边的书籍都收集起来包好，提着它们走近了那个石板：“……就是这样了。劳烦您。”<br>&lt;埃德加·莫里斯&gt; “再见。祝您旅途愉快。”#目送他离去。<br><kp> 它十分轻松地单手挪开石板，回过头向你点头致意，便慢慢爬进了那个弥漫着恐怖气味的洞穴之中，石板也在之后缓缓闭合。<br><kp> 第一缕阳光自地平线那一头挥洒下来，宣告着属于人间的白昼的苏醒。</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; 埃德加·莫里斯的San Check：<br>&lt;普瑞赛斯&gt; 1D100=89/53 失败<br>&lt;普瑞赛斯&gt; 埃德加·莫里斯的San值减少1D4=2点,当前剩余51点</p>
-</blockquote>
-<p>&lt;埃德加·莫里斯&gt; #看着天边的明亮，有种围绕着周身的泡泡破灭的奇妙感觉。呆立一会后想起要趁守墓人回来之前溜走，不然显得怪怪的。<br>&lt;埃德加·莫里斯&gt; #再次探访金博尔宅，告诉托马斯结果之前，先回到当铺的阁楼一趟，处理一下伤口。吃点东西再前往书店买书。</p>
-<blockquote>
-<p>&lt;普瑞赛斯&gt; Dr.埃德加·莫里斯进行急救检定：D100=8/70 极难成功<br>&lt;普瑞赛斯&gt; 我对已记录埃德加·莫里斯的属性变化:<br>&lt;普瑞赛斯&gt; 体力：12+1=13</p>
-</blockquote>
-<p>&lt;埃德加·莫里斯&gt; #书籍的购买并不困难，只是希望托马斯不要怀疑过于崭新的书。我提着五本书敲响了金博尔的家门。<br>&lt;埃德加·莫里斯&gt; #左手五本右手五本，嗯。<br><kp> 托马斯没有睡懒觉的习惯，此时已经换好了方便外出的衣服，他开门看到一夜未归的你提着一大堆书，一时有些没反应过来。<br>&lt;埃德加·莫里斯&gt; “昨天去墓地，虽然没有找到通道，但是回来的路上看到一个行迹鬼祟的人，我就想什么人会在这个时候上街呢——当然除了我以外。总之，我偷偷跟着他到了森林里，找到了藏书的地方。很遗憾，让那个贼人逃走了。”<br>&lt;埃德加·莫里斯&gt; #把书放到书房，在他提出质疑前，从兜里掏出戒指。<br>&lt;埃德加·莫里斯&gt; “我还找到了这个。”<br><kp> 托马斯迷迷糊糊地跟着你来到书房，反应过来昨夜书法又被人“造访”了：“天，我昨天居然一点都没注意到又有人来了……不过既然被抓了现行，他应该不会再来了吧。”<br><kp> 他接过戒指查看了一番，惊讶道：“这……好像是叔叔的戒指？难道那家伙在我搬来之前就进来行窃了吗？”<br>&lt;埃德加·莫里斯&gt; “谁知道呢。”#心虚地说。<br><kp> “谢谢你，真的辛苦你了。要是没有你，真不知道这事会变成什么样……”他小心地收好戒指，“你吃过早饭了吗？我请你去外面吃一顿吧？还是说先睡一觉休息休息？”<br>&lt;埃德加·莫里斯&gt; “已经吃过了。”我说：“另外，你拜托我调查的另外一件事，你叔叔的下落，我恐怕有个不好的猜想。”<br>&lt;埃德加·莫里斯&gt; #开始胡编乱造。指指那枚戒指说：“也许……那戒指是金博尔先生遭遇不测的当天遗失的。我也不敢妄下定论，但还是做好最坏的打算，毕竟连警察也没能找到他……”<br><kp> 托马斯听着你的猜想，眉眼的末尾沉了下去，悲伤溢于言表：“我……可是……唉，我还是不愿意想那个糟糕的可能。”<br>&lt;埃德加·莫里斯&gt; #拍拍他的肩。就像道格拉斯说的那样，或许时间会是治愈一切的良药。<br><kp> 你把该交待的事情全都解释妥当后在金博尔宅好好地休整了一番，便和托马斯道别准备回当铺了。托马斯送你出门，下午，阳光已经变得灼热，落在青翠的草叶上烧出夏天的味道。你途径奥黛尔家的花园，风将淡淡的香气捧到了街道上。熟悉的景色时快时慢地与你擦身而过，如同播放中的胶卷。<br><kp> 你和托马斯的来往密切起来，他在本地的报社安顿下来，道格拉斯真的没有再回来过，于是他也度过了相当平和的生活……<br><kp> 时光缓慢地踱着祂的步子游走人间，而属于你的故事又将行往何方呢？</p>
-<hr>
-<h3 id="幕间成长"><a href="#幕间成长" class="headerlink" title="幕间成长"></a>幕间成长</h3><blockquote>
-<p>.en 急救<br>普瑞赛斯[Priestess]<br>Dr.埃德加·莫里斯的急救增强或成长检定：<br>1D100=81/70 成功<br>埃德加·莫里斯的急救增加1D10=4点，当前为74点</p>
-</blockquote>
-<blockquote>
-<p>.en 图书馆<br>普瑞赛斯[Priestess] 2021/11/17 22:29:20<br>Dr.埃德加·莫里斯的图书馆使用增强或成长检定：<br>1D100=36/52 失败<br>埃德加·莫里斯的图书馆使用值没有变化</p>
-</blockquote>
-<blockquote>
-<p>.en 侦查<br>普瑞赛斯[Priestess] 2021/11/17 22:29:39<br>Dr.埃德加·莫里斯的侦查增强或成长检定：<br>1D100=71/70 成功<br>埃德加·莫里斯的侦查增加1D10=5点，当前为75点</p>
-</blockquote>
-<blockquote>
-<p>.en母语<br>普瑞赛斯[Priestess] 2021/11/17 22:29:57<br>Dr.埃德加·莫里斯的母语增强或成长检定：<br>1D100=37/66 失败<br>埃德加·莫里斯的母语值没有变化</p>
-</blockquote>
+    <title>Tarot / 雪融之诺</title>
+    <url>/al/367a1e5c.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<ul>
+<li>缘由：灵知池抽卡玄学预测</li>
+<li>牌卡：棱镜</li>
+<li>牌面：力量，权杖六，圣杯国王<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211220230500.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211220230500.png" width=50%></a></li>
+<li>读牌：可能会出比较多五星，三四十抽出灵知</li>
+<li>结果：两发十连出了灵知，非要算是第15发出的，五星出了3个，好像也不算多……不过比上次56发1六星3五星多。<a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211222172152.png" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211222172152.png" width=50%></a></li>
+<li>今日的胜负：博士的胜利</li>
+</ul>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -1497,11 +1582,11 @@ body
         lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
         }</script>]]></content>
       <categories>
-        <category>5-文字创作</category>
-        <category>COC TRPG</category>
+        <category>4-日常记录</category>
+        <category>塔罗玄学</category>
       </categories>
       <tags>
-        <tag>跑团记录</tag>
+        <tag>巴纳姆效应</tag>
       </tags>
   </entry>
   <entry>
@@ -1520,77 +1605,9 @@ body
       </categories>
   </entry>
   <entry>
-    <title>今夜，学研（二）</title>
-    <url>/al/80ca0e14.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<hr>
-<h3 id="出场人物"><a href="#出场人物" class="headerlink" title="出场人物"></a>出场人物</h3><p><strong>刘平安</strong>：女，学生，能力是缜密的推理和超绝的运气<br><strong>张二狗</strong>：男，学生，能力是高质量男性和高质量男性<br><strong>温  夏</strong>：女，学生，能力是间歇性神棍和白嫖技能点</p>
-<hr>
-<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>&lt;[刘平安]&gt; “……”蛤？<br>&lt;[温夏]&gt; “有点恐怖哈……”<br>&lt;[刘平安]&gt; 推开楼梯间的门向里看去，看看是不是还在生院<br>&lt;[张二狗]&gt; “为啥？我不是下了四层了吗？”推开门看看<br>&lt;[kp]&gt; 你们推开门后眼前的景象和之前看到的生物院别无二致。<br>&lt;[刘平安]&gt; “草。”我一时间失去了语言。<br>&lt;[刘平安]&gt; “…鬼打墙了。”<br>&lt;[刘平安]&gt; 回来观察一下楼梯间里还有没有别的什么<br>&lt;[kp]&gt; 刘平安只看到楼下隐隐约约有光，多半是张二狗的手机。<br>&lt;[温夏]&gt; 此时，我要拿出我的塔罗牌进行占卜</p>
-<blockquote>
-<p>&lt;骰娘&gt; [温夏]掷出了: 1D44=12<br>&lt;[kp]&gt; 温夏抽出了一张逆位教皇。<br>&lt;骰娘&gt; 您在群(630325004)的暗骰结果为<br>&lt;骰娘&gt; 1D100=39<br>&lt;骰娘&gt; kp正在进行暗骰<br>&lt;[kp]&gt; 塔罗牌的提示：错误的讯息……这不是废话吗！都多少个四楼了！</p>
-</blockquote>
-<p>&lt;[温夏]&gt; 神棍地说道：“塔罗牌告诉我们有错误的信息混进了我们的视线……”<br>&lt;[刘平安]&gt; “同学，楼下是什么情况！”我喊到<br>&lt;[张二狗]&gt; “我还在四楼！”<br>&lt;[张二狗]&gt; 再进生物院看看<br>&lt;[刘平安]&gt; “啊啊…鬼打墙了。”学自然的我对于超自然现象感到相当困惑<br>&lt;[刘平安]&gt; “我们要不再进去看看有没有别的出路吧…”<br>&lt;[kp]&gt; 张二狗擦过两个女生的身边进入了楼层，里面依然是之前生物院的样子，其他房间除了辅导员办公室外都锁着门，一切都没有改变。而刘平安和温夏则看到他在里面乱晃。<br>&lt;[张二狗]&gt; “我先进生院再看看！”<br>&lt;[张二狗]&gt; 我转头，“哎？你俩咋在这儿？”<br>&lt;[刘平安]&gt; “……”掐了一下自己<br>&lt;[温夏]&gt; 然后撇撇嘴，把牌收好。“等下，这些楼层连接的都是生物院吗？”<br>&lt;[刘平安]&gt; “看来是的。”<br>&lt;[温夏]&gt; “这个发现不值得一篇诺贝尔奖？”<br>&lt;[温夏]&gt; “永动机找到了！”<br>&lt;[刘平安]&gt; 看看窗户外面<br>&lt;[kp]&gt; 一个活生生的北林男的在你眼前，窗外则是只有一两个人在行走的校园景象。<br>&lt;[刘平安]&gt; “哈哈嗯…”什么鬼东西这都是。<br>&lt;[张二狗]&gt; “咱不会是吸到那什么黑牡丹，出幻觉了吧？”<br>&lt;[刘平安]&gt; “黑莲花吧。”<br>&lt;[温夏]&gt; “那么，有什么破除幻觉的办法吗……”<br>&lt;[张二狗]&gt; “啊，我也记不得了。总之咱仨现在是被困在这里了是吧。”<br>&lt;[刘平安]&gt; “是啊，是来着。”我搜索一下我的植物知识，“不过咱也不能确定就是中了这个迷糊药啊。”<br>&lt;[刘平安]&gt; 于是我决定再逛逛这层楼<br>&lt;[kp]&gt; 楼层和之前相比没有什么变化，被你们弄乱的辅导员办公室也是离开时一副遭了贼的样子。<br>&lt;[张二狗]&gt; 我掐了自己一下看看疼不疼<br>&lt;[kp]&gt; 张二狗觉得痛觉十分真实。<br>&lt;[张二狗]&gt; “猜测，猜测。”<br>&lt;[刘平安]&gt; “我们换一侧楼梯试试看吧。”<br>&lt;[张二狗]&gt; “嘶，我掐我自己感觉挺疼的，我没在做梦。”我回到刚才的楼梯间看看有啥特别的地方<br>&lt;[kp]&gt; 和这一层一样，是老样子。<br>&lt;[温夏]&gt; 那我要看看这里的监控有没有在运作。<br>&lt;[kp]&gt; 监控上没有红光在闪，应该并没有在工作。<br>&lt;[温夏]&gt; 缓缓把头上别的发卡拿下来，以防扯到头发丝。<br>&lt;[温夏]&gt; “早就想这么干了。”<br>&lt;[温夏]&gt; 我随便选一个门撬锁</p>
-<blockquote>
-<p>&lt;骰娘&gt; [温夏]进行锁匠鉴定: D100=24/10失败</p>
-</blockquote>
-<p>&lt;[kp]&gt; 发卡扭了一下，门并没有打开。<br>&lt;[刘平安]&gt; 我决定去上个撤硕冷静一下。<br>&lt;[温夏]&gt; 好吧，把发卡扭回去，别到头发上<br>&lt;[刘平安]&gt; 犹豫了一下，“姐介，陪我上个撤硕。”扭捏<br>&lt;[温夏]&gt; “肘。”<br>&lt;[张二狗]&gt; “哎，你在撬锁吗？我也试试。”我拿出笔袋里面的刀片撬锁</p>
-<blockquote>
-<p>&lt;骰娘&gt; [张二狗]进行锁匠鉴定: D100=66/51失败</p>
-</blockquote>
-<p>&lt;[kp]&gt; 张二狗的刀片也没有撬开门锁。<br>&lt;[kp]&gt; 两个女生作伴前往了卫生间，里面没有一点光亮，只有你们手中的灯光经过镜子的反射照回到你们脸上，把你们的脸色照得分外苍白。<br>&lt;[刘平安]&gt; “哈哈…”尿意压过了恐惧，我打开门进去放水，为了壮胆哼一哼我团的歌。<br>&lt;[温夏]&gt; 别看镜子，默唱国际歌。<br>&lt;[温夏]&gt; 当然，还是要检查一下周围环境有没有异常的<br>&lt;[kp]&gt; 卫生间里回荡着两个女人的歌声和短暂的流水声……<br>&lt;[kp]&gt; 理智告诉温夏这里只是停了电的洗手间，但在不同往日的灯光效果下，多少还是有些瘆人的。<br>&lt;[刘平安]&gt; 尿完就出来了。<br>&lt;[刘平安]&gt; 洗一洗手<br>&lt;[kp]&gt; 是十分清澈的水流。<br>&lt;[温夏]&gt; 行叭，洗完手就离开这里。<br>&lt;[刘平安]&gt; 离开了卫生间。感觉也没有什么太好吓人的。<br>&lt;[刘平安]&gt; 只是黑漆漆而已<br>&lt;[温夏]&gt; 我前去观看大师撬锁<br>&lt;[温夏]&gt; “还有那么多门呢，继续呀。”撺掇大师撬锁<br>&lt;[张二狗]&gt; “啊这，这不太好吧。”<br>&lt;[张二狗]&gt; 在走廊里面走走，看看有走廊里有什么<br>&lt;[kp]&gt; 走廊里是一些稀松平常的装饰，书法啊、画啊，还有紧急疏散路线图。<br>&lt;[刘平安]&gt; 打开零食吃了起来。<br>&lt;[刘平安]&gt; 过去看看紧急疏散路线图。<br>&lt;[温夏]&gt; “也是。”担心地看了看监控。凑到刘平安旁边看她发现什么了。<br>&lt;[张二狗]&gt; 我也过去看看紧急疏散路线图<br>&lt;[kp]&gt; 路线图上简单地标注着诸如步梯、电梯、卫生间的位置。<br>&lt;[温夏]&gt; “怎么办，这破地方是出不去了吧，我都想跳楼了。”用沉重的语气说。<br>&lt;[温夏]&gt; 同时看看上面有没有标配电室的位置<br>&lt;[刘平安]&gt; “诶……”无奈地走来走去嘎吱嘎吱嚼零食，再去电梯那里看看，不抱希望的戳一戳按键<br>&lt;[张二狗]&gt; 我用手敲了敲各处的墙壁<br>&lt;[kp]&gt; 这里没有标注配电室，但温夏可以靠人力找到那些写着“机房重地 非公勿入”的房间。电梯的按键并没有亮起，毕竟仍是停电中。墙壁很凉，张二狗手指很痛。<br>&lt;[刘平安]&gt; 去找温夏看看。<br>&lt;[kp]&gt; 刘平安找到了站在配电室前的温夏。<br>&lt;[温夏]&gt; 握住门把手，不抱希望地看看能不能进去<br>&lt;[kp]&gt; 不出所料，是锁着的……<br>&lt;[温夏]&gt; 面无表情地拿下发卡。<br>&lt;[刘平安]&gt; “加油啊，温夏酱！”<br>&lt;[刘平安]&gt; <a href="http://gchat.qpic.cn/gchatpic_new/0/0-0-DFE5A0B9D27DAD5FB25D9B62919E13A3/0?term=2" class="gallery-item"><img src="http://gchat.qpic.cn/gchatpic_new/0/0-0-DFE5A0B9D27DAD5FB25D9B62919E13A3/0?term=2" width="7%"></a><br>&lt;[刘平安]&gt; “二狗——二狗——”我呼唤着那个男的<br>&lt;[张二狗]&gt; 我撸起袖子，准备撬锁</p>
-<blockquote>
-<p>&lt;骰娘&gt; [张二狗]进行锁匠鉴定: D100=97/51大失败！</p>
-</blockquote>
-<p>&lt;[温夏]&gt; “加油啊……啊？”<br>&lt;[刘平安]&gt; 抹了把脸。<br>&lt;[温夏]&gt; 怎会如此<br>&lt;[温夏]&gt; 心想这就是北林高质量男性吗<br>&lt;[刘平安]&gt; 心想这就是北林高质量男性吗<br>&lt;[kp]&gt; 张二狗太想把锁撬开，因而手下力道过大，刀片清脆地响了一声便绷断了，断掉的那一节没有留在锁孔上、而是朝着他的眼睛飞了出去——<br>&lt;[kp]&gt; 好在最后只是划伤了脸，但张二狗还是受到了不小的惊吓。hp-1，san-1。<br>&lt;[刘平安]&gt; 我给二狗简单处理一下。</p>
-<blockquote>
-<p>&lt;骰娘&gt; [刘平安]进行急救鉴定: D100=7/55极难成功</p>
-</blockquote>
-<p>&lt;[刘平安]&gt; “唉，肘吧，肘吧我们。”于是只好再逛逛这块地方<br>&lt;[刘平安]&gt; 接着下楼吧<br>&lt;[温夏]&gt; 一起行动<br>&lt;[温夏]&gt; 不能落单<br>&lt;[张二狗]&gt; 朋友一生一起走<br>&lt;[刘平安]&gt; 于是我们下楼<br>&lt;[kp]&gt; 没有办法，你们只能硬着头皮回到楼梯间继续向下走了。你们感觉到自己的心脏跳得无比剧烈，砰砰地撞击着胸腔，似乎迫不及待地想冲破肋骨逃离这个地方。</p>
-<blockquote>
-<p>&lt;骰娘&gt; 您在群(630325004)的暗骰结果为<br>&lt;骰娘&gt; 1D100=47<br>&lt;骰娘&gt; kp正在进行暗骰</p>
-</blockquote>
-<p>&lt;[kp]&gt; 就在你们再一次踏上了4F的平台时，你们的手机不约而同地闪了两下，黑屏了。<br>&lt;[刘平安]&gt; “啊…草。”<br>&lt;[kp]&gt; 在手中的灯光熄灭的瞬间，你看到脚边原本暗着的安全出口指示灯突然亮了起来，幽绿的光芒并不强烈却在整个楼梯间内蔓延开来，看着同行者发青的脸和僵硬的表情，你感到一根冰凉的手指划过了自己的脊椎。SC0/1。</p>
-<blockquote>
-<p>&lt;骰娘&gt; [张二狗]的理智检定结果:<br>&lt;骰娘&gt; 80/58=失败<br>&lt;骰娘&gt; 你的理智值减少1=1点,当前剩余57点<br>&lt;骰娘&gt; [刘平安]的理智检定结果:<br>&lt;骰娘&gt; 49/79=成功<br>&lt;骰娘&gt; 你的理智值减少0=0点,当前剩余79点<br>&lt;骰娘&gt; [温夏]的理智检定结果:<br>&lt;骰娘&gt; 57/43=失败<br>&lt;骰娘&gt; 你的理智值减少1=1点,当前剩余42点</p>
-</blockquote>
-<p>&lt;[刘平安]&gt; 我可怜的华子手机消失了光亮<br>&lt;[温夏]&gt; “我特么！！谁挠我！”立刻回头看自己背后<br>&lt;[刘平安]&gt; 回头一看。<br>&lt;[张二狗]&gt; “嘶，你们俩刚才谁摸我！”<br>&lt;[kp]&gt; 你们背后什么都没有，但那股无视厚重衣料的寒冷却无比真实。<br>&lt;[刘平安]&gt; 默念爷不怕爷是小雀斑神奇动物在哪里你奶奶这就看看是什么神奇动物…<br>&lt;[刘平安]&gt; “哈哈…没有人摸你喔。”<br>&lt;[刘平安]&gt; 我冷笑道。<br>&lt;[刘平安]&gt; 想起我的痛包是放了led灯的，试着打开。<br>&lt;[刘平安]&gt; 小乱，救救妈妈！<br>&lt;[温夏]&gt; 好恐怖……警惕地看看那个突然亮起来的指示灯，它指向楼下吗？<br>&lt;[kp]&gt; 刘平安摸黑翻出了led灯，十分微弱的昏暗紫色灯光在她手中。<br>&lt;[kp]&gt; 从有人喊出声起，楼梯间就恢复了黑暗。在温夏的记忆中，它正常地指向下楼的方向。<br>&lt;[kp]&gt; 用这样一盏离开一指距离就完全起不到照明作用的灯下楼，应该很危险吧。<br>&lt;[刘平安]&gt; “…下楼吧。”对超自然现象依旧抱有好奇，摸着乱*砂的包包我感觉好受很多。<br>&lt;[刘平安]&gt; “诶…好黑。”<br>&lt;[温夏]&gt; “嗯……我们扶着扶手，应该不至于摔倒。”<br>&lt;[张二狗]&gt; 我也跟着一起走<br>&lt;[刘平安]&gt; 推门进去看看楼层里有没有应急灯啥的。<br>&lt;[温夏]&gt; 一起行动，先找到灯再下<br>&lt;[温夏]&gt; 如果有的话<br>&lt;[kp]&gt; 离开楼梯间，你们凭借近乎要贴到墙上去的led灯看到了墙壁上熟悉的学院标识：生物科学与技术学院。然而一侧头，眼前的景象和先前截然不同。<br>&lt;[kp]&gt; 没有应急灯，但大厅天花板的正中央亮着一盏紫色的灯，把南北相对放置的沙发、茶几笼罩在了诡丽的光芒中；淡淡的紫光无法触及的地方，公示栏东侧的自动贩卖机似乎仍在工作。<br>&lt;[刘平安]&gt; “啊，变化了。”<br>&lt;[刘平安]&gt; 看看公示栏。<br>&lt;[温夏]&gt; “太诡异了。”忍不住说。走到自动贩卖机旁看看。</p>
-<blockquote>
-<p>&lt;[kp]&gt; 刘平安过图书馆使用<br>&lt;骰娘&gt; [刘平安]进行图书馆使用鉴定: D100=1/50大成功！</p>
-</blockquote>
-<p>&lt;[kp]&gt; 自动贩卖机的屏幕上是优惠促销的广告，香草拿铁8折、冰美式7折；付款码扫描口闪着红点。<br>&lt;[kp]&gt; 刘平安在繁杂的信息堆中发现了这样一张简短的通知：“本院植物学教授钱正辉于11月15日至11月19日赴美国旧金山大学作学术交流，……（调课说明等杂七杂八的内容）。联系本人请发送邮件至<a href="mailto:&#x51;&#105;&#x61;&#x6e;&#90;&#x68;&#x65;&#x6e;&#103;&#104;&#117;&#x69;&#x5f;&#x30;&#52;&#x30;&#x37;&#x40;&#98;&#106;&#102;&#117;&#46;&#101;&#x64;&#117;&#46;&#x63;&#110;">&#x51;&#105;&#x61;&#x6e;&#90;&#x68;&#x65;&#x6e;&#103;&#104;&#117;&#x69;&#x5f;&#x30;&#52;&#x30;&#x37;&#x40;&#98;&#106;&#102;&#117;&#46;&#101;&#x64;&#117;&#46;&#x63;&#110;</a>。”钱正辉……刘平安对这个名字有印象，自己似乎上过他的课。满满一公示栏熟悉的措辞让刘平安觉得稍微安心了些。san+1。<br>&lt;[张二狗]&gt; 看看沙发和茶几上有什么<br>&lt;[kp]&gt; 沙发上什么都没有，茶几上有一些没收走的零食包装袋。<br>&lt;[刘平安]&gt; 记下了这条通知，虽然感觉对现在的状况没什么帮助，但是感到安心。<br>&lt;[张二狗]&gt; 我要观察那盏紫色的灯<br>&lt;[刘平安]&gt; 稍微琢磨了一下，0407…或许是办公室号吗？还是日期？决定去找一找407<br>&lt;[kp]&gt; 天花板上的紫灯颜色和刘平安的led灯一模一样，但比它要明亮些，至少能照亮这一小圈地方。只是盯久了让人眼前发黑，有点头晕。<br>&lt;[温夏]&gt; “为什么停电了自动贩卖机还能工作啊。”无奈地看看黑屏的手机，长按开机键试试能不能开机。<br>&lt;[kp]&gt; 手机震动了一下，温夏听到了熟悉的开机动画的声音，但屏幕仍是一片漆黑。<br>&lt;[张二狗]&gt; 调查下整个大厅看看有没有什么特别的<br>&lt;[kp]&gt; 大厅比较空旷，最不对劲的大概就是紫色的灯和还在工作的自动贩卖机了。<br>&lt;[温夏]&gt; “……不会吧……”看来它是没什么用了，只好收起来，跟着刘平安。<br>&lt;[张二狗]&gt; 去自动贩卖机那边看看，买杯拿铁<br>&lt;[kp]&gt; 温夏跟上刘平安陪她寻找着钱正辉的办公室，不知道是因为你们一直在移动还是楼层的暖气开得太足，走廊里热得让人想把外套脱了。而且越靠近C0407，就热得越厉害。</p>
-<blockquote>
-<p>&lt;[kp]&gt; 过个幸运看看有没有现金<br>&lt;骰娘&gt; [张二狗]进行幸运鉴定: D100=70/55失败</p>
-</blockquote>
-<p>&lt;[张二狗]&gt; 去找那边的两个人<br>&lt;[刘平安]&gt; “…好热啊。”我拉开拉链取下围巾<br>&lt;[kp]&gt; 你们都来到了C0407前，办公室的门敞开着，但根本看不清里面有什么。<br>&lt;[kp]&gt; “?~”<br>&lt;[kp]&gt; 刘平安的手机突然响起了来电铃声，打断了你们的活动。<br>&lt;[刘平安]&gt; “诶？居然可以来电话的吗？”我拿出手机</p>
-<blockquote>
-<p>&lt;[kp]&gt; 过灵感<br>&lt;骰娘&gt; [刘平安]进行灵感鉴定: D100=37/70成功<br>&lt;骰娘&gt; [张二狗]进行灵感鉴定: D100=71/40失败<br>&lt;骰娘&gt; [温夏]进行灵感鉴定: D100=93/70失败</p>
-</blockquote>
-<p>&lt;[kp]&gt; 手机屏幕依然是黑的，怎样滑动都没有反应，乐曲声持续了很久才戛然而止。<br>&lt;[kp]&gt; 刘平安听着自己用了很久的铃声，明明是非常喜欢的旋律，现在落在你的耳朵里却像交通高峰期此起彼伏的鸣笛声，又像婴儿房里幼儿没完没了的尖锐哭声，令人难以忍受、心生烦躁。<br>&lt;[kp]&gt; 站在办公室门前，你们都感到一股莫名的重物压在胸口的窒息感，仿佛有一只无形的大手从背后穿透皮肉的屏障攥住了你们的肺叶。<br>&lt;[刘平安]&gt; “怎么回事…”我揉了揉太阳穴，把手机狠狠装了回去。<br>&lt;[张二狗]&gt; 进门看看，“不知道啊……”<br>&lt;[刘平安]&gt; 捂住口鼻试试。<br>&lt;[刘平安]&gt; 进门。<br>&lt;[温夏]&gt; 进门<br>&lt;[温夏]&gt; 想起我包里还带了ipad，拿出ipad打光<br>&lt;[kp]&gt; 那种令人血管直跳的不适感并没有因为捂住口鼻的举动减弱，反而随着深入办公室变得更加沉重。温夏想要拿出ipad照明，但它的状况和手机如出一辙。在迈进办公室后，你们突然感觉自己的感官变得无比迟钝……</p>
-<blockquote>
-<p>&lt;[kp]&gt; 骰1D3,行动点数<br>&lt;骰娘&gt; [张二狗]掷出了: 1D3=1<br>&lt;骰娘&gt; [温夏]掷出了: 1D3=2<br>&lt;骰娘&gt; [刘平安]掷出了: 1D3=1</p>
-</blockquote>
-<p>&lt;[张二狗]&gt; 感觉不太对，我溜了<br>&lt;[刘平安]&gt; 退出这个房间并试图大家都撤出来时带上门<br>&lt;[温夏]&gt; 那么，我试探性地往里踏一步，找找桌子之类的东西<br>&lt;[刘平安]&gt; “温夏酱，小心呀！”我忍着不适说到<br>&lt;[温夏]&gt; 摸桌子上有啥，有啥拿啥（）<br>&lt;[kp]&gt; 张二狗和刘平安小心地撤回去后觉得胸腔明显轻快了些，然而里面既看不到温夏的身影也听不到她的声音。温夏向前方踏了一步，只觉得自己更热了，丝毫听不到刘平安的呼喊。<br>&lt;[刘平安]&gt; “呜呜。”我看着里面的黑暗，用手撑着门<br>&lt;[温夏]&gt; 太热了，不适感让我没法集中精力思考，我下意识地倒退一步远离热源，退出黑暗<br>&lt;[kp]&gt; 门外的两人看到了从黑洞中回来的温夏，她的指甲泛着不自然的黑色。</p>
-<blockquote>
-<p>&lt;骰娘&gt; 您在群(630325004)的暗骰结果为<br>&lt;骰娘&gt; 1D100=60<br>&lt;骰娘&gt; kp正在进行暗骰</p>
-</blockquote>
-<p>&lt;[张二狗]&gt; “同学，你的手……”<br>&lt;[温夏]&gt; “什么？”我不想注视门里的东西，抬起手。“我的指甲？”<br>&lt;[刘平安]&gt; “你手没事吧…算了我们先离开这里。”赶紧离开这个诡异的办公室门前<br>&lt;[温夏]&gt; 快速离开，然后再看看我的指甲。<br>&lt;[kp]&gt; 温夏的指甲上是斑驳的灰黑色，轻轻抹一下就会变淡变浅。<br>&lt;[kp]&gt; 在直觉和本能的驱动下，你们只能选择放弃进入办公室，离开的途中路过了一个放映厅。<br>&lt;[kp]&gt;隔着大片的玻璃，你发现里面有白光忽明忽灭，追溯光源，在于吊在棚顶的放映机。你在后侧看不到放映的内容，但能看到成排的座椅上密密麻麻地坐满了人，这些黑色的人影一动不动。<br>&lt;[kp]&gt;随着放映结束，室内灯亮了起来。<br>&lt;[kp]&gt;他们在直勾勾地看着你。SC0/1。</p>
-<blockquote>
-<p>&lt;骰娘&gt; [温夏]的理智检定结果:<br>&lt;骰娘&gt; 21/42=成功<br>&lt;骰娘&gt; 你的理智值减少0=0点,当前剩余42点<br>&lt;骰娘&gt; [张二狗]的理智检定结果:<br>&lt;骰娘&gt; 78/57=失败<br>&lt;骰娘&gt; 你的理智值减少1=1点,当前剩余56点<br>&lt;骰娘&gt; [刘平安]的理智检定结果:<br>&lt;骰娘&gt; 4/80=大成功<br>&lt;骰娘&gt; 你的理智值减少0=0点,当前剩余80点<br>&lt;骰娘&gt; 本次理智检定大成功，调查员可考虑使用规则书第8章的自救规则，详情请听从守秘人指示</p>
-</blockquote>
-<p>&lt;[kp]&gt; 漆黑的玻璃上，映照着你们不安的样子。<br>&lt;[温夏]&gt; “你们，你们看到了吗？里面坐满了人，在看我……”<br>&lt;[张二狗]&gt; “看到了……”<br>&lt;[刘平安]&gt; “…”我现在反而更加确信这些超自然的视觉是我的幻觉，而刚刚肺部的灼烧感刚好符合了黑莲花的特征。镇定地凝视着齐刷刷看着我的黑影。<br>&lt;[刘平安]&gt; 等他们消失，我自然也没什么太多反应。“要进去看看吗？”<br>&lt;[张二狗]&gt; “借我点工具。”<br>&lt;[温夏]&gt; 把发卡给二狗子<br>&lt;[张二狗]&gt; 接过温夏的发卡，气沉丹田，开始撬锁</p>
-<blockquote>
-<p>&lt;骰娘&gt; [张二狗]进行锁匠鉴定: D100=53/51失败</p>
-</blockquote>
-<p>&lt;[温夏]&gt; “我来试试！”<br>&lt;[刘平安]&gt; “……”<br>&lt;[温夏]&gt; 拿过发卡往锁孔里塞</p>
-<blockquote>
-<p>&lt;骰娘&gt; [温夏]进行锁匠鉴定: D100=10/10成功</p>
-</blockquote>
-<p>&lt;[刘平安]&gt; “哇！”<br>&lt;[张二狗]&gt; “可以啊。”<br>&lt;[kp]&gt; 在昏暗的走廊里，门锁里的咔哒声格外清晰，你们意识门已经可以打开了。<br>&lt;[温夏]&gt; 首当其冲推门进去。<br>&lt;[张二狗]&gt; 进门<br>&lt;[刘平安]&gt; 镇定地进门<br>&lt;[kp]&gt; 放映室里黑得厉害，前面有一个宽大的讲台，后面的座位隔着一点点距离看起来影影绰绰，并没有什么人影。<br>&lt;[刘平安]&gt; “…刚才还挺热闹的，大伙儿不欢迎我们仨啊。”感觉空气都因为自己的冷笑话冷了三分<br>&lt;[温夏]&gt; “毕竟非法手段进来的？”小心往讲台走，不要撞到什么东西了<br>&lt;[刘平安]&gt; 去讲台看看，刚才还播放了什么来着。<br>&lt;[张二狗]&gt; 摸着黑看看讲台上有什么东西没有<br>&lt;[kp]&gt; 用于承接影像的幕布并没有放下，讲台上是一盒粉笔和一个放映遥控器，下面中空的地方放着一个纸箱，里面胡乱地塞着装订成册的A4纸。<br>&lt;[刘平安]&gt; 摁摁遥控器，看看能否讲下幕布放映，虽然没有电。<br>&lt;[kp]&gt; 遥控器上的小红点闪烁了一下，除此之外没有其他任何反馈。<br>&lt;[张二狗]&gt; 看看A4纸上面有没有写什么东西<br>&lt;[刘平安]&gt; “倒霉保加利亚是克电器吗。”<br>&lt;[刘平安]&gt; 过去看看a4纸箱。<br>&lt;[温夏]&gt; 我也要看A4纸，看完往后面的座位走，找找看有没有什么东西能用</p>
-<blockquote>
-<p>&lt;[kp]&gt; 过图书馆<br>&lt;骰娘&gt; [张二狗]进行图书馆使用鉴定: D100=45/20失败<br>&lt;骰娘&gt; [刘平安]进行图书馆使用鉴定: D100=29/50成功<br>&lt;骰娘&gt; [温夏]进行图书馆鉴定: D100=33/60成功</p>
-</blockquote>
-<p>&lt;[kp]&gt; 张二狗翻找了一番，发现里面基本都是会议分发材料。而两个女生同时从中抽出了一份满是单选题的资料，题目是植物科学专业课相关的，但奇怪的是上面标注的所有选项都是B。
- </p>
+    <title>梦 / 应试教育后遗症</title>
+    <url>/al/e0182a80.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>早上做梦梦见下午两点有一个生物学考试。关键是我7点被吵醒那会对自己做的梦深信不疑，睡到8点半的这段时间内梦境在自动补完“我有一个选修课一直没去上但几个小时后就要考试”的这回事。<br>甚至脑补了具体的上课情景，确定这门课叫“上帝知道答案”。讲课的是一个女老师，和我一起上课的有舍友和隔壁班同学。然后梦里我不乐意去问舍友，就问了隔壁班同学，这位同学石锤了下午两点有考试，然后就开始慌，恐慌，虽然9小时复习概率论/12小时速通PLC不是没有过，但是距离下午两点只有6小时了，我根本不记得这门课的任何内容。平时既然没去上课那肯定没有平时分。我恐惧保研功亏一篑。<br>直到刷完牙我都还没想明白到底有没有“选修课下午两点考试”这回事</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -1598,12 +1615,9 @@ body
         lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
         }</script>]]></content>
       <categories>
-        <category>5-文字创作</category>
-        <category>COC TRPG</category>
+        <category>4-日常记录</category>
+        <category>奇怪的梦</category>
       </categories>
-      <tags>
-        <tag>跑团记录</tag>
-      </tags>
   </entry>
   <entry>
     <title>梦 / 我真是个起名天才</title>
@@ -1624,21 +1638,6 @@ body
     <title>梦 / 文明间的战术欺骗</title>
     <url>/al/2ae3dcb7.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>今天的梦是我声称发现适距中子星可以利用新武器将其引爆并取得与敌对地外文明的战争胜利。<br>该地外文明宣告投降，派出一位代表由我带领参观地球。<br>该代表的形象是抽象蓝绿鱼头人。<br>在参观过程中我告诉他：“其实并没有中子星，我骗你们的。”<br>参观在沉默中结束了。<br>蓝绿鱼头人代表回去后宣战。<br>于是我方引爆了中子星。</p>
-</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>奇怪的梦</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦 / 应试教育后遗症</title>
-    <url>/al/e0182a80.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>早上做梦梦见下午两点有一个生物学考试。关键是我7点被吵醒那会对自己做的梦深信不疑，睡到8点半的这段时间内梦境在自动补完“我有一个选修课一直没去上但几个小时后就要考试”的这回事。<br>甚至脑补了具体的上课情景，确定这门课叫“上帝知道答案”。讲课的是一个女老师，和我一起上课的有舍友和隔壁班同学。然后梦里我不乐意去问舍友，就问了隔壁班同学，这位同学石锤了下午两点有考试，然后就开始慌，恐慌，虽然9小时复习概率论/12小时速通PLC不是没有过，但是距离下午两点只有6小时了，我根本不记得这门课的任何内容。平时既然没去上课那肯定没有平时分。我恐惧保研功亏一篑。<br>直到刷完牙我都还没想明白到底有没有“选修课下午两点考试”这回事</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -1682,9 +1681,9 @@ body
       </categories>
   </entry>
   <entry>
-    <title>梦 / 追查无形怪物</title>
-    <url>/al/85fa5e38.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>梦见出现了一种奇怪的力量，其表现形式是人有时候会无缘无故被突然扯一下，但不是别人干的。<br>就像透明人恶作剧一样。<br>这个现象变得越发严重了，我曾见到一个小女孩被来自多方向的无形的力折断骨头，整个人扭曲变形。<br>我去追查这种现象的源头，到一座大厦里（特别像学校的学研中心），进门的时候刚好目睹一个深蓝色衣服的人从高空坠落，砸到地上。<br>因为事情紧急，就没有去管，但是我和助手都认为肯定和源头有关。<br>上楼，被发现，开始躲，躲到一个占卜师的家里，她帮我隐藏了起来，还让我抽了三张塔罗牌，但是没有读牌，我也不记得三张牌是什么。<br>后来我的队友赶到了，在楼外辅助，我下了楼，看到那个坠落的人，走进发现只是一件外套，外套里面摆着一个只有一半的饼干。<br>这个饼干是软的，很大，一个巴掌那么大，完整版应该是两颗心被箭串在一起，这里只有一半，两个心是粉的，中间用黄色写了几个单词，但是不完整。<br>我突然发觉这个跳楼的人就是我。<br>我要传达给我什么信息？<br>在保温杯里找到了另外一半饼干，把它们拼起来，我知道了完整的句子。<br>从占卜师那里走后，她把占卜的牌送给了我。我拿出来边走边洗牌，却发现总是有牌不是背面向上的，还得反过来，我很着急，后来在确认牌数量的时候，数不出正确的数目，就让队友又帮我买了一副牌。</p>
+    <title>梦 / 追逐月亮</title>
+    <url>/al/76e15593.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>天空中突然出现巨大的月亮，如果原来的月亮是玉盘，那现在的月亮有蹦床大小。<br>所有人都跑去看月亮，我跟着一个不务正业的女演员乘上了一辆公交车，公交车上能看见月亮，过一会转个弯就看不见了。<br>在我家附近的车站下车，我走到楼下，遇见一个高大，戴帽子叼雪茄的男人。<br>他说我高考的运气实在不好，我愣了一下，皮笑肉不笑地反驳：我好歹也上了个211呢。他说这就是你运气不好的地方了，我反驳道：这是我整个高中考的最好的一次。<br>他又带我去车站，我听他说：其实很早以前的一次海边聚会，你说过“我要娶一个老婆”。你还这么想吗。<br>我：性别卡得不要太死。<br>我坐过站了，徒步往回走，一个认识的朋友托我保管四个婴儿，他要去看月亮。<br>我抓着牵婴儿的引绳，它们走得还挺快，不需要我等。其中一个婴儿手拿一把干枯的草。路上我遇见姥爷，他说那个婴儿手上拿的是危险品。婴儿听懂我们的话，狞笑地拽着一根草，我立刻夺过来拽断了，他愣了一下，又去用另一根，我全抢过来拽断。<br>婴儿没有哭，脸色铁青。我和姥爷乘车去家里，但是姥爷在前一站下车，我没跟着下去，心里疑惑为什么，往窗外一看，我爸妈和姥爷在挥手叫我，原来他们另有计划，我应该在这一站下车。<br>但是车已经开动了。</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -1712,9 +1711,9 @@ body
       </categories>
   </entry>
   <entry>
-    <title>梦 / 追逐月亮</title>
-    <url>/al/76e15593.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>天空中突然出现巨大的月亮，如果原来的月亮是玉盘，那现在的月亮有蹦床大小。<br>所有人都跑去看月亮，我跟着一个不务正业的女演员乘上了一辆公交车，公交车上能看见月亮，过一会转个弯就看不见了。<br>在我家附近的车站下车，我走到楼下，遇见一个高大，戴帽子叼雪茄的男人。<br>他说我高考的运气实在不好，我愣了一下，皮笑肉不笑地反驳：我好歹也上了个211呢。他说这就是你运气不好的地方了，我反驳道：这是我整个高中考的最好的一次。<br>他又带我去车站，我听他说：其实很早以前的一次海边聚会，你说过“我要娶一个老婆”。你还这么想吗。<br>我：性别卡得不要太死。<br>我坐过站了，徒步往回走，一个认识的朋友托我保管四个婴儿，他要去看月亮。<br>我抓着牵婴儿的引绳，它们走得还挺快，不需要我等。其中一个婴儿手拿一把干枯的草。路上我遇见姥爷，他说那个婴儿手上拿的是危险品。婴儿听懂我们的话，狞笑地拽着一根草，我立刻夺过来拽断了，他愣了一下，又去用另一根，我全抢过来拽断。<br>婴儿没有哭，脸色铁青。我和姥爷乘车去家里，但是姥爷在前一站下车，我没跟着下去，心里疑惑为什么，往窗外一看，我爸妈和姥爷在挥手叫我，原来他们另有计划，我应该在这一站下车。<br>但是车已经开动了。</p>
+    <title>梦 / 追查无形怪物</title>
+    <url>/al/85fa5e38.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>梦见出现了一种奇怪的力量，其表现形式是人有时候会无缘无故被突然扯一下，但不是别人干的。<br>就像透明人恶作剧一样。<br>这个现象变得越发严重了，我曾见到一个小女孩被来自多方向的无形的力折断骨头，整个人扭曲变形。<br>我去追查这种现象的源头，到一座大厦里（特别像学校的学研中心），进门的时候刚好目睹一个深蓝色衣服的人从高空坠落，砸到地上。<br>因为事情紧急，就没有去管，但是我和助手都认为肯定和源头有关。<br>上楼，被发现，开始躲，躲到一个占卜师的家里，她帮我隐藏了起来，还让我抽了三张塔罗牌，但是没有读牌，我也不记得三张牌是什么。<br>后来我的队友赶到了，在楼外辅助，我下了楼，看到那个坠落的人，走进发现只是一件外套，外套里面摆着一个只有一半的饼干。<br>这个饼干是软的，很大，一个巴掌那么大，完整版应该是两颗心被箭串在一起，这里只有一半，两个心是粉的，中间用黄色写了几个单词，但是不完整。<br>我突然发觉这个跳楼的人就是我。<br>我要传达给我什么信息？<br>在保温杯里找到了另外一半饼干，把它们拼起来，我知道了完整的句子。<br>从占卜师那里走后，她把占卜的牌送给了我。我拿出来边走边洗牌，却发现总是有牌不是背面向上的，还得反过来，我很着急，后来在确认牌数量的时候，数不出正确的数目，就让队友又帮我买了一副牌。</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -1785,24 +1784,6 @@ body
       </categories>
   </entry>
   <entry>
-    <title>游戏 / 小小梦魇</title>
-    <url>/al/57d35b38.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211224221929.png" title="20211224221929" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211224221929.png" alt="20211224221929"></a></p>
-<span id="more"></span></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
-        }</script>]]></content>
-      <categories>
-        <category>4-日常记录</category>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>游戏</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>拯救者r9000p安全下车</title>
     <url>/al/42af05cf.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p>7588买到，我感觉是香的很。<br>果然这东西就是早买早享受，旧电脑已经被打入冷宫了。<br>现在正在逐步把旧电脑的软件移植过来。<br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_160922.jpg" title="IMG_20211212_160922" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_160922.jpg" alt="IMG_20211212_160922"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153253.jpg" title="IMG_20211212_153253" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153253.jpg" alt="IMG_20211212_153253"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153512.jpg" title="IMG_20211212_153512" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153512.jpg" alt="IMG_20211212_153512"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153833.jpg" title="IMG_20211212_153833" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/IMG_20211212_153833.jpg" alt="IMG_20211212_153833"></a><br><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211213234219.png" title="20211213234219" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211213234219.png" alt="20211213234219"></a></p>
@@ -1836,6 +1817,24 @@ body
       </categories>
       <tags>
         <tag>“花花世界我一人干翻”</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>游戏 / 小小梦魇</title>
+    <url>/al/57d35b38.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"<p><a href="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211224221929.png" title="20211224221929" class="gallery-item"><img src="https://cdn.jsdelivr.net/gh/Alnas1/picbox/img/20211224221929.png" alt="20211224221929"></a></p>
+<span id="more"></span></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <categories>
+        <category>4-日常记录</category>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>游戏</tag>
       </tags>
   </entry>
 </search>
