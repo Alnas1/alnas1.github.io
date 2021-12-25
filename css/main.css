@@ -2756,7 +2756,7 @@ mark.search-keyword {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #fe9154;
+  background: #7eff73;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2818,4 +2818,64 @@ mark.search-keyword {
   float: right;
   width: 200px;
   margin: 25px;
+}
+body {
+  background: url("/images/disco.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.9;
+}
+.header-inner {
+  padding-top: 70px;
+  margin-top: 60px;
+  background: #fff;
+}
+.site-brand-container {
+  display: flex;
+  flex-shrink: 0;
+  padding: 0 10px;
+  background: #fff;
+}
+.menu {
+  margin: 0;
+  padding: 1em 0;
+  text-align: center;
+  background: #fff;
+}
+.post-block {
+  background: #fff;
+  padding: 40px;
+}
+.pagination {
+  border-top: 1px solid #eee;
+  background: #fff;
+  margin: 0;
+  text-align: center;
+  padding: 50px;
+}
+.post-eof {
+  background: #fff;
+  height: 1px;
+  margin: 10px auto 30px;
+  width: 8%;
+}
+@media (max-width: 767px) {
+  .footer-inner {
+    background: #fff;
+  }
+  .footer {
+    background: #fff;
+  }
+  .header-inner {
+    margin-top: 0px;
+  }
+  .main-inner {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+}
+ul.img-box-ul {
+  padding-left: 0px;
 }
